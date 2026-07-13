@@ -1,40 +1,55 @@
 project:
-  type: website
-  output-dir: docs
-  render:
-    - index.qmd
-
-website:
-  title: "Operations Research – Level 9"
-  site-url: "https://DEIN-GITHUB-NAME.github.io/DEIN-REPOSITORY/"
-  navbar:
-    background: primary
-    left:
-      - href: index.qmd
-        text: Interaktive Analyse
-    right:
-      - href: report.pdf
-        text: PDF-Ausarbeitung
-
-  page-footer:
-    left: "Operations Research, Sommersemester 2026"
-    right: "Gruppe 42"
-
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-    toc-title: "Inhalt"
-    toc-depth: 3
-    number-sections: false
-    code-fold: true
-    code-summary: "Python-Code anzeigen"
-    code-tools: true
-    smooth-scroll: true
-    fig-responsive: true
+  type: default
 
 execute:
+  freeze: auto
+  cache: true
   echo: false
   warning: false
   error: true
+
+format:
+
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+
+    toc: true
+    toc-depth: 3
+    toc-location: left
+
+    code-fold: true
+    code-summary: "Python-Code anzeigen"
+
+    code-tools: true
+    smooth-scroll: true
+
+    embed-resources: true
+
+    number-sections: true
+
+    fig-align: center
+    fig-width: 8
+    fig-height: 6
+
+  pdf:
+    documentclass: article
+
+    papersize: a4
+
+    fontsize: 11pt
+
+    geometry:
+      - margin=2.5cm
+
+    number-sections: true
+
+    colorlinks: true
+
+    fig-align: center
+
+    fig-width: 8
+    fig-height: 6
+
+jupyter: python3
