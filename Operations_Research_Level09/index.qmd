@@ -1,0 +1,546 @@
+---
+title: "Operations Research – Level 9"
+subtitle: "Interaktive Untersuchung einer zweidimensionalen Blackbox"
+author:
+  - "Benit Meise"
+  - "Jakob Wiemer"
+  - "Leo Bayer"
+date: last-modified
+lang: de
+jupyter: python3
+page-layout: full
+---
+
+```{python}
+#| label: imports
+#| include: false
+
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+
+
+DATA_DIR = Path("data")
+
+required_files = [
+    DATA_DIR / "grid.csv",
+    DATA_DIR / "paths.csv",
+    DATA_DIR / "summary.csv"
+]
+
+missing_files = [
+    str(path)
+    for path in required_files
+    if not path.exists()
+]
+
+if missing_files:
+    raise FileNotFoundError(
+        "Es fehlen Ergebnisdateien. "
+        "Führe zuerst `python3 prepare_data.py` aus. "
+        f"Fehlend: {missing_files}"
+    )
+
+grid = pd.read_csv(DATA_DIR / "grid.csv")
+paths = pd.read_csv(DATA_DIR / "paths.csv")
+summary = pd.read_csv(DATA_DIR / "summary.csv")
+
+best = summary.loc[summary["height"].idxmax()]
+
+required_runs = [
+    "Start (2, -4)",
+    "Start (0.2, -2)"
+]
+
+required_summary = summary[
+    summary["run"].isin(required_runs)
+].copy()
+```
+
+::: {.hero-banner}
+
+# Zweidimensionale Blackbox-Optimierung
+
+Auf dieser Seite können die Höhenlandschaft, die vorgeschriebenen
+Suchläufe und die Ergebnisse der Multi-Start-Suche interaktiv untersucht
+werden.
+
+Die offizielle schriftliche Ausarbeitung steht zusätzlich als
+[PDF-Dokument](report.pdf) zur Verfügung.
+
+:::
+
+```{python}
+#| label: metric-cards
+#| output: asis
+
+number_of_grid_points = len(grid)
+number_of_runs = len(summary)
+number_of_path_entries = len(paths)
+
+print('<div class="metric-grid">')
+
+print(
+    '<div class="metric-card">'
+    '<div class="metric-label">Bester gefundener Punkt</div>'
+    f'<div class="metric-value">'
+    f'({best["x"]:.4f}, {best["y"]:.4f})'
+    '</div>'
+    '</div>'
+)
+
+print(
+    '<div class="metric-card">'
+    '<div class="metric-label">Beste gefundene Höhe</div>'
+    f'<div class="metric-value">{best["height"]:.6f}</div>'
+    '</div>'
+)
+
+print(
+    '<div class="metric-card">'
+    '<div class="metric-label">Gitterpunkte</div>'
+    f'<div class="metric-value">{number_of_grid_points}</div>'
+    '</div>'
+)
+
+print(
+    '<div class="metric-card">'
+    '<div class="metric-label">Lokale Suchläufe</div>'
+    f'<div class="metric-value">{number_of_runs}</div>'
+    '</div>'
+)
+
+print('</div>')
+```
+
+## Problemstellung
+
+Gesucht ist der höchste Punkt der unbekannten Höhenfunktion
+
+\[
+f(x,y)
+\]
+
+auf dem zulässigen Gebiet
+
+\[
+(x,y)\in[-5,5]^2.
+\]
+
+Die Funktion liegt ausschließlich als Blackbox vor. Zu einem gewählten
+Punkt \((x,y)\) kann der zugehörige Höhenwert abgefragt werden; eine
+analytische Funktionsgleichung und ihre Ableitungen sind nicht bekannt.
+
+Deshalb wird ein ableitungsfreies direktes Suchverfahren eingesetzt.
+
+## Interaktive Höhenlandschaft
+
+Die folgende Darstellung basiert auf einer groben Gittersuche. Sie kann
+mit der Maus gedreht, verschoben und vergrößert werden. Beim Überfahren
+der Fläche werden die Koordinaten und der angenäherte Höhenwert angezeigt.
+
+```{python}
+#| label: interactive-surface
+#| fig-height: 7
+
+x_values = np.sort(grid["x"].unique())
+y_values = np.sort(grid["y"].unique())
+
+z_values = (
+    grid
+    .pivot(index="y", columns="x", values="height")
+    .reindex(index=y_values, columns=x_values)
+    .to_numpy()
+)
+
+surface = go.Figure()
+
+surface.add_trace(
+    go.Surface(
+        x=x_values,
+        y=y_values,
+        z=z_values,
+        name="Höhenfläche",
+        colorbar={
+            "title": "Höhe"
+        },
+        hovertemplate=(
+            "x: %{x:.3f}<br>"
+            "y: %{y:.3f}<br>"
+            "Höhe: %{z:.6f}"
+            "<extra></extra>"
+        )
+    )
+)
+
+for run_name in required_runs:
+    run_path = paths[paths["run"] == run_name]
+
+    surface.add_trace(
+        go.Scatter3d(
+            x=run_path["x"],
+            y=run_path["y"],
+            z=run_path["height"],
+            mode="lines+markers",
+            name=run_name,
+            text=run_path["event"],
+            customdata=np.column_stack(
+                (
+                    run_path["iteration"],
+                    run_path["step"]
+                )
+            ),
+            hovertemplate=(
+                "%{text}<br>"
+                "Iteration: %{customdata[0]}<br>"
+                "Schrittweite: %{customdata[1]:.5f}<br>"
+                "x: %{x:.5f}<br>"
+                "y: %{y:.5f}<br>"
+                "Höhe: %{z:.7f}"
+                "<extra></extra>"
+            )
+        )
+    )
+
+surface.add_trace(
+    go.Scatter3d(
+        x=[best["x"]],
+        y=[best["y"]],
+        z=[best["height"]],
+        mode="markers",
+        marker={
+            "size": 8,
+            "symbol": "diamond"
+        },
+        name="Bester gefundener Punkt",
+        hovertemplate=(
+            "Bester gefundener Punkt<br>"
+            "x: %{x:.6f}<br>"
+            "y: %{y:.6f}<br>"
+            "Höhe: %{z:.8f}"
+            "<extra></extra>"
+        )
+    )
+)
+
+surface.update_layout(
+    title="Interaktive dreidimensionale Höhenlandschaft",
+    scene={
+        "xaxis_title": "x",
+        "yaxis_title": "y",
+        "zaxis_title": "Höhe"
+    },
+    legend={
+        "orientation": "h",
+        "yanchor": "bottom",
+        "y": 1.02,
+        "xanchor": "left",
+        "x": 0
+    },
+    margin={
+        "l": 0,
+        "r": 0,
+        "b": 0,
+        "t": 80
+    }
+)
+
+surface.show()
+```
+
+Die dargestellte Oberfläche ist eine Visualisierung der ausgewerteten
+Gitterpunkte. Zwischen den tatsächlich abgefragten Punkten erfolgt eine
+grafische Interpolation. Sie darf daher nicht mit einer analytisch
+bekannten Funktionsoberfläche gleichgesetzt werden.
+
+## Interaktive Konturkarte
+
+In der zweidimensionalen Konturkarte lassen sich die beiden
+vorgeschriebenen Suchläufe getrennt ein- und ausblenden.
+
+```{python}
+#| label: interactive-contour
+#| fig-height: 7
+
+contour = go.Figure()
+
+contour.add_trace(
+    go.Contour(
+        x=x_values,
+        y=y_values,
+        z=z_values,
+        contours={
+            "coloring": "heatmap",
+            "showlabels": True
+        },
+        colorbar={
+            "title": "Höhe"
+        },
+        hovertemplate=(
+            "x: %{x:.3f}<br>"
+            "y: %{y:.3f}<br>"
+            "Höhe: %{z:.6f}"
+            "<extra></extra>"
+        ),
+        name="Höhenkonturen"
+    )
+)
+
+for run_name in required_runs:
+    run_path = paths[paths["run"] == run_name]
+
+    contour.add_trace(
+        go.Scatter(
+            x=run_path["x"],
+            y=run_path["y"],
+            mode="lines+markers",
+            name=run_name,
+            text=run_path["event"],
+            customdata=np.column_stack(
+                (
+                    run_path["iteration"],
+                    run_path["height"],
+                    run_path["step"]
+                )
+            ),
+            hovertemplate=(
+                "%{text}<br>"
+                "Iteration: %{customdata[0]}<br>"
+                "x: %{x:.5f}<br>"
+                "y: %{y:.5f}<br>"
+                "Höhe: %{customdata[1]:.7f}<br>"
+                "Schrittweite: %{customdata[2]:.5f}"
+                "<extra></extra>"
+            )
+        )
+    )
+
+contour.add_trace(
+    go.Scatter(
+        x=[best["x"]],
+        y=[best["y"]],
+        mode="markers",
+        marker={
+            "size": 14,
+            "symbol": "star"
+        },
+        name="Bester gefundener Punkt",
+        hovertemplate=(
+            "Bester gefundener Punkt<br>"
+            "x: %{x:.6f}<br>"
+            "y: %{y:.6f}<br>"
+            f'Höhe: {best["height"]:.8f}'
+            "<extra></extra>"
+        )
+    )
+)
+
+contour.update_layout(
+    title="Konturkarte mit den vorgeschriebenen Suchpfaden",
+    xaxis={
+        "title": "x",
+        "range": [-5, 5],
+        "scaleanchor": "y",
+        "scaleratio": 1
+    },
+    yaxis={
+        "title": "y",
+        "range": [-5, 5]
+    },
+    legend={
+        "orientation": "h",
+        "yanchor": "bottom",
+        "y": 1.02,
+        "xanchor": "left",
+        "x": 0
+    }
+)
+
+contour.show()
+```
+
+## Animation der Suchschritte
+
+Die nächste Grafik zeigt, wie sich die akzeptierten Suchpunkte im Verlauf
+des Verfahrens entwickeln. Über den Regler kann zwischen den Iterationen
+gewechselt werden.
+
+```{python}
+#| label: animated-search
+#| fig-height: 7
+
+animation_data = paths[
+    paths["run"].isin(required_runs)
+].copy()
+
+animation_data["iteration_global"] = animation_data.groupby(
+    "run"
+)["iteration"].rank(
+    method="dense"
+).astype(int)
+
+animated = px.scatter(
+    animation_data,
+    x="x",
+    y="y",
+    animation_frame="iteration_global",
+    animation_group="run",
+    color="run",
+    hover_name="event",
+    hover_data={
+        "height": ":.7f",
+        "step": ":.5f",
+        "iteration": True,
+        "iteration_global": False
+    },
+    range_x=[-5, 5],
+    range_y=[-5, 5],
+    title="Entwicklung der akzeptierten Suchpunkte"
+)
+
+animated.update_traces(
+    marker={
+        "size": 13
+    }
+)
+
+animated.update_layout(
+    xaxis_title="x",
+    yaxis_title="y",
+    legend_title="Suchlauf"
+)
+
+animated.show()
+```
+
+## Verwendetes Verfahren
+
+Verwendet wird die Hooke-und-Jeeves-Mustersuche. Das Verfahren besteht
+im Wesentlichen aus drei Komponenten:
+
+1. **Exploration:** Die Umgebung des aktuellen Punktes wird entlang der
+   Koordinatenrichtungen untersucht.
+2. **Musterschritt:** Eine erfolgreiche Bewegungsrichtung wird
+   extrapoliert.
+3. **Schrittweitenanpassung:** Wird keine Verbesserung gefunden, wird
+   die Schrittweite halbiert.
+
+Da ein Maximum gesucht wird, wird jeweils der Kandidat mit dem größeren
+Höhenwert übernommen.
+
+## Ergebnisse der vorgeschriebenen Startpunkte
+
+```{python}
+#| label: required-results
+#| output: asis
+
+table = required_summary[
+    [
+        "run",
+        "start_x",
+        "start_y",
+        "x",
+        "y",
+        "height",
+        "iterations",
+        "final_step"
+    ]
+].copy()
+
+table.columns = [
+    "Suchlauf",
+    "Start x",
+    "Start y",
+    "Endpunkt x",
+    "Endpunkt y",
+    "Höhe",
+    "Iterationen",
+    "letzte Schrittweite"
+]
+
+print(
+    table.to_html(
+        index=False,
+        float_format=lambda value: f"{value:.6f}",
+        classes="table table-striped table-hover"
+    )
+)
+```
+
+## Vergleich aller Multi-Start-Läufe
+
+```{python}
+#| label: all-results
+#| output: asis
+
+all_results = summary.sort_values(
+    "height",
+    ascending=False
+).copy()
+
+display_results = all_results[
+    [
+        "run",
+        "start_x",
+        "start_y",
+        "x",
+        "y",
+        "height",
+        "iterations"
+    ]
+]
+
+display_results.columns = [
+    "Suchlauf",
+    "Start x",
+    "Start y",
+    "Endpunkt x",
+    "Endpunkt y",
+    "Höhe",
+    "Iterationen"
+]
+
+print(
+    display_results.to_html(
+        index=False,
+        float_format=lambda value: f"{value:.6f}",
+        classes="table table-striped table-hover"
+    )
+)
+```
+
+## Einordnung der globalen Suche
+
+Ein einzelner Hooke-und-Jeeves-Lauf ist ein lokales Suchverfahren.
+Abhängig vom Startpunkt kann er daher an unterschiedlichen lokalen
+Maxima enden.
+
+Um das Risiko zu reduzieren, wird das Verfahren mit einer groben
+Gittersuche kombiniert:
+
+1. Das gesamte Gebiet \([-5,5]^2\) wird zunächst grob ausgewertet.
+2. Hohe und räumlich voneinander getrennte Gitterpunkte werden
+   ausgewählt.
+3. Von diesen Punkten werden zusätzliche lokale Suchläufe gestartet.
+4. Die gefundenen Endpunkte werden miteinander verglichen.
+
+Dieses Vorgehen liefert keinen formalen mathematischen Beweis für
+globale Optimalität. Es erhöht jedoch die Wahrscheinlichkeit erheblich,
+hohe und räumlich getrennte Maxima der Blackbox zu entdecken.
+
+## Reproduzierbarkeit
+
+Die abgefragten Blackbox-Werte wurden in CSV-Dateien gespeichert. Die
+interaktive Website führt beim Öffnen keine neuen API-Anfragen durch.
+Dadurch
+
+- bleibt die Darstellung auch bei einem vorübergehend nicht erreichbaren
+  Blackbox-Server funktionsfähig,
+- verwenden PDF und Website dieselben Messwerte,
+- können die Ergebnisse später erneut untersucht werden.
+
+Der vollständige Quellcode befindet sich im
+[GitHub-Repository]({{< var repository_url >}}).

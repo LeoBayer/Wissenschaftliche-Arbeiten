@@ -1,0 +1,342 @@
+---
+title: "Operations Research – Level 9"
+subtitle: "Kurze Ausarbeitung"
+author:
+  - "Gruppe 42"
+  - "Benit Meise"
+  - "Jakob Wiemer"
+  - "Leo Bayer"
+date: ""
+lang: de
+jupyter: python3
+
+format:
+  pdf:
+    pdf-engine: lualatex
+    documentclass: article
+    papersize: a4
+    fontsize: 11pt
+    geometry:
+      - margin=2.5cm
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    keep-tex: true
+
+execute:
+  echo: false
+  warning: false
+  error: true
+---
+
+```{python}
+#| label: report-imports
+#| include: false
+
+from pathlib import Path
+
+import pandas as pd
+
+
+DATA_DIR = Path("data")
+
+summary = pd.read_csv(DATA_DIR / "summary.csv")
+paths = pd.read_csv(DATA_DIR / "paths.csv")
+
+best = summary.loc[summary["height"].idxmax()]
+
+required_runs = [
+    "Start (2, -4)",
+    "Start (0.2, -2)"
+]
+
+required_summary = summary[
+    summary["run"].isin(required_runs)
+].copy()
+```
+
+# Einleitung
+
+In Level 9 soll der höchste Punkt auf der Insel Wilantis bestimmt werden.
+Hierzu kann für einen frei gewählten Punkt \((x,y)\) der zugehörige
+Höhenwert abgefragt werden. Der relevante Suchraum ist
+
+\[
+[-5,5]^2.
+\]
+
+Gesucht ist somit näherungsweise
+
+\[
+\max_{(x,y)\in[-5,5]^2} f(x,y).
+\]
+
+Die Funktion \(f(x,y)\) ist nicht analytisch gegeben. Es liegt lediglich
+eine Blackbox vor, die zu einem gewählten Punkt den zugehörigen
+Höhenwert zurückgibt. Deshalb können keine analytischen Ableitungen
+gebildet werden.
+
+Zusätzlich zu dieser PDF-Ausarbeitung wurde eine interaktive
+Visualisierung erstellt. Sie kann über folgenden Link direkt im Browser
+geöffnet werden:
+
+\[
+\boxed{
+\text{\href{{{< var website_url >}}}
+{Interaktive Höhenkarte und Suchvisualisierung öffnen}}
+}
+\]
+
+Alternativ lautet die Adresse:
+
+[{{< var website_url >}}]({{< var website_url >}})
+
+# Automatisierte Auswertung der Blackbox
+
+Die Webanwendung wertet einen Punkt aus, indem sie die beiden Parameter
+\(x\) und \(y\) an einen öffentlich erreichbaren API-Endpunkt übermittelt.
+Dieser Vorgang wurde mit Python automatisiert.
+
+Die Blackbox selbst wurde dadurch nicht verändert. Automatisiert wurde
+lediglich die Eingabe der Koordinaten und das Speichern der vom Server
+zurückgegebenen Höhenwerte.
+
+Bereits abgefragte Punkte werden lokal zwischengespeichert. Dadurch
+werden identische Anfragen nicht mehrfach an den Server gesendet und die
+Berechnung bleibt reproduzierbar.
+
+# Wahl des Suchverfahrens
+
+Verwendet wurde die ableitungsfreie Hooke-und-Jeeves-Mustersuche. Dieses
+Verfahren eignet sich für das vorliegende Blackbox-Problem, da es keine
+Funktionsgleichung und keine Ableitungen voraussetzt.
+
+Das Verfahren besteht aus einer explorativen Koordinatensuche und einem
+zusätzlichen Musterschritt.
+
+## Explorative Suche
+
+Ausgehend von einem aktuellen Punkt werden in beiden Dimensionen
+Schritte der Länge \(s\) in positive und negative Richtung betrachtet:
+
+\[
+x^{(k+1)}
+=
+x^{(k)} \pm s e_i.
+\]
+
+Für jede Koordinatenrichtung wird der Punkt mit dem größten Höhenwert
+übernommen.
+
+## Musterschritt
+
+Wurde durch die Exploration eine Verbesserung von \(x\) nach \(y\)
+gefunden, wird die Bewegungsrichtung extrapoliert:
+
+\[
+v=x+2(y-x).
+\]
+
+In der Umgebung dieses extrapolierten Punktes wird erneut explorativ
+gesucht.
+
+## Schrittweitenanpassung
+
+Wird keine Verbesserung gefunden, wird die Schrittweite halbiert:
+
+\[
+s_{k+1}=\frac{1}{2}s_k.
+\]
+
+Das Verfahren endet, sobald die Schrittweite eine vorgegebene Toleranz
+unterschreitet.
+
+# Vorgeschriebene Startpunkte
+
+Die Aufgabe verlangt, dass das Verfahren mindestens an den Punkten
+
+\[
+(2,-4)
+\]
+
+und
+
+\[
+(0.2,-2)
+\]
+
+gestartet wird. Beide Startpunkte wurden daher getrennt untersucht.
+
+```{python}
+#| label: report-required-table
+#| tbl-cap: "Ergebnisse der vorgeschriebenen Suchläufe"
+
+table = required_summary[
+    [
+        "run",
+        "x",
+        "y",
+        "height",
+        "iterations",
+        "final_step"
+    ]
+].copy()
+
+table.columns = [
+    "Suchlauf",
+    "Endpunkt x",
+    "Endpunkt y",
+    "Höhe",
+    "Iterationen",
+    "letzte Schrittweite"
+]
+
+table
+```
+
+# Grafische Darstellung der Suchschritte
+
+![Konturkarte mit den beiden vorgeschriebenen Suchpfaden. Die
+dargestellte Höhenfläche basiert auf den tatsächlich ausgewerteten
+Gitterpunkten.](figures/contour_paths.pdf){width=92%}
+
+Die Markierungen zeigen die im Verlauf des Verfahrens übernommenen
+Punkte. Die Suchpfade machen sichtbar, wie Exploration,
+Musterschritte und Schrittweitenverkleinerungen den Suchverlauf
+beeinflussen.
+
+Eine frei drehbare dreidimensionale Darstellung und eine Animation der
+Suchschritte befinden sich in der
+[interaktiven Browser-Version]({{< var website_url >}}).
+
+# Suche nach einem globalen Maximum
+
+Hooke und Jeeves ist grundsätzlich ein lokales Suchverfahren. Ein
+einzelner Lauf kann daher abhängig vom Startpunkt in einem lokalen
+Maximum enden.
+
+Um zusätzlich nach dem höchsten Punkt der gesamten Blackbox zu suchen,
+wurde folgende Multi-Start-Strategie verwendet:
+
+1. Zunächst wurde ein grobes Raster über das gesamte Gebiet
+   \([-5,5]^2\) gelegt.
+2. Alle Rasterpunkte wurden ausgewertet.
+3. Hohe und räumlich voneinander getrennte Punkte wurden als zusätzliche
+   Startpunkte ausgewählt.
+4. Von jedem dieser Punkte wurde eine lokale Hooke-und-Jeeves-Suche
+   gestartet.
+5. Abschließend wurden alle gefundenen Endpunkte miteinander verglichen.
+
+Der beste gefundene Punkt ist:
+
+```{python}
+#| label: best-result
+#| output: asis
+
+print(
+    rf"""
+\[
+\boxed{(x,y)\approx({best["x"]:.6f},{best["y"]:.6f})}
+\]
+
+mit dem Höhenwert
+
+\[
+\boxed{{f(x,y)\approx {best["height"]:.8f}}}.
+\]
+"""
+)
+```
+
+```{python}
+#| label: report-all-results
+#| tbl-cap: "Ergebnisse aller lokalen Suchläufe"
+
+result_table = (
+    summary
+    .sort_values("height", ascending=False)
+    [
+        [
+            "run",
+            "start_x",
+            "start_y",
+            "x",
+            "y",
+            "height"
+        ]
+    ]
+    .copy()
+)
+
+result_table.columns = [
+    "Suchlauf",
+    "Start x",
+    "Start y",
+    "Endpunkt x",
+    "Endpunkt y",
+    "Höhe"
+]
+
+result_table
+```
+
+# Bewertung
+
+Die Kombination aus Gittersuche und Hooke-und-Jeeves-Suche verbindet
+globale Exploration mit einer effizienteren lokalen Verfeinerung.
+
+Die Gittersuche allein kann das Gebiet systematisch untersuchen,
+benötigt bei höherer Auflösung jedoch sehr viele Funktionsauswertungen.
+Die lokale Suche benötigt deutlich weniger Auswertungen, kann aber ein
+lokales Maximum für das globale Maximum halten.
+
+Durch mehrere räumlich getrennte Startpunkte wird dieses Risiko
+reduziert. Ein mathematischer Beweis der globalen Optimalität ist im
+Blackbox-Szenario dennoch nicht möglich, solange nicht das gesamte
+kontinuierliche Gebiet vollständig ausgewertet oder zusätzliche
+Eigenschaften der Funktion bekannt sind.
+
+# Interaktive Ergänzung
+
+Die interaktive Website enthält:
+
+- eine frei drehbare dreidimensionale Höhenlandschaft,
+- eine zoombare Konturkarte,
+- getrennt einblendbare Suchpfade,
+- Höhen- und Iterationsangaben beim Überfahren der Punkte,
+- eine Animation des Suchverlaufs,
+- die vollständigen Ergebnisse der Multi-Start-Suche.
+
+Die Seite kann ohne Installation direkt im Browser geöffnet werden:
+
+[**Interaktive Auswertung öffnen**]({{< var website_url >}})
+
+# Fazit
+
+Die zweidimensionale Höhenfunktion wurde als Blackbox behandelt und mit
+einem ableitungsfreien direkten Verfahren untersucht. Die
+Hooke-und-Jeeves-Mustersuche wurde von den beiden vorgeschriebenen
+Startpunkten und von mehreren zusätzlichen Startpunkten ausgeführt.
+
+Der höchste gefundene Höhenwert beträgt näherungsweise
+
+```{python}
+#| output: asis
+
+print(
+    rf"""
+\[
+f(x,y)\approx {best["height"]:.8f}
+\]
+
+am Punkt
+
+\[
+\boxed{(x,y)\approx({best["x"]:.6f},{best["y"]:.6f})}.
+\]
+"""
+)
+```
+
+Die interaktive Darstellung ermöglicht darüber hinaus eine detaillierte
+grafische Nachvollziehbarkeit der einzelnen Suchläufe.
