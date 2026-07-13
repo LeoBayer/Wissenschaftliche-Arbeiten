@@ -1,342 +1,628 @@
 ---
 title: "Operations Research – Level 9"
-subtitle: "Kurze Ausarbeitung"
+subtitle: "Mehrdimensionale Blackbox-Optimierung"
 author:
   - "Gruppe 42"
   - "Benit Meise"
   - "Jakob Wiemer"
   - "Leo Bayer"
-date: ""
 lang: de
-jupyter: python3
-
-format:
-  pdf:
-    pdf-engine: lualatex
-    documentclass: article
-    papersize: a4
-    fontsize: 11pt
-    geometry:
-      - margin=2.5cm
-    colorlinks: true
-    linkcolor: blue
-    urlcolor: blue
-    keep-tex: true
-
-execute:
-  echo: false
-  warning: false
-  error: true
+date: ""
 ---
 
 ```{python}
-#| label: report-imports
+#| label: setup
 #| include: false
 
 from pathlib import Path
+import json
 
 import pandas as pd
 
+from src.visualization import (
+    create_evaluation_scatter,
+    create_interactive_contour,
+    create_interactive_surface,
+    create_search_animation,
+    load_data,
+)
 
-DATA_DIR = Path("data")
+DATA_DIR = Path("data/processed")
 
-summary = pd.read_csv(DATA_DIR / "summary.csv")
-paths = pd.read_csv(DATA_DIR / "paths.csv")
+grid, paths, summary = load_data(DATA_DIR)
+
+with (DATA_DIR / "metadata.json").open(
+    "r",
+    encoding="utf-8",
+) as file:
+    metadata = json.load(file)
 
 best = summary.loc[summary["height"].idxmax()]
 
+best_x = float(best["x"])
+best_y = float(best["y"])
+best_height = float(best["height"])
+best_run = str(best["run"])
+
 required_runs = [
     "Start (2, -4)",
-    "Start (0.2, -2)"
+    "Start (0.2, -2)",
 ]
 
 required_summary = summary[
     summary["run"].isin(required_runs)
 ].copy()
+
+WEBSITE_URL = (
+    "https://leobayer.github.io/"
+    "Wissenschaftliche-Arbeiten/"
+    "Operations_Research_Level09/"
+)
 ```
 
 # Einleitung
 
 In Level 9 soll der höchste Punkt auf der Insel Wilantis bestimmt werden.
-Hierzu kann für einen frei gewählten Punkt \((x,y)\) der zugehörige
-Höhenwert abgefragt werden. Der relevante Suchraum ist
+Anders als im vorherigen Level werden nun zwei Entscheidungsvariablen
+$x$ und $y$ verwendet. Für einen gemeinsam gewählten Punkt
+$(x,y)$ gibt die Blackbox den zugehörigen Höhenwert zurück.
 
-\[
-[-5,5]^2.
-\]
+Der zulässige Suchraum ist
+
+$$
+(x,y)\in[-5,5]^2.
+$$
 
 Gesucht ist somit näherungsweise
 
-\[
+$$
 \max_{(x,y)\in[-5,5]^2} f(x,y).
-\]
+$$
 
-Die Funktion \(f(x,y)\) ist nicht analytisch gegeben. Es liegt lediglich
-eine Blackbox vor, die zu einem gewählten Punkt den zugehörigen
-Höhenwert zurückgibt. Deshalb können keine analytischen Ableitungen
-gebildet werden.
+Die Funktion $f(x,y)$ ist nicht analytisch gegeben. Es ist lediglich
+möglich, die Blackbox an einzelnen Punkten auszuwerten. Insbesondere
+stehen weder eine geschlossene Funktionsgleichung noch analytische
+Ableitungen zur Verfügung.
 
-Zusätzlich zu dieser PDF-Ausarbeitung wurde eine interaktive
-Visualisierung erstellt. Sie kann über folgenden Link direkt im Browser
-geöffnet werden:
+::: {.content-visible when-format="pdf"}
 
-\[
-\boxed{
-\text{\href{{{< var website_url >}}}
-{Interaktive Höhenkarte und Suchvisualisierung öffnen}}
-}
-\]
+Eine interaktive Ergänzung dieser Ausarbeitung ist über den folgenden
+Link erreichbar:
 
-Alternativ lautet die Adresse:
+[**Interaktive Höhenlandschaft und Suchvisualisierung öffnen**](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)
 
-[{{< var website_url >}}]({{< var website_url >}})
+Dort können die Höhenfläche frei gedreht, die Suchpfade ein- und
+ausgeblendet und einzelne Punkte mit der Maus untersucht werden.
+
+:::
 
 # Automatisierte Auswertung der Blackbox
 
-Die Webanwendung wertet einen Punkt aus, indem sie die beiden Parameter
-\(x\) und \(y\) an einen öffentlich erreichbaren API-Endpunkt übermittelt.
+Grundsätzlich könnte jeder Punkt manuell über die bereitgestellte
+Weboberfläche ausgewertet werden. Dieses Vorgehen wäre bei einer
+zweidimensionalen Untersuchung jedoch sehr zeitaufwendig und
+fehleranfällig.
+
+Über die Netzwerkanalyse des Browsers wurde festgestellt, dass die
+Webanwendung für eine Auswertung eine HTTP-Anfrage mit den Parametern
+$x$ und $y$ an einen öffentlich erreichbaren API-Endpunkt sendet.
 Dieser Vorgang wurde mit Python automatisiert.
 
-Die Blackbox selbst wurde dadurch nicht verändert. Automatisiert wurde
-lediglich die Eingabe der Koordinaten und das Speichern der vom Server
-zurückgegebenen Höhenwerte.
+Die Blackbox selbst wurde dabei nicht verändert. Automatisiert wurden
+lediglich
 
-Bereits abgefragte Punkte werden lokal zwischengespeichert. Dadurch
-werden identische Anfragen nicht mehrfach an den Server gesendet und die
-Berechnung bleibt reproduzierbar.
+- die Übergabe der beiden Koordinaten,
+- das Auslesen des zurückgegebenen Höhenwertes,
+- die Wiederholung fehlgeschlagener Anfragen und
+- die lokale Speicherung bereits ausgewerteter Punkte.
+
+Durch den lokalen Zwischenspeicher werden identische Punkte nicht
+mehrfach vom Server abgefragt. Dadurch bleibt die Untersuchung
+reproduzierbar und belastet den Server nicht unnötig.
 
 # Wahl des Suchverfahrens
 
-Verwendet wurde die ableitungsfreie Hooke-und-Jeeves-Mustersuche. Dieses
-Verfahren eignet sich für das vorliegende Blackbox-Problem, da es keine
-Funktionsgleichung und keine Ableitungen voraussetzt.
-
-Das Verfahren besteht aus einer explorativen Koordinatensuche und einem
-zusätzlichen Musterschritt.
+Für das lokale Suchverfahren wurde die
+**Hooke-und-Jeeves-Mustersuche** verwendet. Das Verfahren ist für das
+vorliegende Blackbox-Szenario geeignet, weil es weder eine analytische
+Funktionsgleichung noch Ableitungen benötigt.
 
 ## Explorative Suche
 
-Ausgehend von einem aktuellen Punkt werden in beiden Dimensionen
-Schritte der Länge \(s\) in positive und negative Richtung betrachtet:
+Ausgehend von einem aktuellen Basispunkt wird entlang jeder
+Koordinatenrichtung geprüft, ob ein Schritt der Länge $s$ den
+Zielfunktionswert verbessert. In zwei Dimensionen werden somit
+Kandidaten der Form
 
-\[
-x^{(k+1)}
-=
-x^{(k)} \pm s e_i.
-\]
+$$
+\mathbf{x}^{(k)} + s\mathbf{e}_1
+\qquad\text{und}\qquad
+\mathbf{x}^{(k)} - s\mathbf{e}_1
+$$
 
-Für jede Koordinatenrichtung wird der Punkt mit dem größten Höhenwert
-übernommen.
+sowie
+
+$$
+\mathbf{x}^{(k)} + s\mathbf{e}_2
+\qquad\text{und}\qquad
+\mathbf{x}^{(k)} - s\mathbf{e}_2
+$$
+
+untersucht.
+
+Da ein Maximum gesucht wird, wird ein Kandidat genau dann übernommen,
+wenn sein Höhenwert größer als der bisherige Vergleichswert ist.
 
 ## Musterschritt
 
-Wurde durch die Exploration eine Verbesserung von \(x\) nach \(y\)
-gefunden, wird die Bewegungsrichtung extrapoliert:
+Wurde durch die explorative Suche eine Verbesserung vom bisherigen
+Basispunkt $\mathbf{x}$ zum neuen Punkt $\mathbf{y}$ gefunden, wird
+die beobachtete Bewegungsrichtung extrapoliert. Der Musterschritt lautet
 
-\[
-v=x+2(y-x).
-\]
+$$
+\mathbf{v}
+=
+\mathbf{x}+2(\mathbf{y}-\mathbf{x}).
+$$
 
-In der Umgebung dieses extrapolierten Punktes wird erneut explorativ
-gesucht.
+Anschließend wird auch in der Umgebung des extrapolierten Punktes wieder
+explorativ gesucht. Dadurch kann das Verfahren eine günstige
+Bewegungsrichtung über mehrere Iterationen hinweg nutzen.
 
 ## Schrittweitenanpassung
 
-Wird keine Verbesserung gefunden, wird die Schrittweite halbiert:
+Kann in keiner Koordinatenrichtung eine Verbesserung gefunden werden,
+wird die Schrittweite halbiert:
 
-\[
+$$
 s_{k+1}=\frac{1}{2}s_k.
-\]
+$$
 
-Das Verfahren endet, sobald die Schrittweite eine vorgegebene Toleranz
-unterschreitet.
+Die Suche endet, sobald die Schrittweite unter die vorgegebene Toleranz
+fällt oder die maximale Anzahl an Iterationen erreicht wird.
+
+# Grobe Erkundung des Suchraums
+
+Die lokale Mustersuche allein kann abhängig vom Startpunkt in
+unterschiedlichen lokalen Maxima enden. Deshalb wurde zunächst ein
+gleichmäßiges Raster über dem vollständigen Gebiet $[-5,5]^2$
+ausgewertet.
+
+Das verwendete Raster enthält
+
+```{python}
+#| output: asis
+#| echo: false
+
+print(
+    f"**{metadata['grid_points']} ausgewertete Gitterpunkte** "
+    f"bei einer Gittergröße von "
+    f"**{metadata['grid_size']} × {metadata['grid_size']}**."
+)
+```
+
+Die Gittersuche erfüllt zwei Funktionen:
+
+1. Sie liefert eine grobe Darstellung der gesamten Höhenlandschaft.
+2. Sie ermöglicht die Auswahl hoher und räumlich voneinander
+   getrennter Punkte für zusätzliche lokale Suchläufe.
+
+Die dargestellte Fläche zwischen den Gitterpunkten ist eine grafische
+Interpolation der tatsächlich ausgewerteten Werte. Sie stellt daher
+keine analytisch bekannte Funktionsoberfläche dar.
+
+# Dreidimensionale Höhenlandschaft
+
+::: {.content-visible when-format="html"}
+
+Die folgende Oberfläche kann mit der Maus gedreht, verschoben und
+vergrößert werden. Über die Legende lassen sich die Suchpfade separat
+ein- und ausblenden. Beim Überfahren eines Punktes werden seine
+Koordinaten, der Höhenwert und Informationen zum Suchschritt angezeigt.
+
+```{python}
+#| label: interactive-surface
+#| echo: false
+#| fig-height: 8
+
+figure = create_interactive_surface(
+    grid=grid,
+    paths=paths,
+    summary=summary,
+)
+
+figure.show()
+```
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
+![Dreidimensionales Höhenprofil mit den akzeptierten Suchschritten der
+beiden vorgeschriebenen Startpunkte. Die Oberfläche basiert auf einem
+gleichmäßigen Raster der Blackbox-Auswertungen.](figures/surface_paths.pdf){width=95%}
+
+Eine frei drehbare Version dieser Höhenlandschaft befindet sich in der
+[interaktiven Browser-Version](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/).
+
+:::
 
 # Vorgeschriebene Startpunkte
 
-Die Aufgabe verlangt, dass das Verfahren mindestens an den Punkten
+Die Aufgabe verlangt, das Suchverfahren mindestens an den Punkten
 
-\[
+$$
 (2,-4)
-\]
+$$
 
 und
 
-\[
+$$
 (0.2,-2)
-\]
+$$
 
-gestartet wird. Beide Startpunkte wurden daher getrennt untersucht.
+zu starten. Beide Punkte wurden daher unabhängig voneinander als
+Basispunkte der Hooke-und-Jeeves-Suche verwendet.
 
 ```{python}
-#| label: report-required-table
-#| tbl-cap: "Ergebnisse der vorgeschriebenen Suchläufe"
+#| label: required-results
+#| tbl-cap: "Ergebnisse der beiden vorgeschriebenen Suchläufe"
+#| echo: false
 
-table = required_summary[
+required_table = required_summary[
     [
         "run",
+        "start_x",
+        "start_y",
         "x",
         "y",
         "height",
         "iterations",
-        "final_step"
+        "evaluations",
+        "final_step",
     ]
 ].copy()
 
-table.columns = [
-    "Suchlauf",
-    "Endpunkt x",
-    "Endpunkt y",
-    "Höhe",
-    "Iterationen",
-    "letzte Schrittweite"
-]
-
-table
-```
-
-# Grafische Darstellung der Suchschritte
-
-![Konturkarte mit den beiden vorgeschriebenen Suchpfaden. Die
-dargestellte Höhenfläche basiert auf den tatsächlich ausgewerteten
-Gitterpunkten.](figures/contour_paths.pdf){width=92%}
-
-Die Markierungen zeigen die im Verlauf des Verfahrens übernommenen
-Punkte. Die Suchpfade machen sichtbar, wie Exploration,
-Musterschritte und Schrittweitenverkleinerungen den Suchverlauf
-beeinflussen.
-
-Eine frei drehbare dreidimensionale Darstellung und eine Animation der
-Suchschritte befinden sich in der
-[interaktiven Browser-Version]({{< var website_url >}}).
-
-# Suche nach einem globalen Maximum
-
-Hooke und Jeeves ist grundsätzlich ein lokales Suchverfahren. Ein
-einzelner Lauf kann daher abhängig vom Startpunkt in einem lokalen
-Maximum enden.
-
-Um zusätzlich nach dem höchsten Punkt der gesamten Blackbox zu suchen,
-wurde folgende Multi-Start-Strategie verwendet:
-
-1. Zunächst wurde ein grobes Raster über das gesamte Gebiet
-   \([-5,5]^2\) gelegt.
-2. Alle Rasterpunkte wurden ausgewertet.
-3. Hohe und räumlich voneinander getrennte Punkte wurden als zusätzliche
-   Startpunkte ausgewählt.
-4. Von jedem dieser Punkte wurde eine lokale Hooke-und-Jeeves-Suche
-   gestartet.
-5. Abschließend wurden alle gefundenen Endpunkte miteinander verglichen.
-
-Der beste gefundene Punkt ist:
-
-```{python}
-#| label: best-result
-#| output: asis
-
-print(
-    rf"""
-\[
-\boxed{(x,y)\approx({best["x"]:.6f},{best["y"]:.6f})}
-\]
-
-mit dem Höhenwert
-
-\[
-\boxed{{f(x,y)\approx {best["height"]:.8f}}}.
-\]
-"""
-)
-```
-
-```{python}
-#| label: report-all-results
-#| tbl-cap: "Ergebnisse aller lokalen Suchläufe"
-
-result_table = (
-    summary
-    .sort_values("height", ascending=False)
-    [
-        [
-            "run",
-            "start_x",
-            "start_y",
-            "x",
-            "y",
-            "height"
-        ]
-    ]
-    .copy()
-)
-
-result_table.columns = [
+required_table.columns = [
     "Suchlauf",
     "Start x",
     "Start y",
     "Endpunkt x",
     "Endpunkt y",
-    "Höhe"
+    "Höhe",
+    "Iterationen",
+    "Protokolleinträge",
+    "letzte Schrittweite",
 ]
 
-result_table
+required_table.style.format(
+    {
+        "Start x": "{:.3f}",
+        "Start y": "{:.3f}",
+        "Endpunkt x": "{:.6f}",
+        "Endpunkt y": "{:.6f}",
+        "Höhe": "{:.8f}",
+        "letzte Schrittweite": "{:.6f}",
+    }
+)
 ```
 
-# Bewertung
+Die Ergebnisse zeigen, ob beide Startpunkte in denselben Höhenbereich
+führen oder ob die lokale Suche unterschiedliche Maxima erreicht. Damit
+wird zugleich sichtbar, weshalb bei einem Blackbox-Problem ein einzelner
+lokaler Suchlauf nicht genügt, um globale Optimalität überzeugend zu
+begründen.
 
-Die Kombination aus Gittersuche und Hooke-und-Jeeves-Suche verbindet
-globale Exploration mit einer effizienteren lokalen Verfeinerung.
+# Konturkarte und Suchpfade
 
-Die Gittersuche allein kann das Gebiet systematisch untersuchen,
-benötigt bei höherer Auflösung jedoch sehr viele Funktionsauswertungen.
-Die lokale Suche benötigt deutlich weniger Auswertungen, kann aber ein
-lokales Maximum für das globale Maximum halten.
+::: {.content-visible when-format="html"}
 
-Durch mehrere räumlich getrennte Startpunkte wird dieses Risiko
-reduziert. Ein mathematischer Beweis der globalen Optimalität ist im
-Blackbox-Szenario dennoch nicht möglich, solange nicht das gesamte
-kontinuierliche Gebiet vollständig ausgewertet oder zusätzliche
-Eigenschaften der Funktion bekannt sind.
+Die interaktive Konturkarte eignet sich besonders gut zur Untersuchung
+der räumlichen Suchbewegungen. Die beiden vorgeschriebenen Läufe können
+über die Legende getrennt ein- und ausgeblendet werden.
 
-# Interaktive Ergänzung
+```{python}
+#| label: interactive-contour
+#| echo: false
+#| fig-height: 8
 
-Die interaktive Website enthält:
+figure = create_interactive_contour(
+    grid=grid,
+    paths=paths,
+    summary=summary,
+)
 
-- eine frei drehbare dreidimensionale Höhenlandschaft,
-- eine zoombare Konturkarte,
-- getrennt einblendbare Suchpfade,
-- Höhen- und Iterationsangaben beim Überfahren der Punkte,
-- eine Animation des Suchverlaufs,
-- die vollständigen Ergebnisse der Multi-Start-Suche.
+figure.show()
+```
 
-Die Seite kann ohne Installation direkt im Browser geöffnet werden:
+:::
 
-[**Interaktive Auswertung öffnen**]({{< var website_url >}})
+::: {.content-visible when-format="pdf"}
 
-# Fazit
+![Konturkarte mit den akzeptierten Suchschritten der beiden
+vorgeschriebenen Startpunkte. Quadrate markieren Startpunkte, Sterne
+markieren gefundene Endpunkte.](figures/contour_paths.pdf){width=95%}
 
-Die zweidimensionale Höhenfunktion wurde als Blackbox behandelt und mit
-einem ableitungsfreien direkten Verfahren untersucht. Die
-Hooke-und-Jeeves-Mustersuche wurde von den beiden vorgeschriebenen
-Startpunkten und von mehreren zusätzlichen Startpunkten ausgeführt.
+:::
 
-Der höchste gefundene Höhenwert beträgt näherungsweise
+# Alle untersuchten Kandidaten
+
+Bei einer reinen Darstellung des akzeptierten Pfades bleiben erfolglose
+Explorationsschritte unsichtbar. Diese Punkte sind für das Verständnis
+des Verfahrens jedoch relevant, da sie erklären, weshalb eine Richtung
+verworfen oder die Schrittweite verkleinert wurde.
+
+::: {.content-visible when-format="html"}
+
+Die folgende Darstellung unterscheidet deshalb zwischen akzeptierten und
+verworfenen Kandidaten. Über die Symbole werden zusätzlich die beiden
+Suchläufe getrennt.
+
+```{python}
+#| label: evaluation-scatter
+#| echo: false
+#| fig-height: 7
+
+figure = create_evaluation_scatter(paths)
+
+figure.show()
+```
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
+In der PDF wird der Suchverlauf auf die akzeptierten Punkte beschränkt,
+um die Abbildung lesbar zu halten. Die vollständige Darstellung aller
+akzeptierten und verworfenen Kandidaten befindet sich in der
+[interaktiven Ergänzung](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/).
+
+:::
+
+# Animation des Suchverlaufs
+
+::: {.content-visible when-format="html"}
+
+Mit dem Schieberegler kann nachvollzogen werden, wie sich die
+akzeptierten Punkte im Verlauf der beiden vorgeschriebenen Suchen
+entwickeln.
+
+```{python}
+#| label: search-animation
+#| echo: false
+#| fig-height: 7
+
+figure = create_search_animation(paths)
+
+figure.show()
+```
+
+:::
+
+::: {.content-visible when-format="pdf"}
+
+Die interaktive HTML-Version enthält zusätzlich eine Animation der
+akzeptierten Suchschritte. Über einen Iterationsregler kann dort der
+zeitliche Verlauf der beiden Suchen nachvollzogen werden.
+
+:::
+
+# Multi-Start-Strategie
+
+Hooke und Jeeves ist ein lokales Suchverfahren. Um das Risiko zu
+verringern, lediglich ein lokales Maximum zu finden, wurde das Verfahren
+mit einer Multi-Start-Strategie kombiniert.
+
+Dazu wurde folgendermaßen vorgegangen:
+
+1. Das gesamte Gebiet wurde durch das grobe Raster untersucht.
+2. Die Gitterpunkte wurden nach ihrem Höhenwert sortiert.
+3. Hohe Punkte wurden als zusätzliche Startpunkte ausgewählt.
+4. Zwischen ausgewählten Startpunkten wurde ein Mindestabstand
+   verlangt, damit nicht mehrere nahezu identische Starts auf demselben
+   Gipfel verwendet werden.
+5. Von jedem dieser Punkte wurde eine weitere lokale
+   Hooke-und-Jeeves-Suche gestartet.
+6. Abschließend wurden alle gefundenen Endpunkte miteinander
+   verglichen.
+
+Insgesamt wurden
 
 ```{python}
 #| output: asis
+#| echo: false
 
 print(
-    rf"""
-\[
-f(x,y)\approx {best["height"]:.8f}
-\]
+    f"**{metadata['number_of_runs']} lokale Suchläufe** "
+    f"mit insgesamt "
+    f"**{metadata['number_of_history_entries']} "
+    f"protokollierten Suchereignissen** durchgeführt."
+)
+```
 
-am Punkt
+## Ergebnisse aller Suchläufe
 
-\[
-\boxed{(x,y)\approx({best["x"]:.6f},{best["y"]:.6f})}.
-\]
+```{python}
+#| label: all-results
+#| tbl-cap: "Ergebnisse der vorgeschriebenen und zusätzlichen Suchläufe"
+#| echo: false
+
+all_results = summary[
+    [
+        "run",
+        "start_x",
+        "start_y",
+        "x",
+        "y",
+        "height",
+        "iterations",
+        "evaluations",
+    ]
+].copy()
+
+all_results.columns = [
+    "Suchlauf",
+    "Start x",
+    "Start y",
+    "Endpunkt x",
+    "Endpunkt y",
+    "Höhe",
+    "Iterationen",
+    "Protokolleinträge",
+]
+
+all_results.style.format(
+    {
+        "Start x": "{:.3f}",
+        "Start y": "{:.3f}",
+        "Endpunkt x": "{:.6f}",
+        "Endpunkt y": "{:.6f}",
+        "Höhe": "{:.8f}",
+    }
+)
+```
+
+::: {.content-visible when-format="pdf"}
+
+![Vergleich der von den einzelnen Suchläufen erreichten
+Höhenwerte.](figures/result_comparison.pdf){width=92%}
+
+:::
+
+# Bester gefundener Punkt
+
+Der höchste im Rahmen der kombinierten Raster- und Multi-Start-Suche
+gefundene Punkt lautet näherungsweise
+
+```{python}
+#| label: best-point
+#| output: asis
+#| echo: false
+
+print(
+    f"""
+$$
+\\boxed{{(x,y)\\approx({best_x:.6f},{best_y:.6f})}}
+$$
+
+mit dem Höhenwert
+
+$$
+\\boxed{{f(x,y)\\approx {best_height:.8f}}}.
+$$
 """
 )
 ```
 
-Die interaktive Darstellung ermöglicht darüber hinaus eine detaillierte
-grafische Nachvollziehbarkeit der einzelnen Suchläufe.
+Dieser Punkt wurde im Suchlauf
+
+```{python}
+#| output: asis
+#| echo: false
+
+print(f"**{best_run}**")
+```
+
+gefunden.
+
+# Bewertung des Vorgehens
+
+Die Kombination aus Gittersuche und lokaler Mustersuche verbindet zwei
+unterschiedliche Vorteile:
+
+- Die Gittersuche untersucht den vollständigen Suchraum systematisch und
+  kann räumlich getrennte hohe Regionen erkennen.
+- Die Hooke-und-Jeeves-Suche verfeinert vielversprechende Punkte mit
+  deutlich kleineren Schrittweiten, ohne die gesamte Fläche entsprechend
+  fein auswerten zu müssen.
+
+Eine ausschließlich sehr feine Gittersuche wäre in zwei Dimensionen zwar
+grundsätzlich möglich, die Anzahl notwendiger Auswertungen wächst jedoch
+quadratisch mit der Auflösung. Bei $N$ Punkten je Dimension wären
+
+$$
+N^2
+$$
+
+Blackbox-Auswertungen erforderlich. Die lokale Suche reduziert diesen
+Aufwand, kann allein aber abhängig vom Startpunkt in einem lokalen
+Maximum enden.
+
+Die Multi-Start-Strategie reduziert dieses Risiko, liefert jedoch keinen
+formalen mathematischen Beweis globaler Optimalität. In einem
+Blackbox-Szenario wäre ein solcher Beweis nur mit zusätzlichen bekannten
+Eigenschaften der Funktion oder einer vollständigen Abdeckung des
+kontinuierlichen Suchraums möglich.
+
+# Idee zur Suche nach mehreren höchsten Punkten
+
+Sollten mehrere globale oder nahezu globale Maxima gesucht werden, kann
+das Vorgehen erweitert werden:
+
+1. Das Raster wird dichter gewählt oder adaptiv in hohen Regionen
+   verfeinert.
+2. Lokale Maxima werden nach ihrem räumlichen Abstand gruppiert.
+3. Für jede räumlich getrennte Gruppe wird der beste Endpunkt behalten.
+4. Maxima mit Höhenwerten innerhalb einer festgelegten numerischen
+   Toleranz werden als gleichwertige Kandidaten behandelt.
+5. Zusätzliche Startpunkte werden insbesondere in bisher schlecht
+   untersuchten Bereichen gesetzt.
+
+Eine weitere Möglichkeit wäre die wiederholte zufällige oder
+quasi-zufällige Wahl von Startpunkten. Dadurch ließe sich die Abdeckung
+des Suchraums erhöhen, ohne ein extrem dichtes vollständiges Raster zu
+verwenden.
+
+# Reproduzierbarkeit
+
+Alle tatsächlich abgefragten Blackbox-Werte wurden lokal gespeichert.
+Die fertige HTML-Seite sendet beim Öffnen keine neuen Anfragen an die
+Blackbox. Somit bleiben die Grafiken und Tabellen auch dann verfügbar,
+wenn der ursprüngliche Server vorübergehend nicht erreichbar ist.
+
+Die Ausarbeitung, die erzeugten Daten und der Python-Code verwenden
+dieselbe Datengrundlage. Dadurch stimmen PDF- und HTML-Version
+inhaltlich überein.
+
+# Fazit
+
+Die Höhenfunktion wurde als zweidimensionales
+Blackbox-Optimierungsproblem untersucht. Als lokales Suchverfahren wurde
+die ableitungsfreie Hooke-und-Jeeves-Mustersuche eingesetzt. Die beiden
+vorgeschriebenen Startpunkte wurden getrennt untersucht und durch
+weitere Multi-Start-Läufe ergänzt.
+
+Der höchste gefundene Höhenwert beträgt näherungsweise
+
+```{python}
+#| label: final-result
+#| output: asis
+#| echo: false
+
+print(
+    f"""
+$$
+f(x,y)\\approx {best_height:.8f}
+$$
+
+am Punkt
+
+$$
+\\boxed{{(x,y)\\approx({best_x:.6f},{best_y:.6f})}}.
+$$
+"""
+)
+```
+
+Durch die Kombination aus grober globaler Erkundung und lokaler
+Verfeinerung konnte ein hoher Punkt mit deutlich weniger
+Funktionsauswertungen bestimmt werden, als für eine entsprechend feine
+vollständige Gittersuche erforderlich gewesen wäre.
+
+::: {.content-visible when-format="pdf"}
+
+Die vollständige interaktive Darstellung ist erreichbar unter:
+
+[**https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/**](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)
+
+:::
