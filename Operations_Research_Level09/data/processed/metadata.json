@@ -1,0 +1,14 @@
+{
+  "grid_size": 31,
+  "grid_points": 961,
+  "number_of_runs": 8,
+  "number_of_history_entries": 653,
+  "cached_api_points": 1888,
+  "tolerance": 0.001,
+  "best_point": {
+    "x": -2.2044270833333335,
+    "y": 2.204427083333333,
+    "height": 1.11257,
+    "run": "Multi-Start 1"
+  }
+}
