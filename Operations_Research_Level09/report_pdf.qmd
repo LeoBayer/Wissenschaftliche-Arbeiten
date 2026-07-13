@@ -12,18 +12,88 @@ format:
     documentclass: article
     papersize: a4
     fontsize: 10pt
+
     geometry:
-      - top=1.6cm
-      - bottom=1.6cm
-      - left=1.8cm
-      - right=1.8cm
-    number-sections: false
+      - top=1.45cm
+      - bottom=1.45cm
+      - left=1.55cm
+      - right=1.55cm
+
+    number-sections: true
     colorlinks: true
     linkcolor: blue
     urlcolor: blue
+
     fig-align: center
     fig-pos: H
     keep-tex: true
+
+    include-in-header:
+      text: |
+        \usepackage{float}
+        \usepackage{booktabs}
+        \usepackage{listings}
+        \usepackage{xcolor}
+        \usepackage{array}
+        \usepackage{caption}
+        \usepackage{tikz}
+
+        \usetikzlibrary{
+          arrows.meta,
+          positioning,
+          shapes.geometric
+        }
+
+        \definecolor{flowblue}{RGB}{49,95,155}
+        \definecolor{flowbluebg}{RGB}{237,244,252}
+        \definecolor{flowgreen}{RGB}{56,131,74}
+        \definecolor{flowgreenbg}{RGB}{238,247,237}
+        \definecolor{floworange}{RGB}{223,148,28}
+        \definecolor{floworangebg}{RGB}{255,246,232}
+        \definecolor{flowpurple}{RGB}{103,64,149}
+        \definecolor{flowpurplebg}{RGB}{243,238,249}
+
+        \definecolor{codebg}{RGB}{248,249,251}
+        \definecolor{codeborder}{RGB}{150,165,185}
+        \definecolor{codegreen}{RGB}{20,125,45}
+        \definecolor{codeblue}{RGB}{35,65,180}
+        \definecolor{codered}{RGB}{185,35,35}
+        \definecolor{codepurple}{RGB}{120,45,155}
+        \definecolor{codegray}{RGB}{105,110,120}
+
+        \lstdefinestyle{orpseudocode}{
+          language=Python,
+          backgroundcolor=\color{codebg},
+          frame=single,
+          rulecolor=\color{codeborder},
+          basicstyle=\ttfamily\fontsize{6.4}{7.1}\selectfont,
+          keywordstyle=\color{codeblue}\bfseries,
+          commentstyle=\color{codegreen},
+          stringstyle=\color{codered},
+          identifierstyle=\color{black},
+          numberstyle=\tiny\color{codegray},
+          numbers=left,
+          numbersep=4pt,
+          showstringspaces=false,
+          breaklines=true,
+          breakatwhitespace=true,
+          keepspaces=true,
+          columns=fullflexible,
+          tabsize=2,
+          xleftmargin=1.05em,
+          framexleftmargin=0.7em,
+          aboveskip=0pt,
+          belowskip=0pt,
+          emph={
+            starts,
+            ergebnisse,
+            kandidat,
+            richtung,
+            muster,
+            bester
+          },
+          emphstyle=\color{codepurple}
+        }
 
 execute:
   echo: false
@@ -43,21 +113,29 @@ import json
 
 import pandas as pd
 
+
 DATA_DIR = Path("data/processed")
 
-summary = pd.read_csv(DATA_DIR / "summary.csv")
+summary = pd.read_csv(
+    DATA_DIR / "summary.csv"
+)
 
-with (DATA_DIR / "metadata.json").open(
+with (
+    DATA_DIR / "metadata.json"
+).open(
     "r",
     encoding="utf-8",
 ) as file:
     metadata = json.load(file)
 
-best = summary.loc[summary["height"].idxmax()]
+best = summary.loc[
+    summary["height"].idxmax()
+]
 
 best_x = float(best["x"])
 best_y = float(best["y"])
 best_height = float(best["height"])
+best_run = str(best["run"])
 
 required_runs = [
     "Start (2, -4)",
@@ -72,46 +150,253 @@ required = summary[
 # Problemstellung
 
 Gesucht ist der höchste Punkt einer unbekannten Höhenfunktion
-
-$$
-f(x,y)
-$$
-
-auf dem Gebiet
+$f(x,y)$ auf dem Gebiet
 
 $$
 (x,y)\in[-5,5]^2.
 $$
 
-Die Funktion liegt ausschließlich als Blackbox vor: Für ein gewähltes
-Koordinatenpaar kann der zugehörige Höhenwert abgefragt werden, eine
-analytische Funktionsgleichung oder Ableitungen sind jedoch nicht
-bekannt.
+Die Funktion liegt ausschließlich als Blackbox vor. Für ein gewähltes
+Koordinatenpaar kann der zugehörige Höhenwert abgefragt werden; eine
+analytische Funktionsgleichung oder Ableitungsinformationen sind nicht
+bekannt. Daher ist ein ableitungsfreies numerisches Verfahren
+erforderlich.
 
-Die Auswertung wurde über den von der Weboberfläche verwendeten
-API-Endpunkt automatisiert. Bereits abgefragte Punkte wurden lokal
-gespeichert, sodass identische Serveranfragen vermieden werden.
+Die Webanwendung übermittelt die Parameter $x$ und $y$ an einen
+öffentlich erreichbaren API-Endpunkt. Dieser Vorgang wurde mit Python
+automatisiert. Bereits abgefragte Punkte wurden lokal gespeichert, sodass
+identische Anfragen nicht mehrfach an den Server gesendet wurden. Die
+Blackbox selbst wurde dabei nicht verändert; automatisiert wurde
+lediglich ihre punktweise Auswertung.
 
 Eine interaktive Ergänzung mit frei drehbarer Höhenlandschaft,
-Konturkarte und Animation ist erreichbar unter:
+Konturkarte und Animation ist unter folgendem Link erreichbar:
 
-[**Interaktive Analyse im Browser öffnen**](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)
+[**Interaktive 3D-Landschaft und Suchpfade öffnen**](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)
 
-# Suchverfahren
+# Methodik
 
-Als lokales Verfahren wurde die ableitungsfreie
-**Hooke-und-Jeeves-Mustersuche** verwendet.
+Die Suche kombiniert eine grobe globale Exploration des Suchraums mit
+einer lokalen Verfeinerung. Zunächst wird ein gleichmäßiges Raster
+ausgewertet, um hohe Regionen der unbekannten Funktion zu identifizieren.
+Anschließend wird die Hooke-und-Jeeves-Mustersuche von den
+vorgeschriebenen und weiteren räumlich getrennten Startpunkten
+ausgeführt.
 
-Bei der Exploration werden ausgehend vom aktuellen Basispunkt
-$\mathbf{x}^{(k)}$ Kandidaten entlang der Koordinatenrichtungen geprüft:
+```{python}
+#| output: asis
+#| echo: false
+
+print(
+    f"Das verwendete Raster umfasst "
+    f"**{metadata['grid_size']} × {metadata['grid_size']} Punkte** "
+    f"und damit insgesamt "
+    f"**{metadata['grid_points']} Rasterauswertungen**."
+)
+```
+
+```{=latex}
+\noindent
+\begin{minipage}[t]{0.455\textwidth}
+\vspace{0pt}
+\centering
+
+{\large\bfseries\color{flowblue}
+Ablauf der kombinierten Blackbox-Suche
+\par}
+
+\vspace{0.7em}
+
+\begin{tikzpicture}[
+  node distance=5.5mm,
+  every node/.style={
+    font=\sffamily\footnotesize,
+    align=center
+  },
+  process/.style={
+    rectangle,
+    rounded corners=2.5mm,
+    minimum width=0.91\linewidth,
+    minimum height=13mm,
+    text width=0.80\linewidth,
+    draw,
+    line width=0.8pt,
+    inner sep=2.5mm
+  },
+  arrow/.style={
+    -{Stealth[length=2.2mm]},
+    line width=0.8pt,
+    draw=gray!75
+  }
+]
+
+\node[
+  process,
+  draw=flowblue,
+  fill=flowbluebg
+] (api) {
+  \textbf{Blackbox über API auswerten}\\
+  Ergebnisse lokal speichern
+};
+
+\node[
+  process,
+  draw=flowgreen,
+  fill=flowgreenbg,
+  below=of api
+] (grid) {
+  \textbf{Grobes Raster erzeugen}\\
+  Suchraum $[-5,5]^2$ auswerten
+};
+
+\node[
+  process,
+  draw=floworange,
+  fill=floworangebg,
+  below=of grid
+] (starts) {
+  \textbf{Startpunkte auswählen}\\
+  Hohe und räumlich getrennte Punkte\\
+  sowie $(2,-4)$ und $(0.2,-2)$
+};
+
+\node[
+  process,
+  draw=flowpurple,
+  fill=flowpurplebg,
+  below=of starts
+] (hooke) {
+  \textbf{Hooke-und-Jeeves-Suche}\\
+  Von jedem Startpunkt lokal suchen
+};
+
+\node[
+  process,
+  draw=flowblue,
+  fill=flowbluebg,
+  below=of hooke
+] (compare) {
+  \textbf{Endpunkte vergleichen}\\
+  Höhenwerte aller Suchläufe auswerten
+};
+
+\node[
+  process,
+  draw=flowgreen,
+  fill=flowgreenbg,
+  below=of compare
+] (best) {
+  \textbf{Besten Punkt ausgeben}\\
+  Höchsten gefundenen Wert bestimmen
+};
+
+\draw[arrow] (api) -- (grid);
+\draw[arrow] (grid) -- (starts);
+\draw[arrow] (starts) -- (hooke);
+\draw[arrow] (hooke) -- (compare);
+\draw[arrow] (compare) -- (best);
+
+\end{tikzpicture}
+
+\vspace{0.55em}
+
+\begin{minipage}{0.94\linewidth}
+\footnotesize
+\textbf{Abbildung 1:}
+Globale Erkundung des Suchraums und anschließende lokale Verfeinerung
+vielversprechender Regionen.
+\end{minipage}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.515\textwidth}
+\vspace{0pt}
+\centering
+
+{\large\bfseries\color{flowblue}
+Pseudocode des Verfahrens
+\par}
+
+\vspace{0.7em}
+
+\begin{lstlisting}[style=orpseudocode]
+# 1. Suchraum grob erkunden
+grid = raster(-5, 5, N=31)
+werte = {}
+
+for punkt in grid:
+    werte[punkt] = hoehe(punkt)
+
+# 2. Startpunkte festlegen
+starts = hohe_getrennte_punkte(
+    werte
+)
+starts += [
+    (2, -4),
+    (0.2, -2)
+]
+
+# 3. Lokale Suchen
+ergebnisse = []
+
+for start in starts:
+    x = start
+    s = anfangsschritt
+
+    while s >= toleranz:
+        kandidat = exploration(x, s)
+
+        if hoehe(kandidat) > hoehe(x):
+            richtung = kandidat - x
+            x = kandidat
+
+            muster = x + richtung
+
+            if hoehe(muster) > hoehe(x):
+                x = muster
+        else:
+            s = s / 2
+
+    ergebnisse.append(
+        (x, hoehe(x))
+    )
+
+# 4. Bestes Ergebnis
+bester = max(
+    ergebnisse,
+    key=lambda wert: wert[1]
+)
+
+gib_aus(bester)
+\end{lstlisting}
+
+\vspace{0.55em}
+
+\begin{minipage}{0.94\linewidth}
+\footnotesize
+\textbf{Algorithmus 1:}
+Kombination aus globaler Rasterung und lokaler
+Hooke-und-Jeeves-Mustersuche.
+\end{minipage}
+
+\end{minipage}
+
+\vspace{0.8em}
+```
+
+## Hooke-und-Jeeves-Mustersuche
+
+Die Hooke-und-Jeeves-Mustersuche ist ein ableitungsfreies lokales
+Verfahren. Ausgehend vom aktuellen Basispunkt $\mathbf{x}^{(k)}$ werden
+Kandidaten entlang der Koordinatenrichtungen untersucht:
 
 $$
 \mathbf{x}^{(k)}\pm s\mathbf{e}_i,
 \qquad i\in\{1,2\}.
 $$
 
-Ein Kandidat wird übernommen, wenn sein Höhenwert größer ist als der
-bisherige Wert. Nach einer erfolgreichen Bewegung von $\mathbf{x}$ nach
+Ein Kandidat wird übernommen, wenn sein Höhenwert größer als der bisher
+beste Wert ist. Nach einer erfolgreichen Bewegung von $\mathbf{x}$ nach
 $\mathbf{y}$ wird zusätzlich der Musterschritt
 
 $$
@@ -127,31 +412,22 @@ $$
 s_{k+1}=\frac{1}{2}s_k.
 $$
 
-Die Aufgabe verlangt Starts bei $(2,-4)$ und $(0.2,-2)$. Da Hooke und
-Jeeves ein lokales Verfahren ist, wurde es zusätzlich mit einer groben
-Gittersuche und einer Multi-Start-Strategie kombiniert.
+Die Suche endet, sobald die Schrittweite die festgelegte Toleranz
+unterschreitet oder die maximale Iterationszahl erreicht wird.
 
-# Vorgehen
-
-Das Gesamtkonzept bestand aus vier Schritten:
-
-1. Auswertung eines
-   `r metadata["grid_size"]` $\times$
-   `r metadata["grid_size"]`-Rasters auf $[-5,5]^2$;
-2. lokale Suche von den beiden vorgeschriebenen Startpunkten;
-3. Auswahl hoher und räumlich getrennter Gitterpunkte als zusätzliche
-   Starts;
-4. Vergleich aller gefundenen Endpunkte.
-
-Die Gittersuche dient damit der globalen Erkundung, während Hooke und
-Jeeves vielversprechende Regionen mit kleiner werdenden Schrittweiten
-verfeinert.
+```{=latex}
+\clearpage
+```
 
 # Ergebnisse
+
+Die Aufgabe verlangt mindestens Suchläufe von den Startpunkten
+$(2,-4)$ und $(0.2,-2)$. Beide wurden getrennt untersucht.
 
 ```{python}
 #| label: required-table
 #| output: asis
+#| echo: false
 
 display = required[
     [
@@ -185,11 +461,26 @@ print(
 )
 ```
 
-Der höchste über alle
-`r metadata["number_of_runs"]` Suchläufe gefundene Punkt ist
+Ergänzend wurden hohe und räumlich getrennte Rasterpunkte als weitere
+Startpunkte verwendet. Insgesamt wurden
 
 ```{python}
 #| output: asis
+#| echo: false
+
+print(
+    f"**{metadata['number_of_runs']} lokale Suchläufe** "
+    f"mit **{metadata['number_of_history_entries']} protokollierten "
+    f"Suchereignissen** durchgeführt."
+)
+```
+
+Der höchste gefundene Punkt lautet
+
+```{python}
+#| label: best-result
+#| output: asis
+#| echo: false
 
 print(
     f"""
@@ -197,7 +488,7 @@ $$
 \\boxed{{(x,y)\\approx({best_x:.6f},{best_y:.6f})}}
 $$
 
-mit
+mit dem Höhenwert
 
 $$
 \\boxed{{f(x,y)\\approx {best_height:.8f}}}.
@@ -206,26 +497,95 @@ $$
 )
 ```
 
-![Konturkarte der grob ausgewerteten Höhenlandschaft mit den
-akzeptierten Suchschritten der beiden vorgeschriebenen Starts. Quadrate
-kennzeichnen Startpunkte und Sterne gefundene Endpunkte.
-](figures/contour_paths.pdf){width=80%}
+Der Punkt wurde im Suchlauf
 
-# Bewertung und Fazit
+```{python}
+#| output: asis
+#| echo: false
 
-Die lokale Mustersuche benötigt wesentlich weniger Auswertungen als eine
-entsprechend feine vollständige Gittersuche, kann aber abhängig vom
-Startpunkt in einem lokalen Maximum enden. Die Kombination mit einem
-groben Raster und mehreren räumlich getrennten Startpunkten reduziert
-dieses Risiko.
+print(f"**{best_run}**")
+```
 
-Ein formaler Beweis globaler Optimalität ist im vorliegenden
-Blackbox-Szenario ohne zusätzliche Eigenschaften der Funktion nicht
-möglich. Das wiederholte Erreichen sehr ähnlicher Höhenwerte durch
-mehrere Suchläufe liefert jedoch eine numerische Plausibilisierung des
-gefundenen höchsten Punktes.
+gefunden.
 
-Die vollständigen Suchpfade, verworfenen Kandidaten, die interaktive
-3D-Oberfläche und die Animation befinden sich unter:
+![Konturkarte der Höhenlandschaft mit den akzeptierten Suchschritten der
+beiden vorgeschriebenen Startpunkte. Die Werte zwischen den tatsächlich
+abgefragten Rasterpunkten dienen nur der Visualisierung.
+](figures/contour_paths.pdf){width=72%}
 
-[https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)
+Die Konturkarte zeigt die Bewegungen der lokalen Suchläufe in der
+zweidimensionalen Höhenlandschaft. Eine statische Abbildung kann jedoch
+nur einen Teil des Suchprozesses wiedergeben. Auf der begleitenden
+Website können deshalb
+
+- die dreidimensionale Höhenfläche frei gedreht,
+- beide Suchpfade separat ein- und ausgeblendet,
+- akzeptierte und verworfene Kandidaten untersucht und
+- die Suchschritte über einen Iterationsregler animiert
+
+werden.
+
+# Bewertung und Suche nach mehreren Maxima
+
+Die Gittersuche untersucht den gesamten Suchraum systematisch. Ihre
+Anzahl an Funktionsauswertungen wächst bei $N$ Punkten je
+Koordinatenrichtung jedoch quadratisch:
+
+$$
+N^2.
+$$
+
+Hooke und Jeeves verfeinert dagegen gezielt vielversprechende Regionen,
+kann als lokales Verfahren aber abhängig vom Startpunkt in einem lokalen
+Maximum enden. Die Kombination mit mehreren räumlich getrennten
+Startpunkten reduziert dieses Risiko.
+
+Ein formaler Nachweis globaler Optimalität ist ohne zusätzliche
+Eigenschaften der unbekannten Funktion nicht möglich. Für die Suche nach
+mehreren höchsten oder nahezu gleich hohen Punkten könnten die
+gefundenen Endpunkte nach ihrem räumlichen Abstand gruppiert werden.
+Innerhalb jeder Gruppe würde der höchste Punkt behalten. Räumlich
+getrennte Punkte, deren Höhenwerte innerhalb einer vorgegebenen Toleranz
+liegen, könnten anschließend als gleichwertige Kandidaten behandelt
+werden.
+
+Zusätzlich könnte das Raster adaptiv verfeinert werden: Statt den
+gesamten Suchraum gleichmäßig dichter auszuwerten, würden nur hohe oder
+bisher schlecht untersuchte Regionen mit kleineren Abständen erneut
+abgetastet.
+
+# Fazit
+
+Die unbekannte Höhenfunktion wurde durch eine Kombination aus grober
+Gittersuche und lokaler Hooke-und-Jeeves-Mustersuche untersucht. Die
+beiden vorgeschriebenen Startpunkte wurden getrennt ausgewertet und
+durch weitere Multi-Start-Läufe ergänzt.
+
+```{python}
+#| label: final-result
+#| output: asis
+#| echo: false
+
+print(
+    f"""
+Der höchste gefundene Punkt liegt näherungsweise bei
+
+$$
+\\boxed{{(x,y)\\approx({best_x:.6f},{best_y:.6f})}}
+$$
+
+mit dem Höhenwert
+
+$$
+\\boxed{{f(x,y)\\approx {best_height:.8f}}}.
+$$
+"""
+)
+```
+
+Die PDF enthält den vollständigen Lösungsweg und die zentralen
+Ergebnisse. Die interaktive Ergänzung ermöglicht darüber hinaus eine
+detaillierte Untersuchung der Höhenlandschaft und der einzelnen
+Suchschritte:
+
+[**https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/**](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)

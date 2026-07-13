@@ -1,10 +1,9 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: ../docs/Operations_Research_Level09
   render:
     - index.qmd
     - report_web.qmd
-
 website:
   title: "Operations Research – Level 9"
 
