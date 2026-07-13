@@ -1,12 +1,47 @@
+# Python
 __pycache__/
-*.pyc
-.ipynb_checkpoints/
+*.py[cod]
+*.pyo
+*.pyd
 
+# Virtuelle Umgebungen
 .venv/
 venv/
+env/
 
+# Jupyter
+.ipynb_checkpoints/
+
+# Quarto
 .quarto/
 *_cache/
 *_files/
+.freeze/
 
+# Betriebssystem und Editor
 .DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Temporäre Dateien
+*.tmp
+*.log
+
+# Lokale Umgebungsvariablen
+.env
+
+# LaTeX-Hilfsdateien
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.toc
+
+# API-Zwischendateien
+data/raw/api_cache.json.tmp
+
+/.quarto/
+**/*.quarto_ipynb

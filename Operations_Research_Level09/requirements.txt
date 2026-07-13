@@ -1,6 +1,9 @@
 jupyter
+jupyter-cache
+kaleido
+matplotlib
 numpy
 pandas
-requests
-matplotlib
 plotly
+requests
+tabulate

@@ -1,19 +1,46 @@
 project:
-  type: default
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+    - report_web.qmd
+
+website:
+  title: "Operations Research – Level 9"
+
+  site-url: "https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/"
+
+  navbar:
+    background: primary
+    left:
+      - href: index.qmd
+        text: Start
+      - href: report_web.qmd
+        text: Interaktive Analyse
+    right:
+      - href: report.pdf
+        text: PDF-Ausarbeitung
+      - href: "https://github.com/LeoBayer/Wissenschaftliche-Arbeiten/tree/main/Operations_Research_Level09"
+        text: Quellcode
+
+  page-footer:
+    left: "Operations Research, Sommersemester 2026"
+    right: "Gruppe 42"
 
 execute:
   freeze: auto
-  cache: true
+  cache: false
   echo: false
   warning: false
-  error: true
+  error: false
 
 format:
-
   html:
     theme:
       light: cosmo
       dark: darkly
+
+    css: styles.css
 
     toc: true
     toc-depth: 3
@@ -21,35 +48,13 @@ format:
 
     code-fold: true
     code-summary: "Python-Code anzeigen"
-
     code-tools: true
+
     smooth-scroll: true
-
-    embed-resources: true
-
     number-sections: true
 
     fig-align: center
     fig-width: 8
     fig-height: 6
 
-  pdf:
-    documentclass: article
-
-    papersize: a4
-
-    fontsize: 11pt
-
-    geometry:
-      - margin=2.5cm
-
-    number-sections: true
-
-    colorlinks: true
-
-    fig-align: center
-
-    fig-width: 8
-    fig-height: 6
-
-jupyter: python3
+jupyter: or-level9

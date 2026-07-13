@@ -1,0 +1,231 @@
+---
+title: "Operations Research – Level 9"
+subtitle: "Mehrdimensionale Blackbox-Optimierung"
+author:
+  - "Gruppe 42: Benit Meise, Jakob Wiemer & Leo Bayer"
+lang: de
+date: ""
+
+format:
+  pdf:
+    pdf-engine: lualatex
+    documentclass: article
+    papersize: a4
+    fontsize: 10pt
+    geometry:
+      - top=1.6cm
+      - bottom=1.6cm
+      - left=1.8cm
+      - right=1.8cm
+    number-sections: false
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    fig-align: center
+    fig-pos: H
+    keep-tex: true
+
+execute:
+  echo: false
+  warning: false
+  error: false
+  cache: false
+
+jupyter: or-level9
+---
+
+```{python}
+#| label: setup
+#| include: false
+
+from pathlib import Path
+import json
+
+import pandas as pd
+
+DATA_DIR = Path("data/processed")
+
+summary = pd.read_csv(DATA_DIR / "summary.csv")
+
+with (DATA_DIR / "metadata.json").open(
+    "r",
+    encoding="utf-8",
+) as file:
+    metadata = json.load(file)
+
+best = summary.loc[summary["height"].idxmax()]
+
+best_x = float(best["x"])
+best_y = float(best["y"])
+best_height = float(best["height"])
+
+required_runs = [
+    "Start (2, -4)",
+    "Start (0.2, -2)",
+]
+
+required = summary[
+    summary["run"].isin(required_runs)
+].copy()
+```
+
+# Problemstellung
+
+Gesucht ist der höchste Punkt einer unbekannten Höhenfunktion
+
+$$
+f(x,y)
+$$
+
+auf dem Gebiet
+
+$$
+(x,y)\in[-5,5]^2.
+$$
+
+Die Funktion liegt ausschließlich als Blackbox vor: Für ein gewähltes
+Koordinatenpaar kann der zugehörige Höhenwert abgefragt werden, eine
+analytische Funktionsgleichung oder Ableitungen sind jedoch nicht
+bekannt.
+
+Die Auswertung wurde über den von der Weboberfläche verwendeten
+API-Endpunkt automatisiert. Bereits abgefragte Punkte wurden lokal
+gespeichert, sodass identische Serveranfragen vermieden werden.
+
+Eine interaktive Ergänzung mit frei drehbarer Höhenlandschaft,
+Konturkarte und Animation ist erreichbar unter:
+
+[**Interaktive Analyse im Browser öffnen**](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)
+
+# Suchverfahren
+
+Als lokales Verfahren wurde die ableitungsfreie
+**Hooke-und-Jeeves-Mustersuche** verwendet.
+
+Bei der Exploration werden ausgehend vom aktuellen Basispunkt
+$\mathbf{x}^{(k)}$ Kandidaten entlang der Koordinatenrichtungen geprüft:
+
+$$
+\mathbf{x}^{(k)}\pm s\mathbf{e}_i,
+\qquad i\in\{1,2\}.
+$$
+
+Ein Kandidat wird übernommen, wenn sein Höhenwert größer ist als der
+bisherige Wert. Nach einer erfolgreichen Bewegung von $\mathbf{x}$ nach
+$\mathbf{y}$ wird zusätzlich der Musterschritt
+
+$$
+\mathbf{v}
+=
+\mathbf{x}+2(\mathbf{y}-\mathbf{x})
+$$
+
+untersucht. Kann keine Verbesserung gefunden werden, wird die
+Schrittweite halbiert:
+
+$$
+s_{k+1}=\frac{1}{2}s_k.
+$$
+
+Die Aufgabe verlangt Starts bei $(2,-4)$ und $(0.2,-2)$. Da Hooke und
+Jeeves ein lokales Verfahren ist, wurde es zusätzlich mit einer groben
+Gittersuche und einer Multi-Start-Strategie kombiniert.
+
+# Vorgehen
+
+Das Gesamtkonzept bestand aus vier Schritten:
+
+1. Auswertung eines
+   `r metadata["grid_size"]` $\times$
+   `r metadata["grid_size"]`-Rasters auf $[-5,5]^2$;
+2. lokale Suche von den beiden vorgeschriebenen Startpunkten;
+3. Auswahl hoher und räumlich getrennter Gitterpunkte als zusätzliche
+   Starts;
+4. Vergleich aller gefundenen Endpunkte.
+
+Die Gittersuche dient damit der globalen Erkundung, während Hooke und
+Jeeves vielversprechende Regionen mit kleiner werdenden Schrittweiten
+verfeinert.
+
+# Ergebnisse
+
+```{python}
+#| label: required-table
+#| output: asis
+
+display = required[
+    [
+        "run",
+        "x",
+        "y",
+        "height",
+        "iterations",
+    ]
+].copy()
+
+display.columns = [
+    "Startpunkt",
+    "Endpunkt x",
+    "Endpunkt y",
+    "Höhe",
+    "Iterationen",
+]
+
+print(
+    display.to_markdown(
+        index=False,
+        floatfmt=(
+            "",
+            ".5f",
+            ".5f",
+            ".7f",
+            ".0f",
+        ),
+    )
+)
+```
+
+Der höchste über alle
+`r metadata["number_of_runs"]` Suchläufe gefundene Punkt ist
+
+```{python}
+#| output: asis
+
+print(
+    f"""
+$$
+\\boxed{{(x,y)\\approx({best_x:.6f},{best_y:.6f})}}
+$$
+
+mit
+
+$$
+\\boxed{{f(x,y)\\approx {best_height:.8f}}}.
+$$
+"""
+)
+```
+
+![Konturkarte der grob ausgewerteten Höhenlandschaft mit den
+akzeptierten Suchschritten der beiden vorgeschriebenen Starts. Quadrate
+kennzeichnen Startpunkte und Sterne gefundene Endpunkte.
+](figures/contour_paths.pdf){width=80%}
+
+# Bewertung und Fazit
+
+Die lokale Mustersuche benötigt wesentlich weniger Auswertungen als eine
+entsprechend feine vollständige Gittersuche, kann aber abhängig vom
+Startpunkt in einem lokalen Maximum enden. Die Kombination mit einem
+groben Raster und mehreren räumlich getrennten Startpunkten reduziert
+dieses Risiko.
+
+Ein formaler Beweis globaler Optimalität ist im vorliegenden
+Blackbox-Szenario ohne zusätzliche Eigenschaften der Funktion nicht
+möglich. Das wiederholte Erreichen sehr ähnlicher Höhenwerte durch
+mehrere Suchläufe liefert jedoch eine numerische Plausibilisierung des
+gefundenen höchsten Punktes.
+
+Die vollständigen Suchpfade, verworfenen Kandidaten, die interaktive
+3D-Oberfläche und die Animation befinden sich unter:
+
+[https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/](https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/)
