@@ -118,4 +118,5 @@ enthält nur die Problemformulierung, die wesentlichen methodischen
 Schritte, die wichtigsten Ergebnisse und eine zentrale Abbildung.
 
 Die Website dient als interaktive Ergänzung und ermöglicht eine
-detailliertere Untersuchung der erzeugten Daten. Die Website wurde mit AI-Unterstützung durch quarto und GitHub pages erstellt. Das PDF ist gänzlich Eigenleistung.
+detailliertere Untersuchung der erzeugten Daten. 
+Die Website wurde mit AI-Unterstützung erstellt und nutzt quarto und GitHub pages im Hintergrund. Das PDF ist gänzlich Eigenleistung.

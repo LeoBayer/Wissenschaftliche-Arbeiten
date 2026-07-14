@@ -562,23 +562,23 @@ def create_interactive_contour(
 
     # Layout analog zur funktionierenden 3D-Grafik
     figure.update_layout(
+        autosize=True,
         title=dict(
             text="Interaktive Konturkarte mit Suchpfaden",
             x=0.5,
             xanchor="center",
         ),
-        width=1000,
-        height=780,
+        height=720,
         margin=dict(
             l=40,
-            r=40,
+            r=20,
             b=40,
-            t=120,
+            t=110,
         ),
         legend=dict(
             orientation="h",
             yanchor="bottom",
-            y=1.02,
+            y=1.03,
             xanchor="center",
             x=0.5,
             bgcolor="rgba(255,255,255,0.85)",
