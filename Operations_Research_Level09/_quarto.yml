@@ -1,10 +1,11 @@
-project:
+websiproject:
   type: website
   output-dir: ../docs/Operations_Research_Level09
+
   render:
     - index.qmd
     - report_web.qmd
-website:
+    - report_pdf.qmdte:
   title: "Operations Research – Level 9"
 
   site-url: "https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/"

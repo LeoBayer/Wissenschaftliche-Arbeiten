@@ -12,6 +12,7 @@ format:
     documentclass: article
     papersize: a4
     fontsize: 10pt
+    output-file: report.pdf
 
     geometry:
       - top=1.45cm
@@ -102,6 +103,8 @@ execute:
   cache: false
 
 jupyter: or-level9
+
+output-dir: ../docs/Operations_Research_Level09
 ---
 
 ```{python}
