@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Operations Research – Level 9",
+    "section": "",
+    "text": "Auf dieser Website wird die Suche nach dem höchsten Punkt einer unbekannten zweidimensionalen Höhenfunktion dokumentiert.\nDie Blackbox wurde automatisiert über ihre API ausgewertet. Als lokales Suchverfahren wurde die ableitungsfreie Hooke-und-Jeeves-Mustersuche verwendet und mit einer Gittersuche sowie einer Multi-Start-Strategie kombiniert."
+  },
+  {
+    "objectID": "index.html#was-kann-auf-der-website-untersucht-werden",
+    "href": "index.html#was-kann-auf-der-website-untersucht-werden",
+    "title": "Operations Research – Level 9",
+    "section": "1.1 Was kann auf der Website untersucht werden?",
+    "text": "1.1 Was kann auf der Website untersucht werden?\nDie ausführliche Analyse enthält\n\neine frei drehbare dreidimensionale Höhenlandschaft,\neine interaktive Konturkarte,\ndie Suchpfade der vorgeschriebenen Startpunkte,\nakzeptierte und verworfene Kandidaten,\neine Animation des Suchverlaufs,\ndie Ergebnisse aller Multi-Start-Läufe sowie\neine Erläuterung des verwendeten Verfahrens."
+  },
+  {
+    "objectID": "index.html#offizielle-abgabe",
+    "href": "index.html#offizielle-abgabe",
+    "title": "Operations Research – Level 9",
+    "section": "1.2 Offizielle Abgabe",
+    "text": "1.2 Offizielle Abgabe\nDie PDF-Ausarbeitung ist bewusst auf ungefähr vier Seiten begrenzt. Sie enthält nur die Problemformulierung, die wesentlichen methodischen Schritte, die wichtigsten Ergebnisse und eine zentrale Abbildung.\nDie Website dient als interaktive Ergänzung und ermöglicht eine detailliertere Untersuchung der erzeugten Daten. Die Website wurde mit AI-Unterstützung durch quarto und GitHub pages erstellt. Das PDF ist gänzlich Eigenleistung."
+  },
+  {
     "objectID": "report_web.html",
     "href": "report_web.html",
     "title": "Interaktive Analyse",
@@ -33,26 +54,5 @@
     "title": "Interaktive Analyse",
     "section": "10.1 Ergebnisse aller Suchläufe",
     "text": "10.1 Ergebnisse aller Suchläufe\n\n\n\n\n\nErgebnisse der vorgeschriebenen und zusätzlichen Suchläufe\n\n\n \nSuchlauf\nStart x\nStart y\nEndpunkt x\nEndpunkt y\nHöhe\nIterationen\nProtokolleinträge\n\n\n\n\n0\nMulti-Start 1\n-2.333\n2.333\n-2.204427\n2.204427\n1.11257000\n13\n60\n\n\n1\nMulti-Start 2\n-2.333\n-2.333\n-2.204427\n-2.204427\n1.11257000\n13\n60\n\n\n2\nMulti-Start 3\n2.333\n2.333\n2.204427\n2.204427\n1.11257000\n13\n60\n\n\n3\nMulti-Start 4\n2.333\n-2.333\n2.204427\n-2.204427\n1.11257000\n13\n60\n\n\n4\nStart (2, -4)\n2.000\n-4.000\n2.203125\n-2.203125\n1.11256900\n19\n84\n\n\n5\nMulti-Start 5\n-3.333\n-3.000\n-2.956380\n-2.957031\n1.01268800\n27\n115\n\n\n6\nMulti-Start 6\n3.333\n-3.000\n2.956380\n-2.957031\n1.01268800\n27\n117\n\n\n7\nStart (0.2, -2)\n0.200\n-2.000\n0.000781\n-2.132812\n0.47384700\n22\n97"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Operations Research – Level 9",
-    "section": "",
-    "text": "Auf dieser Website wird die Suche nach dem höchsten Punkt einer unbekannten zweidimensionalen Höhenfunktion dokumentiert.\nDie Blackbox wurde automatisiert über ihre API ausgewertet. Als lokales Suchverfahren wurde die ableitungsfreie Hooke-und-Jeeves-Mustersuche verwendet und mit einer Gittersuche sowie einer Multi-Start-Strategie kombiniert."
-  },
-  {
-    "objectID": "index.html#was-kann-auf-der-website-untersucht-werden",
-    "href": "index.html#was-kann-auf-der-website-untersucht-werden",
-    "title": "Operations Research – Level 9",
-    "section": "1.1 Was kann auf der Website untersucht werden?",
-    "text": "1.1 Was kann auf der Website untersucht werden?\nDie ausführliche Analyse enthält\n\neine frei drehbare dreidimensionale Höhenlandschaft,\neine interaktive Konturkarte,\ndie Suchpfade der vorgeschriebenen Startpunkte,\nakzeptierte und verworfene Kandidaten,\neine Animation des Suchverlaufs,\ndie Ergebnisse aller Multi-Start-Läufe sowie\neine Erläuterung des verwendeten Verfahrens."
-  },
-  {
-    "objectID": "index.html#offizielle-abgabe",
-    "href": "index.html#offizielle-abgabe",
-    "title": "Operations Research – Level 9",
-    "section": "1.2 Offizielle Abgabe",
-    "text": "1.2 Offizielle Abgabe\nDie PDF-Ausarbeitung ist bewusst auf ungefähr vier Seiten begrenzt. Sie enthält nur die Problemformulierung, die wesentlichen methodischen Schritte, die wichtigsten Ergebnisse und eine zentrale Abbildung.\nDie Website dient als interaktive Ergänzung und ermöglicht eine detailliertere Untersuchung der erzeugten Daten."
   }
 ]

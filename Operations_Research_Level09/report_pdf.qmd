@@ -103,8 +103,6 @@ execute:
   cache: false
 
 jupyter: or-level9
-
-output-dir: ../docs/Operations_Research_Level09
 ---
 
 ```{python}

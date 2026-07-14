@@ -18,14 +18,18 @@ import json
 
 import pandas as pd
 
-from src.visualization import (
-    create_evaluation_scatter,
-    create_interactive_contour,
-    create_interactive_surface,
-    create_search_animation,
-    load_data,
-)
+import importlib
+import src.visualization as visualization
 
+# Das Modul bei jedem Quarto-Render neu laden.
+# Dadurch werden Änderungen an src/visualization.py sofort übernommen.
+visualization = importlib.reload(visualization)
+
+create_evaluation_scatter = visualization.create_evaluation_scatter
+create_interactive_contour = visualization.create_interactive_contour
+create_interactive_surface = visualization.create_interactive_surface
+create_search_animation = visualization.create_search_animation
+load_data = visualization.load_data
 DATA_DIR = Path("data/processed")
 
 grid, paths, summary = load_data(DATA_DIR)

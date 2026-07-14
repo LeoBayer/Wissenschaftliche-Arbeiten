@@ -457,7 +457,8 @@ def create_interactive_contour(
     summary: pd.DataFrame,
 ) -> go.Figure:
     """
-    Erzeugt eine interaktive Konturkarte.
+    Erzeugt eine interaktive Konturkarte mit den akzeptierten
+    Suchpfaden der vorgeschriebenen Startpunkte.
     """
     x_values, y_values, z_values = prepare_grid(grid)
 
@@ -465,29 +466,40 @@ def create_interactive_contour(
 
     figure = go.Figure()
 
+    # Höhenlandschaft als Konturkarte
     figure.add_trace(
         go.Contour(
             x=x_values,
             y=y_values,
             z=z_values,
+            name="Höhenlandschaft",
+            showscale=True,
             contours={
                 "coloring": "heatmap",
                 "showlabels": True,
+                "labelfont": {
+                    "size": 11,
+                },
             },
             colorbar={
-                "title": "Höhe",
+                "title": {
+                    "text": "Höhe",
+                },
+                "thickness": 30,
+                "len": 0.88,
+                "y": 0.48,
             },
             hovertemplate=(
                 "x: %{x:.3f}<br>y: %{y:.3f}<br>Höhe: %{z:.6f}<extra></extra>"
             ),
-            name="Höhenkonturen",
         )
     )
 
+    # Akzeptierte Pfade der vorgeschriebenen Suchläufe
     for run_name in REQUIRED_RUNS:
         run = accepted_path(
-            paths,
-            run_name,
+            paths=paths,
+            run_name=run_name,
         )
 
         if run.empty:
@@ -509,6 +521,12 @@ def create_interactive_contour(
                 mode="lines+markers",
                 name=run_name,
                 customdata=customdata,
+                line={
+                    "width": 2,
+                },
+                marker={
+                    "size": 8,
+                },
                 hovertemplate=(
                     "%{customdata[3]}<br>"
                     "Iteration: %{customdata[0]}<br>"
@@ -521,16 +539,17 @@ def create_interactive_contour(
             )
         )
 
+    # Bester insgesamt gefundener Punkt
     figure.add_trace(
         go.Scatter(
             x=[best["x"]],
             y=[best["y"]],
             mode="markers",
+            name="Bester gefundener Punkt",
             marker={
-                "size": 15,
+                "size": 17,
                 "symbol": "star",
             },
-            name="Bester gefundener Punkt",
             hovertemplate=(
                 "Bester gefundener Punkt<br>"
                 "x: %{x:.6f}<br>"
@@ -541,33 +560,30 @@ def create_interactive_contour(
         )
     )
 
+    # Layout analog zur funktionierenden 3D-Grafik
     figure.update_layout(
-        title=("Interaktive Konturkarte mit Suchpfaden"),
-        xaxis={
-            "title": "x",
-            "range": [
-                LOWER_BOUND,
-                UPPER_BOUND,
-            ],
-            "scaleanchor": "y",
-            "scaleratio": 1,
-        },
-        yaxis={
-            "title": "y",
-            "range": [
-                LOWER_BOUND,
-                UPPER_BOUND,
-            ],
-        },
-        legend={
-            "orientation": "h",
-            "yanchor": "bottom",
-            "y": 1.02,
-            "xanchor": "left",
-            "x": 0,
-        },
+        title=dict(
+            text="Interaktive Konturkarte mit Suchpfaden",
+            x=0.5,
+            xanchor="center",
+        ),
+        width=1000,
+        height=780,
+        margin=dict(
+            l=40,
+            r=40,
+            b=40,
+            t=120,
+        ),
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=1.02,
+            xanchor="center",
+            x=0.5,
+            bgcolor="rgba(255,255,255,0.85)",
+        ),
     )
-
     return figure
 
 

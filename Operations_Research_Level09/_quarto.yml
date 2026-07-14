@@ -1,11 +1,12 @@
-websiproject:
+project:
   type: website
   output-dir: ../docs/Operations_Research_Level09
-
   render:
     - index.qmd
     - report_web.qmd
-    - report_pdf.qmdte:
+    - report_pdf.qmd
+
+website:
   title: "Operations Research – Level 9"
 
   site-url: "https://leobayer.github.io/Wissenschaftliche-Arbeiten/Operations_Research_Level09/"
@@ -28,7 +29,7 @@ websiproject:
     right: "Gruppe 42"
 
 execute:
-  freeze: auto
+  freeze: false
   cache: false
   echo: false
   warning: false
@@ -39,20 +40,15 @@ format:
     theme:
       light: cosmo
       dark: darkly
-
     css: styles.css
-
     toc: true
     toc-depth: 3
     toc-location: left
-
     code-fold: true
     code-summary: "Python-Code anzeigen"
     code-tools: true
-
     smooth-scroll: true
     number-sections: true
-
     fig-align: center
     fig-width: 8
     fig-height: 6
