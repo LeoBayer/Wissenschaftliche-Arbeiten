@@ -26,41 +26,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -453,10 +418,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#role-in-the-semester-site" id="toc-role-in-the-semester-site" class="nav-link active" data-scroll-target="#role-in-the-semester-site">Role In The Semester Site</a></li>
-  <li><a href="#lecture-blocks" id="toc-lecture-blocks" class="nav-link" data-scroll-target="#lecture-blocks">Lecture Blocks</a></li>
-  <li><a href="#diagram-pattern-market-shift" id="toc-diagram-pattern-market-shift" class="nav-link" data-scroll-target="#diagram-pattern-market-shift">Diagram Pattern: Market Shift</a></li>
-  <li><a href="#code-pattern-tiny-simulation" id="toc-code-pattern-tiny-simulation" class="nav-link" data-scroll-target="#code-pattern-tiny-simulation">Code Pattern: Tiny Simulation</a></li>
+  <li><a href="#lernpfad-volkswirtschaftliche-regeln" id="toc-lernpfad-volkswirtschaftliche-regeln" class="nav-link active" data-scroll-target="#lernpfad-volkswirtschaftliche-regeln">Lernpfad: Volkswirtschaftliche Regeln</a></li>
   </ul>
 </nav>
     </div>
@@ -467,7 +429,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../courses/dwpm.html">Kurse</a></li><li class="breadcrumb-item"><a href="../courses/vwl.html">VWL</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">VWL für Wirtschaftsinformatiker</h1>
-<p class="subtitle lead">Economic intuition, models, and application</p>
+<p class="subtitle lead">Kurs 94931 · WiSe 2026/27</p>
 </div>
 
 
@@ -484,119 +446,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="role-in-the-semester-site" class="level2">
-<h2 class="anchored" data-anchor-id="role-in-the-semester-site">Role In The Semester Site</h2>
-<p>VWL pages should make model assumptions explicit. A useful page explains what the model assumes, what it predicts, and where the prediction can fail.</p>
-<p>Because VWL is model-heavy, the default page shape should include a graph first, then the verbal explanation. If the mechanism can be simulated, add a tiny executable model or algorithmic trace.</p>
-</section>
-<section id="lecture-blocks" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-blocks">Lecture Blocks</h2>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Block</th>
-<th>Demo content</th>
-<th>Target output</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Supply and demand</td>
-<td>Equilibrium, shifts, elasticity</td>
-<td>Diagram drills + shift simulations</td>
-</tr>
-<tr class="even">
-<td>Markets and welfare</td>
-<td>Surplus, efficiency, taxes</td>
-<td>Calculation examples</td>
-</tr>
-<tr class="odd">
-<td>Firms and competition</td>
-<td>Cost curves, market forms</td>
-<td>Comparison tables</td>
-</tr>
-<tr class="even">
-<td>Macro basics</td>
-<td>Growth, inflation, policy</td>
-<td>Concept maps</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="diagram-pattern-market-shift" class="level2">
-<h2 class="anchored" data-anchor-id="diagram-pattern-market-shift">Diagram Pattern: Market Shift</h2>
-<figure class="model-figure figure" aria-label="Supply and demand diagram">
-  <svg viewbox="0 0 640 420" role="img" aria-labelledby="market-title market-desc">
-    <title id="market-title">Supply and demand with a demand shift</title>
-    <desc id="market-desc">Demand shifts right, moving equilibrium price and quantity upward.</desc>
-    <line x1="90" y1="340" x2="560" y2="340" class="axis"></line>
-    <line x1="90" y1="340" x2="90" y2="50" class="axis"></line>
-    <text x="565" y="346" class="axis-label">Q</text>
-    <text x="76" y="45" class="axis-label">P</text>
-    <line x1="150" y1="300" x2="500" y2="95" class="supply"></line>
-    <line x1="140" y1="90" x2="500" y2="300" class="demand"></line>
-    <line x1="215" y1="88" x2="575" y2="298" class="demand shifted"></line>
-    <circle cx="318" cy="202" r="6" class="point"></circle>
-    <circle cx="380" cy="166" r="6" class="point new"></circle>
-    <line x1="318" y1="202" x2="318" y2="340" class="guide"></line>
-    <line x1="90" y1="202" x2="318" y2="202" class="guide"></line>
-    <line x1="380" y1="166" x2="380" y2="340" class="guide new"></line>
-    <line x1="90" y1="166" x2="380" y2="166" class="guide new"></line>
-    <text x="510" y="99" class="line-label">S</text>
-    <text x="506" y="303" class="line-label">D</text>
-    <text x="579" y="300" class="line-label">D'</text>
-    <text x="300" y="190" class="point-label">E</text>
-    <text x="390" y="154" class="point-label">E'</text>
-  </svg>
-  <figcaption>Eine Nachfrageverschiebung nach rechts erhöht im Standardmodell Gleichgewichtspreis und Gleichgewichtsmenge. Jede echte Kursseite sollte danach die Annahmen und Grenzen des Modells nennen.</figcaption>
-</figure>
-</section>
-<section id="code-pattern-tiny-simulation" class="level2">
-<h2 class="anchored" data-anchor-id="code-pattern-tiny-simulation">Code Pattern: Tiny Simulation</h2>
-<div id="cdbf299e" class="cell">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> equilibrium(a, b, c, d):</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">"""Demand: Qd = a - bP, supply: Qs = c + dP."""</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    price <span class="op">=</span> (a <span class="op">-</span> c) <span class="op">/</span> (b <span class="op">+</span> d)</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    quantity <span class="op">=</span> c <span class="op">+</span> d <span class="op">*</span> price</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">round</span>(price, <span class="dv">2</span>), <span class="bu">round</span>(quantity, <span class="dv">2</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> equilibrium(a<span class="op">=</span><span class="dv">100</span>, b<span class="op">=</span><span class="dv">2</span>, c<span class="op">=</span><span class="dv">10</span>, d<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>after_income_rise <span class="op">=</span> equilibrium(a<span class="op">=</span><span class="dv">125</span>, b<span class="op">=</span><span class="dv">2</span>, c<span class="op">=</span><span class="dv">10</span>, d<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>pd.DataFrame(</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    [</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"scenario"</span>: <span class="st">"base"</span>, <span class="st">"price"</span>: base[<span class="dv">0</span>], <span class="st">"quantity"</span>: base[<span class="dv">1</span>]},</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        {<span class="st">"scenario"</span>: <span class="st">"income rise"</span>, <span class="st">"price"</span>: after_income_rise[<span class="dv">0</span>], <span class="st">"quantity"</span>: after_income_rise[<span class="dv">1</span>]},</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    ]</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-</div>
-<fieldset class="study-check" data-type="multiple" data-answer="a,b,d">
-  <legend>What belongs into a strong economics model explanation?</legend>
-  <label><input type="checkbox" value="a"> Assumptions.</label>
-  <label><input type="checkbox" value="b"> Mechanism and prediction.</label>
-  <label><input type="checkbox" value="c"> A claim that models are always realistic.</label>
-  <label><input type="checkbox" value="d"> Boundary conditions or limitations.</label>
-  <button type="button" class="check-answer">Check</button>
-  <p class="feedback" aria-live="polite"></p>
-</fieldset>
-<div class="reveal-note">
-<details>
-<summary>
-Reveal example answer structure
-</summary>
-<p>For a supply-demand question, first identify the market, then decide whether demand or supply shifts, explain the mechanism, and only then state the effect on equilibrium price and quantity.</p>
-</details>
-</div>
+<section id="lernpfad-volkswirtschaftliche-regeln" class="level2">
+<h2 class="anchored" data-anchor-id="lernpfad-volkswirtschaftliche-regeln">Lernpfad: Volkswirtschaftliche Regeln</h2>
+<p>Drei quellengestützte Einheiten zum ersten Kapitel der aktuellen Vorlesung:</p>
+<ol type="1">
+<li><a href="../courses/vwl-knappheit.html">Knappheit und Opportunitätskosten</a> – Alternativen erkennen und Verzicht bewerten.</li>
+<li><a href="../courses/vwl-grenzentscheidung.html">Grenzentscheidungen in der Pizzeria</a> – Zusatzkosten statt Durchschnittskosten.</li>
+<li><a href="../courses/vwl-markt-staat.html">Märkte, Marktversagen und Staat</a> – Koordination, Informationsprobleme und Grenzen von Eingriffen.</li>
+</ol>
+<p>Jede Einheit enthält ein Lernbeispiel und einen begründeten Selbstcheck. Quellenangaben beziehen sich auf physische PDF-Seiten. Weitere Kapitel bleiben offen; diese Einheiten ersetzen nicht die vollständige Vorlesung.</p>
+<p><a href="../materials.html">Originalmaterialien mit Hochschulzugang</a></p>
 
 
 </section>

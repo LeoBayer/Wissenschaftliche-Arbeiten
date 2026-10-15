@@ -304,7 +304,7 @@
     "href": "materials.html",
     "title": "Learnweb-Materialien",
     "section": "",
-    "text": "Stand: 15.10.2026 08:57\nDie Links führen zu den Originalen in Learnweb und erfordern deinen Hochschulzugang. Die Materialübersicht ist noch keine fachlich geprüfte Zusammenfassung."
+    "text": "Stand: 15.10.2026 13:02\nDie Links führen zu den Originalen in Learnweb und erfordern deinen Hochschulzugang. Die Materialübersicht ist noch keine fachlich geprüfte Zusammenfassung."
   },
   {
     "objectID": "materials.html#controlling",
@@ -342,6 +342,55 @@
     "text": "VWL\n\nVFW_Tut_Kapitel 1.pdf\nVWLWiInfWS26.pdf"
   },
   {
+    "objectID": "courses/vwl-grenzentscheidung.html",
+    "href": "courses/vwl-grenzentscheidung.html",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "",
+    "text": "VWL-Übersicht"
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#lernziel",
+    "href": "courses/vwl-grenzentscheidung.html#lernziel",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Lernziel",
+    "text": "Lernziel\nEine Zusatzbestellung anhand zusätzlicher Erlöse und Kosten beurteilen und die Bedingungen der Rechnung offenlegen."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#der-scheinbare-verlustauftrag",
+    "href": "courses/vwl-grenzentscheidung.html#der-scheinbare-verlustauftrag",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Der scheinbare Verlustauftrag",
+    "text": "Der scheinbare Verlustauftrag\nDie Vorlesung nennt eine Pizzeria mit monatlich 5.000 € Löhnen und Mieten, 3,50 € Zutatenkosten je Pizza und 1.000 verkauften Pizzen. Ein Online-Vermittler bietet 5 € für zusätzliche Pizzen; die Kundengruppen überschneiden sich nicht (S. 15). Daraus ergibt sich zunächst ein durchschnittlicher Kostenbetrag von 5.000 / 1.000 + 3,50 = 8,50 € je Pizza.\nIst ein Preis von 5 € deshalb automatisch abzulehnen? Nein: Für die Veränderung zählt, welche Erlöse und Kosten zusätzlich entstehen (Grenzbetrachtung, S. 16). Die ohnehin anfallenden 5.000 € werden durch die Zusatzbestellung nicht automatisch noch einmal fällig."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#was-eine-zusätzliche-pizza-verändert",
+    "href": "courses/vwl-grenzentscheidung.html#was-eine-zusätzliche-pizza-verändert",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Was eine zusätzliche Pizza verändert",
+    "text": "Was eine zusätzliche Pizza verändert\nUnter der ausdrücklich ergänzten Annahme freier Kapazität und unveränderter Löhne/Mieten vergleicht die folgende eigene Grafik den Zusatzpreis mit den Zutatenkosten. Weitere variable Kosten sind im vereinfachten Modell nicht enthalten.\n\n\n\nEigene Darstellung zum Pizzeria-Beispiel, nach VWLWiInfWS26.pdf, PDF-S. 15–16. Beträge pro zusätzlicher Pizza.\n\n\nVon 5 € zusätzlichem Erlös verbleiben nach 3,50 € Zutatenkosten 1,50 € zusätzlicher Deckungsbeitrag. Für beispielhaft 100 zusätzliche Pizzen steigt das Monatsergebnis um 150 €. Das bedeutet weder, dass die Pizzeria insgesamt Gewinn macht, noch dass 5 € langfristig alle Kosten decken. Der Preis der bisherigen 1.000 Pizzen ist in der Aufgabenfolie nicht angegeben; der Gesamtgewinn lässt sich deshalb nicht ausrechnen."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#wann-kippt-die-empfehlung",
+    "href": "courses/vwl-grenzentscheidung.html#wann-kippt-die-empfehlung",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Wann kippt die Empfehlung?",
+    "text": "Wann kippt die Empfehlung?\nEigene Sensitivitätsrechnung: Fallen zusätzlich 2 € Kurierkosten pro Pizza an, sind die zusätzlichen Kosten 5,50 €. Bei 5 € Erlös sinkt das Ergebnis dann um 0,50 € je Zusatzpizza. Braucht der Betrieb zusätzliches Personal oder verdrängt er profitablere Bestellungen, müssen auch diese Folgen berücksichtigt werden.\nDie Folie schließt die Überschneidung der Kundengruppen aus. Sie nennt aber keine Kapazitätsgrenze und keine Lieferkosten. Die Annahme „nur Zutaten sind zusätzlich“ ist daher eine offenzulegende Modellannahme, kein vollständig belegter Betriebszustand. S. 17 ergänzt: Veränderte Kosten und Nutzen verändern Anreize; sie sind nicht bloß Buchungspositionen.\nMerksatz: Durchschnittskosten beantworten eine andere Frage als Grenzkosten. Kurzfristig vorteilhafte Zusatzaufträge beweisen keine langfristige Tragfähigkeit."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#selbstcheck-mc",
+    "href": "courses/vwl-grenzentscheidung.html#selbstcheck-mc",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten unter den genannten vereinfachten Annahmen?\n 100 zusätzliche Pizzen verbessern das Ergebnis um 150 €.\n Ein Preis unter 8,50 € muss jeden Zusatzauftrag unvorteilhaft machen.\n Zusätzliche Lieferkosten können die Entscheidung umkehren.\n Der Gesamtgewinn der Pizzeria ist sicher positiv.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. a: 100 × (5 − 3,50) = 150 €. b verwechselt Durchschnitts- und Zusatzkosten. c folgt aus dem Vergleich aller zusätzlichen Kosten mit dem Erlös. d ist mangels Ausgangserlösen nicht bestimmbar."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#quelle-und-grenzen",
+    "href": "courses/vwl-grenzentscheidung.html#quelle-und-grenzen",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 15–17 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht."
+  },
+  {
     "objectID": "courses/operations-management.html",
     "href": "courses/operations-management.html",
     "title": "Operations Management",
@@ -370,7 +419,7 @@
     "href": "courses/vwl.html",
     "title": "VWL für Wirtschaftsinformatiker",
     "section": "",
-    "text": "VWL pages should make model assumptions explicit. A useful page explains what the model assumes, what it predicts, and where the prediction can fail.\nBecause VWL is model-heavy, the default page shape should include a graph first, then the verbal explanation. If the mechanism can be simulated, add a tiny executable model or algorithmic trace.",
+    "text": "Drei quellengestützte Einheiten zum ersten Kapitel der aktuellen Vorlesung:\n\nKnappheit und Opportunitätskosten – Alternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der Pizzeria – Zusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und Staat – Koordination, Informationsprobleme und Grenzen von Eingriffen.\n\nJede Einheit enthält ein Lernbeispiel und einen begründeten Selbstcheck. Quellenangaben beziehen sich auf physische PDF-Seiten. Weitere Kapitel bleiben offen; diese Einheiten ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien mit Hochschulzugang",
     "crumbs": [
       "Cockpit",
       "Kurse",
@@ -378,47 +427,11 @@
     ]
   },
   {
-    "objectID": "courses/vwl.html#role-in-the-semester-site",
-    "href": "courses/vwl.html#role-in-the-semester-site",
+    "objectID": "courses/vwl.html#lernpfad-volkswirtschaftliche-regeln",
+    "href": "courses/vwl.html#lernpfad-volkswirtschaftliche-regeln",
     "title": "VWL für Wirtschaftsinformatiker",
     "section": "",
-    "text": "VWL pages should make model assumptions explicit. A useful page explains what the model assumes, what it predicts, and where the prediction can fail.\nBecause VWL is model-heavy, the default page shape should include a graph first, then the verbal explanation. If the mechanism can be simulated, add a tiny executable model or algorithmic trace.",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "VWL"
-    ]
-  },
-  {
-    "objectID": "courses/vwl.html#lecture-blocks",
-    "href": "courses/vwl.html#lecture-blocks",
-    "title": "VWL für Wirtschaftsinformatiker",
-    "section": "Lecture Blocks",
-    "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nSupply and demand\nEquilibrium, shifts, elasticity\nDiagram drills + shift simulations\n\n\nMarkets and welfare\nSurplus, efficiency, taxes\nCalculation examples\n\n\nFirms and competition\nCost curves, market forms\nComparison tables\n\n\nMacro basics\nGrowth, inflation, policy\nConcept maps",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "VWL"
-    ]
-  },
-  {
-    "objectID": "courses/vwl.html#diagram-pattern-market-shift",
-    "href": "courses/vwl.html#diagram-pattern-market-shift",
-    "title": "VWL für Wirtschaftsinformatiker",
-    "section": "Diagram Pattern: Market Shift",
-    "text": "Diagram Pattern: Market Shift\n\n  \n    Supply and demand with a demand shift\n    Demand shifts right, moving equilibrium price and quantity upward.\n    \n    \n    Q\n    P\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    S\n    D\n    D'\n    E\n    E'\n  \n  Eine Nachfrageverschiebung nach rechts erhöht im Standardmodell Gleichgewichtspreis und Gleichgewichtsmenge. Jede echte Kursseite sollte danach die Annahmen und Grenzen des Modells nennen.",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "VWL"
-    ]
-  },
-  {
-    "objectID": "courses/vwl.html#code-pattern-tiny-simulation",
-    "href": "courses/vwl.html#code-pattern-tiny-simulation",
-    "title": "VWL für Wirtschaftsinformatiker",
-    "section": "Code Pattern: Tiny Simulation",
-    "text": "Code Pattern: Tiny Simulation\n\n\nCode\nimport pandas as pd\n\ndef equilibrium(a, b, c, d):\n    \"\"\"Demand: Qd = a - bP, supply: Qs = c + dP.\"\"\"\n    price = (a - c) / (b + d)\n    quantity = c + d * price\n    return round(price, 2), round(quantity, 2)\n\nbase = equilibrium(a=100, b=2, c=10, d=1)\nafter_income_rise = equilibrium(a=125, b=2, c=10, d=1)\n\npd.DataFrame(\n    [\n        {\"scenario\": \"base\", \"price\": base[0], \"quantity\": base[1]},\n        {\"scenario\": \"income rise\", \"price\": after_income_rise[0], \"quantity\": after_income_rise[1]},\n    ]\n)\n\n\n\n  What belongs into a strong economics model explanation?\n   Assumptions.\n   Mechanism and prediction.\n   A claim that models are always realistic.\n   Boundary conditions or limitations.\n  Check\n  \n\n\n\n\nReveal example answer structure\n\nFor a supply-demand question, first identify the market, then decide whether demand or supply shifts, explain the mechanism, and only then state the effect on equilibrium price and quantity.",
+    "text": "Drei quellengestützte Einheiten zum ersten Kapitel der aktuellen Vorlesung:\n\nKnappheit und Opportunitätskosten – Alternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der Pizzeria – Zusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und Staat – Koordination, Informationsprobleme und Grenzen von Eingriffen.\n\nJede Einheit enthält ein Lernbeispiel und einen begründeten Selbstcheck. Quellenangaben beziehen sich auf physische PDF-Seiten. Weitere Kapitel bleiben offen; diese Einheiten ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien mit Hochschulzugang",
     "crumbs": [
       "Cockpit",
       "Kurse",
@@ -486,53 +499,53 @@
     ]
   },
   {
-    "objectID": "courses/om-vier-v.html",
-    "href": "courses/om-vier-v.html",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "objectID": "courses/vwl-knappheit.html",
+    "href": "courses/vwl-knappheit.html",
+    "title": "VWL: Knappheit und Opportunitätskosten",
     "section": "",
-    "text": "OM-Übersicht"
+    "text": "VWL-Übersicht"
   },
   {
-    "objectID": "courses/om-vier-v.html#lernziele",
-    "href": "courses/om-vier-v.html#lernziele",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Lernziele",
-    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
+    "objectID": "courses/vwl-knappheit.html#lernziel",
+    "href": "courses/vwl-knappheit.html#lernziel",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Lernziel",
+    "text": "Lernziel\nKnappheit erklären, eine relevante Alternative benennen und Opportunitätskosten von einer bloßen Geldzahlung unterscheiden."
   },
   {
-    "objectID": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
-    "href": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Kein schlichtes Entweder-oder",
-    "text": "Kein schlichtes Entweder-oder\nDie Folien stellen typische Unterschiede gegenüber: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden (PDF-S. 18). Die Zusammenfassung spricht ausdrücklich von einem Kontinuum (S. 34), nicht von ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nS. 19 unterscheidet Einzel-, Serien- und Massenfertigung nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+    "objectID": "courses/vwl-knappheit.html#warum-überhaupt-entscheiden",
+    "href": "courses/vwl-knappheit.html#warum-überhaupt-entscheiden",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Warum überhaupt entscheiden?",
+    "text": "Warum überhaupt entscheiden?\nVWL untersucht, wie eine Gesellschaft knappe Mittel bewirtschaftet (S. 8–9). Knappheit heißt hier: Die verfügbaren Ressourcen reichen nicht für alle gleichzeitig gewünschten Verwendungen. Auch Zeit und Aufmerksamkeit sind Ressourcen. Deshalb stellen sich drei Fragen: Was wird produziert, wie wird produziert und für wen?\nDie erste Regel (S. 10–11) verbindet Auswahl und Verzicht. Mehr Zeit für eine Tätigkeit bedeutet weniger Zeit für eine andere. Auf gesellschaftlicher Ebene können Effizienz und Verteilungsgerechtigkeit in Spannung stehen. Effizienz betrifft in dieser Einführung den möglichst hohen Wert der Produktion aus knappen Ressourcen. Verteilungsgerechtigkeit betrifft deren faire Verteilung. Ein großer Gesamtertrag sagt allein noch nicht, wer davon profitiert; „fair“ erfordert ein Werturteil."
   },
   {
-    "objectID": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
-    "href": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Vier Dimensionen statt eines Etiketts",
-    "text": "Vier Dimensionen statt eines Etiketts\nNach PDF-S. 20:\n\n\n\n\n\n\n\n\nDimension\nLeitfrage\nTypische Konsequenz\n\n\n\n\nVolume\nWie groß ist die Menge?\nHohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\n\n\nVariety\nWie vielfältig ist das Angebot?\nHohe Vielfalt benötigt flexible Ressourcen und erhöht Komplexität.\n\n\nVariation\nWie stark schwankt die Nachfrage?\nStarke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\n\n\nVisibility\nWie viel vom Prozess erlebt der Kunde?\nHohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\n\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+    "objectID": "courses/vwl-knappheit.html#nicht-nur-der-kontostand-zählt",
+    "href": "courses/vwl-knappheit.html#nicht-nur-der-kontostand-zählt",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Nicht nur der Kontostand zählt",
+    "text": "Nicht nur der Kontostand zählt\nNach S. 13 bestehen Opportunitätskosten darin, was für eine gewählte Möglichkeit aufgegeben wird. Für die Entscheidung ist die beste tatsächlich verfügbare Alternative maßgeblich. Man addiert nicht alle wechselseitig ausgeschlossenen Alternativen: Dieselbe Stunde kann nicht zugleich für mehrere Nebenjobs eingesetzt werden.\nEigenes Lernbeispiel: Du kannst am Nachmittag entweder drei Stunden lernen oder für 15 € pro Stunde arbeiten. Bei freier Wahl und sicher verfügbarem Job verzichtest du durch das Lernen auf 45 € Einkommen. Die Lernzeit ist deshalb nicht kostenlos, auch wenn kein Geld überwiesen wird. War die Schicht gar nicht verfügbar, sind diese 45 € keine realistische entgangene Alternative. Freizeit kann ebenfalls einen Wert haben, ohne einen beobachtbaren Marktpreis zu besitzen."
   },
   {
-    "objectID": "courses/om-vier-v.html#anwendung-auf-münsterrad",
-    "href": "courses/om-vier-v.html#anwendung-auf-münsterrad",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Anwendung auf MünsterRad",
-    "text": "Anwendung auf MünsterRad\nDie Quelle kontrastiert Reparaturwerkstatt und Lastenrad-Serienfertigung (S. 20). Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+    "objectID": "courses/vwl-knappheit.html#eine-saubere-antwort-in-vier-schritten",
+    "href": "courses/vwl-knappheit.html#eine-saubere-antwort-in-vier-schritten",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Eine saubere Antwort in vier Schritten",
+    "text": "Eine saubere Antwort in vier Schritten\n\nEntscheidung und knappe Ressource benennen: drei Stunden Zeit.\nRealistische Alternativen bestimmen: Lernen oder eine verfügbare Schicht.\nDen Verzicht auf die beste Alternative bestimmen: hier 45 € Einkommen.\nNicht monetäre Folgen ergänzen: Lernfortschritt, Erholung oder Belastung, ohne sie ungeprüft in Euro umzudeuten.\n\nStolperfalle: Aus positiven Opportunitätskosten folgt nicht, dass Lernen falsch ist. Die Kosten müssen mit dem erwarteten Nutzen verglichen werden. Ebenso beweist hohe Effizienz keine gerechte Verteilung."
   },
   {
-    "objectID": "courses/om-vier-v.html#selbstcheck-mc",
-    "href": "courses/om-vier-v.html#selbstcheck-mc",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig (PDF-S. 20). Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
+    "objectID": "courses/vwl-knappheit.html#selbstcheck-sc",
+    "href": "courses/vwl-knappheit.html#selbstcheck-sc",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nWas sind im Beispiel die monetären Opportunitätskosten des Lernens?\n 0 €, weil Lernen keine Überweisung auslöst.\n 45 € entgangenes Einkommen aus der verfügbaren Schicht.\n Die Summe aller denkbaren Nebenjobs.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig. Drei Stunden × 15 € = 45 €. a verwechselt Kosten mit Auszahlungen. c zählt alternative, nicht gleichzeitig mögliche Verwendungen mehrfach. Nicht monetäre Vorteile des Lernens bleiben für die Entscheidung wichtig."
   },
   {
-    "objectID": "courses/om-vier-v.html#quelle-und-abgrenzung",
-    "href": "courses/om-vier-v.html#quelle-und-abgrenzung",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+    "objectID": "courses/vwl-knappheit.html#quelle-und-grenzen",
+    "href": "courses/vwl-knappheit.html#quelle-und-grenzen",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 8–13 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht."
   },
   {
     "objectID": "templates/example-lecture.html",
@@ -641,6 +654,55 @@
       "Arbeiten",
       "Lecture Template"
     ]
+  },
+  {
+    "objectID": "courses/om-vier-v.html",
+    "href": "courses/om-vier-v.html",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "",
+    "text": "OM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-vier-v.html#lernziele",
+    "href": "courses/om-vier-v.html#lernziele",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Lernziele",
+    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
+    "href": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Kein schlichtes Entweder-oder",
+    "text": "Kein schlichtes Entweder-oder\nDie Folien stellen typische Unterschiede gegenüber: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden (PDF-S. 18). Die Zusammenfassung spricht ausdrücklich von einem Kontinuum (S. 34), nicht von ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nS. 19 unterscheidet Einzel-, Serien- und Massenfertigung nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
+    "href": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Vier Dimensionen statt eines Etiketts",
+    "text": "Vier Dimensionen statt eines Etiketts\nNach PDF-S. 20:\n\n\n\n\n\n\n\n\nDimension\nLeitfrage\nTypische Konsequenz\n\n\n\n\nVolume\nWie groß ist die Menge?\nHohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\n\n\nVariety\nWie vielfältig ist das Angebot?\nHohe Vielfalt benötigt flexible Ressourcen und erhöht Komplexität.\n\n\nVariation\nWie stark schwankt die Nachfrage?\nStarke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\n\n\nVisibility\nWie viel vom Prozess erlebt der Kunde?\nHohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\n\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#anwendung-auf-münsterrad",
+    "href": "courses/om-vier-v.html#anwendung-auf-münsterrad",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Anwendung auf MünsterRad",
+    "text": "Anwendung auf MünsterRad\nDie Quelle kontrastiert Reparaturwerkstatt und Lastenrad-Serienfertigung (S. 20). Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#selbstcheck-mc",
+    "href": "courses/om-vier-v.html#selbstcheck-mc",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig (PDF-S. 20). Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#quelle-und-abgrenzung",
+    "href": "courses/om-vier-v.html#quelle-und-abgrenzung",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/om-organisation-digitalisierung.html",
@@ -872,6 +934,69 @@
       "Kurse",
       "Digital Business"
     ]
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html",
+    "href": "courses/vwl-markt-staat.html",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "",
+    "text": "VWL-Übersicht"
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#lernziel",
+    "href": "courses/vwl-markt-staat.html#lernziel",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Lernziel",
+    "text": "Lernziel\nHandelsgewinne von Verteilungswirkungen trennen, Marktversagen erkennen und eine Intervention nicht vorschnell mit einer Verbesserung gleichsetzen."
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#handel-schafft-möglichkeiten-nicht-automatisch-gewinner-für-alle",
+    "href": "courses/vwl-markt-staat.html#handel-schafft-möglichkeiten-nicht-automatisch-gewinner-für-alle",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Handel schafft Möglichkeiten, nicht automatisch Gewinner für alle",
+    "text": "Handel schafft Möglichkeiten, nicht automatisch Gewinner für alle\nFreiwilliger Tausch kann Konsummöglichkeiten verbessern und Spezialisierung ermöglichen (S. 19). Ein höherer Gesamtertrag ist aber nicht gleichbedeutend mit einer Verbesserung für jede einzelne Person. Die Quelle weist auf Nachteile importkonkurrierender Sektoren hin und nennt Anpassung und Umverteilung als mögliche Bedingungen einer Verbesserung für alle (S. 20).\nSpannung in der Formulierung: Die Regel „Durch Handel kann es jedem besser gehen“ beschreibt eine Möglichkeit. Sie darf nicht als Aussage „Jeder gewinnt ohne weitere Maßnahmen“ gelesen werden. S. 20 schränkt eine solche Lesart ausdrücklich ein."
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#was-preise-leisten-und-was-nicht",
+    "href": "courses/vwl-markt-staat.html#was-preise-leisten-und-was-nicht",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Was Preise leisten – und was nicht",
+    "text": "Was Preise leisten – und was nicht\nHaushalte entscheiden dezentral über Konsum und Arbeit, Unternehmen über Einsatz und Produktion (S. 21). Wettbewerb und Preise können diese Entscheidungen koordinieren (S. 22). Die Folgerung gilt für gut funktionierende Märkte, nicht unabhängig von ihren Rahmenbedingungen. Eigentumsrechte müssen gesichert werden; Marktorganisation ist selbst eine institutionelle Aufgabe (S. 24).\nMarktversagen liegt in dieser Einführung vor, wenn die Ressourcen nicht effizient zugeteilt werden. Eine als unfair empfundene Verteilung ist deshalb nicht automatisch derselbe Befund: Effizienz und Gerechtigkeit bleiben unterschiedliche Kriterien."
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#mechanismen-unterscheiden",
+    "href": "courses/vwl-markt-staat.html#mechanismen-unterscheiden",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Mechanismen unterscheiden",
+    "text": "Mechanismen unterscheiden\n\n\n\n\n\n\n\n\nMechanismus\nEntscheidend ist …\nEigenes Lernbeispiel\n\n\n\n\nExterner Effekt\nEine nicht berücksichtigte Wirkung auf unbeteiligte Dritte.\nNächtlicher Lieferlärm belastet Anwohner.\n\n\nMarktmacht\nEinzelne Akteure können den Preis wesentlich beeinflussen.\nEin Anbieter ohne nahe Ausweichmöglichkeit.\n\n\nKoordinationsversagen\nEinzelentscheidungen halten ein schlechteres Gleichgewicht aufrecht.\nAlle warten auf einen gemeinsamen Softwarestandard.\n\n\nÖffentliches Gut\nWeder Rivalität im Konsum noch Ausschließbarkeit.\nDie Quelle nennt Landesverteidigung.\n\n\nInformationsasymmetrie\nEine Marktseite weiß mehr als die andere.\nUnterschiedliches Wissen über IT-Sicherheit bei Versicherungen.\n\n\n\nDie ersten drei Mechanismen stehen auf S. 25, öffentliche Güter, Informationsasymmetrie und unvollständige Märkte auf S. 26. Öffentlich bedeutet hier nicht einfach „vom Staat bezahlt“: Entscheidend sind die beiden Gütereigenschaften. Ein kostenlos angebotener Sitzplatz bleibt bei Vollbelegung rival."
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#cyberversicherung-vor-oder-nach-dem-vertrag",
+    "href": "courses/vwl-markt-staat.html#cyberversicherung-vor-oder-nach-dem-vertrag",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Cyberversicherung: vor oder nach dem Vertrag?",
+    "text": "Cyberversicherung: vor oder nach dem Vertrag?\nS. 26 unterscheidet zwei Informationsprobleme: Besonders riskante Unternehmen können überproportional Versicherung nachfragen (adverse selection, vor Vertragsschluss). Versicherungsschutz kann nach Vertragsschluss den Anreiz zu Schutzmaßnahmen verringern (moral hazard). Das ist eine mögliche Anreizwirkung, keine Behauptung über jedes versicherte Unternehmen."
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#von-der-diagnose-zur-maßnahme",
+    "href": "courses/vwl-markt-staat.html#von-der-diagnose-zur-maßnahme",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Von der Diagnose zur Maßnahme",
+    "text": "Von der Diagnose zur Maßnahme\nEine Intervention kann helfen, muss aber mit ihren eigenen Kosten und möglichen Fehlanreizen verglichen werden (S. 24, 27). Für das Lärmbeispiel wäre zunächst zu prüfen, ob eine Regel tatsächlich die Belastung senkt und welche Ausweichreaktionen entstehen. Informationsdefizite, Einflussnahme und Mitnahmeeffekte sind Gründe, warum eine gut gemeinte Maßnahme ihr Ziel verfehlen kann. Marktversagen begründet eine Prüfung staatlicher Optionen, keinen automatischen Nachweis ihrer Überlegenheit."
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#selbstcheck-mc",
+    "href": "courses/vwl-markt-staat.html#selbstcheck-mc",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Unterscheidungen sind zutreffend?\n Moral hazard kann nach Abschluss einer Cyberversicherung auftreten.\n Ein höherer Gesamtertrag durch Handel garantiert jedem Einzelnen einen Vorteil.\n Marktversagen beweist, dass jede staatliche Maßnahme besser ist.\n Ein öffentliches Gut ist nicht rival und nicht ausschließbar.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und d sind richtig (S. 26). b ignoriert Verteilungswirkungen und mögliche Anpassungserfordernisse (S. 20). c ignoriert Kosten und Regierungsversagen (S. 24, 27)."
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#quelle-und-grenzen",
+    "href": "courses/vwl-markt-staat.html#quelle-und-grenzen",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 19–22, 24–27 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht."
   },
   {
     "objectID": "feedback.html",
