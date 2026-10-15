@@ -420,6 +420,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#role-in-the-semester-site" id="toc-role-in-the-semester-site" class="nav-link active" data-scroll-target="#role-in-the-semester-site">Role In The Semester Site</a></li>
   <li><a href="#lecture-blocks" id="toc-lecture-blocks" class="nav-link" data-scroll-target="#lecture-blocks">Lecture Blocks</a></li>
+  <li><a href="#source-based-study-pages-innovation" id="toc-source-based-study-pages-innovation" class="nav-link" data-scroll-target="#source-based-study-pages-innovation">Source-based study pages — Innovation</a></li>
   </ul>
 </nav>
     </div>
@@ -505,6 +506,15 @@ Reveal concept distinction
 <p>A platform business model is not merely a digital product. It creates value by enabling interactions between distinct participant groups, often strengthened by direct or indirect network effects.</p>
 </details>
 </div>
+</section>
+<section id="source-based-study-pages-innovation" class="level2">
+<h2 class="anchored" data-anchor-id="source-based-study-pages-innovation">Source-based study pages — Innovation</h2>
+<ul>
+<li><a href="../courses/db-innovation-foundations.html">Invention, use and digital generativity</a></li>
+<li><a href="../courses/db-innovation-dilemmas.html">Four innovation dilemmas</a></li>
+<li><a href="../courses/db-disruption.html">Disruptive innovation</a></li>
+</ul>
+<p>These English-language pages follow the current course 95696 lecture. The earlier blocks above are orientation demos, not summaries of additional course scripts.</p>
 
 
 </section>
@@ -606,8 +616,9 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  const english = document.documentElement.lang.startsWith("en");
   if (selected.length === 0) {
-    feedback.textContent = "Wähle erst eine Antwort aus.";
+    feedback.textContent = english ? "Select an answer first." : "Wähle erst eine Antwort aus.";
     feedback.dataset.state = "neutral";
     return;
   }
@@ -617,8 +628,8 @@ document.addEventListener("click", (event) => {
     selected.every((value, index) => value === expected[index]);
 
   feedback.textContent = correct
-    ? "Richtig. Jetzt kurz begründen, warum die anderen Optionen schwächer sind."
-    : "Noch nicht ganz. Geh zur Erklärung zurück und prüfe den Mechanismus.";
+    ? (english ? "Correct. Explain why the other options are weaker." : "Richtig. Jetzt kurz begründen, warum die anderen Optionen schwächer sind.")
+    : (english ? "Not quite. Revisit the explanation and check the mechanism." : "Noch nicht ganz. Geh zur Erklärung zurück und prüfe den Mechanismus.");
   feedback.dataset.state = correct ? "correct" : "wrong";
 });
 

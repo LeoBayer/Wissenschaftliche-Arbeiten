@@ -415,76 +415,158 @@
     ]
   },
   {
-    "objectID": "courses/vwl.html",
-    "href": "courses/vwl.html",
-    "title": "VWL für Wirtschaftsinformatiker",
+    "objectID": "courses/db-disruption.html",
+    "href": "courses/db-disruption.html",
+    "title": "Disruptive innovation: a process, not a buzzword",
     "section": "",
-    "text": "Drei quellengestützte Einheiten zum ersten Kapitel der aktuellen Vorlesung:\n\nKnappheit und Opportunitätskosten – Alternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der Pizzeria – Zusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und Staat – Koordination, Informationsprobleme und Grenzen von Eingriffen.\n\nJede Einheit enthält ein Lernbeispiel und einen begründeten Selbstcheck. Quellenangaben beziehen sich auf physische PDF-Seiten. Weitere Kapitel bleiben offen; diese Einheiten ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien mit Hochschulzugang",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "VWL"
-    ]
+    "text": "Digital Business overview"
   },
   {
-    "objectID": "courses/vwl.html#lernpfad-volkswirtschaftliche-regeln",
-    "href": "courses/vwl.html#lernpfad-volkswirtschaftliche-regeln",
-    "title": "VWL für Wirtschaftsinformatiker",
+    "objectID": "courses/db-disruption.html#learning-goal",
+    "href": "courses/db-disruption.html#learning-goal",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Learning goal",
+    "text": "Learning goal\nExplain disruption through entry position and development over time, and distinguish it from generic technological success."
+  },
+  {
+    "objectID": "courses/db-disruption.html#start-with-access-not-spectacular-technology",
+    "href": "courses/db-disruption.html#start-with-access-not-spectacular-technology",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Start with access, not spectacular technology",
+    "text": "Start with access, not spectacular technology\nPDF p. 23 describes innovations that make a product or service accessible to people previously excluded by money or skill. Early disruptive businesses may have lower gross margins, smaller target markets and simpler offerings that look weak on established performance measures. These characteristics are possible early-stage features, not a checklist that mechanically proves disruption.\nPDF p. 31 sharpens the distinction: disruptive innovation starts in low-end or new-market footholds; mainstream adoption follows when quality meets mainstream standards. The process matters. A successful digital service is not disruptive solely because it grows quickly.\nOwn teaching example: a simple bookkeeping tool initially serves small clubs unable to afford specialist software. It later improves sufficiently to attract larger organizations. This is a candidate disruption story, not a proven case: one would need evidence of its initial customers, their alternatives, quality development and later mainstream adoption. A premium tool launched directly at the best-served corporate customers lacks the proposed foothold evidence."
+  },
+  {
+    "objectID": "courses/db-disruption.html#why-can-incumbents-be-vulnerable-despite-advantages",
+    "href": "courses/db-disruption.html#why-can-incumbents-be-vulnerable-despite-advantages",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Why can incumbents be vulnerable despite advantages?",
+    "text": "Why can incumbents be vulnerable despite advantages?\nPDF pp. 26–27 explain experience-curve advantages through cumulative output and learning, including standardization, labour efficiency and better equipment use. Cumulative output is not simply calendar age. An entrant may struggle to beat an incumbent on exactly the incumbent’s established dimensions.\nYet p. 28 argues that established firms can improve offerings beyond some customers’ needs, producing solutions that are too expensive or inconvenient for them. Sustaining existing performance trajectories can leave room for simpler alternatives. This is a mechanism, not a prediction that established firms must fail.\nThe IBM teaching case (p. 29) connects a mainframe-to-PC shift with different margins, prices, customer numbers, marketing and employee mindsets. It illustrates why organizational adaptation can matter alongside engineering. Its figures are historical lecture-case values, not current market data."
+  },
+  {
+    "objectID": "courses/db-disruption.html#a-boundary-case-uber",
+    "href": "courses/db-disruption.html#a-boundary-case-uber",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "A boundary case: Uber",
+    "text": "A boundary case: Uber\nPDF p. 30 asks whether Uber is disruptive. PDF p. 31 explicitly presents Christensen’s answer as no, using the foothold and quality-development criteria. There is no unresolved yes/no contradiction between these slides: the first asks the question and the next gives a theory-specific response. The generic meaning “industry-changing” is broader than this theory’s definition."
+  },
+  {
+    "objectID": "courses/db-disruption.html#creative-destruction-is-a-broader-lens",
+    "href": "courses/db-disruption.html#creative-destruction-is-a-broader-lens",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Creative destruction is a broader lens",
+    "text": "Creative destruction is a broader lens\nPDF pp. 24–25 introduce Schumpeter’s creative destruction: economic structures change as new activities replace old ones. Do not treat this broad account as an interchangeable diagnostic test for Christensen-style disruption. In an answer, name the framework before classifying a case."
+  },
+  {
+    "objectID": "courses/db-disruption.html#self-check-sc-select-one-answer",
+    "href": "courses/db-disruption.html#self-check-sc-select-one-answer",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Self-check (SC — select one answer)",
+    "text": "Self-check (SC — select one answer)\n\nWhat is the strongest evidence for the lecture’s disruption concept?\n A digital firm has a very high valuation.\n A premium entrant immediately targets the incumbent’s best customers.\n An entrant starts with underserved users and later reaches mainstream quality.\nCheck\n\n\n\n\nAnswer and reasoning\n\nc is correct: it describes foothold and evolution together (p. 31). Valuation (a) does not establish the mechanism. Premium entry (b) does not demonstrate a low-end or new-market foothold."
+  },
+  {
+    "objectID": "courses/db-disruption.html#source-and-limits",
+    "href": "courses/db-disruption.html#source-and-limits",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Source and limits",
+    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 23–31, current course 95696; read 15 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published. From PDF p. 22 onward, printed slide numbers are one higher than physical PDF pages; references here consistently use physical pages."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html",
+    "href": "courses/itdi-video-case.html",
+    "title": "ITDI: Video Case Assignment",
     "section": "",
-    "text": "Drei quellengestützte Einheiten zum ersten Kapitel der aktuellen Vorlesung:\n\nKnappheit und Opportunitätskosten – Alternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der Pizzeria – Zusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und Staat – Koordination, Informationsprobleme und Grenzen von Eingriffen.\n\nJede Einheit enthält ein Lernbeispiel und einen begründeten Selbstcheck. Quellenangaben beziehen sich auf physische PDF-Seiten. Weitere Kapitel bleiben offen; diese Einheiten ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien mit Hochschulzugang",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "VWL"
-    ]
+    "text": "Zurück zu IT-driven Innovation"
   },
   {
-    "objectID": "courses/it-driven-innovation.html",
-    "href": "courses/it-driven-innovation.html",
-    "title": "IT-driven Innovation",
+    "objectID": "courses/itdi-video-case.html#lernziele",
+    "href": "courses/itdi-video-case.html#lernziele",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Lernziele",
+    "text": "Lernziele\n\nDie verbindlichen Formatvorgaben von der freiwilligen Wettbewerbsteilnahme unterscheiden.\nEine Technologie über Funktionen, Handlungsmöglichkeiten und Auswirkungen erklären.\nEinen inhaltlich schlüssigen Beitrag innerhalb der Zeitgrenze planen."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#was-abgegeben-wird",
+    "href": "courses/itdi-video-case.html#was-abgegeben-wird",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Was abgegeben wird",
+    "text": "Was abgegeben wird\nLaut Video Case Intro.pdf, S. 2 erstellt eine Gruppe aus bis zu drei Personen ein Video über eine neue digitale Technologie oder ein konkretes technologiegetriebenes Produkt bzw. einen Dienst. Das Video soll die Funktionen bzw. Affordances untersuchen und mögliche Auswirkungen auf Wirtschaft und Gesellschaft bewerten.\nMaximal 120 Sekunden sind eine harte Grenze. Längere Beiträge werden stark sanktioniert. Bewertet werden Inhalt, Struktur und Qualität; die Folien nennen ungefähr 30 Arbeitsstunden je Teammitglied als Aufwand. Inhalt hat Vorrang vor visuellen Effekten (S. 4).\n\n\n\n\n\n\nImportantWettbewerb und Note nicht verwechseln\n\n\n\nDie Teilnahme am Videowettbewerb ist nicht Voraussetzung für die Benotung. Die Entscheidung zur Wettbewerbsteilnahme wird zusammen mit dem Video abgegeben (S. 2)."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#termine-aus-der-quelle",
+    "href": "courses/itdi-video-case.html#termine-aus-der-quelle",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Termine aus der Quelle",
+    "text": "Termine aus der Quelle\n\nFrühes Ideenfeedback: November 2026.\nBis zu zwei Feedbacktermine pro Team: 11./13./18./20. Januar 2027.\nAbgabe von Video und Wettbewerbsentscheidung: 24. Januar 2027, 23:59 Uhr.\n\n\n\n\n\n\n\nWarning\n\n\n\nDie Quelle nennt für Vorrunden und Finale den 25./26. bzw. 27. Januar 2026, obwohl sie das Wintersemester 2026/27 behandelt und die Abgabe 2027 nennt. Das ist widersprüchlich. Diese Wettbewerbstermine deshalb im Learnweb bzw. beim Lehrstuhl bestätigen; nicht stillschweigend auf 2027 korrigieren. Die frühe Prüfungsanmeldung ist davon getrennt zu prüfen."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#vom-thema-zur-argumentation",
+    "href": "courses/itdi-video-case.html#vom-thema-zur-argumentation",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Vom Thema zur Argumentation",
+    "text": "Vom Thema zur Argumentation\nDie folgende Struktur ist ein eigener Arbeitsvorschlag, keine zusätzliche Vorgabe des Lehrstuhls:\n\nProblem: Welche konkrete Tätigkeit oder welches Problem adressiert die Technologie?\nFunktion: Was tut das Produkt tatsächlich?\nHandlungsmöglichkeit: Was können bestimmte Nutzer dadurch anders oder erstmals tun?\nAuswirkung: Über welchen Mechanismus könnten sich wirtschaftliche oder gesellschaftliche Folgen ergeben? Welche Grenzen bleiben?\n\nBeispiel: Bei einer automatischen Transkriptionssoftware ist die Umwandlung von Sprache in Text die Funktion. Das schnelle Durchsuchen eines Interviews ist eine damit verbundene Handlungsmöglichkeit. Eine mögliche Zeitersparnis muss erklärt und gegen Fehlerkorrekturaufwand abgewogen werden. Dieses Beispiel ist didaktisch ergänzt, nicht aus den Folien übernommen."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#selbstcheck",
+    "href": "courses/itdi-video-case.html#selbstcheck",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Selbstcheck",
+    "text": "Selbstcheck\n\n  Ein Team produziert einen guten Film mit 135 Sekunden. Ist das Format erfüllt?\n   Ja, wenn die Visualisierung besonders gut ist.\n   Nein, die 120-Sekunden-Grenze ist verbindlich.\n  Prüfen\n  \n\nBegründung anzeigen\nAntwort b. S. 4 bezeichnet die Grenze ausdrücklich als hart und kündigt starke Abzüge für Überschreitungen an. Aufwendige Effekte ersetzen weder Inhalt noch Formaterfüllung.\n\n\n\nMuss unser Team am Turnier teilnehmen, um eine Note zu bekommen?\n\nNein. Laut S. 2 hängt die Benotung nicht davon ab, ob das Video für das Turnier angemeldet wird. Videoabgabe und Entscheidung über die Turnierteilnahme sind zu unterscheiden."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#quelle",
+    "href": "courses/itdi-video-case.html#quelle",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Quelle",
+    "text": "Quelle\nVideo Case Intro.pdf – Learnweb, Hochschulzugang erforderlich, insbesondere S. 2 und 4. Lokal geprüft am 15.10.2026. Originaldatei wird nicht auf dieser Website bereitgestellt."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html",
+    "href": "courses/om-leistungsziele.html",
+    "title": "OM: Leistungsziele und Kennzahlen",
     "section": "",
-    "text": "IT-driven Innovation pages should connect technology, adoption, organizational routines, and value realization. The important exam move is usually not “technology X is useful”, but why and under which conditions it changes work or strategy.",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "IT-driven Innovation"
-    ]
+    "text": "OM-Übersicht"
   },
   {
-    "objectID": "courses/it-driven-innovation.html#role-in-the-semester-site",
-    "href": "courses/it-driven-innovation.html#role-in-the-semester-site",
-    "title": "IT-driven Innovation",
-    "section": "",
-    "text": "IT-driven Innovation pages should connect technology, adoption, organizational routines, and value realization. The important exam move is usually not “technology X is useful”, but why and under which conditions it changes work or strategy.",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "IT-driven Innovation"
-    ]
+    "objectID": "courses/om-leistungsziele.html#lernziele",
+    "href": "courses/om-leistungsziele.html#lernziele",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Lernziele",
+    "text": "Lernziele\nLeistungsziele auseinanderhalten, Zielkonflikte erklären und Produktivität sowie Little’s Law mit passenden Einheiten berechnen."
   },
   {
-    "objectID": "courses/it-driven-innovation.html#lecture-blocks",
-    "href": "courses/it-driven-innovation.html#lecture-blocks",
-    "title": "IT-driven Innovation",
-    "section": "Lecture Blocks",
-    "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nInnovation types\nIncremental, radical, architectural\nClassification checks\n\n\nAdoption\nBarriers, diffusion, complementary assets\nCase prompts\n\n\nDigital capabilities\nSensing, seizing, transforming\nExplanation cards\n\n\nImplementation\nChange management and risk\nTransfer tasks\n\n\n\n\n  Which answer is closest to an innovation-management perspective?\n   A technology creates value as soon as it is installed.\n   Value depends on adoption, complementary processes, capabilities, and fit with the problem.\n   Innovation is only relevant when the technology is completely new to the world.\n  Check\n  \n\n\n\n\nReveal transfer answer\n\nWhen evaluating an IT-driven innovation, describe the problem, the technological affordance, required organizational changes, adoption barriers, and the expected value mechanism.",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "IT-driven Innovation"
-    ]
+    "objectID": "courses/om-leistungsziele.html#vom-prozess-zum-leistungsziel",
+    "href": "courses/om-leistungsziele.html#vom-prozess-zum-leistungsziel",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Vom Prozess zum Leistungsziel",
+    "text": "Vom Prozess zum Leistungsziel\nOM gestaltet, steuert und verbessert Prozesse für Güter und Dienstleistungen (PDF-S. 12). Inputs werden in Outputs umgewandelt; Umweltbedingungen beeinflussen diese Transformation (S. 13 und 34).\nDie Einführung unterscheidet sechs Ziele (S. 14):\n\n\n\n\n\n\n\n\nZiel\nBedeutung\nUnterscheidung\n\n\n\n\nQualität\nSpezifikationsgerechte, fehlerfreie Leistung\nRichtig liefern\n\n\nGeschwindigkeit\nKurze Zeit von Anfrage bis Lieferung\nSchnell liefern\n\n\nZuverlässigkeit\nZugesagte Termine einhalten\nPünktlich liefern\n\n\nFlexibilität\nProdukt, Mix, Menge oder Lieferung ändern können\nÄnderungen ermöglichen\n\n\nKosten\nGeringer Ressourceneinsatz je Leistung\nWirtschaftlich leisten\n\n\nNachhaltigkeit\nÖkologische und soziale Auswirkungen berücksichtigen\nVerantwortungsvoll leisten\n\n\n\nEigenes Lernbeispiel: Ein Reparaturbetrieb verspricht fünf Tage und liefert zuverlässig nach fünf Tagen. Er kann zuverlässig sein, obwohl ein Konkurrent schon nach zwei Tagen liefert. Geschwindigkeit und Zuverlässigkeit messen also nicht dasselbe.\nMehr Varianten können Rüstaufwand und Stückkosten erhöhen. Hohe Lieferbereitschaft kann mehr Bestand verlangen. Solche Trade-offs erfordern Prioritäten, sind aber nicht unveränderlich: Material- und Energieeffizienz können Kosten und Emissionen zugleich senken (S. 14)."
   },
   {
-    "objectID": "courses/it-driven-innovation.html#aktuelle-learnweb-inhalte",
-    "href": "courses/it-driven-innovation.html#aktuelle-learnweb-inhalte",
-    "title": "IT-driven Innovation",
-    "section": "Aktuelle Learnweb-Inhalte",
-    "text": "Aktuelle Learnweb-Inhalte\n\nVideo Case Assignment: Anforderungen und Selbstcheck\nMaterialübersicht",
-    "crumbs": [
-      "Cockpit",
-      "Kurse",
-      "IT-driven Innovation"
-    ]
+    "objectID": "courses/om-leistungsziele.html#produktivität-rechnen",
+    "href": "courses/om-leistungsziele.html#produktivität-rechnen",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Produktivität rechnen",
+    "text": "Produktivität rechnen\nNach S. 15 gilt: Produktivität = Output / Input. Arbeitsproduktivität betrachtet nur den Input Arbeit, nicht sämtliche Kosten.\nDas Quellenbeispiel liefert 120 Räder mit 300 Arbeitsstunden, später 135 Räder mit denselben Stunden:\n\nVorher: 120 / 300 = 0,40 Räder/h.\nNachher: 135 / 300 = 0,45 Räder/h.\nRelative Steigerung: (0,45 − 0,40) / 0,40 = 12,5 %.\n\nDie Differenz 0,05 Räder/h ist keine Steigerung um 5 %. Für eine Mehrfaktorproduktivität müssen mehrere Inputs in einer vergleichbaren Bewertung zusammengeführt werden (S. 15)."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#littles-law-bestand-ist-nicht-durchsatz",
+    "href": "courses/om-leistungsziele.html#littles-law-bestand-ist-nicht-durchsatz",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Little’s Law: Bestand ist nicht Durchsatz",
+    "text": "Little’s Law: Bestand ist nicht Durchsatz\nI = R × T verknüpft mittleren Bestand I, Durchsatz R und Durchlaufzeit T (S. 15). Im Quellenbeispiel: 20 Räder/Tag × 3 Tage = 60 Räder im System.\nAls ergänzende Anwendungshilfe: Systemgrenzen und Zeitbasis müssen übereinstimmen; verwendet werden langfristige Mittelwerte eines stabilen Flusssystems. Nicht aus einer Momentaufnahme beliebige Tageswerte multiplizieren.\nEigenes Lernbeispiel: Bei unverändert 20 Rädern/Tag und nur zwei Tagen Durchlaufzeit ergibt sich ein mittlerer Bestand von 40 Rädern. Weniger Bestand ist hier die Folge kürzerer Durchlaufzeit bei gleichem Durchsatz, nicht automatisch weniger Nachfrage."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#selbstcheck-sc",
+    "href": "courses/om-leistungsziele.html#selbstcheck-sc",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nBei 15 Aufträgen pro Tag und vier Tagen mittlerer Durchlaufzeit: Wie groß ist der mittlere Bestand?\n 60 Aufträge\n 3,75 Aufträge\n 60 Aufträge pro Tag\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na ist richtig: I = 15 Aufträge/Tag × 4 Tage = 60 Aufträge. b dividiert statt zu multiplizieren; c verwechselt Bestand mit einer Rate. Vgl. PDF-S. 15."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#quelle-und-abgrenzung",
+    "href": "courses/om-leistungsziele.html#quelle-und-abgrenzung",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 12–15, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/dwpm.html",
@@ -499,53 +581,102 @@
     ]
   },
   {
-    "objectID": "courses/vwl-knappheit.html",
-    "href": "courses/vwl-knappheit.html",
-    "title": "VWL: Knappheit und Opportunitätskosten",
+    "objectID": "courses/om-organisation-digitalisierung.html",
+    "href": "courses/om-organisation-digitalisierung.html",
+    "title": "OM: Organisation und Digitalisierung",
     "section": "",
-    "text": "VWL-Übersicht"
+    "text": "OM-Übersicht"
   },
   {
-    "objectID": "courses/vwl-knappheit.html#lernziel",
-    "href": "courses/vwl-knappheit.html#lernziel",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Lernziel",
-    "text": "Lernziel\nKnappheit erklären, eine relevante Alternative benennen und Opportunitätskosten von einer bloßen Geldzahlung unterscheiden."
+    "objectID": "courses/om-organisation-digitalisierung.html#lernziele",
+    "href": "courses/om-organisation-digitalisierung.html#lernziele",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Lernziele",
+    "text": "Lernziele\nEntscheidungen nach Horizont einordnen, Organisationsformen abwägen und digitale Maßnahmen über Wirkung, Voraussetzung und Risiko begründen."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#warum-überhaupt-entscheiden",
-    "href": "courses/vwl-knappheit.html#warum-überhaupt-entscheiden",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Warum überhaupt entscheiden?",
-    "text": "Warum überhaupt entscheiden?\nVWL untersucht, wie eine Gesellschaft knappe Mittel bewirtschaftet (S. 8–9). Knappheit heißt hier: Die verfügbaren Ressourcen reichen nicht für alle gleichzeitig gewünschten Verwendungen. Auch Zeit und Aufmerksamkeit sind Ressourcen. Deshalb stellen sich drei Fragen: Was wird produziert, wie wird produziert und für wen?\nDie erste Regel (S. 10–11) verbindet Auswahl und Verzicht. Mehr Zeit für eine Tätigkeit bedeutet weniger Zeit für eine andere. Auf gesellschaftlicher Ebene können Effizienz und Verteilungsgerechtigkeit in Spannung stehen. Effizienz betrifft in dieser Einführung den möglichst hohen Wert der Produktion aus knappen Ressourcen. Verteilungsgerechtigkeit betrifft deren faire Verteilung. Ein großer Gesamtertrag sagt allein noch nicht, wer davon profitiert; „fair“ erfordert ein Werturteil."
+    "objectID": "courses/om-organisation-digitalisierung.html#entscheidungen-bilden-eine-hierarchie",
+    "href": "courses/om-organisation-digitalisierung.html#entscheidungen-bilden-eine-hierarchie",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Entscheidungen bilden eine Hierarchie",
+    "text": "Entscheidungen bilden eine Hierarchie\nPDF-S. 16 nennt als typische Horizonte:\n\n\n\n\n\n\n\n\nEbene\nHorizont der Quelle\nBeispiel\n\n\n\n\nStrategisch\n2–5 Jahre\nStandort, Kapazitätsaufbau, Make-or-Buy\n\n\nTaktisch\n3–18 Monate\nSaisonprogramm, Schichten, Rahmenverträge\n\n\nOperativ\n1 Tag–1 Woche\nAuftragsreihenfolge, Personaleinsatz, Störungsreaktion\n\n\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#nicht-nur-der-kontostand-zählt",
-    "href": "courses/vwl-knappheit.html#nicht-nur-der-kontostand-zählt",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Nicht nur der Kontostand zählt",
-    "text": "Nicht nur der Kontostand zählt\nNach S. 13 bestehen Opportunitätskosten darin, was für eine gewählte Möglichkeit aufgegeben wird. Für die Entscheidung ist die beste tatsächlich verfügbare Alternative maßgeblich. Man addiert nicht alle wechselseitig ausgeschlossenen Alternativen: Dieselbe Stunde kann nicht zugleich für mehrere Nebenjobs eingesetzt werden.\nEigenes Lernbeispiel: Du kannst am Nachmittag entweder drei Stunden lernen oder für 15 € pro Stunde arbeiten. Bei freier Wahl und sicher verfügbarem Job verzichtest du durch das Lernen auf 45 € Einkommen. Die Lernzeit ist deshalb nicht kostenlos, auch wenn kein Geld überwiesen wird. War die Schicht gar nicht verfügbar, sind diese 45 € keine realistische entgangene Alternative. Freizeit kann ebenfalls einen Wert haben, ohne einen beobachtbaren Marktpreis zu besitzen."
+    "objectID": "courses/om-organisation-digitalisierung.html#schnittstellen-und-organisationsformen",
+    "href": "courses/om-organisation-digitalisierung.html#schnittstellen-und-organisationsformen",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Schnittstellen und Organisationsformen",
+    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen (S. 23). S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\n\n\n\n\n\n\n\nStruktur\nNutzen laut Quelle\nMögliche Kehrseite\n\n\n\n\nFunktional\nKlare Zuständigkeit, Skaleneffekte\nSilos, geringe Flexibilität\n\n\nDivisional\nMarktnähe, Ergebnisverantwortung\nRedundanzen, schwierige Harmonisierung\n\n\nMatrix\nRessourcenoptimierung, Synergien\nKomplexe Entscheidungen durch doppelte Berichtslinie\n\n\nWertstrom / End-to-End\nKundenzentrierung, kurze Durchlaufzeit\nKoordinationsbedarf, neue Rollen\n\n\n\nDiese Gegenüberstellung stammt aus S. 24–26. Es gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#eine-saubere-antwort-in-vier-schritten",
-    "href": "courses/vwl-knappheit.html#eine-saubere-antwort-in-vier-schritten",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Eine saubere Antwort in vier Schritten",
-    "text": "Eine saubere Antwort in vier Schritten\n\nEntscheidung und knappe Ressource benennen: drei Stunden Zeit.\nRealistische Alternativen bestimmen: Lernen oder eine verfügbare Schicht.\nDen Verzicht auf die beste Alternative bestimmen: hier 45 € Einkommen.\nNicht monetäre Folgen ergänzen: Lernfortschritt, Erholung oder Belastung, ohne sie ungeprüft in Euro umzudeuten.\n\nStolperfalle: Aus positiven Opportunitätskosten folgt nicht, dass Lernen falsch ist. Die Kosten müssen mit dem erwarteten Nutzen verglichen werden. Ebenso beweist hohe Effizienz keine gerechte Verteilung."
+    "objectID": "courses/om-organisation-digitalisierung.html#digitale-maßnahme-als-wirkungskette-prüfen",
+    "href": "courses/om-organisation-digitalisierung.html#digitale-maßnahme-als-wirkungskette-prüfen",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Digitale Maßnahme als Wirkungskette prüfen",
+    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDie Quelle nennt Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz als Hebel. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende (S. 29).\nEigenes Lernbeispiel, angelehnt an S. 32: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas ALIS-Beispiel der Quelle zeigt Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung (S. 31). Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarningQuellenkritik und interne Verweise\n\n\n\nDie Nutzenzahlen auf PDF-S. 30 sind laut Folienhinweis überwiegend Selbstauskünfte und nicht kausal belegt; sie sind keine garantierten Effekte für andere Unternehmen. PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“, während die ALIS-Seite selbst die Foliennummer 33 trägt (PDF-S. 31). Deshalb hier physische PDF-Seiten verwenden. Die Lernseiten übernehmen keine ungeprüften aktuellen geopolitischen Behauptungen aus dem Einführungsteil."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#selbstcheck-sc",
-    "href": "courses/vwl-knappheit.html#selbstcheck-sc",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nWas sind im Beispiel die monetären Opportunitätskosten des Lernens?\n 0 €, weil Lernen keine Überweisung auslöst.\n 45 € entgangenes Einkommen aus der verfügbaren Schicht.\n Die Summe aller denkbaren Nebenjobs.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig. Drei Stunden × 15 € = 45 €. a verwechselt Kosten mit Auszahlungen. c zählt alternative, nicht gleichzeitig mögliche Verwendungen mehrfach. Nicht monetäre Vorteile des Lernens bleiben für die Entscheidung wichtig."
+    "objectID": "courses/om-organisation-digitalisierung.html#selbstcheck-mc",
+    "href": "courses/om-organisation-digitalisierung.html#selbstcheck-mc",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig (PDF-S. 16 und 29). b ist falsch: Die Quelle warnt auf S. 30 vor einer kausalen Interpretation der berichteten Nutzenwerte. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#quelle-und-grenzen",
-    "href": "courses/vwl-knappheit.html#quelle-und-grenzen",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Quelle und Grenzen",
-    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 8–13 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht."
+    "objectID": "courses/om-organisation-digitalisierung.html#quelle-und-abgrenzung",
+    "href": "courses/om-organisation-digitalisierung.html#quelle-und-abgrenzung",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+  },
+  {
+    "objectID": "courses/om-vier-v.html",
+    "href": "courses/om-vier-v.html",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "",
+    "text": "OM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-vier-v.html#lernziele",
+    "href": "courses/om-vier-v.html#lernziele",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Lernziele",
+    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
+    "href": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Kein schlichtes Entweder-oder",
+    "text": "Kein schlichtes Entweder-oder\nDie Folien stellen typische Unterschiede gegenüber: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden (PDF-S. 18). Die Zusammenfassung spricht ausdrücklich von einem Kontinuum (S. 34), nicht von ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nS. 19 unterscheidet Einzel-, Serien- und Massenfertigung nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
+    "href": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Vier Dimensionen statt eines Etiketts",
+    "text": "Vier Dimensionen statt eines Etiketts\nNach PDF-S. 20:\n\n\n\n\n\n\n\n\nDimension\nLeitfrage\nTypische Konsequenz\n\n\n\n\nVolume\nWie groß ist die Menge?\nHohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\n\n\nVariety\nWie vielfältig ist das Angebot?\nHohe Vielfalt benötigt flexible Ressourcen und erhöht Komplexität.\n\n\nVariation\nWie stark schwankt die Nachfrage?\nStarke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\n\n\nVisibility\nWie viel vom Prozess erlebt der Kunde?\nHohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\n\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#anwendung-auf-münsterrad",
+    "href": "courses/om-vier-v.html#anwendung-auf-münsterrad",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Anwendung auf MünsterRad",
+    "text": "Anwendung auf MünsterRad\nDie Quelle kontrastiert Reparaturwerkstatt und Lastenrad-Serienfertigung (S. 20). Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#selbstcheck-mc",
+    "href": "courses/om-vier-v.html#selbstcheck-mc",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig (PDF-S. 20). Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#quelle-und-abgrenzung",
+    "href": "courses/om-vier-v.html#quelle-und-abgrenzung",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
   },
   {
     "objectID": "templates/example-lecture.html",
@@ -656,200 +787,230 @@
     ]
   },
   {
-    "objectID": "courses/om-vier-v.html",
-    "href": "courses/om-vier-v.html",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "objectID": "courses/vwl-knappheit.html",
+    "href": "courses/vwl-knappheit.html",
+    "title": "VWL: Knappheit und Opportunitätskosten",
     "section": "",
-    "text": "OM-Übersicht"
+    "text": "VWL-Übersicht"
   },
   {
-    "objectID": "courses/om-vier-v.html#lernziele",
-    "href": "courses/om-vier-v.html#lernziele",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Lernziele",
-    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
+    "objectID": "courses/vwl-knappheit.html#lernziel",
+    "href": "courses/vwl-knappheit.html#lernziel",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Lernziel",
+    "text": "Lernziel\nKnappheit erklären, eine relevante Alternative benennen und Opportunitätskosten von einer bloßen Geldzahlung unterscheiden."
   },
   {
-    "objectID": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
-    "href": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Kein schlichtes Entweder-oder",
-    "text": "Kein schlichtes Entweder-oder\nDie Folien stellen typische Unterschiede gegenüber: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden (PDF-S. 18). Die Zusammenfassung spricht ausdrücklich von einem Kontinuum (S. 34), nicht von ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nS. 19 unterscheidet Einzel-, Serien- und Massenfertigung nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+    "objectID": "courses/vwl-knappheit.html#warum-überhaupt-entscheiden",
+    "href": "courses/vwl-knappheit.html#warum-überhaupt-entscheiden",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Warum überhaupt entscheiden?",
+    "text": "Warum überhaupt entscheiden?\nVWL untersucht, wie eine Gesellschaft knappe Mittel bewirtschaftet (S. 8–9). Knappheit heißt hier: Die verfügbaren Ressourcen reichen nicht für alle gleichzeitig gewünschten Verwendungen. Auch Zeit und Aufmerksamkeit sind Ressourcen. Deshalb stellen sich drei Fragen: Was wird produziert, wie wird produziert und für wen?\nDie erste Regel (S. 10–11) verbindet Auswahl und Verzicht. Mehr Zeit für eine Tätigkeit bedeutet weniger Zeit für eine andere. Auf gesellschaftlicher Ebene können Effizienz und Verteilungsgerechtigkeit in Spannung stehen. Effizienz betrifft in dieser Einführung den möglichst hohen Wert der Produktion aus knappen Ressourcen. Verteilungsgerechtigkeit betrifft deren faire Verteilung. Ein großer Gesamtertrag sagt allein noch nicht, wer davon profitiert; „fair“ erfordert ein Werturteil."
   },
   {
-    "objectID": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
-    "href": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Vier Dimensionen statt eines Etiketts",
-    "text": "Vier Dimensionen statt eines Etiketts\nNach PDF-S. 20:\n\n\n\n\n\n\n\n\nDimension\nLeitfrage\nTypische Konsequenz\n\n\n\n\nVolume\nWie groß ist die Menge?\nHohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\n\n\nVariety\nWie vielfältig ist das Angebot?\nHohe Vielfalt benötigt flexible Ressourcen und erhöht Komplexität.\n\n\nVariation\nWie stark schwankt die Nachfrage?\nStarke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\n\n\nVisibility\nWie viel vom Prozess erlebt der Kunde?\nHohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\n\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+    "objectID": "courses/vwl-knappheit.html#nicht-nur-der-kontostand-zählt",
+    "href": "courses/vwl-knappheit.html#nicht-nur-der-kontostand-zählt",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Nicht nur der Kontostand zählt",
+    "text": "Nicht nur der Kontostand zählt\nNach S. 13 bestehen Opportunitätskosten darin, was für eine gewählte Möglichkeit aufgegeben wird. Für die Entscheidung ist die beste tatsächlich verfügbare Alternative maßgeblich. Man addiert nicht alle wechselseitig ausgeschlossenen Alternativen: Dieselbe Stunde kann nicht zugleich für mehrere Nebenjobs eingesetzt werden.\nEigenes Lernbeispiel: Du kannst am Nachmittag entweder drei Stunden lernen oder für 15 € pro Stunde arbeiten. Bei freier Wahl und sicher verfügbarem Job verzichtest du durch das Lernen auf 45 € Einkommen. Die Lernzeit ist deshalb nicht kostenlos, auch wenn kein Geld überwiesen wird. War die Schicht gar nicht verfügbar, sind diese 45 € keine realistische entgangene Alternative. Freizeit kann ebenfalls einen Wert haben, ohne einen beobachtbaren Marktpreis zu besitzen."
   },
   {
-    "objectID": "courses/om-vier-v.html#anwendung-auf-münsterrad",
-    "href": "courses/om-vier-v.html#anwendung-auf-münsterrad",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Anwendung auf MünsterRad",
-    "text": "Anwendung auf MünsterRad\nDie Quelle kontrastiert Reparaturwerkstatt und Lastenrad-Serienfertigung (S. 20). Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+    "objectID": "courses/vwl-knappheit.html#eine-saubere-antwort-in-vier-schritten",
+    "href": "courses/vwl-knappheit.html#eine-saubere-antwort-in-vier-schritten",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Eine saubere Antwort in vier Schritten",
+    "text": "Eine saubere Antwort in vier Schritten\n\nEntscheidung und knappe Ressource benennen: drei Stunden Zeit.\nRealistische Alternativen bestimmen: Lernen oder eine verfügbare Schicht.\nDen Verzicht auf die beste Alternative bestimmen: hier 45 € Einkommen.\nNicht monetäre Folgen ergänzen: Lernfortschritt, Erholung oder Belastung, ohne sie ungeprüft in Euro umzudeuten.\n\nStolperfalle: Aus positiven Opportunitätskosten folgt nicht, dass Lernen falsch ist. Die Kosten müssen mit dem erwarteten Nutzen verglichen werden. Ebenso beweist hohe Effizienz keine gerechte Verteilung."
   },
   {
-    "objectID": "courses/om-vier-v.html#selbstcheck-mc",
-    "href": "courses/om-vier-v.html#selbstcheck-mc",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig (PDF-S. 20). Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
-  },
-  {
-    "objectID": "courses/om-vier-v.html#quelle-und-abgrenzung",
-    "href": "courses/om-vier-v.html#quelle-und-abgrenzung",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html",
-    "href": "courses/om-organisation-digitalisierung.html",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "",
-    "text": "OM-Übersicht"
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#lernziele",
-    "href": "courses/om-organisation-digitalisierung.html#lernziele",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Lernziele",
-    "text": "Lernziele\nEntscheidungen nach Horizont einordnen, Organisationsformen abwägen und digitale Maßnahmen über Wirkung, Voraussetzung und Risiko begründen."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#entscheidungen-bilden-eine-hierarchie",
-    "href": "courses/om-organisation-digitalisierung.html#entscheidungen-bilden-eine-hierarchie",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Entscheidungen bilden eine Hierarchie",
-    "text": "Entscheidungen bilden eine Hierarchie\nPDF-S. 16 nennt als typische Horizonte:\n\n\n\n\n\n\n\n\nEbene\nHorizont der Quelle\nBeispiel\n\n\n\n\nStrategisch\n2–5 Jahre\nStandort, Kapazitätsaufbau, Make-or-Buy\n\n\nTaktisch\n3–18 Monate\nSaisonprogramm, Schichten, Rahmenverträge\n\n\nOperativ\n1 Tag–1 Woche\nAuftragsreihenfolge, Personaleinsatz, Störungsreaktion\n\n\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#schnittstellen-und-organisationsformen",
-    "href": "courses/om-organisation-digitalisierung.html#schnittstellen-und-organisationsformen",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Schnittstellen und Organisationsformen",
-    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen (S. 23). S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\n\n\n\n\n\n\n\nStruktur\nNutzen laut Quelle\nMögliche Kehrseite\n\n\n\n\nFunktional\nKlare Zuständigkeit, Skaleneffekte\nSilos, geringe Flexibilität\n\n\nDivisional\nMarktnähe, Ergebnisverantwortung\nRedundanzen, schwierige Harmonisierung\n\n\nMatrix\nRessourcenoptimierung, Synergien\nKomplexe Entscheidungen durch doppelte Berichtslinie\n\n\nWertstrom / End-to-End\nKundenzentrierung, kurze Durchlaufzeit\nKoordinationsbedarf, neue Rollen\n\n\n\nDiese Gegenüberstellung stammt aus S. 24–26. Es gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#digitale-maßnahme-als-wirkungskette-prüfen",
-    "href": "courses/om-organisation-digitalisierung.html#digitale-maßnahme-als-wirkungskette-prüfen",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Digitale Maßnahme als Wirkungskette prüfen",
-    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDie Quelle nennt Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz als Hebel. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende (S. 29).\nEigenes Lernbeispiel, angelehnt an S. 32: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas ALIS-Beispiel der Quelle zeigt Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung (S. 31). Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarningQuellenkritik und interne Verweise\n\n\n\nDie Nutzenzahlen auf PDF-S. 30 sind laut Folienhinweis überwiegend Selbstauskünfte und nicht kausal belegt; sie sind keine garantierten Effekte für andere Unternehmen. PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“, während die ALIS-Seite selbst die Foliennummer 33 trägt (PDF-S. 31). Deshalb hier physische PDF-Seiten verwenden. Die Lernseiten übernehmen keine ungeprüften aktuellen geopolitischen Behauptungen aus dem Einführungsteil."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#selbstcheck-mc",
-    "href": "courses/om-organisation-digitalisierung.html#selbstcheck-mc",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig (PDF-S. 16 und 29). b ist falsch: Die Quelle warnt auf S. 30 vor einer kausalen Interpretation der berichteten Nutzenwerte. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#quelle-und-abgrenzung",
-    "href": "courses/om-organisation-digitalisierung.html#quelle-und-abgrenzung",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
-  },
-  {
-    "objectID": "courses/om-leistungsziele.html",
-    "href": "courses/om-leistungsziele.html",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "",
-    "text": "OM-Übersicht"
-  },
-  {
-    "objectID": "courses/om-leistungsziele.html#lernziele",
-    "href": "courses/om-leistungsziele.html#lernziele",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Lernziele",
-    "text": "Lernziele\nLeistungsziele auseinanderhalten, Zielkonflikte erklären und Produktivität sowie Little’s Law mit passenden Einheiten berechnen."
-  },
-  {
-    "objectID": "courses/om-leistungsziele.html#vom-prozess-zum-leistungsziel",
-    "href": "courses/om-leistungsziele.html#vom-prozess-zum-leistungsziel",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Vom Prozess zum Leistungsziel",
-    "text": "Vom Prozess zum Leistungsziel\nOM gestaltet, steuert und verbessert Prozesse für Güter und Dienstleistungen (PDF-S. 12). Inputs werden in Outputs umgewandelt; Umweltbedingungen beeinflussen diese Transformation (S. 13 und 34).\nDie Einführung unterscheidet sechs Ziele (S. 14):\n\n\n\n\n\n\n\n\nZiel\nBedeutung\nUnterscheidung\n\n\n\n\nQualität\nSpezifikationsgerechte, fehlerfreie Leistung\nRichtig liefern\n\n\nGeschwindigkeit\nKurze Zeit von Anfrage bis Lieferung\nSchnell liefern\n\n\nZuverlässigkeit\nZugesagte Termine einhalten\nPünktlich liefern\n\n\nFlexibilität\nProdukt, Mix, Menge oder Lieferung ändern können\nÄnderungen ermöglichen\n\n\nKosten\nGeringer Ressourceneinsatz je Leistung\nWirtschaftlich leisten\n\n\nNachhaltigkeit\nÖkologische und soziale Auswirkungen berücksichtigen\nVerantwortungsvoll leisten\n\n\n\nEigenes Lernbeispiel: Ein Reparaturbetrieb verspricht fünf Tage und liefert zuverlässig nach fünf Tagen. Er kann zuverlässig sein, obwohl ein Konkurrent schon nach zwei Tagen liefert. Geschwindigkeit und Zuverlässigkeit messen also nicht dasselbe.\nMehr Varianten können Rüstaufwand und Stückkosten erhöhen. Hohe Lieferbereitschaft kann mehr Bestand verlangen. Solche Trade-offs erfordern Prioritäten, sind aber nicht unveränderlich: Material- und Energieeffizienz können Kosten und Emissionen zugleich senken (S. 14)."
-  },
-  {
-    "objectID": "courses/om-leistungsziele.html#produktivität-rechnen",
-    "href": "courses/om-leistungsziele.html#produktivität-rechnen",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Produktivität rechnen",
-    "text": "Produktivität rechnen\nNach S. 15 gilt: Produktivität = Output / Input. Arbeitsproduktivität betrachtet nur den Input Arbeit, nicht sämtliche Kosten.\nDas Quellenbeispiel liefert 120 Räder mit 300 Arbeitsstunden, später 135 Räder mit denselben Stunden:\n\nVorher: 120 / 300 = 0,40 Räder/h.\nNachher: 135 / 300 = 0,45 Räder/h.\nRelative Steigerung: (0,45 − 0,40) / 0,40 = 12,5 %.\n\nDie Differenz 0,05 Räder/h ist keine Steigerung um 5 %. Für eine Mehrfaktorproduktivität müssen mehrere Inputs in einer vergleichbaren Bewertung zusammengeführt werden (S. 15)."
-  },
-  {
-    "objectID": "courses/om-leistungsziele.html#littles-law-bestand-ist-nicht-durchsatz",
-    "href": "courses/om-leistungsziele.html#littles-law-bestand-ist-nicht-durchsatz",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Little’s Law: Bestand ist nicht Durchsatz",
-    "text": "Little’s Law: Bestand ist nicht Durchsatz\nI = R × T verknüpft mittleren Bestand I, Durchsatz R und Durchlaufzeit T (S. 15). Im Quellenbeispiel: 20 Räder/Tag × 3 Tage = 60 Räder im System.\nAls ergänzende Anwendungshilfe: Systemgrenzen und Zeitbasis müssen übereinstimmen; verwendet werden langfristige Mittelwerte eines stabilen Flusssystems. Nicht aus einer Momentaufnahme beliebige Tageswerte multiplizieren.\nEigenes Lernbeispiel: Bei unverändert 20 Rädern/Tag und nur zwei Tagen Durchlaufzeit ergibt sich ein mittlerer Bestand von 40 Rädern. Weniger Bestand ist hier die Folge kürzerer Durchlaufzeit bei gleichem Durchsatz, nicht automatisch weniger Nachfrage."
-  },
-  {
-    "objectID": "courses/om-leistungsziele.html#selbstcheck-sc",
-    "href": "courses/om-leistungsziele.html#selbstcheck-sc",
-    "title": "OM: Leistungsziele und Kennzahlen",
+    "objectID": "courses/vwl-knappheit.html#selbstcheck-sc",
+    "href": "courses/vwl-knappheit.html#selbstcheck-sc",
+    "title": "VWL: Knappheit und Opportunitätskosten",
     "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nBei 15 Aufträgen pro Tag und vier Tagen mittlerer Durchlaufzeit: Wie groß ist der mittlere Bestand?\n 60 Aufträge\n 3,75 Aufträge\n 60 Aufträge pro Tag\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na ist richtig: I = 15 Aufträge/Tag × 4 Tage = 60 Aufträge. b dividiert statt zu multiplizieren; c verwechselt Bestand mit einer Rate. Vgl. PDF-S. 15."
+    "text": "Selbstcheck (SC)\n\nWas sind im Beispiel die monetären Opportunitätskosten des Lernens?\n 0 €, weil Lernen keine Überweisung auslöst.\n 45 € entgangenes Einkommen aus der verfügbaren Schicht.\n Die Summe aller denkbaren Nebenjobs.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig. Drei Stunden × 15 € = 45 €. a verwechselt Kosten mit Auszahlungen. c zählt alternative, nicht gleichzeitig mögliche Verwendungen mehrfach. Nicht monetäre Vorteile des Lernens bleiben für die Entscheidung wichtig."
   },
   {
-    "objectID": "courses/om-leistungsziele.html#quelle-und-abgrenzung",
-    "href": "courses/om-leistungsziele.html#quelle-und-abgrenzung",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 12–15, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+    "objectID": "courses/vwl-knappheit.html#quelle-und-grenzen",
+    "href": "courses/vwl-knappheit.html#quelle-und-grenzen",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 8–13 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht."
   },
   {
-    "objectID": "courses/itdi-video-case.html",
-    "href": "courses/itdi-video-case.html",
-    "title": "ITDI: Video Case Assignment",
+    "objectID": "courses/db-innovation-dilemmas.html",
+    "href": "courses/db-innovation-dilemmas.html",
+    "title": "Four innovation dilemmas",
     "section": "",
-    "text": "Zurück zu IT-driven Innovation"
+    "text": "Digital Business overview"
   },
   {
-    "objectID": "courses/itdi-video-case.html#lernziele",
-    "href": "courses/itdi-video-case.html#lernziele",
-    "title": "ITDI: Video Case Assignment",
-    "section": "Lernziele",
-    "text": "Lernziele\n\nDie verbindlichen Formatvorgaben von der freiwilligen Wettbewerbsteilnahme unterscheiden.\nEine Technologie über Funktionen, Handlungsmöglichkeiten und Auswirkungen erklären.\nEinen inhaltlich schlüssigen Beitrag innerhalb der Zeitgrenze planen."
+    "objectID": "courses/db-innovation-dilemmas.html#learning-goal",
+    "href": "courses/db-innovation-dilemmas.html#learning-goal",
+    "title": "Four innovation dilemmas",
+    "section": "Learning goal",
+    "text": "Learning goal\nUse four separate dimensions to describe an innovation choice rather than assigning one all-purpose label."
   },
   {
-    "objectID": "courses/itdi-video-case.html#was-abgegeben-wird",
-    "href": "courses/itdi-video-case.html#was-abgegeben-wird",
-    "title": "ITDI: Video Case Assignment",
-    "section": "Was abgegeben wird",
-    "text": "Was abgegeben wird\nLaut Video Case Intro.pdf, S. 2 erstellt eine Gruppe aus bis zu drei Personen ein Video über eine neue digitale Technologie oder ein konkretes technologiegetriebenes Produkt bzw. einen Dienst. Das Video soll die Funktionen bzw. Affordances untersuchen und mögliche Auswirkungen auf Wirtschaft und Gesellschaft bewerten.\nMaximal 120 Sekunden sind eine harte Grenze. Längere Beiträge werden stark sanktioniert. Bewertet werden Inhalt, Struktur und Qualität; die Folien nennen ungefähr 30 Arbeitsstunden je Teammitglied als Aufwand. Inhalt hat Vorrang vor visuellen Effekten (S. 4).\n\n\n\n\n\n\nImportantWettbewerb und Note nicht verwechseln\n\n\n\nDie Teilnahme am Videowettbewerb ist nicht Voraussetzung für die Benotung. Die Entscheidung zur Wettbewerbsteilnahme wird zusammen mit dem Video abgegeben (S. 2)."
+    "objectID": "courses/db-innovation-dilemmas.html#where-does-the-impulse-come-from",
+    "href": "courses/db-innovation-dilemmas.html#where-does-the-impulse-come-from",
+    "title": "Four innovation dilemmas",
+    "section": "Where does the impulse come from?",
+    "text": "Where does the impulse come from?\nTechnology push begins with new technological or scientific knowledge. Market pull emphasizes users and actual use, including lead users and frugal innovation for ordinary users (PDF pp. 14–16). The lecture treats push and pull as extremes to balance actively, not mutually exclusive company identities.\nOwn teaching example: a new low-power sensor enables a service (push), while tenants’ demand for fewer unnoticed leaks guides its design (pull). A technical opportunity and a user need can shape the same project."
   },
   {
-    "objectID": "courses/itdi-video-case.html#termine-aus-der-quelle",
-    "href": "courses/itdi-video-case.html#termine-aus-der-quelle",
-    "title": "ITDI: Video Case Assignment",
-    "section": "Termine aus der Quelle",
-    "text": "Termine aus der Quelle\n\nFrühes Ideenfeedback: November 2026.\nBis zu zwei Feedbacktermine pro Team: 11./13./18./20. Januar 2027.\nAbgabe von Video und Wettbewerbsentscheidung: 24. Januar 2027, 23:59 Uhr.\n\n\n\n\n\n\n\nWarning\n\n\n\nDie Quelle nennt für Vorrunden und Finale den 25./26. bzw. 27. Januar 2026, obwohl sie das Wintersemester 2026/27 behandelt und die Abgabe 2027 nennt. Das ist widersprüchlich. Diese Wettbewerbstermine deshalb im Learnweb bzw. beim Lehrstuhl bestätigen; nicht stillschweigend auf 2027 korrigieren. Die frühe Prüfungsanmeldung ist davon getrennt zu prüfen."
+    "objectID": "courses/db-innovation-dilemmas.html#what-changes-product-or-process",
+    "href": "courses/db-innovation-dilemmas.html#what-changes-product-or-process",
+    "title": "Four innovation dilemmas",
+    "section": "What changes: product or process?",
+    "text": "What changes: product or process?\nProduct innovation changes features of the final product or service; process innovation changes how it is produced or distributed (p. 17). The lecture illustrates a shift in their relative importance as an industry develops:\n\n\n\nProduct and process innovation over time. Focused excerpt from 01 – Innovation-4.pdf, physical PDF p. 17; slide attribution: Johnson et al. 2014.\n\n\nThe vertical axis is innovation rate, the horizontal axis time. Product innovation peaks earlier in this qualitative model; process innovation becomes more important later. The marked dominant design helps explain the transition. The graph provides no numerical forecasts or fixed transition date. On a small screen, open the full-size figure to inspect its labels.\nPDF p. 18 draws conditional strategic implications: emerging industries typically favour product innovation, maturing ones process innovation. Entrants may have opportunities before a dominant design stabilizes or when it collapses; incumbents may benefit during stability. These are tendencies, not universal laws.\nOwn example continued: adding leak-location accuracy changes service features (product); automating sensor installation scheduling changes delivery (process). One project can include both."
   },
   {
-    "objectID": "courses/itdi-video-case.html#vom-thema-zur-argumentation",
-    "href": "courses/itdi-video-case.html#vom-thema-zur-argumentation",
-    "title": "ITDI: Video Case Assignment",
-    "section": "Vom Thema zur Argumentation",
-    "text": "Vom Thema zur Argumentation\nDie folgende Struktur ist ein eigener Arbeitsvorschlag, keine zusätzliche Vorgabe des Lehrstuhls:\n\nProblem: Welche konkrete Tätigkeit oder welches Problem adressiert die Technologie?\nFunktion: Was tut das Produkt tatsächlich?\nHandlungsmöglichkeit: Was können bestimmte Nutzer dadurch anders oder erstmals tun?\nAuswirkung: Über welchen Mechanismus könnten sich wirtschaftliche oder gesellschaftliche Folgen ergeben? Welche Grenzen bleiben?\n\nBeispiel: Bei einer automatischen Transkriptionssoftware ist die Umwandlung von Sprache in Text die Funktion. Das schnelle Durchsuchen eines Interviews ist eine damit verbundene Handlungsmöglichkeit. Eine mögliche Zeitersparnis muss erklärt und gegen Fehlerkorrekturaufwand abgewogen werden. Dieses Beispiel ist didaktisch ergänzt, nicht aus den Folien übernommen."
+    "objectID": "courses/db-innovation-dilemmas.html#who-contributes-knowledge",
+    "href": "courses/db-innovation-dilemmas.html#who-contributes-knowledge",
+    "title": "Four innovation dilemmas",
+    "section": "Who contributes knowledge?",
+    "text": "Who contributes knowledge?\nOpen innovation deliberately imports and exports knowledge to improve innovation (p. 19); crowdsourcing is one example. “Open” does not simply mean a product is free. The lecture identifies competitive rivalry, one-shot innovation and tightly linked innovation as factors in the open/closed balance, but does not supply a universal scoring rule. Do not invent one from this list."
   },
   {
-    "objectID": "courses/itdi-video-case.html#selbstcheck",
-    "href": "courses/itdi-video-case.html#selbstcheck",
-    "title": "ITDI: Video Case Assignment",
-    "section": "Selbstcheck",
-    "text": "Selbstcheck\n\n  Ein Team produziert einen guten Film mit 135 Sekunden. Ist das Format erfüllt?\n   Ja, wenn die Visualisierung besonders gut ist.\n   Nein, die 120-Sekunden-Grenze ist verbindlich.\n  Prüfen\n  \n\nBegründung anzeigen\nAntwort b. S. 4 bezeichnet die Grenze ausdrücklich als hart und kündigt starke Abzüge für Überschreitungen an. Aufwendige Effekte ersetzen weder Inhalt noch Formaterfüllung.\n\n\n\nMuss unser Team am Turnier teilnehmen, um eine Note zu bekommen?\n\nNein. Laut S. 2 hängt die Benotung nicht davon ab, ob das Video für das Turnier angemeldet wird. Videoabgabe und Entscheidung über die Turnierteilnahme sind zu unterscheiden."
+    "objectID": "courses/db-innovation-dilemmas.html#technology-or-business-model",
+    "href": "courses/db-innovation-dilemmas.html#technology-or-business-model",
+    "title": "Four innovation dilemmas",
+    "section": "Technology or business model?",
+    "text": "Technology or business model?\nPDF p. 20 separates innovation in the product/service from innovation in selling, and names value chains, value networks and the business model canvas as diagnostic tools. Own example: improving sensor accuracy is technological; changing from selling devices to a maintenance subscription changes the business model. A subscription is not automatically better: explain value creation and payment rather than merely naming the label."
   },
   {
-    "objectID": "courses/itdi-video-case.html#quelle",
-    "href": "courses/itdi-video-case.html#quelle",
-    "title": "ITDI: Video Case Assignment",
-    "section": "Quelle",
-    "text": "Quelle\nVideo Case Intro.pdf – Learnweb, Hochschulzugang erforderlich, insbesondere S. 2 und 4. Lokal geprüft am 15.10.2026. Originaldatei wird nicht auf dieser Website bereitgestellt."
+    "objectID": "courses/db-innovation-dilemmas.html#self-check-mc-select-all-correct-answers",
+    "href": "courses/db-innovation-dilemmas.html#self-check-mc-select-all-correct-answers",
+    "title": "Four innovation dilemmas",
+    "section": "Self-check (MC — select all correct answers)",
+    "text": "Self-check (MC — select all correct answers)\n\nWhich statements fit the lecture?\n Push and pull can both shape one project.\n A later process-innovation peak guarantees all mature firms succeed.\n Open innovation involves deliberate knowledge flows across organizational boundaries.\nCheck\n\n\n\n\nAnswer and reasoning\n\na and c are correct: p. 15 recommends active balance; p. 19 emphasizes importing and exporting knowledge. b is incorrect: the graph is qualitative and p. 18 states typical advantages, not guarantees."
+  },
+  {
+    "objectID": "courses/db-innovation-dilemmas.html#source-and-limits",
+    "href": "courses/db-innovation-dilemmas.html#source-and-limits",
+    "title": "Four innovation dilemmas",
+    "section": "Source and limits",
+    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 14–20, current course 95696; read 15 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html",
+    "href": "courses/db-innovation-foundations.html",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "",
+    "text": "Digital Business overview"
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#learning-goal",
+    "href": "courses/db-innovation-foundations.html#learning-goal",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Learning goal",
+    "text": "Learning goal\nDistinguish a technical invention from an innovation, and explain why digital innovation is not simply any use of a computer."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#from-knowledge-to-actual-use",
+    "href": "courses/db-innovation-foundations.html#from-knowledge-to-actual-use",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "From knowledge to actual use",
+    "text": "From knowledge to actual use\nThe lecture distinguishes creating a new product, process or service from putting it into actual use (PDF p. 6). Invention converts new knowledge into such an artefact or method. Innovation also includes its actual use. A working prototype is therefore not sufficient evidence of innovation. The inventor/entrepreneur contrast on p. 10 highlights different roles; it does not imply that one person cannot perform both.\nOwn teaching example: A team invents a sensor that detects water leaks. A laboratory prototype demonstrates technical feasibility. A housing provider then integrates sensors into maintenance routines and responds to alerts: the new technology has entered actual use. A patent alone would not establish this transition. Nor does actual use automatically prove profitability or social benefit."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#what-makes-innovation-digital",
+    "href": "courses/db-innovation-foundations.html#what-makes-innovation-digital",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "What makes innovation digital?",
+    "text": "What makes innovation digital?\nPDF p. 11 presents two perspectives. One covers IT-enabled products, processes and business models that adopters perceive as new and that require significant changes from them. The other focuses on novel combinations of digital and physical components. These are complementary scopes, not identical definitions: the first explicitly includes processes and business models, whereas the second stresses recombination in products.\nFor the sensor example, the physical sensor, software and maintenance workflow can be analysed separately. Merely buying an ordinary laptop does not demonstrate significant adopter change or a new combination."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#generativity-possibilities-beyond-the-original-plan",
+    "href": "courses/db-innovation-foundations.html#generativity-possibilities-beyond-the-original-plan",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Generativity: possibilities beyond the original plan",
+    "text": "Generativity: possibilities beyond the original plan\nPDF p. 12 connects generativity with change created by varied, uncoordinated participants. It names three enabling characteristics:\n\nHomogenization of data: different kinds of information can be represented digitally and combined.\nReprogrammability: software can change what a device or system does without rebuilding every physical component.\nSelf-referential nature: digital technologies support the creation and development of further digital technologies.\n\nThese explanations unpack the slide’s terms; they are not additional formal definitions. Own extension of the example: independent developers reuse sensor data for an unexpected maintenance application. This illustrates the possibility of generativity, not a guarantee that every digital product will attract such contributions.\nExam trap: “New”, “digital”, “used” and “successful” are separate claims. State what evidence supports each."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#self-check-sc-select-one-answer",
+    "href": "courses/db-innovation-foundations.html#self-check-sc-select-one-answer",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Self-check (SC — select one answer)",
+    "text": "Self-check (SC — select one answer)\n\nWhich observation most directly distinguishes innovation from invention?\n A patent was filed.\n The new solution is put into actual use.\n The prototype contains software.\nCheck\n\n\n\n\nAnswer and reasoning\n\nb is correct: actual use supplies the distinction on p. 6. A patent (a) concerns protection rather than use; software (c) concerns technical composition rather than adoption."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#source-and-limits",
+    "href": "courses/db-innovation-foundations.html#source-and-limits",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Source and limits",
+    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 6–12, current course 95696; read 15 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published."
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html",
+    "href": "courses/it-driven-innovation.html",
+    "title": "IT-driven Innovation",
+    "section": "",
+    "text": "IT-driven Innovation pages should connect technology, adoption, organizational routines, and value realization. The important exam move is usually not “technology X is useful”, but why and under which conditions it changes work or strategy.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html#role-in-the-semester-site",
+    "href": "courses/it-driven-innovation.html#role-in-the-semester-site",
+    "title": "IT-driven Innovation",
+    "section": "",
+    "text": "IT-driven Innovation pages should connect technology, adoption, organizational routines, and value realization. The important exam move is usually not “technology X is useful”, but why and under which conditions it changes work or strategy.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html#lecture-blocks",
+    "href": "courses/it-driven-innovation.html#lecture-blocks",
+    "title": "IT-driven Innovation",
+    "section": "Lecture Blocks",
+    "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nInnovation types\nIncremental, radical, architectural\nClassification checks\n\n\nAdoption\nBarriers, diffusion, complementary assets\nCase prompts\n\n\nDigital capabilities\nSensing, seizing, transforming\nExplanation cards\n\n\nImplementation\nChange management and risk\nTransfer tasks\n\n\n\n\n  Which answer is closest to an innovation-management perspective?\n   A technology creates value as soon as it is installed.\n   Value depends on adoption, complementary processes, capabilities, and fit with the problem.\n   Innovation is only relevant when the technology is completely new to the world.\n  Check\n  \n\n\n\n\nReveal transfer answer\n\nWhen evaluating an IT-driven innovation, describe the problem, the technological affordance, required organizational changes, adoption barriers, and the expected value mechanism.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html#aktuelle-learnweb-inhalte",
+    "href": "courses/it-driven-innovation.html#aktuelle-learnweb-inhalte",
+    "title": "IT-driven Innovation",
+    "section": "Aktuelle Learnweb-Inhalte",
+    "text": "Aktuelle Learnweb-Inhalte\n\nVideo Case Assignment: Anforderungen und Selbstcheck\nMaterialübersicht",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html",
+    "href": "courses/vwl.html",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "",
+    "text": "Drei quellengestützte Einheiten zum ersten Kapitel der aktuellen Vorlesung:\n\nKnappheit und Opportunitätskosten – Alternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der Pizzeria – Zusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und Staat – Koordination, Informationsprobleme und Grenzen von Eingriffen.\n\nJede Einheit enthält ein Lernbeispiel und einen begründeten Selbstcheck. Quellenangaben beziehen sich auf physische PDF-Seiten. Weitere Kapitel bleiben offen; diese Einheiten ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien mit Hochschulzugang",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html#lernpfad-volkswirtschaftliche-regeln",
+    "href": "courses/vwl.html#lernpfad-volkswirtschaftliche-regeln",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "",
+    "text": "Drei quellengestützte Einheiten zum ersten Kapitel der aktuellen Vorlesung:\n\nKnappheit und Opportunitätskosten – Alternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der Pizzeria – Zusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und Staat – Koordination, Informationsprobleme und Grenzen von Eingriffen.\n\nJede Einheit enthält ein Lernbeispiel und einen begründeten Selbstcheck. Quellenangaben beziehen sich auf physische PDF-Seiten. Weitere Kapitel bleiben offen; diese Einheiten ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien mit Hochschulzugang",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "VWL"
+    ]
   },
   {
     "objectID": "courses/operations-research.html",
@@ -929,6 +1090,18 @@
     "title": "Digital Business",
     "section": "Lecture Blocks",
     "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nDigital transformation\nScope, capabilities, organizational change\nDefinition contrasts\n\n\nPlatform models\nNetwork effects, multi-sided markets\nExample/non-example cards\n\n\nData-driven value\nData assets, analytics, feedback loops\nMechanism notes\n\n\nGovernance and risk\nPrivacy, lock-in, accountability\nEvaluation prompts\n\n\n\n\n  What is the strongest way to test a platform concept?\n   Ask whether the answer explains interaction between participant groups and network effects.\n   Ask whether the firm has a website.\n   Ask whether the company uses cloud software internally.\n  Check\n  \n\n\n\n\nReveal concept distinction\n\nA platform business model is not merely a digital product. It creates value by enabling interactions between distinct participant groups, often strengthened by direct or indirect network effects.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "Digital Business"
+    ]
+  },
+  {
+    "objectID": "courses/digital-business.html#source-based-study-pages-innovation",
+    "href": "courses/digital-business.html#source-based-study-pages-innovation",
+    "title": "Digital Business",
+    "section": "Source-based study pages — Innovation",
+    "text": "Source-based study pages — Innovation\n\nInvention, use and digital generativity\nFour innovation dilemmas\nDisruptive innovation\n\nThese English-language pages follow the current course 95696 lecture. The earlier blocks above are orientation demos, not summaries of additional course scripts.",
     "crumbs": [
       "Cockpit",
       "Kurse",

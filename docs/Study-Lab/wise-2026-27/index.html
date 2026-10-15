@@ -700,8 +700,9 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  const english = document.documentElement.lang.startsWith("en");
   if (selected.length === 0) {
-    feedback.textContent = "Wähle erst eine Antwort aus.";
+    feedback.textContent = english ? "Select an answer first." : "Wähle erst eine Antwort aus.";
     feedback.dataset.state = "neutral";
     return;
   }
@@ -711,8 +712,8 @@ document.addEventListener("click", (event) => {
     selected.every((value, index) => value === expected[index]);
 
   feedback.textContent = correct
-    ? "Richtig. Jetzt kurz begründen, warum die anderen Optionen schwächer sind."
-    : "Noch nicht ganz. Geh zur Erklärung zurück und prüfe den Mechanismus.";
+    ? (english ? "Correct. Explain why the other options are weaker." : "Richtig. Jetzt kurz begründen, warum die anderen Optionen schwächer sind.")
+    : (english ? "Not quite. Revisit the explanation and check the mechanism." : "Noch nicht ganz. Geh zur Erklärung zurück und prüfe den Mechanismus.");
   feedback.dataset.state = correct ? "correct" : "wrong";
 });
 
