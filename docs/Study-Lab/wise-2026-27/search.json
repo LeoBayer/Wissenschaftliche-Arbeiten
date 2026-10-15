@@ -1,0 +1,1038 @@
+[
+  {
+    "objectID": "patterns.html",
+    "href": "patterns.html",
+    "title": "Question Patterns",
+    "section": "",
+    "text": "The study site should prefer active recall before passive reading. A good page therefore alternates between compact explanation and immediate retrieval.\nUse these patterns consistently:\n\nRecall first: Ask for the idea before revealing the answer.\nSingle choice: Use when exactly one distinction matters.\nMultiple choice: Use when students must recognize a set of valid statements.\nKeyword answer: Use when an exam answer must contain mandatory terms.\nNumeric check: Use for formulas, indices, and project-management calculations.\nSequence check: Use for processes, stages, workflows, and procedures.\nSelf-reveal: Use for explanations, solution paths, and model answers.\nWorked example: Use when the learner is new to a procedure and should see expert structure before solving alone.\nTransfer prompt: Use when the exam likely asks for application to a case.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#design-rules",
+    "href": "patterns.html#design-rules",
+    "title": "Question Patterns",
+    "section": "",
+    "text": "The study site should prefer active recall before passive reading. A good page therefore alternates between compact explanation and immediate retrieval.\nUse these patterns consistently:\n\nRecall first: Ask for the idea before revealing the answer.\nSingle choice: Use when exactly one distinction matters.\nMultiple choice: Use when students must recognize a set of valid statements.\nKeyword answer: Use when an exam answer must contain mandatory terms.\nNumeric check: Use for formulas, indices, and project-management calculations.\nSequence check: Use for processes, stages, workflows, and procedures.\nSelf-reveal: Use for explanations, solution paths, and model answers.\nWorked example: Use when the learner is new to a procedure and should see expert structure before solving alone.\nTransfer prompt: Use when the exam likely asks for application to a case.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#research-anchors",
+    "href": "patterns.html#research-anchors",
+    "title": "Question Patterns",
+    "section": "Research Anchors",
+    "text": "Research Anchors\nThis site uses a small practical subset of learning-science patterns:\n\nActive learning should replace passive reading/listening with tasks that require cognitive engagement; Carnegie Mellon’s Eberly Center explicitly recommends short activities, application prompts, and visual interpretation rather than simply explaining everything for the learner: https://www.cmu.edu/teaching/resources/instructionalstrategies/activelearningstrategies/index.html\nThe Learning Scientists summarize six broadly useful strategies: spaced practice, retrieval practice, elaboration, interleaving, concrete examples, and dual coding. They also note that retrieval practice and spacing have especially strong support: https://www.learningscientists.org/blog/2016/8/18-1\nDual coding is most useful when the learner actively connects words and visuals, not when diagrams are decorative: https://www.learningscientists.org/blog/2017/4/20-1\nWorked examples reduce unnecessary cognitive load for novices by showing the structure of expert problem solving before independent practice: https://education.nsw.gov.au/content/dam/main-education/about-us/educational-data/cese/2017-cognitive-load-theory-practice-guide.pdf\nH5P’s content-type catalog is useful inspiration for interaction formats: quizzes, interactive books, interactive videos, image hotspots, drag/drop, fill-in-the-blanks, and branching scenarios: https://h5p.org/content-types-and-applications",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#pattern-selection-matrix",
+    "href": "patterns.html#pattern-selection-matrix",
+    "title": "Question Patterns",
+    "section": "Pattern Selection Matrix",
+    "text": "Pattern Selection Matrix\n\n\n\n\n\n\n\n\nContent shape\nBest pattern\nWhy\n\n\n\n\nDefinition or distinction\nSingle choice, keyword answer\nChecks whether the core boundary is clear\n\n\nList of valid properties\nMultiple choice\nForces recognition of all correct elements and distractors\n\n\nFormula or calculation\nNumeric check + interpretation prompt\nSeparates arithmetic from conceptual meaning\n\n\nProcess or lifecycle\nSequence check + diagram\nTests order and mechanism\n\n\nFramework diagram\nFigure tile + explain-before-reveal\nTurns visuals into retrieval cues\n\n\nCase application\nTransfer prompt + rubric\nPractices exam-style reasoning\n\n\nNew procedure\nWorked example, then near-transfer task\nReduces cognitive load first, then increases independence\n\n\nSimilar concepts\nComparison table + interleaved checks\nBuilds discrimination, not isolated familiarity\n\n\nEthics or trade-off\nPro/con grid + justified conclusion\nForces balanced evaluation\n\n\nFull exam prep\nTimed drill + scorecard + error log\nConverts practice into targeted next steps",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#pattern-cards",
+    "href": "patterns.html#pattern-cards",
+    "title": "Question Patterns",
+    "section": "Pattern Cards",
+    "text": "Pattern Cards\n\n  RecallAsk before explaining. Best for definitions, formulas, and framework names.\n  RecognizeUse single or multiple choice when distractors expose common confusions.\n  CalculateUse numeric checks for CPM, EVM, EMV, probability, and index interpretation.\n  SequenceUse ordered checks for Simon, Scrum flow, PDCA, risk processes, and CPM passes.\n  Explain A DiagramPair a visual with a caption, then require a 3-5 sentence explanation.\n  TransferGive a short case and force definition, mechanism, application, limitation, conclusion.\n  Worked ExampleShow a solved task, label subgoals, then remove support in the next task.\n  Error LogAfter practice, capture missing terms, wrong formulas, weak English phrasing, and next drill.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#single-choice",
+    "href": "patterns.html#single-choice",
+    "title": "Question Patterns",
+    "section": "Single Choice",
+    "text": "Single Choice\n\n  Which statement best describes a critical path?\n   The path with the highest total resource cost.\n   The longest dependent activity path that determines minimum project duration.\n   The path containing all activities with no direct predecessor.\n  Check\n  \n\nUse this when one distinction matters and the distractors can be meaningful. Weak distractors waste the interaction.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#multiple-choice",
+    "href": "patterns.html#multiple-choice",
+    "title": "Question Patterns",
+    "section": "Multiple Choice",
+    "text": "Multiple Choice\n\n  Which items are useful when evaluating a digital work arrangement?\n   Coordination costs across roles and tools.\n   The color palette of the collaboration platform.\n   Task interdependence and need for synchronous communication.\n   Whether every meeting uses the same video background.\n  Check\n  \n\nUse this when a correct answer is a set. This is good for risks, mitigation measures, process activities, and valid interpretation statements.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#keyword-answer",
+    "href": "patterns.html#keyword-answer",
+    "title": "Question Patterns",
+    "section": "Keyword Answer",
+    "text": "Keyword Answer\n\n  Write the universal DWPM answer skeleton.\n  \n  Check keywords\n  \n\nUse this when exact wording is less important than mandatory ingredients. Keep the keyword list short. Otherwise the check becomes a trap rather than feedback.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#numeric-check",
+    "href": "patterns.html#numeric-check",
+    "title": "Question Patterns",
+    "section": "Numeric Check",
+    "text": "Numeric Check\n\n  Calculate CPI for EV = 1100 and AC = 900. Round to two decimals.\n  \n  Check number\n  \n\nUse this for formula-heavy tasks, but always add a follow-up sentence: the number alone is not exam-ready.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#sequence-check",
+    "href": "patterns.html#sequence-check",
+    "title": "Question Patterns",
+    "section": "Sequence Check",
+    "text": "Sequence Check\n\n  Write Simon's decision-making stages in order, separated by commas or arrows.\n  \n  Check order\n  \n\nUse this for process logic. Good targets: Simon, PDCA, Scrum flow, risk management, CPM forward/backward pass, and project management process groups.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#self-revealing-explanation",
+    "href": "patterns.html#self-revealing-explanation",
+    "title": "Question Patterns",
+    "section": "Self-Revealing Explanation",
+    "text": "Self-Revealing Explanation\n\n\n\nReveal the reasoning path\n\nStart from the decision criterion, name the mechanism, then apply it to the case. For digital work, do not merely say “remote work is flexible”; explain how task interdependence, media richness, and coordination overhead shape whether remote, hybrid, or co-located work is appropriate.\n\n\nUse reveal blocks for answer keys and worked solutions. The learner should attempt first, reveal second.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#worked-example-with-fading",
+    "href": "patterns.html#worked-example-with-fading",
+    "title": "Question Patterns",
+    "section": "Worked Example With Fading",
+    "text": "Worked Example With Fading\n\n\n\nReveal worked EVM example\n\nGiven EV = 29,000, PV = 32,000, and AC = 28,000:\n\nCost variance: CV = EV - AC = 1,000, so the project is under budget.\nSchedule variance: SV = EV - PV = -3,000, so the project is behind schedule.\nCost performance index: CPI = EV / AC = 1.04, so cost efficiency is slightly above plan.\nSchedule performance index: SPI = EV / PV = 0.91, so schedule efficiency is below plan.\nExam interpretation: behind schedule but within budget.\n\n\n\nNext task should remove one step, then two steps, then the whole worked solution. This is the fading pattern: support first, independence later.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#transfer-prompt",
+    "href": "patterns.html#transfer-prompt",
+    "title": "Question Patterns",
+    "section": "Transfer Prompt",
+    "text": "Transfer Prompt\n\n  Transfer task\n  A team introduces asynchronous status updates but still misses dependencies. Explain one likely cause and one design improvement.\n  \n    Show model structure\n    \n      Define the coordination problem.\n      Identify why asynchronous updates do not expose dependencies early enough.\n      Recommend an intervention, for example dependency boards, shorter planning cycles, or explicit owner mapping.\n    \n  \n\nUse this for application and evaluation. The answer should connect a concept to a concrete case fact.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#diagram-interpretation-pattern",
+    "href": "patterns.html#diagram-interpretation-pattern",
+    "title": "Question Patterns",
+    "section": "Diagram Interpretation Pattern",
+    "text": "Diagram Interpretation Pattern\n![Short descriptive alt text](../resources/path/to/figure.png)\n\n::: {.reveal-note}\n&lt;details&gt;\n&lt;summary&gt;Explain this diagram in 4 points&lt;/summary&gt;\n\n1. Name the framework.\n2. Define the axes or components.\n3. Explain the mechanism.\n4. Apply it to one exam case.\n\n&lt;/details&gt;\n:::\nUse this whenever a slide contains a central framework. A diagram without an explanation task is mostly decoration.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#comparison-and-contrast-pattern",
+    "href": "patterns.html#comparison-and-contrast-pattern",
+    "title": "Question Patterns",
+    "section": "Comparison And Contrast Pattern",
+    "text": "Comparison And Contrast Pattern\n| Criterion | Concept A | Concept B | Exam trap |\n|---|---|---|---|\n| Decision role | Supports decision | Executes/control decisions | Do not treat support and control as identical |\nUse this for near-neighbor concepts: people analytics vs algorithmic management, automation vs augmentation, project vs program vs portfolio, plan-based vs agile.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#error-log-pattern",
+    "href": "patterns.html#error-log-pattern",
+    "title": "Question Patterns",
+    "section": "Error Log Pattern",
+    "text": "Error Log Pattern\n| Date | Task | Mistake | Missing concept | Next drill |\n|---|---|---|---|---|\n| 2026-10-12 | EVM | Mixed up PV and AC | Cost vs schedule interpretation | 5 EVM status checks |\nUse this after every timed drill. The goal is not to prove that a topic was read. The goal is to find the next weak move.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "patterns.html#copyable-qmd-skeleton",
+    "href": "patterns.html#copyable-qmd-skeleton",
+    "title": "Question Patterns",
+    "section": "Copyable QMD Skeleton",
+    "text": "Copyable QMD Skeleton\n## Concept\n\nShort definition in one sentence.\n\n### Why It Matters\n\n- Exam relevance\n- Practical mechanism\n- Typical confusion\n\n::: {.reveal-note}\n&lt;details&gt;\n&lt;summary&gt;Reveal model answer&lt;/summary&gt;\n\nModel answer here.\n\n&lt;/details&gt;\n:::\n\n&lt;fieldset class=\"study-check\" data-type=\"single\" data-answer=\"a\"&gt;\n  &lt;legend&gt;Question text?&lt;/legend&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"unique-name\" value=\"a\"&gt; Correct answer.&lt;/label&gt;\n  &lt;label&gt;&lt;input type=\"radio\" name=\"unique-name\" value=\"b\"&gt; Plausible distractor.&lt;/label&gt;\n  &lt;button type=\"button\" class=\"check-answer\"&gt;Check&lt;/button&gt;\n  &lt;p class=\"feedback\" aria-live=\"polite\"&gt;&lt;/p&gt;\n&lt;/fieldset&gt;",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Question Patterns"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html",
+    "href": "practice-lab.html",
+    "title": "Practice Lab",
+    "section": "",
+    "text": "Mode\nTimebox\nUse when\nOutput\n\n\n\n\nWarm-up\n10 min\nBefore a lecture or exercise\n3 definitions + 1 open question\n\n\nDeep drill\n30 min\nAfter processing a lecture\n5 checks + 1 transfer answer\n\n\nExam sprint\n60-120 min\nDuring exam preparation\nTimed answers with point structure",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html#session-modes",
+    "href": "practice-lab.html#session-modes",
+    "title": "Practice Lab",
+    "section": "",
+    "text": "Mode\nTimebox\nUse when\nOutput\n\n\n\n\nWarm-up\n10 min\nBefore a lecture or exercise\n3 definitions + 1 open question\n\n\nDeep drill\n30 min\nAfter processing a lecture\n5 checks + 1 transfer answer\n\n\nExam sprint\n60-120 min\nDuring exam preparation\nTimed answers with point structure",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html#mixed-demo-set",
+    "href": "practice-lab.html#mixed-demo-set",
+    "title": "Practice Lab",
+    "section": "Mixed Demo Set",
+    "text": "Mixed Demo Set\n\n  In exam answers, what is usually more valuable than naming a framework?\n   Using the longest possible definition.\n   Listing all authors associated with the framework.\n   Applying the framework to the case with a justified conclusion.\n  Check\n  \n\n\n\n  Which learning actions should happen after a new lecture upload?\n   Extract examinable definitions and mechanisms.\n   Create at least one recall question per core concept.\n   Publish raw private Learnweb files into the public site.\n   Mark uncertain summaries until the source is checked.\n  Check",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html#review-queue-placeholder",
+    "href": "practice-lab.html#review-queue-placeholder",
+    "title": "Practice Lab",
+    "section": "Review Queue Placeholder",
+    "text": "Review Queue Placeholder\n\n\n\n\n\n\n\n\n\nItem\nCourse\nWhy it is in the queue\nNext action\n\n\n\n\nDW1 Practice Tasks\nDWPM\nFirst real solution sheet with point criteria\nTurn into timed answer drills\n\n\nDW2 Practice Tasks\nDWPM\nAgility, workplace AI, people analytics\nDrill case answers and configuration tables\n\n\nDWPM Mock Exam 2024\nDWPM\nFull 120-point rehearsal with Project Management and Digital Work\nRun as two 60-minute blocks\n\n\nCritical path method\nOperations Research / PM\nCalculation plus interpretation\nAdd worked example\n\n\nHybrid work fit\nDWPM\nLikely case application\nAdd contrast table\n\n\nBullwhip effect\nOperations Management\nEasy to recognize, harder to explain causally\nAdd causal chain\n\n\nPlatform business model\nDigital Business\nBroad concept, many distractors\nAdd examples and non-examples",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html#answer-review-rubric",
+    "href": "practice-lab.html#answer-review-rubric",
+    "title": "Practice Lab",
+    "section": "Answer Review Rubric",
+    "text": "Answer Review Rubric\nUse this rubric for short written answers:\n\n\n\nCriterion\nGood answer\nWeak answer\n\n\n\n\nDefinition\nPrecise and compact\nVague buzzword\n\n\nMechanism\nExplains why the concept works\nOnly names the concept\n\n\nApplication\nUses case evidence\nGeneric statement\n\n\nLimitation\nNames boundary condition or risk\nNo trade-off\n\n\nConclusion\nJustified recommendation\nUnsupported opinion",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html#dw1-timed-drills",
+    "href": "practice-lab.html#dw1-timed-drills",
+    "title": "Practice Lab",
+    "section": "DW1 Timed Drills",
+    "text": "DW1 Timed Drills\n\n\n\n\n\n\n\n\nDrill\nTimebox\nTarget\n\n\n\n\nDefine decision making, judgement, reasoning, bounded rationality\n6 min\nCompact definition answer\n\n\nEvaluate LogisTech human-AI decision making\n12 min\nFive-criterion comparison plus configuration\n\n\nCritique ML objectivity claim\n8 min\nTwo promises, two limitations, balanced conclusion\n\n\nChoose media for project communication scenarios\n10 min\nMRT-based medium choice and justification\n\n\nAnalyze consulting-team version chaos with 3C\n15 min\nCommunication, coordination, cooperation plus awareness strategy",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html#dw2-timed-drills",
+    "href": "practice-lab.html#dw2-timed-drills",
+    "title": "Practice Lab",
+    "section": "DW2 Timed Drills",
+    "text": "DW2 Timed Drills\n\n\n\n\n\n\n\n\nDrill\nTimebox\nTarget\n\n\n\n\nCompare plan-based and agile methods\n6 min\nThree criteria with explanations\n\n\nAssign Scrum roles in the sensor-company case\n12 min\nRole fit plus sprint-flow explanation\n\n\nDiscuss doing agile without being agile\n8 min\nPros, cons, justified conclusion\n\n\nDefine automation and augmentation\n8 min\nConcepts plus three augmentation forms\n\n\nEvaluate Copilot configurations\n15 min\nFive configurations and security-safe recommendation\n\n\nAnalyze people analytics dashboard concerns\n12 min\nDatafication, opacity, nudging, mitigation measures\n\n\n\n\nDW2 Private Scorecard\nUse this after attempting the DW2 task set. The point is not public grading; it is finding the next weak concept.\n\n\n\nQuestion\nMax points\nMy estimate\nWhat I missed\n\n\n\n\n1a\n6\n\n\n\n\n1b\n14\n\n\n\n\n1c\n10\n\n\n\n\n2a\n10\n\n\n\n\n2b\n15\n\n\n\n\n2c\n5\n\n\n\n\n3a\n8\n\n\n\n\n3b\n15\n\n\n\n\n3c\n7",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "practice-lab.html#mock-exam-sprint",
+    "href": "practice-lab.html#mock-exam-sprint",
+    "title": "Practice Lab",
+    "section": "Mock Exam Sprint",
+    "text": "Mock Exam Sprint\n\n\n\n\n\n\n\n\nSprint\nTimebox\nTarget\n\n\n\n\nPart 1: Project Management\n60 min\nScope, schedule, cost, risk, closing/programs\n\n\nPart 2: Digital Work\n60 min\nPeople analytics, communication, collaboration\n\n\nError log\n15 min\nList missing concepts, formulas, and English answer phrases\n\n\nRetake weak points\n30 min\nRedo only the weakest 30 points without notes",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Practice Lab"
+    ]
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Learnweb-Materialien",
+    "section": "",
+    "text": "Stand: 15.10.2026 08:57\nDie Links führen zu den Originalen in Learnweb und erfordern deinen Hochschulzugang. Die Materialübersicht ist noch keine fachlich geprüfte Zusammenfassung."
+  },
+  {
+    "objectID": "materials.html#controlling",
+    "href": "materials.html#controlling",
+    "title": "Learnweb-Materialien",
+    "section": "Controlling",
+    "text": "Controlling\n\nBWL3_Controlling_Blocktutorium_Zeitplan_WS2026.pdf\nCapital_flaschenpost.pdf\nCase Study - Driving Strategy at Nova Bank.pdf\nCoenenberg_Simplex.pdf\nControlling VL1.pdf\nControlling VL2_ohneVideo.pdf\nControlling VL3.pdf\nDeckungsbeitragsrechnung am Beispiel einer Airline.pdf\nFlyerWiSe2026.pdf\nKaplanAnderson_HBR_2004.pdf\nKaplan_2014_Journal of Healthcare Management.pdf\nMengen_Urmersbach_2006_Rasselstein PKR Beispiel.pdf\nMünster.AI Vorstellung-1.pdf\nPfläging_Beyondbudgeting_CM_2003.pdf\nPlinkeReseUtzig_PKR_2015.pdf\nSimplex_Aufgaben_Sammlung_Lösungen.pdf\nSimplex_Aufgabensammlung_V2.pdf\nTechLabs_Vorlesungswerbung2026.pdf\nÜbersicht Tutoren WS2026.pdf\nVorstellung_Fempowerment_WiSe2026_DEU.pdf\nbdvb_Präsentation_Vorstellung_SoSe26 Kopie.pdf\nmove_flyer.pdf"
+  },
+  {
+    "objectID": "materials.html#digital-business",
+    "href": "materials.html#digital-business",
+    "title": "Learnweb-Materialien",
+    "section": "Digital Business",
+    "text": "Digital Business\n\n01 - Innovation-4.pdf\n01_Kick-Off.pdf\n02 - Blockchain-5.pdf\n03 - Strategy Business Models-4.pdf\n04 - Business Model Canvas-5.pdf\nEnactus_VL-Vorstellung WiSe_2627.pdf\nIE 01 - AcademicWriting-1SpP.pdf\nMoon_uni exeter_learning-journals.pdf\nMünster.AI - Lecture Pitch (English).pdf\nSt-Gallen-Business-Model-Innovation-Paper.pdf\nStGallen_Business_Model_Pattern.pdf\nVL-Werbung WiSe2627.pdf\nWomen+ in Information Systems (1).pdf\nWorksheet_BMI_eng.pdf\nbusinessmodelgeneration_preview.pdf\nexercise_20111213_pre.pdf"
+  },
+  {
+    "objectID": "materials.html#it-driven-innovation",
+    "href": "materials.html#it-driven-innovation",
+    "title": "Learnweb-Materialien",
+    "section": "IT-driven Innovation",
+    "text": "IT-driven Innovation\n\nITDI 1.pdf\nVideo Case Intro.pdf\nWomen+ in Information Systems (2).pdf"
+  },
+  {
+    "objectID": "materials.html#operations-management",
+    "href": "materials.html#operations-management",
+    "title": "Learnweb-Materialien",
+    "section": "Operations Management",
+    "text": "Operations Management\n\n00 Organisation OM26.pdf\n01 Einführung OM26.pdf\nFAQ_2023.pdf\nFormelsammlung_deutsch.pdf\nOM Klausur WS1415.pdf\nOM Klausur WS1516.pdf\nOM Klausur WS1617.pdf\nOM Klausur WS1718.pdf\nOM Klausur WS1819.pdf"
+  },
+  {
+    "objectID": "materials.html#vwl",
+    "href": "materials.html#vwl",
+    "title": "Learnweb-Materialien",
+    "section": "VWL",
+    "text": "VWL\n\nVFW_Tut_Kapitel 1.pdf\nVWLWiInfWS26.pdf"
+  },
+  {
+    "objectID": "courses/operations-management.html",
+    "href": "courses/operations-management.html",
+    "title": "Operations Management",
+    "section": "",
+    "text": "Grundlage: 01 Einführung OM26.pdf aus dem aktuellen Kurs. Die drei Seiten bereiten ausgewählte Themen der Einführung auf, nicht den gesamten OM-Kurs.\n\nLeistungsziele und Kennzahlen: Trade-offs, Produktivität und Little’s Law.\nGüter, Dienstleistungen und die 4 V: Unterschiede erklären und Prozesse einordnen.\nOrganisation und Digitalisierung: Planungsebenen, Schnittstellen, Potenziale und Risiken.\n\nJede Seite enthält Seitenbelege und begründete Selbstchecks. Die Fragen sind eigene Lernhilfen, keine angekündigten Prüfungsfragen.\nMaterialübersicht · Semester-Cockpit",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "OM"
+    ]
+  },
+  {
+    "objectID": "courses/operations-management.html#einführung-geprüfte-lernseiten",
+    "href": "courses/operations-management.html#einführung-geprüfte-lernseiten",
+    "title": "Operations Management",
+    "section": "",
+    "text": "Grundlage: 01 Einführung OM26.pdf aus dem aktuellen Kurs. Die drei Seiten bereiten ausgewählte Themen der Einführung auf, nicht den gesamten OM-Kurs.\n\nLeistungsziele und Kennzahlen: Trade-offs, Produktivität und Little’s Law.\nGüter, Dienstleistungen und die 4 V: Unterschiede erklären und Prozesse einordnen.\nOrganisation und Digitalisierung: Planungsebenen, Schnittstellen, Potenziale und Risiken.\n\nJede Seite enthält Seitenbelege und begründete Selbstchecks. Die Fragen sind eigene Lernhilfen, keine angekündigten Prüfungsfragen.\nMaterialübersicht · Semester-Cockpit",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "OM"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html",
+    "href": "courses/vwl.html",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "",
+    "text": "VWL pages should make model assumptions explicit. A useful page explains what the model assumes, what it predicts, and where the prediction can fail.\nBecause VWL is model-heavy, the default page shape should include a graph first, then the verbal explanation. If the mechanism can be simulated, add a tiny executable model or algorithmic trace.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html#role-in-the-semester-site",
+    "href": "courses/vwl.html#role-in-the-semester-site",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "",
+    "text": "VWL pages should make model assumptions explicit. A useful page explains what the model assumes, what it predicts, and where the prediction can fail.\nBecause VWL is model-heavy, the default page shape should include a graph first, then the verbal explanation. If the mechanism can be simulated, add a tiny executable model or algorithmic trace.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html#lecture-blocks",
+    "href": "courses/vwl.html#lecture-blocks",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "Lecture Blocks",
+    "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nSupply and demand\nEquilibrium, shifts, elasticity\nDiagram drills + shift simulations\n\n\nMarkets and welfare\nSurplus, efficiency, taxes\nCalculation examples\n\n\nFirms and competition\nCost curves, market forms\nComparison tables\n\n\nMacro basics\nGrowth, inflation, policy\nConcept maps",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html#diagram-pattern-market-shift",
+    "href": "courses/vwl.html#diagram-pattern-market-shift",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "Diagram Pattern: Market Shift",
+    "text": "Diagram Pattern: Market Shift\n\n  \n    Supply and demand with a demand shift\n    Demand shifts right, moving equilibrium price and quantity upward.\n    \n    \n    Q\n    P\n    \n    \n    \n    \n    \n    \n    \n    \n    \n    S\n    D\n    D'\n    E\n    E'\n  \n  Eine Nachfrageverschiebung nach rechts erhöht im Standardmodell Gleichgewichtspreis und Gleichgewichtsmenge. Jede echte Kursseite sollte danach die Annahmen und Grenzen des Modells nennen.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html#code-pattern-tiny-simulation",
+    "href": "courses/vwl.html#code-pattern-tiny-simulation",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "Code Pattern: Tiny Simulation",
+    "text": "Code Pattern: Tiny Simulation\n\n\nCode\nimport pandas as pd\n\ndef equilibrium(a, b, c, d):\n    \"\"\"Demand: Qd = a - bP, supply: Qs = c + dP.\"\"\"\n    price = (a - c) / (b + d)\n    quantity = c + d * price\n    return round(price, 2), round(quantity, 2)\n\nbase = equilibrium(a=100, b=2, c=10, d=1)\nafter_income_rise = equilibrium(a=125, b=2, c=10, d=1)\n\npd.DataFrame(\n    [\n        {\"scenario\": \"base\", \"price\": base[0], \"quantity\": base[1]},\n        {\"scenario\": \"income rise\", \"price\": after_income_rise[0], \"quantity\": after_income_rise[1]},\n    ]\n)\n\n\n\n  What belongs into a strong economics model explanation?\n   Assumptions.\n   Mechanism and prediction.\n   A claim that models are always realistic.\n   Boundary conditions or limitations.\n  Check\n  \n\n\n\n\nReveal example answer structure\n\nFor a supply-demand question, first identify the market, then decide whether demand or supply shifts, explain the mechanism, and only then state the effect on equilibrium price and quantity.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html",
+    "href": "courses/it-driven-innovation.html",
+    "title": "IT-driven Innovation",
+    "section": "",
+    "text": "IT-driven Innovation pages should connect technology, adoption, organizational routines, and value realization. The important exam move is usually not “technology X is useful”, but why and under which conditions it changes work or strategy.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html#role-in-the-semester-site",
+    "href": "courses/it-driven-innovation.html#role-in-the-semester-site",
+    "title": "IT-driven Innovation",
+    "section": "",
+    "text": "IT-driven Innovation pages should connect technology, adoption, organizational routines, and value realization. The important exam move is usually not “technology X is useful”, but why and under which conditions it changes work or strategy.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html#lecture-blocks",
+    "href": "courses/it-driven-innovation.html#lecture-blocks",
+    "title": "IT-driven Innovation",
+    "section": "Lecture Blocks",
+    "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nInnovation types\nIncremental, radical, architectural\nClassification checks\n\n\nAdoption\nBarriers, diffusion, complementary assets\nCase prompts\n\n\nDigital capabilities\nSensing, seizing, transforming\nExplanation cards\n\n\nImplementation\nChange management and risk\nTransfer tasks\n\n\n\n\n  Which answer is closest to an innovation-management perspective?\n   A technology creates value as soon as it is installed.\n   Value depends on adoption, complementary processes, capabilities, and fit with the problem.\n   Innovation is only relevant when the technology is completely new to the world.\n  Check\n  \n\n\n\n\nReveal transfer answer\n\nWhen evaluating an IT-driven innovation, describe the problem, the technological affordance, required organizational changes, adoption barriers, and the expected value mechanism.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/it-driven-innovation.html#aktuelle-learnweb-inhalte",
+    "href": "courses/it-driven-innovation.html#aktuelle-learnweb-inhalte",
+    "title": "IT-driven Innovation",
+    "section": "Aktuelle Learnweb-Inhalte",
+    "text": "Aktuelle Learnweb-Inhalte\n\nVideo Case Assignment: Anforderungen und Selbstcheck\nMaterialübersicht",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "IT-driven Innovation"
+    ]
+  },
+  {
+    "objectID": "courses/dwpm.html",
+    "href": "courses/dwpm.html",
+    "title": "DWPM",
+    "section": "",
+    "text": "Die vorhandene DWPM-Klausurvorbereitung wird separat geführt. Diese Veröffentlichung konzentriert sich auf die aktuellen WiSe-Kurse.\nZu den aktuellen Materialien",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "DWPM"
+    ]
+  },
+  {
+    "objectID": "courses/om-vier-v.html",
+    "href": "courses/om-vier-v.html",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "",
+    "text": "OM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-vier-v.html#lernziele",
+    "href": "courses/om-vier-v.html#lernziele",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Lernziele",
+    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
+    "href": "courses/om-vier-v.html#kein-schlichtes-entweder-oder",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Kein schlichtes Entweder-oder",
+    "text": "Kein schlichtes Entweder-oder\nDie Folien stellen typische Unterschiede gegenüber: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden (PDF-S. 18). Die Zusammenfassung spricht ausdrücklich von einem Kontinuum (S. 34), nicht von ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nS. 19 unterscheidet Einzel-, Serien- und Massenfertigung nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
+    "href": "courses/om-vier-v.html#vier-dimensionen-statt-eines-etiketts",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Vier Dimensionen statt eines Etiketts",
+    "text": "Vier Dimensionen statt eines Etiketts\nNach PDF-S. 20:\n\n\n\n\n\n\n\n\nDimension\nLeitfrage\nTypische Konsequenz\n\n\n\n\nVolume\nWie groß ist die Menge?\nHohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\n\n\nVariety\nWie vielfältig ist das Angebot?\nHohe Vielfalt benötigt flexible Ressourcen und erhöht Komplexität.\n\n\nVariation\nWie stark schwankt die Nachfrage?\nStarke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\n\n\nVisibility\nWie viel vom Prozess erlebt der Kunde?\nHohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\n\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#anwendung-auf-münsterrad",
+    "href": "courses/om-vier-v.html#anwendung-auf-münsterrad",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Anwendung auf MünsterRad",
+    "text": "Anwendung auf MünsterRad\nDie Quelle kontrastiert Reparaturwerkstatt und Lastenrad-Serienfertigung (S. 20). Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#selbstcheck-mc",
+    "href": "courses/om-vier-v.html#selbstcheck-mc",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig (PDF-S. 20). Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#quelle-und-abgrenzung",
+    "href": "courses/om-vier-v.html#quelle-und-abgrenzung",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+  },
+  {
+    "objectID": "templates/example-lecture.html",
+    "href": "templates/example-lecture.html",
+    "title": "Lecture Template",
+    "section": "",
+    "text": "Field\nValue\n\n\n\n\nCourse\nPlaceholder\n\n\nLecture\nPlaceholder\n\n\nSource material\nNot attached in demo\n\n\nConfidence\nDemo only\n\n\nLast checked\n2026-10-12",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#source-status",
+    "href": "templates/example-lecture.html#source-status",
+    "title": "Lecture Template",
+    "section": "",
+    "text": "Field\nValue\n\n\n\n\nCourse\nPlaceholder\n\n\nLecture\nPlaceholder\n\n\nSource material\nNot attached in demo\n\n\nConfidence\nDemo only\n\n\nLast checked\n2026-10-12",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#learning-goals",
+    "href": "templates/example-lecture.html#learning-goals",
+    "title": "Lecture Template",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nAfter this page, Leo should be able to:\n\nDefine the core concepts without looking.\nExplain the mechanism behind each concept.\nApply the concept to a short case.\nRecognize common distractors in multiple-choice questions.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#core-explanation",
+    "href": "templates/example-lecture.html#core-explanation",
+    "title": "Lecture Template",
+    "section": "Core Explanation",
+    "text": "Core Explanation\nWrite the main explanation here. Keep it source-backed, compact, and complete enough that a future exam answer can be built from it.\n\n\n\nReveal compressed model answer\n\nDefinition, mechanism, application, limitation, conclusion.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#worked-example",
+    "href": "templates/example-lecture.html#worked-example",
+    "title": "Lecture Template",
+    "section": "Worked Example",
+    "text": "Worked Example\nUse one concrete worked example. For quantitative courses, include calculation steps. For management or digital business courses, include case evidence and a justified recommendation.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#visual-model",
+    "href": "templates/example-lecture.html#visual-model",
+    "title": "Lecture Template",
+    "section": "Visual Model",
+    "text": "Visual Model\nAdd the visual form that makes the mechanism easiest to inspect: graph, process diagram, concept map, table, timeline, or screenshot-backed annotation.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#algorithm-or-code-trace",
+    "href": "templates/example-lecture.html#algorithm-or-code-trace",
+    "title": "Lecture Template",
+    "section": "Algorithm Or Code Trace",
+    "text": "Algorithm Or Code Trace\nWhen a concept has a procedure, show it as pseudocode, executable code, or a step-by-step trace. Prefer small runnable examples over abstract descriptions.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#checks",
+    "href": "templates/example-lecture.html#checks",
+    "title": "Lecture Template",
+    "section": "Checks",
+    "text": "Checks\n\n  Template check: what should every final page preserve?\n   A traceable link between source, explanation, and practice question.\n   As many decorative sections as possible.\n   Raw source files embedded directly into the page.\n  Check",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "templates/example-lecture.html#open-questions",
+    "href": "templates/example-lecture.html#open-questions",
+    "title": "Lecture Template",
+    "section": "Open Questions",
+    "text": "Open Questions\n\nWhat source detail is still missing?\nWhat is likely exam-relevant?\nWhich part needs a diagram or worked example?\nWhich part should become executable code, a simulation, or an algorithm trace?",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Lecture Template"
+    ]
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html",
+    "href": "courses/om-organisation-digitalisierung.html",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "",
+    "text": "OM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#lernziele",
+    "href": "courses/om-organisation-digitalisierung.html#lernziele",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Lernziele",
+    "text": "Lernziele\nEntscheidungen nach Horizont einordnen, Organisationsformen abwägen und digitale Maßnahmen über Wirkung, Voraussetzung und Risiko begründen."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#entscheidungen-bilden-eine-hierarchie",
+    "href": "courses/om-organisation-digitalisierung.html#entscheidungen-bilden-eine-hierarchie",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Entscheidungen bilden eine Hierarchie",
+    "text": "Entscheidungen bilden eine Hierarchie\nPDF-S. 16 nennt als typische Horizonte:\n\n\n\n\n\n\n\n\nEbene\nHorizont der Quelle\nBeispiel\n\n\n\n\nStrategisch\n2–5 Jahre\nStandort, Kapazitätsaufbau, Make-or-Buy\n\n\nTaktisch\n3–18 Monate\nSaisonprogramm, Schichten, Rahmenverträge\n\n\nOperativ\n1 Tag–1 Woche\nAuftragsreihenfolge, Personaleinsatz, Störungsreaktion\n\n\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#schnittstellen-und-organisationsformen",
+    "href": "courses/om-organisation-digitalisierung.html#schnittstellen-und-organisationsformen",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Schnittstellen und Organisationsformen",
+    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen (S. 23). S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\n\n\n\n\n\n\n\nStruktur\nNutzen laut Quelle\nMögliche Kehrseite\n\n\n\n\nFunktional\nKlare Zuständigkeit, Skaleneffekte\nSilos, geringe Flexibilität\n\n\nDivisional\nMarktnähe, Ergebnisverantwortung\nRedundanzen, schwierige Harmonisierung\n\n\nMatrix\nRessourcenoptimierung, Synergien\nKomplexe Entscheidungen durch doppelte Berichtslinie\n\n\nWertstrom / End-to-End\nKundenzentrierung, kurze Durchlaufzeit\nKoordinationsbedarf, neue Rollen\n\n\n\nDiese Gegenüberstellung stammt aus S. 24–26. Es gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#digitale-maßnahme-als-wirkungskette-prüfen",
+    "href": "courses/om-organisation-digitalisierung.html#digitale-maßnahme-als-wirkungskette-prüfen",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Digitale Maßnahme als Wirkungskette prüfen",
+    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDie Quelle nennt Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz als Hebel. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende (S. 29).\nEigenes Lernbeispiel, angelehnt an S. 32: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas ALIS-Beispiel der Quelle zeigt Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung (S. 31). Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarningQuellenkritik und interne Verweise\n\n\n\nDie Nutzenzahlen auf PDF-S. 30 sind laut Folienhinweis überwiegend Selbstauskünfte und nicht kausal belegt; sie sind keine garantierten Effekte für andere Unternehmen. PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“, während die ALIS-Seite selbst die Foliennummer 33 trägt (PDF-S. 31). Deshalb hier physische PDF-Seiten verwenden. Die Lernseiten übernehmen keine ungeprüften aktuellen geopolitischen Behauptungen aus dem Einführungsteil."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#selbstcheck-mc",
+    "href": "courses/om-organisation-digitalisierung.html#selbstcheck-mc",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig (PDF-S. 16 und 29). b ist falsch: Die Quelle warnt auf S. 30 vor einer kausalen Interpretation der berichteten Nutzenwerte. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#quelle-und-abgrenzung",
+    "href": "courses/om-organisation-digitalisierung.html#quelle-und-abgrenzung",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html",
+    "href": "courses/om-leistungsziele.html",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "",
+    "text": "OM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#lernziele",
+    "href": "courses/om-leistungsziele.html#lernziele",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Lernziele",
+    "text": "Lernziele\nLeistungsziele auseinanderhalten, Zielkonflikte erklären und Produktivität sowie Little’s Law mit passenden Einheiten berechnen."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#vom-prozess-zum-leistungsziel",
+    "href": "courses/om-leistungsziele.html#vom-prozess-zum-leistungsziel",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Vom Prozess zum Leistungsziel",
+    "text": "Vom Prozess zum Leistungsziel\nOM gestaltet, steuert und verbessert Prozesse für Güter und Dienstleistungen (PDF-S. 12). Inputs werden in Outputs umgewandelt; Umweltbedingungen beeinflussen diese Transformation (S. 13 und 34).\nDie Einführung unterscheidet sechs Ziele (S. 14):\n\n\n\n\n\n\n\n\nZiel\nBedeutung\nUnterscheidung\n\n\n\n\nQualität\nSpezifikationsgerechte, fehlerfreie Leistung\nRichtig liefern\n\n\nGeschwindigkeit\nKurze Zeit von Anfrage bis Lieferung\nSchnell liefern\n\n\nZuverlässigkeit\nZugesagte Termine einhalten\nPünktlich liefern\n\n\nFlexibilität\nProdukt, Mix, Menge oder Lieferung ändern können\nÄnderungen ermöglichen\n\n\nKosten\nGeringer Ressourceneinsatz je Leistung\nWirtschaftlich leisten\n\n\nNachhaltigkeit\nÖkologische und soziale Auswirkungen berücksichtigen\nVerantwortungsvoll leisten\n\n\n\nEigenes Lernbeispiel: Ein Reparaturbetrieb verspricht fünf Tage und liefert zuverlässig nach fünf Tagen. Er kann zuverlässig sein, obwohl ein Konkurrent schon nach zwei Tagen liefert. Geschwindigkeit und Zuverlässigkeit messen also nicht dasselbe.\nMehr Varianten können Rüstaufwand und Stückkosten erhöhen. Hohe Lieferbereitschaft kann mehr Bestand verlangen. Solche Trade-offs erfordern Prioritäten, sind aber nicht unveränderlich: Material- und Energieeffizienz können Kosten und Emissionen zugleich senken (S. 14)."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#produktivität-rechnen",
+    "href": "courses/om-leistungsziele.html#produktivität-rechnen",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Produktivität rechnen",
+    "text": "Produktivität rechnen\nNach S. 15 gilt: Produktivität = Output / Input. Arbeitsproduktivität betrachtet nur den Input Arbeit, nicht sämtliche Kosten.\nDas Quellenbeispiel liefert 120 Räder mit 300 Arbeitsstunden, später 135 Räder mit denselben Stunden:\n\nVorher: 120 / 300 = 0,40 Räder/h.\nNachher: 135 / 300 = 0,45 Räder/h.\nRelative Steigerung: (0,45 − 0,40) / 0,40 = 12,5 %.\n\nDie Differenz 0,05 Räder/h ist keine Steigerung um 5 %. Für eine Mehrfaktorproduktivität müssen mehrere Inputs in einer vergleichbaren Bewertung zusammengeführt werden (S. 15)."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#littles-law-bestand-ist-nicht-durchsatz",
+    "href": "courses/om-leistungsziele.html#littles-law-bestand-ist-nicht-durchsatz",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Little’s Law: Bestand ist nicht Durchsatz",
+    "text": "Little’s Law: Bestand ist nicht Durchsatz\nI = R × T verknüpft mittleren Bestand I, Durchsatz R und Durchlaufzeit T (S. 15). Im Quellenbeispiel: 20 Räder/Tag × 3 Tage = 60 Räder im System.\nAls ergänzende Anwendungshilfe: Systemgrenzen und Zeitbasis müssen übereinstimmen; verwendet werden langfristige Mittelwerte eines stabilen Flusssystems. Nicht aus einer Momentaufnahme beliebige Tageswerte multiplizieren.\nEigenes Lernbeispiel: Bei unverändert 20 Rädern/Tag und nur zwei Tagen Durchlaufzeit ergibt sich ein mittlerer Bestand von 40 Rädern. Weniger Bestand ist hier die Folge kürzerer Durchlaufzeit bei gleichem Durchsatz, nicht automatisch weniger Nachfrage."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#selbstcheck-sc",
+    "href": "courses/om-leistungsziele.html#selbstcheck-sc",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nBei 15 Aufträgen pro Tag und vier Tagen mittlerer Durchlaufzeit: Wie groß ist der mittlere Bestand?\n 60 Aufträge\n 3,75 Aufträge\n 60 Aufträge pro Tag\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na ist richtig: I = 15 Aufträge/Tag × 4 Tage = 60 Aufträge. b dividiert statt zu multiplizieren; c verwechselt Bestand mit einer Rate. Vgl. PDF-S. 15."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#quelle-und-abgrenzung",
+    "href": "courses/om-leistungsziele.html#quelle-und-abgrenzung",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 12–15, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html",
+    "href": "courses/itdi-video-case.html",
+    "title": "ITDI: Video Case Assignment",
+    "section": "",
+    "text": "Zurück zu IT-driven Innovation"
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#lernziele",
+    "href": "courses/itdi-video-case.html#lernziele",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Lernziele",
+    "text": "Lernziele\n\nDie verbindlichen Formatvorgaben von der freiwilligen Wettbewerbsteilnahme unterscheiden.\nEine Technologie über Funktionen, Handlungsmöglichkeiten und Auswirkungen erklären.\nEinen inhaltlich schlüssigen Beitrag innerhalb der Zeitgrenze planen."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#was-abgegeben-wird",
+    "href": "courses/itdi-video-case.html#was-abgegeben-wird",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Was abgegeben wird",
+    "text": "Was abgegeben wird\nLaut Video Case Intro.pdf, S. 2 erstellt eine Gruppe aus bis zu drei Personen ein Video über eine neue digitale Technologie oder ein konkretes technologiegetriebenes Produkt bzw. einen Dienst. Das Video soll die Funktionen bzw. Affordances untersuchen und mögliche Auswirkungen auf Wirtschaft und Gesellschaft bewerten.\nMaximal 120 Sekunden sind eine harte Grenze. Längere Beiträge werden stark sanktioniert. Bewertet werden Inhalt, Struktur und Qualität; die Folien nennen ungefähr 30 Arbeitsstunden je Teammitglied als Aufwand. Inhalt hat Vorrang vor visuellen Effekten (S. 4).\n\n\n\n\n\n\nImportantWettbewerb und Note nicht verwechseln\n\n\n\nDie Teilnahme am Videowettbewerb ist nicht Voraussetzung für die Benotung. Die Entscheidung zur Wettbewerbsteilnahme wird zusammen mit dem Video abgegeben (S. 2)."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#termine-aus-der-quelle",
+    "href": "courses/itdi-video-case.html#termine-aus-der-quelle",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Termine aus der Quelle",
+    "text": "Termine aus der Quelle\n\nFrühes Ideenfeedback: November 2026.\nBis zu zwei Feedbacktermine pro Team: 11./13./18./20. Januar 2027.\nAbgabe von Video und Wettbewerbsentscheidung: 24. Januar 2027, 23:59 Uhr.\n\n\n\n\n\n\n\nWarning\n\n\n\nDie Quelle nennt für Vorrunden und Finale den 25./26. bzw. 27. Januar 2026, obwohl sie das Wintersemester 2026/27 behandelt und die Abgabe 2027 nennt. Das ist widersprüchlich. Diese Wettbewerbstermine deshalb im Learnweb bzw. beim Lehrstuhl bestätigen; nicht stillschweigend auf 2027 korrigieren. Die frühe Prüfungsanmeldung ist davon getrennt zu prüfen."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#vom-thema-zur-argumentation",
+    "href": "courses/itdi-video-case.html#vom-thema-zur-argumentation",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Vom Thema zur Argumentation",
+    "text": "Vom Thema zur Argumentation\nDie folgende Struktur ist ein eigener Arbeitsvorschlag, keine zusätzliche Vorgabe des Lehrstuhls:\n\nProblem: Welche konkrete Tätigkeit oder welches Problem adressiert die Technologie?\nFunktion: Was tut das Produkt tatsächlich?\nHandlungsmöglichkeit: Was können bestimmte Nutzer dadurch anders oder erstmals tun?\nAuswirkung: Über welchen Mechanismus könnten sich wirtschaftliche oder gesellschaftliche Folgen ergeben? Welche Grenzen bleiben?\n\nBeispiel: Bei einer automatischen Transkriptionssoftware ist die Umwandlung von Sprache in Text die Funktion. Das schnelle Durchsuchen eines Interviews ist eine damit verbundene Handlungsmöglichkeit. Eine mögliche Zeitersparnis muss erklärt und gegen Fehlerkorrekturaufwand abgewogen werden. Dieses Beispiel ist didaktisch ergänzt, nicht aus den Folien übernommen."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#selbstcheck",
+    "href": "courses/itdi-video-case.html#selbstcheck",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Selbstcheck",
+    "text": "Selbstcheck\n\n  Ein Team produziert einen guten Film mit 135 Sekunden. Ist das Format erfüllt?\n   Ja, wenn die Visualisierung besonders gut ist.\n   Nein, die 120-Sekunden-Grenze ist verbindlich.\n  Prüfen\n  \n\nBegründung anzeigen\nAntwort b. S. 4 bezeichnet die Grenze ausdrücklich als hart und kündigt starke Abzüge für Überschreitungen an. Aufwendige Effekte ersetzen weder Inhalt noch Formaterfüllung.\n\n\n\nMuss unser Team am Turnier teilnehmen, um eine Note zu bekommen?\n\nNein. Laut S. 2 hängt die Benotung nicht davon ab, ob das Video für das Turnier angemeldet wird. Videoabgabe und Entscheidung über die Turnierteilnahme sind zu unterscheiden."
+  },
+  {
+    "objectID": "courses/itdi-video-case.html#quelle",
+    "href": "courses/itdi-video-case.html#quelle",
+    "title": "ITDI: Video Case Assignment",
+    "section": "Quelle",
+    "text": "Quelle\nVideo Case Intro.pdf – Learnweb, Hochschulzugang erforderlich, insbesondere S. 2 und 4. Lokal geprüft am 15.10.2026. Originaldatei wird nicht auf dieser Website bereitgestellt."
+  },
+  {
+    "objectID": "courses/operations-research.html",
+    "href": "courses/operations-research.html",
+    "title": "Operations Research",
+    "section": "",
+    "text": "Operations Research needs a calculation-first page style: definition, algorithm, worked example, error traps, and short interpretation.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "OR"
+    ]
+  },
+  {
+    "objectID": "courses/operations-research.html#role-in-the-semester-site",
+    "href": "courses/operations-research.html#role-in-the-semester-site",
+    "title": "Operations Research",
+    "section": "",
+    "text": "Operations Research needs a calculation-first page style: definition, algorithm, worked example, error traps, and short interpretation.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "OR"
+    ]
+  },
+  {
+    "objectID": "courses/operations-research.html#lecture-blocks",
+    "href": "courses/operations-research.html#lecture-blocks",
+    "title": "Operations Research",
+    "section": "Lecture Blocks",
+    "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nLinear optimization\nVariables, objective, constraints\nModeling templates\n\n\nGraphs and networks\nShortest paths, flows, spanning trees\nStep-by-step examples\n\n\nScheduling\nProject networks, critical path\nCalculation drills\n\n\nDecision models\nCriteria under uncertainty\nComparison tasks",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "OR"
+    ]
+  },
+  {
+    "objectID": "courses/operations-research.html#method-page-structure",
+    "href": "courses/operations-research.html#method-page-structure",
+    "title": "Operations Research",
+    "section": "Method Page Structure",
+    "text": "Method Page Structure\n\nState the problem type.\nDefine input data and variables.\nRun the method step by step.\nInterpret the result in plain language.\nList common mistakes.\n\n\n  What is the main learning risk in OR pages?\n   Having too many worked examples.\n   Using tables for calculations.\n   Memorizing method names without being able to execute and interpret them.\n  Check\n  \n\n\n\n\nReveal worked-example placeholder\n\nFor a shortest-path task, the final answer should not stop at the path. It should name the path, total cost or duration, and explain what the result means for the decision problem.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "OR"
+    ]
+  },
+  {
+    "objectID": "courses/digital-business.html",
+    "href": "courses/digital-business.html",
+    "title": "Digital Business",
+    "section": "",
+    "text": "Digital Business pages should separate concepts that sound similar: digitization, digitalization, digital transformation, platforms, ecosystems, and data-driven value creation.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "Digital Business"
+    ]
+  },
+  {
+    "objectID": "courses/digital-business.html#role-in-the-semester-site",
+    "href": "courses/digital-business.html#role-in-the-semester-site",
+    "title": "Digital Business",
+    "section": "",
+    "text": "Digital Business pages should separate concepts that sound similar: digitization, digitalization, digital transformation, platforms, ecosystems, and data-driven value creation.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "Digital Business"
+    ]
+  },
+  {
+    "objectID": "courses/digital-business.html#lecture-blocks",
+    "href": "courses/digital-business.html#lecture-blocks",
+    "title": "Digital Business",
+    "section": "Lecture Blocks",
+    "text": "Lecture Blocks\n\n\n\n\n\n\n\n\nBlock\nDemo content\nTarget output\n\n\n\n\nDigital transformation\nScope, capabilities, organizational change\nDefinition contrasts\n\n\nPlatform models\nNetwork effects, multi-sided markets\nExample/non-example cards\n\n\nData-driven value\nData assets, analytics, feedback loops\nMechanism notes\n\n\nGovernance and risk\nPrivacy, lock-in, accountability\nEvaluation prompts\n\n\n\n\n  What is the strongest way to test a platform concept?\n   Ask whether the answer explains interaction between participant groups and network effects.\n   Ask whether the firm has a website.\n   Ask whether the company uses cloud software internally.\n  Check\n  \n\n\n\n\nReveal concept distinction\n\nA platform business model is not merely a digital product. It creates value by enabling interactions between distinct participant groups, often strengthened by direct or indirect network effects.",
+    "crumbs": [
+      "Cockpit",
+      "Kurse",
+      "Digital Business"
+    ]
+  },
+  {
+    "objectID": "feedback.html",
+    "href": "feedback.html",
+    "title": "Feedback Report",
+    "section": "",
+    "text": "Report something here when a page is:\n\nconfusing,\ntoo shallow,\nprobably wrong,\nmissing an example,\nmissing a diagram,\nnot exam-focused enough,\nor unexpectedly useful and worth copying elsewhere.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Feedback Report"
+    ]
+  },
+  {
+    "objectID": "feedback.html#use-this-when",
+    "href": "feedback.html#use-this-when",
+    "title": "Feedback Report",
+    "section": "",
+    "text": "Report something here when a page is:\n\nconfusing,\ntoo shallow,\nprobably wrong,\nmissing an example,\nmissing a diagram,\nnot exam-focused enough,\nor unexpectedly useful and worth copying elsewhere.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Feedback Report"
+    ]
+  },
+  {
+    "objectID": "feedback.html#fast-report-builder",
+    "href": "feedback.html#fast-report-builder",
+    "title": "Feedback Report",
+    "section": "Fast Report Builder",
+    "text": "Fast Report Builder\n\n  \n    Page or course\n    \n  \n  \n    Feedback type\n    \n      unclear explanation\n      possible error\n      missing example\n      missing exam relevance\n      good pattern to reuse\n    \n  \n  \n    What should change?\n    \n  \n  \n    Optional source or context\n    \n  \n  Build report",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Feedback Report"
+    ]
+  },
+  {
+    "objectID": "feedback.html#report-format",
+    "href": "feedback.html#report-format",
+    "title": "Feedback Report",
+    "section": "Report Format",
+    "text": "Report Format\nUse this structure when sending feedback:\nCourse/page:\nType:\nProblem:\nSuggested change:\nSource/context:\nUrgency:",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Feedback Report"
+    ]
+  },
+  {
+    "objectID": "feedback.html#iteration-loop",
+    "href": "feedback.html#iteration-loop",
+    "title": "Feedback Report",
+    "section": "Iteration Loop",
+    "text": "Iteration Loop\nFeedback should turn into site improvements like this:\n\nCollect reports from Leo or classmates.\nGroup reports by page and severity.\nFix factual errors first.\nAdd examples or diagrams where comprehension fails.\nAdd or improve practice checks.\nRe-render the Quarto site and note what changed.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Feedback Report"
+    ]
+  },
+  {
+    "objectID": "feedback.html#quality-rule",
+    "href": "feedback.html#quality-rule",
+    "title": "Feedback Report",
+    "section": "Quality Rule",
+    "text": "Quality Rule\nFeedback is not a vote for making pages longer. The goal is better learning: clearer distinctions, better source grounding, more useful examples, and fewer irrelevant details.",
+    "crumbs": [
+      "Cockpit",
+      "Arbeiten",
+      "Feedback Report"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "",
+    "text": "Prototype\n  \n  Das Cockpit ist der Einstieg: Kurs wählen, nächsten Lernschritt sehen, Feedback abgeben.",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#direkt-weiter",
+    "href": "index.html#direkt-weiter",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Direkt Weiter",
+    "text": "Direkt Weiter\n\n  \n    Early Exam\n    DWPM\n    Englische Antwortstruktur und Case-Anwendung trainieren.\n  \n  \n    Early Exam\n    Operations Research\n    Methoden rechnen, interpretieren, Fehler vermeiden.\n  \n  \n    Üben\n    Practice Lab\n    Gemischte Checks und Wiederholungsliste.\n  \n  \n    Report\n    Feedback geben\n    Unklarheiten, Fehler und gute Ideen strukturiert melden.",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#kursübersicht",
+    "href": "index.html#kursübersicht",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Kursübersicht",
+    "text": "Kursübersicht\n\n  DWPMAntwortschema, Frameworks, Case-Prompts\n  ORAlgorithmen, Rechenwege, Interpretation\n  OMProzesse, Kapazität, Supply Chains\n  Digital BusinessPlattformen, Daten, Transformation\n  IT-driven InnovationAdoption, Capabilities, Umsetzung\n  VWLModelle, Annahmen, Diagramme",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#wofür-die-demo-da-ist",
+    "href": "index.html#wofür-die-demo-da-ist",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Wofür Die Demo Da Ist",
+    "text": "Wofür Die Demo Da Ist\nDiese Demo zeigt die Zielstruktur, bevor echte Learnweb-Daten verarbeitet werden. Sie soll schnell beantwortbar machen:\n\nWo lerne ich als Nächstes?\nWas ist prüfungsrelevant?\nWo kann ich Verständnis testen?\nWo melde ich Fehler, Lücken oder schlechte Erklärungen?\n\n\n\n\n\n\n\nImportant\n\n\n\nReal content must stay source-backed. Placeholder examples are allowed for testing layout and interaction, but every production summary, question, and answer should link back to a lecture, slide, exercise, or trusted external source.",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#semester-map",
+    "href": "index.html#semester-map",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Semester Map",
+    "text": "Semester Map\n\n\n\nCourse\nCurrent role\nFirst useful page\nDemo status\n\n\n\n\nDigital Work & Project Management\nEarly exam preparation and English answer training\nDWPM\nStructure + sample checks\n\n\nOperations Research\nEarly exam preparation and method drilling\nOperations Research\nStructure + method cards\n\n\nOperations Management\nRegular semester lecture\nOperations Management\nPlaceholder lecture path\n\n\nDigital Business\nRegular semester lecture\nDigital Business\nPlaceholder concept path\n\n\nIT-driven Innovation\nRegular semester lecture\nIT-driven Innovation\nPlaceholder concept path\n\n\nVWL für Wirtschaftsinformatiker\nRegular semester lecture\nVWL\nPlaceholder formula/concept path",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#weekly-operating-loop",
+    "href": "index.html#weekly-operating-loop",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Weekly Operating Loop",
+    "text": "Weekly Operating Loop\n\nCapture new material from Learnweb.\nClassify it: lecture core, exercise, organization, exam signal, or ignore.\nCreate one lecture page with definitions, examples, diagrams, code/algorithm views, and checks.\nGenerate practice items from the lecture page, not directly from raw slides.\nRun the mixed practice lab and promote weak points back into the next study session.",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#content-quality-bar",
+    "href": "index.html#content-quality-bar",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Content Quality Bar",
+    "text": "Content Quality Bar\nEvery final learning page should pass this checklist:\n\nThe page explains what is examinable and what is only context.\nKey terms are defined before they are used.\nExamples are concrete enough to solve a task, not just recognize a buzzword.\nVisuals are used whenever they clarify the mechanism: graphs for VWL/OR, process diagrams for OM, and structured maps for management concepts.\nCode and algorithm blocks are included when a procedure is easier to understand by executing, tracing, or simulating it.\nMultiple-choice questions test distinctions, not trivia.\nSelf-revealing sections explain the reasoning path, not only the answer.\nUncertain or missing source material is explicitly marked.",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#demo-navigation",
+    "href": "index.html#demo-navigation",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Demo Navigation",
+    "text": "Demo Navigation\nStart with Practice Lab for active recall or Feedback when something feels wrong, unclear, or under-explained.",
+    "crumbs": [
+      "Cockpit"
+    ]
+  },
+  {
+    "objectID": "index.html#neue-kursmaterialien",
+    "href": "index.html#neue-kursmaterialien",
+    "title": "WiSe 2026/27 Study Lab",
+    "section": "Neue Kursmaterialien",
+    "text": "Neue Kursmaterialien\nZur aktuellen Learnweb-Materialübersicht. Originaldateien bleiben in Learnweb bzw. lokal; fachlich geprüfte Lernseiten werden schrittweise ergänzt.",
+    "crumbs": [
+      "Cockpit"
+    ]
+  }
+]
