@@ -878,3 +878,9 @@ code {
   overflow-wrap: anywhere;
   white-space: break-spaces;
 }
+
+/* Local section jumps are distinct from the one global sidebar menu. */
+.section-jumps { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1rem 0 1.5rem; }
+.section-jumps a { border: 1px solid var(--study-line); border-radius: 999px; padding: .45rem .8rem; background: var(--study-soft); font-size: .9rem; text-decoration: none; }
+.quick-card:focus-visible, .course-board a:focus-visible, .section-jumps a:focus-visible { outline: 3px solid var(--study-accent); outline-offset: 3px; }
+.quick-card { overflow-wrap: anywhere; }
