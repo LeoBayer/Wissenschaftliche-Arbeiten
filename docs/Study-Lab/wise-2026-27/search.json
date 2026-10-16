@@ -601,35 +601,28 @@
     "href": "courses/om-leistungsziele.html#abschnitt-2",
     "title": "OM: Leistungsziele und Kennzahlen",
     "section": "Vom Prozess zum Leistungsziel",
-    "text": "Vom Prozess zum Leistungsziel\nOM gestaltet, steuert und verbessert Prozesse für Güter und Dienstleistungen (PDF-S. 12). Inputs werden in Outputs umgewandelt; Umweltbedingungen beeinflussen diese Transformation (S. 13 und 34).\nDie Einführung unterscheidet sechs Ziele (S. 14):\n\n\n\n\n\n\n\n\nZiel\nBedeutung\nUnterscheidung\n\n\n\n\nQualität\nSpezifikationsgerechte, fehlerfreie Leistung\nRichtig liefern\n\n\nGeschwindigkeit\nKurze Zeit von Anfrage bis Lieferung\nSchnell liefern\n\n\nZuverlässigkeit\nZugesagte Termine einhalten\nPünktlich liefern\n\n\nFlexibilität\nProdukt, Mix, Menge oder Lieferung ändern können\nÄnderungen ermöglichen\n\n\nKosten\nGeringer Ressourceneinsatz je Leistung\nWirtschaftlich leisten\n\n\nNachhaltigkeit\nÖkologische und soziale Auswirkungen berücksichtigen\nVerantwortungsvoll leisten\n\n\n\nEigenes Lernbeispiel: Ein Reparaturbetrieb verspricht fünf Tage und liefert zuverlässig nach fünf Tagen. Er kann zuverlässig sein, obwohl ein Konkurrent schon nach zwei Tagen liefert. Geschwindigkeit und Zuverlässigkeit messen also nicht dasselbe.\nMehr Varianten können Rüstaufwand und Stückkosten erhöhen. Hohe Lieferbereitschaft kann mehr Bestand verlangen. Solche Trade-offs erfordern Prioritäten, sind aber nicht unveränderlich: Material- und Energieeffizienz können Kosten und Emissionen zugleich senken (S. 14)."
+    "text": "Vom Prozess zum Leistungsziel\nOM gestaltet, steuert und verbessert Prozesse für Güter und Dienstleistungen. Inputs werden in Outputs umgewandelt; Umweltbedingungen beeinflussen diese Transformation.\nFür die Prozessgestaltung sind sechs Ziele zu unterscheiden:\n\nQualität – richtig liefern: Die Leistung ist spezifikationsgerecht und fehlerfrei.\nGeschwindigkeit – schnell liefern: Die Zeit von der Anfrage bis zur Lieferung ist kurz.\nZuverlässigkeit – pünktlich liefern: Zugesagte Termine werden eingehalten.\nFlexibilität – Änderungen ermöglichen: Produkt, Mix, Menge oder Lieferung lassen sich anpassen.\nKosten – wirtschaftlich leisten: Der Ressourceneinsatz je Leistung ist gering.\nNachhaltigkeit – verantwortungsvoll leisten: Ökologische und soziale Auswirkungen werden berücksichtigt.\n\nEigenes Lernbeispiel: Ein Reparaturbetrieb verspricht fünf Tage und liefert zuverlässig nach fünf Tagen. Er kann zuverlässig sein, obwohl ein Konkurrent schon nach zwei Tagen liefert. Geschwindigkeit und Zuverlässigkeit messen also nicht dasselbe.\nMehr Varianten können Rüstaufwand und Stückkosten erhöhen. Hohe Lieferbereitschaft kann mehr Bestand verlangen. Solche Trade-offs erfordern Prioritäten, sind aber nicht unveränderlich: Material- und Energieeffizienz können Kosten und Emissionen zugleich senken."
   },
   {
     "objectID": "courses/om-leistungsziele.html#abschnitt-3",
     "href": "courses/om-leistungsziele.html#abschnitt-3",
     "title": "OM: Leistungsziele und Kennzahlen",
     "section": "Produktivität rechnen",
-    "text": "Produktivität rechnen\nNach S. 15 gilt: Produktivität = Output / Input. Arbeitsproduktivität betrachtet nur den Input Arbeit, nicht sämtliche Kosten.\nDas Quellenbeispiel liefert 120 Räder mit 300 Arbeitsstunden, später 135 Räder mit denselben Stunden:\n\nVorher: 120 / 300 = 0,40 Räder/h.\nNachher: 135 / 300 = 0,45 Räder/h.\nRelative Steigerung: (0,45 − 0,40) / 0,40 = 12,5 %.\n\nDie Differenz 0,05 Räder/h ist keine Steigerung um 5 %. Für eine Mehrfaktorproduktivität müssen mehrere Inputs in einer vergleichbaren Bewertung zusammengeführt werden (S. 15)."
+    "text": "Produktivität rechnen\nEs gilt: Produktivität = Output / Input. Arbeitsproduktivität betrachtet nur den Input Arbeit, nicht sämtliche Kosten.\nDas MünsterRad-Beispiel liefert 120 Räder mit 300 Arbeitsstunden, später 135 Räder mit denselben Stunden:\n\nVorher: 120 / 300 = 0,40 Räder/h.\nNachher: 135 / 300 = 0,45 Räder/h.\nRelative Steigerung: (0,45 − 0,40) / 0,40 = 12,5 %.\n\nDie Differenz 0,05 Räder/h ist keine Steigerung um 5 %. Für eine Mehrfaktorproduktivität müssen mehrere Inputs in einer vergleichbaren Bewertung zusammengeführt werden."
   },
   {
     "objectID": "courses/om-leistungsziele.html#abschnitt-4",
     "href": "courses/om-leistungsziele.html#abschnitt-4",
     "title": "OM: Leistungsziele und Kennzahlen",
     "section": "Little’s Law: Bestand ist nicht Durchsatz",
-    "text": "Little’s Law: Bestand ist nicht Durchsatz\nI = R × T verknüpft mittleren Bestand I, Durchsatz R und Durchlaufzeit T (S. 15). Im Quellenbeispiel: 20 Räder/Tag × 3 Tage = 60 Räder im System.\nAls ergänzende Anwendungshilfe: Systemgrenzen und Zeitbasis müssen übereinstimmen; verwendet werden langfristige Mittelwerte eines stabilen Flusssystems. Nicht aus einer Momentaufnahme beliebige Tageswerte multiplizieren.\nEigenes Lernbeispiel: Bei unverändert 20 Rädern/Tag und nur zwei Tagen Durchlaufzeit ergibt sich ein mittlerer Bestand von 40 Rädern. Weniger Bestand ist hier die Folge kürzerer Durchlaufzeit bei gleichem Durchsatz, nicht automatisch weniger Nachfrage."
+    "text": "Little’s Law: Bestand ist nicht Durchsatz\nI = R × T verknüpft mittleren Bestand I, Durchsatz R und Durchlaufzeit T. Im Werkstattbeispiel: 20 Räder/Tag × 3 Tage = 60 Räder im System.\nAls ergänzende Anwendungshilfe: Systemgrenzen und Zeitbasis müssen übereinstimmen; verwendet werden langfristige Mittelwerte eines stabilen Flusssystems. Nicht aus einer Momentaufnahme beliebige Tageswerte multiplizieren.\nEigenes Lernbeispiel: Bei unverändert 20 Rädern/Tag und nur zwei Tagen Durchlaufzeit ergibt sich ein mittlerer Bestand von 40 Rädern. Weniger Bestand ist hier die Folge kürzerer Durchlaufzeit bei gleichem Durchsatz, nicht automatisch weniger Nachfrage."
   },
   {
     "objectID": "courses/om-leistungsziele.html#abschnitt-5",
     "href": "courses/om-leistungsziele.html#abschnitt-5",
     "title": "OM: Leistungsziele und Kennzahlen",
     "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nBei 15 Aufträgen pro Tag und vier Tagen mittlerer Durchlaufzeit: Wie groß ist der mittlere Bestand?\n 60 Aufträge\n 3,75 Aufträge\n 60 Aufträge pro Tag\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na ist richtig: I = 15 Aufträge/Tag × 4 Tage = 60 Aufträge. b dividiert statt zu multiplizieren; c verwechselt Bestand mit einer Rate. Vgl. PDF-S. 15."
-  },
-  {
-    "objectID": "courses/om-leistungsziele.html#abschnitt-6",
-    "href": "courses/om-leistungsziele.html#abschnitt-6",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 12–15, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+    "text": "Selbstcheck (SC)\n\nBei 15 Aufträgen pro Tag und vier Tagen mittlerer Durchlaufzeit: Wie groß ist der mittlere Bestand?\n 60 Aufträge\n 3,75 Aufträge\n 60 Aufträge pro Tag\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na ist richtig: I = 15 Aufträge/Tag × 4 Tage = 60 Aufträge. b dividiert statt zu multiplizieren; c verwechselt Bestand mit einer Rate."
   },
   {
     "objectID": "courses/om-leistungsziele.html#verwandte-lernseiten",
@@ -637,6 +630,13 @@
     "title": "OM: Leistungsziele und Kennzahlen",
     "section": "Verwandte Lernseiten",
     "text": "Verwandte Lernseiten\n\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#abschnitt-6",
+    "href": "courses/om-leistungsziele.html#abschnitt-6",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 12–15, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nVom Prozess zum Leistungsziel: PDF-S. 12–14 und 34 (Definition, Transformation, sechs Ziele und Trade-offs).\nProduktivität rechnen: PDF-S. 15 (Formel, Teil-/Mehrfaktorproduktivität und MünsterRad-Zahlen).\nLittle’s Law und Selbstcheck: PDF-S. 15 (Formel und Werkstattbeispiel). Der 40-Räder-Fall und die Prüfungsaufgabe sind eigene Anwendungen. Übereinstimmende Systemgrenzen, Zeitbasis und stabile langfristige Mittelwerte sind ergänzende Anwendungshinweise."
   },
   {
     "objectID": "courses/db-innovation-foundations.html",
@@ -895,35 +895,28 @@
     "href": "courses/om-vier-v.html#abschnitt-2",
     "title": "OM: Güter, Dienstleistungen und die 4 V",
     "section": "Kein schlichtes Entweder-oder",
-    "text": "Kein schlichtes Entweder-oder\nDie Folien stellen typische Unterschiede gegenüber: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden (PDF-S. 18). Die Zusammenfassung spricht ausdrücklich von einem Kontinuum (S. 34), nicht von ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nS. 19 unterscheidet Einzel-, Serien- und Massenfertigung nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+    "text": "Kein schlichtes Entweder-oder\nSachgüter und Dienstleistungen unterscheiden sich in typischen Merkmalen: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden. Beide bilden ein Kontinuum, keine ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nEinzel-, Serien- und Massenfertigung unterscheiden sich nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
   },
   {
     "objectID": "courses/om-vier-v.html#abschnitt-3",
     "href": "courses/om-vier-v.html#abschnitt-3",
     "title": "OM: Güter, Dienstleistungen und die 4 V",
     "section": "Vier Dimensionen statt eines Etiketts",
-    "text": "Vier Dimensionen statt eines Etiketts\nNach PDF-S. 20:\n\n\n\n\n\n\n\n\nDimension\nLeitfrage\nTypische Konsequenz\n\n\n\n\nVolume\nWie groß ist die Menge?\nHohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\n\n\nVariety\nWie vielfältig ist das Angebot?\nHohe Vielfalt benötigt flexible Ressourcen und erhöht Komplexität.\n\n\nVariation\nWie stark schwankt die Nachfrage?\nStarke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\n\n\nVisibility\nWie viel vom Prozess erlebt der Kunde?\nHohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\n\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+    "text": "Vier Dimensionen statt eines Etiketts\nDie vier Dimensionen beschreiben unterschiedliche Anforderungen an den Prozess:\n\nVolume – Menge: Wie groß ist die Menge? Hohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\nVariety – Vielfalt: Wie vielfältig ist das Angebot? Hohe Vielfalt benötigt flexible Ressourcen und erhöht die Komplexität.\nVariation – Nachfrageschwankung: Wie stark schwankt die Nachfrage? Starke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\nVisibility – Sichtbarkeit: Wie viel vom Prozess erlebt der Kunde? Hohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
   },
   {
     "objectID": "courses/om-vier-v.html#abschnitt-4",
     "href": "courses/om-vier-v.html#abschnitt-4",
     "title": "OM: Güter, Dienstleistungen und die 4 V",
     "section": "Anwendung auf MünsterRad",
-    "text": "Anwendung auf MünsterRad\nDie Quelle kontrastiert Reparaturwerkstatt und Lastenrad-Serienfertigung (S. 20). Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+    "text": "Anwendung auf MünsterRad\nReparaturwerkstatt und Lastenrad-Serienfertigung unterscheiden sich im Prozess. Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
   },
   {
     "objectID": "courses/om-vier-v.html#abschnitt-5",
     "href": "courses/om-vier-v.html#abschnitt-5",
     "title": "OM: Güter, Dienstleistungen und die 4 V",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig (PDF-S. 20). Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
-  },
-  {
-    "objectID": "courses/om-vier-v.html#abschnitt-6",
-    "href": "courses/om-vier-v.html#abschnitt-6",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig. Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
   },
   {
     "objectID": "courses/om-vier-v.html#verwandte-lernseiten",
@@ -933,11 +926,18 @@
     "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
   },
   {
+    "objectID": "courses/om-vier-v.html#abschnitt-6",
+    "href": "courses/om-vier-v.html#abschnitt-6",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nKein schlichtes Entweder-oder: PDF-S. 18–19 (Merkmale und Produktions-/Dienstleistungsarten), S. 34 (Kontinuum).\nVier Dimensionen und MünsterRad-Anwendung: PDF-S. 20; dort Vergleich von Reparaturservice und Serienfertigung. Die Diagnose-/Montageausarbeitung ist eine eigene Ableitung, keine Messung.\nSelbstcheck: PDF-S. 20 (Abgrenzung der vier Dimensionen)."
+  },
+  {
     "objectID": "courses/om-organisation-digitalisierung.html",
     "href": "courses/om-organisation-digitalisierung.html",
     "title": "OM: Organisation und Digitalisierung",
     "section": "",
-    "text": "Entscheidungen bilden eine HierarchieQuellenkritik und interne VerweiseSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
+    "text": "Entscheidungen bilden eine HierarchieEvidenzgrenzen und verantwortliche EntscheidungenSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
   },
   {
     "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-1",
@@ -951,35 +951,28 @@
     "href": "courses/om-organisation-digitalisierung.html#abschnitt-2",
     "title": "OM: Organisation und Digitalisierung",
     "section": "Entscheidungen bilden eine Hierarchie",
-    "text": "Entscheidungen bilden eine Hierarchie\nPDF-S. 16 nennt als typische Horizonte:\n\n\n\n\n\n\n\n\nEbene\nHorizont der Quelle\nBeispiel\n\n\n\n\nStrategisch\n2–5 Jahre\nStandort, Kapazitätsaufbau, Make-or-Buy\n\n\nTaktisch\n3–18 Monate\nSaisonprogramm, Schichten, Rahmenverträge\n\n\nOperativ\n1 Tag–1 Woche\nAuftragsreihenfolge, Personaleinsatz, Störungsreaktion\n\n\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
+    "text": "Entscheidungen bilden eine Hierarchie\nDie Planung unterscheidet drei Ebenen mit typischen Zeithorizonten:\n\nStrategisch, typischerweise 2–5 Jahre: Standort, Kapazitätsaufbau und Make-or-Buy legen den langfristigen Rahmen fest.\nTaktisch, typischerweise 3–18 Monate: Saisonprogramm, Schichten und Rahmenverträge konkretisieren diesen Rahmen.\nOperativ, typischerweise 1 Tag–1 Woche: Auftragsreihenfolge, Personaleinsatz und Störungsreaktionen steuern die unmittelbare Ausführung.\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
   },
   {
     "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-3",
     "href": "courses/om-organisation-digitalisierung.html#abschnitt-3",
     "title": "OM: Organisation und Digitalisierung",
     "section": "Schnittstellen und Organisationsformen",
-    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen (S. 23). S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\n\n\n\n\n\n\n\nStruktur\nNutzen laut Quelle\nMögliche Kehrseite\n\n\n\n\nFunktional\nKlare Zuständigkeit, Skaleneffekte\nSilos, geringe Flexibilität\n\n\nDivisional\nMarktnähe, Ergebnisverantwortung\nRedundanzen, schwierige Harmonisierung\n\n\nMatrix\nRessourcenoptimierung, Synergien\nKomplexe Entscheidungen durch doppelte Berichtslinie\n\n\nWertstrom / End-to-End\nKundenzentrierung, kurze Durchlaufzeit\nKoordinationsbedarf, neue Rollen\n\n\n\nDiese Gegenüberstellung stammt aus S. 24–26. Es gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
+    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen. S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\nFunktional: Klare Zuständigkeiten und Skaleneffekte stehen möglichen Silos und geringer Flexibilität gegenüber.\nDivisional: Marktnähe und Ergebnisverantwortung gehen mit möglichen Redundanzen und schwieriger Harmonisierung einher.\nMatrix: Ressourcenoptimierung und Synergien erfordern komplexere Entscheidungen wegen der doppelten Berichtslinie.\nWertstrom / End-to-End: Kundenzentrierung und kurze Durchlaufzeiten benötigen bereichsübergreifende Koordination und neue Rollen.\n\nEs gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
   },
   {
     "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-4",
     "href": "courses/om-organisation-digitalisierung.html#abschnitt-4",
     "title": "OM: Organisation und Digitalisierung",
     "section": "Digitale Maßnahme als Wirkungskette prüfen",
-    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDie Quelle nennt Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz als Hebel. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende (S. 29).\nEigenes Lernbeispiel, angelehnt an S. 32: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas ALIS-Beispiel der Quelle zeigt Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung (S. 31). Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarningQuellenkritik und interne Verweise\n\n\n\nDie Nutzenzahlen auf PDF-S. 30 sind laut Folienhinweis überwiegend Selbstauskünfte und nicht kausal belegt; sie sind keine garantierten Effekte für andere Unternehmen. PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“, während die ALIS-Seite selbst die Foliennummer 33 trägt (PDF-S. 31). Deshalb hier physische PDF-Seiten verwenden. Die Lernseiten übernehmen keine ungeprüften aktuellen geopolitischen Behauptungen aus dem Einführungsteil."
+    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDigitale Steuerung kann Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz verbessern. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende.\nEigenes Lernbeispiel: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas Wartungs- und Logistiksystem ALIS illustriert Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung. Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarnungEvidenzgrenzen und verantwortliche Entscheidungen\n\n\n\nBerichtete Digitalisierungsnutzen beruhen überwiegend auf Selbstauskünften; eine kausale Wirkung ist dadurch nicht belegt. Sie garantieren keine Effekte für andere Unternehmen. Deshalb müssen Wirkungsmechanismus, Datenqualität, Investitionsaufwand und lokale Umsetzung geprüft werden. Widersprüchliche Systemmeldungen verlangen fachliche Prüfung, nicht blindes Vertrauen oder pauschales Ignorieren."
   },
   {
     "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-6",
     "href": "courses/om-organisation-digitalisierung.html#abschnitt-6",
     "title": "OM: Organisation und Digitalisierung",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig (PDF-S. 16 und 29). b ist falsch: Die Quelle warnt auf S. 30 vor einer kausalen Interpretation der berichteten Nutzenwerte. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-7",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-7",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle lokal gelesen am 15.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat."
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. b ist falsch: Berichtete Nutzenwerte begründen keine garantierte kausale Wirkung. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
   },
   {
     "objectID": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
@@ -987,6 +980,13 @@
     "title": "OM: Organisation und Digitalisierung",
     "section": "Verwandte Lernseiten",
     "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-7",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-7",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nEntscheidungen bilden eine Hierarchie: PDF-S. 16 (Horizonte und Beispiele).\nSchnittstellen und Organisationsformen: PDF-S. 22–23 (Prozesslandschaft, Abstimmung und S&OP), S. 24–26 (Organisationsformen und MünsterRad).\nDigitale Wirkungskette: PDF-S. 29 (Hebel und Voraussetzungen), S. 31 (ALIS-Risiken), S. 32 (MünsterRad; eigene Ausarbeitung des Scan-Beispiels).\nGrenzen berichteter Nutzenwerte: PDF-S. 30. Der Hinweis lautet „Außer WEF-Reports, Selbstauskünfte, daher nicht kausal belegt“; die Lernseite behauptet auch für WEF-Beispiele keinen unabhängig geprüften Kausalnachweis.\nWiderspruch im internen Verweis: PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“; die ALIS-Seite trägt jedoch Foliennummer 33 (physische PDF-S. 31). Deshalb werden hier physische PDF-Seiten angegeben. Ungeprüfte aktuelle geopolitische Aussagen aus dem Einführungsteil werden nicht übernommen.\nSelbstcheck: PDF-S. 16, 29–30 (strategische Entscheidung, Voraussetzungen und Evidenzgrenzen)."
   },
   {
     "objectID": "courses/dwpm.html",
