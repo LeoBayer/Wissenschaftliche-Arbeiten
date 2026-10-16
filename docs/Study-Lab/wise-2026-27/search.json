@@ -657,35 +657,28 @@
     "href": "courses/db-innovation-foundations.html#abschnitt-2",
     "title": "Innovation: invention, use and digital generativity",
     "section": "From knowledge to actual use",
-    "text": "From knowledge to actual use\nThe lecture distinguishes creating a new product, process or service from putting it into actual use (PDF p. 6). Invention converts new knowledge into such an artefact or method. Innovation also includes its actual use. A working prototype is therefore not sufficient evidence of innovation. The inventor/entrepreneur contrast on p. 10 highlights different roles; it does not imply that one person cannot perform both.\nOwn teaching example: A team invents a sensor that detects water leaks. A laboratory prototype demonstrates technical feasibility. A housing provider then integrates sensors into maintenance routines and responds to alerts: the new technology has entered actual use. A patent alone would not establish this transition. Nor does actual use automatically prove profitability or social benefit."
+    "text": "From knowledge to actual use\nCreating a new product, process or service differs from putting it into actual use. Invention converts new knowledge into such an artefact or method. Innovation also includes its actual use. A working prototype is therefore not sufficient evidence of innovation. Inventors and entrepreneurs perform different roles, but one person can perform both.\nOwn teaching example: A team invents a sensor that detects water leaks. A laboratory prototype demonstrates technical feasibility. A housing provider then integrates sensors into maintenance routines and responds to alerts: the new technology has entered actual use. A patent alone would not establish this transition. Nor does actual use automatically prove profitability or social benefit."
   },
   {
     "objectID": "courses/db-innovation-foundations.html#abschnitt-3",
     "href": "courses/db-innovation-foundations.html#abschnitt-3",
     "title": "Innovation: invention, use and digital generativity",
     "section": "What makes innovation digital?",
-    "text": "What makes innovation digital?\nPDF p. 11 presents two perspectives. One covers IT-enabled products, processes and business models that adopters perceive as new and that require significant changes from them. The other focuses on novel combinations of digital and physical components. These are complementary scopes, not identical definitions: the first explicitly includes processes and business models, whereas the second stresses recombination in products.\nFor the sensor example, the physical sensor, software and maintenance workflow can be analysed separately. Merely buying an ordinary laptop does not demonstrate significant adopter change or a new combination."
+    "text": "What makes innovation digital?\nDigital innovation can be understood from two perspectives. One covers IT-enabled products, processes and business models that adopters perceive as new and that require significant changes from them. The other focuses on novel combinations of digital and physical components. These are complementary scopes, not identical definitions: the first explicitly includes processes and business models, whereas the second stresses recombination in products.\nFor the sensor example, the physical sensor, software and maintenance workflow can be analysed separately. Merely buying an ordinary laptop does not demonstrate significant adopter change or a new combination."
   },
   {
     "objectID": "courses/db-innovation-foundations.html#abschnitt-4",
     "href": "courses/db-innovation-foundations.html#abschnitt-4",
     "title": "Innovation: invention, use and digital generativity",
     "section": "Generativity: possibilities beyond the original plan",
-    "text": "Generativity: possibilities beyond the original plan\nPDF p. 12 connects generativity with change created by varied, uncoordinated participants. It names three enabling characteristics:\n\nHomogenization of data: different kinds of information can be represented digitally and combined.\nReprogrammability: software can change what a device or system does without rebuilding every physical component.\nSelf-referential nature: digital technologies support the creation and development of further digital technologies.\n\nThese explanations unpack the slide’s terms; they are not additional formal definitions. Own extension of the example: independent developers reuse sensor data for an unexpected maintenance application. This illustrates the possibility of generativity, not a guarantee that every digital product will attract such contributions.\nExam trap: “New”, “digital”, “used” and “successful” are separate claims. State what evidence supports each."
+    "text": "Generativity: possibilities beyond the original plan\nGenerativity is the capacity for change created by varied, uncoordinated participants. Three characteristics enable it:\n\nHomogenization of data: different kinds of information can be represented digitally and combined.\nReprogrammability: software can change what a device or system does without rebuilding every physical component.\nSelf-referential nature: digital technologies support the creation and development of further digital technologies.\n\nThese descriptions explain the characteristics rather than adding formal definitions. Own extension of the example: independent developers reuse sensor data for an unexpected maintenance application. This illustrates the possibility of generativity, not a guarantee that every digital product will attract such contributions.\nExam trap: “New”, “digital”, “used” and “successful” are separate claims. State what evidence supports each."
   },
   {
     "objectID": "courses/db-innovation-foundations.html#abschnitt-5",
     "href": "courses/db-innovation-foundations.html#abschnitt-5",
     "title": "Innovation: invention, use and digital generativity",
     "section": "Self-check (SC — select one answer)",
-    "text": "Self-check (SC — select one answer)\n\nWhich observation most directly distinguishes innovation from invention?\n A patent was filed.\n The new solution is put into actual use.\n The prototype contains software.\nCheck\n\n\n\n\nAnswer and reasoning\n\nb is correct: actual use supplies the distinction on p. 6. A patent (a) concerns protection rather than use; software (c) concerns technical composition rather than adoption."
-  },
-  {
-    "objectID": "courses/db-innovation-foundations.html#abschnitt-6",
-    "href": "courses/db-innovation-foundations.html#abschnitt-6",
-    "title": "Innovation: invention, use and digital generativity",
-    "section": "Source and limits",
-    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 6–12, current course 95696; read 15 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published."
+    "text": "Self-check (SC — select one answer)\n\nWhich observation most directly distinguishes innovation from invention?\n A patent was filed.\n The new solution is put into actual use.\n The prototype contains software.\nCheck\n\n\n\n\nAnswer and reasoning\n\nb is correct: actual use supplies the distinction. A patent (a) concerns protection rather than use; software (c) concerns technical composition rather than adoption."
   },
   {
     "objectID": "courses/db-innovation-foundations.html#related-study-pages",
@@ -693,6 +686,13 @@
     "title": "Innovation: invention, use and digital generativity",
     "section": "Related study pages",
     "text": "Related study pages\n\nFour innovation dilemmasCompare choices and tensions in innovation management.\nDisruptive innovationExplain entry mechanisms and incumbent vulnerability.\n \nBack to topic"
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#abschnitt-6",
+    "href": "courses/db-innovation-foundations.html#abschnitt-6",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Source and limits",
+    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 6–12, current course 95696; read 15 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published.\n\nFrom knowledge to actual use → physical PDF pp. 6–10: invention/innovation and inventor/entrepreneur roles.\nWhat makes innovation digital? → physical PDF p. 11: two complementary perspectives, with their different scopes retained; the lecture attributes them to Fichman et al. (2014, p. 330) and Yoo et al. (2010, p. 276), respectively.\nGenerativity → physical PDF p. 12: varied, uncoordinated contributors and the three enabling characteristics. The lecture attributes generativity to Yoo et al. (2010, p. 728); this is the reference as printed, not an independently verified original-paper citation. Descriptions unpack the terms rather than add formal definitions.\nSelf-check → physical PDF p. 6: actual use. Sensor examples and the exam trap are own teaching applications, not additional source claims."
   },
   {
     "objectID": "courses/db-innovation-dilemmas.html",
@@ -1106,14 +1106,14 @@
     "href": "courses/controlling-relevante-kosten.html#abschnitt-2",
     "title": "Controlling: Sunk Costs und Opportunitätskosten",
     "section": "Was kann die heutige Entscheidung noch ändern?",
-    "text": "Was kann die heutige Entscheidung noch ändern?\nSunk Costs sind durch frühere Entscheidungen unwiderruflich festgelegt. Gegenwärtige oder zukünftige Entscheidungen können sie nicht verändern; sie unterscheiden sich nicht zwischen den betrachteten Alternativen (PDF-S. 26). Für diese Entscheidung sind sie irrelevant. Die Quelle empfiehlt, sie für klare Kalkulationen wegzulassen.\n„Schon bezahlt“ ist jedoch nicht gleichbedeutend mit „jede weitere Nutzung ist kostenlos“: Eine vorhandene Ressource kann heute eine alternative Verwendung besitzen. Deren entgangener Nutzen sind Opportunitätskosten."
+    "text": "Was kann die heutige Entscheidung noch ändern?\nSunk Costs sind durch frühere Entscheidungen unwiderruflich festgelegt. Gegenwärtige oder zukünftige Entscheidungen können sie nicht verändern; sie unterscheiden sich nicht zwischen den betrachteten Alternativen. Für diese Entscheidung sind sie irrelevant. Eine klare Vergleichsrechnung lässt diese unveränderlichen Ausgaben weg.\n„Schon bezahlt“ ist jedoch nicht gleichbedeutend mit „jede weitere Nutzung ist kostenlos“: Eine vorhandene Ressource kann heute eine alternative Verwendung besitzen. Deren entgangener Nutzen sind Opportunitätskosten."
   },
   {
     "objectID": "courses/controlling-relevante-kosten.html#abschnitt-3",
     "href": "courses/controlling-relevante-kosten.html#abschnitt-3",
     "title": "Controlling: Sunk Costs und Opportunitätskosten",
     "section": "Das Weinbeispiel Schritt für Schritt",
-    "text": "Das Weinbeispiel Schritt für Schritt\nDie Quelle fragt nach einer Flasche, die früher 10 Euro kostete und heute für 100 Euro verkauft werden könnte (S. 26–27). Verglichen werden jetzt trinken und jetzt verkaufen. Unter den vereinfachten Annahmen der Folie bestehen keine Verkaufskosten oder sonstigen Hindernisse.\n\n\n\n\n\n\n\n\nGröße\nBetrag\nBedeutung für die heutige Wahl\n\n\n\n\nHistorischer Kaufpreis\n10 €\nIn beiden Alternativen bereits angefallen\n\n\nHeute möglicher Verkaufserlös\n100 €\nEntfällt, wenn die Flasche getrunken wird\n\n\nVerkaufserlös minus Kaufpreis\n90 €\nRechnerischer Gewinn, nicht der entgangene heutige Erlös\n\n\n\nBeim Trinken wird auf 100 Euro verzichtet. Nicht 10 Euro und nicht 90 Euro sind daher die Opportunitätskosten (S. 27). Es geht nicht darum, zusätzlich 100 Euro zu überweisen, sondern um den Wert der aufgegebenen Alternative."
+    "text": "Das Weinbeispiel Schritt für Schritt\nEine Flasche, die früher 10 Euro kostete und heute für 100 Euro verkauft werden könnte, steht zur Wahl. Verglichen werden jetzt trinken und jetzt verkaufen. Im vereinfachten Ausgangsfall bestehen keine Verkaufskosten oder sonstigen Hindernisse.\n\nHistorischer Kaufpreis: 10 € – in beiden Alternativen bereits angefallen.\nHeute möglicher Verkaufserlös: 100 € – entfällt, wenn die Flasche getrunken wird.\nVerkaufserlös minus Kaufpreis: 90 € – rechnerischer Gewinn, nicht der entgangene heutige Erlös.\n\nBeim Trinken wird auf 100 Euro verzichtet. Nicht 10 Euro und nicht 90 Euro sind daher die Opportunitätskosten. Es geht nicht darum, zusätzlich 100 Euro zu überweisen, sondern um den Wert der aufgegebenen Alternative."
   },
   {
     "objectID": "courses/controlling-relevante-kosten.html#abschnitt-4",
@@ -1127,21 +1127,14 @@
     "href": "courses/controlling-relevante-kosten.html#abschnitt-5",
     "title": "Controlling: Sunk Costs und Opportunitätskosten",
     "section": "Prüfungsroutine",
-    "text": "Prüfungsroutine\n\nEntscheidungszeitpunkt und Alternativen nennen.\nFür jede Größe prüfen, ob die Alternative sie noch verändern kann.\nUnveränderliche vergangene Ausgaben aus dem Vergleich entfernen.\nDen entgangenen Nutzen der besten aufgegebenen Alternative berücksichtigen.\n\nDiese Routine ist eine eigene Lernhilfe aus der Argumentation der Quelle, keine zusätzliche Folienformel."
+    "text": "Prüfungsroutine\n\nEntscheidungszeitpunkt und Alternativen nennen.\nFür jede Größe prüfen, ob die Alternative sie noch verändern kann.\nUnveränderliche vergangene Ausgaben aus dem Vergleich entfernen.\nDen entgangenen Nutzen der besten aufgegebenen Alternative berücksichtigen.\n\nDiese Routine ist eine eigene Lernhilfe für den beschriebenen Alternativenvergleich, keine zusätzliche Folienformel."
   },
   {
     "objectID": "courses/controlling-relevante-kosten.html#abschnitt-6",
     "href": "courses/controlling-relevante-kosten.html#abschnitt-6",
     "title": "Controlling: Sunk Costs und Opportunitätskosten",
     "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nWas sind im Weinbeispiel die Opportunitätskosten des Trinkens?\n 10 Euro, weil dies der Kaufpreis war.\n 90 Euro, weil nur der Gewinn verloren geht.\n 100 Euro, weil dieser Verkaufserlös entfällt.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nc ist richtig (S. 27). a verwendet eine versunkene Ausgabe. b zieht den bereits irreversiblen Kaufpreis erneut ab. Die heutige Alternative bringt 100 Euro, und genau darauf wird verzichtet."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-7",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-7",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL1.pdf – Learnweb (Hochschulzugang), PDF-S. 26–27. Physische PDF-Seiten; die gedruckten Seitenzahlen stimmen hier überein. Lokal gelesen am 16.10.2026. Paraphrasierte Lernaufbereitung; eigene Beispiele sind gekennzeichnet. Original und Extrakt bleiben privat."
+    "text": "Selbstcheck (SC)\n\nWas sind im Weinbeispiel die Opportunitätskosten des Trinkens?\n 10 Euro, weil dies der Kaufpreis war.\n 90 Euro, weil nur der Gewinn verloren geht.\n 100 Euro, weil dieser Verkaufserlös entfällt.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nc ist richtig. a verwendet eine versunkene Ausgabe. b zieht den bereits irreversiblen Kaufpreis erneut ab. Die heutige Alternative bringt 100 Euro, und genau darauf wird verzichtet."
   },
   {
     "objectID": "courses/controlling-relevante-kosten.html#verwandte-lernseiten",
@@ -1149,6 +1142,13 @@
     "title": "Controlling: Sunk Costs und Opportunitätskosten",
     "section": "Verwandte Lernseiten",
     "text": "Verwandte Lernseiten\n\nFunktion und OrganisationEntscheidungsunterstützung und Aufgaben des Controllings.\nVerhaltenssteuerung und FeedbackInformationswirkung und Grenzen von Rückmeldungen.\nGrenzentscheidungen in der VWLZusatzkosten im Pizzeria-Beispiel.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-7",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-7",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\nControlling VL1.pdf – Learnweb (Hochschulzugang), PDF-S. 26–27. Physische PDF-Seiten; die gedruckten Seitenzahlen stimmen hier überein. Lokal gelesen am 16.10.2026. Paraphrasierte Lernaufbereitung; eigene Beispiele sind gekennzeichnet. Original und Extrakt bleiben privat.\n\nWas kann die heutige Entscheidung noch ändern? → PDF-S. 26: Definition und Entscheidungsirrelevanz versunkener Kosten.\nWeinbeispiel und Selbstcheck → PDF-S. 26–27: Kaufpreis 10 Euro, heutiger Verkaufserlös und Opportunitätskosten 100 Euro.\nWorkshop und Prüfungsroutine → eigene Lernbeispiele/-hilfen auf Grundlage der Abgrenzung auf PDF-S. 26–27; keine zusätzliche Folienformel."
   },
   {
     "objectID": "courses/controlling-verhalten-feedback.html",
@@ -1332,21 +1332,21 @@
     "href": "courses/vwl-grenzentscheidung.html#abschnitt-2",
     "title": "VWL: Grenzentscheidungen in der Pizzeria",
     "section": "Der scheinbare Verlustauftrag",
-    "text": "Der scheinbare Verlustauftrag\nDie Vorlesung nennt eine Pizzeria mit monatlich 5.000 € Löhnen und Mieten, 3,50 € Zutatenkosten je Pizza und 1.000 verkauften Pizzen. Ein Online-Vermittler bietet 5 € für zusätzliche Pizzen; die Kundengruppen überschneiden sich nicht (S. 15). Daraus ergibt sich zunächst ein durchschnittlicher Kostenbetrag von 5.000 / 1.000 + 3,50 = 8,50 € je Pizza.\nIst ein Preis von 5 € deshalb automatisch abzulehnen? Nein: Für die Veränderung zählt, welche Erlöse und Kosten zusätzlich entstehen (Grenzbetrachtung, S. 16). Die ohnehin anfallenden 5.000 € werden durch die Zusatzbestellung nicht automatisch noch einmal fällig."
+    "text": "Der scheinbare Verlustauftrag\nEine Pizzeria zahlt monatlich 5.000 € für Löhne und Mieten sowie 3,50 € für Zutaten je Pizza. Sie verkauft 1.000 Pizzen. Ein Online-Vermittler bietet 5 € für zusätzliche Pizzen; die Kundengruppen überschneiden sich nicht. Daraus ergibt sich zunächst ein durchschnittlicher Kostenbetrag von 5.000 / 1.000 + 3,50 = 8,50 € je Pizza.\nIst ein Preis von 5 € deshalb automatisch abzulehnen? Nein: Für die Veränderung zählt, welche Erlöse und Kosten zusätzlich entstehen. Die ohnehin anfallenden 5.000 € werden durch die Zusatzbestellung nicht automatisch noch einmal fällig."
   },
   {
     "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-3",
     "href": "courses/vwl-grenzentscheidung.html#abschnitt-3",
     "title": "VWL: Grenzentscheidungen in der Pizzeria",
     "section": "Was eine zusätzliche Pizza verändert",
-    "text": "Was eine zusätzliche Pizza verändert\nUnter der ausdrücklich ergänzten Annahme freier Kapazität und unveränderter Löhne/Mieten vergleicht die folgende eigene Grafik den Zusatzpreis mit den Zutatenkosten. Weitere variable Kosten sind im vereinfachten Modell nicht enthalten.\n\n\n\nEigene Darstellung zum Pizzeria-Beispiel, nach VWLWiInfWS26.pdf, PDF-S. 15–16. Beträge pro zusätzlicher Pizza.\n\n\nVon 5 € zusätzlichem Erlös verbleiben nach 3,50 € Zutatenkosten 1,50 € zusätzlicher Deckungsbeitrag. Für beispielhaft 100 zusätzliche Pizzen steigt das Monatsergebnis um 150 €. Das bedeutet weder, dass die Pizzeria insgesamt Gewinn macht, noch dass 5 € langfristig alle Kosten decken. Der Preis der bisherigen 1.000 Pizzen ist in der Aufgabenfolie nicht angegeben; der Gesamtgewinn lässt sich deshalb nicht ausrechnen."
+    "text": "Was eine zusätzliche Pizza verändert\nUnter der ausdrücklich ergänzten Annahme freier Kapazität und unveränderter Löhne/Mieten vergleicht die folgende eigene Grafik den Zusatzpreis mit den Zutatenkosten. Weitere variable Kosten sind im vereinfachten Modell nicht enthalten.\n\n\n\nEigene Darstellung zum Pizzeria-Beispiel. Beträge pro zusätzlicher Pizza.\n\n\nVon 5 € zusätzlichem Erlös verbleiben nach 3,50 € Zutatenkosten 1,50 € zusätzlicher Deckungsbeitrag. Für beispielhaft 100 zusätzliche Pizzen steigt das Monatsergebnis um 150 €. Das bedeutet weder, dass die Pizzeria insgesamt Gewinn macht, noch dass 5 € langfristig alle Kosten decken. Der Preis der bisherigen 1.000 Pizzen ist im vereinfachten Ausgangsfall nicht angegeben; der Gesamtgewinn lässt sich deshalb nicht ausrechnen."
   },
   {
     "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-4",
     "href": "courses/vwl-grenzentscheidung.html#abschnitt-4",
     "title": "VWL: Grenzentscheidungen in der Pizzeria",
     "section": "Wann kippt die Empfehlung?",
-    "text": "Wann kippt die Empfehlung?\nEigene Sensitivitätsrechnung: Fallen zusätzlich 2 € Kurierkosten pro Pizza an, sind die zusätzlichen Kosten 5,50 €. Bei 5 € Erlös sinkt das Ergebnis dann um 0,50 € je Zusatzpizza. Braucht der Betrieb zusätzliches Personal oder verdrängt er profitablere Bestellungen, müssen auch diese Folgen berücksichtigt werden.\nDie Folie schließt die Überschneidung der Kundengruppen aus. Sie nennt aber keine Kapazitätsgrenze und keine Lieferkosten. Die Annahme „nur Zutaten sind zusätzlich“ ist daher eine offenzulegende Modellannahme, kein vollständig belegter Betriebszustand. S. 17 ergänzt: Veränderte Kosten und Nutzen verändern Anreize; sie sind nicht bloß Buchungspositionen.\nMerksatz: Durchschnittskosten beantworten eine andere Frage als Grenzkosten. Kurzfristig vorteilhafte Zusatzaufträge beweisen keine langfristige Tragfähigkeit."
+    "text": "Wann kippt die Empfehlung?\nEigene Sensitivitätsrechnung: Fallen zusätzlich 2 € Kurierkosten pro Pizza an, sind die zusätzlichen Kosten 5,50 €. Bei 5 € Erlös sinkt das Ergebnis dann um 0,50 € je Zusatzpizza. Braucht der Betrieb zusätzliches Personal oder verdrängt er profitablere Bestellungen, müssen auch diese Folgen berücksichtigt werden.\nDie Kundengruppen überschneiden sich im Ausgangsfall nicht. Kapazitätsgrenzen und Lieferkosten sind dagegen nicht festgelegt. Die Annahme „nur Zutaten sind zusätzlich“ ist daher eine offenzulegende Modellannahme, kein vollständig belegter Betriebszustand. Veränderte Kosten und Nutzen verändern Anreize; sie sind nicht bloß Buchungspositionen.\nMerksatz: Durchschnittskosten beantworten eine andere Frage als Grenzkosten. Kurzfristig vorteilhafte Zusatzaufträge beweisen keine langfristige Tragfähigkeit."
   },
   {
     "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-5",
@@ -1356,18 +1356,18 @@
     "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten unter den genannten vereinfachten Annahmen?\n 100 zusätzliche Pizzen verbessern das Ergebnis um 150 €.\n Ein Preis unter 8,50 € muss jeden Zusatzauftrag unvorteilhaft machen.\n Zusätzliche Lieferkosten können die Entscheidung umkehren.\n Der Gesamtgewinn der Pizzeria ist sicher positiv.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. a: 100 × (5 − 3,50) = 150 €. b verwechselt Durchschnitts- und Zusatzkosten. c folgt aus dem Vergleich aller zusätzlichen Kosten mit dem Erlös. d ist mangels Ausgangserlösen nicht bestimmbar."
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-6",
-    "href": "courses/vwl-grenzentscheidung.html#abschnitt-6",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Quelle und Grenzen",
-    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 15–17 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht."
-  },
-  {
     "objectID": "courses/vwl-grenzentscheidung.html#verwandte-lernseiten",
     "href": "courses/vwl-grenzentscheidung.html#verwandte-lernseiten",
     "title": "VWL: Grenzentscheidungen in der Pizzeria",
     "section": "Verwandte Lernseiten",
     "text": "Verwandte Lernseiten\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-6",
+    "href": "courses/vwl-grenzentscheidung.html#abschnitt-6",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 15–17 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nDer scheinbare Verlustauftrag und zusätzliche Pizza → PDF-S. 15–16: Ausgangszahlen und Grenzbetrachtung.\nWann kippt die Empfehlung? → PDF-S. 15–17: getrennte Kundengruppen, Grenzentscheidung und veränderte Anreize. Freie Kapazität, 100 Zusatzpizzen und Kurierkosten sind eigene, ausdrücklich erklärte Ergänzungen.\nSelbstcheck → PDF-S. 15–16; eigene Anwendung der Zusatzrechnung. Die Grafik ist eine eigene Darstellung zum Pizzeria-Beispiel auf PDF-S. 15–16."
   },
   {
     "objectID": "courses/vwl-markt-staat.html",

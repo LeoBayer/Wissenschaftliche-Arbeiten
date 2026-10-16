@@ -494,7 +494,9 @@ document.addEventListener("click", (event) => {
     .filter(Boolean)
     .sort();
 
-  if (!check || !feedback || expected.length === 0) return;
+  if (!check || !feedback || (expected.length === 0 && check.dataset.type !== "keywords")) return;
+
+  const english = (check.closest("[lang]")?.lang || document.documentElement.lang).toLowerCase().startsWith("en");
 
   const selected = Array.from(check.querySelectorAll("input:checked"))
     .map((input) => input.value)
@@ -509,14 +511,14 @@ document.addEventListener("click", (event) => {
     const missing = keywords.filter((keyword) => !answer.includes(keyword));
 
     if (!answer.trim()) {
-      feedback.textContent = "Schreib erst eine kurze Antwort.";
+      feedback.textContent = (english ? "Write a short answer first." : "Schreib erst eine kurze Antwort.");
       feedback.dataset.state = "neutral";
       return;
     }
 
     feedback.textContent = missing.length === 0
-      ? "Alle Kernbegriffe sind drin. Jetzt prüfen: Ist die Antwort auch auf den Fall angewendet?"
-      : `Noch fehlen Kernbegriffe: ${missing.join(", ")}.`;
+      ? (english ? "All key terms are present. Now check: Is the answer applied to the case?" : "Alle Kernbegriffe sind drin. Jetzt prüfen: Ist die Antwort auch auf den Fall angewendet?")
+      : (english ? `Key terms still missing: ${missing.join(", ")}.` : `Noch fehlen Kernbegriffe: ${missing.join(", ")}.`);
     feedback.dataset.state = missing.length === 0 ? "correct" : "wrong";
     return;
   }
@@ -533,7 +535,7 @@ document.addEventListener("click", (event) => {
       .filter(Boolean);
 
     if (answer.length === 0) {
-      feedback.textContent = "Schreib die Reihenfolge erst auf.";
+      feedback.textContent = (english ? "Write the sequence first." : "Schreib die Reihenfolge erst auf.");
       feedback.dataset.state = "neutral";
       return;
     }
@@ -543,8 +545,8 @@ document.addEventListener("click", (event) => {
       answer.every((value, index) => value === expectedSequence[index]);
 
     feedback.textContent = correct
-      ? "Reihenfolge stimmt. Jetzt jeden Schritt kurz begründen."
-      : `Noch nicht. Erwartet wird: ${expectedSequence.join(" → ")}.`;
+      ? (english ? "Correct sequence. Now briefly justify each step." : "Reihenfolge stimmt. Jetzt jeden Schritt kurz begründen.")
+      : (english ? `Not yet. Expected: ${expectedSequence.join(" → ")}.` : `Noch nicht. Erwartet wird: ${expectedSequence.join(" → ")}.`);
     feedback.dataset.state = correct ? "correct" : "wrong";
     return;
   }
@@ -556,20 +558,19 @@ document.addEventListener("click", (event) => {
     const tolerance = Number(check.dataset.tolerance || "0");
 
     if (!input || input.value.trim() === "") {
-      feedback.textContent = "Trag erst eine Zahl ein.";
+      feedback.textContent = (english ? "Enter a number first." : "Trag erst eine Zahl ein.");
       feedback.dataset.state = "neutral";
       return;
     }
 
     const correct = Number.isFinite(value) && Math.abs(value - target) <= tolerance;
     feedback.textContent = correct
-      ? "Richtig. Jetzt die Formel und Interpretation dazusagen."
-      : `Noch nicht. Zielwert: ${target}.`;
+      ? (english ? "Correct. Now explain the formula and interpretation." : "Richtig. Jetzt die Formel und Interpretation dazusagen.")
+      : (english ? `Not yet. Target value: ${target}.` : `Noch nicht. Zielwert: ${target}.`);
     feedback.dataset.state = correct ? "correct" : "wrong";
     return;
   }
 
-  const english = document.documentElement.lang.startsWith("en");
   if (selected.length === 0) {
     feedback.textContent = english ? "Select an answer first." : "Wähle erst eine Antwort aus.";
     feedback.dataset.state = "neutral";
