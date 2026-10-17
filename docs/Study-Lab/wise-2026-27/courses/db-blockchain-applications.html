@@ -364,8 +364,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#abschnitt-4" id="toc-abschnitt-4" class="nav-link" data-scroll-target="#abschnitt-4">Fungible does not mean “digital”; non-fungible does not mean “copyright”</a></li>
   <li><a href="#abschnitt-5" id="toc-abschnitt-5" class="nav-link" data-scroll-target="#abschnitt-5">What the section cannot settle</a></li>
   <li><a href="#abschnitt-6" id="toc-abschnitt-6" class="nav-link" data-scroll-target="#abschnitt-6">Self-check (SC)</a></li>
-  <li><a href="#abschnitt-7" id="toc-abschnitt-7" class="nav-link" data-scroll-target="#abschnitt-7">Source and limits</a></li>
   <li><a href="#related-study-pages" id="toc-related-study-pages" class="nav-link" data-scroll-target="#related-study-pages">Related study pages</a></li>
+  <li><a href="#abschnitt-7" id="toc-abschnitt-7" class="nav-link" data-scroll-target="#abschnitt-7">Source and limits</a>
+  <ul class="collapse">
+  <li><a href="#section-to-source-mapping" id="toc-section-to-source-mapping" class="nav-link" data-scroll-target="#section-to-source-mapping">Section-to-source mapping</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -401,55 +404,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="abschnitt-2" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-2">Begin with the application, not the label</h2>
-<p>The final lecture section lists vaccine passports (p.&nbsp;20), supply-chain traceability and transparency (p.&nbsp;21), music-industry use through Audius (p.&nbsp;22), and art-related non-fungible tokens (pp.&nbsp;23–24). These are <strong>application illustrations</strong>, not comparative evidence that blockchain is always the best architecture. The slides offer much less implementation detail here than in the foundations section.</p>
-<p>To turn this list into an explanation, connect it to p.&nbsp;4: What is recorded, which parties need to agree, and what remains outside the record?</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Lecture application</th>
-<th>Original learning question</th>
-<th>Boundary to check</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Vaccine passport</td>
-<td>Which issuer’s statement is being checked?</td>
-<td>A consistent record cannot independently establish the medical event.</td>
-</tr>
-<tr class="even">
-<td>Supply chain</td>
-<td>Which handover or product event is recorded?</td>
-<td>A false physical-world input can still be recorded consistently.</td>
-</tr>
-<tr class="odd">
-<td>Music platform</td>
-<td>Which participants exchange or coordinate value?</td>
-<td>The slide’s named example does not establish all contractual rights or governance rules.</td>
-</tr>
-<tr class="even">
-<td>Art-related NFT</td>
-<td>Which unique token or identifier changes hands?</td>
-<td>Token identity alone does not establish copyright or ownership of a physical artwork.</td>
-</tr>
-</tbody>
-</table>
+<p>Blockchain application scenarios include vaccine passports, supply-chain traceability and transparency, music-industry platforms such as Audius, and art-related non-fungible tokens. These are <strong>application illustrations</strong>, not comparative evidence that blockchain is always the best architecture. The slides offer much less implementation detail here than in the foundations section.</p>
+<p>To turn this list into an explanation, apply the distinction between integrity, authorization and agreement: What is recorded, which parties need to agree, and what remains outside the record?</p>
+<p><strong>Vaccine passport:</strong> Which issuer’s statement is checked? A consistent record cannot independently establish the medical event.</p>
+<p><strong>Supply chain:</strong> Which handover or product event is recorded? A false physical-world input can still be recorded consistently.</p>
+<p><strong>Music platform:</strong> Which participants exchange or coordinate value? A platform name alone does not establish contractual rights or governance rules.</p>
+<p><strong>Art-related NFT:</strong> Which unique token changes hands? Token identity alone does not establish copyright or ownership of a physical artwork.</p>
 <p>The questions and boundaries are <strong>original analytical prompts</strong>, not claims that the cited projects implemented particular features or failed in these ways. They help avoid answering a design question with a product name.</p>
 </section>
 <section id="abschnitt-3" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-3">Original learning example: tracing a food shipment</h2>
 <p>Imagine three firms recording successive handovers of one shipment. A shared history could support checking which handover was entered and by whom. If someone attaches the wrong product identifier at the first handover, later agreement on that identifier does not repair the initial mistake.</p>
-<p>A reasoned proposal must therefore specify input controls as well as record integrity. It should also ask whether participants actually need a shared agreement mechanism or whether a conventional database under an accepted operator would suffice. This is a design comparison derived from the lecture’s “cost of trust” framing (p.&nbsp;4), not a claim that p.&nbsp;21 proves one option superior.</p>
+<p>A reasoned proposal must therefore specify input controls as well as record integrity. It should also ask whether participants actually need a shared agreement mechanism or whether a conventional database under an accepted operator would suffice. This is a design comparison derived from the lecture’s “cost of trust” framing, not evidence that one option is superior.</p>
 </section>
 <section id="abschnitt-4" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-4">Fungible does not mean “digital”; non-fungible does not mean “copyright”</h2>
-<p>Page 23 contrasts interchangeable Bitcoin units with applications where units need to be distinguished. <strong>Fungibility</strong> concerns interchangeability within the relevant class; <strong>non-fungibility</strong> concerns the need to identify a particular unit. Both can involve digital records.</p>
-<p><strong>Original learning example:</strong> Ten interchangeable admission credits differ from a token identifying one numbered collectible. Identifying that collectible is still a different question from deciding what legal permissions the buyer receives. The lecture’s art-sale example on p.&nbsp;24 illustrates a transaction; it does not by itself document a general transfer of copyright.</p>
+<p>Bitcoin units are interchangeable, whereas other applications may require units to be distinguished. <strong>Fungibility</strong> concerns interchangeability within the relevant class; <strong>non-fungibility</strong> concerns the need to identify a particular unit. Both can involve digital records.</p>
+<p><strong>Original learning example:</strong> Ten interchangeable admission credits differ from a token identifying one numbered collectible. Identifying that collectible is still a different question from deciding what legal permissions the buyer receives. The lecture’s art-sale example illustrates a transaction; it does not by itself document a general transfer of copyright.</p>
 </section>
 <section id="abschnitt-5" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-5">What the section cannot settle</h2>
@@ -469,12 +440,8 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 Show the reasoning
 </summary>
-<p><strong>c is correct</strong>, applying the functions on p.&nbsp;4 to the traceability example on p.&nbsp;21. a confuses a shared record with validated physical input. b adds an unsupported legal conclusion to the token distinction on pp.&nbsp;23–24. Neither follows from the slides.</p>
+<p><strong>c is correct</strong>, applying the distinction between integrity and input reliability to traceability. a confuses a shared record with validated physical input. b adds an unsupported legal conclusion to the token distinction. Neither follows from the slides.</p>
 </details>
-</section>
-<section id="abschnitt-7" class="level2">
-<h2 class="anchored" data-anchor-id="abschnitt-7">Source and limits</h2>
-<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4265024">02 – Blockchain-5.pdf, current Learnweb course 95696</a>, <strong>physical PDF pages 4, 20–24</strong>. Read locally on 16 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.</p>
 </section>
 <section id="related-study-pages" class="level2">
 <h2 class="anchored" data-anchor-id="related-study-pages">Related study pages</h2>
@@ -483,8 +450,21 @@ Show the reasoning
 <a class="quick-card" href="db-blockchain-tradeoffs.html"><strong>Bitcoin: promises and trade-offs</strong><span>Evaluate benefits, criticisms and limits.</span></a>
  </nav>
 <p><a href="../courses/db-blockchain.html">Back to topic</a></p>
+</section>
+<section id="abschnitt-7" class="level2">
+<h2 class="anchored" data-anchor-id="abschnitt-7">Source and limits</h2>
+<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4265024">02 – Blockchain-5.pdf, current Learnweb course 95696</a>, <strong>physical PDF pages 4, 20–24</strong>. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.</p>
+<section id="section-to-source-mapping" class="level3">
+<h3 class="anchored" data-anchor-id="section-to-source-mapping">Section-to-source mapping</h3>
+<ul>
+<li>Application illustrations: vaccine passports → physical PDF p.&nbsp;20; supply chains → p.&nbsp;21; Audius → p.&nbsp;22; NFTs and art-sale example → pp.&nbsp;23–24.</li>
+<li>Record integrity, input reliability and shipment example → original analytical application of p.&nbsp;4 to p.&nbsp;21.</li>
+<li>Fungibility → p.&nbsp;23; rights boundary and collectible example → original interpretation, not a legal finding established by the slides.</li>
+<li>Self-check → pp.&nbsp;4, 21, 23–24.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

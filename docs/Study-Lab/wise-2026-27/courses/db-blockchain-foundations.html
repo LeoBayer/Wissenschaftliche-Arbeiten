@@ -363,8 +363,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#abschnitt-3" id="toc-abschnitt-3" class="nav-link" data-scroll-target="#abschnitt-3">Original learning example: a delivery record</a></li>
   <li><a href="#abschnitt-4" id="toc-abschnitt-4" class="nav-link" data-scroll-target="#abschnitt-4">Bitcoin is one use case</a></li>
   <li><a href="#abschnitt-5" id="toc-abschnitt-5" class="nav-link" data-scroll-target="#abschnitt-5">Self-check (SC)</a></li>
-  <li><a href="#abschnitt-6" id="toc-abschnitt-6" class="nav-link" data-scroll-target="#abschnitt-6">Source and limits</a></li>
   <li><a href="#related-study-pages" id="toc-related-study-pages" class="nav-link" data-scroll-target="#related-study-pages">Related study pages</a></li>
+  <li><a href="#abschnitt-6" id="toc-abschnitt-6" class="nav-link" data-scroll-target="#abschnitt-6">Source and limits</a>
+  <ul class="collapse">
+  <li><a href="#section-to-source-mapping" id="toc-section-to-source-mapping" class="nav-link" data-scroll-target="#section-to-source-mapping">Section-to-source mapping</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -400,48 +403,20 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="abschnitt-2" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-2">Start with the record, not the coin</h2>
-<p>Page 4 presents a blockchain as an append-only, auditable record secured through cryptography and a consensus protocol. “Append-only” describes adding entries to a history, rather than silently overwriting the old record. Auditability concerns the ability to inspect that history. Neither term, on its own, proves that a recorded claim about the outside world is true.</p>
-<p>The slide combines three building blocks. The focused excerpt retains the labels and their relationships:</p>
+<p>A blockchain is an append-only, auditable record secured through cryptography and a consensus protocol. “Append-only” describes adding entries to a history, rather than silently overwriting the old record. Auditability concerns the ability to inspect that history. Neither term, on its own, proves that a recorded claim about the outside world is true.</p>
+<p>Three building blocks address different tasks. The focused diagram retains their labels and relationships:</p>
 <figure class="figure">
 <div tabindex="0" role="region" aria-label="Blockchain diagram; scroll horizontally to read all three components" style="max-width:100%;overflow-x:auto;border:1px solid #d5dce1;border-radius:4px">
 <img src="../assets/db-blockchain-foundations.png" alt="Append-only log, auditable database secured by hashes and signatures, and consensus protocol for agreement; permissioned and permissionless participation are distinguished." style="width:906px;min-width:906px;max-width:none;height:auto;display:block" class="figure-img">
 </div>
-<figcaption>Focused lecture excerpt, PDF p. 4; attributed there to Gensler (2018, MIT). On narrow screens, scroll within the diagram to retain readable labels.</figcaption>
+<figcaption>Records, cryptographic protection and agreement play complementary roles. Provenance is listed in the final source section. On narrow screens, scroll within the diagram to retain readable labels.</figcaption>
 </figure>
 <p><a href="../assets/db-blockchain-foundations.png">Open the diagram at full size</a>.</p>
-<p>Read the diagram as a division of responsibilities, not as a chronology in which one component makes the others unnecessary. Hash functions support tamper resistance and integrity; digital signatures express authorization or consent; consensus establishes agreement among participants (p.&nbsp;4).</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 33%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Component</th>
-<th>What to ask in a case</th>
-<th>What it does not establish by itself</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Hash function</td>
-<td>Has the represented data changed?</td>
-<td>Whether a real-world event was described honestly.</td>
-</tr>
-<tr class="even">
-<td>Digital signature</td>
-<td>Was the entry authorized using the relevant signing key?</td>
-<td>Whether every participant accepts the same history.</td>
-</tr>
-<tr class="odd">
-<td>Consensus protocol</td>
-<td>How do participants agree on the record?</td>
-<td>Whether the original input was factually correct.</td>
-</tr>
-</tbody>
-</table>
-<p>The third column is an <strong>original learning interpretation</strong> of the separation of functions, not an additional slide quotation. Page 4 also distinguishes permissioned and permissionless arrangements: participation rules belong in the analysis instead of assuming every blockchain is open to everyone.</p>
+<p>Read the diagram as a division of responsibilities, not as a chronology in which one component makes the others unnecessary. Hash functions support tamper resistance and integrity; digital signatures express authorization or consent; consensus establishes agreement among participants.</p>
+<p><strong>Hash function — integrity.</strong> Ask whether the represented data has changed. This alone does not establish whether a real-world event was described honestly.</p>
+<p><strong>Digital signature — authorization.</strong> Ask whether the entry was authorized using the relevant signing key. This alone does not establish whether all participants accept the same history.</p>
+<p><strong>Consensus protocol — agreement.</strong> Ask how participants agree on the record. Agreement alone does not establish whether the original input was factually correct.</p>
+<p>These boundaries are an <strong>original learning interpretation</strong> of the separation of functions, not an additional slide quotation. Permissioned and permissionless arrangements differ: participation rules belong in the analysis instead of assuming every blockchain is open to everyone.</p>
 </section>
 <section id="abschnitt-3" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-3">Original learning example: a delivery record</h2>
@@ -449,8 +424,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="abschnitt-4" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-4">Bitcoin is one use case</h2>
-<p>Page 5 separates the underlying technology from Bitcoin. Bitcoin applies a blockchain to financial transaction records; it is not the definition of blockchain, and the slide explicitly notes other cryptocurrencies. In an exam explanation, first identify the record and the coordination problem, then name the application. “Blockchain means Bitcoin” reverses that relationship.</p>
-<p><strong>Scope boundary:</strong> p.&nbsp;6 assigns an external video. The mechanisms in that video have not been independently processed here; this page does not claim to teach its full technical account.</p>
+<p>Bitcoin applies a blockchain to financial transaction records; it is not the definition of blockchain, and other cryptocurrencies also exist. In an exam explanation, first identify the record and the coordination problem, then name the application. “Blockchain means Bitcoin” reverses that relationship.</p>
+<p><strong>Scope boundary:</strong> an external video is assigned. The mechanisms in that video have not been independently processed here; this page does not claim to teach its full technical account.</p>
 </section>
 <section id="abschnitt-5" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-5">Self-check (SC)</h2>
@@ -466,12 +441,8 @@ ul.task-list li input[type="checkbox"] {
 <summary>
 Show the reasoning
 </summary>
-<p><strong>b is correct.</strong> The separate functions on p.&nbsp;4 do not verify the physical delivery. a confuses agreement about data with truth outside the system; c mistakes one application for the technology (p.&nbsp;5).</p>
+<p><strong>b is correct.</strong> The separate functions do not verify the physical delivery. a confuses agreement about data with truth outside the system; c mistakes one application for the technology.</p>
 </details>
-</section>
-<section id="abschnitt-6" class="level2">
-<h2 class="anchored" data-anchor-id="abschnitt-6">Source and limits</h2>
-<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4265024">02 – Blockchain-5.pdf, current Learnweb course 95696</a>, <strong>physical PDF pages 4–6</strong>. Read locally on 16 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.</p>
 </section>
 <section id="related-study-pages" class="level2">
 <h2 class="anchored" data-anchor-id="related-study-pages">Related study pages</h2>
@@ -480,8 +451,22 @@ Show the reasoning
 <a class="quick-card" href="db-blockchain-applications.html"><strong>Applications beyond cryptocurrency</strong><span>Assess applications and token distinctions.</span></a>
  </nav>
 <p><a href="../courses/db-blockchain.html">Back to topic</a></p>
+</section>
+<section id="abschnitt-6" class="level2">
+<h2 class="anchored" data-anchor-id="abschnitt-6">Source and limits</h2>
+<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4265024">02 – Blockchain-5.pdf, current Learnweb course 95696</a>, <strong>physical PDF pages 4–6</strong>. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.</p>
+<section id="section-to-source-mapping" class="level3">
+<h3 class="anchored" data-anchor-id="section-to-source-mapping">Section-to-source mapping</h3>
+<ul>
+<li>Record, cryptographic functions and participation rules → physical PDF p.&nbsp;4.</li>
+<li>Diagram → focused excerpt from p.&nbsp;4; slide attribution: Gensler (2018, MIT).</li>
+<li>Bitcoin versus blockchain → p.&nbsp;5.</li>
+<li>External-video scope boundary → p.&nbsp;6; video not independently processed.</li>
+<li>Delivery example and self-check → original application of the distinctions on pp.&nbsp;4–5.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

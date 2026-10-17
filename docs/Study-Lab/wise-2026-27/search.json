@@ -277,21 +277,21 @@
     "href": "courses/db-blockchain-applications.html#abschnitt-2",
     "title": "Blockchain beyond cryptocurrency",
     "section": "Begin with the application, not the label",
-    "text": "Begin with the application, not the label\nThe final lecture section lists vaccine passports (p. 20), supply-chain traceability and transparency (p. 21), music-industry use through Audius (p. 22), and art-related non-fungible tokens (pp. 23–24). These are application illustrations, not comparative evidence that blockchain is always the best architecture. The slides offer much less implementation detail here than in the foundations section.\nTo turn this list into an explanation, connect it to p. 4: What is recorded, which parties need to agree, and what remains outside the record?\n\n\n\n\n\n\n\n\nLecture application\nOriginal learning question\nBoundary to check\n\n\n\n\nVaccine passport\nWhich issuer’s statement is being checked?\nA consistent record cannot independently establish the medical event.\n\n\nSupply chain\nWhich handover or product event is recorded?\nA false physical-world input can still be recorded consistently.\n\n\nMusic platform\nWhich participants exchange or coordinate value?\nThe slide’s named example does not establish all contractual rights or governance rules.\n\n\nArt-related NFT\nWhich unique token or identifier changes hands?\nToken identity alone does not establish copyright or ownership of a physical artwork.\n\n\n\nThe questions and boundaries are original analytical prompts, not claims that the cited projects implemented particular features or failed in these ways. They help avoid answering a design question with a product name."
+    "text": "Begin with the application, not the label\nBlockchain application scenarios include vaccine passports, supply-chain traceability and transparency, music-industry platforms such as Audius, and art-related non-fungible tokens. These are application illustrations, not comparative evidence that blockchain is always the best architecture. The slides offer much less implementation detail here than in the foundations section.\nTo turn this list into an explanation, apply the distinction between integrity, authorization and agreement: What is recorded, which parties need to agree, and what remains outside the record?\nVaccine passport: Which issuer’s statement is checked? A consistent record cannot independently establish the medical event.\nSupply chain: Which handover or product event is recorded? A false physical-world input can still be recorded consistently.\nMusic platform: Which participants exchange or coordinate value? A platform name alone does not establish contractual rights or governance rules.\nArt-related NFT: Which unique token changes hands? Token identity alone does not establish copyright or ownership of a physical artwork.\nThe questions and boundaries are original analytical prompts, not claims that the cited projects implemented particular features or failed in these ways. They help avoid answering a design question with a product name."
   },
   {
     "objectID": "courses/db-blockchain-applications.html#abschnitt-3",
     "href": "courses/db-blockchain-applications.html#abschnitt-3",
     "title": "Blockchain beyond cryptocurrency",
     "section": "Original learning example: tracing a food shipment",
-    "text": "Original learning example: tracing a food shipment\nImagine three firms recording successive handovers of one shipment. A shared history could support checking which handover was entered and by whom. If someone attaches the wrong product identifier at the first handover, later agreement on that identifier does not repair the initial mistake.\nA reasoned proposal must therefore specify input controls as well as record integrity. It should also ask whether participants actually need a shared agreement mechanism or whether a conventional database under an accepted operator would suffice. This is a design comparison derived from the lecture’s “cost of trust” framing (p. 4), not a claim that p. 21 proves one option superior."
+    "text": "Original learning example: tracing a food shipment\nImagine three firms recording successive handovers of one shipment. A shared history could support checking which handover was entered and by whom. If someone attaches the wrong product identifier at the first handover, later agreement on that identifier does not repair the initial mistake.\nA reasoned proposal must therefore specify input controls as well as record integrity. It should also ask whether participants actually need a shared agreement mechanism or whether a conventional database under an accepted operator would suffice. This is a design comparison derived from the lecture’s “cost of trust” framing, not evidence that one option is superior."
   },
   {
     "objectID": "courses/db-blockchain-applications.html#abschnitt-4",
     "href": "courses/db-blockchain-applications.html#abschnitt-4",
     "title": "Blockchain beyond cryptocurrency",
     "section": "Fungible does not mean “digital”; non-fungible does not mean “copyright”",
-    "text": "Fungible does not mean “digital”; non-fungible does not mean “copyright”\nPage 23 contrasts interchangeable Bitcoin units with applications where units need to be distinguished. Fungibility concerns interchangeability within the relevant class; non-fungibility concerns the need to identify a particular unit. Both can involve digital records.\nOriginal learning example: Ten interchangeable admission credits differ from a token identifying one numbered collectible. Identifying that collectible is still a different question from deciding what legal permissions the buyer receives. The lecture’s art-sale example on p. 24 illustrates a transaction; it does not by itself document a general transfer of copyright."
+    "text": "Fungible does not mean “digital”; non-fungible does not mean “copyright”\nBitcoin units are interchangeable, whereas other applications may require units to be distinguished. Fungibility concerns interchangeability within the relevant class; non-fungibility concerns the need to identify a particular unit. Both can involve digital records.\nOriginal learning example: Ten interchangeable admission credits differ from a token identifying one numbered collectible. Identifying that collectible is still a different question from deciding what legal permissions the buyer receives. The lecture’s art-sale example illustrates a transaction; it does not by itself document a general transfer of copyright."
   },
   {
     "objectID": "courses/db-blockchain-applications.html#abschnitt-5",
@@ -305,14 +305,7 @@
     "href": "courses/db-blockchain-applications.html#abschnitt-6",
     "title": "Blockchain beyond cryptocurrency",
     "section": "Self-check (SC)",
-    "text": "Self-check (SC)\n\nWhich conclusion is supported by the application discussion?\n A blockchain entry proves a physical shipment was labelled correctly.\n Buying any NFT necessarily transfers the artist’s copyright.\n A traceability proposal must distinguish integrity of the record from reliability of its inputs.\nCheck\n\n\n\n\nShow the reasoning\n\nc is correct, applying the functions on p. 4 to the traceability example on p. 21. a confuses a shared record with validated physical input. b adds an unsupported legal conclusion to the token distinction on pp. 23–24. Neither follows from the slides."
-  },
-  {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-7",
-    "href": "courses/db-blockchain-applications.html#abschnitt-7",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Source and limits",
-    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4, 20–24. Read locally on 16 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance."
+    "text": "Self-check (SC)\n\nWhich conclusion is supported by the application discussion?\n A blockchain entry proves a physical shipment was labelled correctly.\n Buying any NFT necessarily transfers the artist’s copyright.\n A traceability proposal must distinguish integrity of the record from reliability of its inputs.\nCheck\n\n\n\n\nShow the reasoning\n\nc is correct, applying the distinction between integrity and input reliability to traceability. a confuses a shared record with validated physical input. b adds an unsupported legal conclusion to the token distinction. Neither follows from the slides."
   },
   {
     "objectID": "courses/db-blockchain-applications.html#related-study-pages",
@@ -320,6 +313,13 @@
     "title": "Blockchain beyond cryptocurrency",
     "section": "Related study pages",
     "text": "Related study pages\n\nRecords, signatures and agreementUnderstand the mechanisms before discussing the coin.\nBitcoin: promises and trade-offsEvaluate benefits, criticisms and limits.\n \nBack to topic"
+  },
+  {
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-7",
+    "href": "courses/db-blockchain-applications.html#abschnitt-7",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Source and limits",
+    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4, 20–24. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nApplication illustrations: vaccine passports → physical PDF p. 20; supply chains → p. 21; Audius → p. 22; NFTs and art-sale example → pp. 23–24.\nRecord integrity, input reliability and shipment example → original analytical application of p. 4 to p. 21.\nFungibility → p. 23; rights boundary and collectible example → original interpretation, not a legal finding established by the slides.\nSelf-check → pp. 4, 21, 23–24."
   },
   {
     "objectID": "courses/digital-business.html",
@@ -1014,7 +1014,7 @@
     "href": "courses/db-blockchain-foundations.html#abschnitt-2",
     "title": "Blockchain: records, signatures and agreement",
     "section": "Start with the record, not the coin",
-    "text": "Start with the record, not the coin\nPage 4 presents a blockchain as an append-only, auditable record secured through cryptography and a consensus protocol. “Append-only” describes adding entries to a history, rather than silently overwriting the old record. Auditability concerns the ability to inspect that history. Neither term, on its own, proves that a recorded claim about the outside world is true.\nThe slide combines three building blocks. The focused excerpt retains the labels and their relationships:\n\n\n\n\nFocused lecture excerpt, PDF p. 4; attributed there to Gensler (2018, MIT). On narrow screens, scroll within the diagram to retain readable labels.\n\nOpen the diagram at full size.\nRead the diagram as a division of responsibilities, not as a chronology in which one component makes the others unnecessary. Hash functions support tamper resistance and integrity; digital signatures express authorization or consent; consensus establishes agreement among participants (p. 4).\n\n\n\n\n\n\n\n\nComponent\nWhat to ask in a case\nWhat it does not establish by itself\n\n\n\n\nHash function\nHas the represented data changed?\nWhether a real-world event was described honestly.\n\n\nDigital signature\nWas the entry authorized using the relevant signing key?\nWhether every participant accepts the same history.\n\n\nConsensus protocol\nHow do participants agree on the record?\nWhether the original input was factually correct.\n\n\n\nThe third column is an original learning interpretation of the separation of functions, not an additional slide quotation. Page 4 also distinguishes permissioned and permissionless arrangements: participation rules belong in the analysis instead of assuming every blockchain is open to everyone."
+    "text": "Start with the record, not the coin\nA blockchain is an append-only, auditable record secured through cryptography and a consensus protocol. “Append-only” describes adding entries to a history, rather than silently overwriting the old record. Auditability concerns the ability to inspect that history. Neither term, on its own, proves that a recorded claim about the outside world is true.\nThree building blocks address different tasks. The focused diagram retains their labels and relationships:\n\n\n\n\nRecords, cryptographic protection and agreement play complementary roles. Provenance is listed in the final source section. On narrow screens, scroll within the diagram to retain readable labels.\n\nOpen the diagram at full size.\nRead the diagram as a division of responsibilities, not as a chronology in which one component makes the others unnecessary. Hash functions support tamper resistance and integrity; digital signatures express authorization or consent; consensus establishes agreement among participants.\nHash function — integrity. Ask whether the represented data has changed. This alone does not establish whether a real-world event was described honestly.\nDigital signature — authorization. Ask whether the entry was authorized using the relevant signing key. This alone does not establish whether all participants accept the same history.\nConsensus protocol — agreement. Ask how participants agree on the record. Agreement alone does not establish whether the original input was factually correct.\nThese boundaries are an original learning interpretation of the separation of functions, not an additional slide quotation. Permissioned and permissionless arrangements differ: participation rules belong in the analysis instead of assuming every blockchain is open to everyone."
   },
   {
     "objectID": "courses/db-blockchain-foundations.html#abschnitt-3",
@@ -1028,21 +1028,14 @@
     "href": "courses/db-blockchain-foundations.html#abschnitt-4",
     "title": "Blockchain: records, signatures and agreement",
     "section": "Bitcoin is one use case",
-    "text": "Bitcoin is one use case\nPage 5 separates the underlying technology from Bitcoin. Bitcoin applies a blockchain to financial transaction records; it is not the definition of blockchain, and the slide explicitly notes other cryptocurrencies. In an exam explanation, first identify the record and the coordination problem, then name the application. “Blockchain means Bitcoin” reverses that relationship.\nScope boundary: p. 6 assigns an external video. The mechanisms in that video have not been independently processed here; this page does not claim to teach its full technical account."
+    "text": "Bitcoin is one use case\nBitcoin applies a blockchain to financial transaction records; it is not the definition of blockchain, and other cryptocurrencies also exist. In an exam explanation, first identify the record and the coordination problem, then name the application. “Blockchain means Bitcoin” reverses that relationship.\nScope boundary: an external video is assigned. The mechanisms in that video have not been independently processed here; this page does not claim to teach its full technical account."
   },
   {
     "objectID": "courses/db-blockchain-foundations.html#abschnitt-5",
     "href": "courses/db-blockchain-foundations.html#abschnitt-5",
     "title": "Blockchain: records, signatures and agreement",
     "section": "Self-check (SC)",
-    "text": "Self-check (SC)\n\nA signed delivery entry is accepted into a shared history. What follows most defensibly?\n The package must physically have arrived.\n Authorization, integrity and agreement must be distinguished from the truth of the delivery claim.\n The record must represent a Bitcoin payment.\nCheck\n\n\n\n\nShow the reasoning\n\nb is correct. The separate functions on p. 4 do not verify the physical delivery. a confuses agreement about data with truth outside the system; c mistakes one application for the technology (p. 5)."
-  },
-  {
-    "objectID": "courses/db-blockchain-foundations.html#abschnitt-6",
-    "href": "courses/db-blockchain-foundations.html#abschnitt-6",
-    "title": "Blockchain: records, signatures and agreement",
-    "section": "Source and limits",
-    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4–6. Read locally on 16 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance."
+    "text": "Self-check (SC)\n\nA signed delivery entry is accepted into a shared history. What follows most defensibly?\n The package must physically have arrived.\n Authorization, integrity and agreement must be distinguished from the truth of the delivery claim.\n The record must represent a Bitcoin payment.\nCheck\n\n\n\n\nShow the reasoning\n\nb is correct. The separate functions do not verify the physical delivery. a confuses agreement about data with truth outside the system; c mistakes one application for the technology."
   },
   {
     "objectID": "courses/db-blockchain-foundations.html#related-study-pages",
@@ -1050,6 +1043,13 @@
     "title": "Blockchain: records, signatures and agreement",
     "section": "Related study pages",
     "text": "Related study pages\n\nBitcoin: promises and trade-offsEvaluate benefits, criticisms and limits.\nApplications beyond cryptocurrencyAssess applications and token distinctions.\n \nBack to topic"
+  },
+  {
+    "objectID": "courses/db-blockchain-foundations.html#abschnitt-6",
+    "href": "courses/db-blockchain-foundations.html#abschnitt-6",
+    "title": "Blockchain: records, signatures and agreement",
+    "section": "Source and limits",
+    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4–6. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nRecord, cryptographic functions and participation rules → physical PDF p. 4.\nDiagram → focused excerpt from p. 4; slide attribution: Gensler (2018, MIT).\nBitcoin versus blockchain → p. 5.\nExternal-video scope boundary → p. 6; video not independently processed.\nDelivery example and self-check → original application of the distinctions on pp. 4–5."
   },
   {
     "objectID": "courses/it-driven-innovation.html",
@@ -1388,49 +1388,42 @@
     "href": "courses/vwl-markt-staat.html#abschnitt-2",
     "title": "VWL: Märkte, Marktversagen und Staat",
     "section": "Handel schafft Möglichkeiten, nicht automatisch Gewinner für alle",
-    "text": "Handel schafft Möglichkeiten, nicht automatisch Gewinner für alle\nFreiwilliger Tausch kann Konsummöglichkeiten verbessern und Spezialisierung ermöglichen (S. 19). Ein höherer Gesamtertrag ist aber nicht gleichbedeutend mit einer Verbesserung für jede einzelne Person. Die Quelle weist auf Nachteile importkonkurrierender Sektoren hin und nennt Anpassung und Umverteilung als mögliche Bedingungen einer Verbesserung für alle (S. 20).\nSpannung in der Formulierung: Die Regel „Durch Handel kann es jedem besser gehen“ beschreibt eine Möglichkeit. Sie darf nicht als Aussage „Jeder gewinnt ohne weitere Maßnahmen“ gelesen werden. S. 20 schränkt eine solche Lesart ausdrücklich ein."
+    "text": "Handel schafft Möglichkeiten, nicht automatisch Gewinner für alle\nFreiwilliger Tausch kann Konsummöglichkeiten verbessern und Spezialisierung ermöglichen. Ein höherer Gesamtertrag ist aber nicht gleichbedeutend mit einer Verbesserung für jede einzelne Person. Importkonkurrierende Sektoren können Nachteile erleiden; Anpassung und Umverteilung können eine Verbesserung für alle ermöglichen.\nSpannung in der Formulierung: Die Regel „Durch Handel kann es jedem besser gehen“ beschreibt eine Möglichkeit. Sie darf nicht als Aussage „Jeder gewinnt ohne weitere Maßnahmen“ gelesen werden. Nachteile einzelner Sektoren widersprechen nicht der Möglichkeit eines höheren Gesamtertrags."
   },
   {
     "objectID": "courses/vwl-markt-staat.html#abschnitt-3",
     "href": "courses/vwl-markt-staat.html#abschnitt-3",
     "title": "VWL: Märkte, Marktversagen und Staat",
     "section": "Was Preise leisten – und was nicht",
-    "text": "Was Preise leisten – und was nicht\nHaushalte entscheiden dezentral über Konsum und Arbeit, Unternehmen über Einsatz und Produktion (S. 21). Wettbewerb und Preise können diese Entscheidungen koordinieren (S. 22). Die Folgerung gilt für gut funktionierende Märkte, nicht unabhängig von ihren Rahmenbedingungen. Eigentumsrechte müssen gesichert werden; Marktorganisation ist selbst eine institutionelle Aufgabe (S. 24).\nMarktversagen liegt in dieser Einführung vor, wenn die Ressourcen nicht effizient zugeteilt werden. Eine als unfair empfundene Verteilung ist deshalb nicht automatisch derselbe Befund: Effizienz und Gerechtigkeit bleiben unterschiedliche Kriterien."
+    "text": "Was Preise leisten – und was nicht\nHaushalte entscheiden dezentral über Konsum und Arbeit, Unternehmen über Einsatz und Produktion. Wettbewerb und Preise können diese Entscheidungen koordinieren. Die Folgerung gilt für gut funktionierende Märkte, nicht unabhängig von ihren Rahmenbedingungen. Eigentumsrechte müssen gesichert werden; Marktorganisation ist selbst eine institutionelle Aufgabe.\nMarktversagen liegt in dieser Einführung vor, wenn die Ressourcen nicht effizient zugeteilt werden. Eine als unfair empfundene Verteilung ist deshalb nicht automatisch derselbe Befund: Effizienz und Gerechtigkeit bleiben unterschiedliche Kriterien."
   },
   {
     "objectID": "courses/vwl-markt-staat.html#abschnitt-4",
     "href": "courses/vwl-markt-staat.html#abschnitt-4",
     "title": "VWL: Märkte, Marktversagen und Staat",
     "section": "Mechanismen unterscheiden",
-    "text": "Mechanismen unterscheiden\n\n\n\n\n\n\n\n\nMechanismus\nEntscheidend ist …\nEigenes Lernbeispiel\n\n\n\n\nExterner Effekt\nEine nicht berücksichtigte Wirkung auf unbeteiligte Dritte.\nNächtlicher Lieferlärm belastet Anwohner.\n\n\nMarktmacht\nEinzelne Akteure können den Preis wesentlich beeinflussen.\nEin Anbieter ohne nahe Ausweichmöglichkeit.\n\n\nKoordinationsversagen\nEinzelentscheidungen halten ein schlechteres Gleichgewicht aufrecht.\nAlle warten auf einen gemeinsamen Softwarestandard.\n\n\nÖffentliches Gut\nWeder Rivalität im Konsum noch Ausschließbarkeit.\nDie Quelle nennt Landesverteidigung.\n\n\nInformationsasymmetrie\nEine Marktseite weiß mehr als die andere.\nUnterschiedliches Wissen über IT-Sicherheit bei Versicherungen.\n\n\n\nDie ersten drei Mechanismen stehen auf S. 25, öffentliche Güter, Informationsasymmetrie und unvollständige Märkte auf S. 26. Öffentlich bedeutet hier nicht einfach „vom Staat bezahlt“: Entscheidend sind die beiden Gütereigenschaften. Ein kostenlos angebotener Sitzplatz bleibt bei Vollbelegung rival."
+    "text": "Mechanismen unterscheiden\nExterner Effekt: Eine nicht berücksichtigte Wirkung trifft unbeteiligte Dritte. Eigenes Beispiel: Nächtlicher Lieferlärm belastet Anwohner.\nMarktmacht: Einzelne Akteure können den Preis wesentlich beeinflussen. Eigenes Beispiel: Ein Anbieter hat keine nahe Ausweichmöglichkeit.\nKoordinationsversagen: Individuell rationale Entscheidungen können ein schlechteres Gleichgewicht aufrechterhalten. Eigenes Beispiel: Alle warten auf einen gemeinsamen Softwarestandard.\nÖffentliches Gut: Der Konsum ist weder rival noch ausschließbar, etwa bei Landesverteidigung. Das begünstigt Trittbrettfahren und kann zu geringer privater Bereitstellung führen.\nInformationsasymmetrie: Eine Marktseite weiß mehr als die andere, etwa über die IT-Sicherheit eines versicherten Unternehmens.\nUnvollständige Märkte: Ein gewünschter Vertrag wird nicht angeboten. Bei vollständiger Absicherung gegen Cloud-Ausfälle können schwer messbare Risiken, korrelierte Schäden und Informationsprobleme eine Rolle spielen.\nÖffentlich bedeutet hier nicht einfach „vom Staat bezahlt“: Entscheidend sind die beiden Gütereigenschaften. Ein kostenlos angebotener Sitzplatz bleibt bei Vollbelegung rival."
   },
   {
     "objectID": "courses/vwl-markt-staat.html#abschnitt-5",
     "href": "courses/vwl-markt-staat.html#abschnitt-5",
     "title": "VWL: Märkte, Marktversagen und Staat",
     "section": "Cyberversicherung: vor oder nach dem Vertrag?",
-    "text": "Cyberversicherung: vor oder nach dem Vertrag?\nS. 26 unterscheidet zwei Informationsprobleme: Besonders riskante Unternehmen können überproportional Versicherung nachfragen (adverse selection, vor Vertragsschluss). Versicherungsschutz kann nach Vertragsschluss den Anreiz zu Schutzmaßnahmen verringern (moral hazard). Das ist eine mögliche Anreizwirkung, keine Behauptung über jedes versicherte Unternehmen."
+    "text": "Cyberversicherung: vor oder nach dem Vertrag?\nZwei Informationsprobleme sind zu unterscheiden: Besonders riskante Unternehmen können überproportional Versicherung nachfragen (adverse selection, vor Vertragsschluss). Versicherungsschutz kann nach Vertragsschluss den Anreiz zu Schutzmaßnahmen verringern (moral hazard). Das ist eine mögliche Anreizwirkung, keine Behauptung über jedes versicherte Unternehmen."
   },
   {
     "objectID": "courses/vwl-markt-staat.html#abschnitt-6",
     "href": "courses/vwl-markt-staat.html#abschnitt-6",
     "title": "VWL: Märkte, Marktversagen und Staat",
     "section": "Von der Diagnose zur Maßnahme",
-    "text": "Von der Diagnose zur Maßnahme\nEine Intervention kann helfen, muss aber mit ihren eigenen Kosten und möglichen Fehlanreizen verglichen werden (S. 24, 27). Für das Lärmbeispiel wäre zunächst zu prüfen, ob eine Regel tatsächlich die Belastung senkt und welche Ausweichreaktionen entstehen. Informationsdefizite, Einflussnahme und Mitnahmeeffekte sind Gründe, warum eine gut gemeinte Maßnahme ihr Ziel verfehlen kann. Marktversagen begründet eine Prüfung staatlicher Optionen, keinen automatischen Nachweis ihrer Überlegenheit."
+    "text": "Von der Diagnose zur Maßnahme\nEine Intervention kann helfen, muss aber mit ihren eigenen Kosten und möglichen Fehlanreizen verglichen werden. Für das Lärmbeispiel wäre zunächst zu prüfen, ob eine Regel tatsächlich die Belastung senkt und welche Ausweichreaktionen entstehen. Informationsdefizite, Einflussnahme und Mitnahmeeffekte sind Gründe, warum eine gut gemeinte Maßnahme ihr Ziel verfehlen kann. Marktversagen begründet eine Prüfung staatlicher Optionen, keinen automatischen Nachweis ihrer Überlegenheit."
   },
   {
     "objectID": "courses/vwl-markt-staat.html#abschnitt-7",
     "href": "courses/vwl-markt-staat.html#abschnitt-7",
     "title": "VWL: Märkte, Marktversagen und Staat",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Unterscheidungen sind zutreffend?\n Moral hazard kann nach Abschluss einer Cyberversicherung auftreten.\n Ein höherer Gesamtertrag durch Handel garantiert jedem Einzelnen einen Vorteil.\n Marktversagen beweist, dass jede staatliche Maßnahme besser ist.\n Ein öffentliches Gut ist nicht rival und nicht ausschließbar.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und d sind richtig (S. 26). b ignoriert Verteilungswirkungen und mögliche Anpassungserfordernisse (S. 20). c ignoriert Kosten und Regierungsversagen (S. 24, 27)."
-  },
-  {
-    "objectID": "courses/vwl-markt-staat.html#abschnitt-8",
-    "href": "courses/vwl-markt-staat.html#abschnitt-8",
-    "title": "VWL: Märkte, Marktversagen und Staat",
-    "section": "Quelle und Grenzen",
-    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 19–22, 24–27 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht."
+    "text": "Selbstcheck (MC)\n\nWelche Unterscheidungen sind zutreffend?\n Moral hazard kann nach Abschluss einer Cyberversicherung auftreten.\n Ein höherer Gesamtertrag durch Handel garantiert jedem Einzelnen einen Vorteil.\n Marktversagen beweist, dass jede staatliche Maßnahme besser ist.\n Ein öffentliches Gut ist nicht rival und nicht ausschließbar.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und d sind richtig. b ignoriert Verteilungswirkungen und mögliche Anpassungserfordernisse. c ignoriert Kosten und Regierungsversagen."
   },
   {
     "objectID": "courses/vwl-markt-staat.html#verwandte-lernseiten",
@@ -1438,6 +1431,13 @@
     "title": "VWL: Märkte, Marktversagen und Staat",
     "section": "Verwandte Lernseiten",
     "text": "Verwandte Lernseiten\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/vwl-markt-staat.html#abschnitt-8",
+    "href": "courses/vwl-markt-staat.html#abschnitt-8",
+    "title": "VWL: Märkte, Marktversagen und Staat",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 19–22, 24–27 (physische Seiten). Aktueller Kurs 94931; erneut geprüft am 17.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nZuordnung nach Themenbereich\n\nHandel und Verteilung → physische PDF-S. 19–20.\nDezentrale Entscheidungen, Preise und institutionelle Voraussetzungen → S. 21–22, 24.\nMarktversagensmechanismen → S. 25–26; Cyberversicherung → S. 26.\nIntervention, Kosten und Politikversagen → S. 24, 27.\nSelbstcheck → S. 20, 24, 26–27."
   },
   {
     "objectID": "feedback.html",
