@@ -757,11 +757,10 @@ td {
   padding: 0.35rem 0.7rem;
 }
 
-.study-rail {
-  display: none;
-}
-
 #quarto-margin-sidebar {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
   padding-top: 1.4rem;
 }
 
@@ -809,39 +808,6 @@ td {
 }
 
 @media (min-width: 900px) and (max-width: 1199.98px) {
-  .study-rail {
-    background: var(--study-panel);
-    border: 1px solid var(--study-line);
-    border-radius: 8px;
-    bottom: 1.25rem;
-    box-shadow: 0 10px 28px rgba(31, 41, 55, 0.1);
-    display: grid;
-    gap: 0.25rem;
-    left: 1rem;
-    padding: 0.45rem;
-    position: fixed;
-    z-index: 1020;
-  }
-
-  .study-rail a {
-    border-radius: 6px;
-    color: var(--study-ink);
-    font-size: 0.82rem;
-    font-weight: 750;
-    min-width: 5.8rem;
-    padding: 0.42rem 0.55rem;
-    text-align: center;
-    text-decoration: none;
-  }
-
-  .study-rail a:hover,
-  .study-rail a:focus-visible {
-    background: var(--study-soft);
-    color: var(--study-accent-strong);
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1199.98px) {
   #quarto-margin-sidebar {
     border-left: 1px solid var(--study-line);
     max-height: calc(100vh - 5.5rem);
@@ -849,7 +815,7 @@ td {
     padding: 0.75rem 0 0.75rem 0.85rem;
     position: sticky;
     top: 4.4rem;
-    width: min(15rem, 28vw);
+    width: min(100%, 15rem);
   }
 
   #TOC {
@@ -884,3 +850,51 @@ code {
 .section-jumps a { border: 1px solid var(--study-line); border-radius: 999px; padding: .45rem .8rem; background: var(--study-soft); font-size: .9rem; text-decoration: none; }
 .quick-card:focus-visible, .course-board a:focus-visible, .section-jumps a:focus-visible { outline: 3px solid var(--study-accent); outline-offset: 3px; }
 .quick-card { overflow-wrap: anywhere; }
+
+/* Global navigation uses the same teal/blue surfaces as the course cards.
+   Keep Quarto's existing sidebar, breadcrumbs and single mobile toggle. */
+#quarto-header .quarto-secondary-nav {
+  background: linear-gradient(120deg,
+    color-mix(in srgb, var(--study-accent) 14%, var(--study-panel)),
+    var(--study-panel) 65%,
+    color-mix(in srgb, var(--study-blue) 10%, var(--study-panel)));
+  border-top: 3px solid var(--study-accent);
+  border-bottom: 1px solid var(--study-line);
+  box-shadow: 0 3px 12px color-mix(in srgb, var(--study-ink) 7%, transparent);
+  color: var(--study-ink);
+}
+#quarto-header .quarto-secondary-nav .breadcrumb,
+#quarto-header .quarto-secondary-nav .breadcrumb-item,
+#quarto-header .quarto-secondary-nav .breadcrumb-item a {
+  color: var(--study-accent-strong);
+  background: transparent;
+  font-weight: 650;
+}
+#quarto-header .quarto-secondary-nav .btn {
+  color: var(--study-accent-strong);
+  border-radius: 8px;
+  min-width: 44px;
+  min-height: 44px;
+}
+#quarto-header .quarto-secondary-nav .btn:hover {
+  background: color-mix(in srgb, var(--study-accent) 12%, transparent);
+}
+#quarto-header .quarto-secondary-nav .btn:focus-visible,
+#quarto-sidebar a:focus-visible {
+  outline: 3px solid var(--study-accent);
+  outline-offset: -3px;
+}
+#quarto-sidebar {
+  border-top: 3px solid var(--study-accent);
+  background: linear-gradient(160deg,
+    color-mix(in srgb, var(--study-accent) 9%, var(--study-panel)),
+    var(--study-panel) 45%, var(--study-soft));
+}
+#quarto-sidebar .sidebar-title { color: var(--study-accent-strong); }
+/* The dark accent is pale teal; white button text would lose contrast. */
+body.quarto-dark .check-answer,
+body.quarto-dark .feedback-builder button,
+[data-bs-theme="dark"] .check-answer,
+[data-bs-theme="dark"] .feedback-builder button {
+  color: #0b1120;
+}
