@@ -419,6 +419,17 @@
     ]
   },
   {
+    "objectID": "courses/controlling.html#kalkulationsverfahren-und-preisaufbau",
+    "href": "courses/controlling.html#kalkulationsverfahren-und-preisaufbau",
+    "title": "Controlling",
+    "section": "Kalkulationsverfahren und Preisaufbau",
+    "text": "Kalkulationsverfahren und Preisaufbau\n\nVom Selbstkostenbetrag zum ListenpreisRechenweg, Annahmen und begründeter Selbstcheck.\nDivisionskalkulation: Kosten je EinheitRechenweg, Annahmen und begründeter Selbstcheck.\nZuschlagskalkulation: Herstell- und SelbstkostenRechenweg, Annahmen und begründeter Selbstcheck.",
+    "crumbs": [
+      "Aktuelle Kurse",
+      "Controlling"
+    ]
+  },
+  {
     "objectID": "courses/db-blockchain-tradeoffs.html",
     "href": "courses/db-blockchain-tradeoffs.html",
     "title": "Bitcoin: promises and trade-offs",
@@ -482,123 +493,138 @@
     "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4–5, 8–18. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nDisintermediation and decentralization promises → physical PDF p. 8; efficiency trade-off → p. 18.\nEnergy, processing and investment criticisms → pp. 13–15 respectively.\nSecurity-language tension → pp. 4, 8; technology/application distinction → pp. 4–5.\nHistorical optimistic/pessimistic examples → pp. 9–17; evolution expectation → p. 18.\nSelf-check reasoning → pp. 4–5, 13–14, 18."
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html",
-    "href": "courses/controlling-verhalten-feedback.html",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "objectID": "courses/db-disruption.html",
+    "href": "courses/db-disruption.html",
+    "title": "Disruptive innovation: a process, not a buzzword",
     "section": "",
-    "text": "Informationen wirken auf Entscheidungen und VerhaltenMehrdeutige Formulierung der QuelleSelbstcheck (MC)Quelle und Abgrenzung\nMaterialübersicht"
+    "text": "Start with access, not spectacular technologySelf-check (SC — select one answer)Source and limits\nDigital Business overview"
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-1",
-    "href": "courses/controlling-verhalten-feedback.html#abschnitt-1",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
-    "section": "Lernziel",
-    "text": "Lernziel\nDie Informationsversorgung für Entscheidungen von der Steuerung dezentraler Akteure unterscheiden und erklären, warum häufigere Informationen nicht automatisch besser sind."
+    "objectID": "courses/db-disruption.html#abschnitt-1",
+    "href": "courses/db-disruption.html#abschnitt-1",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Learning goal",
+    "text": "Learning goal\nExplain disruption through entry position and development over time, and distinguish it from generic technological success."
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-2",
-    "href": "courses/controlling-verhalten-feedback.html#abschnitt-2",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
-    "section": "Informationen wirken auf Entscheidungen und Verhalten",
-    "text": "Informationen wirken auf Entscheidungen und Verhalten\nBei der Entscheidungsfunktion stehen bestmögliche Informationen für ökonomische Entscheidungen im Vordergrund. In der Verhaltenssteuerung erweitert sich die Perspektive: In Organisationen mit dezentralen Entscheidungsträgern können Ziele auseinanderfallen und Informationen ungleich verteilt sein. Unternehmensrechnung dient dann auch der Kontrolle und Koordination.\nEigenes Lernbeispiel: Eine Filialleitung weiß mehr über die lokale Nachfrage als die Zentrale. Gleichzeitig könnte sie kurzfristige Umsätze bevorzugen, wenn nur diese ihre Beurteilung bestimmen. Ein Umsatzbericht liefert Information, setzt im Kontext der Leistungsbewertung aber auch Anreize. Die passende Frage lautet nicht nur „Ist die Zahl korrekt?“, sondern auch „Welche Handlung macht ihre Verwendung attraktiv?“\n\n\n\n\n\n\nWarnungMehrdeutige Formulierung der Quelle\n\n\n\nDie Abgrenzung verwendet bei der Entscheidungsfunktion „keine Zielkonflikte und/oder keine Informationsasymmetrie“, bei der Verhaltenssteuerung „Zielkonflikte und/oder Informationsasymmetrie“. Diese Formulierungen sind keine trennscharfe logische Fallunterscheidung: Einzelne Kombinationen können unter beide Lesarten fallen. Hier werden sie als Beschreibung der jeweiligen Perspektive verwendet, nicht als bewiesene notwendige und hinreichende Bedingungen. Die genaue Abgrenzung sollte in der Veranstaltung geklärt werden."
+    "objectID": "courses/db-disruption.html#abschnitt-2",
+    "href": "courses/db-disruption.html#abschnitt-2",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Start with access, not spectacular technology",
+    "text": "Start with access, not spectacular technology\nDisruptive innovations can make a product or service accessible to people previously excluded by money or skill. Early disruptive businesses may have lower gross margins, smaller target markets and simpler offerings that look weak on established performance measures. These characteristics are possible early-stage features, not a checklist that mechanically proves disruption.\nMore specifically, disruptive innovation starts in low-end or new-market footholds; mainstream adoption follows when quality meets mainstream standards. The process matters. A successful digital service is not disruptive solely because it grows quickly.\nOwn teaching example: a simple bookkeeping tool initially serves small clubs unable to afford specialist software. It later improves sufficiently to attract larger organizations. This is a candidate disruption story, not a proven case: one would need evidence of its initial customers, their alternatives, quality development and later mainstream adoption. A premium tool launched directly at the best-served corporate customers lacks the proposed foothold evidence."
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-4",
-    "href": "courses/controlling-verhalten-feedback.html#abschnitt-4",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
-    "section": "Ein Feldexperiment als Gegenbeispiel",
-    "text": "Ein Feldexperiment als Gegenbeispiel\nIn einem Feldexperiment erhielten Außendienstmitarbeitende eines Versicherungsdienstleisters Feedback zur Kundenzufriedenheit, das sich nach Häufigkeit (wöchentlich oder monatlich) und Detailgrad (aggregiert oder detailliert) unterschied.\nDie höchste Kundenzufriedenheit wurde im berichteten Experiment bei monatlichem, detailliertem Feedback erreicht. Ein Erklärungsmechanismus ist eine Übergewichtung des jüngsten Feedbacks: Ältere, noch relevante Informationen werden zu schnell verdrängt. Häufiger bedeutet deshalb nicht automatisch entscheidungsnützlicher."
+    "objectID": "courses/db-disruption.html#abschnitt-3",
+    "href": "courses/db-disruption.html#abschnitt-3",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Why can incumbents be vulnerable despite advantages?",
+    "text": "Why can incumbents be vulnerable despite advantages?\nExperience-curve advantages arise through cumulative output and learning, including standardization, labour efficiency and better equipment use. Cumulative output is not simply calendar age. An entrant may struggle to beat an incumbent on exactly the incumbent’s established dimensions.\nYet established firms can improve offerings beyond some customers’ needs, producing solutions that are too expensive or inconvenient for them. Sustaining existing performance trajectories can leave room for simpler alternatives. This is a mechanism, not a prediction that established firms must fail.\nThe historical IBM teaching case connects a mainframe-to-PC shift with different margins, prices, customer numbers, marketing and employee mindsets. It illustrates why organizational adaptation can matter alongside engineering. Its figures are historical lecture-case values, not current market data."
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-5",
-    "href": "courses/controlling-verhalten-feedback.html#abschnitt-5",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
-    "section": "Was darf man daraus ableiten?",
-    "text": "Was darf man daraus ableiten?\nGestaltungsfrage: Welcher Rhythmus ermöglicht rechtzeitige Reaktionen, ohne kurzfristiges Rauschen überzubetonen? Ein eigenes Anwendungsbeispiel wäre ein Serviceteam, das nach jeder einzelnen schlechten Bewertung seine gesamte Arbeitsweise ändert. Eine längere Betrachtung kann helfen, Muster von Einzelereignissen zu unterscheiden.\nDas ist eine Illustration des Mechanismus, keine zusätzliche empirische Feststellung. Dieser Befund belegt nicht, dass monatliches Feedback in jeder Branche optimal ist oder dass weniger Information grundsätzlich besser wäre. Die vorliegende Zusammenfassung liefert auch keine Effektgrößen und rechtfertigt keine selbst erfundene Rangfolge sämtlicher Versuchsgruppen. Das Originalpaper wurde für diese Lernseite nicht separat ausgewertet; die Darstellung folgt dem Vorlesungsbericht."
+    "objectID": "courses/db-disruption.html#abschnitt-4",
+    "href": "courses/db-disruption.html#abschnitt-4",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "A boundary case: Uber",
+    "text": "A boundary case: Uber\nUnder Christensen’s foothold and quality-development criteria, the answer to whether Uber qualifies as disruptive is no. The source first poses a question and then supplies that theory-specific answer, rather than making contradictory claims. The generic meaning “industry-changing” is broader than this theory’s definition."
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-6",
-    "href": "courses/controlling-verhalten-feedback.html#abschnitt-6",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "objectID": "courses/db-disruption.html#abschnitt-5",
+    "href": "courses/db-disruption.html#abschnitt-5",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Creative destruction is a broader lens",
+    "text": "Creative destruction is a broader lens\nSchumpeter’s creative destruction describes a broader process: economic structures change as new activities replace old ones. Do not treat this broad account as an interchangeable diagnostic test for Christensen-style disruption. In an answer, name the framework before classifying a case."
+  },
+  {
+    "objectID": "courses/db-disruption.html#abschnitt-6",
+    "href": "courses/db-disruption.html#abschnitt-6",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Self-check (SC — select one answer)",
+    "text": "Self-check (SC — select one answer)\n\nWhat is the strongest evidence for the lecture’s disruption concept?\n A digital firm has a very high valuation.\n A premium entrant immediately targets the incumbent’s best customers.\n An entrant starts with underserved users and later reaches mainstream quality.\nCheck\n\n\n\n\nAnswer and reasoning\n\nc is correct: it describes foothold and evolution together. Valuation (a) does not establish the mechanism. Premium entry (b) does not demonstrate a low-end or new-market foothold."
+  },
+  {
+    "objectID": "courses/db-disruption.html#related-study-pages",
+    "href": "courses/db-disruption.html#related-study-pages",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Related study pages",
+    "text": "Related study pages\n\nInvention, use and digital generativityDistinguish invention from innovation and explain generativity.\nFour innovation dilemmasCompare choices and tensions in innovation management.\n \nBack to topic"
+  },
+  {
+    "objectID": "courses/db-disruption.html#abschnitt-7",
+    "href": "courses/db-disruption.html#abschnitt-7",
+    "title": "Disruptive innovation: a process, not a buzzword",
+    "section": "Source and limits",
+    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 23–31, current course 95696; rechecked 17 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published. From PDF p. 22 onward, printed slide numbers are one higher than physical PDF pages; references here consistently use physical pages.\n\nSection-to-source mapping\n\nAccess, early characteristics and evolutionary foothold criteria → physical PDF pp. 23, 31.\nIncumbent experience and vulnerability → pp. 26–28.\nHistorical IBM case → p. 29.\nUber question and theory-specific answer → pp. 30–31.\nCreative destruction → pp. 24–25.\nSelf-check reasoning → pp. 23, 31."
+  },
+  {
+    "objectID": "courses/vwl.html",
+    "href": "courses/vwl.html",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "",
+    "text": "Ausgewählte, quellengestützte Lernseiten zu diesem Themenbereich. Weitere Kapitel sind noch nicht aufbereitet.\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\n \nDie Lernseiten enthalten eigene Lernhilfen und Quellenbelege; sie ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien · Alle Kurse",
+    "crumbs": [
+      "Aktuelle Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/vwl.html#volkswirtschaftliche-regeln",
+    "href": "courses/vwl.html#volkswirtschaftliche-regeln",
+    "title": "VWL für Wirtschaftsinformatiker",
+    "section": "",
+    "text": "Ausgewählte, quellengestützte Lernseiten zu diesem Themenbereich. Weitere Kapitel sind noch nicht aufbereitet.\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\n \nDie Lernseiten enthalten eigene Lernhilfen und Quellenbelege; sie ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien · Alle Kurse",
+    "crumbs": [
+      "Aktuelle Kurse",
+      "VWL"
+    ]
+  },
+  {
+    "objectID": "courses/controlling-zuschlagsschema.html",
+    "href": "courses/controlling-zuschlagsschema.html",
+    "title": "Zuschlagskalkulation: Herstell- und Selbstkosten",
+    "section": "",
+    "text": "GrundlagenSelbstcheckQuellen"
+  },
+  {
+    "objectID": "courses/controlling-zuschlagsschema.html#grundlagen",
+    "href": "courses/controlling-zuschlagsschema.html#grundlagen",
+    "title": "Zuschlagskalkulation: Herstell- und Selbstkosten",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nDie Zuschlagskalkulation verbindet direkt zurechenbare Einzelkosten mit verrechneten Gemeinkosten. Materialeinzelkosten plus Materialgemeinkosten ergeben die Materialkosten. Dazu kommen Fertigungslohn, Fertigungsgemeinkosten und Sondereinzelkosten der Fertigung: Das ergibt die Herstellkosten. Erst mit Verwaltungs- und Vertriebsgemeinkosten sowie Sondereinzelkosten des Vertriebs werden daraus die Selbstkosten."
+  },
+  {
+    "objectID": "courses/controlling-zuschlagsschema.html#eigenes-beispiel-den-rechenweg-trennen",
+    "href": "courses/controlling-zuschlagsschema.html#eigenes-beispiel-den-rechenweg-trennen",
+    "title": "Zuschlagskalkulation: Herstell- und Selbstkosten",
+    "section": "Eigenes Beispiel: den Rechenweg trennen",
+    "text": "Eigenes Beispiel: den Rechenweg trennen\nEin Auftrag benötigt 1.000 € Materialeinzelkosten. Bei einem angenommenen Materialgemeinkostenzuschlag von 20 % sind das 200 € Gemeinkosten und 1.200 € Materialkosten.\nHinzu kommen 500 € Fertigungslohn, 150 % Fertigungsgemeinkosten auf diesen Lohn (750 €) und ein eigens für den Auftrag beschafftes Werkzeug für 100 €. Damit betragen die Herstellkosten 1.200 + 500 + 750 + 100 = 2.550 €.\nFür das Lernbeispiel gelten Verwaltungsgemeinkosten von 10 % und Vertriebsgemeinkosten von 5 %, jeweils auf die Herstellkosten: 255 € und 127,50 €. Mit 40 € auftragsspezifischem Versand ergeben sich Selbstkosten von 2.972,50 €. Die Basen sind ausdrücklich Modellannahmen; ein Prozentsatz ohne Bezugsbasis ist keine vollständige Rechenvorgabe."
+  },
+  {
+    "objectID": "courses/controlling-zuschlagsschema.html#sonderkosten-sind-nicht-automatisch-gemeinkosten",
+    "href": "courses/controlling-zuschlagsschema.html#sonderkosten-sind-nicht-automatisch-gemeinkosten",
+    "title": "Zuschlagskalkulation: Herstell- und Selbstkosten",
+    "section": "Sonderkosten sind nicht automatisch Gemeinkosten",
+    "text": "Sonderkosten sind nicht automatisch Gemeinkosten\nEin Werkzeug, das eigens für den Auftrag beschafft wird, ist ihm direkt zurechenbar und kann Sondereinzelkosten der Fertigung darstellen. Auftragsspezifischer Versand gehört hier zu den Sondereinzelkosten des Vertriebs. „Selten“ oder „unregelmäßig“ bedeutet nicht „gemeinsam verursacht“.\nGemeinkosten benötigen dagegen eine Schlüsselung, etwa über Zeiten, Mengen oder Kostenwerte. Unterschiedliche Schlüssel können zu unterschiedlichen Selbstkosten führen. Weitere Kostenbereiche können je nach Unternehmen zusätzlich relevant sein; das Grundschema ist kein Beweis, dass jeder reale Kostenbestand vollständig erfasst ist. Für Zusatzaufträge ist außerdem zwischen zugerechneten Kosten und tatsächlich veränderlichen Kosten zu unterscheiden."
+  },
+  {
+    "objectID": "courses/controlling-zuschlagsschema.html#selbstcheck",
+    "href": "courses/controlling-zuschlagsschema.html#selbstcheck",
+    "title": "Zuschlagskalkulation: Herstell- und Selbstkosten",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind durch die Vorlesungsfolie gedeckt?\n Monatliches Feedback ist ausnahmslos für alle Unternehmen optimal.\n Im berichteten Experiment war monatliches, detailliertes Feedback am besten.\n Übergewichtung aktueller Rückmeldungen kann ältere relevante Information verdrängen.\n Verhaltenssteuerung bedeutet ausschließlich, falsche Buchungen zu korrigieren.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb und c sind richtig. a verallgemeinert einen berichteten Befund unzulässig. d verengt Verhaltenssteuerung auf Buchungskorrektur; Verhaltenssteuerung behandelt die Ausrichtung dezentraler Akteure auf Unternehmensziele."
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten für den beschriebenen Auftrag?\n Die Herstellkosten betragen 2.550 €.\n Auftragsspezifische Werkzeuge müssen immer Gemeinkosten sein.\n Die Selbstkosten enthalten hier zusätzlich Verwaltung, Vertrieb und Versand.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus Materialkosten und den drei Fertigungspositionen. c beschreibt den Übergang zu 2.972,50 € Selbstkosten. b ist falsch: Das Werkzeug ist dem Auftrag direkt zurechenbar. Die Höhe der Zuschläge beweist keine Vermeidbarkeit."
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html#verwandte-lernseiten",
-    "href": "courses/controlling-verhalten-feedback.html#verwandte-lernseiten",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "objectID": "courses/controlling-zuschlagsschema.html#verwandte-lernseiten",
+    "href": "courses/controlling-zuschlagsschema.html#verwandte-lernseiten",
+    "title": "Zuschlagskalkulation: Herstell- und Selbstkosten",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nFunktion und OrganisationEntscheidungsunterstützung und Aufgaben des Controllings.\nRelevante KostenSunk Costs und Opportunitätskosten unterscheiden.\n \nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nVom Selbstkostenbetrag zum ListenpreisDen Zusammenhang weiterlernen.\nDivisionskalkulation: Kosten je EinheitDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-7",
-    "href": "courses/controlling-verhalten-feedback.html#abschnitt-7",
-    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "objectID": "courses/controlling-zuschlagsschema.html#quellen",
+    "href": "courses/controlling-zuschlagsschema.html#quellen",
+    "title": "Zuschlagskalkulation: Herstell- und Selbstkosten",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL1.pdf – Learnweb (Hochschulzugang), PDF-S. 21, 25, 28, 30. Physische PDF-Seiten; die gedruckten Seitenzahlen stimmen hier überein. Erneut abgeglichen am 17.10.2026. Paraphrasierte Lernaufbereitung; eigene Beispiele sind gekennzeichnet. Original und Extrakt bleiben privat.\n\nInformationen wirken / Mehrdeutige Formulierung → PDF-S. 21 und 25: Entscheidungsfunktion und Verhaltenssteuerung, einschließlich der mehrdeutigen „und/oder“-Annahmen.\nFeldexperiment / Ableitungsgrenzen / Selbstcheck → PDF-S. 28: Versuchsanordnung, Ergebnis und Mechanismus; Literaturangabe PDF-S. 30: Casas-Arce, Lourenço und Martinez-Jerez (2017), The Performance Effect of Feedback Frequency and Detail: Evidence from a Field Experiment in Customer Satisfaction. Originalpaper nicht unabhängig ausgewertet; Filial- und Servicebeispiele sind eigene Illustrationen."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html",
-    "href": "courses/controlling-relevante-kosten.html",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "",
-    "text": "Was kann die heutige Entscheidung noch ändern?Selbstcheck (SC)Quelle und Abgrenzung\nMaterialübersicht"
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-1",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-1",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Lernziel",
-    "text": "Lernziel\nVergangene Ausgaben von heutigen Alternativkosten trennen und eine Entscheidung mit einer sauberen Vergleichsrechnung begründen."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-2",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-2",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Was kann die heutige Entscheidung noch ändern?",
-    "text": "Was kann die heutige Entscheidung noch ändern?\nSunk Costs sind durch frühere Entscheidungen unwiderruflich festgelegt. Gegenwärtige oder zukünftige Entscheidungen können sie nicht verändern; sie unterscheiden sich nicht zwischen den betrachteten Alternativen. Für diese Entscheidung sind sie irrelevant. Eine klare Vergleichsrechnung lässt diese unveränderlichen Ausgaben weg.\n„Schon bezahlt“ ist jedoch nicht gleichbedeutend mit „jede weitere Nutzung ist kostenlos“: Eine vorhandene Ressource kann heute eine alternative Verwendung besitzen. Deren entgangener Nutzen sind Opportunitätskosten."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-3",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-3",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Das Weinbeispiel Schritt für Schritt",
-    "text": "Das Weinbeispiel Schritt für Schritt\nEine Flasche, die früher 10 Euro kostete und heute für 100 Euro verkauft werden könnte, steht zur Wahl. Verglichen werden jetzt trinken und jetzt verkaufen. Im vereinfachten Ausgangsfall bestehen keine Verkaufskosten oder sonstigen Hindernisse.\n\nHistorischer Kaufpreis: 10 € – in beiden Alternativen bereits angefallen.\nHeute möglicher Verkaufserlös: 100 € – entfällt, wenn die Flasche getrunken wird.\nVerkaufserlös minus Kaufpreis: 90 € – rechnerischer Gewinn, nicht der entgangene heutige Erlös.\n\nBeim Trinken wird auf 100 Euro verzichtet. Nicht 10 Euro und nicht 90 Euro sind daher die Opportunitätskosten. Es geht nicht darum, zusätzlich 100 Euro zu überweisen, sondern um den Wert der aufgegebenen Alternative."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-4",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-4",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Eigenes Rechenbeispiel: gebuchter Workshop",
-    "text": "Eigenes Rechenbeispiel: gebuchter Workshop\nEin nicht erstattbares Ticket hat 60 Euro gekostet. Heute konkurrieren Workshop und ein Nebenjob, der netto 45 Euro einbringen würde. Weitere Kosten gibt es im Lernbeispiel nicht. Die 60 Euro bleiben bei beiden Optionen verloren; der Workshop kostet heute den Verzicht auf 45 Euro. Eine Entscheidung allein mit „Sonst waren die 60 Euro umsonst“ wäre ein Sunk-Cost-Fehlschluss.\nGrenze des Beispiels: Wäre das Ticket heute für 30 Euro übertragbar, wäre dieser Erlös nicht versunken. Für einen vollständigen Vergleich müssten alle heute realisierbaren Alternativen neu geprüft werden. Man darf nicht automatisch beliebige Einzelbeträge addieren, ohne die jeweilige Alternative zu beschreiben."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-5",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-5",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Prüfungsroutine",
-    "text": "Prüfungsroutine\n\nEntscheidungszeitpunkt und Alternativen nennen.\nFür jede Größe prüfen, ob die Alternative sie noch verändern kann.\nUnveränderliche vergangene Ausgaben aus dem Vergleich entfernen.\nDen entgangenen Nutzen der besten aufgegebenen Alternative berücksichtigen.\n\nDiese Routine ist eine eigene Lernhilfe für den beschriebenen Alternativenvergleich, keine zusätzliche Folienformel."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-6",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-6",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nWas sind im Weinbeispiel die Opportunitätskosten des Trinkens?\n 10 Euro, weil dies der Kaufpreis war.\n 90 Euro, weil nur der Gewinn verloren geht.\n 100 Euro, weil dieser Verkaufserlös entfällt.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nc ist richtig. a verwendet eine versunkene Ausgabe. b zieht den bereits irreversiblen Kaufpreis erneut ab. Die heutige Alternative bringt 100 Euro, und genau darauf wird verzichtet."
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#verwandte-lernseiten",
-    "href": "courses/controlling-relevante-kosten.html#verwandte-lernseiten",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nFunktion und OrganisationEntscheidungsunterstützung und Aufgaben des Controllings.\nVerhaltenssteuerung und FeedbackInformationswirkung und Grenzen von Rückmeldungen.\nGrenzentscheidungen in der VWLZusatzkosten im Pizzeria-Beispiel.\n \nZur Kursübersicht"
-  },
-  {
-    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-7",
-    "href": "courses/controlling-relevante-kosten.html#abschnitt-7",
-    "title": "Controlling: Sunk Costs und Opportunitätskosten",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL1.pdf – Learnweb (Hochschulzugang), PDF-S. 26–27. Physische PDF-Seiten; die gedruckten Seitenzahlen stimmen hier überein. Lokal gelesen am 16.10.2026. Paraphrasierte Lernaufbereitung; eigene Beispiele sind gekennzeichnet. Original und Extrakt bleiben privat.\n\nWas kann die heutige Entscheidung noch ändern? → PDF-S. 26: Definition und Entscheidungsirrelevanz versunkener Kosten.\nWeinbeispiel und Selbstcheck → PDF-S. 26–27: Kaufpreis 10 Euro, heutiger Verkaufserlös und Opportunitätskosten 100 Euro.\nWorkshop und Prüfungsroutine → eigene Lernbeispiele/-hilfen auf Grundlage der Abgrenzung auf PDF-S. 26–27; keine zusätzliche Folienformel."
+    "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 18.10.2026.\n\nGrundschema und Stufen → physische PDF-S. 28–30. Sondereinzelkosten und Beispiele → PDF-S. 29; Schlüsselung und zusätzliche Kostenbereiche → PDF-S. 30. Zahlen, Zuschlagsbasen, Entscheidungsgrenze und Selbstcheck → eigene didaktische Anwendung. Keine pauschale funktionale Zuordnung aller Marketingkosten: Die Quelle nennt Marketinggehälter unter Verwaltung; die konkrete Kostenstellenabgrenzung muss betrieblich geprüft werden.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/itdi-case-review.html",
@@ -812,123 +838,172 @@
     "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4–6. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nRecord, cryptographic functions and participation rules → physical PDF p. 4.\nDiagram → focused excerpt from p. 4; slide attribution: Gensler (2018, MIT).\nBitcoin versus blockchain → p. 5.\nExternal-video scope boundary → p. 6; video not independently processed.\nDelivery example and self-check → original application of the distinctions on pp. 4–5."
   },
   {
-    "objectID": "courses/dwpm.html",
-    "href": "courses/dwpm.html",
-    "title": "DWPM",
+    "objectID": "courses/controlling-divisionskalkulation.html",
+    "href": "courses/controlling-divisionskalkulation.html",
+    "title": "Divisionskalkulation: Kosten je Einheit",
     "section": "",
-    "text": "Die vorhandene DWPM-Klausurvorbereitung wird separat geführt. Diese Veröffentlichung konzentriert sich auf die aktuellen WiSe-Kurse.\nZu den aktuellen Materialien"
+    "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/om-organisation-digitalisierung.html",
-    "href": "courses/om-organisation-digitalisierung.html",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "",
-    "text": "Entscheidungen bilden eine HierarchieEvidenzgrenzen und verantwortliche EntscheidungenSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
+    "objectID": "courses/controlling-divisionskalkulation.html#grundlagen",
+    "href": "courses/controlling-divisionskalkulation.html#grundlagen",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nBei der einstufigen Divisionskalkulation werden die Gesamtkosten einer Periode durch die zugehörige Menge geteilt. Das Ergebnis ist ein durchschnittlicher Selbstkostenbetrag je Einheit. Die Rechnung ist besonders übersichtlich bei einem einheitlichen Produkt; unterschiedliche Produkte oder wesentlich unterschiedliche Leistungsumfänge dürfen nicht ohne Weiteres in einen gemeinsamen Durchschnitt gezwungen werden."
   },
   {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-1",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-1",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Lernziele",
-    "text": "Lernziele\nEntscheidungen nach Horizont einordnen, Organisationsformen abwägen und digitale Maßnahmen über Wirkung, Voraussetzung und Risiko begründen."
+    "objectID": "courses/controlling-divisionskalkulation.html#eigenes-beispiel-ein-einheitliches-produkt",
+    "href": "courses/controlling-divisionskalkulation.html#eigenes-beispiel-ein-einheitliches-produkt",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Eigenes Beispiel: ein einheitliches Produkt",
+    "text": "Eigenes Beispiel: ein einheitliches Produkt\nEine Modellfabrik stellt in einer Periode 10.000 identische Einheiten her und setzt dieselbe Menge ab. Es gibt keine Bestandsänderung und keine unfertigen Erzeugnisse. Die zugehörigen Gesamtkosten betragen 80.000 €. Dann sind die durchschnittlichen Selbstkosten 80.000 / 10.000 = 8 € je Einheit.\nBei einem angenommenen Nettoerlös von 11 € je Einheit ergibt sich ein durchschnittlicher Überschuss von 3 € je Einheit und insgesamt 30.000 €. Herstellermenge, Herstellererlös und Herstellerkosten müssen dabei zusammenpassen: Ein Endkundenpreis im Handel ist nicht automatisch der Erlös des Herstellers."
   },
   {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-2",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-2",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Entscheidungen bilden eine Hierarchie",
-    "text": "Entscheidungen bilden eine Hierarchie\nDie Planung unterscheidet drei Ebenen mit typischen Zeithorizonten:\n\nStrategisch, typischerweise 2–5 Jahre: Standort, Kapazitätsaufbau und Make-or-Buy legen den langfristigen Rahmen fest.\nTaktisch, typischerweise 3–18 Monate: Saisonprogramm, Schichten und Rahmenverträge konkretisieren diesen Rahmen.\nOperativ, typischerweise 1 Tag–1 Woche: Auftragsreihenfolge, Personaleinsatz und Störungsreaktionen steuern die unmittelbare Ausführung.\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
+    "objectID": "courses/controlling-divisionskalkulation.html#durchschnitt-ist-keine-grenzkosteninformation",
+    "href": "courses/controlling-divisionskalkulation.html#durchschnitt-ist-keine-grenzkosteninformation",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Durchschnitt ist keine Grenzkosteninformation",
+    "text": "Durchschnitt ist keine Grenzkosteninformation\nAus den 8 € folgt nicht, dass eine zusätzliche Einheit genau 8 € verursacht. Angenommen, im Kostenbetrag stecken 30.000 € fixe Kosten und 5 € variable Kosten je Einheit. Bei freier Kapazität und unveränderten Bedingungen kostet eine zusätzliche Einheit im eigenen linearen Modell 5 €. Für eine größere Menge können Kapazitätsgrenzen die Rechnung verändern.\nBei mehreren unterschiedlichen Erzeugnissen ist zunächst zu prüfen, ob ein gemeinsamer Durchschnitt sinnvoll ist. Die Wahl eines Verfahrens hängt vom Produktionsprogramm ab; die einfache Division liefert nicht durch ihre Einfachheit schon eine verursachungsgerechte Verteilung. Äquivalenzziffern- und Kuppelkalkulation werden hier nur als alternative Verfahren eingeordnet, nicht ohne ihre zusätzlichen Voraussetzungen angewendet."
   },
   {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-3",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-3",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Schnittstellen und Organisationsformen",
-    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen. S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\nFunktional: Klare Zuständigkeiten und Skaleneffekte stehen möglichen Silos und geringer Flexibilität gegenüber.\nDivisional: Marktnähe und Ergebnisverantwortung gehen mit möglichen Redundanzen und schwieriger Harmonisierung einher.\nMatrix: Ressourcenoptimierung und Synergien erfordern komplexere Entscheidungen wegen der doppelten Berichtslinie.\nWertstrom / End-to-End: Kundenzentrierung und kurze Durchlaufzeiten benötigen bereichsübergreifende Koordination und neue Rollen.\n\nEs gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-4",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-4",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Digitale Maßnahme als Wirkungskette prüfen",
-    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDigitale Steuerung kann Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz verbessern. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende.\nEigenes Lernbeispiel: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas Wartungs- und Logistiksystem ALIS illustriert Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung. Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarnungEvidenzgrenzen und verantwortliche Entscheidungen\n\n\n\nBerichtete Digitalisierungsnutzen beruhen überwiegend auf Selbstauskünften; eine kausale Wirkung ist dadurch nicht belegt. Sie garantieren keine Effekte für andere Unternehmen. Deshalb müssen Wirkungsmechanismus, Datenqualität, Investitionsaufwand und lokale Umsetzung geprüft werden. Widersprüchliche Systemmeldungen verlangen fachliche Prüfung, nicht blindes Vertrauen oder pauschales Ignorieren."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-6",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-6",
-    "title": "OM: Organisation und Digitalisierung",
+    "objectID": "courses/controlling-divisionskalkulation.html#selbstcheck",
+    "href": "courses/controlling-divisionskalkulation.html#selbstcheck",
+    "title": "Divisionskalkulation: Kosten je Einheit",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. b ist falsch: Berichtete Nutzenwerte begründen keine garantierte kausale Wirkung. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen treffen zu?\n Im Modell betragen die durchschnittlichen Selbstkosten 8 €.\n Jede zusätzliche Einheit verursacht zwingend 8 €.\n Ein Händler-Endkundenpreis ist nicht automatisch Herstellererlös.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 80.000 / 10.000. c wahrt die Unternehmensperspektive. b ist falsch: Bei den ausdrücklich angenommenen freien Kapazitäten und linearen variablen Kosten sind es 5 €."
   },
   {
-    "objectID": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
-    "href": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
-    "title": "OM: Organisation und Digitalisierung",
+    "objectID": "courses/controlling-divisionskalkulation.html#verwandte-lernseiten",
+    "href": "courses/controlling-divisionskalkulation.html#verwandte-lernseiten",
+    "title": "Divisionskalkulation: Kosten je Einheit",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\n \nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nVom Selbstkostenbetrag zum ListenpreisDen Zusammenhang weiterlernen.\nZuschlagskalkulation: Herstell- und SelbstkostenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-7",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-7",
-    "title": "OM: Organisation und Digitalisierung",
+    "objectID": "courses/controlling-divisionskalkulation.html#quellen",
+    "href": "courses/controlling-divisionskalkulation.html#quellen",
+    "title": "Divisionskalkulation: Kosten je Einheit",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nEntscheidungen bilden eine Hierarchie: PDF-S. 16 (Horizonte und Beispiele).\nSchnittstellen und Organisationsformen: PDF-S. 22–23 (Prozesslandschaft, Abstimmung und S&OP), S. 24–26 (Organisationsformen und MünsterRad).\nDigitale Wirkungskette: PDF-S. 29 (Hebel und Voraussetzungen), S. 31 (ALIS-Risiken), S. 32 (MünsterRad; eigene Ausarbeitung des Scan-Beispiels).\nGrenzen berichteter Nutzenwerte: PDF-S. 30. Der Hinweis lautet „Außer WEF-Reports, Selbstauskünfte, daher nicht kausal belegt“; die Lernseite behauptet auch für WEF-Beispiele keinen unabhängig geprüften Kausalnachweis.\nWiderspruch im internen Verweis: PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“; die ALIS-Seite trägt jedoch Foliennummer 33 (physische PDF-S. 31). Deshalb werden hier physische PDF-Seiten angegeben. Ungeprüfte aktuelle geopolitische Aussagen aus dem Einführungsteil werden nicht übernommen.\nSelbstcheck: PDF-S. 16, 29–30 (strategische Entscheidung, Voraussetzungen und Evidenzgrenzen)."
+    "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 18.10.2026.\n\nVerfahrenswahl nach Produktionsprogramm → physische PDF-S. 25 und 27. Einstufige Division und Einproduktannahme → PDF-S. 26. Dortiges Unternehmensbeispiel bezieht sich auf 2021 und wird nicht als aktuelle Unternehmenszahl übernommen. Modellfabrik, Bestandsannahme, Herstellerperspektive und Selbstcheck → eigene Erläuterungen; Durchschnitts-/Zusatzkostengrenze ergänzt anhand der Vereinfachungsannahmen auf PDF-S. 6–10.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
-    "objectID": "courses/om-vier-v.html",
-    "href": "courses/om-vier-v.html",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "objectID": "courses/db-innovation-dilemmas.html",
+    "href": "courses/db-innovation-dilemmas.html",
+    "title": "Four innovation dilemmas",
     "section": "",
-    "text": "Kein schlichtes Entweder-oderSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
+    "text": "Where does the impulse come from?Self-check (MC — select all correct answers)Source and limits\nDigital Business overview"
   },
   {
-    "objectID": "courses/om-vier-v.html#abschnitt-1",
-    "href": "courses/om-vier-v.html#abschnitt-1",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Lernziele",
-    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
+    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-1",
+    "href": "courses/db-innovation-dilemmas.html#abschnitt-1",
+    "title": "Four innovation dilemmas",
+    "section": "Learning goal",
+    "text": "Learning goal\nUse four separate dimensions to describe an innovation choice rather than assigning one all-purpose label."
   },
   {
-    "objectID": "courses/om-vier-v.html#abschnitt-2",
-    "href": "courses/om-vier-v.html#abschnitt-2",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Kein schlichtes Entweder-oder",
-    "text": "Kein schlichtes Entweder-oder\nSachgüter und Dienstleistungen unterscheiden sich in typischen Merkmalen: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden. Beide bilden ein Kontinuum, keine ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nEinzel-, Serien- und Massenfertigung unterscheiden sich nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-2",
+    "href": "courses/db-innovation-dilemmas.html#abschnitt-2",
+    "title": "Four innovation dilemmas",
+    "section": "Where does the impulse come from?",
+    "text": "Where does the impulse come from?\nTechnology push begins with new technological or scientific knowledge. Market pull emphasizes users and actual use, including lead users and frugal innovation for ordinary users. Push and pull are best understood as extremes to balance actively, not mutually exclusive company identities.\nOwn teaching example: a new low-power sensor enables a service (push), while tenants’ demand for fewer unnoticed leaks guides its design (pull). A technical opportunity and a user need can shape the same project."
   },
   {
-    "objectID": "courses/om-vier-v.html#abschnitt-3",
-    "href": "courses/om-vier-v.html#abschnitt-3",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Vier Dimensionen statt eines Etiketts",
-    "text": "Vier Dimensionen statt eines Etiketts\nDie vier Dimensionen beschreiben unterschiedliche Anforderungen an den Prozess:\n\nVolume – Menge: Wie groß ist die Menge? Hohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\nVariety – Vielfalt: Wie vielfältig ist das Angebot? Hohe Vielfalt benötigt flexible Ressourcen und erhöht die Komplexität.\nVariation – Nachfrageschwankung: Wie stark schwankt die Nachfrage? Starke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\nVisibility – Sichtbarkeit: Wie viel vom Prozess erlebt der Kunde? Hohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-3",
+    "href": "courses/db-innovation-dilemmas.html#abschnitt-3",
+    "title": "Four innovation dilemmas",
+    "section": "What changes: product or process?",
+    "text": "What changes: product or process?\nProduct innovation changes features of the final product or service; process innovation changes how it is produced or distributed. A qualitative model illustrates a shift in their relative importance as an industry develops:\n\n\n\nProduct and process innovation over time: product innovation peaks earlier, process innovation later. Provenance is listed in the final source section.\n\n\nThe vertical axis is innovation rate, the horizontal axis time. Product innovation peaks earlier in this qualitative model; process innovation becomes more important later. The marked dominant design helps explain the transition. The graph provides no numerical forecasts or fixed transition date. On a small screen, open the full-size figure to inspect its labels.\nThe model suggests conditional strategic implications: emerging industries typically favour product innovation, maturing ones process innovation. Entrants may have opportunities before a dominant design stabilizes or when it collapses; incumbents may benefit during stability. These are tendencies, not universal laws.\nOwn example continued: adding leak-location accuracy changes service features (product); automating sensor installation scheduling changes delivery (process). One project can include both."
   },
   {
-    "objectID": "courses/om-vier-v.html#abschnitt-4",
-    "href": "courses/om-vier-v.html#abschnitt-4",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Anwendung auf MünsterRad",
-    "text": "Anwendung auf MünsterRad\nReparaturwerkstatt und Lastenrad-Serienfertigung unterscheiden sich im Prozess. Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-4",
+    "href": "courses/db-innovation-dilemmas.html#abschnitt-4",
+    "title": "Four innovation dilemmas",
+    "section": "Who contributes knowledge?",
+    "text": "Who contributes knowledge?\nOpen innovation deliberately imports and exports knowledge to improve innovation; crowdsourcing is one example. “Open” does not simply mean a product is free. The open/closed balance depends on competitive rivalry, one-shot innovation and tightly linked innovation. These factors do not supply a universal scoring rule on their own."
   },
   {
-    "objectID": "courses/om-vier-v.html#abschnitt-5",
-    "href": "courses/om-vier-v.html#abschnitt-5",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig. Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
+    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-5",
+    "href": "courses/db-innovation-dilemmas.html#abschnitt-5",
+    "title": "Four innovation dilemmas",
+    "section": "Technology or business model?",
+    "text": "Technology or business model?\nBusiness model innovation includes changing how an offering is sold, not only changing the product or service itself. Opportunities can be explored using value chains, value networks and the business model canvas as diagnostic tools. Own example: improving sensor accuracy is technological; changing from selling devices to a maintenance subscription changes the business model. A subscription is not automatically better: explain value creation and payment rather than merely naming the label."
   },
   {
-    "objectID": "courses/om-vier-v.html#verwandte-lernseiten",
-    "href": "courses/om-vier-v.html#verwandte-lernseiten",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-6",
+    "href": "courses/db-innovation-dilemmas.html#abschnitt-6",
+    "title": "Four innovation dilemmas",
+    "section": "Self-check (MC — select all correct answers)",
+    "text": "Self-check (MC — select all correct answers)\n\nWhich statements fit the lecture?\n Push and pull can both shape one project.\n A later process-innovation peak guarantees all mature firms succeed.\n Open innovation involves deliberate knowledge flows across organizational boundaries.\nCheck\n\n\n\n\nAnswer and reasoning\n\na and c are correct: push and pull can be balanced within one project; open innovation involves deliberate knowledge imports and exports. b is incorrect: the graph is qualitative and the strategic implications describe typical advantages, not guarantees."
+  },
+  {
+    "objectID": "courses/db-innovation-dilemmas.html#related-study-pages",
+    "href": "courses/db-innovation-dilemmas.html#related-study-pages",
+    "title": "Four innovation dilemmas",
+    "section": "Related study pages",
+    "text": "Related study pages\n\nInvention, use and digital generativityDistinguish invention from innovation and explain generativity.\nDisruptive innovationExplain entry mechanisms and incumbent vulnerability.\n \nBack to topic"
+  },
+  {
+    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-7",
+    "href": "courses/db-innovation-dilemmas.html#abschnitt-7",
+    "title": "Four innovation dilemmas",
+    "section": "Source and limits",
+    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 14–20, current course 95696; rechecked 17 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published.\n\nSection-to-source mapping\n\nImpulses and push/pull balance → physical PDF pp. 14–16.\nProduct/process definitions, figure and conditional strategic implications → pp. 17–18; figure attribution in the slide: Johnson et al. 2014. The image is a focused excerpt from p. 17.\nOpen/closed knowledge flows → p. 19.\nTechnological/business model innovation → p. 20.\nSelf-check reasoning → pp. 15, 17–19."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html",
+    "href": "courses/vwl-knappheit.html",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "",
+    "text": "Warum überhaupt entscheiden?Selbstcheck (SC)Quelle und Grenzen\nVWL-Übersicht"
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-1",
+    "href": "courses/vwl-knappheit.html#abschnitt-1",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Lernziel",
+    "text": "Lernziel\nKnappheit erklären, eine relevante Alternative benennen und Opportunitätskosten von einer bloßen Geldzahlung unterscheiden."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-2",
+    "href": "courses/vwl-knappheit.html#abschnitt-2",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Warum überhaupt entscheiden?",
+    "text": "Warum überhaupt entscheiden?\nVWL untersucht, wie eine Gesellschaft knappe Mittel bewirtschaftet. Knappheit heißt hier: Die verfügbaren Ressourcen reichen nicht für alle gleichzeitig gewünschten Verwendungen. Auch Zeit und Aufmerksamkeit sind Ressourcen. Deshalb stellen sich drei Fragen: Was wird produziert, wie wird produziert und für wen?\nEntscheiden heißt auswählen und damit verzichten. Mehr Zeit für eine Tätigkeit bedeutet weniger Zeit für eine andere. Auf gesellschaftlicher Ebene können Effizienz und Verteilungsgerechtigkeit in Spannung stehen. Effizienz betrifft in dieser Einführung den möglichst hohen Wert der Produktion aus knappen Ressourcen. Verteilungsgerechtigkeit betrifft deren faire Verteilung. Ein großer Gesamtertrag sagt allein noch nicht, wer davon profitiert; „fair“ erfordert ein Werturteil."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-3",
+    "href": "courses/vwl-knappheit.html#abschnitt-3",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Nicht nur der Kontostand zählt",
+    "text": "Nicht nur der Kontostand zählt\nOpportunitätskosten bestehen darin, was für eine gewählte Möglichkeit aufgegeben wird. Für die Entscheidung ist die beste tatsächlich verfügbare Alternative maßgeblich. Man addiert nicht alle wechselseitig ausgeschlossenen Alternativen: Dieselbe Stunde kann nicht zugleich für mehrere Nebenjobs eingesetzt werden.\nEigenes Lernbeispiel: Du kannst am Nachmittag entweder drei Stunden lernen oder für 15 € pro Stunde arbeiten. Bei freier Wahl und sicher verfügbarem Job verzichtest du durch das Lernen auf 45 € Einkommen. Die Lernzeit ist deshalb nicht kostenlos, auch wenn kein Geld überwiesen wird. War die Schicht gar nicht verfügbar, sind diese 45 € keine realistische entgangene Alternative. Freizeit kann ebenfalls einen Wert haben, ohne einen beobachtbaren Marktpreis zu besitzen."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-4",
+    "href": "courses/vwl-knappheit.html#abschnitt-4",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Eine saubere Antwort in vier Schritten",
+    "text": "Eine saubere Antwort in vier Schritten\n\nEntscheidung und knappe Ressource benennen: drei Stunden Zeit.\nRealistische Alternativen bestimmen: Lernen oder eine verfügbare Schicht.\nDen Verzicht auf die beste Alternative bestimmen: hier 45 € Einkommen.\nNicht monetäre Folgen ergänzen: Lernfortschritt, Erholung oder Belastung, ohne sie ungeprüft in Euro umzudeuten.\n\nStolperfalle: Aus positiven Opportunitätskosten folgt nicht, dass Lernen falsch ist. Die Kosten müssen mit dem erwarteten Nutzen verglichen werden. Ebenso beweist hohe Effizienz keine gerechte Verteilung."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-5",
+    "href": "courses/vwl-knappheit.html#abschnitt-5",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nWas sind im Beispiel die monetären Opportunitätskosten des Lernens?\n 0 €, weil Lernen keine Überweisung auslöst.\n 45 € entgangenes Einkommen aus der verfügbaren Schicht.\n Die Summe aller denkbaren Nebenjobs.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig. Drei Stunden × 15 € = 45 €. a verwechselt Kosten mit Auszahlungen. c zählt alternative, nicht gleichzeitig mögliche Verwendungen mehrfach. Nicht monetäre Vorteile des Lernens bleiben für die Entscheidung wichtig."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#verwandte-lernseiten",
+    "href": "courses/vwl-knappheit.html#verwandte-lernseiten",
+    "title": "VWL: Knappheit und Opportunitätskosten",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\nOpportunitätskosten im ControllingDieselbe Entscheidungslogik in einem anderen Kurs.\n \nZur Kursübersicht"
   },
   {
-    "objectID": "courses/om-vier-v.html#abschnitt-6",
-    "href": "courses/om-vier-v.html#abschnitt-6",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nKein schlichtes Entweder-oder: PDF-S. 18–19 (Merkmale und Produktions-/Dienstleistungsarten), S. 34 (Kontinuum).\nVier Dimensionen und MünsterRad-Anwendung: PDF-S. 20; dort Vergleich von Reparaturservice und Serienfertigung. Die Diagnose-/Montageausarbeitung ist eine eigene Ableitung, keine Messung.\nSelbstcheck: PDF-S. 20 (Abgrenzung der vier Dimensionen)."
+    "objectID": "courses/vwl-knappheit.html#abschnitt-6",
+    "href": "courses/vwl-knappheit.html#abschnitt-6",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 8–13 (physische Seiten). Aktueller Kurs 94931; erneut abgeglichen am 17.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nWarum überhaupt entscheiden? → PDF-S. 8–11: Knappheit, Produktionsfragen, Auswahl, Effizienz und Verteilungsgerechtigkeit.\nNicht nur der Kontostand zählt / Vier Schritte / Selbstcheck → PDF-S. 13: Kosten-Nutzen-Vergleich und Opportunitätskosten. Die verfügbare Schicht und der Betrag von 45 € sind eigene didaktische Annahmen, keine Skriptdaten."
   },
   {
     "objectID": "templates/example-lecture.html",
@@ -994,123 +1069,123 @@
     "text": "Open Questions\n\nWhat source detail is still missing?\nWhat is likely exam-relevant?\nWhich part needs a diagram or worked example?\nWhich part should become executable code, a simulation, or an algorithm trace?"
   },
   {
-    "objectID": "courses/vwl-knappheit.html",
-    "href": "courses/vwl-knappheit.html",
-    "title": "VWL: Knappheit und Opportunitätskosten",
+    "objectID": "courses/om-vier-v.html",
+    "href": "courses/om-vier-v.html",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
     "section": "",
-    "text": "Warum überhaupt entscheiden?Selbstcheck (SC)Quelle und Grenzen\nVWL-Übersicht"
+    "text": "Kein schlichtes Entweder-oderSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
   },
   {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-1",
-    "href": "courses/vwl-knappheit.html#abschnitt-1",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Lernziel",
-    "text": "Lernziel\nKnappheit erklären, eine relevante Alternative benennen und Opportunitätskosten von einer bloßen Geldzahlung unterscheiden."
+    "objectID": "courses/om-vier-v.html#abschnitt-1",
+    "href": "courses/om-vier-v.html#abschnitt-1",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Lernziele",
+    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-2",
-    "href": "courses/vwl-knappheit.html#abschnitt-2",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Warum überhaupt entscheiden?",
-    "text": "Warum überhaupt entscheiden?\nVWL untersucht, wie eine Gesellschaft knappe Mittel bewirtschaftet. Knappheit heißt hier: Die verfügbaren Ressourcen reichen nicht für alle gleichzeitig gewünschten Verwendungen. Auch Zeit und Aufmerksamkeit sind Ressourcen. Deshalb stellen sich drei Fragen: Was wird produziert, wie wird produziert und für wen?\nEntscheiden heißt auswählen und damit verzichten. Mehr Zeit für eine Tätigkeit bedeutet weniger Zeit für eine andere. Auf gesellschaftlicher Ebene können Effizienz und Verteilungsgerechtigkeit in Spannung stehen. Effizienz betrifft in dieser Einführung den möglichst hohen Wert der Produktion aus knappen Ressourcen. Verteilungsgerechtigkeit betrifft deren faire Verteilung. Ein großer Gesamtertrag sagt allein noch nicht, wer davon profitiert; „fair“ erfordert ein Werturteil."
+    "objectID": "courses/om-vier-v.html#abschnitt-2",
+    "href": "courses/om-vier-v.html#abschnitt-2",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Kein schlichtes Entweder-oder",
+    "text": "Kein schlichtes Entweder-oder\nSachgüter und Dienstleistungen unterscheiden sich in typischen Merkmalen: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden. Beide bilden ein Kontinuum, keine ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nEinzel-, Serien- und Massenfertigung unterscheiden sich nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-3",
-    "href": "courses/vwl-knappheit.html#abschnitt-3",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Nicht nur der Kontostand zählt",
-    "text": "Nicht nur der Kontostand zählt\nOpportunitätskosten bestehen darin, was für eine gewählte Möglichkeit aufgegeben wird. Für die Entscheidung ist die beste tatsächlich verfügbare Alternative maßgeblich. Man addiert nicht alle wechselseitig ausgeschlossenen Alternativen: Dieselbe Stunde kann nicht zugleich für mehrere Nebenjobs eingesetzt werden.\nEigenes Lernbeispiel: Du kannst am Nachmittag entweder drei Stunden lernen oder für 15 € pro Stunde arbeiten. Bei freier Wahl und sicher verfügbarem Job verzichtest du durch das Lernen auf 45 € Einkommen. Die Lernzeit ist deshalb nicht kostenlos, auch wenn kein Geld überwiesen wird. War die Schicht gar nicht verfügbar, sind diese 45 € keine realistische entgangene Alternative. Freizeit kann ebenfalls einen Wert haben, ohne einen beobachtbaren Marktpreis zu besitzen."
+    "objectID": "courses/om-vier-v.html#abschnitt-3",
+    "href": "courses/om-vier-v.html#abschnitt-3",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Vier Dimensionen statt eines Etiketts",
+    "text": "Vier Dimensionen statt eines Etiketts\nDie vier Dimensionen beschreiben unterschiedliche Anforderungen an den Prozess:\n\nVolume – Menge: Wie groß ist die Menge? Hohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\nVariety – Vielfalt: Wie vielfältig ist das Angebot? Hohe Vielfalt benötigt flexible Ressourcen und erhöht die Komplexität.\nVariation – Nachfrageschwankung: Wie stark schwankt die Nachfrage? Starke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\nVisibility – Sichtbarkeit: Wie viel vom Prozess erlebt der Kunde? Hohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-4",
-    "href": "courses/vwl-knappheit.html#abschnitt-4",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Eine saubere Antwort in vier Schritten",
-    "text": "Eine saubere Antwort in vier Schritten\n\nEntscheidung und knappe Ressource benennen: drei Stunden Zeit.\nRealistische Alternativen bestimmen: Lernen oder eine verfügbare Schicht.\nDen Verzicht auf die beste Alternative bestimmen: hier 45 € Einkommen.\nNicht monetäre Folgen ergänzen: Lernfortschritt, Erholung oder Belastung, ohne sie ungeprüft in Euro umzudeuten.\n\nStolperfalle: Aus positiven Opportunitätskosten folgt nicht, dass Lernen falsch ist. Die Kosten müssen mit dem erwarteten Nutzen verglichen werden. Ebenso beweist hohe Effizienz keine gerechte Verteilung."
+    "objectID": "courses/om-vier-v.html#abschnitt-4",
+    "href": "courses/om-vier-v.html#abschnitt-4",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Anwendung auf MünsterRad",
+    "text": "Anwendung auf MünsterRad\nReparaturwerkstatt und Lastenrad-Serienfertigung unterscheiden sich im Prozess. Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-5",
-    "href": "courses/vwl-knappheit.html#abschnitt-5",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nWas sind im Beispiel die monetären Opportunitätskosten des Lernens?\n 0 €, weil Lernen keine Überweisung auslöst.\n 45 € entgangenes Einkommen aus der verfügbaren Schicht.\n Die Summe aller denkbaren Nebenjobs.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig. Drei Stunden × 15 € = 45 €. a verwechselt Kosten mit Auszahlungen. c zählt alternative, nicht gleichzeitig mögliche Verwendungen mehrfach. Nicht monetäre Vorteile des Lernens bleiben für die Entscheidung wichtig."
+    "objectID": "courses/om-vier-v.html#abschnitt-5",
+    "href": "courses/om-vier-v.html#abschnitt-5",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig. Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
   },
   {
-    "objectID": "courses/vwl-knappheit.html#verwandte-lernseiten",
-    "href": "courses/vwl-knappheit.html#verwandte-lernseiten",
-    "title": "VWL: Knappheit und Opportunitätskosten",
+    "objectID": "courses/om-vier-v.html#verwandte-lernseiten",
+    "href": "courses/om-vier-v.html#verwandte-lernseiten",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\nOpportunitätskosten im ControllingDieselbe Entscheidungslogik in einem anderen Kurs.\n \nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
   },
   {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-6",
-    "href": "courses/vwl-knappheit.html#abschnitt-6",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Quelle und Grenzen",
-    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 8–13 (physische Seiten). Aktueller Kurs 94931; erneut abgeglichen am 17.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nWarum überhaupt entscheiden? → PDF-S. 8–11: Knappheit, Produktionsfragen, Auswahl, Effizienz und Verteilungsgerechtigkeit.\nNicht nur der Kontostand zählt / Vier Schritte / Selbstcheck → PDF-S. 13: Kosten-Nutzen-Vergleich und Opportunitätskosten. Die verfügbare Schicht und der Betrag von 45 € sind eigene didaktische Annahmen, keine Skriptdaten."
+    "objectID": "courses/om-vier-v.html#abschnitt-6",
+    "href": "courses/om-vier-v.html#abschnitt-6",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nKein schlichtes Entweder-oder: PDF-S. 18–19 (Merkmale und Produktions-/Dienstleistungsarten), S. 34 (Kontinuum).\nVier Dimensionen und MünsterRad-Anwendung: PDF-S. 20; dort Vergleich von Reparaturservice und Serienfertigung. Die Diagnose-/Montageausarbeitung ist eine eigene Ableitung, keine Messung.\nSelbstcheck: PDF-S. 20 (Abgrenzung der vier Dimensionen)."
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html",
-    "href": "courses/db-innovation-dilemmas.html",
-    "title": "Four innovation dilemmas",
+    "objectID": "courses/om-organisation-digitalisierung.html",
+    "href": "courses/om-organisation-digitalisierung.html",
+    "title": "OM: Organisation und Digitalisierung",
     "section": "",
-    "text": "Where does the impulse come from?Self-check (MC — select all correct answers)Source and limits\nDigital Business overview"
+    "text": "Entscheidungen bilden eine HierarchieEvidenzgrenzen und verantwortliche EntscheidungenSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-1",
-    "href": "courses/db-innovation-dilemmas.html#abschnitt-1",
-    "title": "Four innovation dilemmas",
-    "section": "Learning goal",
-    "text": "Learning goal\nUse four separate dimensions to describe an innovation choice rather than assigning one all-purpose label."
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-1",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-1",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Lernziele",
+    "text": "Lernziele\nEntscheidungen nach Horizont einordnen, Organisationsformen abwägen und digitale Maßnahmen über Wirkung, Voraussetzung und Risiko begründen."
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-2",
-    "href": "courses/db-innovation-dilemmas.html#abschnitt-2",
-    "title": "Four innovation dilemmas",
-    "section": "Where does the impulse come from?",
-    "text": "Where does the impulse come from?\nTechnology push begins with new technological or scientific knowledge. Market pull emphasizes users and actual use, including lead users and frugal innovation for ordinary users. Push and pull are best understood as extremes to balance actively, not mutually exclusive company identities.\nOwn teaching example: a new low-power sensor enables a service (push), while tenants’ demand for fewer unnoticed leaks guides its design (pull). A technical opportunity and a user need can shape the same project."
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-2",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-2",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Entscheidungen bilden eine Hierarchie",
+    "text": "Entscheidungen bilden eine Hierarchie\nDie Planung unterscheidet drei Ebenen mit typischen Zeithorizonten:\n\nStrategisch, typischerweise 2–5 Jahre: Standort, Kapazitätsaufbau und Make-or-Buy legen den langfristigen Rahmen fest.\nTaktisch, typischerweise 3–18 Monate: Saisonprogramm, Schichten und Rahmenverträge konkretisieren diesen Rahmen.\nOperativ, typischerweise 1 Tag–1 Woche: Auftragsreihenfolge, Personaleinsatz und Störungsreaktionen steuern die unmittelbare Ausführung.\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-3",
-    "href": "courses/db-innovation-dilemmas.html#abschnitt-3",
-    "title": "Four innovation dilemmas",
-    "section": "What changes: product or process?",
-    "text": "What changes: product or process?\nProduct innovation changes features of the final product or service; process innovation changes how it is produced or distributed. A qualitative model illustrates a shift in their relative importance as an industry develops:\n\n\n\nProduct and process innovation over time: product innovation peaks earlier, process innovation later. Provenance is listed in the final source section.\n\n\nThe vertical axis is innovation rate, the horizontal axis time. Product innovation peaks earlier in this qualitative model; process innovation becomes more important later. The marked dominant design helps explain the transition. The graph provides no numerical forecasts or fixed transition date. On a small screen, open the full-size figure to inspect its labels.\nThe model suggests conditional strategic implications: emerging industries typically favour product innovation, maturing ones process innovation. Entrants may have opportunities before a dominant design stabilizes or when it collapses; incumbents may benefit during stability. These are tendencies, not universal laws.\nOwn example continued: adding leak-location accuracy changes service features (product); automating sensor installation scheduling changes delivery (process). One project can include both."
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-3",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-3",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Schnittstellen und Organisationsformen",
+    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen. S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\nFunktional: Klare Zuständigkeiten und Skaleneffekte stehen möglichen Silos und geringer Flexibilität gegenüber.\nDivisional: Marktnähe und Ergebnisverantwortung gehen mit möglichen Redundanzen und schwieriger Harmonisierung einher.\nMatrix: Ressourcenoptimierung und Synergien erfordern komplexere Entscheidungen wegen der doppelten Berichtslinie.\nWertstrom / End-to-End: Kundenzentrierung und kurze Durchlaufzeiten benötigen bereichsübergreifende Koordination und neue Rollen.\n\nEs gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-4",
-    "href": "courses/db-innovation-dilemmas.html#abschnitt-4",
-    "title": "Four innovation dilemmas",
-    "section": "Who contributes knowledge?",
-    "text": "Who contributes knowledge?\nOpen innovation deliberately imports and exports knowledge to improve innovation; crowdsourcing is one example. “Open” does not simply mean a product is free. The open/closed balance depends on competitive rivalry, one-shot innovation and tightly linked innovation. These factors do not supply a universal scoring rule on their own."
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-4",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-4",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Digitale Maßnahme als Wirkungskette prüfen",
+    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDigitale Steuerung kann Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz verbessern. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende.\nEigenes Lernbeispiel: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas Wartungs- und Logistiksystem ALIS illustriert Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung. Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarnungEvidenzgrenzen und verantwortliche Entscheidungen\n\n\n\nBerichtete Digitalisierungsnutzen beruhen überwiegend auf Selbstauskünften; eine kausale Wirkung ist dadurch nicht belegt. Sie garantieren keine Effekte für andere Unternehmen. Deshalb müssen Wirkungsmechanismus, Datenqualität, Investitionsaufwand und lokale Umsetzung geprüft werden. Widersprüchliche Systemmeldungen verlangen fachliche Prüfung, nicht blindes Vertrauen oder pauschales Ignorieren."
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-5",
-    "href": "courses/db-innovation-dilemmas.html#abschnitt-5",
-    "title": "Four innovation dilemmas",
-    "section": "Technology or business model?",
-    "text": "Technology or business model?\nBusiness model innovation includes changing how an offering is sold, not only changing the product or service itself. Opportunities can be explored using value chains, value networks and the business model canvas as diagnostic tools. Own example: improving sensor accuracy is technological; changing from selling devices to a maintenance subscription changes the business model. A subscription is not automatically better: explain value creation and payment rather than merely naming the label."
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-6",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-6",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. b ist falsch: Berichtete Nutzenwerte begründen keine garantierte kausale Wirkung. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-6",
-    "href": "courses/db-innovation-dilemmas.html#abschnitt-6",
-    "title": "Four innovation dilemmas",
-    "section": "Self-check (MC — select all correct answers)",
-    "text": "Self-check (MC — select all correct answers)\n\nWhich statements fit the lecture?\n Push and pull can both shape one project.\n A later process-innovation peak guarantees all mature firms succeed.\n Open innovation involves deliberate knowledge flows across organizational boundaries.\nCheck\n\n\n\n\nAnswer and reasoning\n\na and c are correct: push and pull can be balanced within one project; open innovation involves deliberate knowledge imports and exports. b is incorrect: the graph is qualitative and the strategic implications describe typical advantages, not guarantees."
+    "objectID": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
+    "href": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\n \nZur Kursübersicht"
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#related-study-pages",
-    "href": "courses/db-innovation-dilemmas.html#related-study-pages",
-    "title": "Four innovation dilemmas",
-    "section": "Related study pages",
-    "text": "Related study pages\n\nInvention, use and digital generativityDistinguish invention from innovation and explain generativity.\nDisruptive innovationExplain entry mechanisms and incumbent vulnerability.\n \nBack to topic"
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-7",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-7",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nEntscheidungen bilden eine Hierarchie: PDF-S. 16 (Horizonte und Beispiele).\nSchnittstellen und Organisationsformen: PDF-S. 22–23 (Prozesslandschaft, Abstimmung und S&OP), S. 24–26 (Organisationsformen und MünsterRad).\nDigitale Wirkungskette: PDF-S. 29 (Hebel und Voraussetzungen), S. 31 (ALIS-Risiken), S. 32 (MünsterRad; eigene Ausarbeitung des Scan-Beispiels).\nGrenzen berichteter Nutzenwerte: PDF-S. 30. Der Hinweis lautet „Außer WEF-Reports, Selbstauskünfte, daher nicht kausal belegt“; die Lernseite behauptet auch für WEF-Beispiele keinen unabhängig geprüften Kausalnachweis.\nWiderspruch im internen Verweis: PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“; die ALIS-Seite trägt jedoch Foliennummer 33 (physische PDF-S. 31). Deshalb werden hier physische PDF-Seiten angegeben. Ungeprüfte aktuelle geopolitische Aussagen aus dem Einführungsteil werden nicht übernommen.\nSelbstcheck: PDF-S. 16, 29–30 (strategische Entscheidung, Voraussetzungen und Evidenzgrenzen)."
   },
   {
-    "objectID": "courses/db-innovation-dilemmas.html#abschnitt-7",
-    "href": "courses/db-innovation-dilemmas.html#abschnitt-7",
-    "title": "Four innovation dilemmas",
-    "section": "Source and limits",
-    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 14–20, current course 95696; rechecked 17 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published.\n\nSection-to-source mapping\n\nImpulses and push/pull balance → physical PDF pp. 14–16.\nProduct/process definitions, figure and conditional strategic implications → pp. 17–18; figure attribution in the slide: Johnson et al. 2014. The image is a focused excerpt from p. 17.\nOpen/closed knowledge flows → p. 19.\nTechnological/business model innovation → p. 20.\nSelf-check reasoning → pp. 15, 17–19."
+    "objectID": "courses/dwpm.html",
+    "href": "courses/dwpm.html",
+    "title": "DWPM",
+    "section": "",
+    "text": "Die vorhandene DWPM-Klausurvorbereitung wird separat geführt. Diese Veröffentlichung konzentriert sich auf die aktuellen WiSe-Kurse.\nZu den aktuellen Materialien"
   },
   {
     "objectID": "courses/db-innovation-foundations.html",
@@ -1386,89 +1461,172 @@
     "text": "Quelle und Abgrenzung\nControlling VL1.pdf – Learnweb (Hochschulzugang), PDF-S. 17–18, 21, 25. Physische PDF-Seiten; die gedruckten Seitenzahlen stimmen hier überein. Erneut abgeglichen am 17.10.2026. Paraphrasierte Lernaufbereitung; eigene Beispiele sind gekennzeichnet. Original und Extrakt bleiben privat.\n\nEine Funktion ist kein Stellenname / Selbstcheck → PDF-S. 17–18: Managementfunktion, Aufgabenträger und Controllership.\nZwei Kernaufgaben → PDF-S. 17, 21, 25: Entscheidungsunterstützung und Verhaltenssteuerung.\nVom Aufgabenwort zum Zweck → PDF-S. 18: typische Instrumente; Vertriebs- und Transferbeispiele sind eigene Anwendungen."
   },
   {
-    "objectID": "courses/vwl.html",
-    "href": "courses/vwl.html",
-    "title": "VWL für Wirtschaftsinformatiker",
+    "objectID": "courses/controlling-relevante-kosten.html",
+    "href": "courses/controlling-relevante-kosten.html",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
     "section": "",
-    "text": "Ausgewählte, quellengestützte Lernseiten zu diesem Themenbereich. Weitere Kapitel sind noch nicht aufbereitet.\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\n \nDie Lernseiten enthalten eigene Lernhilfen und Quellenbelege; sie ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien · Alle Kurse",
-    "crumbs": [
-      "Aktuelle Kurse",
-      "VWL"
-    ]
+    "text": "Was kann die heutige Entscheidung noch ändern?Selbstcheck (SC)Quelle und Abgrenzung\nMaterialübersicht"
   },
   {
-    "objectID": "courses/vwl.html#volkswirtschaftliche-regeln",
-    "href": "courses/vwl.html#volkswirtschaftliche-regeln",
-    "title": "VWL für Wirtschaftsinformatiker",
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-1",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-1",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Lernziel",
+    "text": "Lernziel\nVergangene Ausgaben von heutigen Alternativkosten trennen und eine Entscheidung mit einer sauberen Vergleichsrechnung begründen."
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-2",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-2",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Was kann die heutige Entscheidung noch ändern?",
+    "text": "Was kann die heutige Entscheidung noch ändern?\nSunk Costs sind durch frühere Entscheidungen unwiderruflich festgelegt. Gegenwärtige oder zukünftige Entscheidungen können sie nicht verändern; sie unterscheiden sich nicht zwischen den betrachteten Alternativen. Für diese Entscheidung sind sie irrelevant. Eine klare Vergleichsrechnung lässt diese unveränderlichen Ausgaben weg.\n„Schon bezahlt“ ist jedoch nicht gleichbedeutend mit „jede weitere Nutzung ist kostenlos“: Eine vorhandene Ressource kann heute eine alternative Verwendung besitzen. Deren entgangener Nutzen sind Opportunitätskosten."
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-3",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-3",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Das Weinbeispiel Schritt für Schritt",
+    "text": "Das Weinbeispiel Schritt für Schritt\nEine Flasche, die früher 10 Euro kostete und heute für 100 Euro verkauft werden könnte, steht zur Wahl. Verglichen werden jetzt trinken und jetzt verkaufen. Im vereinfachten Ausgangsfall bestehen keine Verkaufskosten oder sonstigen Hindernisse.\n\nHistorischer Kaufpreis: 10 € – in beiden Alternativen bereits angefallen.\nHeute möglicher Verkaufserlös: 100 € – entfällt, wenn die Flasche getrunken wird.\nVerkaufserlös minus Kaufpreis: 90 € – rechnerischer Gewinn, nicht der entgangene heutige Erlös.\n\nBeim Trinken wird auf 100 Euro verzichtet. Nicht 10 Euro und nicht 90 Euro sind daher die Opportunitätskosten. Es geht nicht darum, zusätzlich 100 Euro zu überweisen, sondern um den Wert der aufgegebenen Alternative."
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-4",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-4",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Eigenes Rechenbeispiel: gebuchter Workshop",
+    "text": "Eigenes Rechenbeispiel: gebuchter Workshop\nEin nicht erstattbares Ticket hat 60 Euro gekostet. Heute konkurrieren Workshop und ein Nebenjob, der netto 45 Euro einbringen würde. Weitere Kosten gibt es im Lernbeispiel nicht. Die 60 Euro bleiben bei beiden Optionen verloren; der Workshop kostet heute den Verzicht auf 45 Euro. Eine Entscheidung allein mit „Sonst waren die 60 Euro umsonst“ wäre ein Sunk-Cost-Fehlschluss.\nGrenze des Beispiels: Wäre das Ticket heute für 30 Euro übertragbar, wäre dieser Erlös nicht versunken. Für einen vollständigen Vergleich müssten alle heute realisierbaren Alternativen neu geprüft werden. Man darf nicht automatisch beliebige Einzelbeträge addieren, ohne die jeweilige Alternative zu beschreiben."
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-5",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-5",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Prüfungsroutine",
+    "text": "Prüfungsroutine\n\nEntscheidungszeitpunkt und Alternativen nennen.\nFür jede Größe prüfen, ob die Alternative sie noch verändern kann.\nUnveränderliche vergangene Ausgaben aus dem Vergleich entfernen.\nDen entgangenen Nutzen der besten aufgegebenen Alternative berücksichtigen.\n\nDiese Routine ist eine eigene Lernhilfe für den beschriebenen Alternativenvergleich, keine zusätzliche Folienformel."
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-6",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-6",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nWas sind im Weinbeispiel die Opportunitätskosten des Trinkens?\n 10 Euro, weil dies der Kaufpreis war.\n 90 Euro, weil nur der Gewinn verloren geht.\n 100 Euro, weil dieser Verkaufserlös entfällt.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nc ist richtig. a verwendet eine versunkene Ausgabe. b zieht den bereits irreversiblen Kaufpreis erneut ab. Die heutige Alternative bringt 100 Euro, und genau darauf wird verzichtet."
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#verwandte-lernseiten",
+    "href": "courses/controlling-relevante-kosten.html#verwandte-lernseiten",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nFunktion und OrganisationEntscheidungsunterstützung und Aufgaben des Controllings.\nVerhaltenssteuerung und FeedbackInformationswirkung und Grenzen von Rückmeldungen.\nGrenzentscheidungen in der VWLZusatzkosten im Pizzeria-Beispiel.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/controlling-relevante-kosten.html#abschnitt-7",
+    "href": "courses/controlling-relevante-kosten.html#abschnitt-7",
+    "title": "Controlling: Sunk Costs und Opportunitätskosten",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\nControlling VL1.pdf – Learnweb (Hochschulzugang), PDF-S. 26–27. Physische PDF-Seiten; die gedruckten Seitenzahlen stimmen hier überein. Lokal gelesen am 16.10.2026. Paraphrasierte Lernaufbereitung; eigene Beispiele sind gekennzeichnet. Original und Extrakt bleiben privat.\n\nWas kann die heutige Entscheidung noch ändern? → PDF-S. 26: Definition und Entscheidungsirrelevanz versunkener Kosten.\nWeinbeispiel und Selbstcheck → PDF-S. 26–27: Kaufpreis 10 Euro, heutiger Verkaufserlös und Opportunitätskosten 100 Euro.\nWorkshop und Prüfungsroutine → eigene Lernbeispiele/-hilfen auf Grundlage der Abgrenzung auf PDF-S. 26–27; keine zusätzliche Folienformel."
+  },
+  {
+    "objectID": "courses/controlling-verhalten-feedback.html",
+    "href": "courses/controlling-verhalten-feedback.html",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
     "section": "",
-    "text": "Ausgewählte, quellengestützte Lernseiten zu diesem Themenbereich. Weitere Kapitel sind noch nicht aufbereitet.\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\n \nDie Lernseiten enthalten eigene Lernhilfen und Quellenbelege; sie ersetzen nicht die vollständige Vorlesung.\nOriginalmaterialien · Alle Kurse",
-    "crumbs": [
-      "Aktuelle Kurse",
-      "VWL"
-    ]
+    "text": "Informationen wirken auf Entscheidungen und VerhaltenMehrdeutige Formulierung der QuelleSelbstcheck (MC)Quelle und Abgrenzung\nMaterialübersicht"
   },
   {
-    "objectID": "courses/db-disruption.html",
-    "href": "courses/db-disruption.html",
-    "title": "Disruptive innovation: a process, not a buzzword",
+    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-1",
+    "href": "courses/controlling-verhalten-feedback.html#abschnitt-1",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "section": "Lernziel",
+    "text": "Lernziel\nDie Informationsversorgung für Entscheidungen von der Steuerung dezentraler Akteure unterscheiden und erklären, warum häufigere Informationen nicht automatisch besser sind."
+  },
+  {
+    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-2",
+    "href": "courses/controlling-verhalten-feedback.html#abschnitt-2",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "section": "Informationen wirken auf Entscheidungen und Verhalten",
+    "text": "Informationen wirken auf Entscheidungen und Verhalten\nBei der Entscheidungsfunktion stehen bestmögliche Informationen für ökonomische Entscheidungen im Vordergrund. In der Verhaltenssteuerung erweitert sich die Perspektive: In Organisationen mit dezentralen Entscheidungsträgern können Ziele auseinanderfallen und Informationen ungleich verteilt sein. Unternehmensrechnung dient dann auch der Kontrolle und Koordination.\nEigenes Lernbeispiel: Eine Filialleitung weiß mehr über die lokale Nachfrage als die Zentrale. Gleichzeitig könnte sie kurzfristige Umsätze bevorzugen, wenn nur diese ihre Beurteilung bestimmen. Ein Umsatzbericht liefert Information, setzt im Kontext der Leistungsbewertung aber auch Anreize. Die passende Frage lautet nicht nur „Ist die Zahl korrekt?“, sondern auch „Welche Handlung macht ihre Verwendung attraktiv?“\n\n\n\n\n\n\nWarnungMehrdeutige Formulierung der Quelle\n\n\n\nDie Abgrenzung verwendet bei der Entscheidungsfunktion „keine Zielkonflikte und/oder keine Informationsasymmetrie“, bei der Verhaltenssteuerung „Zielkonflikte und/oder Informationsasymmetrie“. Diese Formulierungen sind keine trennscharfe logische Fallunterscheidung: Einzelne Kombinationen können unter beide Lesarten fallen. Hier werden sie als Beschreibung der jeweiligen Perspektive verwendet, nicht als bewiesene notwendige und hinreichende Bedingungen. Die genaue Abgrenzung sollte in der Veranstaltung geklärt werden."
+  },
+  {
+    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-4",
+    "href": "courses/controlling-verhalten-feedback.html#abschnitt-4",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "section": "Ein Feldexperiment als Gegenbeispiel",
+    "text": "Ein Feldexperiment als Gegenbeispiel\nIn einem Feldexperiment erhielten Außendienstmitarbeitende eines Versicherungsdienstleisters Feedback zur Kundenzufriedenheit, das sich nach Häufigkeit (wöchentlich oder monatlich) und Detailgrad (aggregiert oder detailliert) unterschied.\nDie höchste Kundenzufriedenheit wurde im berichteten Experiment bei monatlichem, detailliertem Feedback erreicht. Ein Erklärungsmechanismus ist eine Übergewichtung des jüngsten Feedbacks: Ältere, noch relevante Informationen werden zu schnell verdrängt. Häufiger bedeutet deshalb nicht automatisch entscheidungsnützlicher."
+  },
+  {
+    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-5",
+    "href": "courses/controlling-verhalten-feedback.html#abschnitt-5",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "section": "Was darf man daraus ableiten?",
+    "text": "Was darf man daraus ableiten?\nGestaltungsfrage: Welcher Rhythmus ermöglicht rechtzeitige Reaktionen, ohne kurzfristiges Rauschen überzubetonen? Ein eigenes Anwendungsbeispiel wäre ein Serviceteam, das nach jeder einzelnen schlechten Bewertung seine gesamte Arbeitsweise ändert. Eine längere Betrachtung kann helfen, Muster von Einzelereignissen zu unterscheiden.\nDas ist eine Illustration des Mechanismus, keine zusätzliche empirische Feststellung. Dieser Befund belegt nicht, dass monatliches Feedback in jeder Branche optimal ist oder dass weniger Information grundsätzlich besser wäre. Die vorliegende Zusammenfassung liefert auch keine Effektgrößen und rechtfertigt keine selbst erfundene Rangfolge sämtlicher Versuchsgruppen. Das Originalpaper wurde für diese Lernseite nicht separat ausgewertet; die Darstellung folgt dem Vorlesungsbericht."
+  },
+  {
+    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-6",
+    "href": "courses/controlling-verhalten-feedback.html#abschnitt-6",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind durch die Vorlesungsfolie gedeckt?\n Monatliches Feedback ist ausnahmslos für alle Unternehmen optimal.\n Im berichteten Experiment war monatliches, detailliertes Feedback am besten.\n Übergewichtung aktueller Rückmeldungen kann ältere relevante Information verdrängen.\n Verhaltenssteuerung bedeutet ausschließlich, falsche Buchungen zu korrigieren.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb und c sind richtig. a verallgemeinert einen berichteten Befund unzulässig. d verengt Verhaltenssteuerung auf Buchungskorrektur; Verhaltenssteuerung behandelt die Ausrichtung dezentraler Akteure auf Unternehmensziele."
+  },
+  {
+    "objectID": "courses/controlling-verhalten-feedback.html#verwandte-lernseiten",
+    "href": "courses/controlling-verhalten-feedback.html#verwandte-lernseiten",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nFunktion und OrganisationEntscheidungsunterstützung und Aufgaben des Controllings.\nRelevante KostenSunk Costs und Opportunitätskosten unterscheiden.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/controlling-verhalten-feedback.html#abschnitt-7",
+    "href": "courses/controlling-verhalten-feedback.html#abschnitt-7",
+    "title": "Controlling: Verhaltenssteuerung und Feedback",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\nControlling VL1.pdf – Learnweb (Hochschulzugang), PDF-S. 21, 25, 28, 30. Physische PDF-Seiten; die gedruckten Seitenzahlen stimmen hier überein. Erneut abgeglichen am 17.10.2026. Paraphrasierte Lernaufbereitung; eigene Beispiele sind gekennzeichnet. Original und Extrakt bleiben privat.\n\nInformationen wirken / Mehrdeutige Formulierung → PDF-S. 21 und 25: Entscheidungsfunktion und Verhaltenssteuerung, einschließlich der mehrdeutigen „und/oder“-Annahmen.\nFeldexperiment / Ableitungsgrenzen / Selbstcheck → PDF-S. 28: Versuchsanordnung, Ergebnis und Mechanismus; Literaturangabe PDF-S. 30: Casas-Arce, Lourenço und Martinez-Jerez (2017), The Performance Effect of Feedback Frequency and Detail: Evidence from a Field Experiment in Customer Satisfaction. Originalpaper nicht unabhängig ausgewertet; Filial- und Servicebeispiele sind eigene Illustrationen."
+  },
+  {
+    "objectID": "courses/controlling-preiskalkulation.html",
+    "href": "courses/controlling-preiskalkulation.html",
+    "title": "Vom Selbstkostenbetrag zum Listenpreis",
     "section": "",
-    "text": "Start with access, not spectacular technologySelf-check (SC — select one answer)Source and limits\nDigital Business overview"
+    "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/db-disruption.html#abschnitt-1",
-    "href": "courses/db-disruption.html#abschnitt-1",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "Learning goal",
-    "text": "Learning goal\nExplain disruption through entry position and development over time, and distinguish it from generic technological success."
+    "objectID": "courses/controlling-preiskalkulation.html#grundlagen",
+    "href": "courses/controlling-preiskalkulation.html#grundlagen",
+    "title": "Vom Selbstkostenbetrag zum Listenpreis",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nSelbstkosten sind ein rechnerischer Ausgangspunkt für die Preiskalkulation, nicht automatisch ein am Markt durchsetzbarer Preis. Ein Gewinnaufschlag auf die Selbstkosten führt zum Barverkaufspreis. Sollen Skonto und Rabatt eingeräumt werden, müssen die jeweils unterschiedlichen Prozentbasen berücksichtigt werden."
   },
   {
-    "objectID": "courses/db-disruption.html#abschnitt-2",
-    "href": "courses/db-disruption.html#abschnitt-2",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "Start with access, not spectacular technology",
-    "text": "Start with access, not spectacular technology\nDisruptive innovations can make a product or service accessible to people previously excluded by money or skill. Early disruptive businesses may have lower gross margins, smaller target markets and simpler offerings that look weak on established performance measures. These characteristics are possible early-stage features, not a checklist that mechanically proves disruption.\nMore specifically, disruptive innovation starts in low-end or new-market footholds; mainstream adoption follows when quality meets mainstream standards. The process matters. A successful digital service is not disruptive solely because it grows quickly.\nOwn teaching example: a simple bookkeeping tool initially serves small clubs unable to afford specialist software. It later improves sufficiently to attract larger organizations. This is a candidate disruption story, not a proven case: one would need evidence of its initial customers, their alternatives, quality development and later mainstream adoption. A premium tool launched directly at the best-served corporate customers lacks the proposed foothold evidence."
+    "objectID": "courses/controlling-preiskalkulation.html#eigenes-beispiel-rückwärts-auf-den-höheren-betrag",
+    "href": "courses/controlling-preiskalkulation.html#eigenes-beispiel-rückwärts-auf-den-höheren-betrag",
+    "title": "Vom Selbstkostenbetrag zum Listenpreis",
+    "section": "Eigenes Beispiel: rückwärts auf den höheren Betrag",
+    "text": "Eigenes Beispiel: rückwärts auf den höheren Betrag\nAngenommen werden 100 € Selbstkosten, 20 % Gewinnaufschlag, 2 % Kundenskonto und 10 % Rabatt. Alle Beträge sind zunächst netto. Der Barverkaufspreis beträgt 100 × 1,20 = 120 €.\nSkonto wird vom Zielverkaufspreis berechnet: 120 € entsprechen deshalb 98 % dieses Preises. Der Zielverkaufspreis ist 120 / 0,98 = 122,45 € (gerundet). Einfach 2 % von 120 € hinzuzurechnen ergäbe die falsche Basis.\nDer Zielverkaufspreis entspricht 90 % des Netto-Listenverkaufspreises. Ohne Zwischenrundung ergibt sich 120 / 0,98 / 0,90 = 136,05 €. Eine im Beispiel lediglich angenommene Umsatzsteuer von 19 % ergäbe brutto 161,90 €. Dies ist eine Rechenannahme, keine Aussage über den anzuwendenden Steuersatz eines konkreten Geschäfts."
   },
   {
-    "objectID": "courses/db-disruption.html#abschnitt-3",
-    "href": "courses/db-disruption.html#abschnitt-3",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "Why can incumbents be vulnerable despite advantages?",
-    "text": "Why can incumbents be vulnerable despite advantages?\nExperience-curve advantages arise through cumulative output and learning, including standardization, labour efficiency and better equipment use. Cumulative output is not simply calendar age. An entrant may struggle to beat an incumbent on exactly the incumbent’s established dimensions.\nYet established firms can improve offerings beyond some customers’ needs, producing solutions that are too expensive or inconvenient for them. Sustaining existing performance trajectories can leave room for simpler alternatives. This is a mechanism, not a prediction that established firms must fail.\nThe historical IBM teaching case connects a mainframe-to-PC shift with different margins, prices, customer numbers, marketing and employee mindsets. It illustrates why organizational adaptation can matter alongside engineering. Its figures are historical lecture-case values, not current market data."
+    "objectID": "courses/controlling-preiskalkulation.html#gegenprobe-und-entscheidungsgrenze",
+    "href": "courses/controlling-preiskalkulation.html#gegenprobe-und-entscheidungsgrenze",
+    "title": "Vom Selbstkostenbetrag zum Listenpreis",
+    "section": "Gegenprobe und Entscheidungsgrenze",
+    "text": "Gegenprobe und Entscheidungsgrenze\nVom ungerundeten Netto-Listenpreis erst 10 % Rabatt und dann 2 % Skonto abzuziehen führt wieder zu 120 €. Rundungsregeln können Centabweichungen erzeugen; deshalb mit ungerundeten Zwischenwerten rechnen und die verwendete Regel nennen.\nDer errechnete Preis deckt im Modell die zugerechneten Selbstkosten und den vorgesehenen Gewinnaufschlag. Nachfrage, Wettbewerb und relevante Zusatzkosten sind damit noch nicht geprüft. Eine Kalkulation ersetzt keine Preisentscheidung."
   },
   {
-    "objectID": "courses/db-disruption.html#abschnitt-4",
-    "href": "courses/db-disruption.html#abschnitt-4",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "A boundary case: Uber",
-    "text": "A boundary case: Uber\nUnder Christensen’s foothold and quality-development criteria, the answer to whether Uber qualifies as disruptive is no. The source first poses a question and then supplies that theory-specific answer, rather than making contradictory claims. The generic meaning “industry-changing” is broader than this theory’s definition."
+    "objectID": "courses/controlling-preiskalkulation.html#selbstcheck",
+    "href": "courses/controlling-preiskalkulation.html#selbstcheck",
+    "title": "Vom Selbstkostenbetrag zum Listenpreis",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nWelche Aussage gilt im Beispiel?\n Der Zielverkaufspreis ist 120 € × 1,02.\n Der Zielverkaufspreis ist 120 € / 0,98.\n Der errechnete Listenpreis ist garantiert am Markt erzielbar.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig: Nach 2 % Skonto bleiben 98 % des Zielverkaufspreises. a verwendet die falsche Prozentbasis; c verwechselt Kostenkalkulation und Marktergebnis."
   },
   {
-    "objectID": "courses/db-disruption.html#abschnitt-5",
-    "href": "courses/db-disruption.html#abschnitt-5",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "Creative destruction is a broader lens",
-    "text": "Creative destruction is a broader lens\nSchumpeter’s creative destruction describes a broader process: economic structures change as new activities replace old ones. Do not treat this broad account as an interchangeable diagnostic test for Christensen-style disruption. In an answer, name the framework before classifying a case."
+    "objectID": "courses/controlling-preiskalkulation.html#verwandte-lernseiten",
+    "href": "courses/controlling-preiskalkulation.html#verwandte-lernseiten",
+    "title": "Vom Selbstkostenbetrag zum Listenpreis",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nDivisionskalkulation: Kosten je EinheitDen Zusammenhang weiterlernen.\nZuschlagskalkulation: Herstell- und SelbstkostenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/db-disruption.html#abschnitt-6",
-    "href": "courses/db-disruption.html#abschnitt-6",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "Self-check (SC — select one answer)",
-    "text": "Self-check (SC — select one answer)\n\nWhat is the strongest evidence for the lecture’s disruption concept?\n A digital firm has a very high valuation.\n A premium entrant immediately targets the incumbent’s best customers.\n An entrant starts with underserved users and later reaches mainstream quality.\nCheck\n\n\n\n\nAnswer and reasoning\n\nc is correct: it describes foothold and evolution together. Valuation (a) does not establish the mechanism. Premium entry (b) does not demonstrate a low-end or new-market foothold."
-  },
-  {
-    "objectID": "courses/db-disruption.html#related-study-pages",
-    "href": "courses/db-disruption.html#related-study-pages",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "Related study pages",
-    "text": "Related study pages\n\nInvention, use and digital generativityDistinguish invention from innovation and explain generativity.\nFour innovation dilemmasCompare choices and tensions in innovation management.\n \nBack to topic"
-  },
-  {
-    "objectID": "courses/db-disruption.html#abschnitt-7",
-    "href": "courses/db-disruption.html#abschnitt-7",
-    "title": "Disruptive innovation: a process, not a buzzword",
-    "section": "Source and limits",
-    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 23–31, current course 95696; rechecked 17 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published. From PDF p. 22 onward, printed slide numbers are one higher than physical PDF pages; references here consistently use physical pages.\n\nSection-to-source mapping\n\nAccess, early characteristics and evolutionary foothold criteria → physical PDF pp. 23, 31.\nIncumbent experience and vulnerability → pp. 26–28.\nHistorical IBM case → p. 29.\nUber question and theory-specific answer → pp. 30–31.\nCreative destruction → pp. 24–25.\nSelf-check reasoning → pp. 23, 31."
+    "objectID": "courses/controlling-preiskalkulation.html#quellen",
+    "href": "courses/controlling-preiskalkulation.html#quellen",
+    "title": "Vom Selbstkostenbetrag zum Listenpreis",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 18.10.2026.\n\nPreisschema und Prozentbasen → physische PDF-S. 24. Zahlen, Gegenprobe, Steuerannahme und Selbstcheck → eigene didaktische Anwendung. Marktgrenze → eigene Einordnung, kein zusätzlicher Quellenbefund.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/db-blockchain.html",
