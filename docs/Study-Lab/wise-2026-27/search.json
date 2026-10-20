@@ -203,7 +203,7 @@
     "href": "materials.html",
     "title": "Learnweb-Materialien",
     "section": "",
-    "text": "Stand: 20.10.2026 13:01\nDie Links führen zu den Originalen in Learnweb und erfordern deinen Hochschulzugang. Die Materialübersicht ist noch keine fachlich geprüfte Zusammenfassung.",
+    "text": "Stand: 20.10.2026 19:01\nDie Links führen zu den Originalen in Learnweb und erfordern deinen Hochschulzugang. Die Materialübersicht ist noch keine fachlich geprüfte Zusammenfassung.",
     "crumbs": [
       "Materialien"
     ]
@@ -213,7 +213,7 @@
     "href": "materials.html#controlling",
     "title": "Learnweb-Materialien",
     "section": "Controlling",
-    "text": "Controlling\n\nBWL3_Controlling_Blocktutorium_Zeitplan_WS2026.pdf\nCapital_flaschenpost.pdf\nCase Study - Driving Strategy at Nova Bank.pdf\nCoenenberg_Simplex.pdf\nControlling VL1.pdf\nControlling VL2_ohneVideo.pdf\nControlling VL3.pdf\nControlling_Tutorium 1.pdf\nDeckungsbeitragsrechnung am Beispiel einer Airline.pdf\nFlyerWiSe2026.pdf\nKaplanAnderson_HBR_2004.pdf\nKaplan_2014_Journal of Healthcare Management.pdf\nMengen_Urmersbach_2006_Rasselstein PKR Beispiel.pdf\nMünster.AI Vorstellung-1.pdf\nPfläging_Beyondbudgeting_CM_2003.pdf\nPlinkeReseUtzig_PKR_2015.pdf\nSimplex_Aufgaben_Sammlung_Lösungen.pdf\nSimplex_Aufgabensammlung_V2.pdf\nTechLabs_Vorlesungswerbung2026.pdf\nÜbersicht Tutoren WS2026.pdf\nVorstellung_Fempowerment_WiSe2026_DEU.pdf\nbdvb_Präsentation_Vorstellung_SoSe26 Kopie.pdf\nmove_flyer.pdf",
+    "text": "Controlling\n\nBWL3_Controlling_Blocktutorium_Zeitplan_WS2026.pdf\nCapital_flaschenpost.pdf\nCase Study - Driving Strategy at Nova Bank.pdf\nCoenenberg_Simplex.pdf\nControlling VL1.pdf\nControlling VL2_ohneVideo.pdf\nControlling VL3.pdf\nControlling VL4.pdf\nControlling_Tutorium 1.pdf\nControlling_Tutorium 2.pdf\nDeckungsbeitragsrechnung am Beispiel einer Airline.pdf\nFlyerWiSe2026.pdf\nKaplanAnderson_HBR_2004.pdf\nKaplan_2014_Journal of Healthcare Management.pdf\nMengen_Urmersbach_2006_Rasselstein PKR Beispiel.pdf\nMünster.AI Vorstellung-1.pdf\nPfläging_Beyondbudgeting_CM_2003.pdf\nPlinkeReseUtzig_PKR_2015.pdf\nSimplex_Aufgaben_Sammlung_Lösungen.pdf\nSimplex_Aufgabensammlung_V2.pdf\nTechLabs_Vorlesungswerbung2026.pdf\nÜbersicht Tutoren WS2026.pdf\nVorstellung_Fempowerment_WiSe2026_DEU.pdf\nbdvb_Präsentation_Vorstellung_SoSe26 Kopie.pdf\nmove_flyer.pdf",
     "crumbs": [
       "Materialien"
     ]
@@ -233,7 +233,7 @@
     "href": "materials.html#it-driven-innovation",
     "title": "Learnweb-Materialien",
     "section": "IT-driven Innovation",
-    "text": "IT-driven Innovation\n\nITDI 1.pdf\nITDI 2.pdf\nVideo Case Intro.pdf\nWomen+ in Information Systems (2).pdf",
+    "text": "IT-driven Innovation\n\nITDI 1.pdf\nITDI 2 - Leonardi (2011).pdf\nITDI 2 - Leonardi (2023).pdf\nITDI 2 - Markus Silver (2008).pdf\nITDI 2 - Norman (1999).pdf\nITDI 2 - Zammuto et al. (2007).pdf\nITDI 2.pdf\nITDI 3 - Dincelli et al. (2023).pdf\nITDI 3 - Geissler et al. (2023).pdf\nITDI 3 - Li et al. (2020).pdf\nITDI 3 - MANDATORY de Rond et al.pdf\nVideo Case Intro.pdf\nWomen+ in Information Systems (2).pdf",
     "crumbs": [
       "Materialien"
     ]
@@ -427,89 +427,172 @@
     "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 20.10.2026.\n\nGrundidee, praktische statt tatsächliche Kapazität und Verfügbarkeitsannahmen → physische PDF-S. 51. Kapazitäts- und Minutenkostensatz → S. 52. Gegenbeispiel mit 500.000 Minuten, Rundungsgegenprobe und Vermeidbarkeitsgrenze → eigene Ableitungen. Der Rückverweis „Folie 22“ auf S. 52 passt nicht zur Mitarbeiter-/Kostentabelle auf S. 28; verwendet werden die ausdrücklich angegebenen Zahlen auf S. 52.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
-    "objectID": "courses/db-blockchain-applications.html",
-    "href": "courses/db-blockchain-applications.html",
-    "title": "Blockchain beyond cryptocurrency",
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html",
+    "href": "courses/controlling-kapazitaet-kalkulation.html",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
     "section": "",
-    "text": "Begin with the application, not the labelSelf-check (SC)Source and limits\nDigital Business overview"
+    "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-1",
-    "href": "courses/db-blockchain-applications.html#abschnitt-1",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Learning goals",
-    "text": "Learning goals\nIdentify the coordination problem in a non-currency application and distinguish a token’s identity from the rights or real-world facts associated with it."
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html#grundlagen",
+    "href": "courses/controlling-kapazitaet-kalkulation.html#grundlagen",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nEin Maschinenstundensatz hängt nicht nur von Kostenarten ab, sondern auch von der angesetzten Nutzungsdauer. Verteilt man denselben fixen Jahresbetrag auf weniger Stunden, steigt der verrechnete Satz. Daraus folgt nicht, dass jede zusätzliche Stunde denselben höheren Betrag an zusätzlichen Ausgaben verursacht."
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-2",
-    "href": "courses/db-blockchain-applications.html#abschnitt-2",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Begin with the application, not the label",
-    "text": "Begin with the application, not the label\nBlockchain application scenarios include vaccine passports, supply-chain traceability and transparency, music-industry platforms such as Audius, and art-related non-fungible tokens. These are application illustrations, not comparative evidence that blockchain is always the best architecture. The slides offer much less implementation detail here than in the foundations section.\nTo turn this list into an explanation, apply the distinction between integrity, authorization and agreement: What is recorded, which parties need to agree, and what remains outside the record?\nVaccine passport: Which issuer’s statement is checked? A consistent record cannot independently establish the medical event.\nSupply chain: Which handover or product event is recorded? A false physical-world input can still be recorded consistently.\nMusic platform: Which participants exchange or coordinate value? A platform name alone does not establish contractual rights or governance rules.\nArt-related NFT: Which unique token changes hands? Token identity alone does not establish copyright or ownership of a physical artwork.\nThe questions and boundaries are original analytical prompts, not claims that the cited projects implemented particular features or failed in these ways. They help avoid answering a design question with a product name."
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html#eigenes-beispiel-zwei-auslastungspläne",
+    "href": "courses/controlling-kapazitaet-kalkulation.html#eigenes-beispiel-zwei-auslastungspläne",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "section": "Eigenes Beispiel: zwei Auslastungspläne",
+    "text": "Eigenes Beispiel: zwei Auslastungspläne\nEs gelten 32.000 € fixe Jahreskosten und 6 € variable Kosten je Betriebsstunde. Bei 2.000 geplanten Stunden beträgt der Vollkostensatz 32.000 / 2.000 + 6 = 22 €/h. Bei nur 1.000 geplanten Stunden lautet er 32.000 / 1.000 + 6 = 38 €/h. Die variablen Kosten je Stunde bleiben in diesem Modell gleich; allein der Fixkostenanteil je Stunde steigt von 16 auf 32 €.\nWird zunächst mit 22 €/h auf Basis von 2.000 Stunden geplant, tatsächlich aber nur 1.000 Stunden gearbeitet, werden 22.000 € verrechnet. Tatsächlich entstehen unter den Modellannahmen 32.000 + 6 × 1.000 = 38.000 € Kosten. Die Unterdeckung beträgt 16.000 €. Ein nachträglicher Satz von 38 €/h würde diese Kosten verteilen, löst aber das Auslastungsproblem nicht."
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-3",
-    "href": "courses/db-blockchain-applications.html#abschnitt-3",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Original learning example: tracing a food shipment",
-    "text": "Original learning example: tracing a food shipment\nImagine three firms recording successive handovers of one shipment. A shared history could support checking which handover was entered and by whom. If someone attaches the wrong product identifier at the first handover, later agreement on that identifier does not repair the initial mistake.\nA reasoned proposal must therefore specify input controls as well as record integrity. It should also ask whether participants actually need a shared agreement mechanism or whether a conventional database under an accepted operator would suffice. This is a design comparison derived from the lecture’s “cost of trust” framing, not evidence that one option is superior."
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html#zusatzauftrag-ausdrücklich-andere-frage",
+    "href": "courses/controlling-kapazitaet-kalkulation.html#zusatzauftrag-ausdrücklich-andere-frage",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "section": "Zusatzauftrag: ausdrücklich andere Frage",
+    "text": "Zusatzauftrag: ausdrücklich andere Frage\nEin Zusatzauftrag benötigt 100 Stunden. Bei freier Kapazität, unveränderten fixen Kosten und konstanten variablen Kosten verursacht er im Modell 100 × 6 € = 600 € zusätzliche Maschinenkosten. Die Verrechnung mit dem geplanten Vollkostensatz ergäbe dagegen 2.200 €. Der Unterschied ist keine Rechenpanne: Vollkostenverteilung und Veränderung der Gesamtkosten beantworten verschiedene Fragen.\nDie 600 € sind kein vollständiger Mindestpreis: Zusätzlich benötigtes Material, Lohn, Versand, auftragsbezogene Sonderkosten oder andere relevante Veränderungen fehlen noch. Bei einem Engpass kommen verdrängte Alternativen und damit Opportunitätskosten hinzu. Für langfristige Entscheidungen können auch bisher fixe Kapazitätskosten veränderbar werden."
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-4",
-    "href": "courses/db-blockchain-applications.html#abschnitt-4",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Fungible does not mean “digital”; non-fungible does not mean “copyright”",
-    "text": "Fungible does not mean “digital”; non-fungible does not mean “copyright”\nBitcoin units are interchangeable, whereas other applications may require units to be distinguished. Fungibility concerns interchangeability within the relevant class; non-fungibility concerns the need to identify a particular unit. Both can involve digital records.\nOriginal learning example: Ten interchangeable admission credits differ from a token identifying one numbered collectible. Identifying that collectible is still a different question from deciding what legal permissions the buyer receives. The lecture’s art-sale example illustrates a transaction; it does not by itself document a general transfer of copyright."
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html#begriffsspannung-bewusst-auseinanderhalten",
+    "href": "courses/controlling-kapazitaet-kalkulation.html#begriffsspannung-bewusst-auseinanderhalten",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "section": "Begriffsspannung bewusst auseinanderhalten",
+    "text": "Begriffsspannung bewusst auseinanderhalten\nEine feinere Maschinenzuordnung kann den Ressourcenverbrauch besser abbilden als ein pauschaler Lohnzuschlag. Dennoch bleiben im verrechneten Maschinenstundensatz fixe Anteile. Deshalb darf man aus einer detaillierteren Vollkostenkalkulation nicht automatisch Grenzkosten ableiten. „Besser zugerechnet“ und „durch einen Zusatzauftrag zusätzlich verursacht“ sind getrennt zu prüfen."
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-5",
-    "href": "courses/db-blockchain-applications.html#abschnitt-5",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "What the section cannot settle",
-    "text": "What the section cannot settle\nThe linked examples are historical teaching material. This page makes no claim that the projects are currently available, legally unchanged or commercially successful. Where the slides provide only a heading and external links, the implementation is not specified, rather than filled in with invented details."
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html#selbstcheck",
+    "href": "courses/controlling-kapazitaet-kalkulation.html#selbstcheck",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten unter den genannten Annahmen?\n Weniger Planstunden erhöhen den Fixkostenanteil je Stunde.\n Der Zusatzauftrag verursacht allein deshalb 2.200 € zusätzliche Maschinenkosten.\n Die 600 € berücksichtigen noch keine zusätzlichen Materialkosten.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 32.000 geteilt durch weniger Stunden. c hält die Rechnung auf Maschinenkosten begrenzt. b verwechselt Vollkostenzurechnung mit Kostenänderung: Bei freier Kapazität steigen hier nur die variablen Maschinenkosten um 600 €."
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-6",
-    "href": "courses/db-blockchain-applications.html#abschnitt-6",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Self-check (SC)",
-    "text": "Self-check (SC)\n\nWhich conclusion is supported by the application discussion?\n A blockchain entry proves a physical shipment was labelled correctly.\n Buying any NFT necessarily transfers the artist’s copyright.\n A traceability proposal must distinguish integrity of the record from reliability of its inputs.\nCheck\n\n\n\n\nShow the reasoning\n\nc is correct, applying the distinction between integrity and input reliability to traceability. a confuses a shared record with validated physical input. b adds an unsupported legal conclusion to the token distinction. Neither follows from the slides."
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html#verwandte-lernseiten",
+    "href": "courses/controlling-kapazitaet-kalkulation.html#verwandte-lernseiten",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nZuschlagsbasis: gleiche Kosten, andere StückkostenDen Zusammenhang weiterlernen.\nMaschinenstundensatz: Jahreskosten und NutzungsstundenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#related-study-pages",
-    "href": "courses/db-blockchain-applications.html#related-study-pages",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Related study pages",
-    "text": "Related study pages\n\nRecords, signatures and agreementUnderstand the mechanisms before discussing the coin.\nBitcoin: promises and trade-offsEvaluate benefits, criticisms and limits.\n \nBack to topic"
+    "objectID": "courses/controlling-kapazitaet-kalkulation.html#quellen",
+    "href": "courses/controlling-kapazitaet-kalkulation.html#quellen",
+    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 19.10.2026.\n\nLaufzeit im Nenner und Kostenbestandteile → physische PDF-S. 42–44. Vergleich der Selbstkostenvarianten und Entscheidungsfrage → PDF-S. 46–47. Begriffsspannung: PDF-S. 47 verbindet genauere Selbstkosten mit dem Kostenanstieg für ein weiteres Fahrrad; diese Formulierung ist für Vollkosten mit Fixkostenanteilen nicht allgemein gültig. Auslastungsrechnung, Unterdeckung, Zusatzauftrag und Selbstcheck → eigene didaktische Ableitung unter expliziten Annahmen, keine zusätzlichen offiziellen Skriptaufgaben.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
-    "objectID": "courses/db-blockchain-applications.html#abschnitt-7",
-    "href": "courses/db-blockchain-applications.html#abschnitt-7",
-    "title": "Blockchain beyond cryptocurrency",
-    "section": "Source and limits",
-    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4, 20–24. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nApplication illustrations: vaccine passports → physical PDF p. 20; supply chains → p. 21; Audius → p. 22; NFTs and art-sale example → pp. 23–24.\nRecord integrity, input reliability and shipment example → original analytical application of p. 4 to p. 21.\nFungibility → p. 23; rights boundary and collectible example → original interpretation, not a legal finding established by the slides.\nSelf-check → pp. 4, 21, 23–24."
-  },
-  {
-    "objectID": "courses/digital-business.html",
-    "href": "courses/digital-business.html",
-    "title": "Digital Business",
+    "objectID": "courses/vwl-grenzentscheidung.html",
+    "href": "courses/vwl-grenzentscheidung.html",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
     "section": "",
-    "text": "Choose a topic, then a source-based study page. These selected sections do not cover the entire course.\n\nInnovation3 study pages · concepts, examples and self-checks.\nBlockchain3 study pages · concepts, examples and self-checks.\n \nOriginal course materials · All courses",
-    "crumbs": [
-      "Aktuelle Kurse",
-      "Digital Business"
-    ]
+    "text": "Der scheinbare VerlustauftragSelbstcheck (MC)Quelle und Grenzen\nVWL-Übersicht"
   },
   {
-    "objectID": "courses/digital-business.html#topic-areas",
-    "href": "courses/digital-business.html#topic-areas",
-    "title": "Digital Business",
+    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-1",
+    "href": "courses/vwl-grenzentscheidung.html#abschnitt-1",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Lernziel",
+    "text": "Lernziel\nEine Zusatzbestellung anhand zusätzlicher Erlöse und Kosten beurteilen und die Bedingungen der Rechnung offenlegen."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-2",
+    "href": "courses/vwl-grenzentscheidung.html#abschnitt-2",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Der scheinbare Verlustauftrag",
+    "text": "Der scheinbare Verlustauftrag\nEine Pizzeria zahlt monatlich 5.000 € für Löhne und Mieten sowie 3,50 € für Zutaten je Pizza. Sie verkauft 1.000 Pizzen. Ein Online-Vermittler bietet 5 € für zusätzliche Pizzen; die Kundengruppen überschneiden sich nicht. Daraus ergibt sich zunächst ein durchschnittlicher Kostenbetrag von 5.000 / 1.000 + 3,50 = 8,50 € je Pizza.\nIst ein Preis von 5 € deshalb automatisch abzulehnen? Nein: Für die Veränderung zählt, welche Erlöse und Kosten zusätzlich entstehen. Die ohnehin anfallenden 5.000 € werden durch die Zusatzbestellung nicht automatisch noch einmal fällig."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-3",
+    "href": "courses/vwl-grenzentscheidung.html#abschnitt-3",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Was eine zusätzliche Pizza verändert",
+    "text": "Was eine zusätzliche Pizza verändert\nUnter der ausdrücklich ergänzten Annahme freier Kapazität und unveränderter Löhne/Mieten vergleicht die folgende eigene Grafik den Zusatzpreis mit den Zutatenkosten. Weitere variable Kosten sind im vereinfachten Modell nicht enthalten.\n\n\n\nEigene Darstellung zum Pizzeria-Beispiel. Beträge pro zusätzlicher Pizza.\n\n\nVon 5 € zusätzlichem Erlös verbleiben nach 3,50 € Zutatenkosten 1,50 € zusätzlicher Deckungsbeitrag. Für beispielhaft 100 zusätzliche Pizzen steigt das Monatsergebnis um 150 €. Das bedeutet weder, dass die Pizzeria insgesamt Gewinn macht, noch dass 5 € langfristig alle Kosten decken. Der Preis der bisherigen 1.000 Pizzen ist im vereinfachten Ausgangsfall nicht angegeben; der Gesamtgewinn lässt sich deshalb nicht ausrechnen."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-4",
+    "href": "courses/vwl-grenzentscheidung.html#abschnitt-4",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Wann kippt die Empfehlung?",
+    "text": "Wann kippt die Empfehlung?\nEigene Sensitivitätsrechnung: Fallen zusätzlich 2 € Kurierkosten pro Pizza an, sind die zusätzlichen Kosten 5,50 €. Bei 5 € Erlös sinkt das Ergebnis dann um 0,50 € je Zusatzpizza. Braucht der Betrieb zusätzliches Personal oder verdrängt er profitablere Bestellungen, müssen auch diese Folgen berücksichtigt werden.\nDie Kundengruppen überschneiden sich im Ausgangsfall nicht. Kapazitätsgrenzen und Lieferkosten sind dagegen nicht festgelegt. Die Annahme „nur Zutaten sind zusätzlich“ ist daher eine offenzulegende Modellannahme, kein vollständig belegter Betriebszustand. Veränderte Kosten und Nutzen verändern Anreize; sie sind nicht bloß Buchungspositionen.\nMerksatz: Durchschnittskosten beantworten eine andere Frage als Grenzkosten. Kurzfristig vorteilhafte Zusatzaufträge beweisen keine langfristige Tragfähigkeit."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-5",
+    "href": "courses/vwl-grenzentscheidung.html#abschnitt-5",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten unter den genannten vereinfachten Annahmen?\n 100 zusätzliche Pizzen verbessern das Ergebnis um 150 €.\n Ein Preis unter 8,50 € muss jeden Zusatzauftrag unvorteilhaft machen.\n Zusätzliche Lieferkosten können die Entscheidung umkehren.\n Der Gesamtgewinn der Pizzeria ist sicher positiv.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. a: 100 × (5 − 3,50) = 150 €. b verwechselt Durchschnitts- und Zusatzkosten. c folgt aus dem Vergleich aller zusätzlichen Kosten mit dem Erlös. d ist mangels Ausgangserlösen nicht bestimmbar."
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#verwandte-lernseiten",
+    "href": "courses/vwl-grenzentscheidung.html#verwandte-lernseiten",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-6",
+    "href": "courses/vwl-grenzentscheidung.html#abschnitt-6",
+    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 15–17 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nDer scheinbare Verlustauftrag und zusätzliche Pizza → PDF-S. 15–16: Ausgangszahlen und Grenzbetrachtung.\nWann kippt die Empfehlung? → PDF-S. 15–17: getrennte Kundengruppen, Grenzentscheidung und veränderte Anreize. Freie Kapazität, 100 Zusatzpizzen und Kurierkosten sind eigene, ausdrücklich erklärte Ergänzungen.\nSelbstcheck → PDF-S. 15–16; eigene Anwendung der Zusatzrechnung. Die Grafik ist eine eigene Darstellung zum Pizzeria-Beispiel auf PDF-S. 15–16."
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html",
+    "href": "courses/controlling-komplexitaetseffekt.html",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
     "section": "",
-    "text": "Choose a topic, then a source-based study page. These selected sections do not cover the entire course.\n\nInnovation3 study pages · concepts, examples and self-checks.\nBlockchain3 study pages · concepts, examples and self-checks.\n \nOriginal course materials · All courses",
-    "crumbs": [
-      "Aktuelle Kurse",
-      "Digital Business"
-    ]
+    "text": "GrundlagenSelbstcheckQuellen"
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html#grundlagen",
+    "href": "courses/controlling-komplexitaetseffekt.html#grundlagen",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nKomplexität kann zusätzliche Tätigkeiten auslösen: mehr Varianten, spezielle Prüfungen oder häufigere Abstimmungen. Wenn diese Tätigkeiten überproportional zunehmen, bildet ein einheitlicher Zuschlag auf eine langsam wachsende Bezugsgröße den Ressourcenbedarf nicht mehr angemessen ab."
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html#die-kostenverläufe-lesen",
+    "href": "courses/controlling-komplexitaetseffekt.html#die-kostenverläufe-lesen",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
+    "section": "Die Kostenverläufe lesen",
+    "text": "Die Kostenverläufe lesen\nDie folgende schematische Darstellung vergleicht Einzelkosten, Gemeinkostenzuschlag und tatsächliche Kosten über zunehmende Komplexität. Die grauen Flächen zeigen die Über- beziehungsweise Unterverrechnung gegenüber dem dargestellten tatsächlichen Kostenverlauf.\nDie Grafik lässt sich auf kleinen Bildschirmen seitlich verschieben und groß öffnen.\n\nLinks liegt die Zuschlagslinie über dem tatsächlichen Kostenverlauf: Einfache Produkte erhalten zu viel Gemeinkosten. Rechts liegt sie darunter: Komplexe Produkte erhalten zu wenig. Der Schnittpunkt markiert im Schema den Wechsel der Richtung, nicht einen allgemein gültigen optimalen Komplexitätsgrad.\nDie Darstellung hat keine numerische Kostenskala. Die Buchstaben A bis E kennzeichnen Positionen im Schema, keine messbaren Eurobeträge. Es dürfen daraus weder exakte Kostendifferenzen noch ein universeller Kurvenverlauf abgelesen werden."
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html#eigenes-beispiel-gleicher-materialwert-andere-prüfungen",
+    "href": "courses/controlling-komplexitaetseffekt.html#eigenes-beispiel-gleicher-materialwert-andere-prüfungen",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
+    "section": "Eigenes Beispiel: gleicher Materialwert, andere Prüfungen",
+    "text": "Eigenes Beispiel: gleicher Materialwert, andere Prüfungen\nZwei Varianten verwenden jeweils Material für 100 €. Die Standardvariante benötigt eine Prüfung, die Sondervariante vier vergleichbare Prüfungen. Bei angenommenen 15 € je Prüfung entstehen 15 € beziehungsweise 60 € Prüfkosten. Ein gleicher Materialwertzuschlag würde beide gleich belasten und diesen Unterschied verdecken.\nIm vereinfachten Beispiel seien insgesamt 75 € Prüfkosten auf genau diese beiden Einheiten zu verteilen. Ein einheitlicher Zuschlag verteilt 37,50 € je Einheit: Die einfache Variante erhält 22,50 € zu viel, die komplexe 22,50 € zu wenig. Die Summe bleibt 75 €. Andere Tätigkeiten sind nicht enthalten; reale Komplexitätskosten sind damit nicht vollständig erklärt."
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html#konsequenz-für-entscheidungen",
+    "href": "courses/controlling-komplexitaetseffekt.html#konsequenz-für-entscheidungen",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
+    "section": "Konsequenz für Entscheidungen",
+    "text": "Konsequenz für Entscheidungen\nEin zu günstig kalkuliertes komplexes Produkt kann wirtschaftlich attraktiver erscheinen, als es unter passenden Kostentreibern ist. Umgekehrt kann ein einfaches Produkt zu teuer wirken. Daraus folgt kein automatischer Streichungsbeschluss: Nachfrage, Erlöse, Kapazitäten und tatsächlich vermeidbare Kosten müssen zusätzlich geprüft werden."
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html#selbstcheck",
+    "href": "courses/controlling-komplexitaetseffekt.html#selbstcheck",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nWelche Interpretation ist zulässig?\n Die Grafik beweist einen exakten Kostennachteil von 100 € für Produkt E.\n Ein einheitlicher Zuschlag kann einfache Produkte über- und komplexe unterbelasten.\n Eine neue Verteilung der 75 € Prüfkosten senkt deren Summe automatisch.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb beschreibt den dargestellten Komplexitätseffekt. a erfindet Zahlen trotz fehlender numerischer Skala. c ist falsch: Im Beispiel ändert sich die Zuordnung, nicht die Summe."
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html#verwandte-lernseiten",
+    "href": "courses/controlling-komplexitaetseffekt.html#verwandte-lernseiten",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nAllokationseffekt: Wert oder Vorgang?Den Zusammenhang weiterlernen.\nDegressionseffekt: Prozesskosten je StückDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/controlling-komplexitaetseffekt.html#quellen",
+    "href": "courses/controlling-komplexitaetseffekt.html#quellen",
+    "title": "Komplexitätseffekt: einfache und aufwendige Produkte",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 20.10.2026.\n\nSchematischer Komplexitätseffekt und zugeschnittene Grafik → physische PDF-S. 40, Controlling VL3.pdf, Prof. Dr. Martin Artz. Achsen, Kurven, Beschriftungen und Hinweisflächen erhalten. Prüfbeispiel, Rechenbeträge und Entscheidungsgrenzen → eigene didaktische Erläuterungen.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/operations-research.html",
@@ -633,6 +716,17 @@
     "title": "Controlling",
     "section": "Einsatzgrenzen und Standardkosten",
     "text": "Einsatzgrenzen und Standardkosten\n\nProzesskostenrechnung: Nutzen und EinsatzgrenzenRechenweg, Annahmen und begründeter Selbstcheck.\nProzesskostenrechnung: Verbreitungszahlen richtig lesenRechenweg, Annahmen und begründeter Selbstcheck.\nStandardkosten: stabile Bedingungen und AbweichungenRechenweg, Annahmen und begründeter Selbstcheck.",
+    "crumbs": [
+      "Aktuelle Kurse",
+      "Controlling"
+    ]
+  },
+  {
+    "objectID": "courses/controlling.html#informationseffekte-der-prozesskostenrechnung",
+    "href": "courses/controlling.html#informationseffekte-der-prozesskostenrechnung",
+    "title": "Controlling",
+    "section": "Informationseffekte der Prozesskostenrechnung",
+    "text": "Informationseffekte der Prozesskostenrechnung\n\nAllokationseffekt: Wert oder Vorgang?Rechenweg, Annahmen und begründeter Selbstcheck.\nKomplexitätseffekt: einfache und aufwendige ProdukteRechenweg, Annahmen und begründeter Selbstcheck.\nDegressionseffekt: Prozesskosten je StückRechenweg, Annahmen und begründeter Selbstcheck.",
     "crumbs": [
       "Aktuelle Kurse",
       "Controlling"
@@ -1227,452 +1321,179 @@
     "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Winter 2026/27, Prof. Dr. Martin Artz. Physische PDF-Seiten (hier gleich den gedruckten Seitenzahlen), gelesen am 18.10.2026. Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.\n\nZwei Fragen und Strom-/Leitungsbeispiele → PDF-S. 11–13.\nBegriffliche Spannung → PDF-S. 12: dortige Aussage zu fixen Einzelkosten; Wechsel der Produktperspektive auf PDF-S. 13. Die Interpretation wird ausdrücklich eingegrenzt.\nMaschinenbeispiel und Selbstcheck → eigene Erläuterung der beiden Klassifikationsdimensionen, keine Originalaufgabe."
   },
   {
-    "objectID": "courses/om-leistungsziele.html",
-    "href": "courses/om-leistungsziele.html",
-    "title": "OM: Leistungsziele und Kennzahlen",
+    "objectID": "courses/controlling-allokationseffekt.html",
+    "href": "courses/controlling-allokationseffekt.html",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
     "section": "",
-    "text": "Vom Prozess zum LeistungszielSelbstcheck (SC)Quelle und Abgrenzung\nOM-Übersicht"
+    "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/om-leistungsziele.html#abschnitt-1",
-    "href": "courses/om-leistungsziele.html#abschnitt-1",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Lernziele",
-    "text": "Lernziele\nLeistungsziele auseinanderhalten, Zielkonflikte erklären und Produktivität sowie Little’s Law mit passenden Einheiten berechnen."
+    "objectID": "courses/controlling-allokationseffekt.html#grundlagen",
+    "href": "courses/controlling-allokationseffekt.html#grundlagen",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nEin wertabhängiger Gemeinkostenzuschlag und ein mengenbezogener Prozesskostensatz beantworten unterschiedliche Fragen. Der Zuschlag verteilt Kosten proportional zum Materialwert. Ein Prozesskostensatz verteilt sie nach dem angenommenen Ressourcenverbrauch des Prozesses. Bei gleicher Prozessbeanspruchung können deshalb unterschiedlich teure Materialien dieselben Prozesskosten erhalten."
   },
   {
-    "objectID": "courses/om-leistungsziele.html#abschnitt-2",
-    "href": "courses/om-leistungsziele.html#abschnitt-2",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Vom Prozess zum Leistungsziel",
-    "text": "Vom Prozess zum Leistungsziel\nOM gestaltet, steuert und verbessert Prozesse für Güter und Dienstleistungen. Inputs werden in Outputs umgewandelt; Umweltbedingungen beeinflussen diese Transformation.\nFür die Prozessgestaltung sind sechs Ziele zu unterscheiden:\n\nQualität – richtig liefern: Die Leistung ist spezifikationsgerecht und fehlerfrei.\nGeschwindigkeit – schnell liefern: Die Zeit von der Anfrage bis zur Lieferung ist kurz.\nZuverlässigkeit – pünktlich liefern: Zugesagte Termine werden eingehalten.\nFlexibilität – Änderungen ermöglichen: Produkt, Mix, Menge oder Lieferung lassen sich anpassen.\nKosten – wirtschaftlich leisten: Der Ressourceneinsatz je Leistung ist gering.\nNachhaltigkeit – verantwortungsvoll leisten: Ökologische und soziale Auswirkungen werden berücksichtigt.\n\nEigenes Lernbeispiel: Ein Reparaturbetrieb verspricht fünf Tage und liefert zuverlässig nach fünf Tagen. Er kann zuverlässig sein, obwohl ein Konkurrent schon nach zwei Tagen liefert. Geschwindigkeit und Zuverlässigkeit messen also nicht dasselbe.\nMehr Varianten können Rüstaufwand und Stückkosten erhöhen. Hohe Lieferbereitschaft kann mehr Bestand verlangen. Solche Trade-offs erfordern Prioritäten, sind aber nicht unveränderlich: Material- und Energieeffizienz können Kosten und Emissionen zugleich senken."
+    "objectID": "courses/controlling-allokationseffekt.html#drei-motoren-im-vergleich",
+    "href": "courses/controlling-allokationseffekt.html#drei-motoren-im-vergleich",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
+    "section": "Drei Motoren im Vergleich",
+    "text": "Drei Motoren im Vergleich\nFür Motor A betragen die Materialeinzelkosten 3,80 €, für B 5 € und für C 12 €. Mit einem Zuschlag von 189 % ergeben sich Materialgemeinkosten von gerundet 7,18 €, 9,45 € und 22,68 €. Die prozessorientierte Rechnung setzt dagegen für jeden Motor 8,75 € je Stück an.\nDefiniert man den Allokationseffekt als Zuschlagsbetrag minus Prozesskostenbetrag, erhält man für A −1,57 €, für B +0,70 € und für C +13,93 €. Ein positives Vorzeichen bedeutet in dieser Definition: Die Zuschlagskalkulation rechnet mehr Gemeinkosten zu. Bei Motor C ist der Abstand am größten; bei A ist die Richtung umgekehrt.\nDie Aussage setzt vergleichbare Prozessbeanspruchung pro Stück voraus. Ein einheitlicher Satz wäre nicht schon dadurch sachgerecht, dass die Teile alle Motoren heißen. Unterschiedliche Prüfungen oder Beschaffungsvorgänge könnten zusätzliche Treiber erfordern."
   },
   {
-    "objectID": "courses/om-leistungsziele.html#abschnitt-3",
-    "href": "courses/om-leistungsziele.html#abschnitt-3",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Produktivität rechnen",
-    "text": "Produktivität rechnen\nEs gilt: Produktivität = Output / Input. Arbeitsproduktivität betrachtet nur den Input Arbeit, nicht sämtliche Kosten.\nDas MünsterRad-Beispiel liefert 120 Räder mit 300 Arbeitsstunden, später 135 Räder mit denselben Stunden:\n\nVorher: 120 / 300 = 0,40 Räder/h.\nNachher: 135 / 300 = 0,45 Räder/h.\nRelative Steigerung: (0,45 − 0,40) / 0,40 = 12,5 %.\n\nDie Differenz 0,05 Räder/h ist keine Steigerung um 5 %. Für eine Mehrfaktorproduktivität müssen mehrere Inputs in einer vergleichbaren Bewertung zusammengeführt werden."
+    "objectID": "courses/controlling-allokationseffekt.html#andere-verteilung-ist-keine-einsparung",
+    "href": "courses/controlling-allokationseffekt.html#andere-verteilung-ist-keine-einsparung",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
+    "section": "Andere Verteilung ist keine Einsparung",
+    "text": "Andere Verteilung ist keine Einsparung\nBei C sinken die zugerechneten Gemeinkosten rechnerisch von 22,68 € auf 8,75 €. Das ist keine nachgewiesene Auszahlungseinsparung von 13,93 €. Zunächst ändert sich die Kostenzuordnung. Ob Personal, Räume oder andere Ressourcen tatsächlich reduziert werden können, muss gesondert untersucht werden.\nAus drei Stückwerten ohne Produktionsmengen lässt sich außerdem keine Gesamtkostensumme und keine vollständige Überleitungsrechnung für das Unternehmen ermitteln. Für einen Summenvergleich wären dieselbe Kostenbasis, dieselbe Periode und alle relevanten Mengen erforderlich."
   },
   {
-    "objectID": "courses/om-leistungsziele.html#abschnitt-4",
-    "href": "courses/om-leistungsziele.html#abschnitt-4",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Little’s Law: Bestand ist nicht Durchsatz",
-    "text": "Little’s Law: Bestand ist nicht Durchsatz\nI = R × T verknüpft mittleren Bestand I, Durchsatz R und Durchlaufzeit T. Im Werkstattbeispiel: 20 Räder/Tag × 3 Tage = 60 Räder im System.\nAls ergänzende Anwendungshilfe: Systemgrenzen und Zeitbasis müssen übereinstimmen; verwendet werden langfristige Mittelwerte eines stabilen Flusssystems. Nicht aus einer Momentaufnahme beliebige Tageswerte multiplizieren.\nEigenes Lernbeispiel: Bei unverändert 20 Rädern/Tag und nur zwei Tagen Durchlaufzeit ergibt sich ein mittlerer Bestand von 40 Rädern. Weniger Bestand ist hier die Folge kürzerer Durchlaufzeit bei gleichem Durchsatz, nicht automatisch weniger Nachfrage."
+    "objectID": "courses/controlling-allokationseffekt.html#eigenes-gegenbeispiel",
+    "href": "courses/controlling-allokationseffekt.html#eigenes-gegenbeispiel",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
+    "section": "Eigenes Gegenbeispiel",
+    "text": "Eigenes Gegenbeispiel\nZwei Teile kosten im Einkauf 10 € und 100 €, lösen aber jeweils genau eine gleich aufwendige Bestellung aus. Bei 20 € Prozesskosten je Bestellung erhalten beide 20 € Beschaffungskosten. Ein Wertzuschlag von 50 % würde 5 € und 50 € zuordnen. Der teurere Einkaufspreis allein belegt hier keinen höheren Beschaffungsaufwand."
   },
   {
-    "objectID": "courses/om-leistungsziele.html#abschnitt-5",
-    "href": "courses/om-leistungsziele.html#abschnitt-5",
-    "title": "OM: Leistungsziele und Kennzahlen",
-    "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nBei 15 Aufträgen pro Tag und vier Tagen mittlerer Durchlaufzeit: Wie groß ist der mittlere Bestand?\n 60 Aufträge\n 3,75 Aufträge\n 60 Aufträge pro Tag\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na ist richtig: I = 15 Aufträge/Tag × 4 Tage = 60 Aufträge. b dividiert statt zu multiplizieren; c verwechselt Bestand mit einer Rate."
+    "objectID": "courses/controlling-allokationseffekt.html#selbstcheck",
+    "href": "courses/controlling-allokationseffekt.html#selbstcheck",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind richtig?\n Ein positiver Effekt bedeutet hier eine höhere Zurechnung durch den Zuschlag.\n Motor C spart durch die andere Zuordnung sicher 13,93 € Auszahlung je Stück.\n Ein einheitlicher Prozesssatz setzt passende Annahmen über die Prozessbeanspruchung voraus.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus der ausdrücklich festgelegten Differenzrichtung. c benennt die sachliche Voraussetzung. b verwechselt eine veränderte Zurechnung mit einer tatsächlich vermeidbaren Ausgabe."
   },
   {
-    "objectID": "courses/om-leistungsziele.html#verwandte-lernseiten",
-    "href": "courses/om-leistungsziele.html#verwandte-lernseiten",
-    "title": "OM: Leistungsziele und Kennzahlen",
+    "objectID": "courses/controlling-allokationseffekt.html#verwandte-lernseiten",
+    "href": "courses/controlling-allokationseffekt.html#verwandte-lernseiten",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nKomplexitätseffekt: einfache und aufwendige ProdukteDen Zusammenhang weiterlernen.\nDegressionseffekt: Prozesskosten je StückDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/om-leistungsziele.html#abschnitt-6",
-    "href": "courses/om-leistungsziele.html#abschnitt-6",
-    "title": "OM: Leistungsziele und Kennzahlen",
+    "objectID": "courses/controlling-allokationseffekt.html#quellen",
+    "href": "courses/controlling-allokationseffekt.html#quellen",
+    "title": "Allokationseffekt: Wert oder Vorgang?",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 12–15, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nVom Prozess zum Leistungsziel: PDF-S. 12–14 und 34 (Definition, Transformation, sechs Ziele und Trade-offs).\nProduktivität rechnen: PDF-S. 15 (Formel, Teil-/Mehrfaktorproduktivität und MünsterRad-Zahlen).\nLittle’s Law und Selbstcheck: PDF-S. 15 (Formel und Werkstattbeispiel). Der 40-Räder-Fall und die Prüfungsaufgabe sind eigene Anwendungen. Übereinstimmende Systemgrenzen, Zeitbasis und stabile langfristige Mittelwerte sind ergänzende Anwendungshinweise."
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 20.10.2026.\n\nMotorwerte, Zuschlag, Prozesssatz und Differenzrichtung → physische PDF-S. 39. Annahmenprüfung, Summengrenze und eigenes Bestellbeispiel → didaktische Erläuterungen; keine zusätzlichen Unternehmensdaten.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
-    "objectID": "courses/db-innovation-foundations.html",
-    "href": "courses/db-innovation-foundations.html",
-    "title": "Innovation: invention, use and digital generativity",
+    "objectID": "courses/db-blockchain-foundations.html",
+    "href": "courses/db-blockchain-foundations.html",
+    "title": "Blockchain: records, signatures and agreement",
     "section": "",
-    "text": "From knowledge to actual useSelf-check (SC — select one answer)Source and limits\nDigital Business overview"
+    "text": "Start with the record, not the coinSelf-check (SC)Source and limits\nDigital Business overview"
   },
   {
-    "objectID": "courses/db-innovation-foundations.html#abschnitt-1",
-    "href": "courses/db-innovation-foundations.html#abschnitt-1",
-    "title": "Innovation: invention, use and digital generativity",
-    "section": "Learning goal",
-    "text": "Learning goal\nDistinguish a technical invention from an innovation, and explain why digital innovation is not simply any use of a computer."
+    "objectID": "courses/db-blockchain-foundations.html#abschnitt-1",
+    "href": "courses/db-blockchain-foundations.html#abschnitt-1",
+    "title": "Blockchain: records, signatures and agreement",
+    "section": "Learning goals",
+    "text": "Learning goals\nDistinguish blockchain from Bitcoin and explain why integrity, authorization and agreement solve different problems."
   },
   {
-    "objectID": "courses/db-innovation-foundations.html#abschnitt-2",
-    "href": "courses/db-innovation-foundations.html#abschnitt-2",
-    "title": "Innovation: invention, use and digital generativity",
-    "section": "From knowledge to actual use",
-    "text": "From knowledge to actual use\nCreating a new product, process or service differs from putting it into actual use. Invention converts new knowledge into such an artefact or method. Innovation also includes its actual use. A working prototype is therefore not sufficient evidence of innovation. Inventors and entrepreneurs perform different roles, but one person can perform both.\nOwn teaching example: A team invents a sensor that detects water leaks. A laboratory prototype demonstrates technical feasibility. A housing provider then integrates sensors into maintenance routines and responds to alerts: the new technology has entered actual use. A patent alone would not establish this transition. Nor does actual use automatically prove profitability or social benefit."
+    "objectID": "courses/db-blockchain-foundations.html#abschnitt-2",
+    "href": "courses/db-blockchain-foundations.html#abschnitt-2",
+    "title": "Blockchain: records, signatures and agreement",
+    "section": "Start with the record, not the coin",
+    "text": "Start with the record, not the coin\nA blockchain is an append-only, auditable record secured through cryptography and a consensus protocol. “Append-only” describes adding entries to a history, rather than silently overwriting the old record. Auditability concerns the ability to inspect that history. Neither term, on its own, proves that a recorded claim about the outside world is true.\nThree building blocks address different tasks. The focused diagram retains their labels and relationships:\n\n\n\n\nRecords, cryptographic protection and agreement play complementary roles. Provenance is listed in the final source section. On narrow screens, scroll within the diagram to retain readable labels.\n\nOpen the diagram at full size.\nRead the diagram as a division of responsibilities, not as a chronology in which one component makes the others unnecessary. Hash functions support tamper resistance and integrity; digital signatures express authorization or consent; consensus establishes agreement among participants.\nHash function — integrity. Ask whether the represented data has changed. This alone does not establish whether a real-world event was described honestly.\nDigital signature — authorization. Ask whether the entry was authorized using the relevant signing key. This alone does not establish whether all participants accept the same history.\nConsensus protocol — agreement. Ask how participants agree on the record. Agreement alone does not establish whether the original input was factually correct.\nThese boundaries are an original learning interpretation of the separation of functions, not an additional slide quotation. Permissioned and permissionless arrangements differ: participation rules belong in the analysis instead of assuming every blockchain is open to everyone."
   },
   {
-    "objectID": "courses/db-innovation-foundations.html#abschnitt-3",
-    "href": "courses/db-innovation-foundations.html#abschnitt-3",
-    "title": "Innovation: invention, use and digital generativity",
-    "section": "What makes innovation digital?",
-    "text": "What makes innovation digital?\nDigital innovation can be understood from two perspectives. One covers IT-enabled products, processes and business models that adopters perceive as new and that require significant changes from them. The other focuses on novel combinations of digital and physical components. These are complementary scopes, not identical definitions: the first explicitly includes processes and business models, whereas the second stresses recombination in products.\nFor the sensor example, the physical sensor, software and maintenance workflow can be analysed separately. Merely buying an ordinary laptop does not demonstrate significant adopter change or a new combination."
+    "objectID": "courses/db-blockchain-foundations.html#abschnitt-3",
+    "href": "courses/db-blockchain-foundations.html#abschnitt-3",
+    "title": "Blockchain: records, signatures and agreement",
+    "section": "Original learning example: a delivery record",
+    "text": "Original learning example: a delivery record\nSuppose a supplier records “package delivered”. A signed entry can link authorization to a signing key, and an integrity check can expose a changed entry. Agreement on the recorded history still does not demonstrate that the package reached the customer. Checking delivery evidence is a separate task. This example illustrates why a technically consistent ledger does not remove every source of trust."
   },
   {
-    "objectID": "courses/db-innovation-foundations.html#abschnitt-4",
-    "href": "courses/db-innovation-foundations.html#abschnitt-4",
-    "title": "Innovation: invention, use and digital generativity",
-    "section": "Generativity: possibilities beyond the original plan",
-    "text": "Generativity: possibilities beyond the original plan\nGenerativity is the capacity for change created by varied, uncoordinated participants. Three characteristics enable it:\n\nHomogenization of data: different kinds of information can be represented digitally and combined.\nReprogrammability: software can change what a device or system does without rebuilding every physical component.\nSelf-referential nature: digital technologies support the creation and development of further digital technologies.\n\nThese descriptions explain the characteristics rather than adding formal definitions. Own extension of the example: independent developers reuse sensor data for an unexpected maintenance application. This illustrates the possibility of generativity, not a guarantee that every digital product will attract such contributions.\nExam trap: “New”, “digital”, “used” and “successful” are separate claims. State what evidence supports each."
+    "objectID": "courses/db-blockchain-foundations.html#abschnitt-4",
+    "href": "courses/db-blockchain-foundations.html#abschnitt-4",
+    "title": "Blockchain: records, signatures and agreement",
+    "section": "Bitcoin is one use case",
+    "text": "Bitcoin is one use case\nBitcoin applies a blockchain to financial transaction records; it is not the definition of blockchain, and other cryptocurrencies also exist. In an exam explanation, first identify the record and the coordination problem, then name the application. “Blockchain means Bitcoin” reverses that relationship.\nScope boundary: an external video is assigned. The mechanisms in that video have not been independently processed here; this page does not claim to teach its full technical account."
   },
   {
-    "objectID": "courses/db-innovation-foundations.html#abschnitt-5",
-    "href": "courses/db-innovation-foundations.html#abschnitt-5",
-    "title": "Innovation: invention, use and digital generativity",
-    "section": "Self-check (SC — select one answer)",
-    "text": "Self-check (SC — select one answer)\n\nWhich observation most directly distinguishes innovation from invention?\n A patent was filed.\n The new solution is put into actual use.\n The prototype contains software.\nCheck\n\n\n\n\nAnswer and reasoning\n\nb is correct: actual use supplies the distinction. A patent (a) concerns protection rather than use; software (c) concerns technical composition rather than adoption."
+    "objectID": "courses/db-blockchain-foundations.html#abschnitt-5",
+    "href": "courses/db-blockchain-foundations.html#abschnitt-5",
+    "title": "Blockchain: records, signatures and agreement",
+    "section": "Self-check (SC)",
+    "text": "Self-check (SC)\n\nA signed delivery entry is accepted into a shared history. What follows most defensibly?\n The package must physically have arrived.\n Authorization, integrity and agreement must be distinguished from the truth of the delivery claim.\n The record must represent a Bitcoin payment.\nCheck\n\n\n\n\nShow the reasoning\n\nb is correct. The separate functions do not verify the physical delivery. a confuses agreement about data with truth outside the system; c mistakes one application for the technology."
   },
   {
-    "objectID": "courses/db-innovation-foundations.html#related-study-pages",
-    "href": "courses/db-innovation-foundations.html#related-study-pages",
-    "title": "Innovation: invention, use and digital generativity",
+    "objectID": "courses/db-blockchain-foundations.html#related-study-pages",
+    "href": "courses/db-blockchain-foundations.html#related-study-pages",
+    "title": "Blockchain: records, signatures and agreement",
     "section": "Related study pages",
-    "text": "Related study pages\n\nFour innovation dilemmasCompare choices and tensions in innovation management.\nDisruptive innovationExplain entry mechanisms and incumbent vulnerability.\n \nBack to topic"
+    "text": "Related study pages\n\nBitcoin: promises and trade-offsEvaluate benefits, criticisms and limits.\nApplications beyond cryptocurrencyAssess applications and token distinctions.\n \nBack to topic"
   },
   {
-    "objectID": "courses/db-innovation-foundations.html#abschnitt-6",
-    "href": "courses/db-innovation-foundations.html#abschnitt-6",
-    "title": "Innovation: invention, use and digital generativity",
+    "objectID": "courses/db-blockchain-foundations.html#abschnitt-6",
+    "href": "courses/db-blockchain-foundations.html#abschnitt-6",
+    "title": "Blockchain: records, signatures and agreement",
     "section": "Source and limits",
-    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 6–12, current course 95696; read 15 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published.\n\nFrom knowledge to actual use → physical PDF pp. 6–10: invention/innovation and inventor/entrepreneur roles.\nWhat makes innovation digital? → physical PDF p. 11: two complementary perspectives, with their different scopes retained; the lecture attributes them to Fichman et al. (2014, p. 330) and Yoo et al. (2010, p. 276), respectively.\nGenerativity → physical PDF p. 12: varied, uncoordinated contributors and the three enabling characteristics. The lecture attributes generativity to Yoo et al. (2010, p. 728); this is the reference as printed, not an independently verified original-paper citation. Descriptions unpack the terms rather than add formal definitions.\nSelf-check → physical PDF p. 6: actual use. Sensor examples and the exam trap are own teaching applications, not additional source claims."
+    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4–6. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nRecord, cryptographic functions and participation rules → physical PDF p. 4.\nDiagram → focused excerpt from p. 4; slide attribution: Gensler (2018, MIT).\nBitcoin versus blockchain → p. 5.\nExternal-video scope boundary → p. 6; video not independently processed.\nDelivery example and self-check → original application of the distinctions on pp. 4–5."
   },
   {
-    "objectID": "courses/controlling-divisionskalkulation.html",
-    "href": "courses/controlling-divisionskalkulation.html",
-    "title": "Divisionskalkulation: Kosten je Einheit",
+    "objectID": "courses/controlling-lmn-umlage.html",
+    "href": "courses/controlling-lmn-umlage.html",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
     "section": "",
     "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/controlling-divisionskalkulation.html#grundlagen",
-    "href": "courses/controlling-divisionskalkulation.html#grundlagen",
-    "title": "Divisionskalkulation: Kosten je Einheit",
+    "objectID": "courses/controlling-lmn-umlage.html#grundlagen",
+    "href": "courses/controlling-lmn-umlage.html#grundlagen",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
     "section": "Grundlagen",
-    "text": "Grundlagen\nBei der einstufigen Divisionskalkulation werden die Gesamtkosten einer Periode durch die zugehörige Menge geteilt. Das Ergebnis ist ein durchschnittlicher Selbstkostenbetrag je Einheit. Die Rechnung ist besonders übersichtlich bei einem einheitlichen Produkt; unterschiedliche Produkte oder wesentlich unterschiedliche Leistungsumfänge dürfen nicht ohne Weiteres in einen gemeinsamen Durchschnitt gezwungen werden."
+    "text": "Grundlagen\nFür eine vollständige Verrechnung des betrachteten Kostenpools können lmn-Kosten proportional zu den lmi-Kosten verteilt werden. Das ist eine Schlüsselentscheidung: Sie verteilt den neutralen Kostenblock, ohne nachzuweisen, dass jeder einzelne Prozess ihn proportional verursacht."
   },
   {
-    "objectID": "courses/controlling-divisionskalkulation.html#eigenes-beispiel-ein-einheitliches-produkt",
-    "href": "courses/controlling-divisionskalkulation.html#eigenes-beispiel-ein-einheitliches-produkt",
-    "title": "Divisionskalkulation: Kosten je Einheit",
-    "section": "Eigenes Beispiel: ein einheitliches Produkt",
-    "text": "Eigenes Beispiel: ein einheitliches Produkt\nEine Modellfabrik stellt in einer Periode 10.000 identische Einheiten her und setzt dieselbe Menge ab. Es gibt keine Bestandsänderung und keine unfertigen Erzeugnisse. Die zugehörigen Gesamtkosten betragen 80.000 €. Dann sind die durchschnittlichen Selbstkosten 80.000 / 10.000 = 8 € je Einheit.\nBei einem angenommenen Nettoerlös von 11 € je Einheit ergibt sich ein durchschnittlicher Überschuss von 3 € je Einheit und insgesamt 30.000 €. Herstellermenge, Herstellererlös und Herstellerkosten müssen dabei zusammenpassen: Ein Endkundenpreis im Handel ist nicht automatisch der Erlös des Herstellers."
+    "objectID": "courses/controlling-lmn-umlage.html#zuschlag-und-gesamtprozesskostensatz",
+    "href": "courses/controlling-lmn-umlage.html#zuschlag-und-gesamtprozesskostensatz",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "section": "Zuschlag und Gesamtprozesskostensatz",
+    "text": "Zuschlag und Gesamtprozesskostensatz\nDie lmi-Kosten summieren sich auf 800.000 + 180.000 + 295.000 + 105.000 = 1.380.000 €. Der lmn-Block beträgt 207.000 €. Der dimensionslose Zuschlag ist daher 207.000 / 1.380.000 = 0,15 = 15 %.\nFür Materialbestellungen mit 25 € lmi-Satz beträgt der Umlagebetrag 0,15 × 25 = 3,75 € je Bestellung. Der Gesamtprozesskostensatz ist 25 × (1 + 0,15) = 28,75 € je Bestellung. Prozentzuschlag, Umlagebetrag und Gesamtsatz sind drei verschiedene Größen."
   },
   {
-    "objectID": "courses/controlling-divisionskalkulation.html#durchschnitt-ist-keine-grenzkosteninformation",
-    "href": "courses/controlling-divisionskalkulation.html#durchschnitt-ist-keine-grenzkosteninformation",
-    "title": "Divisionskalkulation: Kosten je Einheit",
-    "section": "Durchschnitt ist keine Grenzkosteninformation",
-    "text": "Durchschnitt ist keine Grenzkosteninformation\nAus den 8 € folgt nicht, dass eine zusätzliche Einheit genau 8 € verursacht. Angenommen, im Kostenbetrag stecken 30.000 € fixe Kosten und 5 € variable Kosten je Einheit. Bei freier Kapazität und unveränderten Bedingungen kostet eine zusätzliche Einheit im eigenen linearen Modell 5 €. Für eine größere Menge können Kapazitätsgrenzen die Rechnung verändern.\nBei mehreren unterschiedlichen Erzeugnissen ist zunächst zu prüfen, ob ein gemeinsamer Durchschnitt sinnvoll ist. Die Wahl eines Verfahrens hängt vom Produktionsprogramm ab; die einfache Division liefert nicht durch ihre Einfachheit schon eine verursachungsgerechte Verteilung. Äquivalenzziffern- und Kuppelkalkulation werden hier nur als alternative Verfahren eingeordnet, nicht ohne ihre zusätzlichen Voraussetzungen angewendet."
+    "objectID": "courses/controlling-lmn-umlage.html#alle-prozesse-gegenprüfen",
+    "href": "courses/controlling-lmn-umlage.html#alle-prozesse-gegenprüfen",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "section": "Alle Prozesse gegenprüfen",
+    "text": "Alle Prozesse gegenprüfen\nFür Hilfs- und Betriebsstoffe ergeben sich 22,50 € Umlage und 172,50 € Gesamtsatz. Bei Maschinen und Anlagen sind es 442,50 € und 3.392,50 €; bei Dienstleistungen 157,50 € und 1.207,50 € je Vorgang.\nDie verteilten lmn-Beträge ergeben bei den angenommenen Mengen 32.000 × 3,75 + 1.200 × 22,50 + 100 × 442,50 + 100 × 157,50 = 207.000 €. Die gesamten verrechneten Kosten sind damit 1.587.000 €. Dieselben lmn-Kosten dürfen anschließend nicht noch einmal separat zugeschlagen werden."
   },
   {
-    "objectID": "courses/controlling-divisionskalkulation.html#selbstcheck",
-    "href": "courses/controlling-divisionskalkulation.html#selbstcheck",
-    "title": "Divisionskalkulation: Kosten je Einheit",
+    "objectID": "courses/controlling-lmn-umlage.html#missverständliche-formel-berichtigen",
+    "href": "courses/controlling-lmn-umlage.html#missverständliche-formel-berichtigen",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "section": "Missverständliche Formel berichtigen",
+    "text": "Missverständliche Formel berichtigen\nDie Gleichsetzung von „lmn-Zuschlagssatz“ mit einem Eurobetrag ist begrifflich ungenau. Die korrekt geklammerte Rechnung (1 + 0,15) × 25 liefert den Gesamtprozesskostensatz von 28,75 € je Bestellung, nicht den dimensionslosen Zuschlagssatz von 15 %. Die Formel selbst und die Tabellenwerte sind rechnerisch konsistent; missverständlich ist die Bezeichnung der zweiten Formel.\nEin anderer Verteilungsschlüssel könnte andere Produktkosten ergeben. Ein rechnerisch vollständig verteilter Kostenblock ist noch kein Nachweis einer eindeutigen Verursachung."
+  },
+  {
+    "objectID": "courses/controlling-lmn-umlage.html#selbstcheck",
+    "href": "courses/controlling-lmn-umlage.html#selbstcheck",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen treffen zu?\n Im Modell betragen die durchschnittlichen Selbstkosten 8 €.\n Jede zusätzliche Einheit verursacht zwingend 8 €.\n Ein Händler-Endkundenpreis ist nicht automatisch Herstellererlös.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 80.000 / 10.000. c wahrt die Unternehmensperspektive. b ist falsch: Bei den ausdrücklich angenommenen freien Kapazitäten und linearen variablen Kosten sind es 5 €."
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen treffen zu?\n Der lmn-Zuschlag beträgt 15 %.\n Die Umlage für Materialbeschaffung beträgt 15 € je Bestellung.\n Der Gesamtprozesskostensatz für Materialbeschaffung beträgt 28,75 €.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 207.000 / 1.380.000. c folgt aus 25 × 1,15. b verwechselt Prozent und Euro; die Umlage beträgt 3,75 €."
   },
   {
-    "objectID": "courses/controlling-divisionskalkulation.html#verwandte-lernseiten",
-    "href": "courses/controlling-divisionskalkulation.html#verwandte-lernseiten",
-    "title": "Divisionskalkulation: Kosten je Einheit",
+    "objectID": "courses/controlling-lmn-umlage.html#verwandte-lernseiten",
+    "href": "courses/controlling-lmn-umlage.html#verwandte-lernseiten",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nVom Selbstkostenbetrag zum ListenpreisDen Zusammenhang weiterlernen.\nZuschlagskalkulation: Herstell- und SelbstkostenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nlmi und lmn: Prozessmenge und Kosten trennenDen Zusammenhang weiterlernen.\nVom Bestellvorgang zu Prozesskosten je StückDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/controlling-divisionskalkulation.html#quellen",
-    "href": "courses/controlling-divisionskalkulation.html#quellen",
-    "title": "Divisionskalkulation: Kosten je Einheit",
+    "objectID": "courses/controlling-lmn-umlage.html#quellen",
+    "href": "courses/controlling-lmn-umlage.html#quellen",
+    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 18.10.2026.\n\nVerfahrenswahl nach Produktionsprogramm → physische PDF-S. 25 und 27. Einstufige Division und Einproduktannahme → PDF-S. 26. Dortiges Unternehmensbeispiel bezieht sich auf 2021 und wird nicht als aktuelle Unternehmenszahl übernommen. Modellfabrik, Bestandsannahme, Herstellerperspektive und Selbstcheck → eigene Erläuterungen; Durchschnitts-/Zusatzkostengrenze ergänzt anhand der Vereinfachungsannahmen auf PDF-S. 6–10.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 19.10.2026.\n\nZuschlagsbasis und 15-Prozent-Rechnung → physische PDF-S. 34. Gesamtprozesskostensatz und missverständliche Formelnotation → S. 35–36; Begriffstrennung hier ausdrücklich vorgenommen; die Klammer im Original wurde am gerenderten PDF kontrolliert. Vier Prozesssätze → S. 36. Summengegenprobe, Doppelverrechnungswarnung und Schlüsselgrenze → eigene Ableitungen.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
+    "objectID": "courses/dwpm.html",
+    "href": "courses/dwpm.html",
+    "title": "DWPM",
     "section": "",
-    "text": "GrundlagenSelbstcheckQuellen"
-  },
-  {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#grundlagen",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html#grundlagen",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
-    "section": "Grundlagen",
-    "text": "Grundlagen\nDie Zeitgleichung kann nur so verlässlich sein wie ihre Zeitparameter. Bei Soll-Zeiten müssen Bearbeitungszeiten geschätzt werden. Systematische Schätzfehler können sich daher unmittelbar in kalkulierten Prozesskosten niederschlagen; eine präzise Formel beseitigt keine ungenauen Eingaben."
-  },
-  {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#drei-bedingungen-für-größere-schätzfehler",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html#drei-bedingungen-für-größere-schätzfehler",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
-    "section": "Drei Bedingungen für größere Schätzfehler",
-    "text": "Drei Bedingungen für größere Schätzfehler\nDie im Skript zusammengefasste experimentelle Untersuchung mit Studierenden vergleicht geschätzte mit gemessenen Zeiten in einem Planspiel mit verschiedenen Aufgaben. Größere Schätzfehler werden dort für drei Bedingungen berichtet: Schätzung von Teilprozessen statt Hauptprozessen, Schätzung nach statt vor der Durchführung und absolute Minutenangaben statt relativer Prozentangaben.\nDas sind berichtete Vergleichsbefunde, keine Garantie, dass eine einzelne vorherige oder relative Schätzung stimmt. Die Zusammenfassung nennt hier weder eine universelle Fehlerquote noch eine für alle Unternehmen gültige Effektgröße. Aus „größerer Schätzfehler“ folgt außerdem nicht automatisch eine bestimmte Richtung wie systematische Überschätzung."
-  },
-  {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#eigenes-beispiel-ein-kleiner-zeitfehler-wirkt-wiederholt",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html#eigenes-beispiel-ein-kleiner-zeitfehler-wirkt-wiederholt",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
-    "section": "Eigenes Beispiel: ein kleiner Zeitfehler wirkt wiederholt",
-    "text": "Eigenes Beispiel: ein kleiner Zeitfehler wirkt wiederholt\nAngenommen, eine Basiszeit wird um zwei Minuten zu hoch angesetzt. Bei 10.000 gleichartigen Bestellungen und einem unveränderten gerundeten Satz von 1,28 € je Minute werden 20.000 Minuten und damit 25.600 € zu viel zugeordnet. Der Fehler entsteht im Zeitmodell; die Multiplikation selbst kann vollständig korrekt sein.\nDie 25.600 € sind keine neu entstandenen Gesamtkosten und kein automatisch verfügbares Einsparpotenzial. Sie zeigen eine verzerrte Zuordnung innerhalb des Modells. Die Beispielzahlen sind eine eigene Sensitivitätsrechnung, kein Ergebnis des Experiments."
-  },
-  {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#ein-praktikabler-prüfweg",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html#ein-praktikabler-prüfweg",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
-    "section": "Ein praktikabler Prüfweg",
-    "text": "Ein praktikabler Prüfweg\nProzessgrenzen zunächst eindeutig beschreiben, Schätzungen dokumentieren und für vergleichbare Fälle mit gemessenen Zeiten abgleichen. Abweichungen können aus einer falschen Basiszeit, unpassenden Zusatzzeiten oder unterschiedlich komplexen Vorgängen entstehen. Relative Zeitanteile müssen anschließend zu einer konsistenten Gesamtzeit passen; Prozentangaben ersetzen den Kapazitätsbezug nicht.\nMessung selbst benötigt ebenfalls klare Regeln: Bearbeitungszeit, Wartezeit und Kalenderdauer sind nicht austauschbar. Dieser Prüfweg ist eine didaktische Empfehlung, nicht ein im Experiment nachgewiesenes universelles Verfahren."
-  },
-  {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#selbstcheck",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html#selbstcheck",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind gerechtfertigt?\n Die Zusammenfassung beweist, dass alle Minutenangaben zu hoch sind.\n Ein Zeitfehler kann bei vielen Vorgängen die Kostenzuordnung stark verzerren.\n Die Experimentzusammenfassung liefert keine universelle Fehlerquote für jedes Unternehmen.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb zeigt die eigene Sensitivitätsrechnung; c wahrt die begrenzte Reichweite der Zusammenfassung. a erfindet sowohl eine allgemeine Gültigkeit als auch eine Fehlerrichtung."
-  },
-  {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#verwandte-lernseiten",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html#verwandte-lernseiten",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
-    "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nTDABC: praktische Kapazität statt Ist-AuslastungDen Zusammenhang weiterlernen.\nTDABC: Bestellungen mit einer Zeitgleichung kalkulierenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
-  },
-  {
-    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#quellen",
-    "href": "courses/controlling-tdabc-zeitschaetzung.html#quellen",
-    "title": "TDABC: Zeitschätzungen kritisch prüfen",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 20.10.2026.\n\nExperimentaufbau und drei Vergleichsbefunde → physische PDF-S. 56 (Zusammenfassung von Cardinaels/Labro 2008); bibliografische Angabe → S. 58. Minutenkostensatz als Ausgangspunkt der eigenen Sensitivitätsrechnung → S. 52–53. Beispiel, Prüfweg und Reichweitengrenzen → eigene Erläuterungen; Originalstudie nicht zusätzlich geprüft.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html",
-    "href": "courses/om-organisation-digitalisierung.html",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "",
-    "text": "Entscheidungen bilden eine HierarchieEvidenzgrenzen und verantwortliche EntscheidungenSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-1",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-1",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Lernziele",
-    "text": "Lernziele\nEntscheidungen nach Horizont einordnen, Organisationsformen abwägen und digitale Maßnahmen über Wirkung, Voraussetzung und Risiko begründen."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-2",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-2",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Entscheidungen bilden eine Hierarchie",
-    "text": "Entscheidungen bilden eine Hierarchie\nDie Planung unterscheidet drei Ebenen mit typischen Zeithorizonten:\n\nStrategisch, typischerweise 2–5 Jahre: Standort, Kapazitätsaufbau und Make-or-Buy legen den langfristigen Rahmen fest.\nTaktisch, typischerweise 3–18 Monate: Saisonprogramm, Schichten und Rahmenverträge konkretisieren diesen Rahmen.\nOperativ, typischerweise 1 Tag–1 Woche: Auftragsreihenfolge, Personaleinsatz und Störungsreaktionen steuern die unmittelbare Ausführung.\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-3",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-3",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Schnittstellen und Organisationsformen",
-    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen. S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\nFunktional: Klare Zuständigkeiten und Skaleneffekte stehen möglichen Silos und geringer Flexibilität gegenüber.\nDivisional: Marktnähe und Ergebnisverantwortung gehen mit möglichen Redundanzen und schwieriger Harmonisierung einher.\nMatrix: Ressourcenoptimierung und Synergien erfordern komplexere Entscheidungen wegen der doppelten Berichtslinie.\nWertstrom / End-to-End: Kundenzentrierung und kurze Durchlaufzeiten benötigen bereichsübergreifende Koordination und neue Rollen.\n\nEs gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-4",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-4",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Digitale Maßnahme als Wirkungskette prüfen",
-    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDigitale Steuerung kann Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz verbessern. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende.\nEigenes Lernbeispiel: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas Wartungs- und Logistiksystem ALIS illustriert Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung. Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarnungEvidenzgrenzen und verantwortliche Entscheidungen\n\n\n\nBerichtete Digitalisierungsnutzen beruhen überwiegend auf Selbstauskünften; eine kausale Wirkung ist dadurch nicht belegt. Sie garantieren keine Effekte für andere Unternehmen. Deshalb müssen Wirkungsmechanismus, Datenqualität, Investitionsaufwand und lokale Umsetzung geprüft werden. Widersprüchliche Systemmeldungen verlangen fachliche Prüfung, nicht blindes Vertrauen oder pauschales Ignorieren."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-6",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-6",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. b ist falsch: Berichtete Nutzenwerte begründen keine garantierte kausale Wirkung. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
-    "href": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\n \nZur Kursübersicht"
-  },
-  {
-    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-7",
-    "href": "courses/om-organisation-digitalisierung.html#abschnitt-7",
-    "title": "OM: Organisation und Digitalisierung",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nEntscheidungen bilden eine Hierarchie: PDF-S. 16 (Horizonte und Beispiele).\nSchnittstellen und Organisationsformen: PDF-S. 22–23 (Prozesslandschaft, Abstimmung und S&OP), S. 24–26 (Organisationsformen und MünsterRad).\nDigitale Wirkungskette: PDF-S. 29 (Hebel und Voraussetzungen), S. 31 (ALIS-Risiken), S. 32 (MünsterRad; eigene Ausarbeitung des Scan-Beispiels).\nGrenzen berichteter Nutzenwerte: PDF-S. 30. Der Hinweis lautet „Außer WEF-Reports, Selbstauskünfte, daher nicht kausal belegt“; die Lernseite behauptet auch für WEF-Beispiele keinen unabhängig geprüften Kausalnachweis.\nWiderspruch im internen Verweis: PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“; die ALIS-Seite trägt jedoch Foliennummer 33 (physische PDF-S. 31). Deshalb werden hier physische PDF-Seiten angegeben. Ungeprüfte aktuelle geopolitische Aussagen aus dem Einführungsteil werden nicht übernommen.\nSelbstcheck: PDF-S. 16, 29–30 (strategische Entscheidung, Voraussetzungen und Evidenzgrenzen)."
-  },
-  {
-    "objectID": "courses/om-vier-v.html",
-    "href": "courses/om-vier-v.html",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "",
-    "text": "Kein schlichtes Entweder-oderSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
-  },
-  {
-    "objectID": "courses/om-vier-v.html#abschnitt-1",
-    "href": "courses/om-vier-v.html#abschnitt-1",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Lernziele",
-    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
-  },
-  {
-    "objectID": "courses/om-vier-v.html#abschnitt-2",
-    "href": "courses/om-vier-v.html#abschnitt-2",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Kein schlichtes Entweder-oder",
-    "text": "Kein schlichtes Entweder-oder\nSachgüter und Dienstleistungen unterscheiden sich in typischen Merkmalen: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden. Beide bilden ein Kontinuum, keine ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nEinzel-, Serien- und Massenfertigung unterscheiden sich nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
-  },
-  {
-    "objectID": "courses/om-vier-v.html#abschnitt-3",
-    "href": "courses/om-vier-v.html#abschnitt-3",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Vier Dimensionen statt eines Etiketts",
-    "text": "Vier Dimensionen statt eines Etiketts\nDie vier Dimensionen beschreiben unterschiedliche Anforderungen an den Prozess:\n\nVolume – Menge: Wie groß ist die Menge? Hohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\nVariety – Vielfalt: Wie vielfältig ist das Angebot? Hohe Vielfalt benötigt flexible Ressourcen und erhöht die Komplexität.\nVariation – Nachfrageschwankung: Wie stark schwankt die Nachfrage? Starke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\nVisibility – Sichtbarkeit: Wie viel vom Prozess erlebt der Kunde? Hohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
-  },
-  {
-    "objectID": "courses/om-vier-v.html#abschnitt-4",
-    "href": "courses/om-vier-v.html#abschnitt-4",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Anwendung auf MünsterRad",
-    "text": "Anwendung auf MünsterRad\nReparaturwerkstatt und Lastenrad-Serienfertigung unterscheiden sich im Prozess. Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
-  },
-  {
-    "objectID": "courses/om-vier-v.html#abschnitt-5",
-    "href": "courses/om-vier-v.html#abschnitt-5",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig. Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
-  },
-  {
-    "objectID": "courses/om-vier-v.html#verwandte-lernseiten",
-    "href": "courses/om-vier-v.html#verwandte-lernseiten",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
-  },
-  {
-    "objectID": "courses/om-vier-v.html#abschnitt-6",
-    "href": "courses/om-vier-v.html#abschnitt-6",
-    "title": "OM: Güter, Dienstleistungen und die 4 V",
-    "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nKein schlichtes Entweder-oder: PDF-S. 18–19 (Merkmale und Produktions-/Dienstleistungsarten), S. 34 (Kontinuum).\nVier Dimensionen und MünsterRad-Anwendung: PDF-S. 20; dort Vergleich von Reparaturservice und Serienfertigung. Die Diagnose-/Montageausarbeitung ist eine eigene Ableitung, keine Messung.\nSelbstcheck: PDF-S. 20 (Abgrenzung der vier Dimensionen)."
-  },
-  {
-    "objectID": "templates/example-lecture.html",
-    "href": "templates/example-lecture.html",
-    "title": "Lecture Template",
-    "section": "",
-    "text": "Field\nValue\n\n\n\n\nCourse\nPlaceholder\n\n\nLecture\nPlaceholder\n\n\nSource material\nNot attached in demo\n\n\nConfidence\nDemo only\n\n\nLast checked\n2026-10-12"
-  },
-  {
-    "objectID": "templates/example-lecture.html#source-status",
-    "href": "templates/example-lecture.html#source-status",
-    "title": "Lecture Template",
-    "section": "",
-    "text": "Field\nValue\n\n\n\n\nCourse\nPlaceholder\n\n\nLecture\nPlaceholder\n\n\nSource material\nNot attached in demo\n\n\nConfidence\nDemo only\n\n\nLast checked\n2026-10-12"
-  },
-  {
-    "objectID": "templates/example-lecture.html#learning-goals",
-    "href": "templates/example-lecture.html#learning-goals",
-    "title": "Lecture Template",
-    "section": "Learning Goals",
-    "text": "Learning Goals\nAfter this page, Leo should be able to:\n\nDefine the core concepts without looking.\nExplain the mechanism behind each concept.\nApply the concept to a short case.\nRecognize common distractors in multiple-choice questions."
-  },
-  {
-    "objectID": "templates/example-lecture.html#core-explanation",
-    "href": "templates/example-lecture.html#core-explanation",
-    "title": "Lecture Template",
-    "section": "Core Explanation",
-    "text": "Core Explanation\nWrite the main explanation here. Keep it source-backed, compact, and complete enough that a future exam answer can be built from it.\n\n\n\nReveal compressed model answer\n\nDefinition, mechanism, application, limitation, conclusion."
-  },
-  {
-    "objectID": "templates/example-lecture.html#worked-example",
-    "href": "templates/example-lecture.html#worked-example",
-    "title": "Lecture Template",
-    "section": "Worked Example",
-    "text": "Worked Example\nUse one concrete worked example. For quantitative courses, include calculation steps. For management or digital business courses, include case evidence and a justified recommendation."
-  },
-  {
-    "objectID": "templates/example-lecture.html#visual-model",
-    "href": "templates/example-lecture.html#visual-model",
-    "title": "Lecture Template",
-    "section": "Visual Model",
-    "text": "Visual Model\nAdd the visual form that makes the mechanism easiest to inspect: graph, process diagram, concept map, table, timeline, or screenshot-backed annotation."
-  },
-  {
-    "objectID": "templates/example-lecture.html#algorithm-or-code-trace",
-    "href": "templates/example-lecture.html#algorithm-or-code-trace",
-    "title": "Lecture Template",
-    "section": "Algorithm Or Code Trace",
-    "text": "Algorithm Or Code Trace\nWhen a concept has a procedure, show it as pseudocode, executable code, or a step-by-step trace. Prefer small runnable examples over abstract descriptions."
-  },
-  {
-    "objectID": "templates/example-lecture.html#checks",
-    "href": "templates/example-lecture.html#checks",
-    "title": "Lecture Template",
-    "section": "Checks",
-    "text": "Checks\n\n  Template check: what should every final page preserve?\n   A traceable link between source, explanation, and practice question.\n   As many decorative sections as possible.\n   Raw source files embedded directly into the page.\n  Check"
-  },
-  {
-    "objectID": "templates/example-lecture.html#open-questions",
-    "href": "templates/example-lecture.html#open-questions",
-    "title": "Lecture Template",
-    "section": "Open Questions",
-    "text": "Open Questions\n\nWhat source detail is still missing?\nWhat is likely exam-relevant?\nWhich part needs a diagram or worked example?\nWhich part should become executable code, a simulation, or an algorithm trace?"
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html",
-    "href": "courses/vwl-knappheit.html",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "",
-    "text": "Warum überhaupt entscheiden?Selbstcheck (SC)Quelle und Grenzen\nVWL-Übersicht"
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-1",
-    "href": "courses/vwl-knappheit.html#abschnitt-1",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Lernziel",
-    "text": "Lernziel\nKnappheit erklären, eine relevante Alternative benennen und Opportunitätskosten von einer bloßen Geldzahlung unterscheiden."
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-2",
-    "href": "courses/vwl-knappheit.html#abschnitt-2",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Warum überhaupt entscheiden?",
-    "text": "Warum überhaupt entscheiden?\nVWL untersucht, wie eine Gesellschaft knappe Mittel bewirtschaftet. Knappheit heißt hier: Die verfügbaren Ressourcen reichen nicht für alle gleichzeitig gewünschten Verwendungen. Auch Zeit und Aufmerksamkeit sind Ressourcen. Deshalb stellen sich drei Fragen: Was wird produziert, wie wird produziert und für wen?\nEntscheiden heißt auswählen und damit verzichten. Mehr Zeit für eine Tätigkeit bedeutet weniger Zeit für eine andere. Auf gesellschaftlicher Ebene können Effizienz und Verteilungsgerechtigkeit in Spannung stehen. Effizienz betrifft in dieser Einführung den möglichst hohen Wert der Produktion aus knappen Ressourcen. Verteilungsgerechtigkeit betrifft deren faire Verteilung. Ein großer Gesamtertrag sagt allein noch nicht, wer davon profitiert; „fair“ erfordert ein Werturteil."
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-3",
-    "href": "courses/vwl-knappheit.html#abschnitt-3",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Nicht nur der Kontostand zählt",
-    "text": "Nicht nur der Kontostand zählt\nOpportunitätskosten bestehen darin, was für eine gewählte Möglichkeit aufgegeben wird. Für die Entscheidung ist die beste tatsächlich verfügbare Alternative maßgeblich. Man addiert nicht alle wechselseitig ausgeschlossenen Alternativen: Dieselbe Stunde kann nicht zugleich für mehrere Nebenjobs eingesetzt werden.\nEigenes Lernbeispiel: Du kannst am Nachmittag entweder drei Stunden lernen oder für 15 € pro Stunde arbeiten. Bei freier Wahl und sicher verfügbarem Job verzichtest du durch das Lernen auf 45 € Einkommen. Die Lernzeit ist deshalb nicht kostenlos, auch wenn kein Geld überwiesen wird. War die Schicht gar nicht verfügbar, sind diese 45 € keine realistische entgangene Alternative. Freizeit kann ebenfalls einen Wert haben, ohne einen beobachtbaren Marktpreis zu besitzen."
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-4",
-    "href": "courses/vwl-knappheit.html#abschnitt-4",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Eine saubere Antwort in vier Schritten",
-    "text": "Eine saubere Antwort in vier Schritten\n\nEntscheidung und knappe Ressource benennen: drei Stunden Zeit.\nRealistische Alternativen bestimmen: Lernen oder eine verfügbare Schicht.\nDen Verzicht auf die beste Alternative bestimmen: hier 45 € Einkommen.\nNicht monetäre Folgen ergänzen: Lernfortschritt, Erholung oder Belastung, ohne sie ungeprüft in Euro umzudeuten.\n\nStolperfalle: Aus positiven Opportunitätskosten folgt nicht, dass Lernen falsch ist. Die Kosten müssen mit dem erwarteten Nutzen verglichen werden. Ebenso beweist hohe Effizienz keine gerechte Verteilung."
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-5",
-    "href": "courses/vwl-knappheit.html#abschnitt-5",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Selbstcheck (SC)",
-    "text": "Selbstcheck (SC)\n\nWas sind im Beispiel die monetären Opportunitätskosten des Lernens?\n 0 €, weil Lernen keine Überweisung auslöst.\n 45 € entgangenes Einkommen aus der verfügbaren Schicht.\n Die Summe aller denkbaren Nebenjobs.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig. Drei Stunden × 15 € = 45 €. a verwechselt Kosten mit Auszahlungen. c zählt alternative, nicht gleichzeitig mögliche Verwendungen mehrfach. Nicht monetäre Vorteile des Lernens bleiben für die Entscheidung wichtig."
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html#verwandte-lernseiten",
-    "href": "courses/vwl-knappheit.html#verwandte-lernseiten",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\nOpportunitätskosten im ControllingDieselbe Entscheidungslogik in einem anderen Kurs.\n \nZur Kursübersicht"
-  },
-  {
-    "objectID": "courses/vwl-knappheit.html#abschnitt-6",
-    "href": "courses/vwl-knappheit.html#abschnitt-6",
-    "title": "VWL: Knappheit und Opportunitätskosten",
-    "section": "Quelle und Grenzen",
-    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 8–13 (physische Seiten). Aktueller Kurs 94931; erneut abgeglichen am 17.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nWarum überhaupt entscheiden? → PDF-S. 8–11: Knappheit, Produktionsfragen, Auswahl, Effizienz und Verteilungsgerechtigkeit.\nNicht nur der Kontostand zählt / Vier Schritte / Selbstcheck → PDF-S. 13: Kosten-Nutzen-Vergleich und Opportunitätskosten. Die verfügbare Schicht und der Betrag von 45 € sind eigene didaktische Annahmen, keine Skriptdaten."
+    "text": "Die vorhandene DWPM-Klausurvorbereitung wird separat geführt. Diese Veröffentlichung konzentriert sich auf die aktuellen WiSe-Kurse.\nZu den aktuellen Materialien"
   },
   {
     "objectID": "courses/db-innovation-dilemmas.html",
@@ -1738,123 +1559,452 @@
     "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 14–20, current course 95696; rechecked 17 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published.\n\nSection-to-source mapping\n\nImpulses and push/pull balance → physical PDF pp. 14–16.\nProduct/process definitions, figure and conditional strategic implications → pp. 17–18; figure attribution in the slide: Johnson et al. 2014. The image is a focused excerpt from p. 17.\nOpen/closed knowledge flows → p. 19.\nTechnological/business model innovation → p. 20.\nSelf-check reasoning → pp. 15, 17–19."
   },
   {
-    "objectID": "courses/dwpm.html",
-    "href": "courses/dwpm.html",
-    "title": "DWPM",
+    "objectID": "courses/vwl-knappheit.html",
+    "href": "courses/vwl-knappheit.html",
+    "title": "VWL: Knappheit und Opportunitätskosten",
     "section": "",
-    "text": "Die vorhandene DWPM-Klausurvorbereitung wird separat geführt. Diese Veröffentlichung konzentriert sich auf die aktuellen WiSe-Kurse.\nZu den aktuellen Materialien"
+    "text": "Warum überhaupt entscheiden?Selbstcheck (SC)Quelle und Grenzen\nVWL-Übersicht"
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html",
-    "href": "courses/controlling-lmn-umlage.html",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "objectID": "courses/vwl-knappheit.html#abschnitt-1",
+    "href": "courses/vwl-knappheit.html#abschnitt-1",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Lernziel",
+    "text": "Lernziel\nKnappheit erklären, eine relevante Alternative benennen und Opportunitätskosten von einer bloßen Geldzahlung unterscheiden."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-2",
+    "href": "courses/vwl-knappheit.html#abschnitt-2",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Warum überhaupt entscheiden?",
+    "text": "Warum überhaupt entscheiden?\nVWL untersucht, wie eine Gesellschaft knappe Mittel bewirtschaftet. Knappheit heißt hier: Die verfügbaren Ressourcen reichen nicht für alle gleichzeitig gewünschten Verwendungen. Auch Zeit und Aufmerksamkeit sind Ressourcen. Deshalb stellen sich drei Fragen: Was wird produziert, wie wird produziert und für wen?\nEntscheiden heißt auswählen und damit verzichten. Mehr Zeit für eine Tätigkeit bedeutet weniger Zeit für eine andere. Auf gesellschaftlicher Ebene können Effizienz und Verteilungsgerechtigkeit in Spannung stehen. Effizienz betrifft in dieser Einführung den möglichst hohen Wert der Produktion aus knappen Ressourcen. Verteilungsgerechtigkeit betrifft deren faire Verteilung. Ein großer Gesamtertrag sagt allein noch nicht, wer davon profitiert; „fair“ erfordert ein Werturteil."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-3",
+    "href": "courses/vwl-knappheit.html#abschnitt-3",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Nicht nur der Kontostand zählt",
+    "text": "Nicht nur der Kontostand zählt\nOpportunitätskosten bestehen darin, was für eine gewählte Möglichkeit aufgegeben wird. Für die Entscheidung ist die beste tatsächlich verfügbare Alternative maßgeblich. Man addiert nicht alle wechselseitig ausgeschlossenen Alternativen: Dieselbe Stunde kann nicht zugleich für mehrere Nebenjobs eingesetzt werden.\nEigenes Lernbeispiel: Du kannst am Nachmittag entweder drei Stunden lernen oder für 15 € pro Stunde arbeiten. Bei freier Wahl und sicher verfügbarem Job verzichtest du durch das Lernen auf 45 € Einkommen. Die Lernzeit ist deshalb nicht kostenlos, auch wenn kein Geld überwiesen wird. War die Schicht gar nicht verfügbar, sind diese 45 € keine realistische entgangene Alternative. Freizeit kann ebenfalls einen Wert haben, ohne einen beobachtbaren Marktpreis zu besitzen."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-4",
+    "href": "courses/vwl-knappheit.html#abschnitt-4",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Eine saubere Antwort in vier Schritten",
+    "text": "Eine saubere Antwort in vier Schritten\n\nEntscheidung und knappe Ressource benennen: drei Stunden Zeit.\nRealistische Alternativen bestimmen: Lernen oder eine verfügbare Schicht.\nDen Verzicht auf die beste Alternative bestimmen: hier 45 € Einkommen.\nNicht monetäre Folgen ergänzen: Lernfortschritt, Erholung oder Belastung, ohne sie ungeprüft in Euro umzudeuten.\n\nStolperfalle: Aus positiven Opportunitätskosten folgt nicht, dass Lernen falsch ist. Die Kosten müssen mit dem erwarteten Nutzen verglichen werden. Ebenso beweist hohe Effizienz keine gerechte Verteilung."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-5",
+    "href": "courses/vwl-knappheit.html#abschnitt-5",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nWas sind im Beispiel die monetären Opportunitätskosten des Lernens?\n 0 €, weil Lernen keine Überweisung auslöst.\n 45 € entgangenes Einkommen aus der verfügbaren Schicht.\n Die Summe aller denkbaren Nebenjobs.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb ist richtig. Drei Stunden × 15 € = 45 €. a verwechselt Kosten mit Auszahlungen. c zählt alternative, nicht gleichzeitig mögliche Verwendungen mehrfach. Nicht monetäre Vorteile des Lernens bleiben für die Entscheidung wichtig."
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#verwandte-lernseiten",
+    "href": "courses/vwl-knappheit.html#verwandte-lernseiten",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nGrenzentscheidungen in der PizzeriaZusatzkosten statt Durchschnittskosten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\nOpportunitätskosten im ControllingDieselbe Entscheidungslogik in einem anderen Kurs.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/vwl-knappheit.html#abschnitt-6",
+    "href": "courses/vwl-knappheit.html#abschnitt-6",
+    "title": "VWL: Knappheit und Opportunitätskosten",
+    "section": "Quelle und Grenzen",
+    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 8–13 (physische Seiten). Aktueller Kurs 94931; erneut abgeglichen am 17.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nWarum überhaupt entscheiden? → PDF-S. 8–11: Knappheit, Produktionsfragen, Auswahl, Effizienz und Verteilungsgerechtigkeit.\nNicht nur der Kontostand zählt / Vier Schritte / Selbstcheck → PDF-S. 13: Kosten-Nutzen-Vergleich und Opportunitätskosten. Die verfügbare Schicht und der Betrag von 45 € sind eigene didaktische Annahmen, keine Skriptdaten."
+  },
+  {
+    "objectID": "templates/example-lecture.html",
+    "href": "templates/example-lecture.html",
+    "title": "Lecture Template",
+    "section": "",
+    "text": "Field\nValue\n\n\n\n\nCourse\nPlaceholder\n\n\nLecture\nPlaceholder\n\n\nSource material\nNot attached in demo\n\n\nConfidence\nDemo only\n\n\nLast checked\n2026-10-12"
+  },
+  {
+    "objectID": "templates/example-lecture.html#source-status",
+    "href": "templates/example-lecture.html#source-status",
+    "title": "Lecture Template",
+    "section": "",
+    "text": "Field\nValue\n\n\n\n\nCourse\nPlaceholder\n\n\nLecture\nPlaceholder\n\n\nSource material\nNot attached in demo\n\n\nConfidence\nDemo only\n\n\nLast checked\n2026-10-12"
+  },
+  {
+    "objectID": "templates/example-lecture.html#learning-goals",
+    "href": "templates/example-lecture.html#learning-goals",
+    "title": "Lecture Template",
+    "section": "Learning Goals",
+    "text": "Learning Goals\nAfter this page, Leo should be able to:\n\nDefine the core concepts without looking.\nExplain the mechanism behind each concept.\nApply the concept to a short case.\nRecognize common distractors in multiple-choice questions."
+  },
+  {
+    "objectID": "templates/example-lecture.html#core-explanation",
+    "href": "templates/example-lecture.html#core-explanation",
+    "title": "Lecture Template",
+    "section": "Core Explanation",
+    "text": "Core Explanation\nWrite the main explanation here. Keep it source-backed, compact, and complete enough that a future exam answer can be built from it.\n\n\n\nReveal compressed model answer\n\nDefinition, mechanism, application, limitation, conclusion."
+  },
+  {
+    "objectID": "templates/example-lecture.html#worked-example",
+    "href": "templates/example-lecture.html#worked-example",
+    "title": "Lecture Template",
+    "section": "Worked Example",
+    "text": "Worked Example\nUse one concrete worked example. For quantitative courses, include calculation steps. For management or digital business courses, include case evidence and a justified recommendation."
+  },
+  {
+    "objectID": "templates/example-lecture.html#visual-model",
+    "href": "templates/example-lecture.html#visual-model",
+    "title": "Lecture Template",
+    "section": "Visual Model",
+    "text": "Visual Model\nAdd the visual form that makes the mechanism easiest to inspect: graph, process diagram, concept map, table, timeline, or screenshot-backed annotation."
+  },
+  {
+    "objectID": "templates/example-lecture.html#algorithm-or-code-trace",
+    "href": "templates/example-lecture.html#algorithm-or-code-trace",
+    "title": "Lecture Template",
+    "section": "Algorithm Or Code Trace",
+    "text": "Algorithm Or Code Trace\nWhen a concept has a procedure, show it as pseudocode, executable code, or a step-by-step trace. Prefer small runnable examples over abstract descriptions."
+  },
+  {
+    "objectID": "templates/example-lecture.html#checks",
+    "href": "templates/example-lecture.html#checks",
+    "title": "Lecture Template",
+    "section": "Checks",
+    "text": "Checks\n\n  Template check: what should every final page preserve?\n   A traceable link between source, explanation, and practice question.\n   As many decorative sections as possible.\n   Raw source files embedded directly into the page.\n  Check"
+  },
+  {
+    "objectID": "templates/example-lecture.html#open-questions",
+    "href": "templates/example-lecture.html#open-questions",
+    "title": "Lecture Template",
+    "section": "Open Questions",
+    "text": "Open Questions\n\nWhat source detail is still missing?\nWhat is likely exam-relevant?\nWhich part needs a diagram or worked example?\nWhich part should become executable code, a simulation, or an algorithm trace?"
+  },
+  {
+    "objectID": "courses/om-vier-v.html",
+    "href": "courses/om-vier-v.html",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "",
+    "text": "Kein schlichtes Entweder-oderSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-vier-v.html#abschnitt-1",
+    "href": "courses/om-vier-v.html#abschnitt-1",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Lernziele",
+    "text": "Lernziele\nProduktions- und Dienstleistungsmerkmale unterscheiden und aus den 4 V Konsequenzen für die Prozessgestaltung ableiten."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#abschnitt-2",
+    "href": "courses/om-vier-v.html#abschnitt-2",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Kein schlichtes Entweder-oder",
+    "text": "Kein schlichtes Entweder-oder\nSachgüter und Dienstleistungen unterscheiden sich in typischen Merkmalen: Güter sind greifbar und lagerfähig; Dienstleistungen sind häufig immateriell, nicht als fertige Leistung lagerfähig und mit direkter Kundenbeteiligung verbunden. Beide bilden ein Kontinuum, keine ausnahmslos getrennten Welten.\nEigenes Lernbeispiel: Ein Fahrradladen lagert Ersatzteile, aber nicht die bereits ausgeführte Reparatur für einen späteren Kunden. Ein Angebot kann deshalb Sachgut und Service kombinieren.\nEinzel-, Serien- und Massenfertigung unterscheiden sich nach Wiederholung und Standardisierung. Ein Sonderrahmen steht für Einzelfertigung, eine begrenzte Reihe identischer Lastenräder für Serienfertigung. Produktbegleitende Dienstleistungen umfassen etwa Wartung; unternehmensnahe Dienstleistungen unterstützen andere Unternehmen. Die Kategorien beschreiben unterschiedliche Perspektiven, keine Rangfolge der Qualität."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#abschnitt-3",
+    "href": "courses/om-vier-v.html#abschnitt-3",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Vier Dimensionen statt eines Etiketts",
+    "text": "Vier Dimensionen statt eines Etiketts\nDie vier Dimensionen beschreiben unterschiedliche Anforderungen an den Prozess:\n\nVolume – Menge: Wie groß ist die Menge? Hohe Menge ermöglicht Wiederholung, Spezialisierung und Automatisierung.\nVariety – Vielfalt: Wie vielfältig ist das Angebot? Hohe Vielfalt benötigt flexible Ressourcen und erhöht die Komplexität.\nVariation – Nachfrageschwankung: Wie stark schwankt die Nachfrage? Starke Schwankung erschwert Kapazitätsplanung und gleichmäßige Auslastung.\nVisibility – Sichtbarkeit: Wie viel vom Prozess erlebt der Kunde? Hohe Sichtbarkeit verlangt Kontaktkompetenz und lässt weniger Wartetoleranz.\n\nVariety ist nicht Variation: Viele Reparaturarten sind Angebotsvielfalt; viele Kunden im Frühjahr und wenige im Winter sind Nachfrageschwankung. Ein Betrieb kann beides zugleich haben."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#abschnitt-4",
+    "href": "courses/om-vier-v.html#abschnitt-4",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Anwendung auf MünsterRad",
+    "text": "Anwendung auf MünsterRad\nReparaturwerkstatt und Lastenrad-Serienfertigung unterscheiden sich im Prozess. Als eigene Ausarbeitung: Individuelle Fehlerbilder verlangen flexible Diagnose in der Werkstatt. Eine identische Serie erlaubt wiederkehrende Montageschritte. Das ist eine plausible Einordnung, keine aus der Quelle abgelesene Messung aller vier Dimensionen.\nDie 4 V erklären Gestaltung und typische Kostenunterschiede. Sie beweisen nicht, dass jeder hochvolumige Betrieb günstig oder jeder kundennahe Prozess schlecht automatisierbar ist. Für eine konkrete Entscheidung müssen tatsächliche Menge, Varianten, Nachfragemuster und Kundenkontakt geprüft werden."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#abschnitt-5",
+    "href": "courses/om-vier-v.html#abschnitt-5",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Zuordnungen sind richtig?\n Viele unterschiedliche Reparaturarten: Variety.\n Starke saisonale Nachfragespitzen: Variation.\n Hohe Visibility bedeutet automatisch hohe Produktionsmenge.\n Wiederholung bei hoher Menge kann Spezialisierung erleichtern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na, b und d sind richtig. Variety beschreibt Vielfalt, Variation Schwankungen, Volume Menge. c vermischt Sichtbarkeit und Menge; sie sind getrennte Dimensionen."
+  },
+  {
+    "objectID": "courses/om-vier-v.html#verwandte-lernseiten",
+    "href": "courses/om-vier-v.html#verwandte-lernseiten",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/om-vier-v.html#abschnitt-6",
+    "href": "courses/om-vier-v.html#abschnitt-6",
+    "title": "OM: Güter, Dienstleistungen und die 4 V",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 18–20, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nKein schlichtes Entweder-oder: PDF-S. 18–19 (Merkmale und Produktions-/Dienstleistungsarten), S. 34 (Kontinuum).\nVier Dimensionen und MünsterRad-Anwendung: PDF-S. 20; dort Vergleich von Reparaturservice und Serienfertigung. Die Diagnose-/Montageausarbeitung ist eine eigene Ableitung, keine Messung.\nSelbstcheck: PDF-S. 20 (Abgrenzung der vier Dimensionen)."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html",
+    "href": "courses/om-organisation-digitalisierung.html",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "",
+    "text": "Entscheidungen bilden eine HierarchieEvidenzgrenzen und verantwortliche EntscheidungenSelbstcheck (MC)Quelle und Abgrenzung\nOM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-1",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-1",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Lernziele",
+    "text": "Lernziele\nEntscheidungen nach Horizont einordnen, Organisationsformen abwägen und digitale Maßnahmen über Wirkung, Voraussetzung und Risiko begründen."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-2",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-2",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Entscheidungen bilden eine Hierarchie",
+    "text": "Entscheidungen bilden eine Hierarchie\nDie Planung unterscheidet drei Ebenen mit typischen Zeithorizonten:\n\nStrategisch, typischerweise 2–5 Jahre: Standort, Kapazitätsaufbau und Make-or-Buy legen den langfristigen Rahmen fest.\nTaktisch, typischerweise 3–18 Monate: Saisonprogramm, Schichten und Rahmenverträge konkretisieren diesen Rahmen.\nOperativ, typischerweise 1 Tag–1 Woche: Auftragsreihenfolge, Personaleinsatz und Störungsreaktionen steuern die unmittelbare Ausführung.\n\nDas sind Orientierungen der Vorlesung, keine universellen Naturgrenzen. Eine heutige Entscheidung kann strategisch sein, wenn sie den Standort für Jahre bindet. Kurzfristige Planung ist detaillierter, hat aber weniger Gestaltungsspielraum."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-3",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-3",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Schnittstellen und Organisationsformen",
+    "text": "Schnittstellen und Organisationsformen\nOM muss Lieferzusagen mit Marketing, Investitionen mit Finanzen, Qualifikationen mit Personal und Daten mit IT abstimmen. S&OP verbindet Nachfrage, Kapazität und Finanzen in einem monatlich abgestimmten Plan.\n\nFunktional: Klare Zuständigkeiten und Skaleneffekte stehen möglichen Silos und geringer Flexibilität gegenüber.\nDivisional: Marktnähe und Ergebnisverantwortung gehen mit möglichen Redundanzen und schwieriger Harmonisierung einher.\nMatrix: Ressourcenoptimierung und Synergien erfordern komplexere Entscheidungen wegen der doppelten Berichtslinie.\nWertstrom / End-to-End: Kundenzentrierung und kurze Durchlaufzeiten benötigen bereichsübergreifende Koordination und neue Rollen.\n\nEs gibt keine pauschal beste Struktur: Geteilte Spezialisten können Skaleneffekte schaffen, benötigen aber Abstimmung zwischen Teams."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-4",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-4",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Digitale Maßnahme als Wirkungskette prüfen",
+    "text": "Digitale Maßnahme als Wirkungskette prüfen\nDigitale Steuerung kann Transparenz, Reaktionsfähigkeit, Effizienz, Qualität/Zuverlässigkeit und Ressourceneinsatz verbessern. Voraussetzungen sind gute Daten, integrierte Systeme und qualifizierte Mitarbeitende.\nEigenes Lernbeispiel: Ein gescannter Teilebestand macht Fehlteile sichtbar → die Werkstatt kann Aufträge umplanen → vermeidbare Wartezeit kann sinken. Eine Scanneranschaffung allein bewirkt das nicht: Buchungen müssen stimmen und jemand muss auf den Engpass reagieren.\nDas Wartungs- und Logistiksystem ALIS illustriert Datenfehler, Cyberrisiken und Fehlalarme sowie die Notwendigkeit menschlicher Prüfung. Daraus folgt nicht, Warnungen beliebig zu ignorieren, sondern widersprüchliche Daten fachlich zu prüfen.\n\n\n\n\n\n\nWarnungEvidenzgrenzen und verantwortliche Entscheidungen\n\n\n\nBerichtete Digitalisierungsnutzen beruhen überwiegend auf Selbstauskünften; eine kausale Wirkung ist dadurch nicht belegt. Sie garantieren keine Effekte für andere Unternehmen. Deshalb müssen Wirkungsmechanismus, Datenqualität, Investitionsaufwand und lokale Umsetzung geprüft werden. Widersprüchliche Systemmeldungen verlangen fachliche Prüfung, nicht blindes Vertrauen oder pauschales Ignorieren."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-6",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-6",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind begründet?\n Ein zweites Werk ist typischerweise eine strategische Entscheidung.\n Eine IT-Investition garantiert die in anderen Firmen berichtete Kostenersparnis.\n Gute Daten und geschulte Mitarbeitende sind Voraussetzungen digitaler Steuerung.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. b ist falsch: Berichtete Nutzenwerte begründen keine garantierte kausale Wirkung. Ein übertragbarer Wirkungsmechanismus und die lokalen Voraussetzungen müssen geprüft werden."
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
+    "href": "courses/om-organisation-digitalisierung.html#verwandte-lernseiten",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nLeistungsziele und KennzahlenTrade-offs, Produktivität und Little’s Law.\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/om-organisation-digitalisierung.html#abschnitt-7",
+    "href": "courses/om-organisation-digitalisierung.html#abschnitt-7",
+    "title": "OM: Organisation und Digitalisierung",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 16, 22–26, 29–32 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nEntscheidungen bilden eine Hierarchie: PDF-S. 16 (Horizonte und Beispiele).\nSchnittstellen und Organisationsformen: PDF-S. 22–23 (Prozesslandschaft, Abstimmung und S&OP), S. 24–26 (Organisationsformen und MünsterRad).\nDigitale Wirkungskette: PDF-S. 29 (Hebel und Voraussetzungen), S. 31 (ALIS-Risiken), S. 32 (MünsterRad; eigene Ausarbeitung des Scan-Beispiels).\nGrenzen berichteter Nutzenwerte: PDF-S. 30. Der Hinweis lautet „Außer WEF-Reports, Selbstauskünfte, daher nicht kausal belegt“; die Lernseite behauptet auch für WEF-Beispiele keinen unabhängig geprüften Kausalnachweis.\nWiderspruch im internen Verweis: PDF-S. 32 verweist beim ALIS-Beispiel auf „Folie 32“; die ALIS-Seite trägt jedoch Foliennummer 33 (physische PDF-S. 31). Deshalb werden hier physische PDF-Seiten angegeben. Ungeprüfte aktuelle geopolitische Aussagen aus dem Einführungsteil werden nicht übernommen.\nSelbstcheck: PDF-S. 16, 29–30 (strategische Entscheidung, Voraussetzungen und Evidenzgrenzen)."
+  },
+  {
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
     "section": "",
     "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html#grundlagen",
-    "href": "courses/controlling-lmn-umlage.html#grundlagen",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#grundlagen",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html#grundlagen",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
     "section": "Grundlagen",
-    "text": "Grundlagen\nFür eine vollständige Verrechnung des betrachteten Kostenpools können lmn-Kosten proportional zu den lmi-Kosten verteilt werden. Das ist eine Schlüsselentscheidung: Sie verteilt den neutralen Kostenblock, ohne nachzuweisen, dass jeder einzelne Prozess ihn proportional verursacht."
+    "text": "Grundlagen\nDie Zeitgleichung kann nur so verlässlich sein wie ihre Zeitparameter. Bei Soll-Zeiten müssen Bearbeitungszeiten geschätzt werden. Systematische Schätzfehler können sich daher unmittelbar in kalkulierten Prozesskosten niederschlagen; eine präzise Formel beseitigt keine ungenauen Eingaben."
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html#zuschlag-und-gesamtprozesskostensatz",
-    "href": "courses/controlling-lmn-umlage.html#zuschlag-und-gesamtprozesskostensatz",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
-    "section": "Zuschlag und Gesamtprozesskostensatz",
-    "text": "Zuschlag und Gesamtprozesskostensatz\nDie lmi-Kosten summieren sich auf 800.000 + 180.000 + 295.000 + 105.000 = 1.380.000 €. Der lmn-Block beträgt 207.000 €. Der dimensionslose Zuschlag ist daher 207.000 / 1.380.000 = 0,15 = 15 %.\nFür Materialbestellungen mit 25 € lmi-Satz beträgt der Umlagebetrag 0,15 × 25 = 3,75 € je Bestellung. Der Gesamtprozesskostensatz ist 25 × (1 + 0,15) = 28,75 € je Bestellung. Prozentzuschlag, Umlagebetrag und Gesamtsatz sind drei verschiedene Größen."
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#drei-bedingungen-für-größere-schätzfehler",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html#drei-bedingungen-für-größere-schätzfehler",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
+    "section": "Drei Bedingungen für größere Schätzfehler",
+    "text": "Drei Bedingungen für größere Schätzfehler\nDie im Skript zusammengefasste experimentelle Untersuchung mit Studierenden vergleicht geschätzte mit gemessenen Zeiten in einem Planspiel mit verschiedenen Aufgaben. Größere Schätzfehler werden dort für drei Bedingungen berichtet: Schätzung von Teilprozessen statt Hauptprozessen, Schätzung nach statt vor der Durchführung und absolute Minutenangaben statt relativer Prozentangaben.\nDas sind berichtete Vergleichsbefunde, keine Garantie, dass eine einzelne vorherige oder relative Schätzung stimmt. Die Zusammenfassung nennt hier weder eine universelle Fehlerquote noch eine für alle Unternehmen gültige Effektgröße. Aus „größerer Schätzfehler“ folgt außerdem nicht automatisch eine bestimmte Richtung wie systematische Überschätzung."
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html#alle-prozesse-gegenprüfen",
-    "href": "courses/controlling-lmn-umlage.html#alle-prozesse-gegenprüfen",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
-    "section": "Alle Prozesse gegenprüfen",
-    "text": "Alle Prozesse gegenprüfen\nFür Hilfs- und Betriebsstoffe ergeben sich 22,50 € Umlage und 172,50 € Gesamtsatz. Bei Maschinen und Anlagen sind es 442,50 € und 3.392,50 €; bei Dienstleistungen 157,50 € und 1.207,50 € je Vorgang.\nDie verteilten lmn-Beträge ergeben bei den angenommenen Mengen 32.000 × 3,75 + 1.200 × 22,50 + 100 × 442,50 + 100 × 157,50 = 207.000 €. Die gesamten verrechneten Kosten sind damit 1.587.000 €. Dieselben lmn-Kosten dürfen anschließend nicht noch einmal separat zugeschlagen werden."
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#eigenes-beispiel-ein-kleiner-zeitfehler-wirkt-wiederholt",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html#eigenes-beispiel-ein-kleiner-zeitfehler-wirkt-wiederholt",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
+    "section": "Eigenes Beispiel: ein kleiner Zeitfehler wirkt wiederholt",
+    "text": "Eigenes Beispiel: ein kleiner Zeitfehler wirkt wiederholt\nAngenommen, eine Basiszeit wird um zwei Minuten zu hoch angesetzt. Bei 10.000 gleichartigen Bestellungen und einem unveränderten gerundeten Satz von 1,28 € je Minute werden 20.000 Minuten und damit 25.600 € zu viel zugeordnet. Der Fehler entsteht im Zeitmodell; die Multiplikation selbst kann vollständig korrekt sein.\nDie 25.600 € sind keine neu entstandenen Gesamtkosten und kein automatisch verfügbares Einsparpotenzial. Sie zeigen eine verzerrte Zuordnung innerhalb des Modells. Die Beispielzahlen sind eine eigene Sensitivitätsrechnung, kein Ergebnis des Experiments."
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html#missverständliche-formel-berichtigen",
-    "href": "courses/controlling-lmn-umlage.html#missverständliche-formel-berichtigen",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
-    "section": "Missverständliche Formel berichtigen",
-    "text": "Missverständliche Formel berichtigen\nDie Gleichsetzung von „lmn-Zuschlagssatz“ mit einem Eurobetrag ist begrifflich ungenau. Die korrekt geklammerte Rechnung (1 + 0,15) × 25 liefert den Gesamtprozesskostensatz von 28,75 € je Bestellung, nicht den dimensionslosen Zuschlagssatz von 15 %. Die Formel selbst und die Tabellenwerte sind rechnerisch konsistent; missverständlich ist die Bezeichnung der zweiten Formel.\nEin anderer Verteilungsschlüssel könnte andere Produktkosten ergeben. Ein rechnerisch vollständig verteilter Kostenblock ist noch kein Nachweis einer eindeutigen Verursachung."
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#ein-praktikabler-prüfweg",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html#ein-praktikabler-prüfweg",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
+    "section": "Ein praktikabler Prüfweg",
+    "text": "Ein praktikabler Prüfweg\nProzessgrenzen zunächst eindeutig beschreiben, Schätzungen dokumentieren und für vergleichbare Fälle mit gemessenen Zeiten abgleichen. Abweichungen können aus einer falschen Basiszeit, unpassenden Zusatzzeiten oder unterschiedlich komplexen Vorgängen entstehen. Relative Zeitanteile müssen anschließend zu einer konsistenten Gesamtzeit passen; Prozentangaben ersetzen den Kapazitätsbezug nicht.\nMessung selbst benötigt ebenfalls klare Regeln: Bearbeitungszeit, Wartezeit und Kalenderdauer sind nicht austauschbar. Dieser Prüfweg ist eine didaktische Empfehlung, nicht ein im Experiment nachgewiesenes universelles Verfahren."
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html#selbstcheck",
-    "href": "courses/controlling-lmn-umlage.html#selbstcheck",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#selbstcheck",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html#selbstcheck",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen treffen zu?\n Der lmn-Zuschlag beträgt 15 %.\n Die Umlage für Materialbeschaffung beträgt 15 € je Bestellung.\n Der Gesamtprozesskostensatz für Materialbeschaffung beträgt 28,75 €.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 207.000 / 1.380.000. c folgt aus 25 × 1,15. b verwechselt Prozent und Euro; die Umlage beträgt 3,75 €."
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen sind gerechtfertigt?\n Die Zusammenfassung beweist, dass alle Minutenangaben zu hoch sind.\n Ein Zeitfehler kann bei vielen Vorgängen die Kostenzuordnung stark verzerren.\n Die Experimentzusammenfassung liefert keine universelle Fehlerquote für jedes Unternehmen.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\nb zeigt die eigene Sensitivitätsrechnung; c wahrt die begrenzte Reichweite der Zusammenfassung. a erfindet sowohl eine allgemeine Gültigkeit als auch eine Fehlerrichtung."
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html#verwandte-lernseiten",
-    "href": "courses/controlling-lmn-umlage.html#verwandte-lernseiten",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#verwandte-lernseiten",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html#verwandte-lernseiten",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nlmi und lmn: Prozessmenge und Kosten trennenDen Zusammenhang weiterlernen.\nVom Bestellvorgang zu Prozesskosten je StückDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nTDABC: praktische Kapazität statt Ist-AuslastungDen Zusammenhang weiterlernen.\nTDABC: Bestellungen mit einer Zeitgleichung kalkulierenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/controlling-lmn-umlage.html#quellen",
-    "href": "courses/controlling-lmn-umlage.html#quellen",
-    "title": "lmn-Umlage: 15 Prozent sind nicht 15 Euro",
+    "objectID": "courses/controlling-tdabc-zeitschaetzung.html#quellen",
+    "href": "courses/controlling-tdabc-zeitschaetzung.html#quellen",
+    "title": "TDABC: Zeitschätzungen kritisch prüfen",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 19.10.2026.\n\nZuschlagsbasis und 15-Prozent-Rechnung → physische PDF-S. 34. Gesamtprozesskostensatz und missverständliche Formelnotation → S. 35–36; Begriffstrennung hier ausdrücklich vorgenommen; die Klammer im Original wurde am gerenderten PDF kontrolliert. Vier Prozesssätze → S. 36. Summengegenprobe, Doppelverrechnungswarnung und Schlüsselgrenze → eigene Ableitungen.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 20.10.2026.\n\nExperimentaufbau und drei Vergleichsbefunde → physische PDF-S. 56 (Zusammenfassung von Cardinaels/Labro 2008); bibliografische Angabe → S. 58. Minutenkostensatz als Ausgangspunkt der eigenen Sensitivitätsrechnung → S. 52–53. Beispiel, Prüfweg und Reichweitengrenzen → eigene Erläuterungen; Originalstudie nicht zusätzlich geprüft.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html",
-    "href": "courses/db-blockchain-foundations.html",
-    "title": "Blockchain: records, signatures and agreement",
+    "objectID": "courses/controlling-divisionskalkulation.html",
+    "href": "courses/controlling-divisionskalkulation.html",
+    "title": "Divisionskalkulation: Kosten je Einheit",
     "section": "",
-    "text": "Start with the record, not the coinSelf-check (SC)Source and limits\nDigital Business overview"
+    "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html#abschnitt-1",
-    "href": "courses/db-blockchain-foundations.html#abschnitt-1",
-    "title": "Blockchain: records, signatures and agreement",
-    "section": "Learning goals",
-    "text": "Learning goals\nDistinguish blockchain from Bitcoin and explain why integrity, authorization and agreement solve different problems."
+    "objectID": "courses/controlling-divisionskalkulation.html#grundlagen",
+    "href": "courses/controlling-divisionskalkulation.html#grundlagen",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Grundlagen",
+    "text": "Grundlagen\nBei der einstufigen Divisionskalkulation werden die Gesamtkosten einer Periode durch die zugehörige Menge geteilt. Das Ergebnis ist ein durchschnittlicher Selbstkostenbetrag je Einheit. Die Rechnung ist besonders übersichtlich bei einem einheitlichen Produkt; unterschiedliche Produkte oder wesentlich unterschiedliche Leistungsumfänge dürfen nicht ohne Weiteres in einen gemeinsamen Durchschnitt gezwungen werden."
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html#abschnitt-2",
-    "href": "courses/db-blockchain-foundations.html#abschnitt-2",
-    "title": "Blockchain: records, signatures and agreement",
-    "section": "Start with the record, not the coin",
-    "text": "Start with the record, not the coin\nA blockchain is an append-only, auditable record secured through cryptography and a consensus protocol. “Append-only” describes adding entries to a history, rather than silently overwriting the old record. Auditability concerns the ability to inspect that history. Neither term, on its own, proves that a recorded claim about the outside world is true.\nThree building blocks address different tasks. The focused diagram retains their labels and relationships:\n\n\n\n\nRecords, cryptographic protection and agreement play complementary roles. Provenance is listed in the final source section. On narrow screens, scroll within the diagram to retain readable labels.\n\nOpen the diagram at full size.\nRead the diagram as a division of responsibilities, not as a chronology in which one component makes the others unnecessary. Hash functions support tamper resistance and integrity; digital signatures express authorization or consent; consensus establishes agreement among participants.\nHash function — integrity. Ask whether the represented data has changed. This alone does not establish whether a real-world event was described honestly.\nDigital signature — authorization. Ask whether the entry was authorized using the relevant signing key. This alone does not establish whether all participants accept the same history.\nConsensus protocol — agreement. Ask how participants agree on the record. Agreement alone does not establish whether the original input was factually correct.\nThese boundaries are an original learning interpretation of the separation of functions, not an additional slide quotation. Permissioned and permissionless arrangements differ: participation rules belong in the analysis instead of assuming every blockchain is open to everyone."
+    "objectID": "courses/controlling-divisionskalkulation.html#eigenes-beispiel-ein-einheitliches-produkt",
+    "href": "courses/controlling-divisionskalkulation.html#eigenes-beispiel-ein-einheitliches-produkt",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Eigenes Beispiel: ein einheitliches Produkt",
+    "text": "Eigenes Beispiel: ein einheitliches Produkt\nEine Modellfabrik stellt in einer Periode 10.000 identische Einheiten her und setzt dieselbe Menge ab. Es gibt keine Bestandsänderung und keine unfertigen Erzeugnisse. Die zugehörigen Gesamtkosten betragen 80.000 €. Dann sind die durchschnittlichen Selbstkosten 80.000 / 10.000 = 8 € je Einheit.\nBei einem angenommenen Nettoerlös von 11 € je Einheit ergibt sich ein durchschnittlicher Überschuss von 3 € je Einheit und insgesamt 30.000 €. Herstellermenge, Herstellererlös und Herstellerkosten müssen dabei zusammenpassen: Ein Endkundenpreis im Handel ist nicht automatisch der Erlös des Herstellers."
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html#abschnitt-3",
-    "href": "courses/db-blockchain-foundations.html#abschnitt-3",
-    "title": "Blockchain: records, signatures and agreement",
-    "section": "Original learning example: a delivery record",
-    "text": "Original learning example: a delivery record\nSuppose a supplier records “package delivered”. A signed entry can link authorization to a signing key, and an integrity check can expose a changed entry. Agreement on the recorded history still does not demonstrate that the package reached the customer. Checking delivery evidence is a separate task. This example illustrates why a technically consistent ledger does not remove every source of trust."
+    "objectID": "courses/controlling-divisionskalkulation.html#durchschnitt-ist-keine-grenzkosteninformation",
+    "href": "courses/controlling-divisionskalkulation.html#durchschnitt-ist-keine-grenzkosteninformation",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Durchschnitt ist keine Grenzkosteninformation",
+    "text": "Durchschnitt ist keine Grenzkosteninformation\nAus den 8 € folgt nicht, dass eine zusätzliche Einheit genau 8 € verursacht. Angenommen, im Kostenbetrag stecken 30.000 € fixe Kosten und 5 € variable Kosten je Einheit. Bei freier Kapazität und unveränderten Bedingungen kostet eine zusätzliche Einheit im eigenen linearen Modell 5 €. Für eine größere Menge können Kapazitätsgrenzen die Rechnung verändern.\nBei mehreren unterschiedlichen Erzeugnissen ist zunächst zu prüfen, ob ein gemeinsamer Durchschnitt sinnvoll ist. Die Wahl eines Verfahrens hängt vom Produktionsprogramm ab; die einfache Division liefert nicht durch ihre Einfachheit schon eine verursachungsgerechte Verteilung. Äquivalenzziffern- und Kuppelkalkulation werden hier nur als alternative Verfahren eingeordnet, nicht ohne ihre zusätzlichen Voraussetzungen angewendet."
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html#abschnitt-4",
-    "href": "courses/db-blockchain-foundations.html#abschnitt-4",
-    "title": "Blockchain: records, signatures and agreement",
-    "section": "Bitcoin is one use case",
-    "text": "Bitcoin is one use case\nBitcoin applies a blockchain to financial transaction records; it is not the definition of blockchain, and other cryptocurrencies also exist. In an exam explanation, first identify the record and the coordination problem, then name the application. “Blockchain means Bitcoin” reverses that relationship.\nScope boundary: an external video is assigned. The mechanisms in that video have not been independently processed here; this page does not claim to teach its full technical account."
+    "objectID": "courses/controlling-divisionskalkulation.html#selbstcheck",
+    "href": "courses/controlling-divisionskalkulation.html#selbstcheck",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Selbstcheck (MC)",
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen treffen zu?\n Im Modell betragen die durchschnittlichen Selbstkosten 8 €.\n Jede zusätzliche Einheit verursacht zwingend 8 €.\n Ein Händler-Endkundenpreis ist nicht automatisch Herstellererlös.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 80.000 / 10.000. c wahrt die Unternehmensperspektive. b ist falsch: Bei den ausdrücklich angenommenen freien Kapazitäten und linearen variablen Kosten sind es 5 €."
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html#abschnitt-5",
-    "href": "courses/db-blockchain-foundations.html#abschnitt-5",
-    "title": "Blockchain: records, signatures and agreement",
-    "section": "Self-check (SC)",
-    "text": "Self-check (SC)\n\nA signed delivery entry is accepted into a shared history. What follows most defensibly?\n The package must physically have arrived.\n Authorization, integrity and agreement must be distinguished from the truth of the delivery claim.\n The record must represent a Bitcoin payment.\nCheck\n\n\n\n\nShow the reasoning\n\nb is correct. The separate functions do not verify the physical delivery. a confuses agreement about data with truth outside the system; c mistakes one application for the technology."
+    "objectID": "courses/controlling-divisionskalkulation.html#verwandte-lernseiten",
+    "href": "courses/controlling-divisionskalkulation.html#verwandte-lernseiten",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nVom Selbstkostenbetrag zum ListenpreisDen Zusammenhang weiterlernen.\nZuschlagskalkulation: Herstell- und SelbstkostenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html#related-study-pages",
-    "href": "courses/db-blockchain-foundations.html#related-study-pages",
-    "title": "Blockchain: records, signatures and agreement",
+    "objectID": "courses/controlling-divisionskalkulation.html#quellen",
+    "href": "courses/controlling-divisionskalkulation.html#quellen",
+    "title": "Divisionskalkulation: Kosten je Einheit",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 18.10.2026.\n\nVerfahrenswahl nach Produktionsprogramm → physische PDF-S. 25 und 27. Einstufige Division und Einproduktannahme → PDF-S. 26. Dortiges Unternehmensbeispiel bezieht sich auf 2021 und wird nicht als aktuelle Unternehmenszahl übernommen. Modellfabrik, Bestandsannahme, Herstellerperspektive und Selbstcheck → eigene Erläuterungen; Durchschnitts-/Zusatzkostengrenze ergänzt anhand der Vereinfachungsannahmen auf PDF-S. 6–10.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html",
+    "href": "courses/db-innovation-foundations.html",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "",
+    "text": "From knowledge to actual useSelf-check (SC — select one answer)Source and limits\nDigital Business overview"
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#abschnitt-1",
+    "href": "courses/db-innovation-foundations.html#abschnitt-1",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Learning goal",
+    "text": "Learning goal\nDistinguish a technical invention from an innovation, and explain why digital innovation is not simply any use of a computer."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#abschnitt-2",
+    "href": "courses/db-innovation-foundations.html#abschnitt-2",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "From knowledge to actual use",
+    "text": "From knowledge to actual use\nCreating a new product, process or service differs from putting it into actual use. Invention converts new knowledge into such an artefact or method. Innovation also includes its actual use. A working prototype is therefore not sufficient evidence of innovation. Inventors and entrepreneurs perform different roles, but one person can perform both.\nOwn teaching example: A team invents a sensor that detects water leaks. A laboratory prototype demonstrates technical feasibility. A housing provider then integrates sensors into maintenance routines and responds to alerts: the new technology has entered actual use. A patent alone would not establish this transition. Nor does actual use automatically prove profitability or social benefit."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#abschnitt-3",
+    "href": "courses/db-innovation-foundations.html#abschnitt-3",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "What makes innovation digital?",
+    "text": "What makes innovation digital?\nDigital innovation can be understood from two perspectives. One covers IT-enabled products, processes and business models that adopters perceive as new and that require significant changes from them. The other focuses on novel combinations of digital and physical components. These are complementary scopes, not identical definitions: the first explicitly includes processes and business models, whereas the second stresses recombination in products.\nFor the sensor example, the physical sensor, software and maintenance workflow can be analysed separately. Merely buying an ordinary laptop does not demonstrate significant adopter change or a new combination."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#abschnitt-4",
+    "href": "courses/db-innovation-foundations.html#abschnitt-4",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Generativity: possibilities beyond the original plan",
+    "text": "Generativity: possibilities beyond the original plan\nGenerativity is the capacity for change created by varied, uncoordinated participants. Three characteristics enable it:\n\nHomogenization of data: different kinds of information can be represented digitally and combined.\nReprogrammability: software can change what a device or system does without rebuilding every physical component.\nSelf-referential nature: digital technologies support the creation and development of further digital technologies.\n\nThese descriptions explain the characteristics rather than adding formal definitions. Own extension of the example: independent developers reuse sensor data for an unexpected maintenance application. This illustrates the possibility of generativity, not a guarantee that every digital product will attract such contributions.\nExam trap: “New”, “digital”, “used” and “successful” are separate claims. State what evidence supports each."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#abschnitt-5",
+    "href": "courses/db-innovation-foundations.html#abschnitt-5",
+    "title": "Innovation: invention, use and digital generativity",
+    "section": "Self-check (SC — select one answer)",
+    "text": "Self-check (SC — select one answer)\n\nWhich observation most directly distinguishes innovation from invention?\n A patent was filed.\n The new solution is put into actual use.\n The prototype contains software.\nCheck\n\n\n\n\nAnswer and reasoning\n\nb is correct: actual use supplies the distinction. A patent (a) concerns protection rather than use; software (c) concerns technical composition rather than adoption."
+  },
+  {
+    "objectID": "courses/db-innovation-foundations.html#related-study-pages",
+    "href": "courses/db-innovation-foundations.html#related-study-pages",
+    "title": "Innovation: invention, use and digital generativity",
     "section": "Related study pages",
-    "text": "Related study pages\n\nBitcoin: promises and trade-offsEvaluate benefits, criticisms and limits.\nApplications beyond cryptocurrencyAssess applications and token distinctions.\n \nBack to topic"
+    "text": "Related study pages\n\nFour innovation dilemmasCompare choices and tensions in innovation management.\nDisruptive innovationExplain entry mechanisms and incumbent vulnerability.\n \nBack to topic"
   },
   {
-    "objectID": "courses/db-blockchain-foundations.html#abschnitt-6",
-    "href": "courses/db-blockchain-foundations.html#abschnitt-6",
-    "title": "Blockchain: records, signatures and agreement",
+    "objectID": "courses/db-innovation-foundations.html#abschnitt-6",
+    "href": "courses/db-innovation-foundations.html#abschnitt-6",
+    "title": "Innovation: invention, use and digital generativity",
     "section": "Source and limits",
-    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4–6. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nRecord, cryptographic functions and participation rules → physical PDF p. 4.\nDiagram → focused excerpt from p. 4; slide attribution: Gensler (2018, MIT).\nBitcoin versus blockchain → p. 5.\nExternal-video scope boundary → p. 6; video not independently processed.\nDelivery example and self-check → original application of the distinctions on pp. 4–5."
+    "text": "Source and limits\n01 – Innovation-4.pdf, Learnweb (university login), physical PDF pp. 6–12, current course 95696; read 15 October 2026. Paraphrased study notes; invented teaching examples are explicitly labelled. Original files and private extracts are not published.\n\nFrom knowledge to actual use → physical PDF pp. 6–10: invention/innovation and inventor/entrepreneur roles.\nWhat makes innovation digital? → physical PDF p. 11: two complementary perspectives, with their different scopes retained; the lecture attributes them to Fichman et al. (2014, p. 330) and Yoo et al. (2010, p. 276), respectively.\nGenerativity → physical PDF p. 12: varied, uncoordinated contributors and the three enabling characteristics. The lecture attributes generativity to Yoo et al. (2010, p. 728); this is the reference as printed, not an independently verified original-paper citation. Descriptions unpack the terms rather than add formal definitions.\nSelf-check → physical PDF p. 6: actual use. Sensor examples and the exam trap are own teaching applications, not additional source claims."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html",
+    "href": "courses/om-leistungsziele.html",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "",
+    "text": "Vom Prozess zum LeistungszielSelbstcheck (SC)Quelle und Abgrenzung\nOM-Übersicht"
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#abschnitt-1",
+    "href": "courses/om-leistungsziele.html#abschnitt-1",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Lernziele",
+    "text": "Lernziele\nLeistungsziele auseinanderhalten, Zielkonflikte erklären und Produktivität sowie Little’s Law mit passenden Einheiten berechnen."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#abschnitt-2",
+    "href": "courses/om-leistungsziele.html#abschnitt-2",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Vom Prozess zum Leistungsziel",
+    "text": "Vom Prozess zum Leistungsziel\nOM gestaltet, steuert und verbessert Prozesse für Güter und Dienstleistungen. Inputs werden in Outputs umgewandelt; Umweltbedingungen beeinflussen diese Transformation.\nFür die Prozessgestaltung sind sechs Ziele zu unterscheiden:\n\nQualität – richtig liefern: Die Leistung ist spezifikationsgerecht und fehlerfrei.\nGeschwindigkeit – schnell liefern: Die Zeit von der Anfrage bis zur Lieferung ist kurz.\nZuverlässigkeit – pünktlich liefern: Zugesagte Termine werden eingehalten.\nFlexibilität – Änderungen ermöglichen: Produkt, Mix, Menge oder Lieferung lassen sich anpassen.\nKosten – wirtschaftlich leisten: Der Ressourceneinsatz je Leistung ist gering.\nNachhaltigkeit – verantwortungsvoll leisten: Ökologische und soziale Auswirkungen werden berücksichtigt.\n\nEigenes Lernbeispiel: Ein Reparaturbetrieb verspricht fünf Tage und liefert zuverlässig nach fünf Tagen. Er kann zuverlässig sein, obwohl ein Konkurrent schon nach zwei Tagen liefert. Geschwindigkeit und Zuverlässigkeit messen also nicht dasselbe.\nMehr Varianten können Rüstaufwand und Stückkosten erhöhen. Hohe Lieferbereitschaft kann mehr Bestand verlangen. Solche Trade-offs erfordern Prioritäten, sind aber nicht unveränderlich: Material- und Energieeffizienz können Kosten und Emissionen zugleich senken."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#abschnitt-3",
+    "href": "courses/om-leistungsziele.html#abschnitt-3",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Produktivität rechnen",
+    "text": "Produktivität rechnen\nEs gilt: Produktivität = Output / Input. Arbeitsproduktivität betrachtet nur den Input Arbeit, nicht sämtliche Kosten.\nDas MünsterRad-Beispiel liefert 120 Räder mit 300 Arbeitsstunden, später 135 Räder mit denselben Stunden:\n\nVorher: 120 / 300 = 0,40 Räder/h.\nNachher: 135 / 300 = 0,45 Räder/h.\nRelative Steigerung: (0,45 − 0,40) / 0,40 = 12,5 %.\n\nDie Differenz 0,05 Räder/h ist keine Steigerung um 5 %. Für eine Mehrfaktorproduktivität müssen mehrere Inputs in einer vergleichbaren Bewertung zusammengeführt werden."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#abschnitt-4",
+    "href": "courses/om-leistungsziele.html#abschnitt-4",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Little’s Law: Bestand ist nicht Durchsatz",
+    "text": "Little’s Law: Bestand ist nicht Durchsatz\nI = R × T verknüpft mittleren Bestand I, Durchsatz R und Durchlaufzeit T. Im Werkstattbeispiel: 20 Räder/Tag × 3 Tage = 60 Räder im System.\nAls ergänzende Anwendungshilfe: Systemgrenzen und Zeitbasis müssen übereinstimmen; verwendet werden langfristige Mittelwerte eines stabilen Flusssystems. Nicht aus einer Momentaufnahme beliebige Tageswerte multiplizieren.\nEigenes Lernbeispiel: Bei unverändert 20 Rädern/Tag und nur zwei Tagen Durchlaufzeit ergibt sich ein mittlerer Bestand von 40 Rädern. Weniger Bestand ist hier die Folge kürzerer Durchlaufzeit bei gleichem Durchsatz, nicht automatisch weniger Nachfrage."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#abschnitt-5",
+    "href": "courses/om-leistungsziele.html#abschnitt-5",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Selbstcheck (SC)",
+    "text": "Selbstcheck (SC)\n\nBei 15 Aufträgen pro Tag und vier Tagen mittlerer Durchlaufzeit: Wie groß ist der mittlere Bestand?\n 60 Aufträge\n 3,75 Aufträge\n 60 Aufträge pro Tag\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na ist richtig: I = 15 Aufträge/Tag × 4 Tage = 60 Aufträge. b dividiert statt zu multiplizieren; c verwechselt Bestand mit einer Rate."
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#verwandte-lernseiten",
+    "href": "courses/om-leistungsziele.html#verwandte-lernseiten",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Verwandte Lernseiten",
+    "text": "Verwandte Lernseiten\n\nGüter, Dienstleistungen und die 4 VProzesse vergleichen und einordnen.\nOrganisation und DigitalisierungPlanungsebenen, Schnittstellen, Potenziale und Risiken.\n \nZur Kursübersicht"
+  },
+  {
+    "objectID": "courses/om-leistungsziele.html#abschnitt-6",
+    "href": "courses/om-leistungsziele.html#abschnitt-6",
+    "title": "OM: Leistungsziele und Kennzahlen",
+    "section": "Quelle und Abgrenzung",
+    "text": "Quelle und Abgrenzung\n01 Einführung OM26.pdf – Learnweb (Hochschulzugang), PDF-S. 12–15, 34 (physische PDF-Seiten, nicht die abweichenden Foliennummern). Quelle und private Textextraktion erneut geprüft am 16.10.2026. Erklärungen sind paraphrasiert; zusätzliche Beispiele sind als eigene Lernbeispiele markiert. Daraus werden keine zusätzlichen Prüfungsanforderungen abgeleitet. Original und Extrakt bleiben privat.\n\nZuordnung nach Themenbereich\n\nVom Prozess zum Leistungsziel: PDF-S. 12–14 und 34 (Definition, Transformation, sechs Ziele und Trade-offs).\nProduktivität rechnen: PDF-S. 15 (Formel, Teil-/Mehrfaktorproduktivität und MünsterRad-Zahlen).\nLittle’s Law und Selbstcheck: PDF-S. 15 (Formel und Werkstattbeispiel). Der 40-Räder-Fall und die Prüfungsaufgabe sind eigene Anwendungen. Übereinstimmende Systemgrenzen, Zeitbasis und stabile langfristige Mittelwerte sind ergänzende Anwendungshinweise."
   },
   {
     "objectID": "courses/controlling-pkr-verbreitung.html",
@@ -2427,116 +2577,145 @@
     ]
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html",
-    "href": "courses/vwl-grenzentscheidung.html",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
+    "objectID": "courses/digital-business.html",
+    "href": "courses/digital-business.html",
+    "title": "Digital Business",
     "section": "",
-    "text": "Der scheinbare VerlustauftragSelbstcheck (MC)Quelle und Grenzen\nVWL-Übersicht"
+    "text": "Choose a topic, then a source-based study page. These selected sections do not cover the entire course.\n\nInnovation3 study pages · concepts, examples and self-checks.\nBlockchain3 study pages · concepts, examples and self-checks.\n \nOriginal course materials · All courses",
+    "crumbs": [
+      "Aktuelle Kurse",
+      "Digital Business"
+    ]
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-1",
-    "href": "courses/vwl-grenzentscheidung.html#abschnitt-1",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Lernziel",
-    "text": "Lernziel\nEine Zusatzbestellung anhand zusätzlicher Erlöse und Kosten beurteilen und die Bedingungen der Rechnung offenlegen."
+    "objectID": "courses/digital-business.html#topic-areas",
+    "href": "courses/digital-business.html#topic-areas",
+    "title": "Digital Business",
+    "section": "",
+    "text": "Choose a topic, then a source-based study page. These selected sections do not cover the entire course.\n\nInnovation3 study pages · concepts, examples and self-checks.\nBlockchain3 study pages · concepts, examples and self-checks.\n \nOriginal course materials · All courses",
+    "crumbs": [
+      "Aktuelle Kurse",
+      "Digital Business"
+    ]
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-2",
-    "href": "courses/vwl-grenzentscheidung.html#abschnitt-2",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Der scheinbare Verlustauftrag",
-    "text": "Der scheinbare Verlustauftrag\nEine Pizzeria zahlt monatlich 5.000 € für Löhne und Mieten sowie 3,50 € für Zutaten je Pizza. Sie verkauft 1.000 Pizzen. Ein Online-Vermittler bietet 5 € für zusätzliche Pizzen; die Kundengruppen überschneiden sich nicht. Daraus ergibt sich zunächst ein durchschnittlicher Kostenbetrag von 5.000 / 1.000 + 3,50 = 8,50 € je Pizza.\nIst ein Preis von 5 € deshalb automatisch abzulehnen? Nein: Für die Veränderung zählt, welche Erlöse und Kosten zusätzlich entstehen. Die ohnehin anfallenden 5.000 € werden durch die Zusatzbestellung nicht automatisch noch einmal fällig."
+    "objectID": "courses/db-blockchain-applications.html",
+    "href": "courses/db-blockchain-applications.html",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "",
+    "text": "Begin with the application, not the labelSelf-check (SC)Source and limits\nDigital Business overview"
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-3",
-    "href": "courses/vwl-grenzentscheidung.html#abschnitt-3",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Was eine zusätzliche Pizza verändert",
-    "text": "Was eine zusätzliche Pizza verändert\nUnter der ausdrücklich ergänzten Annahme freier Kapazität und unveränderter Löhne/Mieten vergleicht die folgende eigene Grafik den Zusatzpreis mit den Zutatenkosten. Weitere variable Kosten sind im vereinfachten Modell nicht enthalten.\n\n\n\nEigene Darstellung zum Pizzeria-Beispiel. Beträge pro zusätzlicher Pizza.\n\n\nVon 5 € zusätzlichem Erlös verbleiben nach 3,50 € Zutatenkosten 1,50 € zusätzlicher Deckungsbeitrag. Für beispielhaft 100 zusätzliche Pizzen steigt das Monatsergebnis um 150 €. Das bedeutet weder, dass die Pizzeria insgesamt Gewinn macht, noch dass 5 € langfristig alle Kosten decken. Der Preis der bisherigen 1.000 Pizzen ist im vereinfachten Ausgangsfall nicht angegeben; der Gesamtgewinn lässt sich deshalb nicht ausrechnen."
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-1",
+    "href": "courses/db-blockchain-applications.html#abschnitt-1",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Learning goals",
+    "text": "Learning goals\nIdentify the coordination problem in a non-currency application and distinguish a token’s identity from the rights or real-world facts associated with it."
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-4",
-    "href": "courses/vwl-grenzentscheidung.html#abschnitt-4",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Wann kippt die Empfehlung?",
-    "text": "Wann kippt die Empfehlung?\nEigene Sensitivitätsrechnung: Fallen zusätzlich 2 € Kurierkosten pro Pizza an, sind die zusätzlichen Kosten 5,50 €. Bei 5 € Erlös sinkt das Ergebnis dann um 0,50 € je Zusatzpizza. Braucht der Betrieb zusätzliches Personal oder verdrängt er profitablere Bestellungen, müssen auch diese Folgen berücksichtigt werden.\nDie Kundengruppen überschneiden sich im Ausgangsfall nicht. Kapazitätsgrenzen und Lieferkosten sind dagegen nicht festgelegt. Die Annahme „nur Zutaten sind zusätzlich“ ist daher eine offenzulegende Modellannahme, kein vollständig belegter Betriebszustand. Veränderte Kosten und Nutzen verändern Anreize; sie sind nicht bloß Buchungspositionen.\nMerksatz: Durchschnittskosten beantworten eine andere Frage als Grenzkosten. Kurzfristig vorteilhafte Zusatzaufträge beweisen keine langfristige Tragfähigkeit."
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-2",
+    "href": "courses/db-blockchain-applications.html#abschnitt-2",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Begin with the application, not the label",
+    "text": "Begin with the application, not the label\nBlockchain application scenarios include vaccine passports, supply-chain traceability and transparency, music-industry platforms such as Audius, and art-related non-fungible tokens. These are application illustrations, not comparative evidence that blockchain is always the best architecture. The slides offer much less implementation detail here than in the foundations section.\nTo turn this list into an explanation, apply the distinction between integrity, authorization and agreement: What is recorded, which parties need to agree, and what remains outside the record?\nVaccine passport: Which issuer’s statement is checked? A consistent record cannot independently establish the medical event.\nSupply chain: Which handover or product event is recorded? A false physical-world input can still be recorded consistently.\nMusic platform: Which participants exchange or coordinate value? A platform name alone does not establish contractual rights or governance rules.\nArt-related NFT: Which unique token changes hands? Token identity alone does not establish copyright or ownership of a physical artwork.\nThe questions and boundaries are original analytical prompts, not claims that the cited projects implemented particular features or failed in these ways. They help avoid answering a design question with a product name."
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-5",
-    "href": "courses/vwl-grenzentscheidung.html#abschnitt-5",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten unter den genannten vereinfachten Annahmen?\n 100 zusätzliche Pizzen verbessern das Ergebnis um 150 €.\n Ein Preis unter 8,50 € muss jeden Zusatzauftrag unvorteilhaft machen.\n Zusätzliche Lieferkosten können die Entscheidung umkehren.\n Der Gesamtgewinn der Pizzeria ist sicher positiv.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na und c sind richtig. a: 100 × (5 − 3,50) = 150 €. b verwechselt Durchschnitts- und Zusatzkosten. c folgt aus dem Vergleich aller zusätzlichen Kosten mit dem Erlös. d ist mangels Ausgangserlösen nicht bestimmbar."
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-3",
+    "href": "courses/db-blockchain-applications.html#abschnitt-3",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Original learning example: tracing a food shipment",
+    "text": "Original learning example: tracing a food shipment\nImagine three firms recording successive handovers of one shipment. A shared history could support checking which handover was entered and by whom. If someone attaches the wrong product identifier at the first handover, later agreement on that identifier does not repair the initial mistake.\nA reasoned proposal must therefore specify input controls as well as record integrity. It should also ask whether participants actually need a shared agreement mechanism or whether a conventional database under an accepted operator would suffice. This is a design comparison derived from the lecture’s “cost of trust” framing, not evidence that one option is superior."
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#verwandte-lernseiten",
-    "href": "courses/vwl-grenzentscheidung.html#verwandte-lernseiten",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nKnappheit und OpportunitätskostenAlternativen erkennen und Verzicht bewerten.\nMärkte, Marktversagen und StaatKoordination und Grenzen staatlicher Eingriffe.\n \nZur Kursübersicht"
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-4",
+    "href": "courses/db-blockchain-applications.html#abschnitt-4",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Fungible does not mean “digital”; non-fungible does not mean “copyright”",
+    "text": "Fungible does not mean “digital”; non-fungible does not mean “copyright”\nBitcoin units are interchangeable, whereas other applications may require units to be distinguished. Fungibility concerns interchangeability within the relevant class; non-fungibility concerns the need to identify a particular unit. Both can involve digital records.\nOriginal learning example: Ten interchangeable admission credits differ from a token identifying one numbered collectible. Identifying that collectible is still a different question from deciding what legal permissions the buyer receives. The lecture’s art-sale example illustrates a transaction; it does not by itself document a general transfer of copyright."
   },
   {
-    "objectID": "courses/vwl-grenzentscheidung.html#abschnitt-6",
-    "href": "courses/vwl-grenzentscheidung.html#abschnitt-6",
-    "title": "VWL: Grenzentscheidungen in der Pizzeria",
-    "section": "Quelle und Grenzen",
-    "text": "Quelle und Grenzen\nVWLWiInfWS26.pdf – Learnweb, Hochschulzugang, PDF-S. 15–17 (physische Seiten). Aktueller Kurs 94931; gelesen am 15.10.2026. Paraphrasierte Lernfassung, keine zusätzlichen Prüfungsanforderungen. Eigene Rechenbeispiele und Grafiken sind gekennzeichnet. Original und Extrakt werden nicht veröffentlicht.\n\nDer scheinbare Verlustauftrag und zusätzliche Pizza → PDF-S. 15–16: Ausgangszahlen und Grenzbetrachtung.\nWann kippt die Empfehlung? → PDF-S. 15–17: getrennte Kundengruppen, Grenzentscheidung und veränderte Anreize. Freie Kapazität, 100 Zusatzpizzen und Kurierkosten sind eigene, ausdrücklich erklärte Ergänzungen.\nSelbstcheck → PDF-S. 15–16; eigene Anwendung der Zusatzrechnung. Die Grafik ist eine eigene Darstellung zum Pizzeria-Beispiel auf PDF-S. 15–16."
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-5",
+    "href": "courses/db-blockchain-applications.html#abschnitt-5",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "What the section cannot settle",
+    "text": "What the section cannot settle\nThe linked examples are historical teaching material. This page makes no claim that the projects are currently available, legally unchanged or commercially successful. Where the slides provide only a heading and external links, the implementation is not specified, rather than filled in with invented details."
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html",
-    "href": "courses/controlling-kapazitaet-kalkulation.html",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-6",
+    "href": "courses/db-blockchain-applications.html#abschnitt-6",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Self-check (SC)",
+    "text": "Self-check (SC)\n\nWhich conclusion is supported by the application discussion?\n A blockchain entry proves a physical shipment was labelled correctly.\n Buying any NFT necessarily transfers the artist’s copyright.\n A traceability proposal must distinguish integrity of the record from reliability of its inputs.\nCheck\n\n\n\n\nShow the reasoning\n\nc is correct, applying the distinction between integrity and input reliability to traceability. a confuses a shared record with validated physical input. b adds an unsupported legal conclusion to the token distinction. Neither follows from the slides."
+  },
+  {
+    "objectID": "courses/db-blockchain-applications.html#related-study-pages",
+    "href": "courses/db-blockchain-applications.html#related-study-pages",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Related study pages",
+    "text": "Related study pages\n\nRecords, signatures and agreementUnderstand the mechanisms before discussing the coin.\nBitcoin: promises and trade-offsEvaluate benefits, criticisms and limits.\n \nBack to topic"
+  },
+  {
+    "objectID": "courses/db-blockchain-applications.html#abschnitt-7",
+    "href": "courses/db-blockchain-applications.html#abschnitt-7",
+    "title": "Blockchain beyond cryptocurrency",
+    "section": "Source and limits",
+    "text": "Source and limits\n02 – Blockchain-5.pdf, current Learnweb course 95696, physical PDF pages 4, 20–24. Rechecked locally on 17 October 2026. Paraphrases and explicitly labelled original learning examples; not an official exam-question set. The original PDF and extracted text remain private. This page covers only the indicated section. Historical examples in the slides are not evidence of present-day adoption, prices, legal status or network performance.\n\nSection-to-source mapping\n\nApplication illustrations: vaccine passports → physical PDF p. 20; supply chains → p. 21; Audius → p. 22; NFTs and art-sale example → pp. 23–24.\nRecord integrity, input reliability and shipment example → original analytical application of p. 4 to p. 21.\nFungibility → p. 23; rights boundary and collectible example → original interpretation, not a legal finding established by the slides.\nSelf-check → pp. 4, 21, 23–24."
+  },
+  {
+    "objectID": "courses/controlling-degressionseffekt.html",
+    "href": "courses/controlling-degressionseffekt.html",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
     "section": "",
     "text": "GrundlagenSelbstcheckQuellen"
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html#grundlagen",
-    "href": "courses/controlling-kapazitaet-kalkulation.html#grundlagen",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "objectID": "courses/controlling-degressionseffekt.html#grundlagen",
+    "href": "courses/controlling-degressionseffekt.html#grundlagen",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
     "section": "Grundlagen",
-    "text": "Grundlagen\nEin Maschinenstundensatz hängt nicht nur von Kostenarten ab, sondern auch von der angesetzten Nutzungsdauer. Verteilt man denselben fixen Jahresbetrag auf weniger Stunden, steigt der verrechnete Satz. Daraus folgt nicht, dass jede zusätzliche Stunde denselben höheren Betrag an zusätzlichen Ausgaben verursacht."
+    "text": "Grundlagen\nEin mengenunabhängiger Prozesskostenblock verteilt sich bei größerer Stückzahl auf mehr Einheiten. Seine Kosten je Stück sinken. Ein proportionaler Wertzuschlag bildet diese Degression nicht ab, wenn der Materialwert je Stück gleich bleibt."
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html#eigenes-beispiel-zwei-auslastungspläne",
-    "href": "courses/controlling-kapazitaet-kalkulation.html#eigenes-beispiel-zwei-auslastungspläne",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
-    "section": "Eigenes Beispiel: zwei Auslastungspläne",
-    "text": "Eigenes Beispiel: zwei Auslastungspläne\nEs gelten 32.000 € fixe Jahreskosten und 6 € variable Kosten je Betriebsstunde. Bei 2.000 geplanten Stunden beträgt der Vollkostensatz 32.000 / 2.000 + 6 = 22 €/h. Bei nur 1.000 geplanten Stunden lautet er 32.000 / 1.000 + 6 = 38 €/h. Die variablen Kosten je Stunde bleiben in diesem Modell gleich; allein der Fixkostenanteil je Stunde steigt von 16 auf 32 €.\nWird zunächst mit 22 €/h auf Basis von 2.000 Stunden geplant, tatsächlich aber nur 1.000 Stunden gearbeitet, werden 22.000 € verrechnet. Tatsächlich entstehen unter den Modellannahmen 32.000 + 6 × 1.000 = 38.000 € Kosten. Die Unterdeckung beträgt 16.000 €. Ein nachträglicher Satz von 38 €/h würde diese Kosten verteilen, löst aber das Auslastungsproblem nicht."
+    "objectID": "courses/controlling-degressionseffekt.html#konstante-prozessbeanspruchung-als-annahme",
+    "href": "courses/controlling-degressionseffekt.html#konstante-prozessbeanspruchung-als-annahme",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
+    "section": "Konstante Prozessbeanspruchung als Annahme",
+    "text": "Konstante Prozessbeanspruchung als Annahme\nIm Rechenfall kosten 35 Bestellungen jeweils 25 €: 875 € Prozesskosten. Die Materialeinzelkosten betragen 5 € je Stück. Für den Vergleich bleibt die Zahl der Bestellungen über die betrachteten Stückzahlen hinweg unverändert. Das ist die entscheidende Modellannahme, keine allgemeine Eigenschaft jeder Beschaffung.\nBei n Stück ergeben sich prozessorientiert 5 € + 875 €/n je Stück. Für eine Einheit sind das 880 €, für zehn 92,50 €, für 100 13,75 €, für 1.000 gerundet 5,88 €. Die Gesamtkosten steigen dabei von 880 € auf 5.875 €; sinkende Stückkosten bedeuten nicht sinkende Gesamtkosten."
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html#zusatzauftrag-ausdrücklich-andere-frage",
-    "href": "courses/controlling-kapazitaet-kalkulation.html#zusatzauftrag-ausdrücklich-andere-frage",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
-    "section": "Zusatzauftrag: ausdrücklich andere Frage",
-    "text": "Zusatzauftrag: ausdrücklich andere Frage\nEin Zusatzauftrag benötigt 100 Stunden. Bei freier Kapazität, unveränderten fixen Kosten und konstanten variablen Kosten verursacht er im Modell 100 × 6 € = 600 € zusätzliche Maschinenkosten. Die Verrechnung mit dem geplanten Vollkostensatz ergäbe dagegen 2.200 €. Der Unterschied ist keine Rechenpanne: Vollkostenverteilung und Veränderung der Gesamtkosten beantworten verschiedene Fragen.\nDie 600 € sind kein vollständiger Mindestpreis: Zusätzlich benötigtes Material, Lohn, Versand, auftragsbezogene Sonderkosten oder andere relevante Veränderungen fehlen noch. Bei einem Engpass kommen verdrängte Alternativen und damit Opportunitätskosten hinzu. Für langfristige Entscheidungen können auch bisher fixe Kapazitätskosten veränderbar werden."
+    "objectID": "courses/controlling-degressionseffekt.html#vergleich-mit-dem-wertzuschlag",
+    "href": "courses/controlling-degressionseffekt.html#vergleich-mit-dem-wertzuschlag",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
+    "section": "Vergleich mit dem Wertzuschlag",
+    "text": "Vergleich mit dem Wertzuschlag\nEin Zuschlag von 189 % auf 5 € Materialwert ergibt 9,45 € Gemeinkosten je Stück, zusammen 14,45 € Materialkosten je Stück. Dieser Stückbetrag bleibt konstant. Bei 100 Stück rechnet der Zuschlag 945 € Gemeinkosten zu, die Prozessrechnung 875 €; die Differenz beträgt 70 € insgesamt beziehungsweise 0,70 € je Stück.\nBei 93 Stück: Zuschlagsrechnung (465 € + 878,85 €) / 93 = 14,45 €; Prozessrechnung (465 € + 875 €) / 93 ≈ 14,41 €. Die beiden Verfahren liegen dort nahe beieinander, sind aber nicht exakt gleich. Rechnerische Gleichheit verlangt 9,45 × n = 875, also n ≈ 92,59; bei ganzzahligen Stückzahlen gibt es hier keinen exakten Schnittpunkt."
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html#begriffsspannung-bewusst-auseinanderhalten",
-    "href": "courses/controlling-kapazitaet-kalkulation.html#begriffsspannung-bewusst-auseinanderhalten",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
-    "section": "Begriffsspannung bewusst auseinanderhalten",
-    "text": "Begriffsspannung bewusst auseinanderhalten\nEine feinere Maschinenzuordnung kann den Ressourcenverbrauch besser abbilden als ein pauschaler Lohnzuschlag. Dennoch bleiben im verrechneten Maschinenstundensatz fixe Anteile. Deshalb darf man aus einer detaillierteren Vollkostenkalkulation nicht automatisch Grenzkosten ableiten. „Besser zugerechnet“ und „durch einen Zusatzauftrag zusätzlich verursacht“ sind getrennt zu prüfen."
+    "objectID": "courses/controlling-degressionseffekt.html#wann-die-degression-endet",
+    "href": "courses/controlling-degressionseffekt.html#wann-die-degression-endet",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
+    "section": "Wann die Degression endet",
+    "text": "Wann die Degression endet\nWenn eine größere Menge weitere Bestellungen, zusätzliche Prüfungen oder Kapazitätssprünge auslöst, ist der Block von 875 € nicht mehr konstant. Dann muss die Prozessbeanspruchung neu angesetzt werden. Auch die Annäherung an 5 € je Stück gilt nur innerhalb des beschriebenen Modells und ist keine Preisuntergrenze für reale Aufträge.\nEigenes Gegenbeispiel: Erfordert die Verdopplung von 100 auf 200 Stück zugleich 70 statt 35 Bestellungen, steigen die Prozesskosten auf 1.750 €. Dann bleiben die Materialkosten bei 5 + 1.750/200 = 13,75 € je Stück. Größere Menge allein garantiert deshalb keine Degression."
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html#selbstcheck",
-    "href": "courses/controlling-kapazitaet-kalkulation.html#selbstcheck",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "objectID": "courses/controlling-degressionseffekt.html#selbstcheck",
+    "href": "courses/controlling-degressionseffekt.html#selbstcheck",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
     "section": "Selbstcheck (MC)",
-    "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten unter den genannten Annahmen?\n Weniger Planstunden erhöhen den Fixkostenanteil je Stunde.\n Der Zusatzauftrag verursacht allein deshalb 2.200 € zusätzliche Maschinenkosten.\n Die 600 € berücksichtigen noch keine zusätzlichen Materialkosten.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 32.000 geteilt durch weniger Stunden. c hält die Rechnung auf Maschinenkosten begrenzt. b verwechselt Vollkostenzurechnung mit Kostenänderung: Bei freier Kapazität steigen hier nur die variablen Maschinenkosten um 600 €."
+    "text": "Selbstcheck (MC)\n\nWelche Aussagen gelten im angegebenen Modell?\n Bei konstant 875 € Prozesskosten ergeben 100 Stück 13,75 € je Stück.\n Sinkende Stückkosten beweisen sinkende Gesamtkosten.\n Zusätzliche Bestellungen können den angenommenen konstanten Kostenblock verändern.\nPrüfen\n\n\n\n\nBegründung anzeigen\n\na folgt aus 5 + 875/100. c beschreibt die Grenze der Modellannahme. b ist falsch: Bei 1.000 Stück betragen die Gesamtkosten 5.875 €, obwohl der Stückbetrag stark gesunken ist."
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html#verwandte-lernseiten",
-    "href": "courses/controlling-kapazitaet-kalkulation.html#verwandte-lernseiten",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "objectID": "courses/controlling-degressionseffekt.html#verwandte-lernseiten",
+    "href": "courses/controlling-degressionseffekt.html#verwandte-lernseiten",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
     "section": "Verwandte Lernseiten",
-    "text": "Verwandte Lernseiten\n\nZuschlagsbasis: gleiche Kosten, andere StückkostenDen Zusammenhang weiterlernen.\nMaschinenstundensatz: Jahreskosten und NutzungsstundenDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
+    "text": "Verwandte Lernseiten\n\nAllokationseffekt: Wert oder Vorgang?Den Zusammenhang weiterlernen.\nKomplexitätseffekt: einfache und aufwendige ProdukteDen Zusammenhang weiterlernen.\nGemeinkosten verrechnenVon Kostenstellen zu Zuschlagssätzen.\n\nZur Kursübersicht"
   },
   {
-    "objectID": "courses/controlling-kapazitaet-kalkulation.html#quellen",
-    "href": "courses/controlling-kapazitaet-kalkulation.html#quellen",
-    "title": "Kapazitätsauslastung: Vollkostensatz ist nicht Zusatzkostenbetrag",
+    "objectID": "courses/controlling-degressionseffekt.html#quellen",
+    "href": "courses/controlling-degressionseffekt.html#quellen",
+    "title": "Degressionseffekt: Prozesskosten je Stück",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL2_ohneVideo.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 19.10.2026.\n\nLaufzeit im Nenner und Kostenbestandteile → physische PDF-S. 42–44. Vergleich der Selbstkostenvarianten und Entscheidungsfrage → PDF-S. 46–47. Begriffsspannung: PDF-S. 47 verbindet genauere Selbstkosten mit dem Kostenanstieg für ein weiteres Fahrrad; diese Formulierung ist für Vollkosten mit Fixkostenanteilen nicht allgemein gültig. Auslastungsrechnung, Unterdeckung, Zusatzauftrag und Selbstcheck → eigene didaktische Ableitung unter expliziten Annahmen, keine zusätzlichen offiziellen Skriptaufgaben.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 20.10.2026.\n\n875-€-Prozessblock, 189-%-Vergleich, Stückzahlen und Materialkosten → physische PDF-S. 41. Explizite Annahme konstanter Bestellzahl, exakter rechnerischer Schnittpunkt, Gesamt-/Stückkostentrennung und 70-Bestellungen-Gegenbeispiel → eigene didaktische Ergänzungen.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/controlling-gemeinkosten.html",
