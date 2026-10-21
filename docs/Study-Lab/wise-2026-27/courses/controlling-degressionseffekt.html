@@ -362,7 +362,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#konstante-prozessbeanspruchung-als-annahme" id="toc-konstante-prozessbeanspruchung-als-annahme" class="nav-link" data-scroll-target="#konstante-prozessbeanspruchung-als-annahme">Konstante Prozessbeanspruchung als Annahme</a></li>
   <li><a href="#vergleich-mit-dem-wertzuschlag" id="toc-vergleich-mit-dem-wertzuschlag" class="nav-link" data-scroll-target="#vergleich-mit-dem-wertzuschlag">Vergleich mit dem Wertzuschlag</a></li>
   <li><a href="#wann-die-degression-endet" id="toc-wann-die-degression-endet" class="nav-link" data-scroll-target="#wann-die-degression-endet">Wann die Degression endet</a></li>
-  <li><a href="#selbstcheck" id="toc-selbstcheck" class="nav-link" data-scroll-target="#selbstcheck">Selbstcheck (MC)</a></li>
+  <li><a href="#selbstcheck" id="toc-selbstcheck" class="nav-link" data-scroll-target="#selbstcheck">Verständnislernstrecke</a>
+  <ul class="collapse">
+  <li><a href="#aufgabe-1-freier-abruf-stückkosten-und-gesamtkosten" id="toc-aufgabe-1-freier-abruf-stückkosten-und-gesamtkosten" class="nav-link" data-scroll-target="#aufgabe-1-freier-abruf-stückkosten-und-gesamtkosten">Aufgabe 1: Freier Abruf: Stückkosten und Gesamtkosten</a></li>
+  <li><a href="#aufgabe-2-selbst-rechnen-125-statt-250-stück" id="toc-aufgabe-2-selbst-rechnen-125-statt-250-stück" class="nav-link" data-scroll-target="#aufgabe-2-selbst-rechnen-125-statt-250-stück">Aufgabe 2: Selbst rechnen: 125 statt 250 Stück</a></li>
+  <li><a href="#aufgabe-3-fehlerdiagnose-falscher-schnittpunkt" id="toc-aufgabe-3-fehlerdiagnose-falscher-schnittpunkt" class="nav-link" data-scroll-target="#aufgabe-3-fehlerdiagnose-falscher-schnittpunkt">Aufgabe 3: Fehlerdiagnose: falscher Schnittpunkt</a></li>
+  <li><a href="#aufgabe-4-transfer-bestellungen-springen" id="toc-aufgabe-4-transfer-bestellungen-springen" class="nav-link" data-scroll-target="#aufgabe-4-transfer-bestellungen-springen">Aufgabe 4: Transfer: Bestellungen springen</a></li>
+  <li><a href="#fehlerreflexion-und-verzögerte-wiederholung" id="toc-fehlerreflexion-und-verzögerte-wiederholung" class="nav-link" data-scroll-target="#fehlerreflexion-und-verzögerte-wiederholung">Fehlerreflexion und verzögerte Wiederholung</a></li>
+  <li><a href="#ergänzender-auswahlcheck" id="toc-ergänzender-auswahlcheck" class="nav-link" data-scroll-target="#ergänzender-auswahlcheck">Ergänzender Auswahlcheck</a></li>
+  </ul></li>
   <li><a href="#verwandte-lernseiten" id="toc-verwandte-lernseiten" class="nav-link" data-scroll-target="#verwandte-lernseiten">Verwandte Lernseiten</a></li>
   <li><a href="#quellen" id="toc-quellen" class="nav-link" data-scroll-target="#quellen">Quelle und Abgrenzung</a></li>
   </ul>
@@ -413,7 +421,83 @@ ul.task-list li input[type="checkbox"] {
 <p>Eigenes Gegenbeispiel: Erfordert die Verdopplung von 100 auf 200 Stück zugleich 70 statt 35 Bestellungen, steigen die Prozesskosten auf 1.750 €. Dann bleiben die Materialkosten bei 5 + 1.750/200 = <strong>13,75 € je Stück</strong>. Größere Menge allein garantiert deshalb keine Degression.</p>
 </section>
 <section id="selbstcheck" class="level2">
-<h2 class="anchored" data-anchor-id="selbstcheck">Selbstcheck (MC)</h2>
+<h2 class="anchored" data-anchor-id="selbstcheck">Verständnislernstrecke</h2>
+<p>Die folgenden Fälle sind <strong>eigene didaktische Aufgaben, keine offiziellen Prüfungsaufgaben</strong>. Bearbeite jede Aufgabe zunächst schriftlich ohne aufgeklappte Lösung. Notiere Rechenweg, Einheiten und Interpretation. Nutze den Hinweis nur bei Bedarf; bewerte offene Antworten anschließend anhand der Kriterien, nicht anhand einzelner Schlüsselwörter.</p>
+<section id="aufgabe-1-freier-abruf-stückkosten-und-gesamtkosten" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-1-freier-abruf-stückkosten-und-gesamtkosten">Aufgabe 1: Freier Abruf: Stückkosten und Gesamtkosten</h3>
+<p><strong>Eigener Versuch:</strong> Leite aus 5 € Material je Stück und 875 € konstanten Prozesskosten die Gesamt- und Stückkostenfunktion her. Erkläre, weshalb nur eine davon fällt.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Teile den gesamten Kostenblock durch n; n muss positiv sein.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Für n &gt; 0 gilt K(n) = 5 €/Stück × n Stück + 875 €. Damit k(n) = 5 + 875/n in €/Stück. Bei wachsendem n steigt K um die zusätzlichen Materialkosten; der konstante Prozessblock verteilt sich auf mehr Stück und k sinkt. Konstant bleiben muss die Prozessbeanspruchung, nicht bloß der Satz je Bestellung.</p>
+<p><strong>Bewertung:</strong> 3 Punkte: beide Funktionen mit Einheiten (1), gegenläufige Entwicklung erklärt (1), konstante Beanspruchung als Voraussetzung (1).</p>
+</details>
+</section>
+<section id="aufgabe-2-selbst-rechnen-125-statt-250-stück" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-2-selbst-rechnen-125-statt-250-stück">Aufgabe 2: Selbst rechnen: 125 statt 250 Stück</h3>
+<p><strong>Eigener Versuch:</strong> Eigener Fall mit denselben Modellparametern: Berechne Gesamt- und Stückkosten für 125 und 250 Stück sowie die zugerechneten Gemeinkosten des 189-%-Zuschlags. Bestimme bei 125 Stück die Differenz Zuschlag minus Prozessrechnung pro Stück.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Der Zuschlag ist 9,45 €/Stück; der Prozessblock bleibt zunächst 875 €.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>125 Stück: K = 625 + 875 = 1.500 €, k = 12 €/Stück. 250 Stück: K = 1.250 + 875 = 2.125 €, k = 8,50 €/Stück. Zuschlagsgemeinkosten: 125 × 9,45 = 1.181,25 € bzw. 250 × 9,45 = 2.362,50 €. Bei 125 Stück: 9,45 − 875/125 = 2,45 €/Stück höhere Gemeinkostenzurechnung im Zuschlag. Beide Zuschlags-Stückvollkosten bleiben 14,45 €.</p>
+<p><strong>Bewertung:</strong> 5 Punkte: Gesamtkosten (1), Stückkosten (1), Zuschlagssummen (1), Differenz mit Einheit (1), richtige Interpretation (1).</p>
+</details>
+</section>
+<section id="aufgabe-3-fehlerdiagnose-falscher-schnittpunkt" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-3-fehlerdiagnose-falscher-schnittpunkt">Aufgabe 3: Fehlerdiagnose: falscher Schnittpunkt</h3>
+<p><strong>Eigener Versuch:</strong> Jemand rechnet „875/14,45 ≈ 60,55 Stück; dort sind beide Verfahren gleich“ und erklärt anschließend 5 € zur sicheren Preisuntergrenze. Finde und korrigiere beide Fehler.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Welche Kostenposition ist bereits in beiden Verfahren enthalten?</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Verglichen werden 5 + 875/n und 14,45. Nach Abzug der gemeinsamen 5 €/Stück gilt 875/n = 9,45, also n = 875/9,45 ≈ 92,59 Stück. Es gibt keinen exakten ganzzahligen Schnittpunkt. 5 € ist nur der Grenzwert des vereinfachten Stückkostenmodells; weitere relevante Kosten, Kapazitätsengpässe und Ressourcenbindungen sind nicht modelliert. Daher ist es keine gesicherte reale Preisuntergrenze.</p>
+<p><strong>Bewertung:</strong> 4 Punkte: gemeinsame Materialkosten identifiziert (1), richtige Gleichung (1), 92,59 und Ganzzahligkeit (1), Preisgrenze zurückgewiesen/begründet (1).</p>
+</details>
+</section>
+<section id="aufgabe-4-transfer-bestellungen-springen" class="level3">
+<h3 class="anchored" data-anchor-id="aufgabe-4-transfer-bestellungen-springen">Aufgabe 4: Transfer: Bestellungen springen</h3>
+<p><strong>Eigener Versuch:</strong> Nun werden für 125 Stück 35 Bestellungen, für 250 Stück aber 70 Bestellungen benötigt; jede kostet 25 €. Berechne erneut und erkläre, warum das ursprüngliche Degressionsargument nicht greift. Was passiert bei 250 Stück und nur 50 Bestellungen?</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Nutze k = 5 + (Bestellzahl × 25)/Stückzahl.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>125 Stück bleiben bei 1.500 € und 12 €/Stück. 250 Stück mit 70 Bestellungen: Prozesskosten 1.750 €, Gesamtkosten 3.000 €, Stückkosten 12 €. Die Bestellzahl verdoppelt sich mit der Menge; deshalb bleibt der Prozessanteil bei 7 €/Stück. Bei 50 Bestellungen: 1.250 € Prozesskosten, 2.500 € Gesamtkosten, 10 €/Stück. Es gibt noch Degression, aber weniger als bei konstant 35 Bestellungen. Der Satz allein entscheidet nicht, sondern die Entwicklung der Treibermenge je Stück.</p>
+<p><strong>Bewertung:</strong> 6 Punkte: 125er Basis (1), 70er Prozess-/Gesamtkosten (1), 12 €/Stück (1), Mechanismus (1), 50er Rechnung (1), abgestufte Interpretation (1).</p>
+</details>
+</section>
+<section id="fehlerreflexion-und-verzögerte-wiederholung" class="level3">
+<h3 class="anchored" data-anchor-id="fehlerreflexion-und-verzögerte-wiederholung">Fehlerreflexion und verzögerte Wiederholung</h3>
+<p><strong>18 selbst bewertete Punkte</strong> sind möglich. Markiere je Kriterium: selbstständig / mit Hinweis / erst nach Musterlösung verstanden. Vergib Punkte nur für den nachvollziehbaren Zusammenhang, nicht allein für das Ergebnis. Halte deinen wichtigsten Fehler fest: falsche Annahme → Auswirkung → korrigierter Rechen- oder Erklärschritt.</p>
+<p>Bearbeite morgen die Transferaufgabe erneut ohne Lösung. Ändere nach einer Woche selbst eine Treibermenge und prüfe die Rechnung einschließlich Summen und Einheiten. Erkläre dabei ausdrücklich, welche Annahme erhalten bleibt und welche sich ändert. Falls die Erklärung nicht gelingt, wiederhole zuerst die Mechanismusaufgabe.</p>
+</section>
+<section id="ergänzender-auswahlcheck" class="level3">
+<h3 class="anchored" data-anchor-id="ergänzender-auswahlcheck">Ergänzender Auswahlcheck</h3>
 <fieldset class="study-check" data-type="multiple" data-answer="a,c">
 <legend>Welche Aussagen gelten im angegebenen Modell?</legend>
 <label><input type="checkbox" name="controlling-degressionseffekt" value="a"> Bei konstant 875 € Prozesskosten ergeben 100 Stück 13,75 € je Stück.</label>
@@ -429,6 +513,7 @@ Begründung anzeigen
 <p>a folgt aus 5 + 875/100. c beschreibt die Grenze der Modellannahme. b ist falsch: Bei 1.000 Stück betragen die Gesamtkosten 5.875 €, obwohl der Stückbetrag stark gesunken ist.</p>
 </details>
 </section>
+</section>
 <section id="verwandte-lernseiten" class="level2">
 <h2 class="anchored" data-anchor-id="verwandte-lernseiten">Verwandte Lernseiten</h2>
 <nav class="quick-grid" aria-label="Verwandte Themen">
@@ -440,9 +525,10 @@ Begründung anzeigen
 </section>
 <section id="quellen" class="level2">
 <h2 class="anchored" data-anchor-id="quellen">Quelle und Abgrenzung</h2>
-<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193368">Controlling VL3.pdf – Learnweb (Hochschulzugang)</a>, Prof.&nbsp;Dr.&nbsp;Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 20.10.2026.</p>
+<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193368">Controlling VL3.pdf – Learnweb (Hochschulzugang)</a>, Prof.&nbsp;Dr.&nbsp;Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; erneut gelesen am 21.10.2026.</p>
 <ul>
-<li>875-€-Prozessblock, 189-%-Vergleich, Stückzahlen und Materialkosten → physische PDF-S. 41. Explizite Annahme konstanter Bestellzahl, exakter rechnerischer Schnittpunkt, Gesamt-/Stückkostentrennung und 70-Bestellungen-Gegenbeispiel → eigene didaktische Ergänzungen.</li>
+<li><p>875-€-Prozessblock, 189-%-Vergleich, Stückzahlen und Materialkosten → physische PDF-S. 41. Explizite Annahme konstanter Bestellzahl, exakter rechnerischer Schnittpunkt, Gesamt-/Stückkostentrennung und 70-Bestellungen-Gegenbeispiel → eigene didaktische Ergänzungen.</p></li>
+<li><p>Verständnislernstrecke mit freien Erklärungen, neuen Rechenfällen, Fehlerdiagnose und Transfer → eigene didaktische Aufgaben auf Basis der oben zugeordneten Modellmechanismen; keine offiziellen Prüfungsaufgaben.</p></li>
 </ul>
 <p>Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.</p>
 
