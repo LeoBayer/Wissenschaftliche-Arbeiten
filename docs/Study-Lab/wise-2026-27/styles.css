@@ -932,11 +932,13 @@ body.quarto-dark .feedback-builder button,
 
 /* Quiet emphasis within prose; normal wrapping preserves the mobile layout. */
 .study-calculation {
-  background: var(--study-soft);
-  color: var(--study-ink);
-  border-bottom: 2px solid var(--study-line);
-  border-radius: .2em;
-  padding: .08em .22em;
+  background: color-mix(in srgb, var(--study-accent) 10%, var(--study-panel));
+  color: var(--study-accent-strong);
+  border: 1px solid color-mix(in srgb, var(--study-accent) 25%, var(--study-panel));
+  border-radius: .25em;
+  padding: .1em .3em;
+  font-family: var(--bs-font-monospace, ui-monospace, monospace);
+  font-size: .9em;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   font-variant-numeric: tabular-nums;
