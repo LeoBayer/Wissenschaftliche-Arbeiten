@@ -929,3 +929,22 @@ body.quarto-dark .feedback-builder button,
 .calc-work summary { list-style: none; }
 .calc-work summary::-webkit-details-marker { display: none; }
 .calc-info { display: inline-flex; width: 1.6rem; height: 1.6rem; border: 1.5px solid currentColor; border-radius: 50%; align-items: center; justify-content: center; font-family: Georgia, serif; font-weight: bold; font-style: italic; line-height: 1; }
+
+/* Quiet emphasis within prose; normal wrapping preserves the mobile layout. */
+.study-calculation {
+  background: var(--study-soft);
+  color: var(--study-ink);
+  border-bottom: 2px solid var(--study-line);
+  border-radius: .2em;
+  padding: .08em .22em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.study-keypoint {
+  text-decoration: underline;
+  text-decoration-color: var(--study-accent-strong);
+  text-decoration-thickness: .1em;
+  text-underline-offset: .18em;
+}
