@@ -950,3 +950,11 @@ body.quarto-dark .feedback-builder button,
   text-decoration-thickness: .1em;
   text-underline-offset: .18em;
 }
+
+/* Bank worksheets: fixed readable columns, no sticky label covering mobile inputs. */
+.bank-calc-sheet .calc-table tbody th { position: static; width: 230px; min-width: 0; max-width: none; }
+.bank-calc-sheet .calc-table td { overflow-wrap: anywhere; }
+
+.bank-calc-sheet .calc-table { table-layout: fixed; width: 690px; min-width: 690px; }
+.bank-calc-sheet .calc-table:has(thead th:nth-child(4)) { width: 920px; min-width: 920px; }
+.bank-calc-sheet .calc-table:has(thead th:nth-child(5)) { width: 1150px; min-width: 1150px; }

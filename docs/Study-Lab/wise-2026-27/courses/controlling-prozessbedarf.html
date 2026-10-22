@@ -359,6 +359,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#grundlagen" id="toc-grundlagen" class="nav-link active" data-scroll-target="#grundlagen">Grundlagen</a></li>
+  <li><a href="#rechentabelle" id="toc-rechentabelle" class="nav-link" data-scroll-target="#rechentabelle">Rechentabelle: Wertschlüssel bis Kontoergebnis</a></li>
   <li><a href="#fallstudie-gleicher-kostenpool-anderer-blick" id="toc-fallstudie-gleicher-kostenpool-anderer-blick" class="nav-link" data-scroll-target="#fallstudie-gleicher-kostenpool-anderer-blick">Fallstudie: gleicher Kostenpool, anderer Blick</a></li>
   <li><a href="#eigenes-gegenbeispiel-betrag-und-aufwand-trennen" id="toc-eigenes-gegenbeispiel-betrag-und-aufwand-trennen" class="nav-link" data-scroll-target="#eigenes-gegenbeispiel-betrag-und-aufwand-trennen">Eigenes Gegenbeispiel: Betrag und Aufwand trennen</a></li>
   <li><a href="#warnsignal-ist-keine-diagnose" id="toc-warnsignal-ist-keine-diagnose" class="nav-link" data-scroll-target="#warnsignal-ist-keine-diagnose">Warnsignal ist keine Diagnose</a></li>
@@ -400,10 +401,190 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#rechentabelle">Rechentabelle</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
 <section id="grundlagen" class="level2">
 <h2 class="anchored" data-anchor-id="grundlagen">Grundlagen</h2>
 <p>Ein hoher Transaktionswert ist nicht automatisch ein hoher Bearbeitungsaufwand. Wenn ein kleiner Zahlungsvorgang ähnlich viel Arbeit benötigt wie ein großer, verteilt ein Zuschlag auf Geldbeträge die Kosten anders als eine Zählung der Vorgänge. Besonders bei unterschiedlichen Kundengruppen kann das die ausgewiesene Profitabilität umkehren.</p>
+</section>
+<section id="rechentabelle" class="level2">
+<h2 class="anchored" data-anchor-id="rechentabelle">Rechentabelle: Wertschlüssel bis Kontoergebnis</h2>
+<p>Rechne zuerst den unveränderten Kostenpool von 28,5 Mio. € über den Transaktionswert zu, dann die Kontowerte. Zeilen und Kundengruppen folgen den beiden Vorlesungstabellen; der Pool ist als gegebene Ausgangsgröße sichtbar.</p>
+<section class="calc-sheet bank-calc-sheet" aria-labelledby="bank-title"><h3 id="bank-title" class="anchored">Wertschlüssel bis Kontoergebnis</h3><p>Notiere zuerst deinen Rechenweg. Ergebnisfelder bleiben leer. Beträge in Euro, auf zwei Dezimalstellen runden; Komma als Dezimalzeichen und Punkt als Tausendertrennzeichen (z. B. 2.850.000,00). Ein Minuszeichen kennzeichnet Verlust. Mobil: jede Tabelle intern nach rechts verschieben.</p><p>„Alle Felder prüfen“ kontrolliert jedes Feld unabhängig. Danach zeigt das Info-i Formel, eingesetzte Werte und Erklärung. Deine Eingaben werden weder überschrieben noch übertragen. Änderungen erfordern eine neue Prüfung.</p><div class="calc-table-scroll" role="region" aria-label="Wertbezogene Kostenverteilung, horizontal verschiebbar" tabindex="0">
+<table class="calc-table caption-top table">
+<caption>Wertbezogene Kostenverteilung</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col"></th>
+<th data-quarto-table-cell-role="th" scope="col">Privatkunden</th>
+<th data-quarto-table-cell-role="th" scope="col">Geschäftskunden</th>
+<th data-quarto-table-cell-role="th" scope="col">Summe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Wert der Kundentransaktionen</th>
+<td>95.000.000 €</td>
+<td>855.000.000 €</td>
+<td>950.000.000 €</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Kosten pro verarbeitetem €</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-rate-0">Kosten pro verarbeitetem Euro (€/Transaktionseuro)</label><input id="bank-rate-0" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="0.03" data-tolerance="0.005" aria-describedby="bank-rate-0-state"><span id="bank-rate-0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro verarbeitetem Euro">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>28.500.000 € / 950.000.000 € = 0,03 € je verarbeitetem Euro. Das sind 3 %, einzugeben ist hier 0,03, nicht 3.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-rate-1">Kosten pro verarbeitetem Euro (€/Transaktionseuro)</label><input id="bank-rate-1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="0.03" data-tolerance="0.005" aria-describedby="bank-rate-1-state"><span id="bank-rate-1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro verarbeitetem Euro">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>28.500.000 € / 950.000.000 € = 0,03 € je verarbeitetem Euro. Das sind 3 %, einzugeben ist hier 0,03, nicht 3.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-rate-2">Kosten pro verarbeitetem Euro (€/Transaktionseuro)</label><input id="bank-rate-2" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="0.03" data-tolerance="0.005" aria-describedby="bank-rate-2-state"><span id="bank-rate-2-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro verarbeitetem Euro">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>28.500.000 € / 950.000.000 € = 0,03 € je verarbeitetem Euro. Das sind 3 %, einzugeben ist hier 0,03, nicht 3.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Gesamte indirekte Kosten</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-pool-p">Indirekte Kosten Privatkunden (€)</label><input id="bank-pool-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="2850000" data-tolerance="0.005" aria-describedby="bank-pool-p-state"><span id="bank-pool-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Indirekte Kosten Privatkunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>95.000.000 × 0,03 = 2.850.000 €.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-pool-g">Indirekte Kosten Geschäftskunden (€)</label><input id="bank-pool-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="25650000" data-tolerance="0.005" aria-describedby="bank-pool-g-state"><span id="bank-pool-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Indirekte Kosten Geschäftskunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>855.000.000 × 0,03 = 25.650.000 €.</p>
+</details>
+</div></td>
+<td>28.500.000 € (vorgegebener Pool)</td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-table-scroll" role="region" aria-label="Kosten und Ergebnis pro Kostenträger (= Kunde), horizontal verschiebbar" tabindex="0">
+<table class="calc-table caption-top table">
+<caption>Kosten und Ergebnis pro Kostenträger (= Kunde)</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col"></th>
+<th data-quarto-table-cell-role="th" scope="col">Privatkunden</th>
+<th data-quarto-table-cell-role="th" scope="col">Geschäftskunden</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Gesamte indirekte Kosten</th>
+<td>2.850.000 €</td>
+<td>25.650.000 €</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">÷ Anzahl der Konten</th>
+<td>150.000</td>
+<td>50.000</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">= Indirekte Kosten pro Konto</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-cost-p">Kosten pro Privatkonto (€/Konto und Jahr)</label><input id="bank-cost-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="19" data-tolerance="0.005" aria-describedby="bank-cost-p-state"><span id="bank-cost-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro Privatkonto">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>2.850.000 € / 150.000 Konten = 19 €/Konto und Jahr.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-cost-g">Kosten pro Geschäftskonto (€/Konto und Jahr)</label><input id="bank-cost-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="513" data-tolerance="0.005" aria-describedby="bank-cost-g-state"><span id="bank-cost-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro Geschäftskonto">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>25.650.000 € / 50.000 Konten = 513 €/Konto und Jahr.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Umsatz pro Konto</th>
+<td>100 €</td>
+<td>400 €</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">− Indirekte Kosten pro Konto</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-repeat-p">Kosten pro Privatkonto im Ergebnis (€/Konto und Jahr)</label><input id="bank-repeat-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="19" data-tolerance="0.005" aria-describedby="bank-repeat-p-state"><span id="bank-repeat-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro Privatkonto im Ergebnis">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Der zuvor berechnete Betrag bleibt 19 €/Konto und Jahr.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-repeat-g">Kosten pro Geschäftskonto im Ergebnis (€/Konto und Jahr)</label><input id="bank-repeat-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="513" data-tolerance="0.005" aria-describedby="bank-repeat-g-state"><span id="bank-repeat-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro Geschäftskonto im Ergebnis">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Der zuvor berechnete Betrag bleibt 513 €/Konto und Jahr.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">= Gewinn (Verlust) pro Konto</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-profit-p">Ergebnis Privatkonto (€/Konto und Jahr)</label><input id="bank-profit-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="81" data-tolerance="0.005" aria-describedby="bank-profit-p-state"><span id="bank-profit-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Ergebnis Privatkonto">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>100 − 19 = 81 €/Konto und Jahr.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-profit-g">Ergebnis Geschäftskonto (€/Konto und Jahr)</label><input id="bank-profit-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="-113" data-tolerance="0.005" aria-describedby="bank-profit-g-state"><span id="bank-profit-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Ergebnis Geschäftskonto">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>400 − 513 = −113 €/Konto und Jahr. Negatives Vorzeichen: Verlust.</p>
+</details>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div><p class="calc-summary" role="status" aria-live="polite" aria-atomic="true">Noch nicht geprüft · 11 Felder zum Selbstrechnen.</p></section>
+<p><strong>Interpretation nach dem Rechnen:</strong> Warum erscheint das Privatkonto hier profitabler? Der Schlüssel folgt dem Geldvolumen, nicht der Zahl oder Schwierigkeit der Vorgänge. Prüfe 2.850.000 + 25.650.000 = 28.500.000 €; der Schlüssel erzeugt keine neuen Gesamtkosten. Vergleiche anschließend mit der <a href="../courses/controlling-prozessstrategie.html#rechentabelle">Prozesszuordnung</a>.</p>
 </section>
 <section id="fallstudie-gleicher-kostenpool-anderer-blick" class="level2">
 <h2 class="anchored" data-anchor-id="fallstudie-gleicher-kostenpool-anderer-blick">Fallstudie: gleicher Kostenpool, anderer Blick</h2>
@@ -526,6 +707,7 @@ Begründung anzeigen
 <li><p>Warnsignale und heterogener Ressourcenverbrauch → S. 18.</p></li>
 <li><p>Eigenes Zwei-Konten-Beispiel, Diagnosegrenze und Abgrenzung der Einzelkosten → didaktische Erläuterungen, keine offiziellen Aufgaben.</p></li>
 <li><p>Verständnislernstrecke (Abruf, Rechnung, Fehlerdiagnose und Transfer) → eigene Aufgaben und Szenarien auf Basis der oben nach Themen belegten Grundlagen; Zahlenvarianten und Bewertungsraster sind keine offiziellen Aufgaben.</p></li>
+<li><p>Interaktive Rechentabellen → physische PDF-S. 9–10 (Tabellenreihenfolge und Begrifflichkeit). Originalansichten am 22.10.2026 gelesen; eigenständiger HTML-Nachbau, Feldprüfung und Rechenhilfen sind didaktische Ergänzungen, keine offiziellen Aufgaben. Keine Folienbilder veröffentlicht.</p></li>
 </ul>
 <p>Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.</p>
 

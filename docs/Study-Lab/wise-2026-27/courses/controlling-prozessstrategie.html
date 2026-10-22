@@ -359,6 +359,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#grundlagen" id="toc-grundlagen" class="nav-link active" data-scroll-target="#grundlagen">Grundlagen</a></li>
+  <li><a href="#rechentabelle" id="toc-rechentabelle" class="nav-link" data-scroll-target="#rechentabelle">Rechentabelle: Prozessnutzung und Kontozuordnung</a></li>
   <li><a href="#fallstudie-kundengruppen-neu-rechnen" id="toc-fallstudie-kundengruppen-neu-rechnen" class="nav-link" data-scroll-target="#fallstudie-kundengruppen-neu-rechnen">Fallstudie: Kundengruppen neu rechnen</a></li>
   <li><a href="#gegenprobe-keine-neuen-gesamtkosten" id="toc-gegenprobe-keine-neuen-gesamtkosten" class="nav-link" data-scroll-target="#gegenprobe-keine-neuen-gesamtkosten">Gegenprobe: keine neuen Gesamtkosten</a></li>
   <li><a href="#managementoptionen-mit-bedingungen" id="toc-managementoptionen-mit-bedingungen" class="nav-link" data-scroll-target="#managementoptionen-mit-bedingungen">Managementoptionen mit Bedingungen</a></li>
@@ -401,10 +402,219 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#rechentabelle">Rechentabelle</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
 <section id="grundlagen" class="level2">
 <h2 class="anchored" data-anchor-id="grundlagen">Grundlagen</h2>
 <p>Eine veränderte Kalkulation kann die Sicht auf Kundengruppen stark verändern, obwohl der gesamte verteilte Kostenbetrag unverändert bleibt. Das ist ein Anlass, Strategie und Leistungsangebot zu prüfen. Es ist noch keine automatische Empfehlung, Kunden abzubauen oder Tätigkeiten auszulagern.</p>
+</section>
+<section id="rechentabelle" class="level2">
+<h2 class="anchored" data-anchor-id="rechentabelle">Rechentabelle: Prozessnutzung und Kontozuordnung</h2>
+<p>Bearbeite erst die Aktivitätszuordnung, dann das Ergebnis je Konto. Reihenfolge und Spalten folgen den Vorlesungstabellen. Die Nutzungsmengen und Sätze stehen in den Aktivitätszeilen. Die zweite Tabelle gibt die Gruppensummen erneut vor, damit Folgefehler nicht unbemerkt fortgeschrieben werden.</p>
+<section class="calc-sheet bank-calc-sheet" aria-labelledby="bank-title"><h3 id="bank-title" class="anchored">Prozessnutzung und Kontozuordnung</h3><p>Notiere zuerst deinen Rechenweg. Ergebnisfelder bleiben leer. Beträge in Euro, auf zwei Dezimalstellen runden; Komma als Dezimalzeichen und Punkt als Tausendertrennzeichen (z. B. 2.850.000,00). Ein Minuszeichen kennzeichnet Verlust. Mobil: jede Tabelle intern nach rechts verschieben.</p><p>„Alle Felder prüfen“ kontrolliert jedes Feld unabhängig. Danach zeigt das Info-i Formel, eingesetzte Werte und Erklärung. Deine Eingaben werden weder überschrieben noch übertragen. Änderungen erfordern eine neue Prüfung.</p><div class="calc-table-scroll" role="region" aria-label="Prozessbezogene Kostenverteilung, horizontal verschiebbar" tabindex="0">
+<table class="calc-table caption-top table">
+<caption>Prozessbezogene Kostenverteilung</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Aktivität (Satz × jährliche Nutzung)</th>
+<th data-quarto-table-cell-role="th" scope="col">Gesamte indirekte Kosten Privatkunden</th>
+<th data-quarto-table-cell-role="th" scope="col">Gesamte indirekte Kosten Geschäftskunden</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Verarbeitete Zahlungen [0,40 € × (5.700.000,00; 22.800.000,00)]</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-alloc-p-0">Verarbeitete Zahlungen Privatkunden (€)</label><input id="bank-alloc-p-0" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="2280000.0" data-tolerance="0.005" aria-describedby="bank-alloc-p-0-state"><span id="bank-alloc-p-0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Verarbeitete Zahlungen Privatkunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>5.700.000,00 × 0,40 € = 2.280.000,00 €. Nutzung × passender Satz.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-alloc-g-0">Verarbeitete Zahlungen Geschäftskunden (€)</label><input id="bank-alloc-g-0" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="9120000.0" data-tolerance="0.005" aria-describedby="bank-alloc-g-0-state"><span id="bank-alloc-g-0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Verarbeitete Zahlungen Geschäftskunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>22.800.000,00 × 0,40 € = 9.120.000,00 €. Nutzung × passender Satz.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Anfragen über das digitale Servicecenter [5,10 € × (950.000,00; 50.000,00)]</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-alloc-p-1">Anfragen über das digitale Servicecenter Privatkunden (€)</label><input id="bank-alloc-p-1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="4845000.0" data-tolerance="0.005" aria-describedby="bank-alloc-p-1-state"><span id="bank-alloc-p-1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Anfragen über das digitale Servicecenter Privatkunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>950.000,00 × 5,10 € = 4.845.000,00 €. Nutzung × passender Satz.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-alloc-g-1">Anfragen über das digitale Servicecenter Geschäftskunden (€)</label><input id="bank-alloc-g-1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="255000.0" data-tolerance="0.005" aria-describedby="bank-alloc-g-1-state"><span id="bank-alloc-g-1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Anfragen über das digitale Servicecenter Geschäftskunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>50.000,00 × 5,10 € = 255.000,00 €. Nutzung × passender Satz.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Kundenberatungsgespräche [6,00 € × (1.600.000,00; 400.000,00)]</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-alloc-p-2">Kundenberatungsgespräche Privatkunden (€)</label><input id="bank-alloc-p-2" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="9600000" data-tolerance="0.005" aria-describedby="bank-alloc-p-2-state"><span id="bank-alloc-p-2-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kundenberatungsgespräche Privatkunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>1.600.000,00 × 6,00 € = 9.600.000,00 €. Nutzung × passender Satz.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-alloc-g-2">Kundenberatungsgespräche Geschäftskunden (€)</label><input id="bank-alloc-g-2" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="2400000" data-tolerance="0.005" aria-describedby="bank-alloc-g-2-state"><span id="bank-alloc-g-2-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kundenberatungsgespräche Geschäftskunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>400.000,00 × 6,00 € = 2.400.000,00 €. Nutzung × passender Satz.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Gesamte indirekte Kosten</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-total-p">Kosten Privatkunden gesamt (€)</label><input id="bank-total-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="16725000" data-tolerance="0.005" aria-describedby="bank-total-p-state"><span id="bank-total-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten Privatkunden gesamt">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>2.280.000 + 4.845.000 + 9.600.000 = 16.725.000 €.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-total-g">Kosten Geschäftskunden gesamt (€)</label><input id="bank-total-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="11775000" data-tolerance="0.005" aria-describedby="bank-total-g-state"><span id="bank-total-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten Geschäftskunden gesamt">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>9.120.000 + 255.000 + 2.400.000 = 11.775.000 €. Zusammen mit Privatkunden: 28.500.000 €.</p>
+</details>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-table-scroll" role="region" aria-label="Ergebnis pro Konto im Prozesskostensystem, horizontal verschiebbar" tabindex="0">
+<table class="calc-table caption-top table">
+<caption>Ergebnis pro Konto im Prozesskostensystem</caption>
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col"></th>
+<th data-quarto-table-cell-role="th" scope="col">Privatkunden</th>
+<th data-quarto-table-cell-role="th" scope="col">Geschäftskunden</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Gesamte indirekte Kosten</th>
+<td>16.725.000 €</td>
+<td>11.775.000 €</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">÷ Anzahl der Konten</th>
+<td>150.000</td>
+<td>50.000 (begründet korrigiert)</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">= Indirekte Kosten pro Konto</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-cost-p">= Indirekte Kosten pro Konto Privatkunden (€/Konto und Jahr)</label><input id="bank-cost-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="111.5" data-tolerance="0.005" aria-describedby="bank-cost-p-state"><span id="bank-cost-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: = Indirekte Kosten pro Konto Privatkunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>16.725.000 / 150.000 = 111,50 €/Konto und Jahr.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-cost-g">= Indirekte Kosten pro Konto Geschäftskunden (€/Konto und Jahr)</label><input id="bank-cost-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="235.5" data-tolerance="0.005" aria-describedby="bank-cost-g-state"><span id="bank-cost-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: = Indirekte Kosten pro Konto Geschäftskunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>11.775.000 / 50.000 = 235,50 €/Konto und Jahr.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Umsatz pro Konto</th>
+<td>100 €</td>
+<td>400 €</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">− Prozesskosten pro Konto</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-repeat-p">− Prozesskosten pro Konto Privatkunden (€/Konto und Jahr)</label><input id="bank-repeat-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="111.5" data-tolerance="0.005" aria-describedby="bank-repeat-p-state"><span id="bank-repeat-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: − Prozesskosten pro Konto Privatkunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Unverändert 111,50 €/Konto und Jahr.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-repeat-g">− Prozesskosten pro Konto Geschäftskunden (€/Konto und Jahr)</label><input id="bank-repeat-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="235.5" data-tolerance="0.005" aria-describedby="bank-repeat-g-state"><span id="bank-repeat-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: − Prozesskosten pro Konto Geschäftskunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Unverändert 235,50 €/Konto und Jahr.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">= Gewinn (Verlust) pro Konto</th>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-profit-p">= Gewinn (Verlust) pro Konto Privatkunden (€/Konto und Jahr)</label><input id="bank-profit-p" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="-11.5" data-tolerance="0.005" aria-describedby="bank-profit-p-state"><span id="bank-profit-p-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: = Gewinn (Verlust) pro Konto Privatkunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>100 − 111,50 = −11,50 €/Konto und Jahr.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-profit-g">= Gewinn (Verlust) pro Konto Geschäftskunden (€/Konto und Jahr)</label><input id="bank-profit-g" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="164.5" data-tolerance="0.005" aria-describedby="bank-profit-g-state"><span id="bank-profit-g-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: = Gewinn (Verlust) pro Konto Geschäftskunden">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>400 − 235,50 = 164,50 €/Konto und Jahr.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Gewinn (Verlust) pro Konto nach dem ursprünglichen System</th>
+<td>81,00 €</td>
+<td>−113,00 €</td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div><p class="calc-summary" role="status" aria-live="polite" aria-atomic="true">Noch nicht geprüft · 14 Felder zum Selbstrechnen.</p></section>
+<p><strong>Korrektur und Deutung:</strong> Die Vorlage nennt bei Geschäftskonten „50“; hier stehen ausdrücklich <strong>50.000</strong>, passend zur ursprünglichen Kontenzahl und zum ausgewiesenen Satz. Mit 50 ergäben sich 235.500 €/Konto statt 235,50 €. Die Gesamtkosten bleiben 28,5 Mio. €; die Rangfolge ändert sich, nicht der Pool. Erkläre vor einer Empfehlung, welche zugerechneten Kosten tatsächlich vermeidbar wären. Die offenen Entscheidungs- und Transferaufgaben unten bleiben dafür erforderlich.</p>
 </section>
 <section id="fallstudie-kundengruppen-neu-rechnen" class="level2">
 <h2 class="anchored" data-anchor-id="fallstudie-kundengruppen-neu-rechnen">Fallstudie: Kundengruppen neu rechnen</h2>
@@ -533,6 +743,7 @@ Begründung anzeigen
 <li><p>Widerspruch → S. 17 nennt 50 Geschäftskonten, S. 9–10 dagegen 50.000; verwendet wird die rechnerisch konsistente Angabe 50.000.</p></li>
 <li><p>Summengegenprobe und Bedingungen für Entscheidungen → eigene Ableitung; die Optionen aus S. 17 werden nicht als bereits nachgewiesene Einsparungen behandelt.</p></li>
 <li><p>Verständnislernstrecke (Abruf, Rechnung, Fehlerdiagnose und Transfer) → eigene Aufgaben und Szenarien auf Basis der oben nach Themen belegten Grundlagen; Zahlenvarianten und Bewertungsraster sind keine offiziellen Aufgaben.</p></li>
+<li><p>Interaktive Rechentabellen → physische PDF-S. 16–17 (Aktivitäten, Gruppen- und Kontorechnung); Korrektur der Kontenzahl anhand S. 9–10. Originalansichten am 22.10.2026 gelesen; eigenständiger HTML-Nachbau, Feldprüfung und Rechenhilfen sind didaktische Ergänzungen, keine offiziellen Aufgaben. Keine Folienbilder veröffentlicht.</p></li>
 </ul>
 <p>Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.</p>
 
