@@ -515,6 +515,75 @@ document.addEventListener("click", (event) => {
   output.select();
 });
 </script>
+
+<script>
+/* Numeric worksheet: compare each entry independently; never evaluate formulas. */
+(() => {
+  function parseWorksheetNumber(raw) {
+    const text = raw.trim();
+    if (!text) return null;
+    // German grouping and decimal comma; also unambiguous decimal dots.
+    const german = /^[+-]?(?:\d{1,3}(?:[. \u00a0\u202f]\d{3})+|\d+)(?:,\d+)?$/;
+    if (german.test(text)) return Number(text.replace(/[. \u00a0\u202f]/g, "").replace(",", "."));
+    if (/^[+-]?\d+\.\d{1,2}$/.test(text)) return Number(text);
+    return NaN;
+  }
+
+  function clearCell(cell) {
+    const input = cell.querySelector("input");
+    input.removeAttribute("aria-invalid");
+    delete cell.dataset.state;
+    cell.querySelector(".calc-cell-state").textContent = "";
+    const work = cell.querySelector(".calc-work");
+    work.hidden = true;
+    work.open = false;
+  }
+
+  document.addEventListener("input", (event) => {
+    const cell = event.target.closest(".calc-cell");
+    if (!cell) return;
+    clearCell(cell);
+    const sheet = cell.closest(".calc-sheet");
+    sheet.querySelector(".calc-summary").textContent = "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
+  });
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".calc-check, .calc-reset");
+    if (!button) return;
+    const sheet = button.closest(".calc-sheet");
+    const cells = [...sheet.querySelectorAll(".calc-cell")];
+    if (button.classList.contains("calc-reset")) {
+      cells.forEach((cell) => {
+        cell.querySelector("input").value = "";
+        clearCell(cell);
+      });
+      sheet.querySelector(".calc-summary").textContent = `Neu begonnen · ${cells.length} leere Felder.`;
+      cells[0].querySelector("input").focus();
+      return;
+    }
+    let correct = 0, wrong = 0, empty = 0, invalid = 0;
+    cells.forEach((cell) => {
+      const input = cell.querySelector("input");
+      const value = parseWorksheetNumber(input.value);
+      let label, state;
+      if (value === null) {
+        empty++; label = "Offen"; state = "empty";
+      } else if (!Number.isFinite(value)) {
+        invalid++; label = "Zahlenformat prüfen"; state = "invalid";
+      } else if (Math.abs(value - Number(input.dataset.target)) <= Number(input.dataset.tolerance) + 1e-9) {
+        correct++; label = "Richtig ✓"; state = "correct";
+      } else {
+        wrong++; label = "Noch nicht richtig"; state = "wrong";
+      }
+      cell.dataset.state = state;
+      input.setAttribute("aria-invalid", String(state === "wrong" || state === "invalid"));
+      cell.querySelector(".calc-cell-state").textContent = label;
+      cell.querySelector(".calc-work").hidden = false;
+    });
+    sheet.querySelector(".calc-summary").textContent = `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
+  });
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right

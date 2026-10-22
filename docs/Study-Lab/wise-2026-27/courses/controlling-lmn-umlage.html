@@ -359,6 +359,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#grundlagen" id="toc-grundlagen" class="nav-link active" data-scroll-target="#grundlagen">Grundlagen</a></li>
+  <li><a href="#rechentabelle" id="toc-rechentabelle" class="nav-link" data-scroll-target="#rechentabelle">Rechentabelle: selbst ausfüllen und prüfen</a></li>
   <li><a href="#zuschlag-und-gesamtprozesskostensatz" id="toc-zuschlag-und-gesamtprozesskostensatz" class="nav-link" data-scroll-target="#zuschlag-und-gesamtprozesskostensatz">Zuschlag und Gesamtprozesskostensatz</a></li>
   <li><a href="#alle-prozesse-gegenprüfen" id="toc-alle-prozesse-gegenprüfen" class="nav-link" data-scroll-target="#alle-prozesse-gegenprüfen">Alle Prozesse gegenprüfen</a></li>
   <li><a href="#missverständliche-formel-berichtigen" id="toc-missverständliche-formel-berichtigen" class="nav-link" data-scroll-target="#missverständliche-formel-berichtigen">Missverständliche Formel berichtigen</a></li>
@@ -400,10 +401,202 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#verstehen">Verstehen und anwenden</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#rechentabelle">Rechentabelle</a><a href="#verstehen">Verstehen und anwenden</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
 <section id="grundlagen" class="level2">
 <h2 class="anchored" data-anchor-id="grundlagen">Grundlagen</h2>
 <p>Für eine vollständige Verrechnung des betrachteten Kostenpools können lmn-Kosten proportional zu den lmi-Kosten verteilt werden. Das ist eine Schlüsselentscheidung: Sie verteilt den neutralen Kostenblock, ohne nachzuweisen, dass jeder einzelne Prozess ihn proportional verursacht.</p>
+</section>
+<section id="rechentabelle" class="level2">
+<h2 class="anchored" data-anchor-id="rechentabelle">Rechentabelle: selbst ausfüllen und prüfen</h2>
+<p>Rechne das Beschaffungsbeispiel selbst nach. Die Anordnung der Prozesse, Eingangsgrößen und drei Ergebnisspalten folgt der Vorlesungstabelle. Die grau hinterlegten Satzspalten bleiben an derselben Stelle. <strong>Vorgegeben sind nur Kosten und Mengen; alle Ergebnisfelder sind zunächst leer.</strong></p>
+<section class="calc-sheet" aria-labelledby="pk-title">
+<h3 id="pk-title" class="anchored">Verrechnung lmn-Kosten · Beschaffung</h3>
+<p id="pk-instructions">1. lmi-Kosten addieren und Zuschlag berechnen. 2. Die drei Satzspalten ausfüllen. 3. Mit „Alle Felder prüfen“ kontrollieren. Danach erklärt (i) in jedem Feld den Rechenweg. Deine Zahlen bleiben stehen; falsche Zwischenwerte werden nicht automatisch übernommen.</p>
+<p id="pk-format">Beträge in Euro, Sätze in €/Prozess, Zuschlag in Prozent (15 für 15 %). Komma als Dezimalzeichen, Punkt als Tausendertrennzeichen, zum Beispiel 3.392,50. Auf Cent runden. Mobil: Tabelle nach rechts verschieben.</p>
+<noscript>Zum automatischen Prüfen bitte JavaScript aktivieren. Die vorgegebenen Daten bleiben lesbar; du kannst auf Papier rechnen.</noscript>
+<div class="calc-table-scroll" role="region" aria-label="Beschaffungstabelle, horizontal verschiebbar" tabindex="0">
+
+<table class="calc-table caption-top table">
+<caption>Prozesskosten und Prozesskostensätze · Eingabefelder zum Selbstrechnen</caption>
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Prozesse</th>
+<th data-quarto-table-cell-role="th" scope="col">Art</th>
+<th data-quarto-table-cell-role="th" scope="col">Prozesskosten<br>
+(Euro)</th>
+<th data-quarto-table-cell-role="th" scope="col">Prozessmengen</th>
+<th class="calc-rate" data-quarto-table-cell-role="th" scope="col">Prozess-<br>
+kostensatz<br>
+(Euro/Prozess)</th>
+<th data-quarto-table-cell-role="th" scope="col">Umlagesatz<br>
+(Euro) (lmn)</th>
+<th class="calc-rate" data-quarto-table-cell-role="th" scope="col">Gesamt-<br>
+prozess-<br>
+kostensatz<br>
+(Euro/Prozess)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">1. Material beschaffen</th>
+<td>lmi</td>
+<td>800.000</td>
+<td>32.000</td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-1-rate">Material beschaffen: lmi-Prozesskostensatz (€/Prozess)</label><input id="pk-1-rate" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="25" data-tolerance="0.005" aria-describedby="pk-1-rate-state"><span id="pk-1-rate-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Material beschaffen: lmi-Prozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Kosten / Prozessmenge = 800.000,00 € / 32000 Prozesse = 25,00 €/Prozess.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="pk-1-allocation">Material beschaffen: lmn-Umlagesatz (€/Prozess)</label><input id="pk-1-allocation" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="3.75" data-tolerance="0.005" aria-describedby="pk-1-allocation-state"><span id="pk-1-allocation-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Material beschaffen: lmn-Umlagesatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Zuschlag × lmi-Satz = 0,15 × 25,00 = 3,75 €/Prozess. 15 % sind ein Anteil, kein Eurobetrag.</p>
+</details>
+</div></td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-1-total">Material beschaffen: Gesamtprozesskostensatz (€/Prozess)</label><input id="pk-1-total" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="28.75" data-tolerance="0.005" aria-describedby="pk-1-total-state"><span id="pk-1-total-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Material beschaffen: Gesamtprozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Satz + lmn-Umlage = 25,00 + 3,75 = 28,75 €/Prozess. Gleichwertig: 25,00 × 1,15.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">2. Hilfs- &amp; Betriebsstoffe beschaffen</th>
+<td>lmi</td>
+<td>180.000</td>
+<td>1.200</td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-2-rate">Hilfs- &amp; Betriebsstoffe beschaffen: lmi-Prozesskostensatz (€/Prozess)</label><input id="pk-2-rate" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="150" data-tolerance="0.005" aria-describedby="pk-2-rate-state"><span id="pk-2-rate-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Hilfs- &amp; Betriebsstoffe beschaffen: lmi-Prozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Kosten / Prozessmenge = 180.000,00 € / 1200 Prozesse = 150,00 €/Prozess.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="pk-2-allocation">Hilfs- &amp; Betriebsstoffe beschaffen: lmn-Umlagesatz (€/Prozess)</label><input id="pk-2-allocation" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="22.50" data-tolerance="0.005" aria-describedby="pk-2-allocation-state"><span id="pk-2-allocation-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Hilfs- &amp; Betriebsstoffe beschaffen: lmn-Umlagesatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Zuschlag × lmi-Satz = 0,15 × 150,00 = 22,50 €/Prozess. 15 % sind ein Anteil, kein Eurobetrag.</p>
+</details>
+</div></td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-2-total">Hilfs- &amp; Betriebsstoffe beschaffen: Gesamtprozesskostensatz (€/Prozess)</label><input id="pk-2-total" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="172.50" data-tolerance="0.005" aria-describedby="pk-2-total-state"><span id="pk-2-total-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Hilfs- &amp; Betriebsstoffe beschaffen: Gesamtprozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Satz + lmn-Umlage = 150,00 + 22,50 = 172,50 €/Prozess. Gleichwertig: 150,00 × 1,15.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">3. Maschinen &amp; Anlagen beschaffen</th>
+<td>lmi</td>
+<td>295.000</td>
+<td>100</td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-3-rate">Maschinen &amp; Anlagen beschaffen: lmi-Prozesskostensatz (€/Prozess)</label><input id="pk-3-rate" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="2950" data-tolerance="0.005" aria-describedby="pk-3-rate-state"><span id="pk-3-rate-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Maschinen &amp; Anlagen beschaffen: lmi-Prozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Kosten / Prozessmenge = 295.000,00 € / 100 Prozesse = 2.950,00 €/Prozess.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="pk-3-allocation">Maschinen &amp; Anlagen beschaffen: lmn-Umlagesatz (€/Prozess)</label><input id="pk-3-allocation" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="442.50" data-tolerance="0.005" aria-describedby="pk-3-allocation-state"><span id="pk-3-allocation-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Maschinen &amp; Anlagen beschaffen: lmn-Umlagesatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Zuschlag × lmi-Satz = 0,15 × 2.950,00 = 442,50 €/Prozess. 15 % sind ein Anteil, kein Eurobetrag.</p>
+</details>
+</div></td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-3-total">Maschinen &amp; Anlagen beschaffen: Gesamtprozesskostensatz (€/Prozess)</label><input id="pk-3-total" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="3392.50" data-tolerance="0.005" aria-describedby="pk-3-total-state"><span id="pk-3-total-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Maschinen &amp; Anlagen beschaffen: Gesamtprozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Satz + lmn-Umlage = 2.950,00 + 442,50 = 3.392,50 €/Prozess. Gleichwertig: 2.950,00 × 1,15.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">4. Dienstleistungen beschaffen</th>
+<td>lmi</td>
+<td>105.000</td>
+<td>100</td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-4-rate">Dienstleistungen beschaffen: lmi-Prozesskostensatz (€/Prozess)</label><input id="pk-4-rate" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="1050" data-tolerance="0.005" aria-describedby="pk-4-rate-state"><span id="pk-4-rate-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Dienstleistungen beschaffen: lmi-Prozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Kosten / Prozessmenge = 105.000,00 € / 100 Prozesse = 1.050,00 €/Prozess.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="pk-4-allocation">Dienstleistungen beschaffen: lmn-Umlagesatz (€/Prozess)</label><input id="pk-4-allocation" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="157.50" data-tolerance="0.005" aria-describedby="pk-4-allocation-state"><span id="pk-4-allocation-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Dienstleistungen beschaffen: lmn-Umlagesatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>Zuschlag × lmi-Satz = 0,15 × 1.050,00 = 157,50 €/Prozess. 15 % sind ein Anteil, kein Eurobetrag.</p>
+</details>
+</div></td>
+<td class="calc-rate"><div class="calc-cell">
+<label class="visually-hidden" for="pk-4-total">Dienstleistungen beschaffen: Gesamtprozesskostensatz (€/Prozess)</label><input id="pk-4-total" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="1207.50" data-tolerance="0.005" aria-describedby="pk-4-total-state"><span id="pk-4-total-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Dienstleistungen beschaffen: Gesamtprozesskostensatz">
+<span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>lmi-Satz + lmn-Umlage = 1.050,00 + 157,50 = 1.207,50 €/Prozess. Gleichwertig: 1.050,00 × 1,15.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">5. Allgemeine Verwaltung<br>
+(„Abteilung leiten“)</th>
+<td>lmn</td>
+<td>207.000</td>
+<td>—</td>
+<td class="calc-rate">—</td>
+<td>—</td>
+<td class="calc-rate">—</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="calc-bases"><div><strong>Summe lmi-Prozesskosten (Euro)</strong><div class="calc-cell"><label class="visually-hidden" for="pk-sum">Summe lmi-Prozesskosten (€)</label><input id="pk-sum" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="1380000" data-tolerance="0.005" aria-describedby="pk-sum-state"><span id="pk-sum-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: Summe lmi-Prozesskosten"><span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span></summary><p>800.000 + 180.000 + 295.000 + 105.000 = 1.380.000 €. Die 207.000 € lmn-Kosten gehören nicht in diesen Nenner.</p></details></div></div><div><strong>lmn-Zuschlagssatz (%)</strong><div class="calc-cell"><label class="visually-hidden" for="pk-surcharge">lmn-Zuschlagssatz (%)</label><input id="pk-surcharge" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="15" data-tolerance="0.005" aria-describedby="pk-surcharge-state"><span id="pk-surcharge-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: lmn-Zuschlagssatz"><span class="calc-info" aria-hidden="true">i</span> <span class="visually-hidden">Rechenweg</span></summary><p>lmn-Kosten / gesamte lmi-Kosten × 100 = 207.000 / 1.380.000 × 100 = 15 %. Für die Umlage mit 0,15 multiplizieren.</p></details></div></div></div>
+<div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div>
+<p class="calc-summary" role="status" aria-live="polite" aria-atomic="true">Noch nicht geprüft · 14 Felder zum Selbstrechnen.</p>
+</section>
+<p><strong>Nicht verwechseln:</strong> Die Spaltenbezeichnung „Umlagesatz (Euro) (lmn)“ wird wie in der Tabelle verwendet; gemeint ist der Umlagebetrag <strong>je Prozess</strong>, nicht der dimensionslose lmn-Zuschlagssatz. Die Formel unter der Originaltabelle ist an dieser Stelle missverständlich beschriftet; hier bleiben 15 %, Eurobetrag und Gesamtsatz getrennt.</p>
+<p>Die Kontrolle vergleicht jedes Feld mit dem korrekten Ergebnis aus den vorgegebenen Daten; Folgefehler werden nicht als richtige Lösung gewertet. Ein richtiger Wert bestätigt die Rechnung, nicht automatisch die Verursachungsgerechtigkeit des Umlageschlüssels. Deine Eingaben werden nicht gespeichert oder übertragen. „Neu beginnen“ leert nur diese Rechentabelle. Zum Bearbeiten ohne sichtbare Ergebnisse kannst du direkt hier starten und die Erläuterungen oberhalb zunächst überspringen.</p>
 </section>
 <section id="zuschlag-und-gesamtprozesskostensatz" class="level2">
 <h2 class="anchored" data-anchor-id="zuschlag-und-gesamtprozesskostensatz">Zuschlag und Gesamtprozesskostensatz</h2>
@@ -530,6 +723,7 @@ Begründung anzeigen
 <li>Zuschlagsbasis und 15-Prozent-Rechnung → physische PDF-S. 34. Gesamtprozesskostensatz und missverständliche Formelnotation → S. 35–36; Begriffstrennung hier ausdrücklich vorgenommen; die Klammer im Original wurde am gerenderten PDF kontrolliert. Vier Prozesssätze → S. 36. Summengegenprobe, Doppelverrechnungswarnung und Schlüsselgrenze → eigene Ableitungen.</li>
 </ul>
 <p>Verständnislernstrecke → eigene Aufgaben, Hinweise, Musterlösungen, Bewertungsraster und Transferfälle auf Grundlage der oben zugeordneten Mechanismen; keine zusätzlichen Aussagen des Skripts. Quelle für diese Revision am 21.10.2026 erneut gelesen.</p>
+<p>Interaktive Rechentabelle → eigenständiger HTML-Nachbau der Zeilen-/Spaltenanordnung und Beispieldaten von physischer PDF-S. 36, einschließlich Zuschlagsbasis aus S. 34. Tabellenlayout am gerenderten Original am 22.10.2026 geprüft. Eingabekontrolle, Feldhilfen und didaktische Erläuterungen sind eigene Ergänzungen; kein Folienbild veröffentlicht.</p>
 <p>Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.</p>
 
 
@@ -665,6 +859,75 @@ document.addEventListener("click", (event) => {
   output.focus();
   output.select();
 });
+</script>
+
+<script>
+/* Numeric worksheet: compare each entry independently; never evaluate formulas. */
+(() => {
+  function parseWorksheetNumber(raw) {
+    const text = raw.trim();
+    if (!text) return null;
+    // German grouping and decimal comma; also unambiguous decimal dots.
+    const german = /^[+-]?(?:\d{1,3}(?:[. \u00a0\u202f]\d{3})+|\d+)(?:,\d+)?$/;
+    if (german.test(text)) return Number(text.replace(/[. \u00a0\u202f]/g, "").replace(",", "."));
+    if (/^[+-]?\d+\.\d{1,2}$/.test(text)) return Number(text);
+    return NaN;
+  }
+
+  function clearCell(cell) {
+    const input = cell.querySelector("input");
+    input.removeAttribute("aria-invalid");
+    delete cell.dataset.state;
+    cell.querySelector(".calc-cell-state").textContent = "";
+    const work = cell.querySelector(".calc-work");
+    work.hidden = true;
+    work.open = false;
+  }
+
+  document.addEventListener("input", (event) => {
+    const cell = event.target.closest(".calc-cell");
+    if (!cell) return;
+    clearCell(cell);
+    const sheet = cell.closest(".calc-sheet");
+    sheet.querySelector(".calc-summary").textContent = "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
+  });
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".calc-check, .calc-reset");
+    if (!button) return;
+    const sheet = button.closest(".calc-sheet");
+    const cells = [...sheet.querySelectorAll(".calc-cell")];
+    if (button.classList.contains("calc-reset")) {
+      cells.forEach((cell) => {
+        cell.querySelector("input").value = "";
+        clearCell(cell);
+      });
+      sheet.querySelector(".calc-summary").textContent = `Neu begonnen · ${cells.length} leere Felder.`;
+      cells[0].querySelector("input").focus();
+      return;
+    }
+    let correct = 0, wrong = 0, empty = 0, invalid = 0;
+    cells.forEach((cell) => {
+      const input = cell.querySelector("input");
+      const value = parseWorksheetNumber(input.value);
+      let label, state;
+      if (value === null) {
+        empty++; label = "Offen"; state = "empty";
+      } else if (!Number.isFinite(value)) {
+        invalid++; label = "Zahlenformat prüfen"; state = "invalid";
+      } else if (Math.abs(value - Number(input.dataset.target)) <= Number(input.dataset.tolerance) + 1e-9) {
+        correct++; label = "Richtig ✓"; state = "correct";
+      } else {
+        wrong++; label = "Noch nicht richtig"; state = "wrong";
+      }
+      cell.dataset.state = state;
+      input.setAttribute("aria-invalid", String(state === "wrong" || state === "invalid"));
+      cell.querySelector(".calc-cell-state").textContent = label;
+      cell.querySelector(".calc-work").hidden = false;
+    });
+    sheet.querySelector(".calc-summary").textContent = `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
+  });
+})();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

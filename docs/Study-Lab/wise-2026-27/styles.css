@@ -898,3 +898,34 @@ body.quarto-dark .feedback-builder button,
 [data-bs-theme="dark"] .feedback-builder button {
   color: #0b1120;
 }
+
+/* Lecture-shaped worksheet: retain the column layout, scroll within the table. */
+.calc-sheet { margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--study-line); border-radius: 12px; background: var(--study-panel); color: var(--study-ink); }
+.calc-table-scroll { max-width: 100%; overflow-x: auto; contain: layout paint; border: 1px solid var(--study-line); border-radius: 6px; }
+.calc-table { width: 100%; min-width: 1120px; margin: 0; border-collapse: separate; border-spacing: 0; font-size: .92rem; }
+.calc-table caption { caption-side: top; padding: .75rem; color: var(--study-ink); }
+.calc-table th, .calc-table td { padding: .7rem; border-bottom: 1px solid var(--study-line); vertical-align: top; }
+.calc-table thead th { color: var(--study-accent-strong); text-align: center; background: var(--study-panel); }
+.calc-table tbody th { position: sticky; left: 0; z-index: 1; min-width: 190px; max-width: 210px; background: var(--study-panel); box-shadow: 2px 0 0 var(--study-line); }
+.calc-table td { text-align: right; }
+.calc-table .calc-rate { background: color-mix(in srgb, var(--study-ink) 9%, var(--study-panel)); }
+.calc-cell { min-width: 130px; max-width: 190px; text-align: left; }
+.calc-cell input { width: 100%; min-height: 44px; padding: .4rem .5rem; border: 2px solid var(--study-line); border-radius: 5px; background: var(--study-panel); color: var(--study-ink); text-align: right; font-variant-numeric: tabular-nums; }
+.calc-cell-state { display: block; font-size: .8rem; margin-top: .2rem; min-height: 1.2em; }
+.calc-cell[data-state="correct"] input { border-color: #27804c; }
+.calc-cell[data-state="wrong"] input, .calc-cell[data-state="invalid"] input { border-color: #c64d40; }
+.calc-work { margin: .2rem 0 0; padding: 0; border: 0; background: transparent; }
+.calc-work[hidden] { display: none !important; }
+.calc-work summary { min-height: 44px; padding: .5rem .3rem; color: var(--study-accent-strong); cursor: pointer; width: fit-content; }
+.calc-work p { font-size: .85rem; margin: .3rem 0; overflow-wrap: anywhere; }
+.calc-bases { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0; }
+.calc-bases .calc-cell { max-width: 100%; }
+.calc-actions { display: flex; flex-wrap: wrap; gap: .6rem; }
+.calc-actions button { min-height: 44px; padding: .6rem .9rem; border: 1px solid var(--study-line); border-radius: 7px; background: var(--study-soft); color: var(--study-ink); font-weight: 650; }
+.calc-actions .calc-check { border-color: var(--study-accent-strong); }
+.calc-summary { margin: .8rem 0 0; font-weight: 600; }
+.calc-sheet input:focus-visible, .calc-sheet button:focus-visible, .calc-sheet summary:focus-visible, .calc-table-scroll:focus-visible { outline: 3px solid var(--study-accent); outline-offset: 3px; }
+
+.calc-work summary { list-style: none; }
+.calc-work summary::-webkit-details-marker { display: none; }
+.calc-info { display: inline-flex; width: 1.6rem; height: 1.6rem; border: 1.5px solid currentColor; border-radius: 50%; align-items: center; justify-content: center; font-family: Georgia, serif; font-weight: bold; font-style: italic; line-height: 1; }
