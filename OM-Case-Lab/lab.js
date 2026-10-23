@@ -2,7 +2,7 @@
   'use strict';
   const root=document.getElementById('decision-lab');if(!root)return;
   const num=(v,d=1)=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:d,minimumFractionDigits:d}).format(v);
-  const eur=v=>new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(v);
+  const eur=v=>{const cents=Number(v.toFixed(2));return new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(cents===0?0:cents);};
   let baseline;
   try{const response=await fetch('data.json');if(!response.ok)throw Error('Daten nicht verfügbar');baseline=await response.json();}
   catch(e){root.textContent='Die Falldaten konnten nicht geladen werden. Bitte über einen lokalen Webserver oder die Website öffnen.';return;}

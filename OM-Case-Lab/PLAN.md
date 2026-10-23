@@ -23,3 +23,5 @@ Nächster gemeinsamer Schritt: Leo erklärt Kostenrelevanz und Entscheidungsschw
 ## Abnahme und Veröffentlichung
 
 Implementierungscommit de76f91 auf origin main. Build/Modell-/Grenzfall-/Export-/Link-/Browserprüfungen erfolgreich; fünf Breiten 320–1440 px ohne Seitenüberlauf, Hell/Dunkel geprüft. PDF zwei Seiten,98-Wörter-Empfehlung und überprüfter anklickbarer Laborlink. Alle elf Live-Hauptdateien HTTP200 und SHA256-identisch zum geprüften Build. Vollprüfung und Screenshots privat außerhalb des Repositorys. Generierte Quarto-/Vendor-Dateien enthalten unveränderte upstream Whitespace-Stellen; eigene Quellen bestehen git diff --check. Keine Uni-Abgabe/kein Datei-Upload, keine produktiven Dienste geändert.
+
+Livecheck-Nachtrag: Rundungsabweichung bei −1177,499999…EUR in der Ganz-Euro-Anzeige gefunden, Beträge vor Anzeige auf Cent normalisiert und gezielten UI-Regressionscheck ergänzt. Lokale Gesamtprüfung erneut erfolgreich; korrigierte Veröffentlichung folgt.

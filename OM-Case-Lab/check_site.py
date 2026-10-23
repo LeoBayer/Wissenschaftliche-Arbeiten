@@ -49,6 +49,7 @@ try:
         results['math']=math
         page.locator('#factor').fill('0.7');assert 'EXPERIMENT' in page.locator('#scenario-label').inner_text()
         assert 'Nichtverlängerung vorteilhaft' in page.locator('#lab-result').inner_text()
+        assert '1.178' in page.locator('#lab-result').inner_text(), 'Negative half-euro amount must round consistently after cent normalization.'
         page.locator('#price').fill('');assert page.locator('#lab-result .error').count()==1
         assert page.locator('#export-json').is_disabled()
         page.locator('#reset-lab').click();assert 'AUSGANGSFALL' in page.locator('#scenario-label').inner_text()
