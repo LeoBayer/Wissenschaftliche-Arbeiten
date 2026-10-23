@@ -1,0 +1,15 @@
+@media print {
+  .btn, footer, .nav-footer, .page-footer, #quarto-back-to-top {display:none!important}
+  body {font-size:9.5pt!important;line-height:1.4!important}
+  h1 {max-width:none;font-size:18pt;line-height:1.2;margin-bottom:.5rem}
+  h2 {font-size:13pt;margin:1rem 0 .4rem;break-after:avoid}
+  h3 {font-size:11pt;margin:.7rem 0 .3rem;break-after:avoid}
+  p {margin-bottom:.5rem}
+  .eyebrow {font-size:7.5pt;margin-bottom:.5rem}
+  table {font-size:8.5pt;break-inside:avoid}
+  tr {break-inside:avoid}
+  table td, table th {padding:.3rem!important}
+  .quarto-title-block {margin-bottom:.5rem}
+  ul {margin-bottom:.5rem}
+  .pdf-page-break {break-before:page}
+}

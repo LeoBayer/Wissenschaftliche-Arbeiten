@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - labor.qmd
+    - methode.qmd
+    - verstehen.qmd
+    - abgabe.qmd
+  resources:
+    - lab.js
+    - model.js
+    - data.json
+    - downloads/
+website:
+  title: "OM · Entscheidungsatelier"
+  site-url: https://leobayer.github.io/Wissenschaftliche-Arbeiten/OM-Case-Lab/
+  navbar:
+    left:
+      - href: index.qmd
+        text: Fall & Entscheidung
+      - href: labor.qmd
+        text: Experimentierlabor
+      - href: methode.qmd
+        text: Daten & Methode
+      - href: verstehen.qmd
+        text: Selbst erklären
+      - href: abgabe.qmd
+        text: PDF & Kurzfassung
+  page-footer: "Eigenständige Lernanalyse · unbewerteter Übungsfall · keine offizielle Lösung der Universität Münster · Stand 23.10.2026"
+format:
+  html:
+    lang: de
+    html-math-method: mathml
+    theme:
+      light: cosmo
+      dark: darkly
+    css:
+      - styles.css
+      - print.css
+    toc: true
+    link-external-newwindow: true
+    include-after-body:
+      text: |
+        <script src="model.js"></script>
+        <script src="lab.js"></script>
+lang: de

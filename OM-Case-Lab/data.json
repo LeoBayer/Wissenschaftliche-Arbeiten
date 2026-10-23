@@ -1,0 +1,14 @@
+{
+  "version": "2026-10-23-v1",
+  "years": [2023,2024,2025,2026],
+  "history": [10,15,25,38],
+  "price": 690,
+  "cost": 440,
+  "fixed": 10000,
+  "avoidable": 1,
+  "method": "linear",
+  "factor": 1,
+  "rate": 0,
+  "setup": 0,
+  "provenance": "Fiktiver unbewerteter Lehrfall. Absätze aus zwei bereitgestellten CSVs aggregiert; Preis/Kosten laut Persona, Fixkosten nach ausdrücklicher Korrektur. Fehlende Vertragsdetails bleiben offen."
+}

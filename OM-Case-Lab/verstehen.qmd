@@ -1,0 +1,48 @@
+---
+title: "Kannst du die Entscheidung selbst vertreten?"
+---
+
+## Erst erklären, dann aufklappen
+
+Notiere oder sprich deine Antwort, bevor du die Erläuterung öffnest. Die Aufklapper bewerten dich nicht automatisch; sie geben Kriterien zur ehrlichen Selbstprüfung. Alle Aufgaben hier sind selbst erstellt, nicht offizielle Prüfungsaufgaben.
+
+<details class="answer"><summary>1 · Warum reichen 38 verkaufte Akkus trotz positivem Stückdeckungsbeitrag nicht?</summary>
+<p>38 × 250 € = 9.500 € decken die vermeidbaren 10.000 € Jahresfixkosten nicht. Bei konstant 38 Stück wären es −500 € jährlich und −1.500 € über drei Jahre. Positiver Stückdeckungsbeitrag ist notwendig, aber bei vermeidbaren Fixkosten nicht hinreichend.</p>
+<p><strong>Erfüllt:</strong> Stück- und Gesamtergebnis getrennt; richtige Einheit; Bezug zur Alternative „Einstellen“.</p>
+</details>
+
+<details class="answer"><summary>2 · Warum würden wirklich unvermeidbare Fixkosten die Rechnung verändern?</summary>
+<p>Dann entstünden sie bei beiden Optionen. Für die Entscheidung relevant wäre nur die Differenz. Wenn alle 10.000 € ohnehin anfielen und keine zusätzlichen Kosten entstünden, würde jeder zusätzlich verkaufte Akku mit positivem Deckungsbeitrag die Fortführung relativ verbessern. Das ist nicht die korrigierte Fallauskunft, sondern der Gegenfall.</p>
+<p><strong>Erfüllt:</strong> Beide Alternativen aufgeschrieben, Kosten nicht bloß pauschal „ignoriert“.</p>
+</details>
+
+<details class="answer"><summary>3 · Ist 11.175 € ein sicherer Gewinn?</summary>
+<p>Nein. Es ist die undiskontierte Differenz im linearen Referenzmodell mit konstantem Preis, variablen Kosten und den genannten vermeidbaren Fixkosten. Historische Bestell-/Verkaufsabgrenzung, Zukunftsmenge und fehlende Vertragsdetails können das Ergebnis ändern. Die Zahl hat keine Konfidenzwahrscheinlichkeit.</p>
+<p><strong>Erfüllt:</strong> Mindestens eine Daten-, eine Modell- und eine Vertragsannahme genannt.</p>
+</details>
+
+## Transfer ohne Vorlage
+
+**Selbst erstellte Variante:** Die drei Jahresmengen seien 40, 45 und 50 Stück. Der Preis beträgt 690 €, die variablen Kosten steigen auf 470 € und die vermeidbaren Jahresfixkosten bleiben bei 10.000 €. Keine Abzinsung und kein Einmalaufwand. Verlängern oder einstellen? Bei welchem Einkaufspreis wären beide Optionen gleichwertig?
+
+<details class="answer"><summary>Lösung und Bewertungskriterien</summary>
+<p>Gesamtmenge 135 Stück; Stückdeckungsbeitrag 220 €. Differenz = 135 × 220 − 30.000 = −300 €. Unter diesen Annahmen einstellen. Grenzkosten je Stück = 690 − 30.000/135 ≈ 467,78 €. Einkauf zu 470 € liegt darüber. Bei ganzzahligen Centpreisen liegt der höchstens noch nicht nachteilige Preis bei 467,77 €; 467,78 € ergeben bereits eine minimale negative Differenz.</p>
+<p><strong>Erfüllt:</strong> Kostenänderung berücksichtigt, drei Jahre korrekt summiert, Grenzwert hergeleitet und Richtung der Ungleichung erklärt. Wer nur „Verlust“ nennt, hat die Entscheidungslogik noch nicht vollständig gezeigt.</p>
+</details>
+
+## Die Datenfrage
+
+**Aufgabe:** Eine Altliste enthält Bestellungen im September, das ERP fakturiert die Lieferung im Oktober. Darf dieselbe Einheit in beiden Geschäftsjahresmengen erscheinen?
+
+<details class="answer"><summary>Erklärung</summary>
+<p>Nicht in einer einheitlich definierten Absatzreihe: zuerst denselben Vorgang identifizieren, dann die gewünschte zeitliche Abgrenzung konsistent anwenden. Bestellnachfrage und fakturierter Absatz sind unterschiedliche Reihen. Der Abgleich verlangt Vorgangsdaten; eine pauschale Korrektur der Jahressumme wäre erfunden.</p>
+</details>
+
+## Vor der endgültigen Lösung
+
+- Kannst du jede entscheidende Zahl auf eine Quelle oder explizite Annahme zurückführen?
+- Kannst du die Entscheidungsschwelle ohne den Rechner herleiten?
+- Kannst du erklären, weshalb die exponentielle Kurve trotz kleinem Testfehler unsicher bleibt?
+- Kannst du sagen, welche neue Information deine Empfehlung ändern würde?
+
+Wiederhole den Transferfall an einem anderen Tag mit veränderten Zahlen. Entscheidend ist die Begründung, nicht die Erinnerung an das Ergebnis.

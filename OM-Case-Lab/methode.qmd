@@ -1,0 +1,87 @@
+---
+title: "Eine Zahl ist erst mit Herkunft nützlich."
+---
+
+## Datenregister
+
+| Größe | Wert | Nachweisstand |
+|---|---:|---|
+| Erfasste Menge GJ 2023 | 10 Stück | Summe der Stückspalte der Altliste |
+| Erfasste Menge GJ 2024 | 15 Stück | Summe der Stückspalte der Altliste; Hinweise auf verzögerte Lieferungen |
+| ERP-Menge GJ 2025 | 25 Stück | Summe der Mengenspalte des ERP-Exports |
+| ERP-Menge GJ 2026 | 38 Stück | Summe der Mengenspalte des ERP-Exports |
+| Nettoverkaufspreis | 690 €/Stück | Persona-Auskunft; Einzelpreis zusätzlich im ERP-Export |
+| Einkaufspreis | 440 €/Stück | Persona-Auskunft, kein separater Vertragsbeleg erhalten |
+| Vertragsfixkosten | 7.000 €/Jahr | Persona-Auskunft |
+| Lager/Transportprüfung | rund 3.000 €/Jahr | Persona-Auskunft |
+| Vermeidbare Fixkosten gesamt | 10.000 €/Jahr | ausdrücklich korrigierte Persona-Auskunft, weiterhin vertragsseitig zu prüfen |
+| Referenzhorizont | GJ 2027–2029 | drei Jahre; Zuordnung zum Vertrag vor Zusage bestätigen |
+
+Ein Geschäftsjahr läuft laut Gespräch vom **1. Oktober des Vorjahres bis 30. September**. Deshalb ist GJ 2026 am 23.10.2026 bereits abgeschlossen. Es handelt sich nicht um einen unvollständigen Kalenderjahreswert.
+
+### Dateiprüfung
+
+Die Altliste enthält **23 Zeilen**, der ERP-Export **54 Belegzeilen**. Aggregiert werden Mengen, nicht Zeilen. Die Stückzahl einer Zeile kann größer als eins sein. Alle ERP-Zeilen erfüllen außerdem `Menge × Einzelpreis = Betrag`.
+
+Die Summe ist eine Rechenprüfung, keine vollständige Echtheits- oder Vollständigkeitsprüfung des Systems. Die Dateien stammen aus einer KI-gestützten fiktiven Lehrumgebung.
+
+### Die wichtigste offene Abgrenzung
+
+Auf Rückfrage bezeichnete die Persona die Altliste 2024 als **Bestellungen, nicht zwingend bereits ausgelieferte Mengen**. Im ERP stehen Belegdaten und Rechnungsbeträge. Ohne Abgleich von Bestell-, Liefer- und Fakturazeitpunkten ist die zusammengesetzte Reihe nur ein vorläufiger Mengenindikator. Lieferverzögerungen können das beobachtete Muster verschieben.
+
+**Nicht zulässig wäre**, die verzögerten Zeilen einfach wegzulassen, zusätzlich zu addieren oder aus ihnen erfundene Fehlmengen abzuleiten. Benötigt wird eine fallbezogene Abstimmung der Vorgänge.
+
+## Drei Modelle, dieselben Daten
+
+Mit Zeitindex $t=0,1,2,3$ für GJ 2023–2026:
+
+- **Konstant:** $\hat q_{t+h}=38$. Einfacher Vergleich ohne weiteres Wachstum.
+- **Linear:** Kleinste Quadrate liefern $\hat q_t=7{,}9+9{,}4t$. Für $t=4,5,6$: 45,5 / 54,9 / 64,3 Stück.
+- **Exponentiell:** Lineare Regression von $\ln(q_t)$ auf $t$, anschließend Rücktransformation. Das beschreibt ungefähr 57 % jährliches Wachstum, ist aber keine Garantie, dass dieses Wachstum anhält. Ohne zusätzliche Fehlerverteilungsannahme erfolgt keine Lognormal-Bias-Korrektur.
+
+Der lineare Ansatz ist ein **weniger expansiver Referenzfall** als der exponentielle, nicht automatisch ein konservativer unterer Grenzwert. Er wurde nicht gewählt, weil er den besten nachgewiesenen Prognosefehler hätte.
+
+### Mini-Rücktest ohne Zukunftsdaten
+
+Für 2025 wird nur auf 2023–2024 geschätzt, für 2026 nur auf 2023–2025. Alle Modelle werden auf denselben beiden Folgejahren geprüft. Das Labor zeigt MAE und MSE. Mit lediglich zwei Testpunkten ist keine verlässliche Auswahl für drei zukünftige Jahre möglich; zudem bleibt die Datenvergleichbarkeit eingeschränkt. Ein kleiner Anpassungsfehler auf allen vier Jahreswerten wäre noch schwächer als Beleg.
+
+## Die Entscheidungsrechnung
+
+Stückdeckungsbeitrag:
+
+$$d=p-c=690-440=250\;\text{€/Stück}.$$
+
+Vorteil der Fortführung gegenüber Einstellung bei vollständig vermeidbaren Kosten, ohne Abzinsung und ohne Einmalaufwand:
+
+$$\Delta=\sum_{j=1}^{3}\bigl(q_j\cdot250-10.000\bigr).$$
+
+Für den linearen Referenzfall:
+
+$$\Delta=(45{,}5+54{,}9+64{,}3)\cdot250-30.000=11.175\;\text{€}.$$
+
+Die über drei Jahre erforderliche Gesamtmenge beträgt $30.000/250=120$ Stück. Der lineare Referenzfall liefert 164,7 Stück. Unter proportionaler Veränderung der ganzen Kurve kippt die Entscheidung bei **72,86 %** dieser Mengen, also bei etwa **27,14 % Unterschreitung**. Das ist eine algebraische Schwelle, keine statistische Sicherheitswahrscheinlichkeit.
+
+### Allgemeiner Alternativenvergleich im Labor
+
+Der vermeidbare Kostenanteil sei $v$, der Zins $r$ und ein zusätzlicher Einmalaufwand $I$:
+
+$$\Delta_0=-I+\sum_{j=1}^{3}\frac{q_j(p-c)-vF}{(1+r)^j}.$$
+
+Nicht vermeidbare Kosten verbleiben auch bei Einstellung und kürzen sich im Vergleich heraus. Der voreingestellte Anteil $v=1$ folgt der korrigierten Persona-Auskunft. Steuer-, Finanzierungs- und Working-Capital-Effekte werden nicht gesondert modelliert; bei verändertem Zins ist dies ein vereinfachter Barwertvergleich der modellierten Ergebnisbeiträge.
+
+## Offene Informationen nach Entscheidungswert
+
+1. **Jahresreihe abstimmen:** Was wurde bestellt, geliefert und fakturiert? Gibt es Periodenverschiebungen?
+2. **Vertragskosten bestätigen:** Welche Zahlungsverpflichtungen entstehen ausschließlich bei Verlängerung? Mindestmengen, Preisbindung und Einmalaufwand?
+3. **Austauschpotenzial eingrenzen:** Verbleibende installierte Basis, Akku-Altersstruktur und Ersatzquote. Die Persona nennt lediglich eine Erfahrungsdauer von fünf bis sieben Jahren, keine belegte Verteilung.
+
+Diese Auskünfte sind wichtiger als zusätzliche Nachkommastellen eines optimalen Kurvenfits.
+
+## Quellen und Transparenz
+
+- [OM-Lernwerkstatt: Übungsfall](https://operationsmanagement.uni-muenster.de/#/kapitel/prognose/uebungsfall), Universität Münster; unbewertet, abgerufen am 23.10.2026.
+- `Ersatzteile_alt_FINAL_v3_Akku.csv`: bereitgestellter Persona-Anhang, 23 Zeilen; Mengen GJ 2023/2024. Originaldatei privat archiviert.
+- `ERP_Export_Ersatzakku_GJ2025-2026.csv`: bereitgestellter Persona-Anhang, 54 Zeilen; Mengen GJ 2025/2026 und Stückpreis. Originaldatei privat archiviert.
+- Gezieltes Persona-Gespräch vom 23.10.2026: Kosten, Korrektur ihrer Vermeidbarkeit, Geschäftsjahresabgrenzung und Datenlücken. Vollständiger Gesprächsverlauf privat archiviert; Persona-Aussagen sind keine unabhängigen Vertragsbelege.
+
+Eigene Aufbereitung und Implementierung mit KI-Unterstützung. Keine offizielle Lehrstuhllösung; keine vollständigen Kursunterlagen oder Gesprächsprotokolle auf dieser Website.

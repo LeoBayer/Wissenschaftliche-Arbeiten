@@ -1,0 +1,184 @@
+[
+  {
+    "objectID": "abgabe.html",
+    "href": "abgabe.html",
+    "title": "Ersatzakku-Angebot: Entscheidung und Rechenweg",
+    "section": "",
+    "text": "Probeabgabe / unbewerteter Übungsfall / Version 23.10.2026-v1\nPDF herunterladen"
+  },
+  {
+    "objectID": "abgabe.html#empfehlung-in-rund-100-wörtern",
+    "href": "abgabe.html#empfehlung-in-rund-100-wörtern",
+    "title": "Ersatzakku-Angebot: Entscheidung und Rechenweg",
+    "section": "Empfehlung in rund 100 Wörtern",
+    "text": "Empfehlung in rund 100 Wörtern\nWir empfehlen, die Verlängerung vorzubereiten, aber erst nach Daten- und Vertragsprüfung verbindlich zuzusagen. Aus den erfassten Jahresmengen 10, 15, 25 und 38 ergibt ein linearer Referenztrend 45,5/54,9/64,3 Akkus für 2027–2029. Bei 250 € Stückdeckungsbeitrag und jährlich 10.000 € vermeidbaren Fixkosten beträgt der undiskontierte Vorteil 11.175 €. Kostendeckung erfordert insgesamt 120 Akkus; rund 27 % weniger als die Referenzprognose würden den Vorteil aufzehren. Allerdings stehen frühe Bestellmengen späteren ERP-Verkäufen gegenüber. Diese Reihe und die Vermeidbarkeit der Kosten müssen bestätigt werden. Bei konstant 38 Akkus jährlich wäre Nichtverlängerung günstiger. Ohne Absatzabgleich bleibt die positive Rechnung ein Szenario, keine gesicherte Prognose."
+  },
+  {
+    "objectID": "abgabe.html#rechenanhang",
+    "href": "abgabe.html#rechenanhang",
+    "title": "Ersatzakku-Angebot: Entscheidung und Rechenweg",
+    "section": "Rechenanhang",
+    "text": "Rechenanhang\n\n1 · Eingangsgrößen und Nachweisstand\n\n\n\n\n\n\n\n\nGröße\nWert\nStatus\n\n\n\n\nGJ 2023 / 2024\n10 / 15 Stück\nMengen aus Altliste; Bestell-/Absatzabgrenzung offen\n\n\nGJ 2025 / 2026\n25 / 38 Stück\nMengen aus ERP-Belegexport\n\n\nVerkaufspreis / variable Stückkosten\n690 € / 440 €\nPreis auch im Export, Kosten laut Persona\n\n\nJahresfixkosten\n10.000 €\nLaut korrigierter Persona-Auskunft bei Einstellung vermeidbar\n\n\nZins / Einmalaufwand\n0 % / 0 €\nReferenzannahmen, keine bestätigten Vertragskonditionen\n\n\n\nGeschäftsjahre jeweils Oktober bis September. Belegdateien privat archiviert; 23 Altdatenzeilen und 54 ERP-Zeilen nach Menge summiert, ERP-Zeilenbeträge nachgerechnet. Die Persona hat ihre anfänglich gegenteilige Auskunft zur Kostenvermeidbarkeit auf Rückfrage korrigiert. Ein unabhängiger Vertragsauszug liegt nicht vor.\n\n\n2 · Referenzmodell\nZeitindex t=0t=0 für GJ 2023. Lineare Kleinste-Quadrate-Schätzung auf vier Mengen: q̂t=7,9+9,4t\\hat q_t=7{,}9+9{,}4t. Es wird vorläufige Vergleichbarkeit der Daten unterstellt. Der lineare Trend ist eine weniger expansive Alternative zur exponentiellen Fortschreibung, kein belegter unterer Prognosegrenzwert.\n\n\n\n\n\n\n\n\n\n\nGJ\nErwartete Menge\nDeckungsbeitrag gesamt\nVermeidbare Fixkosten\nDifferenz zu Einstellung\n\n\n\n\n2027\n45,5\n11.375 €\n10.000 €\n1.375 €\n\n\n2028\n54,9\n13.725 €\n10.000 €\n3.725 €\n\n\n2029\n64,3\n16.075 €\n10.000 €\n6.075 €\n\n\nSumme\n164,7\n41.175 €\n30.000 €\n11.175 €\n\n\n\nBerechnet mit ungerundeten Werten. Erwartungsmengen sind keine gerundeten Bestelllose. Bei Nichtverlängerung werden nach korrigierter Auskunft weder Akkus bezogen noch die genannten Fixkosten ausgelöst; die Referenzalternative beträgt daher 0 €.\n\n\n3 · Robustheit und Gegenargument\nEntscheidungsschwelle: 30.000/250=12030.000/250=120 Akkus über drei Jahre. Kritischer Nachfragefaktor: 120/164,7=0,7286120/164{,}7=0{,}7286.\n\n30 % unter dem linearen Referenzfall: 115,29 Akkus → −1.177,50 €.\nKeine weitere Steigerung: 3 × 38 Akkus → −1.500 €.\nExponentielle Fortschreibung: rund 60,1 / 94,4 / 148,2 Akkus → rund 45.678 €, aber hohe Extrapolationsunsicherheit bei endlicher Fahrzeugbasis.\n\nZwei Ein-Schritt-Rücktests reichen nicht für eine verlässliche Drei-Jahres-Validierung. Bestell-/Liefer-/Fakturaabgleich sowie Mindestmengen, Preisbindung und Einmalaufwand sind vor Zusage zu prüfen. Eine fallende Nachfrage nach Auslaufen des Austauschzyklus ist möglich, aber mit den vorhandenen Daten nicht quantifiziert. Kundenserviceeffekte sind nicht monetarisiert."
+  },
+  {
+    "objectID": "abgabe.html#optional-selbst-mit-den-annahmen-experimentieren",
+    "href": "abgabe.html#optional-selbst-mit-den-annahmen-experimentieren",
+    "title": "Ersatzakku-Angebot: Entscheidung und Rechenweg",
+    "section": "Optional: selbst mit den Annahmen experimentieren",
+    "text": "Optional: selbst mit den Annahmen experimentieren\nDie schriftliche Rechnung ist eigenständig verständlich. Ergänzend lassen sich Preis, Kosten, Nachfrage, Kostenvermeidbarkeit und Modellwahl hier verändern:\nInteraktives Entscheidungsatelier – Experimentierlabor\nTransparenz: Eigene Analyse des fiktiven, unbewerteten Übungsfalls; keine offizielle Musterlösung. KI-Unterstützung bei Interviewfragen, Programmierung, Rechnung und Formulierung. Keine Einreichung durch diese Website."
+  },
+  {
+    "objectID": "abgabe.html#quellen",
+    "href": "abgabe.html#quellen",
+    "title": "Ersatzakku-Angebot: Entscheidung und Rechenweg",
+    "section": "Quellen",
+    "text": "Quellen\nOM-Lernwerkstatt, Universität Münster, Übungsfall Nachfrageprognose, Stand 23.10.2026; Persona-Anhänge Ersatzteile_alt_FINAL_v3_Akku.csv und ERP_Export_Ersatzakku_GJ2025-2026.csv; gezieltes Persona-Gespräch desselben Tages einschließlich Korrektur der Fixkostenauskunft und Hinweis auf nicht vergleichbare Mengenabgrenzung. Details und Modellgrenzen: Daten & Methode."
+  },
+  {
+    "objectID": "methode.html",
+    "href": "methode.html",
+    "title": "Eine Zahl ist erst mit Herkunft nützlich.",
+    "section": "",
+    "text": "Größe\nWert\nNachweisstand\n\n\n\n\nErfasste Menge GJ 2023\n10 Stück\nSumme der Stückspalte der Altliste\n\n\nErfasste Menge GJ 2024\n15 Stück\nSumme der Stückspalte der Altliste; Hinweise auf verzögerte Lieferungen\n\n\nERP-Menge GJ 2025\n25 Stück\nSumme der Mengenspalte des ERP-Exports\n\n\nERP-Menge GJ 2026\n38 Stück\nSumme der Mengenspalte des ERP-Exports\n\n\nNettoverkaufspreis\n690 €/Stück\nPersona-Auskunft; Einzelpreis zusätzlich im ERP-Export\n\n\nEinkaufspreis\n440 €/Stück\nPersona-Auskunft, kein separater Vertragsbeleg erhalten\n\n\nVertragsfixkosten\n7.000 €/Jahr\nPersona-Auskunft\n\n\nLager/Transportprüfung\nrund 3.000 €/Jahr\nPersona-Auskunft\n\n\nVermeidbare Fixkosten gesamt\n10.000 €/Jahr\nausdrücklich korrigierte Persona-Auskunft, weiterhin vertragsseitig zu prüfen\n\n\nReferenzhorizont\nGJ 2027–2029\ndrei Jahre; Zuordnung zum Vertrag vor Zusage bestätigen\n\n\n\nEin Geschäftsjahr läuft laut Gespräch vom 1. Oktober des Vorjahres bis 30. September. Deshalb ist GJ 2026 am 23.10.2026 bereits abgeschlossen. Es handelt sich nicht um einen unvollständigen Kalenderjahreswert.\n\n\nDie Altliste enthält 23 Zeilen, der ERP-Export 54 Belegzeilen. Aggregiert werden Mengen, nicht Zeilen. Die Stückzahl einer Zeile kann größer als eins sein. Alle ERP-Zeilen erfüllen außerdem Menge × Einzelpreis = Betrag.\nDie Summe ist eine Rechenprüfung, keine vollständige Echtheits- oder Vollständigkeitsprüfung des Systems. Die Dateien stammen aus einer KI-gestützten fiktiven Lehrumgebung.\n\n\n\nAuf Rückfrage bezeichnete die Persona die Altliste 2024 als Bestellungen, nicht zwingend bereits ausgelieferte Mengen. Im ERP stehen Belegdaten und Rechnungsbeträge. Ohne Abgleich von Bestell-, Liefer- und Fakturazeitpunkten ist die zusammengesetzte Reihe nur ein vorläufiger Mengenindikator. Lieferverzögerungen können das beobachtete Muster verschieben.\nNicht zulässig wäre, die verzögerten Zeilen einfach wegzulassen, zusätzlich zu addieren oder aus ihnen erfundene Fehlmengen abzuleiten. Benötigt wird eine fallbezogene Abstimmung der Vorgänge."
+  },
+  {
+    "objectID": "methode.html#datenregister",
+    "href": "methode.html#datenregister",
+    "title": "Eine Zahl ist erst mit Herkunft nützlich.",
+    "section": "",
+    "text": "Größe\nWert\nNachweisstand\n\n\n\n\nErfasste Menge GJ 2023\n10 Stück\nSumme der Stückspalte der Altliste\n\n\nErfasste Menge GJ 2024\n15 Stück\nSumme der Stückspalte der Altliste; Hinweise auf verzögerte Lieferungen\n\n\nERP-Menge GJ 2025\n25 Stück\nSumme der Mengenspalte des ERP-Exports\n\n\nERP-Menge GJ 2026\n38 Stück\nSumme der Mengenspalte des ERP-Exports\n\n\nNettoverkaufspreis\n690 €/Stück\nPersona-Auskunft; Einzelpreis zusätzlich im ERP-Export\n\n\nEinkaufspreis\n440 €/Stück\nPersona-Auskunft, kein separater Vertragsbeleg erhalten\n\n\nVertragsfixkosten\n7.000 €/Jahr\nPersona-Auskunft\n\n\nLager/Transportprüfung\nrund 3.000 €/Jahr\nPersona-Auskunft\n\n\nVermeidbare Fixkosten gesamt\n10.000 €/Jahr\nausdrücklich korrigierte Persona-Auskunft, weiterhin vertragsseitig zu prüfen\n\n\nReferenzhorizont\nGJ 2027–2029\ndrei Jahre; Zuordnung zum Vertrag vor Zusage bestätigen\n\n\n\nEin Geschäftsjahr läuft laut Gespräch vom 1. Oktober des Vorjahres bis 30. September. Deshalb ist GJ 2026 am 23.10.2026 bereits abgeschlossen. Es handelt sich nicht um einen unvollständigen Kalenderjahreswert.\n\n\nDie Altliste enthält 23 Zeilen, der ERP-Export 54 Belegzeilen. Aggregiert werden Mengen, nicht Zeilen. Die Stückzahl einer Zeile kann größer als eins sein. Alle ERP-Zeilen erfüllen außerdem Menge × Einzelpreis = Betrag.\nDie Summe ist eine Rechenprüfung, keine vollständige Echtheits- oder Vollständigkeitsprüfung des Systems. Die Dateien stammen aus einer KI-gestützten fiktiven Lehrumgebung.\n\n\n\nAuf Rückfrage bezeichnete die Persona die Altliste 2024 als Bestellungen, nicht zwingend bereits ausgelieferte Mengen. Im ERP stehen Belegdaten und Rechnungsbeträge. Ohne Abgleich von Bestell-, Liefer- und Fakturazeitpunkten ist die zusammengesetzte Reihe nur ein vorläufiger Mengenindikator. Lieferverzögerungen können das beobachtete Muster verschieben.\nNicht zulässig wäre, die verzögerten Zeilen einfach wegzulassen, zusätzlich zu addieren oder aus ihnen erfundene Fehlmengen abzuleiten. Benötigt wird eine fallbezogene Abstimmung der Vorgänge."
+  },
+  {
+    "objectID": "methode.html#drei-modelle-dieselben-daten",
+    "href": "methode.html#drei-modelle-dieselben-daten",
+    "title": "Eine Zahl ist erst mit Herkunft nützlich.",
+    "section": "Drei Modelle, dieselben Daten",
+    "text": "Drei Modelle, dieselben Daten\nMit Zeitindex t=0,1,2,3t=0,1,2,3 für GJ 2023–2026:\n\nKonstant: q̂t+h=38\\hat q_{t+h}=38. Einfacher Vergleich ohne weiteres Wachstum.\nLinear: Kleinste Quadrate liefern q̂t=7,9+9,4t\\hat q_t=7{,}9+9{,}4t. Für t=4,5,6t=4,5,6: 45,5 / 54,9 / 64,3 Stück.\nExponentiell: Lineare Regression von ln⁡(qt)\\ln(q_t) auf tt, anschließend Rücktransformation. Das beschreibt ungefähr 57 % jährliches Wachstum, ist aber keine Garantie, dass dieses Wachstum anhält. Ohne zusätzliche Fehlerverteilungsannahme erfolgt keine Lognormal-Bias-Korrektur.\n\nDer lineare Ansatz ist ein weniger expansiver Referenzfall als der exponentielle, nicht automatisch ein konservativer unterer Grenzwert. Er wurde nicht gewählt, weil er den besten nachgewiesenen Prognosefehler hätte.\n\nMini-Rücktest ohne Zukunftsdaten\nFür 2025 wird nur auf 2023–2024 geschätzt, für 2026 nur auf 2023–2025. Alle Modelle werden auf denselben beiden Folgejahren geprüft. Das Labor zeigt MAE und MSE. Mit lediglich zwei Testpunkten ist keine verlässliche Auswahl für drei zukünftige Jahre möglich; zudem bleibt die Datenvergleichbarkeit eingeschränkt. Ein kleiner Anpassungsfehler auf allen vier Jahreswerten wäre noch schwächer als Beleg."
+  },
+  {
+    "objectID": "methode.html#die-entscheidungsrechnung",
+    "href": "methode.html#die-entscheidungsrechnung",
+    "title": "Eine Zahl ist erst mit Herkunft nützlich.",
+    "section": "Die Entscheidungsrechnung",
+    "text": "Die Entscheidungsrechnung\nStückdeckungsbeitrag:\nd=p−c=690−440=250€/Stück.d=p-c=690-440=250\\;\\text{€/Stück}.\nVorteil der Fortführung gegenüber Einstellung bei vollständig vermeidbaren Kosten, ohne Abzinsung und ohne Einmalaufwand:\nΔ=∑j=13(qj⋅250−10.000).\\Delta=\\sum_{j=1}^{3}\\bigl(q_j\\cdot250-10.000\\bigr).\nFür den linearen Referenzfall:\nΔ=(45,5+54,9+64,3)⋅250−30.000=11.175€.\\Delta=(45{,}5+54{,}9+64{,}3)\\cdot250-30.000=11.175\\;\\text{€}.\nDie über drei Jahre erforderliche Gesamtmenge beträgt 30.000/250=12030.000/250=120 Stück. Der lineare Referenzfall liefert 164,7 Stück. Unter proportionaler Veränderung der ganzen Kurve kippt die Entscheidung bei 72,86 % dieser Mengen, also bei etwa 27,14 % Unterschreitung. Das ist eine algebraische Schwelle, keine statistische Sicherheitswahrscheinlichkeit.\n\nAllgemeiner Alternativenvergleich im Labor\nDer vermeidbare Kostenanteil sei vv, der Zins rr und ein zusätzlicher Einmalaufwand II:\nΔ0=−I+∑j=13qj(p−c)−vF(1+r)j.\\Delta_0=-I+\\sum_{j=1}^{3}\\frac{q_j(p-c)-vF}{(1+r)^j}.\nNicht vermeidbare Kosten verbleiben auch bei Einstellung und kürzen sich im Vergleich heraus. Der voreingestellte Anteil v=1v=1 folgt der korrigierten Persona-Auskunft. Steuer-, Finanzierungs- und Working-Capital-Effekte werden nicht gesondert modelliert; bei verändertem Zins ist dies ein vereinfachter Barwertvergleich der modellierten Ergebnisbeiträge."
+  },
+  {
+    "objectID": "methode.html#offene-informationen-nach-entscheidungswert",
+    "href": "methode.html#offene-informationen-nach-entscheidungswert",
+    "title": "Eine Zahl ist erst mit Herkunft nützlich.",
+    "section": "Offene Informationen nach Entscheidungswert",
+    "text": "Offene Informationen nach Entscheidungswert\n\nJahresreihe abstimmen: Was wurde bestellt, geliefert und fakturiert? Gibt es Periodenverschiebungen?\nVertragskosten bestätigen: Welche Zahlungsverpflichtungen entstehen ausschließlich bei Verlängerung? Mindestmengen, Preisbindung und Einmalaufwand?\nAustauschpotenzial eingrenzen: Verbleibende installierte Basis, Akku-Altersstruktur und Ersatzquote. Die Persona nennt lediglich eine Erfahrungsdauer von fünf bis sieben Jahren, keine belegte Verteilung.\n\nDiese Auskünfte sind wichtiger als zusätzliche Nachkommastellen eines optimalen Kurvenfits."
+  },
+  {
+    "objectID": "methode.html#quellen-und-transparenz",
+    "href": "methode.html#quellen-und-transparenz",
+    "title": "Eine Zahl ist erst mit Herkunft nützlich.",
+    "section": "Quellen und Transparenz",
+    "text": "Quellen und Transparenz\n\nOM-Lernwerkstatt: Übungsfall, Universität Münster; unbewertet, abgerufen am 23.10.2026.\nErsatzteile_alt_FINAL_v3_Akku.csv: bereitgestellter Persona-Anhang, 23 Zeilen; Mengen GJ 2023/2024. Originaldatei privat archiviert.\nERP_Export_Ersatzakku_GJ2025-2026.csv: bereitgestellter Persona-Anhang, 54 Zeilen; Mengen GJ 2025/2026 und Stückpreis. Originaldatei privat archiviert.\nGezieltes Persona-Gespräch vom 23.10.2026: Kosten, Korrektur ihrer Vermeidbarkeit, Geschäftsjahresabgrenzung und Datenlücken. Vollständiger Gesprächsverlauf privat archiviert; Persona-Aussagen sind keine unabhängigen Vertragsbelege.\n\nEigene Aufbereitung und Implementierung mit KI-Unterstützung. Keine offizielle Lehrstuhllösung; keine vollständigen Kursunterlagen oder Gesprächsprotokolle auf dieser Website."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Gute Entscheidungen brauchen mehr als eine schöne Kurve.",
+    "section": "",
+    "text": "OM · Entscheidungsatelier / Übungsfall 01"
+  },
+  {
+    "objectID": "index.html#das-vorläufige-ergebnis",
+    "href": "index.html#das-vorläufige-ergebnis",
+    "title": "Gute Entscheidungen brauchen mehr als eine schöne Kurve.",
+    "section": "Das vorläufige Ergebnis",
+    "text": "Das vorläufige Ergebnis\nMit einem linearen Referenztrend ergeben sich für 2027–2029 45,5 / 54,9 / 64,3 Stück. Bei 250 € Deckungsbeitrag je Akku und jährlich 10.000 € vermeidbaren Fixkosten entsteht rechnerisch ein Vorteil von 11.175 € gegenüber der Einstellung; undiskontiert und ohne zusätzliche Einmalkosten.\nDas ist eine bedingte Rechnung, noch keine gesicherte Absatzprognose. Die Altliste und der ERP-Export erfassen laut Gespräch unterschiedliche Vorgänge. Ohne Abgleich darf die zusammengesetzte Reihe nicht als durchgängig vergleichbarer Absatz ausgegeben werden. Eine vorbehaltlose Vertragszusage ist damit noch nicht begründet."
+  },
+  {
+    "objectID": "index.html#drei-einsichten-die-wirklich-zählen",
+    "href": "index.html#drei-einsichten-die-wirklich-zählen",
+    "title": "Gute Entscheidungen brauchen mehr als eine schöne Kurve.",
+    "section": "Drei Einsichten, die wirklich zählen",
+    "text": "Drei Einsichten, die wirklich zählen\n\n1. Die Entscheidung kippt nicht erst bei null Nachfrage\n10.000 € / (690 € − 440 €) = 40 Akkus/Jahr\nBei konstanten Kosten sind 120 Akkus über drei Jahre die undiskontierte Entscheidungsschwelle. Die letzte bekannte ERP-Jahresmenge von 38 Stück liegt darunter. Eine Fortschreibung von 38 Stück jährlich ergäbe −1.500 €; erst die angenommene Entwicklung macht die Fortführung attraktiv.\n\n\n2. Kostenrelevanz schlägt Etiketten\nDie Persona erklärte zunächst, die Fixkosten fielen auch bei Einstellung an. Nach dem Hinweis auf den auslaufenden Vertrag korrigierte sie: Die 10.000 € pro Jahr entstehen nur bei Fortführung. Im Labor lässt sich dieser Unterschied explizit untersuchen. Nicht die Bezeichnung „Fixkosten“, sondern ihre Vermeidbarkeit entscheidet über den Alternativenvergleich.\n\n\n3. Wachstum ist keine Garantie\nEine exponentielle Fortschreibung passt zur beschleunigten Mengenentwicklung, führt aber zu wesentlich höheren Zukunftswerten. Nur vier Jahreswerte und zwei mögliche Ein-Schritt-Testprognosen tragen keine sichere Drei-Jahres-Aussage. Bei einem Ersatzteil für eine nicht mehr produzierte Radgeneration ist zudem die verbleibende installierte Basis endlich."
+  },
+  {
+    "objectID": "index.html#so-nutzt-du-das-atelier",
+    "href": "index.html#so-nutzt-du-das-atelier",
+    "title": "Gute Entscheidungen brauchen mehr als eine schöne Kurve.",
+    "section": "So nutzt du das Atelier",
+    "text": "So nutzt du das Atelier\n\nDaten & Methode: Prüfe zuerst, welche Angaben Dateibelege haben und welche nur aus dem Persona-Gespräch stammen.\nExperimentierlabor: Vergleiche konstanten, linearen und exponentiellen Ansatz. Ändere Preis, Nachfrage oder Kosten und finde die Entscheidungsschwelle.\nSelbst erklären: Begründe die Entscheidung ohne die Ergebnisfelder abzulesen. Bearbeite anschließend den veränderten Transferfall.\nPDF & Kurzfassung: Die schriftliche Lösung muss für sich verständlich sein. Der Weblink ist eine Ergänzung, kein Ersatz für den Rechenweg."
+  },
+  {
+    "objectID": "index.html#was-hier-bewusst-nicht-enthalten-ist",
+    "href": "index.html#was-hier-bewusst-nicht-enthalten-ist",
+    "title": "Gute Entscheidungen brauchen mehr als eine schöne Kurve.",
+    "section": "Was hier bewusst nicht enthalten ist",
+    "text": "Was hier bewusst nicht enthalten ist\nKeine offizielle Musterlösung, kein Uni-Login, kein Persona-Nachbau und keine Abgabefunktion. Originalaufgaben, vollständige Gespräche und Originalanhänge werden hier nicht gespiegelt. Die Website enthält eigene Texte, eigene Rechenmodelle und aggregierte Werte des fiktiven Lehrfalls. Spätere bewertete Fälle sind nicht Bestandteil dieser Version."
+  },
+  {
+    "objectID": "index.html#quellen-und-einordnung",
+    "href": "index.html#quellen-und-einordnung",
+    "title": "Gute Entscheidungen brauchen mehr als eine schöne Kurve.",
+    "section": "Quellen und Einordnung",
+    "text": "Quellen und Einordnung\nEigene Analyse zum unbewerteten Übungsfall der OM-Lernwerkstatt, Universität Münster; Stand 23.10.2026. Der Originalzugang benötigt Uni-Netz/VPN. Datenregister und Grenzen dokumentieren den Nachweisstand. KI-Unterstützung bei Interviewfragen, Code, Rechnung und Formulierung; die eigene fachliche Prüfung ist nicht dadurch ersetzt."
+  },
+  {
+    "objectID": "labor.html",
+    "href": "labor.html",
+    "title": "Nicht nur anschauen. Gegenrechnen.",
+    "section": "",
+    "text": "Experimentierlabor / Referenzfall und eigene Szenarien\nVerändere eine Annahme und beobachte, warum die Empfehlung kippt. Alle Berechnungen laufen im Browser. Eingaben werden nicht an den Lehrstuhl oder einen KI-Dienst gesendet und nicht automatisch gespeichert. Sichere ein interessantes Experiment über JSON oder CSV."
+  },
+  {
+    "objectID": "labor.html#drei-experimente-mit-erkenntnisgewinn",
+    "href": "labor.html#drei-experimente-mit-erkenntnisgewinn",
+    "title": "Nicht nur anschauen. Gegenrechnen.",
+    "section": "Drei Experimente mit Erkenntnisgewinn",
+    "text": "Drei Experimente mit Erkenntnisgewinn\n\nKein weiteres Wachstum: Wähle „Konstant“. Weshalb ist die Fortführung trotz positivem Stückdeckungsbeitrag insgesamt unattraktiv?\n30 % weniger als der lineare Trend: Stelle „Linear“ und den Nachfragefaktor auf 0,7. Wie viel Sicherheit bietet die positive Referenzrechnung wirklich?\nIrrelevante Fixkosten: Stelle testweise 0 % Vermeidbarkeit ein. Weshalb ändern dieselben Kosten nun nicht mehr die Differenz zwischen den Optionen? Diese Einstellung ist ein Gegenbeispiel, nicht die korrigierte Fallauskunft."
+  },
+  {
+    "objectID": "labor.html#was-das-modell-nicht-weiß",
+    "href": "labor.html#was-das-modell-nicht-weiß",
+    "title": "Nicht nur anschauen. Gegenrechnen.",
+    "section": "Was das Modell nicht weiß",
+    "text": "Was das Modell nicht weiß\nKein verlässlicher Nachweis zu Mindestabnahmen, zu zusätzlichem Einmalaufwand, zur Größe der verbleibenden Fahrzeugflotte oder zu verlorener Nachfrage. Diese Lücken sind nicht mit null „bewiesen“. Zins 0 % und Einmalaufwand 0 € sind transparente Referenzannahmen. Preis und variable Kosten werden über die drei Jahre konstant gehalten. Menge, Preis und Kosten können in Wirklichkeit gemeinsam schwanken; die isolierten Regler sind eine Vereinfachung.\nDie Jahresmengen werden für die Rechnung nicht auf ganze Stücke gerundet: Es sind Erwartungswerte. Eine tatsächliche Beschaffungsentscheidung müsste Losgrößen, Lieferfähigkeit und mögliche Mindestmengen gesondert berücksichtigen."
+  },
+  {
+    "objectID": "labor.html#quellen",
+    "href": "labor.html#quellen",
+    "title": "Nicht nur anschauen. Gegenrechnen.",
+    "section": "Quellen",
+    "text": "Quellen\nEigene Modellimplementierung; Datengrundlage und Versionsstand unter Daten & Methode. Kein Zugriff des Labors auf Uni-Backends."
+  },
+  {
+    "objectID": "verstehen.html",
+    "href": "verstehen.html",
+    "title": "Kannst du die Entscheidung selbst vertreten?",
+    "section": "",
+    "text": "Notiere oder sprich deine Antwort, bevor du die Erläuterung öffnest. Die Aufklapper bewerten dich nicht automatisch; sie geben Kriterien zur ehrlichen Selbstprüfung. Alle Aufgaben hier sind selbst erstellt, nicht offizielle Prüfungsaufgaben.\n\n\n1 · Warum reichen 38 verkaufte Akkus trotz positivem Stückdeckungsbeitrag nicht?\n\n\n38 × 250 € = 9.500 € decken die vermeidbaren 10.000 € Jahresfixkosten nicht. Bei konstant 38 Stück wären es −500 € jährlich und −1.500 € über drei Jahre. Positiver Stückdeckungsbeitrag ist notwendig, aber bei vermeidbaren Fixkosten nicht hinreichend.\n\n\nErfüllt: Stück- und Gesamtergebnis getrennt; richtige Einheit; Bezug zur Alternative „Einstellen“.\n\n\n\n\n2 · Warum würden wirklich unvermeidbare Fixkosten die Rechnung verändern?\n\n\nDann entstünden sie bei beiden Optionen. Für die Entscheidung relevant wäre nur die Differenz. Wenn alle 10.000 € ohnehin anfielen und keine zusätzlichen Kosten entstünden, würde jeder zusätzlich verkaufte Akku mit positivem Deckungsbeitrag die Fortführung relativ verbessern. Das ist nicht die korrigierte Fallauskunft, sondern der Gegenfall.\n\n\nErfüllt: Beide Alternativen aufgeschrieben, Kosten nicht bloß pauschal „ignoriert“.\n\n\n\n\n3 · Ist 11.175 € ein sicherer Gewinn?\n\n\nNein. Es ist die undiskontierte Differenz im linearen Referenzmodell mit konstantem Preis, variablen Kosten und den genannten vermeidbaren Fixkosten. Historische Bestell-/Verkaufsabgrenzung, Zukunftsmenge und fehlende Vertragsdetails können das Ergebnis ändern. Die Zahl hat keine Konfidenzwahrscheinlichkeit.\n\n\nErfüllt: Mindestens eine Daten-, eine Modell- und eine Vertragsannahme genannt."
+  },
+  {
+    "objectID": "verstehen.html#erst-erklären-dann-aufklappen",
+    "href": "verstehen.html#erst-erklären-dann-aufklappen",
+    "title": "Kannst du die Entscheidung selbst vertreten?",
+    "section": "",
+    "text": "Notiere oder sprich deine Antwort, bevor du die Erläuterung öffnest. Die Aufklapper bewerten dich nicht automatisch; sie geben Kriterien zur ehrlichen Selbstprüfung. Alle Aufgaben hier sind selbst erstellt, nicht offizielle Prüfungsaufgaben.\n\n\n1 · Warum reichen 38 verkaufte Akkus trotz positivem Stückdeckungsbeitrag nicht?\n\n\n38 × 250 € = 9.500 € decken die vermeidbaren 10.000 € Jahresfixkosten nicht. Bei konstant 38 Stück wären es −500 € jährlich und −1.500 € über drei Jahre. Positiver Stückdeckungsbeitrag ist notwendig, aber bei vermeidbaren Fixkosten nicht hinreichend.\n\n\nErfüllt: Stück- und Gesamtergebnis getrennt; richtige Einheit; Bezug zur Alternative „Einstellen“.\n\n\n\n\n2 · Warum würden wirklich unvermeidbare Fixkosten die Rechnung verändern?\n\n\nDann entstünden sie bei beiden Optionen. Für die Entscheidung relevant wäre nur die Differenz. Wenn alle 10.000 € ohnehin anfielen und keine zusätzlichen Kosten entstünden, würde jeder zusätzlich verkaufte Akku mit positivem Deckungsbeitrag die Fortführung relativ verbessern. Das ist nicht die korrigierte Fallauskunft, sondern der Gegenfall.\n\n\nErfüllt: Beide Alternativen aufgeschrieben, Kosten nicht bloß pauschal „ignoriert“.\n\n\n\n\n3 · Ist 11.175 € ein sicherer Gewinn?\n\n\nNein. Es ist die undiskontierte Differenz im linearen Referenzmodell mit konstantem Preis, variablen Kosten und den genannten vermeidbaren Fixkosten. Historische Bestell-/Verkaufsabgrenzung, Zukunftsmenge und fehlende Vertragsdetails können das Ergebnis ändern. Die Zahl hat keine Konfidenzwahrscheinlichkeit.\n\n\nErfüllt: Mindestens eine Daten-, eine Modell- und eine Vertragsannahme genannt."
+  },
+  {
+    "objectID": "verstehen.html#transfer-ohne-vorlage",
+    "href": "verstehen.html#transfer-ohne-vorlage",
+    "title": "Kannst du die Entscheidung selbst vertreten?",
+    "section": "Transfer ohne Vorlage",
+    "text": "Transfer ohne Vorlage\nSelbst erstellte Variante: Die drei Jahresmengen seien 40, 45 und 50 Stück. Der Preis beträgt 690 €, die variablen Kosten steigen auf 470 € und die vermeidbaren Jahresfixkosten bleiben bei 10.000 €. Keine Abzinsung und kein Einmalaufwand. Verlängern oder einstellen? Bei welchem Einkaufspreis wären beide Optionen gleichwertig?\n\n\nLösung und Bewertungskriterien\n\n\nGesamtmenge 135 Stück; Stückdeckungsbeitrag 220 €. Differenz = 135 × 220 − 30.000 = −300 €. Unter diesen Annahmen einstellen. Grenzkosten je Stück = 690 − 30.000/135 ≈ 467,78 €. Einkauf zu 470 € liegt darüber. Bei ganzzahligen Centpreisen liegt der höchstens noch nicht nachteilige Preis bei 467,77 €; 467,78 € ergeben bereits eine minimale negative Differenz.\n\n\nErfüllt: Kostenänderung berücksichtigt, drei Jahre korrekt summiert, Grenzwert hergeleitet und Richtung der Ungleichung erklärt. Wer nur „Verlust“ nennt, hat die Entscheidungslogik noch nicht vollständig gezeigt."
+  },
+  {
+    "objectID": "verstehen.html#die-datenfrage",
+    "href": "verstehen.html#die-datenfrage",
+    "title": "Kannst du die Entscheidung selbst vertreten?",
+    "section": "Die Datenfrage",
+    "text": "Die Datenfrage\nAufgabe: Eine Altliste enthält Bestellungen im September, das ERP fakturiert die Lieferung im Oktober. Darf dieselbe Einheit in beiden Geschäftsjahresmengen erscheinen?\n\n\nErklärung\n\n\nNicht in einer einheitlich definierten Absatzreihe: zuerst denselben Vorgang identifizieren, dann die gewünschte zeitliche Abgrenzung konsistent anwenden. Bestellnachfrage und fakturierter Absatz sind unterschiedliche Reihen. Der Abgleich verlangt Vorgangsdaten; eine pauschale Korrektur der Jahressumme wäre erfunden."
+  },
+  {
+    "objectID": "verstehen.html#vor-der-endgültigen-lösung",
+    "href": "verstehen.html#vor-der-endgültigen-lösung",
+    "title": "Kannst du die Entscheidung selbst vertreten?",
+    "section": "Vor der endgültigen Lösung",
+    "text": "Vor der endgültigen Lösung\n\nKannst du jede entscheidende Zahl auf eine Quelle oder explizite Annahme zurückführen?\nKannst du die Entscheidungsschwelle ohne den Rechner herleiten?\nKannst du erklären, weshalb die exponentielle Kurve trotz kleinem Testfehler unsicher bleibt?\nKannst du sagen, welche neue Information deine Empfehlung ändern würde?\n\nWiederhole den Transferfall an einem anderen Tag mit veränderten Zahlen. Entscheidend ist die Begründung, nicht die Erinnerung an das Ergebnis."
+  }
+]

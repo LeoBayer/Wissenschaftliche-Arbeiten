@@ -1,0 +1,33 @@
+---
+title: "Nicht nur anschauen. Gegenrechnen."
+---
+
+::: {.eyebrow}
+Experimentierlabor / Referenzfall und eigene Szenarien
+:::
+
+Verändere eine Annahme und beobachte, **warum die Empfehlung kippt**. Alle Berechnungen laufen im Browser. Eingaben werden nicht an den Lehrstuhl oder einen KI-Dienst gesendet und nicht automatisch gespeichert. Sichere ein interessantes Experiment über JSON oder CSV.
+
+::: {.callout-warning}
+## Datenstand: vorläufig
+
+Die Reihe 10 / 15 / 25 / 38 ist aus Originaldateien aggregiert, aber inhaltlich nicht vollständig abgeglichen: frühe Bestellmengen stehen späteren ERP-Verkäufen gegenüber. Die Rechnung zeigt, was **unter angenommener Vergleichbarkeit** folgt. Eine Parameteränderung erzeugt ein Experiment, keinen neuen Beleg.
+:::
+
+<div id="decision-lab"><p>Das lokale Rechenlabor wird geladen … JavaScript muss aktiviert sein.</p></div>
+
+## Drei Experimente mit Erkenntnisgewinn
+
+1. **Kein weiteres Wachstum:** Wähle „Konstant“. Weshalb ist die Fortführung trotz positivem Stückdeckungsbeitrag insgesamt unattraktiv?
+2. **30 % weniger als der lineare Trend:** Stelle „Linear“ und den Nachfragefaktor auf 0,7. Wie viel Sicherheit bietet die positive Referenzrechnung wirklich?
+3. **Irrelevante Fixkosten:** Stelle testweise 0 % Vermeidbarkeit ein. Weshalb ändern dieselben Kosten nun nicht mehr die Differenz zwischen den Optionen? Diese Einstellung ist ein Gegenbeispiel, nicht die korrigierte Fallauskunft.
+
+## Was das Modell nicht weiß
+
+Kein verlässlicher Nachweis zu Mindestabnahmen, zu zusätzlichem Einmalaufwand, zur Größe der verbleibenden Fahrzeugflotte oder zu verlorener Nachfrage. Diese Lücken sind nicht mit null „bewiesen“. Zins 0 % und Einmalaufwand 0 € sind transparente Referenzannahmen. Preis und variable Kosten werden über die drei Jahre konstant gehalten. Menge, Preis und Kosten können in Wirklichkeit gemeinsam schwanken; die isolierten Regler sind eine Vereinfachung.
+
+Die Jahresmengen werden für die Rechnung nicht auf ganze Stücke gerundet: Es sind Erwartungswerte. Eine tatsächliche Beschaffungsentscheidung müsste Losgrößen, Lieferfähigkeit und mögliche Mindestmengen gesondert berücksichtigen.
+
+## Quellen
+
+Eigene Modellimplementierung; Datengrundlage und Versionsstand unter [Daten & Methode](methode.qmd). Kein Zugriff des Labors auf Uni-Backends.

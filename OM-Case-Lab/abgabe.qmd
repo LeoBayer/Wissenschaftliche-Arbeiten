@@ -1,0 +1,63 @@
+---
+title: "Ersatzakku-Angebot: Entscheidung und Rechenweg"
+toc: false
+---
+
+::: {.eyebrow}
+Probeabgabe / unbewerteter Übungsfall / Version 23.10.2026-v1
+:::
+
+[PDF herunterladen](downloads/ersatzakku-probeabgabe.pdf){.btn .btn-primary}
+
+## Empfehlung in rund 100 Wörtern
+
+Wir empfehlen, die Verlängerung vorzubereiten, aber erst nach Daten- und Vertragsprüfung verbindlich zuzusagen. Aus den erfassten Jahresmengen 10, 15, 25 und 38 ergibt ein linearer Referenztrend 45,5/54,9/64,3 Akkus für 2027–2029. Bei 250 € Stückdeckungsbeitrag und jährlich 10.000 € vermeidbaren Fixkosten beträgt der undiskontierte Vorteil 11.175 €. Kostendeckung erfordert insgesamt 120 Akkus; rund 27 % weniger als die Referenzprognose würden den Vorteil aufzehren. Allerdings stehen frühe Bestellmengen späteren ERP-Verkäufen gegenüber. Diese Reihe und die Vermeidbarkeit der Kosten müssen bestätigt werden. Bei konstant 38 Akkus jährlich wäre Nichtverlängerung günstiger. Ohne Absatzabgleich bleibt die positive Rechnung ein Szenario, keine gesicherte Prognose.
+
+## Rechenanhang
+
+### 1 · Eingangsgrößen und Nachweisstand
+
+| Größe | Wert | Status |
+|---|---:|---|
+| GJ 2023 / 2024 | 10 / 15 Stück | Mengen aus Altliste; Bestell-/Absatzabgrenzung offen |
+| GJ 2025 / 2026 | 25 / 38 Stück | Mengen aus ERP-Belegexport |
+| Verkaufspreis / variable Stückkosten | 690 € / 440 € | Preis auch im Export, Kosten laut Persona |
+| Jahresfixkosten | 10.000 € | Laut korrigierter Persona-Auskunft bei Einstellung vermeidbar |
+| Zins / Einmalaufwand | 0 % / 0 € | Referenzannahmen, keine bestätigten Vertragskonditionen |
+
+Geschäftsjahre jeweils Oktober bis September. Belegdateien privat archiviert; 23 Altdatenzeilen und 54 ERP-Zeilen nach Menge summiert, ERP-Zeilenbeträge nachgerechnet. Die Persona hat ihre anfänglich gegenteilige Auskunft zur Kostenvermeidbarkeit auf Rückfrage korrigiert. Ein unabhängiger Vertragsauszug liegt nicht vor.
+
+### 2 · Referenzmodell
+
+Zeitindex $t=0$ für GJ 2023. Lineare Kleinste-Quadrate-Schätzung auf vier Mengen: $\hat q_t=7{,}9+9{,}4t$. Es wird **vorläufige Vergleichbarkeit** der Daten unterstellt. Der lineare Trend ist eine weniger expansive Alternative zur exponentiellen Fortschreibung, kein belegter unterer Prognosegrenzwert.
+
+| GJ | Erwartete Menge | Deckungsbeitrag gesamt | Vermeidbare Fixkosten | Differenz zu Einstellung |
+|---|---:|---:|---:|---:|
+| 2027 | 45,5 | 11.375 € | 10.000 € | 1.375 € |
+| 2028 | 54,9 | 13.725 € | 10.000 € | 3.725 € |
+| 2029 | 64,3 | 16.075 € | 10.000 € | 6.075 € |
+| **Summe** | **164,7** | **41.175 €** | **30.000 €** | **11.175 €** |
+
+Berechnet mit ungerundeten Werten. Erwartungsmengen sind keine gerundeten Bestelllose. Bei Nichtverlängerung werden nach korrigierter Auskunft weder Akkus bezogen noch die genannten Fixkosten ausgelöst; die Referenzalternative beträgt daher 0 €.
+
+### 3 · Robustheit und Gegenargument {.pdf-page-break}
+
+Entscheidungsschwelle: $30.000/250=120$ Akkus über drei Jahre. Kritischer Nachfragefaktor: $120/164{,}7=0{,}7286$.
+
+- **30 % unter dem linearen Referenzfall:** 115,29 Akkus → **−1.177,50 €**.
+- **Keine weitere Steigerung:** 3 × 38 Akkus → **−1.500 €**.
+- **Exponentielle Fortschreibung:** rund 60,1 / 94,4 / 148,2 Akkus → rund **45.678 €**, aber hohe Extrapolationsunsicherheit bei endlicher Fahrzeugbasis.
+
+Zwei Ein-Schritt-Rücktests reichen nicht für eine verlässliche Drei-Jahres-Validierung. Bestell-/Liefer-/Fakturaabgleich sowie Mindestmengen, Preisbindung und Einmalaufwand sind vor Zusage zu prüfen. Eine fallende Nachfrage nach Auslaufen des Austauschzyklus ist möglich, aber mit den vorhandenen Daten nicht quantifiziert. Kundenserviceeffekte sind nicht monetarisiert.
+
+## Optional: selbst mit den Annahmen experimentieren
+
+Die schriftliche Rechnung ist eigenständig verständlich. Ergänzend lassen sich Preis, Kosten, Nachfrage, Kostenvermeidbarkeit und Modellwahl hier verändern:
+
+[Interaktives Entscheidungsatelier – Experimentierlabor](https://leobayer.github.io/Wissenschaftliche-Arbeiten/OM-Case-Lab/labor.html)
+
+**Transparenz:** Eigene Analyse des fiktiven, unbewerteten Übungsfalls; keine offizielle Musterlösung. KI-Unterstützung bei Interviewfragen, Programmierung, Rechnung und Formulierung. Keine Einreichung durch diese Website.
+
+## Quellen
+
+OM-Lernwerkstatt, Universität Münster, [Übungsfall Nachfrageprognose](https://operationsmanagement.uni-muenster.de/#/kapitel/prognose/uebungsfall), Stand 23.10.2026; Persona-Anhänge `Ersatzteile_alt_FINAL_v3_Akku.csv` und `ERP_Export_Ersatzakku_GJ2025-2026.csv`; gezieltes Persona-Gespräch desselben Tages einschließlich Korrektur der Fixkostenauskunft und Hinweis auf nicht vergleichbare Mengenabgrenzung. Details und Modellgrenzen: [Daten & Methode](https://leobayer.github.io/Wissenschaftliche-Arbeiten/OM-Case-Lab/methode.html).

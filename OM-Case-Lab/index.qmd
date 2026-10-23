@@ -1,0 +1,52 @@
+---
+title: "Gute Entscheidungen brauchen mehr als eine schöne Kurve."
+---
+
+::: {.eyebrow}
+OM · Entscheidungsatelier / Übungsfall 01
+:::
+
+::: {.hero}
+**Ersatzakkus weiter anbieten – oder aussteigen?**
+
+Eine eigene, interaktive Lernanalyse zum unbewerteten Ersatzakku-Fall. Vier Jahresmengen, drei Vertragsjahre und eine Entscheidung, die von der Qualität der Daten ebenso abhängt wie von der Rechnung.
+
+[Im Labor selbst verändern](labor.qmd){.btn .btn-primary} [Kurzfassung & PDF](abgabe.qmd){.btn .btn-outline-secondary}
+:::
+
+## Das vorläufige Ergebnis
+
+Mit einem linearen Referenztrend ergeben sich für 2027–2029 **45,5 / 54,9 / 64,3 Stück**. Bei 250 € Deckungsbeitrag je Akku und jährlich 10.000 € vermeidbaren Fixkosten entsteht rechnerisch ein Vorteil von **11.175 €** gegenüber der Einstellung; undiskontiert und ohne zusätzliche Einmalkosten.
+
+**Das ist eine bedingte Rechnung, noch keine gesicherte Absatzprognose.** Die Altliste und der ERP-Export erfassen laut Gespräch unterschiedliche Vorgänge. Ohne Abgleich darf die zusammengesetzte Reihe nicht als durchgängig vergleichbarer Absatz ausgegeben werden. Eine vorbehaltlose Vertragszusage ist damit noch nicht begründet.
+
+## Drei Einsichten, die wirklich zählen
+
+### 1. Die Entscheidung kippt nicht erst bei null Nachfrage
+
+<span class="mathline">10.000 € / (690 € − 440 €) = 40 Akkus/Jahr</span>
+
+Bei konstanten Kosten sind **120 Akkus über drei Jahre** die undiskontierte Entscheidungsschwelle. Die letzte bekannte ERP-Jahresmenge von 38 Stück liegt darunter. Eine Fortschreibung von 38 Stück jährlich ergäbe **−1.500 €**; erst die angenommene Entwicklung macht die Fortführung attraktiv.
+
+### 2. Kostenrelevanz schlägt Etiketten
+
+Die Persona erklärte zunächst, die Fixkosten fielen auch bei Einstellung an. Nach dem Hinweis auf den auslaufenden Vertrag korrigierte sie: **Die 10.000 € pro Jahr entstehen nur bei Fortführung.** Im Labor lässt sich dieser Unterschied explizit untersuchen. Nicht die Bezeichnung „Fixkosten“, sondern ihre Vermeidbarkeit entscheidet über den Alternativenvergleich.
+
+### 3. Wachstum ist keine Garantie
+
+Eine exponentielle Fortschreibung passt zur beschleunigten Mengenentwicklung, führt aber zu wesentlich höheren Zukunftswerten. Nur vier Jahreswerte und zwei mögliche Ein-Schritt-Testprognosen tragen keine sichere Drei-Jahres-Aussage. Bei einem Ersatzteil für eine nicht mehr produzierte Radgeneration ist zudem die verbleibende installierte Basis endlich.
+
+## So nutzt du das Atelier
+
+1. **Daten & Methode:** Prüfe zuerst, welche Angaben Dateibelege haben und welche nur aus dem Persona-Gespräch stammen.
+2. **Experimentierlabor:** Vergleiche konstanten, linearen und exponentiellen Ansatz. Ändere Preis, Nachfrage oder Kosten und finde die Entscheidungsschwelle.
+3. **Selbst erklären:** Begründe die Entscheidung ohne die Ergebnisfelder abzulesen. Bearbeite anschließend den veränderten Transferfall.
+4. **PDF & Kurzfassung:** Die schriftliche Lösung muss für sich verständlich sein. Der Weblink ist eine Ergänzung, kein Ersatz für den Rechenweg.
+
+## Was hier bewusst nicht enthalten ist
+
+Keine offizielle Musterlösung, kein Uni-Login, kein Persona-Nachbau und keine Abgabefunktion. Originalaufgaben, vollständige Gespräche und Originalanhänge werden hier nicht gespiegelt. Die Website enthält eigene Texte, eigene Rechenmodelle und aggregierte Werte des fiktiven Lehrfalls. Spätere bewertete Fälle sind nicht Bestandteil dieser Version.
+
+## Quellen und Einordnung
+
+Eigene Analyse zum [unbewerteten Übungsfall der OM-Lernwerkstatt](https://operationsmanagement.uni-muenster.de/#/kapitel/prognose/uebungsfall), Universität Münster; Stand 23.10.2026. Der Originalzugang benötigt Uni-Netz/VPN. [Datenregister und Grenzen](methode.qmd) dokumentieren den Nachweisstand. KI-Unterstützung bei Interviewfragen, Code, Rechnung und Formulierung; die eigene fachliche Prüfung ist nicht dadurch ersetzt.
