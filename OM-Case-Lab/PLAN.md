@@ -25,3 +25,6 @@ Nächster gemeinsamer Schritt: Leo erklärt Kostenrelevanz und Entscheidungsschw
 Implementierungscommit de76f91 auf origin main. Build/Modell-/Grenzfall-/Export-/Link-/Browserprüfungen erfolgreich; fünf Breiten 320–1440 px ohne Seitenüberlauf, Hell/Dunkel geprüft. PDF zwei Seiten,98-Wörter-Empfehlung und überprüfter anklickbarer Laborlink. Alle elf Live-Hauptdateien HTTP200 und SHA256-identisch zum geprüften Build. Vollprüfung und Screenshots privat außerhalb des Repositorys. Generierte Quarto-/Vendor-Dateien enthalten unveränderte upstream Whitespace-Stellen; eigene Quellen bestehen git diff --check. Keine Uni-Abgabe/kein Datei-Upload, keine produktiven Dienste geändert.
 
 Livecheck-Nachtrag: Rundungsabweichung bei −1177,499999…EUR in der Ganz-Euro-Anzeige gefunden, Beträge vor Anzeige auf Cent normalisiert und gezielten UI-Regressionscheck ergänzt. Lokale Gesamtprüfung erneut erfolgreich; korrigierte Veröffentlichung folgt.
+
+## UI-Überarbeitung 23.10.2026
+Study-Lab-nahe Flächen und Karten mit roten OM-Akzenten; PDF-Button dauerhaft kontrastreich; überarbeitete Zahlenfelder ohne native Spinner; Parameter und Simulation ab 900 px nebeneinander, mobil gestapelt. Browserprüfung 320–1440 px, Hell/Dunkel, Modell/Exporte/Links erfolgreich.

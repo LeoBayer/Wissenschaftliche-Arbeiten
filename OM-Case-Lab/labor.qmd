@@ -1,5 +1,8 @@
 ---
 title: "Nicht nur anschauen. Gegenrechnen."
+page-layout: full
+toc: false
+body-classes: om-labor
 ---
 
 ::: {.eyebrow}

@@ -6,7 +6,7 @@
   let baseline;
   try{const response=await fetch('data.json');if(!response.ok)throw Error('Daten nicht verfügbar');baseline=await response.json();}
   catch(e){root.textContent='Die Falldaten konnten nicht geladen werden. Bitte über einen lokalen Webserver oder die Website öffnen.';return;}
-  root.innerHTML=`<form id="lab-form" novalidate><div class="lab-controls">
+  root.innerHTML=`<form id="lab-form" class="lab-panel" novalidate><h2>Parameter</h2><p class="panel-hint">Änderungen werden direkt rechts berechnet.</p><div class="lab-controls">
     <label for="method">Prognosemodell<select id="method"><option value="constant">Konstant: letzter Jahresabsatz</option><option value="linear">Linearer Trend</option><option value="exponential">Exponentieller Trend (Log-OLS)</option></select></label>
     <label for="factor">Nachfragefaktor<input id="factor" type="number" min="0" max="5" step="0.05"><small>1 = Modellprognose; 0,7 = 30 % weniger. Szenario, keine Wahrscheinlichkeit.</small></label>
     <label for="price">Nettoverkaufspreis · €/Stück<input id="price" type="number" min="0" max="100000" step="0.01"></label>
@@ -17,7 +17,7 @@
     <label for="setup">Zusätzliche Einmalkosten · €<input id="setup" type="number" min="0" max="10000000" step="1"><small>Voreinstellung 0: bislang nicht belegt. Aufwand zum Entscheidungszeitpunkt.</small></label>
   </div><details class="answer"><summary>Historische Daten für ein eigenes Experiment ändern</summary><p>Nur im Browser. Die belegten Ausgangsdaten werden nicht überschrieben.</p><div class="lab-controls">${baseline.years.map((y,i)=>`<label for="history-${i}">GJ ${y} · Stück<input id="history-${i}" type="number" min="1" max="1000000" step="1"></label>`).join('')}</div></details>
   <div class="lab-actions"><button type="button" id="reset-lab">Ausgangsfall wiederherstellen</button><button type="button" id="export-json">Szenario als JSON</button><button type="button" id="export-csv">Rechenweg als CSV</button></div></form>
-  <p id="scenario-label"></p><div id="lab-result" aria-live="polite" aria-atomic="true"></div>`;
+  <section class="lab-output" aria-label="Simulation"><h2>Simulation & Entscheidung</h2><p id="scenario-label"></p><div id="lab-result" aria-live="polite" aria-atomic="true"></div></section>`;
   const ids=['method','factor','price','cost','fixed','avoidable','rate','setup'];
   let latest=null;
   document.getElementById('lab-form').addEventListener('submit',e=>e.preventDefault());
