@@ -362,6 +362,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#basiszeit-und-zusatzzeiten" id="toc-basiszeit-und-zusatzzeiten" class="nav-link" data-scroll-target="#basiszeit-und-zusatzzeiten">Basiszeit und Zusatzzeiten</a></li>
   <li><a href="#eigenes-beispiel-die-merkmale-isolieren" id="toc-eigenes-beispiel-die-merkmale-isolieren" class="nav-link" data-scroll-target="#eigenes-beispiel-die-merkmale-isolieren">Eigenes Beispiel: die Merkmale isolieren</a></li>
   <li><a href="#die-gleichung-prüfen-statt-nur-anwenden" id="toc-die-gleichung-prüfen-statt-nur-anwenden" class="nav-link" data-scroll-target="#die-gleichung-prüfen-statt-nur-anwenden">Die Gleichung prüfen statt nur anwenden</a></li>
+  <li><a href="#rechentabelle" id="toc-rechentabelle" class="nav-link" data-scroll-target="#rechentabelle">Rechentabelle: Zwei Bestelltypen kalkulieren</a></li>
   <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Verständnislernstrecke</a>
   <ul class="collapse">
   <li><a href="#freier-abruf-was-zählt-je-bestellung" id="toc-freier-abruf-was-zählt-je-bestellung" class="nav-link" data-scroll-target="#freier-abruf-was-zählt-je-bestellung">1. Freier Abruf: Was zählt je Bestellung?</a></li>
@@ -400,7 +401,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#verstehen">Verständnislernstrecke</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#verstehen">Verständnislernstrecke</a><a href="#rechentabelle">Rechentabelle</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
 <section id="grundlagen" class="level2">
 <h2 class="anchored" data-anchor-id="grundlagen">Grundlagen</h2>
 <p>Ein einheitlicher Minutenkostensatz bedeutet nicht, dass alle Bestellungen gleich teuer verrechnet werden. Die Zeitgleichung beschreibt, wie Merkmale eines Vorgangs seinen modellierten Bearbeitungsbedarf verändern. TDABC nutzt damit Zeit als Kostentreiber und Auftragsmerkmale als Bestimmungsgrößen der Zeit.</p>
@@ -418,6 +419,84 @@ ul.task-list li input[type="checkbox"] {
 <section id="die-gleichung-prüfen-statt-nur-anwenden" class="level2">
 <h2 class="anchored" data-anchor-id="die-gleichung-prüfen-statt-nur-anwenden">Die Gleichung prüfen statt nur anwenden</h2>
 <p>Die additive Form unterstellt konstante Basis- und Zusatzzeiten. Sie erfasst beispielsweise keine Wechselwirkung, bei der gerade ausländische Eilbestellungen überproportional aufwendig werden. Solche Effekte oder neue Abläufe können eine Anpassung verlangen. Die errechneten Kosten sind zugerechnete Prozesskosten, keine garantierten kurzfristigen Einsparungen oder vollständigen Produkt-Selbstkosten.</p>
+</section>
+<section id="rechentabelle" class="level2">
+<h2 class="anchored" data-anchor-id="rechentabelle">Rechentabelle: Zwei Bestelltypen kalkulieren</h2>
+<p>Wie in den beiden Ergebnisboxen der Vorlage wird zuerst die normale Inlandsbestellung, danach die ausländische Eilbestellung gerechnet. Die Angaben sind didaktisch in Spalten aufgegliedert. Modell: t = 5 + n + 3a + 2e Minuten; n = Artikelzahl, a = Ausland (0/1), e = Eilstatus (0/1). Vorgegeben sind 1,28 €/Min.</p>
+<section class="calc-sheet bank-calc-sheet" aria-labelledby="bank-title"><h3 id="bank-title" class="anchored">Zwei Bestelltypen kalkulieren</h3><p>Schreibe zuerst deinen Rechenweg auf. Alle Ergebnisfelder sind zunächst leer. Gib Werte in der jeweils genannten Einheit ein, auf zwei Dezimalstellen gerundet. Deutsches Zahlenformat: 10.419,20. Mobil lässt sich die Tabelle intern nach rechts verschieben.</p><p>„Alle Felder prüfen“ prüft jedes Feld unabhängig; danach öffnet ⓘ die Formel mit eingesetzten Werten und Erklärung. Deine Werte bleiben erhalten. Jede Änderung erfordert eine neue Prüfung.</p><div class="calc-table-scroll" role="region" aria-label="Hauptprozess „Material beschaffen“: Kalkulation, horizontal verschiebbar" tabindex="0">
+<table class="calc-table caption-top table">
+<caption>Hauptprozess „Material beschaffen“: Kalkulation</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Bestellung</th>
+<th data-quarto-table-cell-role="th" scope="col">n</th>
+<th data-quarto-table-cell-role="th" scope="col">a</th>
+<th data-quarto-table-cell-role="th" scope="col">e</th>
+<th data-quarto-table-cell-role="th" scope="col">Zeit (Min/Bestellung)</th>
+<th data-quarto-table-cell-role="th" scope="col">Kosten (€/Bestellung)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Inlandsbestellung mit 5 Artikeln</th>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-time0">Inlandsbestellung mit 5 Artikeln Zeit (Min/Bestellung)</label><input id="bank-time0" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="10" data-tolerance="0.005" aria-describedby="bank-time0-state"><span id="bank-time0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Inlandsbestellung mit 5 Artikeln Zeit">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>5 + 5 + 3 × 0 + 2 × 0 = 10 Min/Bestellung. Basis und Zuschläge je Bestellung, Artikelzeit je Artikel.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-cost0">Inlandsbestellung mit 5 Artikeln Kosten (€/Bestellung)</label><input id="bank-cost0" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="12.80" data-tolerance="0.005" aria-describedby="bank-cost0-state"><span id="bank-cost0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Inlandsbestellung mit 5 Artikeln Kosten">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>10 Min × 1,28 €/Min = 12,80 €/Bestellung. Bewusst mit gerundetem Lehrsatz.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Eilbestellung im Ausland mit 10 Artikeln</th>
+<td>10</td>
+<td>1</td>
+<td>1</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-time1">Eilbestellung im Ausland mit 10 Artikeln Zeit (Min/Bestellung)</label><input id="bank-time1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="20" data-tolerance="0.005" aria-describedby="bank-time1-state"><span id="bank-time1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Eilbestellung im Ausland mit 10 Artikeln Zeit">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>5 + 10 + 3 × 1 + 2 × 1 = 20 Min/Bestellung. Basis und Zuschläge je Bestellung, Artikelzeit je Artikel.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-cost1">Eilbestellung im Ausland mit 10 Artikeln Kosten (€/Bestellung)</label><input id="bank-cost1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="25.60" data-tolerance="0.005" aria-describedby="bank-cost1-state"><span id="bank-cost1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Eilbestellung im Ausland mit 10 Artikeln Kosten">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>20 Min × 1,28 €/Min = 25,60 €/Bestellung. Bewusst mit gerundetem Lehrsatz.</p>
+</details>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div><p class="calc-summary" role="status" aria-live="polite" aria-atomic="true">Noch nicht geprüft · 4 Felder zum Selbstrechnen.</p></section>
+<p><strong>Mechanismus prüfen:</strong> Weshalb verdoppeln sich hier Zeit und Kosten, obwohl nicht jeder Zeitbestandteil verdoppelt wird? Rekonstruiere die vier Komponenten. Das Zusammentreffen von Ausland und Eilstatus erzeugt im vorgegebenen additiven Modell keinen weiteren Zuschlag; der Transferfall unten verändert genau diese Annahme.</p>
 </section>
 <section id="verstehen" class="level2">
 <h2 class="anchored" data-anchor-id="verstehen">Verständnislernstrecke</h2>
@@ -528,6 +607,7 @@ Begründung anzeigen
 <ul>
 <li><p>Zeitgleichung und beide Lehrbeispiele → physische PDF-S. 53. Eigenes Auslands-/Eilbeispiel, Einheiteninterpretation und Prüfung additiver Annahmen → eigene didaktische Anwendung. Kostenbasis und Rundung → S. 52–53; hier bewusst mit dem gerundeten Satz der Quelle gerechnet.</p></li>
 <li><p>Verständnislernstrecke → eigene didaktische Fälle und Ableitungen auf Basis der oben zugeordneten Abschnitte; neue Zahlen und Modelländerungen sind keine empirischen Ergebnisse der Quelle.</p></li>
+<li><p>Rechentabelle → Controlling VL3, physische PDF-S. 53. Originalansicht am 23.10.2026 gelesen. Rechenfolge und Begrifflichkeit erhalten; Formeln didaktisch in Tabellen gegliedert, keine unveränderte Originaltabelle. Feldprüfung, Zwischenrechnungen und Hilfen sind eigene Ergänzungen, keine offiziellen Aufgaben.</p></li>
 </ul>
 <p>Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.</p>
 

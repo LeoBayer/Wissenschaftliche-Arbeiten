@@ -382,7 +382,7 @@
     "href": "courses/controlling-tdabc-kapazitaet.html",
     "title": "TDABC: praktische Kapazität statt Ist-Auslastung",
     "section": "",
-    "text": "GrundlagenVerständnislernstreckeSelbstcheckQuellen"
+    "text": "GrundlagenVerständnislernstreckeRechentabelleSelbstcheckQuellen"
   },
   {
     "objectID": "courses/controlling-tdabc-kapazitaet.html#grundlagen",
@@ -413,6 +413,13 @@
     "text": "Rundung und Entscheidungsgrenze\n1,28 € ist ein gerundeter Satz: 625.152 × 1,28 = 800.194,56 €. Die Abweichung von 194,56 € ist eine Rundungswirkung, kein zusätzlicher Kostenpool. Für exakte Abstimmungen muss mit dem ungerundeten Quotienten gerechnet oder eine Rundungsdifferenz ausgewiesen werden.\nDer Satz verteilt bereitgestellte Ressourcen. Er beweist nicht, dass bei Wegfall einer Minute sofort 1,28 € ausgezahlt oder eingespart werden. Kapazitätsanpassungen sind eine gesonderte Entscheidung."
   },
   {
+    "objectID": "courses/controlling-tdabc-kapazitaet.html#rechentabelle",
+    "href": "courses/controlling-tdabc-kapazitaet.html#rechentabelle",
+    "title": "TDABC: praktische Kapazität statt Ist-Auslastung",
+    "section": "Rechentabelle: Kapazität und Minutenkostensatz",
+    "text": "Rechentabelle: Kapazität und Minutenkostensatz\nDie Rechnung folgt der Originalreihenfolge: theoretische Minuten, praktische Minuten und Stunden, danach Kosten je Minute. Ausgangsdaten: 7,4 Mitarbeiterkapazitäten, 220 Tage/Jahr, 8 Stunden/Tag, praktische Verfügbarkeit 80 %, Hauptprozesskosten 800.000 €/Jahr. Die 85 % für Maschinen sind hier kein zweiter Personalabschlag.\nKapazität und MinutenkostensatzSchreibe zuerst deinen Rechenweg auf. Alle Ergebnisfelder sind zunächst leer. Gib Werte in der jeweils genannten Einheit ein, auf zwei Dezimalstellen gerundet. Deutsches Zahlenformat: 10.419,20. Mobil lässt sich die Tabelle intern nach rechts verschieben.„Alle Felder prüfen“ prüft jedes Feld unabhängig; danach öffnet ⓘ die Formel mit eingesetzten Werten und Erklärung. Deine Werte bleiben erhalten. Jede Änderung erfordert eine neue Prüfung.\n\nHauptprozess „Material beschaffen“\n\n\n\n\n\n\n\n\nRechenschritt\nAnsatz (gegeben)\nDein Ergebnis\nEinheit\n\n\n\n\nTheoretische Kapazität\n7,4 MA × 8 h/Tag × 220 Tage/Jahr × 60 Min/h\n\nTheoretische Kapazität (Min/Jahr)\n\n\nⓘ Rechenweg\n\n7,4 × 8 × 220 × 60 = 781.440 Min/Jahr. Vertragszeit vor Verfügbarkeitsabschlag.\n\n\nMin/Jahr\n\n\nPraktische Kapazität\nTheoretische Kapazität × 80 %\n\nPraktische Kapazität (Min/Jahr)\n\n\nⓘ Rechenweg\n\n781.440 × 0,80 = 625.152 Min/Jahr. Nur der Mitarbeiterabschlag gilt.\n\n\nMin/Jahr\n\n\nPraktische Kapazität in Stunden\nPraktische Minuten / 60\n\nPraktische Kapazität in Stunden (h/Jahr)\n\n\nⓘ Rechenweg\n\n625.152 / 60 = 10.419,20 h/Jahr. Minuten in Stunden umrechnen.\n\n\nh/Jahr\n\n\nKosten pro Minute\n800.000 €/Jahr / praktische Min/Jahr\n\nKosten pro Minute (€/Min)\n\n\nⓘ Rechenweg\n\n800.000 / 625.152 = 1,279688… €/Min, gerundet 1,28 €/Min. Praktisches Angebot, nicht Ist-Nutzung, bildet den Nenner.\n\n\n€/Min\n\n\n\nAlle Felder prüfenNeu beginnenNoch nicht geprüft · 4 Felder zum Selbstrechnen.\nAbstimmung: Multipliziere den gerundeten Satz mit 625.152 Minuten: 800.194,56 €. Warum entsteht die Differenz von 194,56 €? Für exakte Kostenabstimmungen ist der ungerundete Quotient nötig. Der Satz beschreibt bereitgestellte Kapazität, keine garantierte Einsparung."
+  },
+  {
     "objectID": "courses/controlling-tdabc-kapazitaet.html#verstehen",
     "href": "courses/controlling-tdabc-kapazitaet.html#verstehen",
     "title": "TDABC: praktische Kapazität statt Ist-Auslastung",
@@ -438,7 +445,7 @@
     "href": "courses/controlling-tdabc-kapazitaet.html#quellen",
     "title": "TDABC: praktische Kapazität statt Ist-Auslastung",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; erneut gelesen am 22.10.2026.\n\nGrundidee, praktische statt tatsächliche Kapazität und Verfügbarkeitsannahmen → physische PDF-S. 51. Kapazitäts- und Minutenkostensatz → S. 52. Gegenbeispiel mit 500.000 Minuten, Rundungsgegenprobe und Vermeidbarkeitsgrenze → eigene Ableitungen. Der Rückverweis „Folie 22“ auf S. 52 passt nicht zur Mitarbeiter-/Kostentabelle auf S. 28; verwendet werden die ausdrücklich angegebenen Zahlen auf S. 52.\nVerständnislernstrecke → eigene didaktische Fälle und Ableitungen auf Basis der oben zugeordneten Abschnitte; neue Zahlen und Modelländerungen sind keine empirischen Ergebnisse der Quelle.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; erneut gelesen am 22.10.2026.\n\nGrundidee, praktische statt tatsächliche Kapazität und Verfügbarkeitsannahmen → physische PDF-S. 51. Kapazitäts- und Minutenkostensatz → S. 52. Gegenbeispiel mit 500.000 Minuten, Rundungsgegenprobe und Vermeidbarkeitsgrenze → eigene Ableitungen. Der Rückverweis „Folie 22“ auf S. 52 passt nicht zur Mitarbeiter-/Kostentabelle auf S. 28; verwendet werden die ausdrücklich angegebenen Zahlen auf S. 52.\nVerständnislernstrecke → eigene didaktische Fälle und Ableitungen auf Basis der oben zugeordneten Abschnitte; neue Zahlen und Modelländerungen sind keine empirischen Ergebnisse der Quelle.\nRechentabelle → Controlling VL3, physische PDF-S. 52. Originalansicht am 23.10.2026 gelesen. Rechenfolge und Begrifflichkeit erhalten; Formeln didaktisch in Tabellen gegliedert, keine unveränderte Originaltabelle. Feldprüfung, Zwischenrechnungen und Hilfen sind eigene Ergänzungen, keine offiziellen Aufgaben.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/controlling-kapazitaet-kalkulation.html",
@@ -2591,7 +2598,7 @@
     "href": "courses/controlling-tdabc-zeitgleichung.html",
     "title": "TDABC: Bestellungen mit einer Zeitgleichung kalkulieren",
     "section": "",
-    "text": "GrundlagenVerständnislernstreckeSelbstcheckQuellen"
+    "text": "GrundlagenVerständnislernstreckeRechentabelleSelbstcheckQuellen"
   },
   {
     "objectID": "courses/controlling-tdabc-zeitgleichung.html#grundlagen",
@@ -2622,6 +2629,13 @@
     "text": "Die Gleichung prüfen statt nur anwenden\nDie additive Form unterstellt konstante Basis- und Zusatzzeiten. Sie erfasst beispielsweise keine Wechselwirkung, bei der gerade ausländische Eilbestellungen überproportional aufwendig werden. Solche Effekte oder neue Abläufe können eine Anpassung verlangen. Die errechneten Kosten sind zugerechnete Prozesskosten, keine garantierten kurzfristigen Einsparungen oder vollständigen Produkt-Selbstkosten."
   },
   {
+    "objectID": "courses/controlling-tdabc-zeitgleichung.html#rechentabelle",
+    "href": "courses/controlling-tdabc-zeitgleichung.html#rechentabelle",
+    "title": "TDABC: Bestellungen mit einer Zeitgleichung kalkulieren",
+    "section": "Rechentabelle: Zwei Bestelltypen kalkulieren",
+    "text": "Rechentabelle: Zwei Bestelltypen kalkulieren\nWie in den beiden Ergebnisboxen der Vorlage wird zuerst die normale Inlandsbestellung, danach die ausländische Eilbestellung gerechnet. Die Angaben sind didaktisch in Spalten aufgegliedert. Modell: t = 5 + n + 3a + 2e Minuten; n = Artikelzahl, a = Ausland (0/1), e = Eilstatus (0/1). Vorgegeben sind 1,28 €/Min.\nZwei Bestelltypen kalkulierenSchreibe zuerst deinen Rechenweg auf. Alle Ergebnisfelder sind zunächst leer. Gib Werte in der jeweils genannten Einheit ein, auf zwei Dezimalstellen gerundet. Deutsches Zahlenformat: 10.419,20. Mobil lässt sich die Tabelle intern nach rechts verschieben.„Alle Felder prüfen“ prüft jedes Feld unabhängig; danach öffnet ⓘ die Formel mit eingesetzten Werten und Erklärung. Deine Werte bleiben erhalten. Jede Änderung erfordert eine neue Prüfung.\n\nHauptprozess „Material beschaffen“: Kalkulation\n\n\n\n\n\n\n\n\n\n\nBestellung\nn\na\ne\nZeit (Min/Bestellung)\nKosten (€/Bestellung)\n\n\n\n\nInlandsbestellung mit 5 Artikeln\n5\n0\n0\n\nInlandsbestellung mit 5 Artikeln Zeit (Min/Bestellung)\n\n\nⓘ Rechenweg\n\n5 + 5 + 3 × 0 + 2 × 0 = 10 Min/Bestellung. Basis und Zuschläge je Bestellung, Artikelzeit je Artikel.\n\n\n\nInlandsbestellung mit 5 Artikeln Kosten (€/Bestellung)\n\n\nⓘ Rechenweg\n\n10 Min × 1,28 €/Min = 12,80 €/Bestellung. Bewusst mit gerundetem Lehrsatz.\n\n\n\n\nEilbestellung im Ausland mit 10 Artikeln\n10\n1\n1\n\nEilbestellung im Ausland mit 10 Artikeln Zeit (Min/Bestellung)\n\n\nⓘ Rechenweg\n\n5 + 10 + 3 × 1 + 2 × 1 = 20 Min/Bestellung. Basis und Zuschläge je Bestellung, Artikelzeit je Artikel.\n\n\n\nEilbestellung im Ausland mit 10 Artikeln Kosten (€/Bestellung)\n\n\nⓘ Rechenweg\n\n20 Min × 1,28 €/Min = 25,60 €/Bestellung. Bewusst mit gerundetem Lehrsatz.\n\n\n\n\n\nAlle Felder prüfenNeu beginnenNoch nicht geprüft · 4 Felder zum Selbstrechnen.\nMechanismus prüfen: Weshalb verdoppeln sich hier Zeit und Kosten, obwohl nicht jeder Zeitbestandteil verdoppelt wird? Rekonstruiere die vier Komponenten. Das Zusammentreffen von Ausland und Eilstatus erzeugt im vorgegebenen additiven Modell keinen weiteren Zuschlag; der Transferfall unten verändert genau diese Annahme."
+  },
+  {
     "objectID": "courses/controlling-tdabc-zeitgleichung.html#verstehen",
     "href": "courses/controlling-tdabc-zeitgleichung.html#verstehen",
     "title": "TDABC: Bestellungen mit einer Zeitgleichung kalkulieren",
@@ -2647,7 +2661,7 @@
     "href": "courses/controlling-tdabc-zeitgleichung.html#quellen",
     "title": "TDABC: Bestellungen mit einer Zeitgleichung kalkulieren",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; erneut gelesen am 22.10.2026.\n\nZeitgleichung und beide Lehrbeispiele → physische PDF-S. 53. Eigenes Auslands-/Eilbeispiel, Einheiteninterpretation und Prüfung additiver Annahmen → eigene didaktische Anwendung. Kostenbasis und Rundung → S. 52–53; hier bewusst mit dem gerundeten Satz der Quelle gerechnet.\nVerständnislernstrecke → eigene didaktische Fälle und Ableitungen auf Basis der oben zugeordneten Abschnitte; neue Zahlen und Modelländerungen sind keine empirischen Ergebnisse der Quelle.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; erneut gelesen am 22.10.2026.\n\nZeitgleichung und beide Lehrbeispiele → physische PDF-S. 53. Eigenes Auslands-/Eilbeispiel, Einheiteninterpretation und Prüfung additiver Annahmen → eigene didaktische Anwendung. Kostenbasis und Rundung → S. 52–53; hier bewusst mit dem gerundeten Satz der Quelle gerechnet.\nVerständnislernstrecke → eigene didaktische Fälle und Ableitungen auf Basis der oben zugeordneten Abschnitte; neue Zahlen und Modelländerungen sind keine empirischen Ergebnisse der Quelle.\nRechentabelle → Controlling VL3, physische PDF-S. 53. Originalansicht am 23.10.2026 gelesen. Rechenfolge und Begrifflichkeit erhalten; Formeln didaktisch in Tabellen gegliedert, keine unveränderte Originaltabelle. Feldprüfung, Zwischenrechnungen und Hilfen sind eigene Ergänzungen, keine offiziellen Aufgaben.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/controlling-preiskalkulation.html",
@@ -3041,7 +3055,7 @@
     "href": "courses/controlling-prozess-stueckkosten.html",
     "title": "Vom Bestellvorgang zu Prozesskosten je Stück",
     "section": "",
-    "text": "GrundlagenVerstehen und anwendenSelbstcheckQuellen"
+    "text": "GrundlagenVerstehen und anwendenRechentabelleSelbstcheckQuellen"
   },
   {
     "objectID": "courses/controlling-prozess-stueckkosten.html#grundlagen",
@@ -3072,6 +3086,13 @@
     "text": "Teilkostenblock ist nicht Selbstkostenbetrag\nDie Rechnung erfasst hier nur den betrachteten Beschaffungsprozess. Materialeinzelkosten, weitere Prozesse und andere Kostenbereiche sind nicht enthalten. 10,06 € sind deshalb weder vollständige Selbstkosten noch ein automatisch geeigneter Verkaufspreis. Das Ergebnis bleibt auch bei zusätzlicher lmn-Umlage eine Modellzurechnung und keine kurzfristige Grenzkostenrechnung."
   },
   {
+    "objectID": "courses/controlling-prozess-stueckkosten.html#rechentabelle",
+    "href": "courses/controlling-prozess-stueckkosten.html#rechentabelle",
+    "title": "Vom Bestellvorgang zu Prozesskosten je Stück",
+    "section": "Rechentabelle: Vom Vorgang zum Stück",
+    "text": "Rechentabelle: Vom Vorgang zum Stück\nDie beiden Fälle stehen wie in der Vorlage untereinander: zuerst nur lmi, dann lmi mit lmn. Die Bruchrechnungen sind in Mengen, Satz, Gesamtkosten und Stückkosten aufgeteilt.\nVom Vorgang zum StückSchreibe zuerst deinen Rechenweg auf. Alle Ergebnisfelder sind zunächst leer. Gib Werte in der jeweils genannten Einheit ein, auf zwei Dezimalstellen gerundet. Deutsches Zahlenformat: 10.419,20. Mobil lässt sich die Tabelle intern nach rechts verschieben.„Alle Felder prüfen“ prüft jedes Feld unabhängig; danach öffnet ⓘ die Formel mit eingesetzten Werten und Erklärung. Deine Werte bleiben erhalten. Jede Änderung erfordert eine neue Prüfung.\n\nProduktkalkulation (nur Gemeinkosten)\n\n\n\n\n\n\n\n\n\n\nVerrechnung\nBestellungen\nLieferumfang (Stück)\nSatz (gegeben)\nKosten Lieferumfang (€)\nProzesskosten (€/Stück)\n\n\n\n\nNur lmi-Prozesse\n35\n100\n25,00 €/Bestellung\n\nNur lmi-Prozesse Gesamtkosten (€)\n\n\nⓘ Rechenweg\n\n35 Bestellungen × 25,00 €/Bestellung = 875,00 €. Kosten für den gesamten Lieferumfang.\n\n\n\nNur lmi-Prozesse Stückkosten (€/Stück)\n\n\nⓘ Rechenweg\n\n35 / 100 × 25,00 = 8,75 €/Stück. Mit ungerundetem Zwischenwert rechnen; zweite Zeile exakt 10,0625 €/Stück.\n\n\n\n\nlmi- und lmn-Prozesse\n35\n100\n28,75 €/Bestellung\n\nlmi- und lmn-Prozesse Gesamtkosten (€)\n\n\nⓘ Rechenweg\n\n35 Bestellungen × 28,75 €/Bestellung = 1.006,25 €. Kosten für den gesamten Lieferumfang.\n\n\n\nlmi- und lmn-Prozesse Stückkosten (€/Stück)\n\n\nⓘ Rechenweg\n\n35 / 100 × 28,75 = 10,06 €/Stück. Mit ungerundetem Zwischenwert rechnen; zweite Zeile exakt 10,0625 €/Stück.\n\n\n\n\n\nAlle Felder prüfenNeu beginnenNoch nicht geprüft · 4 Felder zum Selbstrechnen.\nDeutung: Der Nenner 100 ist die Produktmenge, nicht die Prozessmenge. Die Differenz der ungerundeten Stückkosten beträgt 1,3125 €/Stück. Erkläre, warum dies keine zusätzlichen Bestellungen und keine vollständigen Selbstkosten sind. Vergleiche mit der lmn-Umlage."
+  },
+  {
     "objectID": "courses/controlling-prozess-stueckkosten.html#verstehen",
     "href": "courses/controlling-prozess-stueckkosten.html#verstehen",
     "title": "Vom Bestellvorgang zu Prozesskosten je Stück",
@@ -3097,7 +3118,7 @@
     "href": "courses/controlling-prozess-stueckkosten.html#quellen",
     "title": "Vom Bestellvorgang zu Prozesskosten je Stück",
     "section": "Quelle und Abgrenzung",
-    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 19.10.2026.\n\nÜbergang zur Produktkalkulation → physische PDF-S. 37. Lehrbeispiel mit 35 Bestellungen, 100 Stück und lmi-/Gesamtsatz → S. 38. Exakte Zwischenwerte, Bündelungsbeispiel und Entscheidungsgrenzen → eigene Ableitungen; die Mengenänderung ist keine offizielle Aufgabe.\n\nVerständnislernstrecke → eigene Aufgaben, Hinweise, Musterlösungen, Bewertungsraster und Transferfälle auf Grundlage der oben zugeordneten Mechanismen; keine zusätzlichen Aussagen des Skripts. Quelle für diese Revision am 21.10.2026 erneut gelesen.\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
+    "text": "Quelle und Abgrenzung\nControlling VL3.pdf – Learnweb (Hochschulzugang), Prof. Dr. Martin Artz, Winter 2026/27. Physische PDF-Seiten, hier gleich den gedruckten Seitenzahlen; gelesen am 19.10.2026.\n\nÜbergang zur Produktkalkulation → physische PDF-S. 37. Lehrbeispiel mit 35 Bestellungen, 100 Stück und lmi-/Gesamtsatz → S. 38. Exakte Zwischenwerte, Bündelungsbeispiel und Entscheidungsgrenzen → eigene Ableitungen; die Mengenänderung ist keine offizielle Aufgabe.\n\nVerständnislernstrecke → eigene Aufgaben, Hinweise, Musterlösungen, Bewertungsraster und Transferfälle auf Grundlage der oben zugeordneten Mechanismen; keine zusätzlichen Aussagen des Skripts. Quelle für diese Revision am 21.10.2026 erneut gelesen.\n\nRechentabelle → Controlling VL3, physische PDF-S. 38. Originalansicht am 23.10.2026 gelesen. Rechenfolge und Begrifflichkeit erhalten; Formeln didaktisch in Tabellen gegliedert, keine unveränderte Originaltabelle. Feldprüfung, Zwischenrechnungen und Hilfen sind eigene Ergänzungen, keine offiziellen Aufgaben.\n\nParaphrasierte Lernaufbereitung; Original und Extrakt bleiben privat."
   },
   {
     "objectID": "courses/vwl-markt-staat.html",

@@ -362,6 +362,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#lehrbeispiel-35-bestellungen-für-100-stück" id="toc-lehrbeispiel-35-bestellungen-für-100-stück" class="nav-link" data-scroll-target="#lehrbeispiel-35-bestellungen-für-100-stück">Lehrbeispiel: 35 Bestellungen für 100 Stück</a></li>
   <li><a href="#eigenes-beispiel-gleicher-lieferumfang-andere-bestellzahl" id="toc-eigenes-beispiel-gleicher-lieferumfang-andere-bestellzahl" class="nav-link" data-scroll-target="#eigenes-beispiel-gleicher-lieferumfang-andere-bestellzahl">Eigenes Beispiel: gleicher Lieferumfang, andere Bestellzahl</a></li>
   <li><a href="#teilkostenblock-ist-nicht-selbstkostenbetrag" id="toc-teilkostenblock-ist-nicht-selbstkostenbetrag" class="nav-link" data-scroll-target="#teilkostenblock-ist-nicht-selbstkostenbetrag">Teilkostenblock ist nicht Selbstkostenbetrag</a></li>
+  <li><a href="#rechentabelle" id="toc-rechentabelle" class="nav-link" data-scroll-target="#rechentabelle">Rechentabelle: Vom Vorgang zum Stück</a></li>
   <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Verständnislernstrecke</a>
   <ul class="collapse">
   <li><a href="#freier-abruf-vom-vorgang-zum-produkt" id="toc-freier-abruf-vom-vorgang-zum-produkt" class="nav-link" data-scroll-target="#freier-abruf-vom-vorgang-zum-produkt">1. Freier Abruf: vom Vorgang zum Produkt</a></li>
@@ -400,7 +401,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#verstehen">Verstehen und anwenden</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#verstehen">Verstehen und anwenden</a><a href="#rechentabelle">Rechentabelle</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
 <section id="grundlagen" class="level2">
 <h2 class="anchored" data-anchor-id="grundlagen">Grundlagen</h2>
 <p>Ein Prozesskostensatz ist zunächst ein Betrag je Vorgang. Für die Produktkalkulation muss zusätzlich bekannt sein, wie viele Vorgänge auf wie viele Produkteinheiten entfallen. Erst diese Mengenbeziehung übersetzt beispielsweise Euro je Bestellung in Euro je Stück.</p>
@@ -418,6 +419,84 @@ ul.task-list li input[type="checkbox"] {
 <section id="teilkostenblock-ist-nicht-selbstkostenbetrag" class="level2">
 <h2 class="anchored" data-anchor-id="teilkostenblock-ist-nicht-selbstkostenbetrag">Teilkostenblock ist nicht Selbstkostenbetrag</h2>
 <p>Die Rechnung erfasst hier nur den betrachteten Beschaffungsprozess. Materialeinzelkosten, weitere Prozesse und andere Kostenbereiche sind nicht enthalten. 10,06 € sind deshalb weder vollständige Selbstkosten noch ein automatisch geeigneter Verkaufspreis. Das Ergebnis bleibt auch bei zusätzlicher lmn-Umlage eine Modellzurechnung und keine kurzfristige Grenzkostenrechnung.</p>
+</section>
+<section id="rechentabelle" class="level2">
+<h2 class="anchored" data-anchor-id="rechentabelle">Rechentabelle: Vom Vorgang zum Stück</h2>
+<p>Die beiden Fälle stehen wie in der Vorlage untereinander: zuerst nur lmi, dann lmi mit lmn. Die Bruchrechnungen sind in Mengen, Satz, Gesamtkosten und Stückkosten aufgeteilt.</p>
+<section class="calc-sheet bank-calc-sheet" aria-labelledby="bank-title"><h3 id="bank-title" class="anchored">Vom Vorgang zum Stück</h3><p>Schreibe zuerst deinen Rechenweg auf. Alle Ergebnisfelder sind zunächst leer. Gib Werte in der jeweils genannten Einheit ein, auf zwei Dezimalstellen gerundet. Deutsches Zahlenformat: 10.419,20. Mobil lässt sich die Tabelle intern nach rechts verschieben.</p><p>„Alle Felder prüfen“ prüft jedes Feld unabhängig; danach öffnet ⓘ die Formel mit eingesetzten Werten und Erklärung. Deine Werte bleiben erhalten. Jede Änderung erfordert eine neue Prüfung.</p><div class="calc-table-scroll" role="region" aria-label="Produktkalkulation (nur Gemeinkosten), horizontal verschiebbar" tabindex="0">
+<table class="calc-table caption-top table">
+<caption>Produktkalkulation (nur Gemeinkosten)</caption>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Verrechnung</th>
+<th data-quarto-table-cell-role="th" scope="col">Bestellungen</th>
+<th data-quarto-table-cell-role="th" scope="col">Lieferumfang (Stück)</th>
+<th data-quarto-table-cell-role="th" scope="col">Satz (gegeben)</th>
+<th data-quarto-table-cell-role="th" scope="col">Kosten Lieferumfang (€)</th>
+<th data-quarto-table-cell-role="th" scope="col">Prozesskosten (€/Stück)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Nur lmi-Prozesse</th>
+<td>35</td>
+<td>100</td>
+<td>25,00 €/Bestellung</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-total0">Nur lmi-Prozesse Gesamtkosten (€)</label><input id="bank-total0" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="875" data-tolerance="0.005" aria-describedby="bank-total0-state"><span id="bank-total0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Nur lmi-Prozesse Gesamtkosten">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>35 Bestellungen × 25,00 €/Bestellung = 875,00 €. Kosten für den gesamten Lieferumfang.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-piece0">Nur lmi-Prozesse Stückkosten (€/Stück)</label><input id="bank-piece0" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="8.75" data-tolerance="0.005" aria-describedby="bank-piece0-state"><span id="bank-piece0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Nur lmi-Prozesse Stückkosten">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>35 / 100 × 25,00 = 8,75 €/Stück. Mit ungerundetem Zwischenwert rechnen; zweite Zeile exakt 10,0625 €/Stück.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">lmi- und lmn-Prozesse</th>
+<td>35</td>
+<td>100</td>
+<td>28,75 €/Bestellung</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-total1">lmi- und lmn-Prozesse Gesamtkosten (€)</label><input id="bank-total1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="1006.25" data-tolerance="0.005" aria-describedby="bank-total1-state"><span id="bank-total1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: lmi- und lmn-Prozesse Gesamtkosten">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>35 Bestellungen × 28,75 €/Bestellung = 1.006,25 €. Kosten für den gesamten Lieferumfang.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-piece1">lmi- und lmn-Prozesse Stückkosten (€/Stück)</label><input id="bank-piece1" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="10.0625" data-tolerance="0.005" aria-describedby="bank-piece1-state"><span id="bank-piece1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: lmi- und lmn-Prozesse Stückkosten">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>35 / 100 × 28,75 = 10,06 €/Stück. Mit ungerundetem Zwischenwert rechnen; zweite Zeile exakt 10,0625 €/Stück.</p>
+</details>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div><p class="calc-summary" role="status" aria-live="polite" aria-atomic="true">Noch nicht geprüft · 4 Felder zum Selbstrechnen.</p></section>
+<p><strong>Deutung:</strong> Der Nenner 100 ist die Produktmenge, nicht die Prozessmenge. Die Differenz der ungerundeten Stückkosten beträgt 1,3125 €/Stück. Erkläre, warum dies keine zusätzlichen Bestellungen und keine vollständigen Selbstkosten sind. Vergleiche mit der <a href="../courses/controlling-lmn-umlage.html#rechentabelle">lmn-Umlage</a>.</p>
 </section>
 <section id="verstehen" class="level2">
 <h2 class="anchored" data-anchor-id="verstehen">Verständnislernstrecke</h2>
@@ -529,6 +608,9 @@ Begründung anzeigen
 <li>Übergang zur Produktkalkulation → physische PDF-S. 37. Lehrbeispiel mit 35 Bestellungen, 100 Stück und lmi-/Gesamtsatz → S. 38. Exakte Zwischenwerte, Bündelungsbeispiel und Entscheidungsgrenzen → eigene Ableitungen; die Mengenänderung ist keine offizielle Aufgabe.</li>
 </ul>
 <p>Verständnislernstrecke → eigene Aufgaben, Hinweise, Musterlösungen, Bewertungsraster und Transferfälle auf Grundlage der oben zugeordneten Mechanismen; keine zusätzlichen Aussagen des Skripts. Quelle für diese Revision am 21.10.2026 erneut gelesen.</p>
+<ul>
+<li>Rechentabelle → Controlling VL3, physische PDF-S. 38. Originalansicht am 23.10.2026 gelesen. Rechenfolge und Begrifflichkeit erhalten; Formeln didaktisch in Tabellen gegliedert, keine unveränderte Originaltabelle. Feldprüfung, Zwischenrechnungen und Hilfen sind eigene Ergänzungen, keine offiziellen Aufgaben.</li>
+</ul>
 <p>Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.</p>
 
 

@@ -362,6 +362,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#theoretische-und-praktische-kapazität" id="toc-theoretische-und-praktische-kapazität" class="nav-link" data-scroll-target="#theoretische-und-praktische-kapazität">Theoretische und praktische Kapazität</a></li>
   <li><a href="#den-nenner-bewusst-wählen" id="toc-den-nenner-bewusst-wählen" class="nav-link" data-scroll-target="#den-nenner-bewusst-wählen">Den Nenner bewusst wählen</a></li>
   <li><a href="#rundung-und-entscheidungsgrenze" id="toc-rundung-und-entscheidungsgrenze" class="nav-link" data-scroll-target="#rundung-und-entscheidungsgrenze">Rundung und Entscheidungsgrenze</a></li>
+  <li><a href="#rechentabelle" id="toc-rechentabelle" class="nav-link" data-scroll-target="#rechentabelle">Rechentabelle: Kapazität und Minutenkostensatz</a></li>
   <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Verständnislernstrecke</a>
   <ul class="collapse">
   <li><a href="#freier-abruf-warum-nicht-ist-minuten" id="toc-freier-abruf-warum-nicht-ist-minuten" class="nav-link" data-scroll-target="#freier-abruf-warum-nicht-ist-minuten">1. Freier Abruf: Warum nicht Ist-Minuten?</a></li>
@@ -400,7 +401,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#verstehen">Verständnislernstrecke</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#grundlagen">Grundlagen</a><a href="#verstehen">Verständnislernstrecke</a><a href="#rechentabelle">Rechentabelle</a><a href="#selbstcheck">Selbstcheck</a><a href="#quellen">Quellen</a></nav>
 <section id="grundlagen" class="level2">
 <h2 class="anchored" data-anchor-id="grundlagen">Grundlagen</h2>
 <p>Time-Driven Activity-Based Costing (TDABC) verwendet Zeit als einheitlichen Kostentreiber. Ein Kostensatz je Minute verbindet die Kosten eines Hauptprozesses mit seiner praktisch verfügbaren Zeitkapazität. Unterschiedlich aufwendige Vorgänge können anschließend unterschiedliche Zeitmengen beanspruchen.</p>
@@ -419,6 +420,88 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="rundung-und-entscheidungsgrenze">Rundung und Entscheidungsgrenze</h2>
 <p>1,28 € ist ein gerundeter Satz: 625.152 × 1,28 = 800.194,56 €. Die Abweichung von 194,56 € ist eine Rundungswirkung, kein zusätzlicher Kostenpool. Für exakte Abstimmungen muss mit dem ungerundeten Quotienten gerechnet oder eine Rundungsdifferenz ausgewiesen werden.</p>
 <p>Der Satz verteilt bereitgestellte Ressourcen. Er beweist nicht, dass bei Wegfall einer Minute sofort 1,28 € ausgezahlt oder eingespart werden. Kapazitätsanpassungen sind eine gesonderte Entscheidung.</p>
+</section>
+<section id="rechentabelle" class="level2">
+<h2 class="anchored" data-anchor-id="rechentabelle">Rechentabelle: Kapazität und Minutenkostensatz</h2>
+<p>Die Rechnung folgt der Originalreihenfolge: theoretische Minuten, praktische Minuten und Stunden, danach Kosten je Minute. Ausgangsdaten: 7,4 Mitarbeiterkapazitäten, 220 Tage/Jahr, 8 Stunden/Tag, praktische Verfügbarkeit 80 %, Hauptprozesskosten 800.000 €/Jahr. Die 85 % für Maschinen sind hier kein zweiter Personalabschlag.</p>
+<section class="calc-sheet bank-calc-sheet" aria-labelledby="bank-title"><h3 id="bank-title" class="anchored">Kapazität und Minutenkostensatz</h3><p>Schreibe zuerst deinen Rechenweg auf. Alle Ergebnisfelder sind zunächst leer. Gib Werte in der jeweils genannten Einheit ein, auf zwei Dezimalstellen gerundet. Deutsches Zahlenformat: 10.419,20. Mobil lässt sich die Tabelle intern nach rechts verschieben.</p><p>„Alle Felder prüfen“ prüft jedes Feld unabhängig; danach öffnet ⓘ die Formel mit eingesetzten Werten und Erklärung. Deine Werte bleiben erhalten. Jede Änderung erfordert eine neue Prüfung.</p><div class="calc-table-scroll" role="region" aria-label="Hauptprozess „Material beschaffen“, horizontal verschiebbar" tabindex="0">
+<table class="calc-table caption-top table">
+<caption>Hauptprozess „Material beschaffen“</caption>
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Rechenschritt</th>
+<th data-quarto-table-cell-role="th" scope="col">Ansatz (gegeben)</th>
+<th data-quarto-table-cell-role="th" scope="col">Dein Ergebnis</th>
+<th data-quarto-table-cell-role="th" scope="col">Einheit</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Theoretische Kapazität</th>
+<td>7,4 MA × 8 h/Tag × 220 Tage/Jahr × 60 Min/h</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-theory">Theoretische Kapazität (Min/Jahr)</label><input id="bank-theory" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="781440" data-tolerance="0.005" aria-describedby="bank-theory-state"><span id="bank-theory-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Theoretische Kapazität">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>7,4 × 8 × 220 × 60 = 781.440 Min/Jahr. Vertragszeit vor Verfügbarkeitsabschlag.</p>
+</details>
+</div></td>
+<td>Min/Jahr</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Praktische Kapazität</th>
+<td>Theoretische Kapazität × 80 %</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-practical">Praktische Kapazität (Min/Jahr)</label><input id="bank-practical" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="625152" data-tolerance="0.005" aria-describedby="bank-practical-state"><span id="bank-practical-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Praktische Kapazität">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>781.440 × 0,80 = 625.152 Min/Jahr. Nur der Mitarbeiterabschlag gilt.</p>
+</details>
+</div></td>
+<td>Min/Jahr</td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Praktische Kapazität in Stunden</th>
+<td>Praktische Minuten / 60</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-hours">Praktische Kapazität in Stunden (h/Jahr)</label><input id="bank-hours" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="10419.2" data-tolerance="0.005" aria-describedby="bank-hours-state"><span id="bank-hours-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Praktische Kapazität in Stunden">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>625.152 / 60 = 10.419,20 h/Jahr. Minuten in Stunden umrechnen.</p>
+</details>
+</div></td>
+<td>h/Jahr</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Kosten pro Minute</th>
+<td>800.000 €/Jahr / praktische Min/Jahr</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="bank-rate">Kosten pro Minute (€/Min)</label><input id="bank-rate" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="1.279688779688779688779688780" data-tolerance="0.005" aria-describedby="bank-rate-state"><span id="bank-rate-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg: Kosten pro Minute">
+ⓘ <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>800.000 / 625.152 = 1,279688… €/Min, gerundet 1,28 €/Min. Praktisches Angebot, nicht Ist-Nutzung, bildet den Nenner.</p>
+</details>
+</div></td>
+<td>€/Min</td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div><p class="calc-summary" role="status" aria-live="polite" aria-atomic="true">Noch nicht geprüft · 4 Felder zum Selbstrechnen.</p></section>
+<p><strong>Abstimmung:</strong> Multipliziere den gerundeten Satz mit 625.152 Minuten: 800.194,56 €. Warum entsteht die Differenz von 194,56 €? Für exakte Kostenabstimmungen ist der ungerundete Quotient nötig. Der Satz beschreibt bereitgestellte Kapazität, keine garantierte Einsparung.</p>
 </section>
 <section id="verstehen" class="level2">
 <h2 class="anchored" data-anchor-id="verstehen">Verständnislernstrecke</h2>
@@ -529,6 +612,7 @@ Begründung anzeigen
 <ul>
 <li><p>Grundidee, praktische statt tatsächliche Kapazität und Verfügbarkeitsannahmen → physische PDF-S. 51. Kapazitäts- und Minutenkostensatz → S. 52. Gegenbeispiel mit 500.000 Minuten, Rundungsgegenprobe und Vermeidbarkeitsgrenze → eigene Ableitungen. Der Rückverweis „Folie 22“ auf S. 52 passt nicht zur Mitarbeiter-/Kostentabelle auf S. 28; verwendet werden die ausdrücklich angegebenen Zahlen auf S. 52.</p></li>
 <li><p>Verständnislernstrecke → eigene didaktische Fälle und Ableitungen auf Basis der oben zugeordneten Abschnitte; neue Zahlen und Modelländerungen sind keine empirischen Ergebnisse der Quelle.</p></li>
+<li><p>Rechentabelle → Controlling VL3, physische PDF-S. 52. Originalansicht am 23.10.2026 gelesen. Rechenfolge und Begrifflichkeit erhalten; Formeln didaktisch in Tabellen gegliedert, keine unveränderte Originaltabelle. Feldprüfung, Zwischenrechnungen und Hilfen sind eigene Ergänzungen, keine offiziellen Aufgaben.</p></li>
 </ul>
 <p>Paraphrasierte Lernaufbereitung; Original und Extrakt bleiben privat.</p>
 
