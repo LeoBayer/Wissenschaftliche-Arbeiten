@@ -47,6 +47,14 @@ try:
         assert math['flat']==[10,10,10] and math['zeroMarginThreshold'] is None
         assert math['backtest']['n']==2 and abs(math['backtest']['mse']-134.5)<1e-8
         results['math']=math
+        initial_graph=page.locator('.financial-chart').inner_html()
+        page.locator('#price').fill('800')
+        assert page.locator('.financial-chart').inner_html()!=initial_graph
+        page.locator('#reset-lab').click()
+        assert page.locator('.financial-chart').inner_html()==initial_graph
+        page.locator('#setup').fill('2000')
+        assert '-2.000' in page.locator('#finance-desc').text_content()
+        page.locator('#reset-lab').click()
         page.locator('#factor').fill('0.7');assert 'EXPERIMENT' in page.locator('#scenario-label').inner_text()
         assert 'Nichtverlängerung vorteilhaft' in page.locator('#lab-result').inner_text()
         assert '1.178' in page.locator('#lab-result').inner_text(), 'Negative half-euro amount must round consistently after cent normalization.'

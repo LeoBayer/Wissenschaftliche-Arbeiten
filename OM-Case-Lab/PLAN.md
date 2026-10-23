@@ -28,3 +28,5 @@ Livecheck-Nachtrag: Rundungsabweichung bei −1177,499999…EUR in der Ganz-Euro
 
 ## UI-Überarbeitung 23.10.2026
 Study-Lab-nahe Flächen und Karten mit roten OM-Akzenten; PDF-Button dauerhaft kontrastreich; überarbeitete Zahlenfelder ohne native Spinner; Parameter und Simulation ab 900 px nebeneinander, mobil gestapelt. Browserprüfung 320–1440 px, Hell/Dunkel, Modell/Exporte/Links erfolgreich.
+
+Parameterabhängige Finanzkurve ergänzt: kumulierter Vorteil 2027–2029, Start bei negativen Einmalkosten, jährliche Barwertdifferenzen, Nulllinie und automatische Skalierung. Getrennte Mengen-/Eurografiken. Browserchecks einschließlich Preisänderung, Reset und Einmalkosten erfolgreich.

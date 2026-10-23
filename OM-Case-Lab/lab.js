@@ -36,6 +36,20 @@
     const line=(vals,start,color,dash='')=>`<polyline fill="none" stroke="${color}" stroke-width="3" ${dash?'stroke-dasharray="6 5"':''} points="${vals.map((v,i)=>`${x(i+start)},${y(v)}`).join(' ')}"/>`;
     return `<svg role="img" aria-labelledby="forecast-title forecast-description" viewBox="0 0 ${W} ${H}"><title id="forecast-title">Erfasste Mengen und Drei-Jahres-Szenario</title><desc id="forecast-description">Erfasste historische Mengen blau, Szenarioprognose gestrichelt in Rosa. Alle Zahlen stehen auch in den Tabellen. Stück pro Geschäftsjahr.</desc>${[0,1,2,3,4].map(i=>{const v=i*max/4;return `<line x1="${L}" y1="${y(v)}" x2="${W-R}" y2="${y(v)}" stroke="currentColor" opacity=".15"/><text x="${L-8}" y="${y(v)+4}" fill="currentColor" text-anchor="end" font-size="12">${num(v,0)}</text>`}).join('')}<text x="${L}" y="16" fill="currentColor" font-size="12">Stück / Geschäftsjahr</text>${all.map((v,i)=>`<text x="${x(i)}" y="${H-18}" text-anchor="middle" fill="currentColor" font-size="13">${2023+i}</text>`).join('')}${line(history,0,'#16828a')}${line([history[3],...q],3,'#bd4776',true)}${all.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="4" fill="${i<4?'#16828a':'#bd4776'}"/>`).join('')}</svg><p class="chart-legend">● Beobachtung · – – Szenario (Erwartungswerte, keine zugesagte Nachfrage)</p>`;
   }
+  function financialChart(e,s){
+    let total=-s.setup;
+    const values=[total,...e.rows.map(r=>total+=r.pv)];
+    const W=760,H=260,L=92,R=28,T=30,B=40;
+    const low=Math.min(0,...values),high=Math.max(0,...values),pad=Math.max(1,(high-low)*.15);
+    const min=low-pad,max=high+pad,x=i=>L+i*(W-L-R)/3,y=v=>H-B-(v-min)/(max-min)*(H-T-B);
+    const color=e.npv>=0?'#16828a':'#bd4776';
+    return `<svg role="img" aria-labelledby="finance-title finance-desc" viewBox="0 0 ${W} ${H}"><title id="finance-title">Kumulierter finanzieller Vorteil der Fortführung</title><desc id="finance-desc">Start nach Einmalkosten: ${eur(values[0])}. ${e.rows.map((r,i)=>`Ende ${r.year}: ${eur(values[i+1])}`).join('. ')}. Positive Werte sprechen rechnerisch für Fortführung, negative für Einstellung. ${s.rate?'Abgezinste':'Undiskontierte'} Differenzen.</desc>
+    ${[0,1,2,3,4].map(i=>{const v=min+i*(max-min)/4;return `<line x1="${L}" y1="${y(v)}" x2="${W-R}" y2="${y(v)}" stroke="currentColor" opacity=".12"/><text x="${L-10}" y="${y(v)+4}" text-anchor="end" fill="currentColor" font-size="12">${eur(v)}</text>`}).join('')}
+    <line x1="${L}" y1="${y(0)}" x2="${W-R}" y2="${y(0)}" stroke="currentColor" stroke-dasharray="5 4" opacity=".65"/>
+    <polyline fill="none" stroke="${color}" stroke-width="3" points="${values.map((v,i)=>`${x(i)},${y(v)}`).join(' ')}"/>
+    ${values.map((v,i)=>`<circle cx="${x(i)}" cy="${y(v)}" r="5" fill="${color}"><title>${i?e.rows[i-1].year:'Start'}: ${eur(v)}</title></circle><text x="${x(i)}" y="${H-13}" text-anchor="middle" fill="currentColor" font-size="13">${i?e.rows[i-1].year:'Start'}</text>`).join('')}</svg>
+    <p class="chart-legend">Kumulierter ${s.rate?'Barwert':'Vorteil'} gegenüber Einstellung · inklusive Einmalkosten. Über der Nulllinie: Fortführung finanziell vorteilhaft. Alle Parameter fließen direkt ein; die Achse skaliert automatisch.</p>`;
+  }
   function update(){
     const result=document.getElementById('lab-result');latest=null;
     try{
@@ -48,7 +62,8 @@
       const stress=[.7,1,1.3].map(f=>{const qq=OMModel.forecast(s.history,s.method).map(v=>v*s.factor*f),ee=OMModel.economics(qq,s.price,s.cost,s.fixed,s.avoidable,s.rate,s.setup);return [num(s.factor*f,2),eur(ee.npv),ee.npv>=0?'Fortführung vorteilhaft':'Nichtverlängerung vorteilhaft'];});
       result.innerHTML=`<div class="stats"><div class="stat">Vorteil gegenüber Einstellung<strong>${eur(e.npv)}</strong><small>${s.rate?'Barwert':'Summe'} 2027–2029, nach Einmalkosten</small></div><div class="stat">Deckungsbeitrag pro Akku<strong>${eur(e.margin)}</strong><small>Preis minus variable Stückkosten</small></div><div class="stat">Erforderliche konstante Jahresmenge<strong>${e.threshold===null?'Kein positiver DB':num(e.threshold,1)+' Stück'}</strong><small>Entscheidungsschwelle bei diesen Kosten und diesem Zins</small></div></div>
       <p class="status">${e.npv>0?'Unter diesen Annahmen spricht die Rechnung für die Fortführung.':e.npv<0?'Unter diesen Annahmen spricht die Rechnung gegen die Fortführung.':'Unter diesen Annahmen sind beide Optionen finanziell gleichwertig.'} Das ist eine bedingte Empfehlung, keine Nachfragesicherheit.</p>
-      <div class="chart">${chart(s.history,q)}</div>
+      <h3>Absatz & Prognose</h3><div class="chart">${chart(s.history,q)}</div>
+      <h3>Finanzielle Wirkung deiner Parameter</h3><div class="chart financial-chart">${financialChart(e,s)}</div>
       <h3>Vom Absatz zur Entscheidung</h3>${table(['GJ','Prognose · Stück','DB · €','Fortführen · €','Einstellen · €','Differenz · €'],e.rows.map(r=>[r.year,num(r.quantity,2),eur(r.contribution),eur(r.continuation),eur(r.stop),eur(r.delta)]))}
       <p>Berechnet mit ungerundeten Werten. Die Anzeige rundet; Prognosen sind Erwartungswerte. Einmalaufwand von ${eur(s.setup)} wird zusätzlich abgezogen. ${s.rate?'Die Jahresdifferenzen werden auf den Entscheidungszeitpunkt abgezinst.':'Keine Abzinsung im gewählten Szenario.'}</p>
       <h3>Wie viel Abweichung hält die Entscheidung aus?</h3><p>${e.demandFactor===null?'Für eine Nullmengenprognose oder einen nichtpositiven Deckungsbeitrag ist diese Schwelle nicht ableitbar.':`Die gewählte Absatzkurve müsste mindestens <strong>${num(e.demandFactor*100,1)} %</strong> ihrer aktuell angezeigten Mengen erreichen. Bei unveränderten Mengen läge der kostendeckende Verkaufspreis bei <strong>${eur(e.breakEvenPrice)}</strong>.`} Diese Werte sind rechnerische Schwellen, keine Konfidenzintervalle.</p>
