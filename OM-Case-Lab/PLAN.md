@@ -12,10 +12,14 @@ Auftrag von Leo am 23.10.2026: unbewerteten Ersatzakku-Fall bearbeiten, Quarto-W
 - [x] Quarto-Seiten mit Originaldaten-/Annahmen-Trennung, Selbsttests und kompakter Probeempfehlung erstellt.
 - [x] Rechenmodell und Interaktionen unabhängig prüfen; schmale/breite Ansicht und Hell/Dunkel ansehen.
 - [x] PDF erstellen und Link/Seitenlayout prüfen.
-- [ ] Gezielt eigene Quellen/Builddateien committen und Website veröffentlichen; Live-Nachweis.
+- [x] Gezielt eigene Quellen/Builddateien committen und Website veröffentlichen; Live-Nachweis.
 
 ## Grenzen und nächster fachlicher Schritt
 
 Die Kostenwerte stammen überwiegend aus einer KI-Persona, nicht einem Vertragsbeleg. Bestell-/Liefer-/Fakturaabgleich und tatsächliches Austauschpotenzial bleiben offen. Interviewvolltexte und Originaldateien liegen nur unter /home/leo/.local/state/openclaw/om-lernwerkstatt-2026-10-23/interview/. Die Website ist eine eigene Lernanalyse, kein öffentliches Archiv der Uni-Anwendung.
 
 Nächster gemeinsamer Schritt: Leo erklärt Kostenrelevanz und Entscheidungsschwelle; anschließend Transferfall. Vor bewerteten Fällen jeweils tatsächlichen Auftrag, aktuelle Frist, erlaubtes Format und Datenlage prüfen. Keine späteren Bonusfälle in diesem Paket vorwegnehmen.
+
+## Abnahme und Veröffentlichung
+
+Implementierungscommit de76f91 auf origin main. Build/Modell-/Grenzfall-/Export-/Link-/Browserprüfungen erfolgreich; fünf Breiten 320–1440 px ohne Seitenüberlauf, Hell/Dunkel geprüft. PDF zwei Seiten,98-Wörter-Empfehlung und überprüfter anklickbarer Laborlink. Alle elf Live-Hauptdateien HTTP200 und SHA256-identisch zum geprüften Build. Vollprüfung und Screenshots privat außerhalb des Repositorys. Generierte Quarto-/Vendor-Dateien enthalten unveränderte upstream Whitespace-Stellen; eigene Quellen bestehen git diff --check. Keine Uni-Abgabe/kein Datei-Upload, keine produktiven Dienste geändert.
