@@ -363,6 +363,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#abschnitt-3" id="toc-abschnitt-3" class="nav-link" data-scroll-target="#abschnitt-3">Original learning example: tracing a food shipment</a></li>
   <li><a href="#abschnitt-4" id="toc-abschnitt-4" class="nav-link" data-scroll-target="#abschnitt-4">Fungible does not mean “digital”; non-fungible does not mean “copyright”</a></li>
   <li><a href="#abschnitt-5" id="toc-abschnitt-5" class="nav-link" data-scroll-target="#abschnitt-5">What the section cannot settle</a></li>
+  <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Understanding pathway</a>
+  <ul class="collapse">
+  <li><a href="#rebuild-an-application-argument" id="toc-rebuild-an-application-argument" class="nav-link" data-scroll-target="#rebuild-an-application-argument">1. Rebuild an application argument</a></li>
+  <li><a href="#calculate-remaining-input-errors" id="toc-calculate-remaining-input-errors" class="nav-link" data-scroll-target="#calculate-remaining-input-errors">2. Calculate remaining input errors</a></li>
+  <li><a href="#diagnose-two-application-shortcuts" id="toc-diagnose-two-application-shortcuts" class="nav-link" data-scroll-target="#diagnose-two-application-shortcuts">3. Diagnose two application shortcuts</a></li>
+  <li><a href="#transfer-to-an-accepted-operator" id="toc-transfer-to-an-accepted-operator" class="nav-link" data-scroll-target="#transfer-to-an-accepted-operator">4. Transfer to an accepted operator</a></li>
+  <li><a href="#error-reflection-and-delayed-retrieval" id="toc-error-reflection-and-delayed-retrieval" class="nav-link" data-scroll-target="#error-reflection-and-delayed-retrieval">Error reflection and delayed retrieval</a></li>
+  </ul></li>
   <li><a href="#abschnitt-6" id="toc-abschnitt-6" class="nav-link" data-scroll-target="#abschnitt-6">Self-check (SC)</a></li>
   <li><a href="#related-study-pages" id="toc-related-study-pages" class="nav-link" data-scroll-target="#related-study-pages">Related study pages</a></li>
   <li><a href="#abschnitt-7" id="toc-abschnitt-7" class="nav-link" data-scroll-target="#abschnitt-7">Source and limits</a>
@@ -396,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="On this page"><a href="#abschnitt-2">Begin with the application, not the label</a><a href="#abschnitt-6">Self-check (SC)</a><a href="#abschnitt-7">Source and limits</a></nav>
+<nav class="section-jumps" aria-label="On this page"><a href="#abschnitt-2">Begin with the application, not the label</a><a href="#verstehen">Understand and apply</a><a href="#abschnitt-6">Self-check (SC)</a><a href="#abschnitt-7">Source and limits</a></nav>
 <p><a href="../courses/digital-business.html">Digital Business overview</a></p>
 <section id="abschnitt-1" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-1">Learning goals</h2>
@@ -425,6 +433,82 @@ ul.task-list li input[type="checkbox"] {
 <section id="abschnitt-5" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-5">What the section cannot settle</h2>
 <p>The linked examples are historical teaching material. This page makes no claim that the projects are currently available, legally unchanged or commercially successful. Where the slides provide only a heading and external links, the implementation is <strong>not specified</strong>, rather than filled in with invented details.</p>
+</section>
+<section id="verstehen" class="level2">
+<h2 class="anchored" data-anchor-id="verstehen">Understanding pathway</h2>
+<p>These are <strong>own exercises</strong>, not official assignment tasks. Write your attempt before opening a hint or answer. Assess reasoning, units, interpretation and assumptions using the criteria; keyword matching does not demonstrate understanding.</p>
+<section id="rebuild-an-application-argument" class="level3">
+<h3 class="anchored" data-anchor-id="rebuild-an-application-argument">1. Rebuild an application argument</h3>
+<p><strong>Your attempt:</strong> For a shipment handover and a numbered art token, identify what is recorded, who needs to coordinate and one fact the record cannot establish alone. Explain fungibility without equating it with being digital.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>A record identity is not automatically a physical fact or a bundle of rights.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>A shipment history records attributed handover claims among supply-chain participants, but cannot alone prove correct physical labeling. A numbered token identifies a particular unit and transfer between participants; the token record alone does not establish the associated copyright or physical ownership. Fungibility concerns interchangeability within a class; both interchangeable credits and individually identified tokens can be digital. Exact implementations and rights require separate evidence and are not supplied by these examples.</p>
+<p><strong>Assessment:</strong> Shipment record/actors/limit, token record/actors/limit, interchangeability distinction, implementation/rights boundary: 1 point each (4).</p>
+</details>
+</section>
+<section id="calculate-remaining-input-errors" class="level3">
+<h3 class="anchored" data-anchor-id="calculate-remaining-input-errors">2. Calculate remaining input errors</h3>
+<p><strong>Your attempt:</strong> Own shipment-control case: 1,000 records contain 30 wrong product identifiers before review. A manual input check finds and corrects 24 of these; assume no new errors and no other incorrect inputs. All entries subsequently pass integrity and agreement checks. Calculate remaining errors, remaining error share and the share of original errors corrected.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>Use 1,000 for the record error share but 30 for correction coverage.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>Remaining errors: 30 − 24 = 6. Remaining error share: 6/1,000 = 0.6%. Original-error correction coverage: 24/30 = 80%. These are different denominators and neither proves perfect input. Successful integrity and agreement checks preserve agreement about the entered identifiers; they do not reduce the 6 physical-label errors by themselves. The assumed review identifies known errors perfectly; real review performance would need validation.</p>
+<p><strong>Assessment:</strong> 6 remaining, 0.6% with denominator, 80% with denominator, record/input distinction, review assumption: 1 point each (5).</p>
+</details>
+</section>
+<section id="diagnose-two-application-shortcuts" class="level3">
+<h3 class="anchored" data-anchor-id="diagnose-two-application-shortcuts">3. Diagnose two application shortcuts</h3>
+<p><strong>Your attempt:</strong> A proposal says: “A famous music platform uses blockchain, therefore our supply chain needs it. Selling a unique token automatically gives the buyer every right to the artwork.” Repair both claims and propose a comparison for the supply-chain decision.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>A named example is not a requirements analysis; uniqueness is not a complete rights description.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>A platform example establishes neither the same coordination problem nor superiority for a supply chain. Compare a shared-record architecture with a conventional database operated by an accepted party, using explicit needs for agreement, governance, input quality and operating effort. A unique token identifies a unit but does not specify every associated permission. Investigate the actual arrangement instead of inferring rights from the token label; this is an analytical boundary, not legal advice about any named sale.</p>
+<p><strong>Assessment:</strong> No inference across use cases, explicit alternative, relevant comparison criteria, token/rights distinction: 1 point each (4).</p>
+</details>
+</section>
+<section id="transfer-to-an-accepted-operator" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-to-an-accepted-operator">4. Transfer to an accepted operator</h3>
+<p><strong>Your attempt:</strong> The three shipment firms now all accept one neutral database operator and an audit process. They still need reliable product identifiers. Does blockchain become logically necessary? Explain what changes in the architecture comparison, what remains unchanged and what evidence could change your answer again.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>Remove the supposed coordination need before reusing the original recommendation.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>No logical necessity follows. An accepted operator makes a conventional shared database a plausible comparator; evaluate access, auditability, failure handling and cost rather than assuming the label decides. Incorrect physical input remains possible in either architecture, so identifier validation is still needed. If firms no longer accept the operator or have new agreement/governance requirements, reassess how each option meets them. That change does not automatically prove blockchain best: implementation, input controls and costs still require evidence. These are own design prompts, not implementation facts about the historical projects.</p>
+<p><strong>Assessment:</strong> No necessity, changed accepted-operator assumption, unchanged input problem, explicit reassessment trigger, conditional comparison with evidence: 1 point each (5).</p>
+</details>
+</section>
+<section id="error-reflection-and-delayed-retrieval" class="level3">
+<h3 class="anchored" data-anchor-id="error-reflection-and-delayed-retrieval">Error reflection and delayed retrieval</h3>
+<p>Maximum <strong>18 self-assessed points</strong> (4 + 5 + 4 + 5). Record one incorrect denominator, missing cost or unsupported causal link from your first attempt and correct its explanation. A correct label or final number without reasoning earns no reasoning credit. <strong>Tomorrow:</strong> reconstruct tasks 1 and 2 unaided. <strong>In one week:</strong> repeat the transfer with only 20 of the 30 incorrect inputs are found; recalculate the remaining error share.</p>
+</section>
 </section>
 <section id="abschnitt-6" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-6">Self-check (SC)</h2>
@@ -457,10 +541,11 @@ Show the reasoning
 <section id="section-to-source-mapping" class="level3">
 <h3 class="anchored" data-anchor-id="section-to-source-mapping">Section-to-source mapping</h3>
 <ul>
-<li>Application illustrations: vaccine passports → physical PDF p.&nbsp;20; supply chains → p.&nbsp;21; Audius → p.&nbsp;22; NFTs and art-sale example → pp.&nbsp;23–24.</li>
-<li>Record integrity, input reliability and shipment example → original analytical application of p.&nbsp;4 to p.&nbsp;21.</li>
-<li>Fungibility → p.&nbsp;23; rights boundary and collectible example → original interpretation, not a legal finding established by the slides.</li>
-<li>Self-check → pp.&nbsp;4, 21, 23–24.</li>
+<li><p>Application illustrations: vaccine passports → physical PDF p.&nbsp;20; supply chains → p.&nbsp;21; Audius → p.&nbsp;22; NFTs and art-sale example → pp.&nbsp;23–24.</p></li>
+<li><p>Record integrity, input reliability and shipment example → original analytical application of p.&nbsp;4 to p.&nbsp;21.</p></li>
+<li><p>Fungibility → p.&nbsp;23; rights boundary and collectible example → original interpretation, not a legal finding established by the slides.</p></li>
+<li><p>Self-check → pp.&nbsp;4, 21, 23–24.</p></li>
+<li><p>Understanding pathway → physical PDF pp.&nbsp;4 and 20–24 (record functions, application illustrations and fungibility). Input-error arithmetic, rights-analysis prompts and accepted-operator comparison are own exercises, not claims about actual project implementations or legal outcomes. Source reread 26 October 2026.</p></li>
 </ul>
 
 

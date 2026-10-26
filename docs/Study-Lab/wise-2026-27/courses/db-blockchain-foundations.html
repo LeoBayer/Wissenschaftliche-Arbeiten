@@ -362,6 +362,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#abschnitt-2" id="toc-abschnitt-2" class="nav-link" data-scroll-target="#abschnitt-2">Start with the record, not the coin</a></li>
   <li><a href="#abschnitt-3" id="toc-abschnitt-3" class="nav-link" data-scroll-target="#abschnitt-3">Original learning example: a delivery record</a></li>
   <li><a href="#abschnitt-4" id="toc-abschnitt-4" class="nav-link" data-scroll-target="#abschnitt-4">Bitcoin is one use case</a></li>
+  <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Understanding pathway</a>
+  <ul class="collapse">
+  <li><a href="#reconstruct-three-different-checks" id="toc-reconstruct-three-different-checks" class="nav-link" data-scroll-target="#reconstruct-three-different-checks">1. Reconstruct three different checks</a></li>
+  <li><a href="#audit-records-without-adding-incompatible-counts" id="toc-audit-records-without-adding-incompatible-counts" class="nav-link" data-scroll-target="#audit-records-without-adding-incompatible-counts">2. Audit records without adding incompatible counts</a></li>
+  <li><a href="#diagnose-an-overconfident-delivery-claim" id="toc-diagnose-an-overconfident-delivery-claim" class="nav-link" data-scroll-target="#diagnose-an-overconfident-delivery-claim">3. Diagnose an overconfident delivery claim</a></li>
+  <li><a href="#transfer-when-the-signing-key-is-misused" id="toc-transfer-when-the-signing-key-is-misused" class="nav-link" data-scroll-target="#transfer-when-the-signing-key-is-misused">4. Transfer when the signing key is misused</a></li>
+  <li><a href="#error-reflection-and-delayed-retrieval" id="toc-error-reflection-and-delayed-retrieval" class="nav-link" data-scroll-target="#error-reflection-and-delayed-retrieval">Error reflection and delayed retrieval</a></li>
+  </ul></li>
   <li><a href="#abschnitt-5" id="toc-abschnitt-5" class="nav-link" data-scroll-target="#abschnitt-5">Self-check (SC)</a></li>
   <li><a href="#related-study-pages" id="toc-related-study-pages" class="nav-link" data-scroll-target="#related-study-pages">Related study pages</a></li>
   <li><a href="#abschnitt-6" id="toc-abschnitt-6" class="nav-link" data-scroll-target="#abschnitt-6">Source and limits</a>
@@ -395,7 +403,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="On this page"><a href="#abschnitt-2">Start with the record, not the coin</a><a href="#abschnitt-5">Self-check (SC)</a><a href="#abschnitt-6">Source and limits</a></nav>
+<nav class="section-jumps" aria-label="On this page"><a href="#abschnitt-2">Start with the record, not the coin</a><a href="#verstehen">Understand and apply</a><a href="#abschnitt-5">Self-check (SC)</a><a href="#abschnitt-6">Source and limits</a></nav>
 <p><a href="../courses/digital-business.html">Digital Business overview</a></p>
 <section id="abschnitt-1" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-1">Learning goals</h2>
@@ -426,6 +434,82 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="abschnitt-4">Bitcoin is one use case</h2>
 <p>Bitcoin applies a blockchain to financial transaction records; it is not the definition of blockchain, and other cryptocurrencies also exist. In an exam explanation, first identify the record and the coordination problem, then name the application. “Blockchain means Bitcoin” reverses that relationship.</p>
 <p><strong>Scope boundary:</strong> an external video is assigned. The mechanisms in that video have not been independently processed here; this page does not claim to teach its full technical account.</p>
+</section>
+<section id="verstehen" class="level2">
+<h2 class="anchored" data-anchor-id="verstehen">Understanding pathway</h2>
+<p>These are <strong>own exercises</strong>, not official assignment tasks. Write your attempt before opening a hint or answer. Assess reasoning, units, interpretation and assumptions using the criteria; keyword matching does not demonstrate understanding.</p>
+<section id="reconstruct-three-different-checks" class="level3">
+<h3 class="anchored" data-anchor-id="reconstruct-three-different-checks">1. Reconstruct three different checks</h3>
+<p><strong>Your attempt:</strong> Without looking back, explain how hashes, signatures and consensus contribute to a delivery record. For each, state one conclusion that does not follow. Distinguish blockchain from Bitcoin.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>Data integrity, authorization and a shared history answer different questions.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>A hash-based integrity check can reveal inconsistency with the reference representation; it does not establish honest input. A valid signature links authorization to the relevant signing key; it does not prove physical arrival or that the key was used by its intended human. Consensus concerns agreement on the record; it does not independently inspect the parcel. Bitcoin is a financial-transaction application of blockchain, not its definition. No particular consensus algorithm is assumed here.</p>
+<p><strong>Assessment:</strong> Three function/limit pairs and technology/application distinction: 1 point each (4).</p>
+</details>
+</section>
+<section id="audit-records-without-adding-incompatible-counts" class="level3">
+<h3 class="anchored" data-anchor-id="audit-records-without-adding-incompatible-counts">2. Audit records without adding incompatible counts</h3>
+<p><strong>Your attempt:</strong> Own simplified audit: 120 entries include 8 with a failed integrity check, 5 lacking a required valid signature and 3 in both groups. All other entries pass these two checks; all 120 appear in the agreed history. Calculate how many fail at least one check and how many pass both. What follows about actual delivery?</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>Count the overlap once. Agreement on inclusion is not a substitute for either check.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>Failures in the union: 8 + 5 − 3 = 10 entries. Passing both: 120 − 10 = 110 entries, or 110/120 = 91.67% (rounded to two decimal places). These are audit counts under the stated criteria, not protocol security probabilities. Inclusion in an agreed history does not repair a failed check. Even 110 passing records do not prove 110 physical deliveries: external evidence remains necessary.</p>
+<p><strong>Assessment:</strong> Union with overlap, 110 complement, 91.67% with denominator, agreement boundary, physical-world boundary: 1 point each (5).</p>
+</details>
+</section>
+<section id="diagnose-an-overconfident-delivery-claim" class="level3">
+<h3 class="anchored" data-anchor-id="diagnose-an-overconfident-delivery-claim">3. Diagnose an overconfident delivery claim</h3>
+<p><strong>Your attempt:</strong> A report says: “The hash matches, so the supplier told the truth. A signature means every participant agrees. Agreement means the parcel arrived.” Repair each inference and name one additional check on physical delivery.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>Do not make one technical function perform all three tasks.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>Matching integrity evidence says nothing by itself about whether the original claim was honest. A signature addresses authorization using a key, not agreement among participants. Agreement concerns a common record, not independent verification of arrival. Compare an authorized receipt with shipment identifiers and an independently observed handover, while checking their reliability; these are own operational controls, not features proved by the lecture.</p>
+<p><strong>Assessment:</strong> Integrity/truth correction, signature/agreement correction, agreement/arrival correction, specific external check and its limit: 1 point each (4).</p>
+</details>
+</section>
+<section id="transfer-when-the-signing-key-is-misused" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-when-the-signing-key-is-misused">4. Transfer when the signing key is misused</h3>
+<p><strong>Your attempt:</strong> Own case: 12 records pass integrity checks, carry signatures valid under the registered supplier key and are accepted into the shared history. Independent investigation finds that an intruder used that key to enter one false delivery. Explain what each successful check still shows, what it cannot show and how the record could represent a correction without silently rewriting history.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>A valid key signature and an intended human author are not identical.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>Integrity can remain intact for all 12 stored claims. Signature verification can succeed for all 12 because the intruder used the registered key; it does not establish intended human consent. Agreement can include the false entry without verifying the parcel. Independent investigation identifies a physical-world/authorization failure, not necessarily an integrity failure. An own design response is to append a clearly linked correction and investigate key control; do not claim the original entry vanished or that this correction workflow is specified in the slides.</p>
+<p><strong>Assessment:</strong> Integrity result, key/human distinction, agreement boundary, external finding, append-only correction with design limit: 1 point each (5).</p>
+</details>
+</section>
+<section id="error-reflection-and-delayed-retrieval" class="level3">
+<h3 class="anchored" data-anchor-id="error-reflection-and-delayed-retrieval">Error reflection and delayed retrieval</h3>
+<p>Maximum <strong>18 self-assessed points</strong> (4 + 5 + 4 + 5). Record one incorrect denominator, missing cost or unsupported causal link from your first attempt and correct its explanation. A correct label or final number without reasoning earns no reasoning credit. <strong>Tomorrow:</strong> reconstruct tasks 1 and 2 unaided. <strong>In one week:</strong> repeat the transfer with two unsigned records rather than one; identify exactly which evidence changes.</p>
+</section>
 </section>
 <section id="abschnitt-5" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-5">Self-check (SC)</h2>
@@ -458,11 +542,12 @@ Show the reasoning
 <section id="section-to-source-mapping" class="level3">
 <h3 class="anchored" data-anchor-id="section-to-source-mapping">Section-to-source mapping</h3>
 <ul>
-<li>Record, cryptographic functions and participation rules → physical PDF p.&nbsp;4.</li>
-<li>Diagram → focused excerpt from p.&nbsp;4; slide attribution: Gensler (2018, MIT).</li>
-<li>Bitcoin versus blockchain → p.&nbsp;5.</li>
-<li>External-video scope boundary → p.&nbsp;6; video not independently processed.</li>
-<li>Delivery example and self-check → original application of the distinctions on pp.&nbsp;4–5.</li>
+<li><p>Record, cryptographic functions and participation rules → physical PDF p.&nbsp;4.</p></li>
+<li><p>Diagram → focused excerpt from p.&nbsp;4; slide attribution: Gensler (2018, MIT).</p></li>
+<li><p>Bitcoin versus blockchain → p.&nbsp;5.</p></li>
+<li><p>External-video scope boundary → p.&nbsp;6; video not independently processed.</p></li>
+<li><p>Delivery example and self-check → original application of the distinctions on pp.&nbsp;4–5.</p></li>
+<li><p>Understanding pathway → physical PDF pp.&nbsp;4–5 (integrity, consent, agreement, application distinction). Audit counts, misused-key scenario and correction workflow are own didactic cases, not slide data or a specified consensus/security protocol. Source reread 26 October 2026.</p></li>
 </ul>
 
 

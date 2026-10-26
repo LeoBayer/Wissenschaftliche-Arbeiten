@@ -363,6 +363,14 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#abschnitt-3" id="toc-abschnitt-3" class="nav-link" data-scroll-target="#abschnitt-3">Three criticisms, three different mechanisms</a></li>
   <li><a href="#abschnitt-4" id="toc-abschnitt-4" class="nav-link" data-scroll-target="#abschnitt-4">Tension inside the source: “immutable” is not an unconditional guarantee</a></li>
   <li><a href="#abschnitt-5" id="toc-abschnitt-5" class="nav-link" data-scroll-target="#abschnitt-5">Keep historical examples historical</a></li>
+  <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Understanding pathway</a>
+  <ul class="collapse">
+  <li><a href="#explain-the-dependency-being-exchanged" id="toc-explain-the-dependency-being-exchanged" class="nav-link" data-scroll-target="#explain-the-dependency-being-exchanged">1. Explain the dependency being exchanged</a></li>
+  <li><a href="#compare-two-hypothetical-cost-structures" id="toc-compare-two-hypothetical-cost-structures" class="nav-link" data-scroll-target="#compare-two-hypothetical-cost-structures">2. Compare two hypothetical cost structures</a></li>
+  <li><a href="#repair-a-universal-security-and-performance-claim" id="toc-repair-a-universal-security-and-performance-claim" class="nav-link" data-scroll-target="#repair-a-universal-security-and-performance-claim">3. Repair a universal security and performance claim</a></li>
+  <li><a href="#transfer-when-service-requirements-differ" id="toc-transfer-when-service-requirements-differ" class="nav-link" data-scroll-target="#transfer-when-service-requirements-differ">4. Transfer when service requirements differ</a></li>
+  <li><a href="#error-reflection-and-delayed-retrieval" id="toc-error-reflection-and-delayed-retrieval" class="nav-link" data-scroll-target="#error-reflection-and-delayed-retrieval">Error reflection and delayed retrieval</a></li>
+  </ul></li>
   <li><a href="#abschnitt-6" id="toc-abschnitt-6" class="nav-link" data-scroll-target="#abschnitt-6">Self-check (MC — select all correct answers)</a></li>
   <li><a href="#related-study-pages" id="toc-related-study-pages" class="nav-link" data-scroll-target="#related-study-pages">Related study pages</a></li>
   <li><a href="#abschnitt-7" id="toc-abschnitt-7" class="nav-link" data-scroll-target="#abschnitt-7">Source and limits</a>
@@ -396,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="On this page"><a href="#abschnitt-2">What is the proposed benefit?</a><a href="#abschnitt-4">Tension inside the source: “immutable” is not an unconditional guarantee</a><a href="#abschnitt-6">Self-check (MC — select all correct answers)</a><a href="#abschnitt-7">Source and limits</a></nav>
+<nav class="section-jumps" aria-label="On this page"><a href="#abschnitt-2">What is the proposed benefit?</a><a href="#verstehen">Understand and apply</a><a href="#abschnitt-4">Tension inside the source: “immutable” is not an unconditional guarantee</a><a href="#abschnitt-6">Self-check (MC — select all correct answers)</a><a href="#abschnitt-7">Source and limits</a></nav>
 <p><a href="../courses/digital-business.html">Digital Business overview</a></p>
 <section id="abschnitt-1" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-1">Learning goals</h2>
@@ -422,6 +430,82 @@ ul.task-list li input[type="checkbox"] {
 <section id="abschnitt-5" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-5">Keep historical examples historical</h2>
 <p>The historical examples juxtapose optimistic and pessimistic material, including examples dated 2021. The pizza valuation and the payment-system comparison illustrate arguments in the deck. They are not updated here and should not be cited as today’s prices, throughput, fees or legal status. The source’s expectation of further technological evolution is likewise a lecture conclusion, not proof that a named alternative currently meets every requirement.</p>
+</section>
+<section id="verstehen" class="level2">
+<h2 class="anchored" data-anchor-id="verstehen">Understanding pathway</h2>
+<p>These are <strong>own exercises</strong>, not official assignment tasks. Write your attempt before opening a hint or answer. Assess reasoning, units, interpretation and assumptions using the criteria; keyword matching does not demonstrate understanding.</p>
+<section id="explain-the-dependency-being-exchanged" class="level3">
+<h3 class="anchored" data-anchor-id="explain-the-dependency-being-exchanged">1. Explain the dependency being exchanged</h3>
+<p><strong>Your attempt:</strong> Reconstruct the proposed benefit of disintermediation and the associated coordination trade-off. Distinguish energy, payment performance and willingness to spend as three different criticisms.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>Name a dependency first, then a mechanism and a cost; do not use efficient as an all-purpose label.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>Peer-to-peer coordination aims to reduce dependence on a central intermediary or authority, but agreement among distributed participants can be costly. The energy criticism is tied to Bitcoin’s Proof of Work mechanism. Processing capacity, time and transaction costs concern payment performance. Expected appreciation can discourage spending, a motivational argument rather than proof of zero payment use. None of these claims establishes identical properties for every blockchain.</p>
+<p><strong>Assessment:</strong> Dependency/coordination trade-off, energy mechanism, performance distinction, spending incentive with scope limit: 1 point each (4).</p>
+</details>
+</section>
+<section id="compare-two-hypothetical-cost-structures" class="level3">
+<h3 class="anchored" data-anchor-id="compare-two-hypothetical-cost-structures">2. Compare two hypothetical cost structures</h3>
+<p><strong>Your attempt:</strong> Own architecture exercise, not Bitcoin measurements: option C costs 300 units/month plus 0.20 units/transaction; option D costs 100 units/month plus 0.70 units/transaction. For 1,000 transactions calculate both totals and the equality volume. Assume linear costs, identical service and no omitted costs.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>Separate fixed monthly costs from per-transaction rates; these assumed labels do not prove either option decentralized.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>C: 300 + 0.20 × 1,000 = 500 units/month. D: 100 + 0.70 × 1,000 = 800 units/month. Equality: 300 + 0.20q = 100 + 0.70q, so q = 400 transactions/month and both totals are 380 units/month. Above 400 C is cheaper in this model; below 400 D is cheaper. Cost alone neither measures decentralization nor establishes actual network performance or equal service.</p>
+<p><strong>Assessment:</strong> 500, 800, equality equation/400 with unit, above/below interpretation, equal-service/empirical boundary: 1 point each (5).</p>
+</details>
+</section>
+<section id="repair-a-universal-security-and-performance-claim" class="level3">
+<h3 class="anchored" data-anchor-id="repair-a-universal-security-and-performance-claim">3. Repair a universal security and performance claim</h3>
+<p><strong>Your attempt:</strong> “The source calls Bitcoin immutable, so no attack can ever alter any blockchain. Its historical fee chart also proves that our transaction today costs the same.” Identify the missing conditions and formulate a defensible answer without inventing a current benchmark.</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>A qualified mechanism claim and a dated observation cannot support universal guarantees.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>The source contains a tension between tamper resistance and absolute-sounding language alongside a computing-power condition. Retain the condition and avoid deriving a universal attack threshold for all architectures. Bitcoin-specific discussion cannot establish every blockchain’s security. A dated fee chart illustrates a past situation, not today’s price or processing time. A defensible current comparison would require dated, comparable measurements for the actual service requirements; none are supplied here.</p>
+<p><strong>Assessment:</strong> Source condition/tension, no universal attack model, dated/current distinction, relevant evidence requirement: 1 point each (4).</p>
+</details>
+</section>
+<section id="transfer-when-service-requirements-differ" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-when-service-requirements-differ">4. Transfer when service requirements differ</h3>
+<p><strong>Your attempt:</strong> Keep the cost model above at 1,000 transactions. A hypothetical pilot measures C at 2 seconds and D at 8 seconds per transaction under the same specified load; the service requires at most 3 seconds. Evaluate feasibility and cost, then change the requirement to 10 seconds. Do the latency figures establish monthly capacity?</p>
+<details>
+<summary>
+Optional hint
+</summary>
+<p>A cheaper option and a feasible option are separate conclusions. A latency is not automatically a throughput.</p>
+</details>
+<details>
+<summary>
+Complete worked answer and criteria
+</summary>
+<p>At the assumed load C meets 3 seconds and D does not. C also costs 500 versus 800 units/month. At a 10-second limit both meet the latency requirement, but C remains cheaper at this volume; preference could still depend on governance and other explicit requirements. The given latencies alone do not determine transactions per second or sustained capacity: concurrency, queues and load conditions are missing. These are invented pilot figures, not current Bitcoin data, and averages alone would not guarantee every transaction meets a deadline.</p>
+<p><strong>Assessment:</strong> 3-second feasibility, monthly cost comparison, changed 10-second feasibility, latency/throughput distinction, pilot/generalization boundary: 1 point each (5).</p>
+</details>
+</section>
+<section id="error-reflection-and-delayed-retrieval" class="level3">
+<h3 class="anchored" data-anchor-id="error-reflection-and-delayed-retrieval">Error reflection and delayed retrieval</h3>
+<p>Maximum <strong>18 self-assessed points</strong> (4 + 5 + 4 + 5). Record one incorrect denominator, missing cost or unsupported causal link from your first attempt and correct its explanation. A correct label or final number without reasoning earns no reasoning credit. <strong>Tomorrow:</strong> reconstruct tasks 1 and 2 unaided. <strong>In one week:</strong> repeat the transfer with a coordination cost of 0.50 per transaction; recalculate the volume threshold.</p>
+</section>
 </section>
 <section id="abschnitt-6" class="level2">
 <h2 class="anchored" data-anchor-id="abschnitt-6">Self-check (MC — select all correct answers)</h2>
@@ -455,11 +539,12 @@ Show the reasoning
 <section id="section-to-source-mapping" class="level3">
 <h3 class="anchored" data-anchor-id="section-to-source-mapping">Section-to-source mapping</h3>
 <ul>
-<li>Disintermediation and decentralization promises → physical PDF p.&nbsp;8; efficiency trade-off → p.&nbsp;18.</li>
-<li>Energy, processing and investment criticisms → pp.&nbsp;13–15 respectively.</li>
-<li>Security-language tension → pp.&nbsp;4, 8; technology/application distinction → pp.&nbsp;4–5.</li>
-<li>Historical optimistic/pessimistic examples → pp.&nbsp;9–17; evolution expectation → p.&nbsp;18.</li>
-<li>Self-check reasoning → pp.&nbsp;4–5, 13–14, 18.</li>
+<li><p>Disintermediation and decentralization promises → physical PDF p.&nbsp;8; efficiency trade-off → p.&nbsp;18.</p></li>
+<li><p>Energy, processing and investment criticisms → pp.&nbsp;13–15 respectively.</p></li>
+<li><p>Security-language tension → pp.&nbsp;4, 8; technology/application distinction → pp.&nbsp;4–5.</p></li>
+<li><p>Historical optimistic/pessimistic examples → pp.&nbsp;9–17; evolution expectation → p.&nbsp;18.</p></li>
+<li><p>Self-check reasoning → pp.&nbsp;4–5, 13–14, 18.</p></li>
+<li><p>Understanding pathway → physical PDF pp.&nbsp;4–5, 8, 13–15 and 18 (scope, security-language tension, criticisms and coordination trade-off). Linear costs and pilot latencies are own hypothetical figures, not current Bitcoin benchmarks or investment predictions. Source reread 26 October 2026.</p></li>
 </ul>
 
 
