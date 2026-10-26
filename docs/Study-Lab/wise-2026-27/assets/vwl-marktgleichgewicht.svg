@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" role="img">
+<rect width="600" height="420" fill="#fff"/>
+<g font-family="sans-serif" font-size="28" fill="#172b4d">
+<path d="M80 30V340H565" fill="none" stroke="#172b4d" stroke-width="2"/>
+<text x="85" y="25">Preis (€/Stück)</text>
+<text x="230" y="405">Menge (Stück/Tag)</text>
+<text x="72" y="370">0</text>
+<text x="200" y="370">4</text>
+<text x="328" y="370">8</text>
+<text x="456" y="370">12</text>
+<text x="48" y="283">1</text>
+<text x="48" y="218">2</text>
+<text x="48" y="153">3</text>
+<text x="48" y="88">4</text>
+<path d="M80 340L368 47.5" fill="none" stroke="#9d3600" stroke-width="4" stroke-dasharray=""/>
+<path d="M176 47.5L464 340" fill="none" stroke="#005a9c" stroke-width="4" stroke-dasharray=""/>
+<path d="M80 145H272V340" fill="none" stroke="#46556b" stroke-dasharray="5 5"/>
+<circle cx="272" cy="145" r="6" fill="#172b4d"/>
+<text x="310" y="140">G (6; 3)</text>
+<text x="400" y="80" fill="#9d3600">S</text>
+<text x="420" y="300" fill="#005a9c">D</text>
+</g></svg>
