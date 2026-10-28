@@ -388,7 +388,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Stand: 27.10.2026 19:01</p>
+<p>Stand: 28.10.2026 13:01</p>
 <p>Die Links führen zu den Originalen in Learnweb und erfordern deinen Hochschulzugang. Die Materialübersicht ist noch keine fachlich geprüfte Zusammenfassung.</p>
 <section id="controlling" class="level2">
 <h2 class="anchored" data-anchor-id="controlling">Controlling</h2>
@@ -402,6 +402,7 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193367">Controlling VL2_ohneVideo.pdf</a></li>
 <li><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193368">Controlling VL3.pdf</a></li>
 <li><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193369">Controlling VL4.pdf</a></li>
+<li><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193370">Controlling VL5.pdf</a></li>
 <li><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193402">Controlling_Tutorium 1.pdf</a></li>
 <li><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193404">Controlling_Tutorium 2.pdf</a></li>
 <li><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4193406">Controlling_Tutorium 3.pdf</a></li>
@@ -505,6 +506,52 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <script>
+// Shared number controls: theme-aware, including dynamically added exercises.
+(() => {
+  function enhanceNumbers(root = document) {
+    root.querySelectorAll('input[type="number"]').forEach((input) => {
+      if (input.closest('.study-number-control') || input.step === 'any') return;
+      const english = (input.closest('[lang]')?.lang || document.documentElement.lang).toLowerCase().startsWith('en');
+      const wrapper = document.createElement('span');
+      wrapper.className = 'study-number-control';
+      input.before(wrapper);
+      wrapper.append(input);
+      const controls = document.createElement('span');
+      controls.className = 'study-number-buttons';
+      for (const [direction, label, points] of [
+        [1, english ? 'Increase value' : 'Wert erhöhen', '5 14 12 7 19 14'],
+        [-1, english ? 'Decrease value' : 'Wert verringern', '5 10 12 17 19 10']
+      ]) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'study-number-step';
+        button.setAttribute('aria-label', label);
+        button.title = label;
+        button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="${points}" /></svg>`;
+        button.disabled = input.disabled || input.readOnly;
+        new MutationObserver(() => { button.disabled = input.disabled || input.readOnly; })
+          .observe(input, { attributes: true, attributeFilter: ['disabled', 'readonly'] });
+        button.addEventListener('click', () => {
+          if (input.disabled || input.readOnly) return;
+          direction > 0 ? input.stepUp() : input.stepDown();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+        controls.append(button);
+      }
+      wrapper.append(controls);
+    });
+  }
+  function init() {
+    enhanceNumbers();
+    new MutationObserver((records) => {
+      if (records.some((record) => record.addedNodes.length)) enhanceNumbers();
+    }).observe(document.body, { childList: true, subtree: true });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
 document.addEventListener("click", (event) => {
   const button = event.target.closest(".check-answer");
   if (!button) return;
@@ -1150,51 +1197,4 @@ document.addEventListener("click", (event) => {
 
 
 
-<script>
-// Shared number controls: theme-aware, including dynamically added exercises.
-(() => {
-  function enhanceNumbers(root = document) {
-    root.querySelectorAll('input[type="number"]').forEach((input) => {
-      if (input.closest('.study-number-control') || input.step === 'any') return;
-      const english = (input.closest('[lang]')?.lang || document.documentElement.lang).toLowerCase().startsWith('en');
-      const wrapper = document.createElement('span');
-      wrapper.className = 'study-number-control';
-      input.before(wrapper);
-      wrapper.append(input);
-      const controls = document.createElement('span');
-      controls.className = 'study-number-buttons';
-      for (const [direction, label, points] of [
-        [1, english ? 'Increase value' : 'Wert erhöhen', '5 14 12 7 19 14'],
-        [-1, english ? 'Decrease value' : 'Wert verringern', '5 10 12 17 19 10']
-      ]) {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'study-number-step';
-        button.setAttribute('aria-label', label);
-        button.title = label;
-        button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="${points}" /></svg>`;
-        button.disabled = input.disabled || input.readOnly;
-        new MutationObserver(() => { button.disabled = input.disabled || input.readOnly; })
-          .observe(input, { attributes: true, attributeFilter: ['disabled', 'readonly'] });
-        button.addEventListener('click', () => {
-          if (input.disabled || input.readOnly) return;
-          direction > 0 ? input.stepUp() : input.stepDown();
-          input.dispatchEvent(new Event('input', { bubbles: true }));
-          input.dispatchEvent(new Event('change', { bubbles: true }));
-        });
-        controls.append(button);
-      }
-      wrapper.append(controls);
-    });
-  }
-  function init() {
-    enhanceNumbers();
-    new MutationObserver((records) => {
-      if (records.some((record) => record.addedNodes.length)) enhanceNumbers();
-    }).observe(document.body, { childList: true, subtree: true });
-  }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
-  else init();
-})();
-</script>
 </body></html>
