@@ -1,0 +1,88 @@
+/* Shared number steppers: use for every current and future number field. */
+.study-number-control {
+  display: inline-flex;
+  align-items: stretch;
+  max-width: 24rem;
+  width: 100%;
+  vertical-align: middle;
+}
+.study-number-control input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  background: var(--study-soft);
+  color: var(--study-ink);
+  border: 1px solid var(--study-line);
+  border-radius: 6px;
+  margin: 0;
+  min-width: 0;
+  flex: 1;
+  width: 100%;
+  padding: 0.55rem 1.5rem 0.55rem 0.7rem;
+}
+.study-number-control input::-webkit-inner-spin-button,
+.study-number-control input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.study-number-buttons {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 1rem;
+  align-self: center;
+  height: 1.75rem;
+  margin-left: -1.25rem;
+  margin-right: 0.25rem;
+  position: relative;
+}
+.study-number-control .study-number-step {
+  display: grid;
+  place-items: center;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--study-accent);
+  border-radius: 3px 3px 0 0;
+  background: color-mix(in srgb, var(--study-accent) 14%, var(--study-panel));
+  color: var(--study-accent-strong);
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.study-number-control .study-number-step + .study-number-step {
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+}
+.study-number-control .study-number-step:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--study-accent) 26%, var(--study-panel));
+}
+.study-number-control .study-number-step:active:not(:disabled) {
+  background: color-mix(in srgb, var(--study-accent) 36%, var(--study-panel));
+}
+.study-number-control .study-number-step:focus-visible {
+  position: relative;
+  z-index: 1;
+  outline: 3px solid var(--study-accent-strong);
+  outline-offset: 2px;
+}
+.study-number-control .study-number-step:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.study-number-step svg {
+  width: 0.6rem;
+  height: 0.6rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+@media (forced-colors: active) {
+  .study-number-control .study-number-step {
+    border-color: ButtonText;
+    color: ButtonText;
+    background: ButtonFace;
+  }
+}
