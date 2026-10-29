@@ -964,3 +964,11 @@ body.quarto-dark .feedback-builder button,
 .forecast-quality-sheet .calc-table { width: 1880px !important; min-width: 1880px !important; }
 .forecast-ses-sheet .calc-table tbody th,
 .forecast-quality-sheet .calc-table tbody th { width: auto; }
+
+/* Tutorium 2: narrow identifier columns; preserve the source-table sequence. */
+.om-tutor2-sheet .calc-table tbody th { width: auto; }
+.om-tutor2-ses .calc-table { width: 1930px !important; min-width: 1930px !important; }
+.om-tutor2-des .calc-table { width: 1090px !important; min-width: 1090px !important; }
+.om-tutor2-sheet .calc-table thead th:first-child { width: 90px; }
+.om-tutor2-sheet .calc-table thead th:nth-child(2) { width: 160px; }
+.om-tutor2-sheet .calc-table thead th:nth-child(n+3) { width: 280px; }

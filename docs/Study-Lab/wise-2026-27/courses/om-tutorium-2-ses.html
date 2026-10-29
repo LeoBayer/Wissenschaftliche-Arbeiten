@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Tutorium 2: α fair auswählen – WiSe 2026/27 Study Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0c7f97109e616cbba0e364631cea135d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1c200c6cb5dc67f4915747dbf747a44a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-0c7f97109e616cbba0e364631cea135d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../number-controls-20261028-slim.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Study Lab
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Study Lab</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cockpit · Kurse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materialien</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Aktuelle Kurse</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/controlling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Controlling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/digital-business.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Digital Business</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/it-driven-innovation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IT-driven Innovation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/operations-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Operations Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/vwl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VWL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Üben</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../feedback.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feedback</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#mechanism" id="toc-mechanism" class="nav-link active" data-scroll-target="#mechanism">Mechanismus verstehen</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Beispiel selbst durchrechnen</a></li>
+  <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Verständnislernstrecke</a>
+  <ul class="collapse">
+  <li><a href="#vergleichsbedingungen-rekonstruieren" id="toc-vergleichsbedingungen-rekonstruieren" class="nav-link" data-scroll-target="#vergleichsbedingungen-rekonstruieren">1. Vergleichsbedingungen rekonstruieren</a></li>
+  <li><a href="#einen-unabhängigen-fall-rechnen" id="toc-einen-unabhängigen-fall-rechnen" class="nav-link" data-scroll-target="#einen-unabhängigen-fall-rechnen">2. Einen unabhängigen Fall rechnen</a></li>
+  <li><a href="#eine-perfekte-anpassung-entlarven" id="toc-eine-perfekte-anpassung-entlarven" class="nav-link" data-scroll-target="#eine-perfekte-anpassung-entlarven">3. Eine perfekte Anpassung entlarven</a></li>
+  <li><a href="#transfer-startphase-ausklammern" id="toc-transfer-startphase-ausklammern" class="nav-link" data-scroll-target="#transfer-startphase-ausklammern">4. Transfer: Startphase ausklammern</a></li>
+  <li><a href="#fehlerreflexion-und-verzögerte-wiederholung" id="toc-fehlerreflexion-und-verzögerte-wiederholung" class="nav-link" data-scroll-target="#fehlerreflexion-und-verzögerte-wiederholung">Fehlerreflexion und verzögerte Wiederholung</a></li>
+  </ul></li>
+  <li><a href="#self-check" id="toc-self-check" class="nav-link" data-scroll-target="#self-check">Ergänzender Selbstcheck</a></li>
+  <li><a href="#verwandte-lernseiten" id="toc-verwandte-lernseiten" class="nav-link" data-scroll-target="#verwandte-lernseiten">Verwandte Lernseiten</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Quellen und Abgrenzung</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Tutorium 2: α fair auswählen</h1>
+<p class="subtitle lead">Operations Management · Kurs 95860 · WiSe 2026/27</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#mechanism">Mechanismus</a><a href="#example">Beispiel</a><a href="#verstehen">Verstehen und anwenden</a><a href="#self-check">Selbstcheck</a><a href="#sources">Quellen</a></nav>
+<p><a href="../courses/operations-management.html#tutorium2">Zur OM-Kursübersicht</a></p>
+<section id="mechanism" class="level2">
+<h2 class="anchored" data-anchor-id="mechanism">Mechanismus verstehen</h2>
+<p>Eine Niveauprognose wird mit F(t+1) = α y(t) + (1−α) F(t) aktualisiert. Ein größeres α reagiert stärker auf die neue Nachfrage, ist aber nicht automatisch genauer. Um α zu wählen, müssen <strong>dieselben Zielperioden, derselbe Startwert und dieselbe Fehlerdefinition</strong> verglichen werden. Hier gilt ε(t) = F(t) − y(t), MSE = Summe ε² / Anzahl der bewerteten Perioden. Der MSE hat die Einheit Stück², nicht Stück.</p>
+<p>Die Originalaufgabe setzt F1 = 159,5 Stück, den Mittelwert von y1 bis y4, und bewertet t = 2 bis 10. Das sind neun Fehler. Diese Anfangsprognosen sind <strong>retrospektiv initialisiert</strong>: Vor Periode 1 wären y2 bis y4 noch unbekannt. Wir rechnen die Aufgabenfestlegung nach, ohne sie als historische Echtzeitvalidierung auszugeben. Ein späterer Einsatz braucht einen zeitlich verfügbaren Startwert und eine getrennte Überprüfung.</p>
+<p>Ein MSE-Minimum unter drei geprüften Kandidaten ist nur die beste Auswahl in diesem Vergleich, kein mathematisch globales Optimum und keine garantierte Zukunftsleistung.</p>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Beispiel selbst durchrechnen</h2>
+<p><strong>Originaldaten, eigene Lösung:</strong> Nachfrage 154, 170, 155, 159, 178, 181, 164, 157, 168, 183 Stück. Bei α = 0,2 folgt F2 = 0,2 × 154 + 0,8 × 159,5 = 158,4 Stück. Für Periode 2 entsteht (158,4 − 170)² = 134,56 Stück². Erst danach verarbeitet das Update die 170 Stück zu F3 = 160,72 Stück. F3 statt F2 mit y2 zu vergleichen würde bereits aktualisiertes Wissen verwenden.</p>
+<section class="calc-sheet bank-calc-sheet om-tutor2-sheet om-tutor2-ses" aria-labelledby="t2-title"><h3 id="t2-title" class="anchored">Tutorium 2 · Aufgabe 4 · α vergleichen</h3><p>Erst selbst rechnen, dann alle Felder prüfen. Ergebnisfelder bleiben anfangs leer; gegebene Daten stehen fest. Zwei Dezimalstellen, deutsches Zahlenformat, z. B. 159,50. Mit ungerundeten Zwischenwerten weiterrechnen. i zeigt nach der Prüfung Formel, eingesetzte Werte und Erklärung. Eigene Eingaben werden nicht überschrieben; Änderungen erfordern eine neue Prüfung.</p><div class="calc-table-scroll" role="region" tabindex="0" aria-label="Rechentabelle, intern horizontal verschiebbar">
+<table class="calc-table caption-top table">
+<caption>Tutorium 2 · Aufgabe 4 · α vergleichen</caption>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">t</th>
+<th data-quarto-table-cell-role="th" scope="col">y(t), Stück</th>
+<th data-quarto-table-cell-role="th" scope="col">F(t), α=0,1, Stück</th>
+<th data-quarto-table-cell-role="th" scope="col">ε², α=0,1, Stück²</th>
+<th data-quarto-table-cell-role="th" scope="col">F(t), α=0,2, Stück</th>
+<th data-quarto-table-cell-role="th" scope="col">ε², α=0,2, Stück²</th>
+<th data-quarto-table-cell-role="th" scope="col">F(t), α=0,3, Stück</th>
+<th data-quarto-table-cell-role="th" scope="col">ε², α=0,3, Stück²</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">1</th>
+<td>154</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-0">F1 , Ergebnis</label><input id="t2-0" type="text" inputmode="decimal" autocomplete="off" data-target="159.5" data-tolerance="0.005" aria-describedby="t2-0-state"><span id="t2-0-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-0">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F1 = vorgegebener Startwert = 159,50 Stück.</p>
+</details>
+</div></td>
+<td>– (nicht im MSE)</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-1">F1 , Ergebnis</label><input id="t2-1" type="text" inputmode="decimal" autocomplete="off" data-target="159.5" data-tolerance="0.005" aria-describedby="t2-1-state"><span id="t2-1-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-1">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F1 = vorgegebener Startwert = 159,50 Stück.</p>
+</details>
+</div></td>
+<td>– (nicht im MSE)</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-2">F1 , Ergebnis</label><input id="t2-2" type="text" inputmode="decimal" autocomplete="off" data-target="159.5" data-tolerance="0.005" aria-describedby="t2-2-state"><span id="t2-2-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-2">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F1 = vorgegebener Startwert = 159,50 Stück.</p>
+</details>
+</div></td>
+<td>– (nicht im MSE)</td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">2</th>
+<td>170</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-3">F2 , Ergebnis</label><input id="t2-3" type="text" inputmode="decimal" autocomplete="off" data-target="158.95" data-tolerance="0.005" aria-describedby="t2-3-state"><span id="t2-3-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-3">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F2 = 0,10 × 154,00 + 0,90 × 159,50 = 158,95 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-4">ε2² , Ergebnis</label><input id="t2-4" type="text" inputmode="decimal" autocomplete="off" data-target="122.1025" data-tolerance="0.005" aria-describedby="t2-4-state"><span id="t2-4-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-4">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε2² = (F2 − y2)² = (158,95 − 170)² = 122,10 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-5">F2 , Ergebnis</label><input id="t2-5" type="text" inputmode="decimal" autocomplete="off" data-target="158.40" data-tolerance="0.005" aria-describedby="t2-5-state"><span id="t2-5-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-5">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F2 = 0,20 × 154,00 + 0,80 × 159,50 = 158,40 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-6">ε2² , Ergebnis</label><input id="t2-6" type="text" inputmode="decimal" autocomplete="off" data-target="134.5600" data-tolerance="0.005" aria-describedby="t2-6-state"><span id="t2-6-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-6">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε2² = (F2 − y2)² = (158,40 − 170)² = 134,56 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-7">F2 , Ergebnis</label><input id="t2-7" type="text" inputmode="decimal" autocomplete="off" data-target="157.85" data-tolerance="0.005" aria-describedby="t2-7-state"><span id="t2-7-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-7">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F2 = 0,30 × 154,00 + 0,70 × 159,50 = 157,85 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-8">ε2² , Ergebnis</label><input id="t2-8" type="text" inputmode="decimal" autocomplete="off" data-target="147.6225" data-tolerance="0.005" aria-describedby="t2-8-state"><span id="t2-8-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-8">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε2² = (F2 − y2)² = (157,85 − 170)² = 147,62 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">3</th>
+<td>155</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-9">F3 , Ergebnis</label><input id="t2-9" type="text" inputmode="decimal" autocomplete="off" data-target="160.055" data-tolerance="0.005" aria-describedby="t2-9-state"><span id="t2-9-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-9">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F3 = 0,10 × 170,00 + 0,90 × 158,95 = 160,06 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-10">ε3² , Ergebnis</label><input id="t2-10" type="text" inputmode="decimal" autocomplete="off" data-target="25.553025" data-tolerance="0.005" aria-describedby="t2-10-state"><span id="t2-10-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-10">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε3² = (F3 − y3)² = (160,06 − 155)² = 25,55 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-11">F3 , Ergebnis</label><input id="t2-11" type="text" inputmode="decimal" autocomplete="off" data-target="160.720" data-tolerance="0.005" aria-describedby="t2-11-state"><span id="t2-11-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-11">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F3 = 0,20 × 170,00 + 0,80 × 158,40 = 160,72 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-12">ε3² , Ergebnis</label><input id="t2-12" type="text" inputmode="decimal" autocomplete="off" data-target="32.718400" data-tolerance="0.005" aria-describedby="t2-12-state"><span id="t2-12-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-12">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε3² = (F3 − y3)² = (160,72 − 155)² = 32,72 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-13">F3 , Ergebnis</label><input id="t2-13" type="text" inputmode="decimal" autocomplete="off" data-target="161.495" data-tolerance="0.005" aria-describedby="t2-13-state"><span id="t2-13-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-13">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F3 = 0,30 × 170,00 + 0,70 × 157,85 = 161,50 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-14">ε3² , Ergebnis</label><input id="t2-14" type="text" inputmode="decimal" autocomplete="off" data-target="42.185025" data-tolerance="0.005" aria-describedby="t2-14-state"><span id="t2-14-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-14">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε3² = (F3 − y3)² = (161,50 − 155)² = 42,19 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">4</th>
+<td>159</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-15">F4 , Ergebnis</label><input id="t2-15" type="text" inputmode="decimal" autocomplete="off" data-target="159.5495" data-tolerance="0.005" aria-describedby="t2-15-state"><span id="t2-15-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-15">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F4 = 0,10 × 155,00 + 0,90 × 160,06 = 159,55 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-16">ε4² , Ergebnis</label><input id="t2-16" type="text" inputmode="decimal" autocomplete="off" data-target="0.30195025" data-tolerance="0.005" aria-describedby="t2-16-state"><span id="t2-16-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-16">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε4² = (F4 − y4)² = (159,55 − 159)² = 0,30 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-17">F4 , Ergebnis</label><input id="t2-17" type="text" inputmode="decimal" autocomplete="off" data-target="159.5760" data-tolerance="0.005" aria-describedby="t2-17-state"><span id="t2-17-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-17">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F4 = 0,20 × 155,00 + 0,80 × 160,72 = 159,58 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-18">ε4² , Ergebnis</label><input id="t2-18" type="text" inputmode="decimal" autocomplete="off" data-target="0.33177600" data-tolerance="0.005" aria-describedby="t2-18-state"><span id="t2-18-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-18">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε4² = (F4 − y4)² = (159,58 − 159)² = 0,33 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-19">F4 , Ergebnis</label><input id="t2-19" type="text" inputmode="decimal" autocomplete="off" data-target="159.5465" data-tolerance="0.005" aria-describedby="t2-19-state"><span id="t2-19-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-19">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F4 = 0,30 × 155,00 + 0,70 × 161,50 = 159,55 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-20">ε4² , Ergebnis</label><input id="t2-20" type="text" inputmode="decimal" autocomplete="off" data-target="0.29866225" data-tolerance="0.005" aria-describedby="t2-20-state"><span id="t2-20-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-20">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε4² = (F4 − y4)² = (159,55 − 159)² = 0,30 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">5</th>
+<td>178</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-21">F5 , Ergebnis</label><input id="t2-21" type="text" inputmode="decimal" autocomplete="off" data-target="159.49455" data-tolerance="0.005" aria-describedby="t2-21-state"><span id="t2-21-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-21">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F5 = 0,10 × 159,00 + 0,90 × 159,55 = 159,49 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-22">ε5² , Ergebnis</label><input id="t2-22" type="text" inputmode="decimal" autocomplete="off" data-target="342.4516797025" data-tolerance="0.005" aria-describedby="t2-22-state"><span id="t2-22-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-22">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε5² = (F5 − y5)² = (159,49 − 178)² = 342,45 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-23">F5 , Ergebnis</label><input id="t2-23" type="text" inputmode="decimal" autocomplete="off" data-target="159.46080" data-tolerance="0.005" aria-describedby="t2-23-state"><span id="t2-23-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-23">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F5 = 0,20 × 159,00 + 0,80 × 159,58 = 159,46 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-24">ε5² , Ergebnis</label><input id="t2-24" type="text" inputmode="decimal" autocomplete="off" data-target="343.7019366400" data-tolerance="0.005" aria-describedby="t2-24-state"><span id="t2-24-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-24">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε5² = (F5 − y5)² = (159,46 − 178)² = 343,70 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-25">F5 , Ergebnis</label><input id="t2-25" type="text" inputmode="decimal" autocomplete="off" data-target="159.38255" data-tolerance="0.005" aria-describedby="t2-25-state"><span id="t2-25-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-25">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F5 = 0,30 × 159,00 + 0,70 × 159,55 = 159,38 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-26">ε5² , Ergebnis</label><input id="t2-26" type="text" inputmode="decimal" autocomplete="off" data-target="346.6094445025" data-tolerance="0.005" aria-describedby="t2-26-state"><span id="t2-26-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-26">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε5² = (F5 − y5)² = (159,38 − 178)² = 346,61 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">6</th>
+<td>181</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-27">F6 , Ergebnis</label><input id="t2-27" type="text" inputmode="decimal" autocomplete="off" data-target="161.345095" data-tolerance="0.005" aria-describedby="t2-27-state"><span id="t2-27-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-27">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F6 = 0,10 × 178,00 + 0,90 × 159,49 = 161,35 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-28">ε6² , Ergebnis</label><input id="t2-28" type="text" inputmode="decimal" autocomplete="off" data-target="386.315290559025" data-tolerance="0.005" aria-describedby="t2-28-state"><span id="t2-28-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-28">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε6² = (F6 − y6)² = (161,35 − 181)² = 386,32 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-29">F6 , Ergebnis</label><input id="t2-29" type="text" inputmode="decimal" autocomplete="off" data-target="163.168640" data-tolerance="0.005" aria-describedby="t2-29-state"><span id="t2-29-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-29">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F6 = 0,20 × 178,00 + 0,80 × 159,46 = 163,17 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-30">ε6² , Ergebnis</label><input id="t2-30" type="text" inputmode="decimal" autocomplete="off" data-target="317.957399449600" data-tolerance="0.005" aria-describedby="t2-30-state"><span id="t2-30-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-30">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε6² = (F6 − y6)² = (163,17 − 181)² = 317,96 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-31">F6 , Ergebnis</label><input id="t2-31" type="text" inputmode="decimal" autocomplete="off" data-target="164.967785" data-tolerance="0.005" aria-describedby="t2-31-state"><span id="t2-31-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-31">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F6 = 0,30 × 178,00 + 0,70 × 159,38 = 164,97 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-32">ε6² , Ergebnis</label><input id="t2-32" type="text" inputmode="decimal" autocomplete="off" data-target="257.031917806225" data-tolerance="0.005" aria-describedby="t2-32-state"><span id="t2-32-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-32">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε6² = (F6 − y6)² = (164,97 − 181)² = 257,03 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">7</th>
+<td>164</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-33">F7 , Ergebnis</label><input id="t2-33" type="text" inputmode="decimal" autocomplete="off" data-target="163.3105855" data-tolerance="0.005" aria-describedby="t2-33-state"><span id="t2-33-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-33">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F7 = 0,10 × 181,00 + 0,90 × 161,35 = 163,31 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-34">ε7² , Ergebnis</label><input id="t2-34" type="text" inputmode="decimal" autocomplete="off" data-target="0.47529235281025" data-tolerance="0.005" aria-describedby="t2-34-state"><span id="t2-34-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-34">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε7² = (F7 − y7)² = (163,31 − 164)² = 0,48 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-35">F7 , Ergebnis</label><input id="t2-35" type="text" inputmode="decimal" autocomplete="off" data-target="166.7349120" data-tolerance="0.005" aria-describedby="t2-35-state"><span id="t2-35-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-35">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F7 = 0,20 × 181,00 + 0,80 × 163,17 = 166,73 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-36">ε7² , Ergebnis</label><input id="t2-36" type="text" inputmode="decimal" autocomplete="off" data-target="7.47974364774400" data-tolerance="0.005" aria-describedby="t2-36-state"><span id="t2-36-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-36">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε7² = (F7 − y7)² = (166,73 − 164)² = 7,48 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-37">F7 , Ergebnis</label><input id="t2-37" type="text" inputmode="decimal" autocomplete="off" data-target="169.7774495" data-tolerance="0.005" aria-describedby="t2-37-state"><span id="t2-37-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-37">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F7 = 0,30 × 181,00 + 0,70 × 164,97 = 169,78 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-38">ε7² , Ergebnis</label><input id="t2-38" type="text" inputmode="decimal" autocomplete="off" data-target="33.37892272505025" data-tolerance="0.005" aria-describedby="t2-38-state"><span id="t2-38-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-38">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε7² = (F7 − y7)² = (169,78 − 164)² = 33,38 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">8</th>
+<td>157</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-39">F8 , Ergebnis</label><input id="t2-39" type="text" inputmode="decimal" autocomplete="off" data-target="163.37952695" data-tolerance="0.005" aria-describedby="t2-39-state"><span id="t2-39-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-39">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F8 = 0,10 × 164,00 + 0,90 × 163,31 = 163,38 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-40">ε8² , Ergebnis</label><input id="t2-40" type="text" inputmode="decimal" autocomplete="off" data-target="40.6983641057763025" data-tolerance="0.005" aria-describedby="t2-40-state"><span id="t2-40-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-40">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε8² = (F8 − y8)² = (163,38 − 157)² = 40,70 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-41">F8 , Ergebnis</label><input id="t2-41" type="text" inputmode="decimal" autocomplete="off" data-target="166.18792960" data-tolerance="0.005" aria-describedby="t2-41-state"><span id="t2-41-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-41">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F8 = 0,20 × 164,00 + 0,80 × 166,73 = 166,19 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-42">ε8² , Ergebnis</label><input id="t2-42" type="text" inputmode="decimal" autocomplete="off" data-target="84.4180503345561600" data-tolerance="0.005" aria-describedby="t2-42-state"><span id="t2-42-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-42">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε8² = (F8 − y8)² = (166,19 − 157)² = 84,42 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-43">F8 , Ergebnis</label><input id="t2-43" type="text" inputmode="decimal" autocomplete="off" data-target="168.04421465" data-tolerance="0.005" aria-describedby="t2-43-state"><span id="t2-43-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-43">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F8 = 0,30 × 164,00 + 0,70 × 169,78 = 168,04 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-44">ε8² , Ergebnis</label><input id="t2-44" type="text" inputmode="decimal" autocomplete="off" data-target="121.9746772352746225" data-tolerance="0.005" aria-describedby="t2-44-state"><span id="t2-44-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-44">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε8² = (F8 − y8)² = (168,04 − 157)² = 121,97 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">9</th>
+<td>168</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-45">F9 , Ergebnis</label><input id="t2-45" type="text" inputmode="decimal" autocomplete="off" data-target="162.741574255" data-tolerance="0.005" aria-describedby="t2-45-state"><span id="t2-45-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-45">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F9 = 0,10 × 157,00 + 0,90 × 163,38 = 162,74 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-46">ε9² , Ergebnis</label><input id="t2-46" type="text" inputmode="decimal" autocomplete="off" data-target="27.651041315678805025" data-tolerance="0.005" aria-describedby="t2-46-state"><span id="t2-46-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-46">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε9² = (F9 − y9)² = (162,74 − 168)² = 27,65 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-47">F9 , Ergebnis</label><input id="t2-47" type="text" inputmode="decimal" autocomplete="off" data-target="164.350343680" data-tolerance="0.005" aria-describedby="t2-47-state"><span id="t2-47-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-47">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F9 = 0,20 × 157,00 + 0,80 × 166,19 = 164,35 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-48">ε9² , Ergebnis</label><input id="t2-48" type="text" inputmode="decimal" autocomplete="off" data-target="13.319991254115942400" data-tolerance="0.005" aria-describedby="t2-48-state"><span id="t2-48-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-48">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε9² = (F9 − y9)² = (164,35 − 168)² = 13,32 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-49">F9 , Ergebnis</label><input id="t2-49" type="text" inputmode="decimal" autocomplete="off" data-target="164.730950255" data-tolerance="0.005" aria-describedby="t2-49-state"><span id="t2-49-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-49">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F9 = 0,30 × 157,00 + 0,70 × 168,04 = 164,73 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-50">ε9² , Ergebnis</label><input id="t2-50" type="text" inputmode="decimal" autocomplete="off" data-target="10.686686235284565025" data-tolerance="0.005" aria-describedby="t2-50-state"><span id="t2-50-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-50">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε9² = (F9 − y9)² = (164,73 − 168)² = 10,69 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">10</th>
+<td>183</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-51">F10 , Ergebnis</label><input id="t2-51" type="text" inputmode="decimal" autocomplete="off" data-target="163.2674168295" data-tolerance="0.005" aria-describedby="t2-51-state"><span id="t2-51-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-51">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F10 = 0,10 × 168,00 + 0,90 × 162,74 = 163,27 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-52">ε10² , Ergebnis</label><input id="t2-52" type="text" inputmode="decimal" autocomplete="off" data-target="389.37483858069983207025" data-tolerance="0.005" aria-describedby="t2-52-state"><span id="t2-52-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-52">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε10² = (F10 − y10)² = (163,27 − 183)² = 389,37 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-53">F10 , Ergebnis</label><input id="t2-53" type="text" inputmode="decimal" autocomplete="off" data-target="165.0802749440" data-tolerance="0.005" aria-describedby="t2-53-state"><span id="t2-53-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-53">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F10 = 0,20 × 168,00 + 0,80 × 164,35 = 165,08 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-54">ε10² , Ergebnis</label><input id="t2-54" type="text" inputmode="decimal" autocomplete="off" data-target="321.11654608263420313600" data-tolerance="0.005" aria-describedby="t2-54-state"><span id="t2-54-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-54">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε10² = (F10 − y10)² = (165,08 − 183)² = 321,12 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-55">F10 , Ergebnis</label><input id="t2-55" type="text" inputmode="decimal" autocomplete="off" data-target="165.7116651785" data-tolerance="0.005" aria-describedby="t2-55-state"><span id="t2-55-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-55">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>F10 = 0,30 × 168,00 + 0,70 × 164,73 = 165,71 Stück. Angezeigte Hilfswerte sind gerundet, intern ungerundet.</p>
+</details>
+</div></td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-56">ε10² , Ergebnis</label><input id="t2-56" type="text" inputmode="decimal" autocomplete="off" data-target="298.88652090028943686225" data-tolerance="0.005" aria-describedby="t2-56-state"><span id="t2-56-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-56">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>ε10² = (F10 − y10)² = (165,71 − 183)² = 298,89 Stück², aus ungerundeter Prognose.</p>
+</details>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">∑</th>
+<td>t = 2–10</td>
+<td>–</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-57">∑ für α , Ergebnis</label><input id="t2-57" type="text" inputmode="decimal" autocomplete="off" data-target="1334.92398186649018959525" data-tolerance="0.005" aria-describedby="t2-57-state"><span id="t2-57-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-57">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>∑ für α = 0,10: ε2² + … + ε10² = 122,10 + 25,55 + 0,30 + 342,45 + 386,32 + 0,48 + 40,70 + 27,65 + 389,37 ≈ 1334,92 Stück². Nur t = 2 bis 10 zählen. Angezeigte Summanden sind auf zwei Stellen gerundet; die Summe wird aus ungerundeten Fehlerquadraten gebildet.</p>
+</details>
+</div></td>
+<td>–</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-58">∑ für α , Ergebnis</label><input id="t2-58" type="text" inputmode="decimal" autocomplete="off" data-target="1255.60384340865030553600" data-tolerance="0.005" aria-describedby="t2-58-state"><span id="t2-58-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-58">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>∑ für α = 0,20: ε2² + … + ε10² = 134,56 + 32,72 + 0,33 + 343,70 + 317,96 + 7,48 + 84,42 + 13,32 + 321,12 ≈ 1255,60 Stück². Nur t = 2 bis 10 zählen. Angezeigte Summanden sind auf zwei Stellen gerundet; die Summe wird aus ungerundeten Fehlerquadraten gebildet.</p>
+</details>
+</div></td>
+<td>–</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-59">∑ für α , Ergebnis</label><input id="t2-59" type="text" inputmode="decimal" autocomplete="off" data-target="1258.67435665462387438725" data-tolerance="0.005" aria-describedby="t2-59-state"><span id="t2-59-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-59">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>∑ für α = 0,30: ε2² + … + ε10² = 147,62 + 42,19 + 0,30 + 346,61 + 257,03 + 33,38 + 121,97 + 10,69 + 298,89 ≈ 1258,67 Stück². Nur t = 2 bis 10 zählen. Angezeigte Summanden sind auf zwei Stellen gerundet; die Summe wird aus ungerundeten Fehlerquadraten gebildet.</p>
+</details>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">MSE</th>
+<td>t = 2–10</td>
+<td>–</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-60">MSE für α , Ergebnis</label><input id="t2-60" type="text" inputmode="decimal" autocomplete="off" data-target="148.3248868740544655105833333" data-tolerance="0.005" aria-describedby="t2-60-state"><span id="t2-60-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-60">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>MSE für α = 0,10: 1334,92 / 9 = 148,32 Stück². Nur t = 2 bis 10 zählen.</p>
+</details>
+</div></td>
+<td>–</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-61">MSE für α , Ergebnis</label><input id="t2-61" type="text" inputmode="decimal" autocomplete="off" data-target="139.5115381565167006151111111" data-tolerance="0.005" aria-describedby="t2-61-state"><span id="t2-61-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-61">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>MSE für α = 0,20: 1255,60 / 9 = 139,51 Stück². Nur t = 2 bis 10 zählen.</p>
+</details>
+</div></td>
+<td>–</td>
+<td><div class="calc-cell">
+<label class="visually-hidden" for="t2-62">MSE für α , Ergebnis</label><input id="t2-62" type="text" inputmode="decimal" autocomplete="off" data-target="139.85270629495820826525" data-tolerance="0.005" aria-describedby="t2-62-state"><span id="t2-62-state" class="calc-cell-state"></span>
+<details class="calc-work" hidden="">
+<summary aria-label="Rechenweg t2-62">
+i <span class="visually-hidden">Rechenweg</span>
+</summary>
+<p>MSE für α = 0,30: 1258,67 / 9 = 139,85 Stück². Nur t = 2 bis 10 zählen.</p>
+</details>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div><p class="calc-summary" aria-live="polite"></p></section>
+<p>Unter der hier ausdrücklich gewählten ungerundeten Rekursion ergeben sich MSEs α = 0,10: <strong>148,32 Stück²</strong>, α = 0,20: <strong>139,51 Stück²</strong>, α = 0,30: <strong>139,85 Stück²</strong>. Damit gewinnt α = 0,2 unter den drei Kandidaten. F11 = <strong>168,66 Stück</strong>. Die Aufgabe fordert grundsätzlich zwei Nachkommastellen; eine Rundung jedes Zwischenschritts kann letzte Stellen verändern. Unsere Felder prüfen die erst am Ergebnis gerundete Rechnung, keine offizielle Musterlösung.</p>
+</section>
+<section id="verstehen" class="level2">
+<h2 class="anchored" data-anchor-id="verstehen">Verständnislernstrecke</h2>
+<p><strong>Eigene Übungen, keine offiziellen Prüfungsaufgaben.</strong> Schreibe zunächst deinen eigenen Versuch auf; nutze erst bei Bedarf einen Hinweis und öffne die vollständige Lösung danach. Bewerte Rechenweg, Einheiten, Interpretation und Annahmen getrennt anhand der Kriterien. Keine automatische Schlüsselwortbewertung; die Zahlenprüfung ersetzt keine Erklärung.</p>
+<section id="vergleichsbedingungen-rekonstruieren" class="level3">
+<h3 class="anchored" data-anchor-id="vergleichsbedingungen-rekonstruieren">1. Vergleichsbedingungen rekonstruieren</h3>
+<p><strong>Dein Erstversuch:</strong> Nenne ohne Vorlage vier Bedingungen für den α-Vergleich und erkläre, warum neun statt zehn Fehler zählen.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Trenne Initialisierung, Zielperioden und Kennzahl.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Identische Nachfragefolge, gleicher Startwert, gemeinsame Zielperioden und identische Fehler-/Rundungsregel. t=2,…,10 umfasst neun Fehler; t=1 wird laut Aufgabenfestlegung nicht gewertet. Ein anderer Nenner verändert den ausgewiesenen MSE.</p>
+<p><strong>Bewertung:</strong> Vier Bedingungen und begründete Fehlerzahl: zusammen 4 Punkte (je 1 für Daten/Start, Perioden/Zahl, Kennzahl, Rundungsregel).</p>
+</details>
+</section>
+<section id="einen-unabhängigen-fall-rechnen" class="level3">
+<h3 class="anchored" data-anchor-id="einen-unabhängigen-fall-rechnen">2. Einen unabhängigen Fall rechnen</h3>
+<p><strong>Dein Erstversuch:</strong> Eigener Fall: F1=100 Stück, y1=120, y2=130. Vergleiche α=0,2 und 0,5 anhand nur des Fehlers von Periode 2. Berechne außerdem F3.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>F2 verarbeitet y1. F3 verarbeitet y2.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>α=0,2: F2=104, Fehler −26 Stück, MSE=676 Stück²; F3=109,2 Stück. α=0,5: F2=110, Fehler −20, MSE=400 Stück²; F3=120 Stück. α=0,5 gewinnt diesen Einperiodenvergleich; F3 ist ohne y3 noch nicht bewertbar.</p>
+<p><strong>Bewertung:</strong> Beide F2 (1), beide Fehler/MSE (1), beide F3 (1), Einheiten (1), Zeitzuordnung (1): 5 Punkte.</p>
+</details>
+</section>
+<section id="eine-perfekte-anpassung-entlarven" class="level3">
+<h3 class="anchored" data-anchor-id="eine-perfekte-anpassung-entlarven">3. Eine perfekte Anpassung entlarven</h3>
+<p><strong>Dein Erstversuch:</strong> Ein Team ersetzt jede Prognose F(t) nachträglich durch y(t), meldet MSE=0 und nennt α=0,3 generell optimal. Diagnostiziere beide Schlüsse.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Was war am Prognosezeitpunkt bekannt?</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Die eingesetzte Nachfrage ist das spätere Ergebnis, keine vorher verfügbare Prognose. Null Fehler misst hier Identität statt Vorhersage. Ein Minimum unter drei Werten in einer rückblickenden Stichprobe beweist weder ein globales Optimum noch zukünftige Überlegenheit.</p>
+<p><strong>Bewertung:</strong> Datenleckage, Prognosezeitpunkt, eingeschränkte Kandidatenmenge, Zukunftsgrenze je 1: 4 Punkte.</p>
+</details>
+</section>
+<section id="transfer-startphase-ausklammern" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-startphase-ausklammern">4. Transfer: Startphase ausklammern</h3>
+<p><strong>Dein Erstversuch:</strong> Eigener Fall: Die ersten vier Beobachtungen initialisieren das Modell. Du bewertest nur t=5 bis 10. Wie viele Fehler und welche Informationsgrenze gelten? Darfst du die alten MSE-Zahlen weiterverwenden?</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Kennzahlen müssen zum neuen Fenster neu summiert werden.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Sechs Fehler. Die Initialisierung nutzt nur Daten bis t=4 und kann anschließend als Startwissen dienen; jede Prognose für t≥5 darf nur die vorherige Historie verarbeiten. Fehler t=2–4 werden entfernt, die Summen neu gebildet und durch sechs geteilt. Die alten Neunperioden-MSE sind nicht dieselbe Bewertung; auch die Rangfolge kann sich ändern. Eine weitere ungesehene Zeitspanne prüft Zukunftsleistung.</p>
+<p><strong>Bewertung:</strong> Sechs (1), Informationsgrenze (1), neue Summe (1), Nenner/Rangfolge (1), getrennte Zukunftsprüfung (1): 5 Punkte.</p>
+</details>
+</section>
+<section id="fehlerreflexion-und-verzögerte-wiederholung" class="level3">
+<h3 class="anchored" data-anchor-id="fehlerreflexion-und-verzögerte-wiederholung">Fehlerreflexion und verzögerte Wiederholung</h3>
+<p>Maximal <strong>18 selbst bewertete Punkte</strong> (4 + 5 + 4 + 5). Notiere, ob du Update und Fehler derselben Periode verwechselt hast. Morgen rechne F2/F3 ohne Vorlage; in einer Woche ändere das Bewertungsfenster und begründe die neue Fehlerzahl. Halte Fehlerursache und konkrete Gegenprüfung fest. Ein richtig geratenes Endergebnis ersetzt keine Begründung; fehlende Einheiten und falsche Zeitzuordnung gezielt erneut bearbeiten.</p>
+</section>
+</section>
+<section id="self-check" class="level2">
+<h2 class="anchored" data-anchor-id="self-check">Ergänzender Selbstcheck</h2>
+<fieldset class="study-check" data-type="multiple" data-answer="b,c"><legend>Welche Aussagen gelten? Wähle alle zutreffenden Antworten.</legend><label><input type="checkbox" value="a"> Der kleinste MSE unter drei α beweist universelle Optimalität.</label><label><input type="checkbox" value="b"> Der MSE wird hier aus neun Fehlerquadraten gebildet.</label><label><input type="checkbox" value="c"> Ein retrospektiver Startwert ist nicht automatisch vor Periode 1 verfügbar.</label><button type="button" class="check-answer">Prüfen</button><p class="feedback" aria-live="polite"></p></fieldset>
+<details>
+<summary>
+Begründung anzeigen
+</summary>
+<p>b und c gelten: t=2–10 sind neun Zielperioden; die Initialisierung setzt spätere Anfangswerte voraus. a überschreitet den Geltungsbereich des Vergleichs.</p>
+</details>
+</section>
+<section id="verwandte-lernseiten" class="level2">
+<h2 class="anchored" data-anchor-id="verwandte-lernseiten">Verwandte Lernseiten</h2>
+<p><a href="../courses/om-tutorium-2-des.html">Tutorium 2: Niveau und Trend getrennt glätten</a> · <a href="../courses/om-trendhorizont.html">Trendprognosen: Horizont ist nicht Kalenderzeit</a> · <a href="../courses/om-exponentielle-glaettung.html">SES-Grundlagen</a> · <a href="../courses/om-prognoseguete.html">Prognosegüte</a></p>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Quellen und Abgrenzung</h2>
+<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4192613">WS2627_OM_Tutorium_2_Aufgaben.pdf — Learnweb (Hochschulzugang)</a>, aktueller Kurs 95860, WiSe 2026/27; erneut gelesen am 29.10.2026. Physische PDF-Seiten.</p>
+<ul>
+<li>Mechanismus, Originaldaten und Anfangswert → physische PDF-S. 1–2. Rechentabelle und Reihenfolge der α-Spalten, Zeilen 1–10, Summe/MSE → S. 3, Originalansicht geprüft. Lösung und Interpretation der Initialisierungsgrenze → eigene Rechnung; keine offizielle Lösung.</li>
+<li>Eigene offene Aufgaben, Hinweise, Musterlösungen, Bewertungsraster, Selbstcheck und Wiederholung → didaktische Ergänzungen. Rechentabellen sind eigenständige HTML-Nachbauten, keine veröffentlichten Originalanhänge. Originale und Extrakte bleiben privat. Teilabdeckung der Quellen; keine Vollständigkeit behauptet.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+// Shared number controls: theme-aware, including dynamically added exercises.
+(() => {
+  function enhanceNumbers(root = document) {
+    root.querySelectorAll('input[type="number"]').forEach((input) => {
+      if (input.closest('.study-number-control') || input.step === 'any') return;
+      const english = (input.closest('[lang]')?.lang || document.documentElement.lang).toLowerCase().startsWith('en');
+      const wrapper = document.createElement('span');
+      wrapper.className = 'study-number-control';
+      input.before(wrapper);
+      wrapper.append(input);
+      const controls = document.createElement('span');
+      controls.className = 'study-number-buttons';
+      for (const [direction, label, points] of [
+        [1, english ? 'Increase value' : 'Wert erhöhen', '5 14 12 7 19 14'],
+        [-1, english ? 'Decrease value' : 'Wert verringern', '5 10 12 17 19 10']
+      ]) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'study-number-step';
+        button.setAttribute('aria-label', label);
+        button.title = label;
+        button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="${points}" /></svg>`;
+        button.disabled = input.disabled || input.readOnly;
+        new MutationObserver(() => { button.disabled = input.disabled || input.readOnly; })
+          .observe(input, { attributes: true, attributeFilter: ['disabled', 'readonly'] });
+        button.addEventListener('click', () => {
+          if (input.disabled || input.readOnly) return;
+          direction > 0 ? input.stepUp() : input.stepDown();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+        controls.append(button);
+      }
+      wrapper.append(controls);
+    });
+  }
+  function init() {
+    enhanceNumbers();
+    new MutationObserver((records) => {
+      if (records.some((record) => record.addedNodes.length)) enhanceNumbers();
+    }).observe(document.body, { childList: true, subtree: true });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".check-answer");
+  if (!button) return;
+
+  const check = button.closest(".study-check");
+  const feedback = check?.querySelector(".feedback");
+  const expected = (check?.dataset.answer || "")
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .sort();
+
+  if (!check || !feedback || (expected.length === 0 && check.dataset.type !== "keywords")) return;
+
+  const english = (check.closest("[lang]")?.lang || document.documentElement.lang).toLowerCase().startsWith("en");
+
+  const selected = Array.from(check.querySelectorAll("input:checked"))
+    .map((input) => input.value)
+    .sort();
+
+  if (check.dataset.type === "keywords") {
+    const answer = (check.querySelector("textarea")?.value || "").toLowerCase();
+    const keywords = (check.dataset.keywords || "")
+      .split(",")
+      .map((item) => item.trim().toLowerCase())
+      .filter(Boolean);
+    const missing = keywords.filter((keyword) => !answer.includes(keyword));
+
+    if (!answer.trim()) {
+      feedback.textContent = (english ? "Write a short answer first." : "Schreib erst eine kurze Antwort.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    feedback.textContent = missing.length === 0
+      ? (english ? "All key terms are present. Now check: Is the answer applied to the case?" : "Alle Kernbegriffe sind drin. Jetzt prüfen: Ist die Antwort auch auf den Fall angewendet?")
+      : (english ? `Key terms still missing: ${missing.join(", ")}.` : `Noch fehlen Kernbegriffe: ${missing.join(", ")}.`);
+    feedback.dataset.state = missing.length === 0 ? "correct" : "wrong";
+    return;
+  }
+
+  if (check.dataset.type === "sequence") {
+    const expectedSequence = (check.dataset.answer || "")
+      .split(",")
+      .map((item) => item.trim().toLowerCase())
+      .filter(Boolean);
+    const answer = (check.querySelector("textarea")?.value || "")
+      .toLowerCase()
+      .split(/,|→|->|\n/)
+      .map((item) => item.trim())
+      .filter(Boolean);
+
+    if (answer.length === 0) {
+      feedback.textContent = (english ? "Write the sequence first." : "Schreib die Reihenfolge erst auf.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    const correct =
+      answer.length === expectedSequence.length &&
+      answer.every((value, index) => value === expectedSequence[index]);
+
+    feedback.textContent = correct
+      ? (english ? "Correct sequence. Now briefly justify each step." : "Reihenfolge stimmt. Jetzt jeden Schritt kurz begründen.")
+      : (english ? `Not yet. Expected: ${expectedSequence.join(" → ")}.` : `Noch nicht. Erwartet wird: ${expectedSequence.join(" → ")}.`);
+    feedback.dataset.state = correct ? "correct" : "wrong";
+    return;
+  }
+
+  if (check.dataset.type === "numeric") {
+    const input = check.querySelector("input[type='number']");
+    const value = Number(input?.value);
+    const target = Number(check.dataset.answer);
+    const tolerance = Number(check.dataset.tolerance || "0");
+
+    if (!input || input.value.trim() === "") {
+      feedback.textContent = (english ? "Enter a number first." : "Trag erst eine Zahl ein.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    const correct = Number.isFinite(value) && Math.abs(value - target) <= tolerance;
+    feedback.textContent = correct
+      ? (english ? "Correct. Now explain the formula and interpretation." : "Richtig. Jetzt die Formel und Interpretation dazusagen.")
+      : (english ? `Not yet. Target value: ${target}.` : `Noch nicht. Zielwert: ${target}.`);
+    feedback.dataset.state = correct ? "correct" : "wrong";
+    return;
+  }
+
+  if (selected.length === 0) {
+    feedback.textContent = english ? "Select an answer first." : "Wähle erst eine Antwort aus.";
+    feedback.dataset.state = "neutral";
+    return;
+  }
+
+  const correct =
+    selected.length === expected.length &&
+    selected.every((value, index) => value === expected[index]);
+
+  feedback.textContent = correct
+    ? (english ? "Correct. Explain why the other options are weaker." : "Richtig. Jetzt kurz begründen, warum die anderen Optionen schwächer sind.")
+    : (english ? "Not quite. Revisit the explanation and check the mechanism." : "Noch nicht ganz. Geh zur Erklärung zurück und prüfe den Mechanismus.");
+  feedback.dataset.state = correct ? "correct" : "wrong";
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.id !== "build-feedback") return;
+
+  const page = document.querySelector("#feedback-page")?.value.trim() || "unknown";
+  const type = document.querySelector("#feedback-type")?.value.trim() || "unspecified";
+  const change = document.querySelector("#feedback-change")?.value.trim() || "not specified";
+  const source = document.querySelector("#feedback-source")?.value.trim() || "not specified";
+  const output = document.querySelector("#feedback-output");
+
+  if (!output) return;
+
+  output.value = [
+    `Course/page: ${page}`,
+    `Type: ${type}`,
+    `Problem: ${change}`,
+    "Suggested change: Please revise the page so the explanation is clearer, source-backed, and easier to practice.",
+    `Source/context: ${source}`,
+    "Urgency: normal"
+  ].join("\n");
+
+  output.focus();
+  output.select();
+});
+</script>
+
+<script>
+/* Numeric worksheet: compare each entry independently; never evaluate formulas. */
+(() => {
+  function parseWorksheetNumber(raw) {
+    const text = raw.trim();
+    if (!text) return null;
+    // German grouping and decimal comma; also unambiguous decimal dots.
+    const german = /^[+-]?(?:\d{1,3}(?:[. \u00a0\u202f]\d{3})+|\d+)(?:,\d+)?$/;
+    if (german.test(text)) return Number(text.replace(/[. \u00a0\u202f]/g, "").replace(",", "."));
+    if (/^[+-]?\d+\.\d{1,2}$/.test(text)) return Number(text);
+    return NaN;
+  }
+
+  function clearCell(cell) {
+    const input = cell.querySelector("input");
+    input.removeAttribute("aria-invalid");
+    delete cell.dataset.state;
+    cell.querySelector(".calc-cell-state").textContent = "";
+    const work = cell.querySelector(".calc-work");
+    work.hidden = true;
+    work.open = false;
+  }
+
+  document.addEventListener("input", (event) => {
+    const cell = event.target.closest(".calc-cell");
+    if (!cell) return;
+    clearCell(cell);
+    const sheet = cell.closest(".calc-sheet");
+    sheet.querySelector(".calc-summary").textContent = "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
+  });
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".calc-check, .calc-reset");
+    if (!button) return;
+    const sheet = button.closest(".calc-sheet");
+    const cells = [...sheet.querySelectorAll(".calc-cell")];
+    if (button.classList.contains("calc-reset")) {
+      cells.forEach((cell) => {
+        cell.querySelector("input").value = "";
+        clearCell(cell);
+      });
+      sheet.querySelector(".calc-summary").textContent = `Neu begonnen · ${cells.length} leere Felder.`;
+      cells[0].querySelector("input").focus();
+      return;
+    }
+    let correct = 0, wrong = 0, empty = 0, invalid = 0;
+    cells.forEach((cell) => {
+      const input = cell.querySelector("input");
+      const value = parseWorksheetNumber(input.value);
+      let label, state;
+      if (value === null) {
+        empty++; label = "Offen"; state = "empty";
+      } else if (!Number.isFinite(value)) {
+        invalid++; label = "Zahlenformat prüfen"; state = "invalid";
+      } else if (Math.abs(value - Number(input.dataset.target)) <= Number(input.dataset.tolerance) + 1e-9) {
+        correct++; label = "Richtig ✓"; state = "correct";
+      } else {
+        wrong++; label = "Noch nicht richtig"; state = "wrong";
+      }
+      cell.dataset.state = state;
+      input.setAttribute("aria-invalid", String(state === "wrong" || state === "invalid"));
+      cell.querySelector(".calc-cell-state").textContent = label;
+      cell.querySelector(".calc-work").hidden = false;
+    });
+    sheet.querySelector(".calc-summary").textContent = `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/wise-2026-27\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../patterns.html">
+<p>Übungsvorlagen</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../templates/example-lecture.html">
+<p>Seitenvorlage</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
