@@ -18,14 +18,14 @@
     "href": "quellen.html#nachweisgrenzen",
     "title": "Quellen und Transparenz",
     "section": "Nachweisgrenzen",
-    "text": "Nachweisgrenzen\nEin korrigierter Export und ein Vertrags-/Abrufdokument liegen nicht vor. Nachfrage-/Absatzabgrenzung, Lieferrestriktionen und volle Zusätzlichkeit des Sonderauftrags bleiben Annahmen bzw. offene Nachweise. Der heutige Fallportalstand wurde nicht neu abgefragt. Die Empfehlung und ihre Unsicherheit sind in der eigenständig verständlichen PDF offengelegt."
+    "text": "Nachweisgrenzen\nEin korrigierter Export und ein Vertrags-/Abrufdokument liegen nicht vor. Nachfrage-/Absatzabgrenzung, Lieferrestriktionen und volle Zusätzlichkeit des Sonderauftrags bleiben Annahmen bzw. offene Nachweise. Die Empfehlung und ihre Unsicherheit sind in der eigenständig verständlichen PDF offengelegt."
   },
   {
     "objectID": "quellen.html#erstellung-und-verantwortung",
     "href": "quellen.html#erstellung-und-verantwortung",
     "title": "Quellen und Transparenz",
     "section": "Erstellung und Verantwortung",
-    "text": "Erstellung und Verantwortung\nDiese Website wurde KI-unterstützt erstellt. KI-Unterstützung wurde auch für Rechenmodell, Verfahrensvergleich, Prüfung und Formulierung der zugrunde liegenden Analyse genutzt. Die Verwendung als eigene Falllösung setzt Leos inhaltliche Prüfung und die Einhaltung der geltenden Kursregeln voraus. Keine offizielle Musterlösung, keine garantierte Bewertung, keine Einreichung durch diese Website."
+    "text": "Erstellung und Verantwortung\nBei der Erstellung der Website und der zugrunde liegenden Analyse wurde KI für Programmierung, Rechenkontrollen und sprachliche Überarbeitung eingesetzt. Quellen, Annahmen und Rechenweg sind hier offengelegt. Die Falllösung wird nicht über diese Website eingereicht."
   },
   {
     "objectID": "quellen.html#technische-transparenz",
@@ -39,7 +39,14 @@
     "href": "modelle.html",
     "title": "Was die Rücktests tatsächlich zeigen",
     "section": "",
-    "text": "Zwei gleichartige Prognoseursprünge: Training auf den ersten 24 Monaten → nächste zwölf Monate; danach Training auf 36 → nächste zwölf. Alle Verfahren sehen nur ihre jeweiligen Trainingswerte. Monats-MAE und Monats-MSE werden über dieselben 24 Testmonate gerechnet, Jahres-MAE über die beiden Jahresfehler. Die Testfehler sind Diagnostik, kein verlässlicher Nachweis künftiger Genauigkeit.\nEinheiten: Prognose und MAE in Rädern, MSE in Rädern². Die Basiswerte enthalten keinen Zusatzauftrag.\nDer Jahrestrend ist bei Monats-MAE, Monats-MSE und Jahres-MAE im bereinigten Szenario am besten. Auch im Originalexport hat er unter diesen vier Verfahren die kleinsten drei Fehlerkennzahlen. Das spricht für ihn als nachvollziehbare Referenz – nicht für universelle Überlegenheit gegenüber allen möglichen Verfahren. Auswahl anhand derselben zwei Rücktests ist explorativ; kein zusätzliches unangetastetes Testjahr ist vorhanden."
+    "text": "Zwei gleichartige Prognoseursprünge: Training auf den ersten 24 Monaten → nächste zwölf Monate; danach Training auf 36 → nächste zwölf. Alle Verfahren sehen nur ihre jeweiligen Trainingswerte. Monats-MAE und Monats-MSE werden über dieselben 24 Testmonate gerechnet, Jahres-MAE über die beiden Jahresfehler. Damit vergleiche ich die Verfahren unter denselben Bedingungen. Aus zwei Testjahren lässt sich allerdings noch nicht verlässlich ableiten, wie genau die nächste Jahresprognose sein wird."
+  },
+  {
+    "objectID": "modelle.html#fehler-und-prognosehöhe-vergleichen",
+    "href": "modelle.html#fehler-und-prognosehöhe-vergleichen",
+    "title": "Was die Rücktests tatsächlich zeigen",
+    "section": "Fehler und Prognosehöhe vergleichen",
+    "text": "Fehler und Prognosehöhe vergleichen\nEin niedriger Prognosefehler ist besser, eine höhere Prognose dagegen nicht automatisch. Deshalb lassen sich Fehlerkennzahlen und Prognosehöhe getrennt auswählen. Die Balken beginnen jeweils bei null; beim Wechsel der Kennzahl ändern sich Einheit und Skala. Alle Prognosen sind ohne Zusatzauftrag gerechnet.\n\nKennzahl\nMittlerer absoluter Monatsfehler (Räder)Mittlerer quadratischer Monatsfehler (Räder²)Mittlerer absoluter Jahresfehler (Räder)Basisprognose 2027 (Räder)\n\n\n\n\nEinheiten: Prognose und MAE in Rädern, MSE in Rädern². Die Basiswerte enthalten keinen Zusatzauftrag.\n\nSaisonal-naiv: jeden Vorjahresmonat wiederholen; notwendige einfache Referenz.\nJahrestrend + Saisonanteile: Jahres-OLS wie oben, Monatsverteilung über historische Anteile.\nSaisonale Drift: jedem Vorjahresmonat den mittleren jährlichen Zuwachs geteilt durch zwölf hinzufügen.\nHolt-Winters additiv: monatliche Glättung mit Saisonlänge zwölf; fest vorgegeben α = 0,2, β = 0,1, γ = 0,2. Anfangsniveau Mittelwert der ersten zwölf Monate, Anfangstrend null, Anfangssaison jeweiliger Wert minus Mittelwert. Aktualisierung ab Monat 13. Die Parameter bleiben in beiden Rücktests gleich; ich habe sie nicht anhand der Testfehler ausgewählt.\n\nDer Jahrestrend ist bei Monats-MAE, Monats-MSE und Jahres-MAE im bereinigten Szenario am besten. Auch im Originalexport hat er unter diesen vier Verfahren die kleinsten drei Fehlerkennzahlen. Deshalb verwende ich ihn für die Empfehlung. Das Ergebnis gilt für diesen kleinen Vergleich; ein weiteres, bei der Auswahl noch nicht verwendetes Testjahr steht nicht zur Verfügung.\n\nJahresfehler des Trendmodells\n\n\n\nTestjahr\nPrognose\nBereinigtes Ist\nFehler Ist minus Prognose\n\n\n\n\n2025\n4.442,00\n4.459\n17,00\n\n\n2026\n4.819,67\n4.759\n-60,67\n\n\n\nGrenze der Datenbereinigung: Die nachträglich mitgeteilte Korrektur gilt im bereinigten Rücktest als richtige Ist-Menge. Ob sie damals bereits bekannt gewesen wäre, ist nicht belegt. Auch ein späterer Trainingslauf kann die Korrektur nur dann enthalten, wenn sie bis dahin verfügbar ist. Die Ergebnisse sind deshalb retrospektive Diagnostik, kein dokumentierter historischer Echtbetrieb."
   },
   {
     "objectID": "modelle.html#glättung-präzise-nachvollziehen",
@@ -74,7 +81,7 @@
     "href": "index.html#die-begründung-in-rund-100-wörtern",
     "title": "5.300 Räder – eine begründete Planzahl",
     "section": "Die Begründung in rund 100 Wörtern",
-    "text": "Die Begründung in rund 100 Wörtern\nIch empfehle 5.300 Räder für das Planjahr. Der lineare Trend der vier bereinigten Jahressummen ergibt 5.122,5 Räder. Wessels zufolge fehlen im Oktober 2025 Cargo-Pro-Aufträge: Richtig seien 321 statt 215 Räder. Terhörst nennt einen Rahmenvertrag über 180 Cargo Pro als reines Neugeschäft. Unter der Annahme vollständiger Zusätzlichkeit ergeben sich 5.302,5 Räder, gerundet 5.300. Der Trend hat im Vergleich die kleinsten Rücktestfehler; zwei Jahrestests reichen jedoch nicht für eine verlässliche Sicherheitswahrscheinlichkeit. Ohne Datenkorrektur und Zusatzauftrag ergibt derselbe Ansatz 5.016,5 Räder. Daher ist 5.300 eine bedingte, nachvollziehbare Planzahl, keine Garantie. Korrektur, Auftragsabgrenzung und mögliche Lieferrestriktionen sind vor Budgetfreigabe zu bestätigen."
+    "text": "Die Begründung in rund 100 Wörtern\nIch empfehle, für das kommende Geschäftsjahr mit 5.300 Rädern zu planen. Aus den vier bereinigten Jahressummen ergibt sich eine Trendprognose von 5.122,5 Rädern. Dabei berücksichtige ich Wessels’ Hinweis, dass im Oktober 2025 tatsächlich 321 statt 215 Räder nachgefragt wurden. Hinzu kommen laut Terhörst 180 Räder aus dem Bielefelder Rahmenvertrag, die ich als zusätzliches Geschäft ansetze. Zusammen sind das 5.302,5 Räder. Den Jahrestrend wähle ich, weil er im Rücktest besser abschneidet als die drei Vergleichsverfahren. Allerdings stehen nur zwei Testjahre zur Verfügung. Die Empfehlung hängt deshalb davon ab, dass die Datenkorrektur stimmt und der Rahmenvertrag tatsächlich zusätzliche Nachfrage im Planjahr bringt."
   },
   {
     "objectID": "index.html#warum-nicht-einfach-5.500-oder-4.900",
@@ -84,25 +91,32 @@
     "text": "Warum nicht einfach 5.500 oder 4.900?\nDer Vertrieb nennt 5.500, die Produktion 4.900. Keine Zahl wird allein wegen der Zuständigkeit übernommen. Auch ihr Mittelwert 5.200 ist keine eigenständige Prognose. Vier Jahre historischer Daten, eine konkrete Datenkorrektur und ein ausdrücklich abgegrenzter Zusatzauftrag bilden die nachvollziehbare Grundlage."
   },
   {
-    "objectID": "index.html#so-liest-du-diese-analyse",
-    "href": "index.html#so-liest-du-diese-analyse",
+    "objectID": "index.html#ergänzung-zur-schriftlichen-lösung",
+    "href": "index.html#ergänzung-zur-schriftlichen-lösung",
     "title": "5.300 Räder – eine begründete Planzahl",
-    "section": "So liest du diese Analyse",
-    "text": "So liest du diese Analyse\n\nRechenweg: Datenbereinigung, Jahresmodell und Monatsverteilung.\nModelle und Rücktests: vier Ansätze unter gleichen Testbedingungen.\nSzenarien: Korrektur und Zusatzauftrag selbst verändern.\nQuellen und Transparenz: Nachweisstand, Grenzen und Erstellung.\n\nPrognose ist nicht Kapazität: Beschaffungspuffer, Lieferzeiten und Kosten von Fehlplanung gehören zu einer gesonderten operativen Entscheidung, nicht unbemerkt in die Nachfragemenge."
+    "section": "Ergänzung zur schriftlichen Lösung",
+    "text": "Ergänzung zur schriftlichen Lösung\nDie PDF enthält die vollständige Falllösung. Diese Website ist ein freiwilliges Add-on: Die Diagramme und veränderbaren Annahmen sollen die Rechnung leichter nachvollziehbar machen; für die Bewertung ist der Link nicht erforderlich.\n\nRechenweg: Datenbereinigung, Jahresmodell und Monatsverteilung.\nModelle und Rücktests: vier Ansätze unter gleichen Testbedingungen.\nSzenarien: Korrektur und Zusatzauftrag selbst verändern.\nQuellen und Transparenz: Nachweisstand, Grenzen und Erstellung.\n\nPrognose ist nicht Kapazität: Beschaffungspuffer, Lieferzeiten und Kosten von Fehlplanung gehören zu einer gesonderten operativen Entscheidung, nicht unbemerkt in die Nachfragemenge."
   },
   {
     "objectID": "rechenweg.html",
     "href": "rechenweg.html",
     "title": "Von den Monatswerten zur Jahresplanung",
     "section": "",
-    "text": "Die Geschäftsführung verlangt eine eigene Nachfrageprognose, eine ehrliche Unsicherheitsangabe und eine eindeutige Planzahl zwischen den nicht ungeprüft zu übernehmenden Abteilungsvorschlägen (Vertrieb 5.500, Produktion 4.900). Eine Begründung von rund 100 Wörtern muss mindestens eine Gesprächsaussage enthalten; Rechenweg und Begründung sollen möglichst gemeinsam in PDF oder Word stehen (maximal 10 MB).\nDer unveränderte ERP-Export enthält 48 eindeutige, lückenlose Monatswerte von Oktober 2022 bis September 2026. Einheit: Räder, beide Modelle Lasto und Cargo Pro zusammen laut Wessels. Geschäftsjahre Oktober–September sind die zum Export passende Arbeitsannahme. Die genaue Abgrenzung zwischen Nachfrage, Bestellungen und realisiertem Absatz sowie etwaige Lieferbeschränkungen bleiben nicht vollständig geklärt."
+    "text": "Für die Budgetrunde brauche ich eine Zahl, die sich aus den Daten und den Gesprächen herleiten lässt. Deshalb trenne ich zunächst die bisherige Nachfrage vom zusätzlichen Bielefelder Auftrag. Den historischen Verlauf schätze ich mit einem Jahrestrend; den Auftrag berücksichtige ich anschließend gesondert.\nDer unveränderte ERP-Export enthält 48 eindeutige, lückenlose Monatswerte von Oktober 2022 bis September 2026. Einheit: Räder, beide Modelle Lasto und Cargo Pro zusammen laut Wessels. Geschäftsjahre Oktober–September sind die zum Export passende Arbeitsannahme. Die genaue Abgrenzung zwischen Nachfrage, Bestellungen und realisiertem Absatz sowie etwaige Lieferbeschränkungen bleiben nicht vollständig geklärt."
+  },
+  {
+    "objectID": "rechenweg.html#jahresverlauf-und-trend",
+    "href": "rechenweg.html#jahresverlauf-und-trend",
+    "title": "Von den Monatswerten zur Jahresplanung",
+    "section": "Jahresverlauf und Trend",
+    "text": "Jahresverlauf und Trend\nDie Nachfrage steigt in allen vier Jahren. Die Korrektur verändert nur den letzten Jahreswert. Mit dem Schalter lässt sich nachvollziehen, wie sich dadurch auch die Trendprognose verschiebt. Die gestrichelte Linie zeigt den geschätzten Trend, nicht die tatsächlichen Zwischenwerte. Die 180 zusätzlichen Räder sind noch nicht enthalten.\n\nDatengrundlage\nMit ERP-KorrekturUnveränderter Export\n\n\n\n\nZwei fallbezogene Zusatzinformationen\n\nControlling: „Im Oktober 2025 wurde das ERP umgestellt. In diesem Monat fehlen im Export die Cargo-Pro-Aufträge; korrekt sind 321 Räder statt 215.“ Damit erhöht sich das letzte Jahr um 106 auf 4.759. Originaldatei nicht überschrieben; Korrektur separat gerechnet. Kein korrigierter Export als zusätzlicher Beleg vorhanden.\nVertrieb: Terhörst berichtet über einen im September 2026 abgeschlossenen Rahmenvertrag mit den Stadtwerken Bielefeld über 180 Cargo Pro für das Geschäftsjahr 2027 und bezeichnet ihn als „reines Neugeschäft“. Vertragsdokument nicht vorgelegt. Die volle Addition unterstellt, dass diese Menge zum normalen Verlauf zusätzlich anfällt und nicht bereits in der historischen Nachfrage bzw. Trendfortschreibung enthalten ist. Rahmenvertrag nicht ungeprüft mit garantiertem Abruf gleichsetzen.\n\nIch übernehme beide Angaben für die Hauptrechnung, rechne aber auch ohne sie. So wird sichtbar, wie stark die Empfehlung von diesen Informationen abhängt. Terhörsts allgemeine Einschätzung, dass die Händler großes Interesse hätten, reicht mir dagegen nicht für einen weiteren Aufschlag."
   },
   {
     "objectID": "rechenweg.html#jahresmodell-und-entscheidung",
     "href": "rechenweg.html#jahresmodell-und-entscheidung",
     "title": "Von den Monatswerten zur Jahresplanung",
     "section": "Jahresmodell und Entscheidung",
-    "text": "Jahresmodell und Entscheidung\nFür die vier bereinigten Jahreswerte und Zeitindex t = 0, 1, 2, 3:\n\nMittelwert t = 1,5; Mittelwert q = 4.259,25.\nKleinste-Quadrate-Steigung b = Σ[(t − 1,5)(q − 4.259,25)] / Σ(t − 1,5)² = 345,30 Räder pro Jahr.\nAchsenabschnitt a = 4.259,25 − 345,30 × 1,5 = 3.741,30.\nBasisprognose Planjahr: q̂(4) = 3.741,30 + 345,30 × 4 = 5.122,50 Räder.\nBedingter Zusatz: 180; Summe 5.302,50; auf volle Hunderter als Budget-Planzahl 5.300.\n\nDie Rundung ist eine transparente Planungsentscheidung (−2,5 Räder), keine zusätzliche statistische Genauigkeit. Ohne Kosten für Über-/Unterplanung oder Serviceziel lässt sich kein formal kostenoptimaler Sicherheitsaufschlag bestimmen.\nMonatliche Verteilung: Für jeden Kalendermonat wird der Anteil an seinem jeweiligen Geschäftsjahr gebildet; die vier historischen Anteile werden gemittelt. Jahresprognose × mittlerer Anteil ergibt die Monatsbasis. Die Anteile summieren sich zu eins und verändern die Jahresprognose nicht. Der Großauftrag wird mangels bestätigtem Lieferplan nicht künstlich auf Monate verteilt. Die beiliegende CSV enthält daher nur die Basis ohne 180er-Auftrag."
+    "text": "Jahresmodell und Entscheidung\nFür die vier bereinigten Jahreswerte und Zeitindex t = 0, 1, 2, 3:\n\nMittelwert t = 1,5; Mittelwert q = 4.259,25.\nKleinste-Quadrate-Steigung b = Σ[(t − 1,5)(q − 4.259,25)] / Σ(t − 1,5)² = 345,30 Räder pro Jahr.\nAchsenabschnitt a = 4.259,25 − 345,30 × 1,5 = 3.741,30.\nBasisprognose Planjahr: q̂(4) = 3.741,30 + 345,30 × 4 = 5.122,50 Räder.\nBedingter Zusatz: 180; Summe 5.302,50; auf volle Hunderter als Budget-Planzahl 5.300.\n\nDie Rundung ist eine transparente Planungsentscheidung (−2,5 Räder), keine zusätzliche statistische Genauigkeit. Ohne Kosten für Über-/Unterplanung oder Serviceziel lässt sich kein formal kostenoptimaler Sicherheitsaufschlag bestimmen.\nMonatliche Verteilung: Für jeden Kalendermonat wird der Anteil an seinem jeweiligen Geschäftsjahr gebildet; die vier historischen Anteile werden gemittelt. Jahresprognose × mittlerer Anteil ergibt die Monatsbasis. Die Anteile summieren sich zu eins und verändern die Jahresprognose nicht. Der Großauftrag wird mangels bestätigtem Lieferplan nicht künstlich auf Monate verteilt. Die Monatsgrafik zeigt deshalb nur die Basisprognose, ohne den Zusatzauftrag."
   },
   {
     "objectID": "rechenweg.html#so-kannst-du-die-rechnung-selbst-prüfen",
@@ -112,11 +126,18 @@
     "text": "So kannst du die Rechnung selbst prüfen\nDie vier bereinigten Jahressummen ergeben 17.037 Räder, also einen Mittelwert von 4.259,25. Die Zeitwerte 0 bis 3 haben den Mittelwert 1,5 und eine zentrierte Quadratsumme von 5. Der OLS-Zähler beträgt 1.726,5, daher ergibt sich die Steigung 345,3. Für das Folgejahr wird t=4 eingesetzt. Erst danach kommt der angenommene Sonderauftrag hinzu."
   },
   {
+    "objectID": "rechenweg.html#wie-verteilt-sich-die-basisprognose-über-das-jahr",
+    "href": "rechenweg.html#wie-verteilt-sich-die-basisprognose-über-das-jahr",
+    "title": "Von den Monatswerten zur Jahresplanung",
+    "section": "Wie verteilt sich die Basisprognose über das Jahr?",
+    "text": "Wie verteilt sich die Basisprognose über das Jahr?\nDer Jahrestrend allein sagt noch nichts über die einzelnen Monate. Dafür verwende ich die mittleren historischen Monatsanteile. Die Nachfrage ist im Frühjahr und Sommer höher; eine gleichmäßige Verteilung von einem Zwölftel würde diesen Verlauf nicht abbilden. Der Schalter vergleicht beide Verteilungen bei identischer Jahressumme.\n\nVerteilung der 5.122,5 Räder\nHistorische SaisonanteileGleichmäßig auf zwölf Monate\n\n\nMonatswerte als Tabelle"
+  },
+  {
     "objectID": "szenarien.html",
     "href": "szenarien.html",
     "title": "Welche Annahmen verändern die Empfehlung?",
     "section": "",
-    "text": "Die folgenden Eingaben sind Szenarien, keine Wahrscheinlichkeiten. Standard ist die bereinigte historische Basis mit 180 zusätzlich angenommenen Rädern. Der Nachfragefaktor ist ein von dir gewählter Stressfall, keine aus Daten geschätzte Größe."
+    "text": "Die folgenden Eingaben sind Szenarien, keine Wahrscheinlichkeiten. Ausgangspunkt ist die bereinigte Prognose mit 180 zusätzlichen Rädern. Mit dem Faktor lässt sich ausprobieren, was eine schwächere oder stärkere Nachfrage bedeuten würde. Er ist keine geschätzte Eintrittswahrscheinlichkeit."
   },
   {
     "objectID": "szenarien.html#einfache-kontrollfälle",

@@ -2,7 +2,7 @@
 title: "Was die Rücktests tatsächlich zeigen"
 ---
 
-Zwei gleichartige Prognoseursprünge: Training auf den ersten 24 Monaten → nächste zwölf Monate; danach Training auf 36 → nächste zwölf. Alle Verfahren sehen nur ihre jeweiligen Trainingswerte. Monats-MAE und Monats-MSE werden über dieselben 24 Testmonate gerechnet, Jahres-MAE über die beiden Jahresfehler. Die Testfehler sind Diagnostik, kein verlässlicher Nachweis künftiger Genauigkeit.
+Zwei gleichartige Prognoseursprünge: Training auf den ersten 24 Monaten → nächste zwölf Monate; danach Training auf 36 → nächste zwölf. Alle Verfahren sehen nur ihre jeweiligen Trainingswerte. Monats-MAE und Monats-MSE werden über dieselben 24 Testmonate gerechnet, Jahres-MAE über die beiden Jahresfehler. Damit vergleiche ich die Verfahren unter denselben Bedingungen. Aus zwei Testjahren lässt sich allerdings noch nicht verlässlich ableiten, wie genau die nächste Jahresprognose sein wird.
 
 | Verfahren | Basis 2027, bereinigt | Monats-MAE | Monats-MSE | Jahres-MAE |
 |---|---:|---:|---:|---:|
@@ -11,14 +11,29 @@ Zwei gleichartige Prognoseursprünge: Training auf den ersten 24 Monaten → nä
 | Saisonale Drift | 5.101,33 | 18,79 | 673,17 | 40,25 |
 | Holt-Winters additiv | 5.203,83 | 22,85 | 854,54 | 122,30 |
 
+
+## Fehler und Prognosehöhe vergleichen
+
+Ein niedriger Prognosefehler ist besser, eine höhere Prognose dagegen nicht automatisch. Deshalb lassen sich Fehlerkennzahlen und Prognosehöhe getrennt auswählen. Die Balken beginnen jeweils bei null; beim Wechsel der Kennzahl ändern sich Einheit und Skala. Alle Prognosen sind ohne Zusatzauftrag gerechnet.
+
+```{=html}
+<section class="plot-panel" aria-label="Verfahrensvergleich">
+<label for="metric-mode">Kennzahl</label>
+<select id="metric-mode"><option value="MAE">Mittlerer absoluter Monatsfehler (Räder)</option><option value="MSE">Mittlerer quadratischer Monatsfehler (Räder²)</option><option value="annual_MAE">Mittlerer absoluter Jahresfehler (Räder)</option><option value="annual_forecast">Basisprognose 2027 (Räder)</option></select>
+<div class="plot-scroll" tabindex="0" aria-label="Modellvergleich, horizontal scrollbar"><svg id="metric-plot" viewBox="0 0 760 360" role="img" aria-label="Vergleich der vier Prognoseverfahren"></svg></div>
+<p id="metric-caption" role="status" aria-live="polite"></p>
+</section>
+<script src="charts.js"></script>
+```
+
 Einheiten: Prognose und MAE in Rädern, MSE in Rädern². Die Basiswerte enthalten keinen Zusatzauftrag.
 
 - **Saisonal-naiv:** jeden Vorjahresmonat wiederholen; notwendige einfache Referenz.
 - **Jahrestrend + Saisonanteile:** Jahres-OLS wie oben, Monatsverteilung über historische Anteile.
 - **Saisonale Drift:** jedem Vorjahresmonat den mittleren jährlichen Zuwachs geteilt durch zwölf hinzufügen.
-- **Holt-Winters additiv:** monatliche Glättung mit Saisonlänge zwölf; fest vorgegeben α = 0,2, β = 0,1, γ = 0,2. Anfangsniveau Mittelwert der ersten zwölf Monate, Anfangstrend null, Anfangssaison jeweiliger Wert minus Mittelwert. Aktualisierung ab Monat 13. Keine Parameteroptimierung auf Testdaten, keine Behauptung einer optimalen Parametrisierung oder exakten Vorlesungsimplementierung.
+- **Holt-Winters additiv:** monatliche Glättung mit Saisonlänge zwölf; fest vorgegeben α = 0,2, β = 0,1, γ = 0,2. Anfangsniveau Mittelwert der ersten zwölf Monate, Anfangstrend null, Anfangssaison jeweiliger Wert minus Mittelwert. Aktualisierung ab Monat 13. Die Parameter bleiben in beiden Rücktests gleich; ich habe sie nicht anhand der Testfehler ausgewählt.
 
-Der Jahrestrend ist bei Monats-MAE, Monats-MSE und Jahres-MAE im bereinigten Szenario am besten. Auch im Originalexport hat er unter diesen vier Verfahren die kleinsten drei Fehlerkennzahlen. Das spricht für ihn als nachvollziehbare Referenz – nicht für universelle Überlegenheit gegenüber allen möglichen Verfahren. Auswahl anhand derselben zwei Rücktests ist explorativ; kein zusätzliches unangetastetes Testjahr ist vorhanden.
+Der Jahrestrend ist bei Monats-MAE, Monats-MSE und Jahres-MAE im bereinigten Szenario am besten. Auch im Originalexport hat er unter diesen vier Verfahren die kleinsten drei Fehlerkennzahlen. Deshalb verwende ich ihn für die Empfehlung. Das Ergebnis gilt für diesen kleinen Vergleich; ein weiteres, bei der Auswahl noch nicht verwendetes Testjahr steht nicht zur Verfügung.
 
 ### Jahresfehler des Trendmodells
 

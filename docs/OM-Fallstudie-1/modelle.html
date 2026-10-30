@@ -298,7 +298,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#jahresfehler-des-trendmodells" id="toc-jahresfehler-des-trendmodells" class="nav-link active" data-scroll-target="#jahresfehler-des-trendmodells">Jahresfehler des Trendmodells</a></li>
+  <li><a href="#fehler-und-prognosehöhe-vergleichen" id="toc-fehler-und-prognosehöhe-vergleichen" class="nav-link active" data-scroll-target="#fehler-und-prognosehöhe-vergleichen">Fehler und Prognosehöhe vergleichen</a>
+  <ul class="collapse">
+  <li><a href="#jahresfehler-des-trendmodells" id="toc-jahresfehler-des-trendmodells" class="nav-link" data-scroll-target="#jahresfehler-des-trendmodells">Jahresfehler des Trendmodells</a></li>
+  </ul></li>
   <li><a href="#glättung-präzise-nachvollziehen" id="toc-glättung-präzise-nachvollziehen" class="nav-link" data-scroll-target="#glättung-präzise-nachvollziehen">Glättung präzise nachvollziehen</a></li>
   <li><a href="#wichtige-grenze" id="toc-wichtige-grenze" class="nav-link" data-scroll-target="#wichtige-grenze">Wichtige Grenze</a></li>
   </ul>
@@ -327,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Zwei gleichartige Prognoseursprünge: Training auf den ersten 24 Monaten → nächste zwölf Monate; danach Training auf 36 → nächste zwölf. Alle Verfahren sehen nur ihre jeweiligen Trainingswerte. Monats-MAE und Monats-MSE werden über dieselben 24 Testmonate gerechnet, Jahres-MAE über die beiden Jahresfehler. Die Testfehler sind Diagnostik, kein verlässlicher Nachweis künftiger Genauigkeit.</p>
+<p>Zwei gleichartige Prognoseursprünge: Training auf den ersten 24 Monaten → nächste zwölf Monate; danach Training auf 36 → nächste zwölf. Alle Verfahren sehen nur ihre jeweiligen Trainingswerte. Monats-MAE und Monats-MSE werden über dieselben 24 Testmonate gerechnet, Jahres-MAE über die beiden Jahresfehler. Damit vergleiche ich die Verfahren unter denselben Bedingungen. Aus zwei Testjahren lässt sich allerdings noch nicht verlässlich ableiten, wie genau die nächste Jahresprognose sein wird.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 15%">
@@ -376,14 +379,24 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<section id="fehler-und-prognosehöhe-vergleichen" class="level2">
+<h2 class="anchored" data-anchor-id="fehler-und-prognosehöhe-vergleichen">Fehler und Prognosehöhe vergleichen</h2>
+<p>Ein niedriger Prognosefehler ist besser, eine höhere Prognose dagegen nicht automatisch. Deshalb lassen sich Fehlerkennzahlen und Prognosehöhe getrennt auswählen. Die Balken beginnen jeweils bei null; beim Wechsel der Kennzahl ändern sich Einheit und Skala. Alle Prognosen sind ohne Zusatzauftrag gerechnet.</p>
+<section class="plot-panel" aria-label="Verfahrensvergleich">
+<label for="metric-mode">Kennzahl</label>
+<select id="metric-mode"><option value="MAE">Mittlerer absoluter Monatsfehler (Räder)</option><option value="MSE">Mittlerer quadratischer Monatsfehler (Räder²)</option><option value="annual_MAE">Mittlerer absoluter Jahresfehler (Räder)</option><option value="annual_forecast">Basisprognose 2027 (Räder)</option></select>
+<div class="plot-scroll" tabindex="0" aria-label="Modellvergleich, horizontal scrollbar"><svg id="metric-plot" viewbox="0 0 760 360" role="img" aria-label="Vergleich der vier Prognoseverfahren"></svg></div>
+<p id="metric-caption" role="status" aria-live="polite"></p>
+</section>
+<script src="charts.js"></script>
 <p>Einheiten: Prognose und MAE in Rädern, MSE in Rädern². Die Basiswerte enthalten keinen Zusatzauftrag.</p>
 <ul>
 <li><strong>Saisonal-naiv:</strong> jeden Vorjahresmonat wiederholen; notwendige einfache Referenz.</li>
 <li><strong>Jahrestrend + Saisonanteile:</strong> Jahres-OLS wie oben, Monatsverteilung über historische Anteile.</li>
 <li><strong>Saisonale Drift:</strong> jedem Vorjahresmonat den mittleren jährlichen Zuwachs geteilt durch zwölf hinzufügen.</li>
-<li><strong>Holt-Winters additiv:</strong> monatliche Glättung mit Saisonlänge zwölf; fest vorgegeben α = 0,2, β = 0,1, γ = 0,2. Anfangsniveau Mittelwert der ersten zwölf Monate, Anfangstrend null, Anfangssaison jeweiliger Wert minus Mittelwert. Aktualisierung ab Monat 13. Keine Parameteroptimierung auf Testdaten, keine Behauptung einer optimalen Parametrisierung oder exakten Vorlesungsimplementierung.</li>
+<li><strong>Holt-Winters additiv:</strong> monatliche Glättung mit Saisonlänge zwölf; fest vorgegeben α = 0,2, β = 0,1, γ = 0,2. Anfangsniveau Mittelwert der ersten zwölf Monate, Anfangstrend null, Anfangssaison jeweiliger Wert minus Mittelwert. Aktualisierung ab Monat 13. Die Parameter bleiben in beiden Rücktests gleich; ich habe sie nicht anhand der Testfehler ausgewählt.</li>
 </ul>
-<p>Der Jahrestrend ist bei Monats-MAE, Monats-MSE und Jahres-MAE im bereinigten Szenario am besten. Auch im Originalexport hat er unter diesen vier Verfahren die kleinsten drei Fehlerkennzahlen. Das spricht für ihn als nachvollziehbare Referenz – nicht für universelle Überlegenheit gegenüber allen möglichen Verfahren. Auswahl anhand derselben zwei Rücktests ist explorativ; kein zusätzliches unangetastetes Testjahr ist vorhanden.</p>
+<p>Der Jahrestrend ist bei Monats-MAE, Monats-MSE und Jahres-MAE im bereinigten Szenario am besten. Auch im Originalexport hat er unter diesen vier Verfahren die kleinsten drei Fehlerkennzahlen. Deshalb verwende ich ihn für die Empfehlung. Das Ergebnis gilt für diesen kleinen Vergleich; ein weiteres, bei der Auswahl noch nicht verwendetes Testjahr steht nicht zur Verfügung.</p>
 <section id="jahresfehler-des-trendmodells" class="level3">
 <h3 class="anchored" data-anchor-id="jahresfehler-des-trendmodells">Jahresfehler des Trendmodells</h3>
 <table class="caption-top table">
@@ -411,6 +424,7 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 <p><strong>Grenze der Datenbereinigung:</strong> Die nachträglich mitgeteilte Korrektur gilt im bereinigten Rücktest als richtige Ist-Menge. Ob sie damals bereits bekannt gewesen wäre, ist nicht belegt. Auch ein späterer Trainingslauf kann die Korrektur nur dann enthalten, wenn sie bis dahin verfügbar ist. Die Ergebnisse sind deshalb retrospektive Diagnostik, kein dokumentierter historischer Echtbetrieb.</p>
+</section>
 </section>
 <section id="glättung-präzise-nachvollziehen" class="level2">
 <h2 class="anchored" data-anchor-id="glättung-präzise-nachvollziehen">Glättung präzise nachvollziehen</h2>

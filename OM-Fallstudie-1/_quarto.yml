@@ -9,6 +9,8 @@ project:
     - quellen.qmd
   resources:
     - scenario.js
+    - charts.js
+    - charts-data.json
     - downloads/
 website:
   title: "MünsterRad · Nachfrage verstehen"

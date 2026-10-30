@@ -2,7 +2,7 @@
 title: "Welche Annahmen verändern die Empfehlung?"
 ---
 
-Die folgenden Eingaben sind **Szenarien, keine Wahrscheinlichkeiten**. Standard ist die bereinigte historische Basis mit 180 zusätzlich angenommenen Rädern. Der Nachfragefaktor ist ein von dir gewählter Stressfall, keine aus Daten geschätzte Größe.
+Die folgenden Eingaben sind **Szenarien, keine Wahrscheinlichkeiten**. Ausgangspunkt ist die bereinigte Prognose mit 180 zusätzlichen Rädern. Mit dem Faktor lässt sich ausprobieren, was eine schwächere oder stärkere Nachfrage bedeuten würde. Er ist keine geschätzte Eintrittswahrscheinlichkeit.
 
 ```{=html}
 <section class="scenario" aria-label="Szenariorechner">

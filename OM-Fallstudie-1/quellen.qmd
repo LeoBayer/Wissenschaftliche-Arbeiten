@@ -13,11 +13,11 @@ Keine Originaldateien, vollständigen Gespräche oder Zugangsdaten sind auf dies
 
 ## Nachweisgrenzen
 
-Ein korrigierter Export und ein Vertrags-/Abrufdokument liegen nicht vor. Nachfrage-/Absatzabgrenzung, Lieferrestriktionen und volle Zusätzlichkeit des Sonderauftrags bleiben Annahmen bzw. offene Nachweise. Der heutige Fallportalstand wurde nicht neu abgefragt. Die Empfehlung und ihre Unsicherheit sind in der eigenständig verständlichen PDF offengelegt.
+Ein korrigierter Export und ein Vertrags-/Abrufdokument liegen nicht vor. Nachfrage-/Absatzabgrenzung, Lieferrestriktionen und volle Zusätzlichkeit des Sonderauftrags bleiben Annahmen bzw. offene Nachweise. Die Empfehlung und ihre Unsicherheit sind in der eigenständig verständlichen PDF offengelegt.
 
 ## Erstellung und Verantwortung
 
-Diese Website wurde **KI-unterstützt erstellt**. KI-Unterstützung wurde auch für Rechenmodell, Verfahrensvergleich, Prüfung und Formulierung der zugrunde liegenden Analyse genutzt. Die Verwendung als eigene Falllösung setzt Leos inhaltliche Prüfung und die Einhaltung der geltenden Kursregeln voraus. Keine offizielle Musterlösung, keine garantierte Bewertung, keine Einreichung durch diese Website.
+Bei der Erstellung der Website und der zugrunde liegenden Analyse wurde KI für Programmierung, Rechenkontrollen und sprachliche Überarbeitung eingesetzt. Quellen, Annahmen und Rechenweg sind hier offengelegt. Die Falllösung wird nicht über diese Website eingereicht.
 
 ## Technische Transparenz
 

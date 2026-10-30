@@ -298,9 +298,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Auf dieser Seite</h2>
    
   <ul>
-  <li><a href="#zwei-fallbezogene-zusatzinformationen" id="toc-zwei-fallbezogene-zusatzinformationen" class="nav-link active" data-scroll-target="#zwei-fallbezogene-zusatzinformationen">Zwei fallbezogene Zusatzinformationen</a></li>
+  <li><a href="#jahresverlauf-und-trend" id="toc-jahresverlauf-und-trend" class="nav-link active" data-scroll-target="#jahresverlauf-und-trend">Jahresverlauf und Trend</a>
+  <ul class="collapse">
+  <li><a href="#zwei-fallbezogene-zusatzinformationen" id="toc-zwei-fallbezogene-zusatzinformationen" class="nav-link" data-scroll-target="#zwei-fallbezogene-zusatzinformationen">Zwei fallbezogene Zusatzinformationen</a></li>
+  </ul></li>
   <li><a href="#jahresmodell-und-entscheidung" id="toc-jahresmodell-und-entscheidung" class="nav-link" data-scroll-target="#jahresmodell-und-entscheidung">Jahresmodell und Entscheidung</a></li>
   <li><a href="#so-kannst-du-die-rechnung-selbst-prüfen" id="toc-so-kannst-du-die-rechnung-selbst-prüfen" class="nav-link" data-scroll-target="#so-kannst-du-die-rechnung-selbst-prüfen">So kannst du die Rechnung selbst prüfen</a></li>
+  <li><a href="#wie-verteilt-sich-die-basisprognose-über-das-jahr" id="toc-wie-verteilt-sich-die-basisprognose-über-das-jahr" class="nav-link" data-scroll-target="#wie-verteilt-sich-die-basisprognose-über-das-jahr">Wie verteilt sich die Basisprognose über das Jahr?</a></li>
   </ul>
 </nav>
     </div>
@@ -327,7 +331,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Die Geschäftsführung verlangt eine eigene Nachfrageprognose, eine ehrliche Unsicherheitsangabe und eine eindeutige Planzahl zwischen den nicht ungeprüft zu übernehmenden Abteilungsvorschlägen (Vertrieb 5.500, Produktion 4.900). Eine Begründung von rund 100 Wörtern muss mindestens eine Gesprächsaussage enthalten; Rechenweg und Begründung sollen möglichst gemeinsam in PDF oder Word stehen (maximal 10 MB).</p>
+<p>Für die Budgetrunde brauche ich eine Zahl, die sich aus den Daten und den Gesprächen herleiten lässt. Deshalb trenne ich zunächst die bisherige Nachfrage vom zusätzlichen Bielefelder Auftrag. Den historischen Verlauf schätze ich mit einem Jahrestrend; den Auftrag berücksichtige ich anschließend gesondert.</p>
 <p>Der unveränderte ERP-Export enthält 48 eindeutige, lückenlose Monatswerte von Oktober 2022 bis September 2026. Einheit: Räder, beide Modelle Lasto und Cargo Pro zusammen laut Wessels. Geschäftsjahre Oktober–September sind die zum Export passende Arbeitsannahme. Die genaue Abgrenzung zwischen Nachfrage, Bestellungen und realisiertem Absatz sowie etwaige Lieferbeschränkungen bleiben nicht vollständig geklärt.</p>
 <table class="caption-top table">
 <thead>
@@ -360,13 +364,23 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+<section id="jahresverlauf-und-trend" class="level2">
+<h2 class="anchored" data-anchor-id="jahresverlauf-und-trend">Jahresverlauf und Trend</h2>
+<p>Die Nachfrage steigt in allen vier Jahren. Die Korrektur verändert nur den letzten Jahreswert. Mit dem Schalter lässt sich nachvollziehen, wie sich dadurch auch die Trendprognose verschiebt. Die gestrichelte Linie zeigt den geschätzten Trend, nicht die tatsächlichen Zwischenwerte. Die 180 zusätzlichen Räder sind noch nicht enthalten.</p>
+<section class="plot-panel" aria-label="Jahresverlauf und Trend">
+<label for="annual-mode">Datengrundlage</label>
+<select id="annual-mode"><option value="Korrektur">Mit ERP-Korrektur</option><option value="Original">Unveränderter Export</option></select>
+<div class="plot-scroll" tabindex="0" aria-label="Jahresdiagramm, horizontal scrollbar"><svg id="annual-plot" viewbox="0 0 760 360" role="img" aria-label="Ist-Mengen 2023 bis 2026 und Basisprognose 2027"></svg></div>
+<p id="annual-caption" role="status" aria-live="polite"></p>
+</section>
 <section id="zwei-fallbezogene-zusatzinformationen" class="level3">
 <h3 class="anchored" data-anchor-id="zwei-fallbezogene-zusatzinformationen">Zwei fallbezogene Zusatzinformationen</h3>
 <ol type="1">
 <li><strong>Controlling:</strong> „Im Oktober 2025 wurde das ERP umgestellt. In diesem Monat fehlen im Export die Cargo-Pro-Aufträge; korrekt sind 321 Räder statt 215.“ Damit erhöht sich das letzte Jahr um 106 auf 4.759. Originaldatei nicht überschrieben; Korrektur separat gerechnet. Kein korrigierter Export als zusätzlicher Beleg vorhanden.</li>
 <li><strong>Vertrieb:</strong> Terhörst berichtet über einen im September 2026 abgeschlossenen Rahmenvertrag mit den Stadtwerken Bielefeld über 180 Cargo Pro für das Geschäftsjahr 2027 und bezeichnet ihn als „reines Neugeschäft“. Vertragsdokument nicht vorgelegt. Die volle Addition unterstellt, dass diese Menge zum normalen Verlauf zusätzlich anfällt und nicht bereits in der historischen Nachfrage bzw. Trendfortschreibung enthalten ist. Rahmenvertrag nicht ungeprüft mit garantiertem Abruf gleichsetzen.</li>
 </ol>
-<p>Persona-Aussagen sind im fiktiven Lehrfall relevante Evidenz, aber keine unabhängig geprüften Dokumente. Es werden keine tatsächlichen Unternehmensverträge behauptet. Die reine Behauptung „Die Händler sind heiß“ erhält keinen numerischen Prognoseaufschlag. Die in früheren Robustheitstests absichtlich genannte falsche Menge 600 ist kein Falldatum und wird nicht verwendet.</p>
+<p>Ich übernehme beide Angaben für die Hauptrechnung, rechne aber auch ohne sie. So wird sichtbar, wie stark die Empfehlung von diesen Informationen abhängt. Terhörsts allgemeine Einschätzung, dass die Händler großes Interesse hätten, reicht mir dagegen nicht für einen weiteren Aufschlag.</p>
+</section>
 </section>
 <section id="jahresmodell-und-entscheidung" class="level2">
 <h2 class="anchored" data-anchor-id="jahresmodell-und-entscheidung">Jahresmodell und Entscheidung</h2>
@@ -379,11 +393,23 @@ ul.task-list li input[type="checkbox"] {
 <li>Bedingter Zusatz: 180; Summe <strong>5.302,50</strong>; auf volle Hunderter als Budget-Planzahl <strong>5.300</strong>.</li>
 </ul>
 <p>Die Rundung ist eine transparente Planungsentscheidung (−2,5 Räder), keine zusätzliche statistische Genauigkeit. Ohne Kosten für Über-/Unterplanung oder Serviceziel lässt sich kein formal kostenoptimaler Sicherheitsaufschlag bestimmen.</p>
-<p>Monatliche Verteilung: Für jeden Kalendermonat wird der Anteil an seinem jeweiligen Geschäftsjahr gebildet; die vier historischen Anteile werden gemittelt. Jahresprognose × mittlerer Anteil ergibt die Monatsbasis. Die Anteile summieren sich zu eins und verändern die Jahresprognose nicht. Der Großauftrag wird mangels bestätigtem Lieferplan <strong>nicht</strong> künstlich auf Monate verteilt. Die beiliegende CSV enthält daher nur die Basis ohne 180er-Auftrag.</p>
+<p>Monatliche Verteilung: Für jeden Kalendermonat wird der Anteil an seinem jeweiligen Geschäftsjahr gebildet; die vier historischen Anteile werden gemittelt. Jahresprognose × mittlerer Anteil ergibt die Monatsbasis. Die Anteile summieren sich zu eins und verändern die Jahresprognose nicht. Der Großauftrag wird mangels bestätigtem Lieferplan <strong>nicht</strong> künstlich auf Monate verteilt. Die Monatsgrafik zeigt deshalb nur die Basisprognose, ohne den Zusatzauftrag.</p>
 </section>
 <section id="so-kannst-du-die-rechnung-selbst-prüfen" class="level2">
 <h2 class="anchored" data-anchor-id="so-kannst-du-die-rechnung-selbst-prüfen">So kannst du die Rechnung selbst prüfen</h2>
 <p>Die vier bereinigten Jahressummen ergeben 17.037 Räder, also einen Mittelwert von 4.259,25. Die Zeitwerte 0 bis 3 haben den Mittelwert 1,5 und eine zentrierte Quadratsumme von 5. Der OLS-Zähler beträgt 1.726,5, daher ergibt sich die Steigung 345,3. Für das Folgejahr wird t=4 eingesetzt. Erst danach kommt der angenommene Sonderauftrag hinzu.</p>
+</section>
+<section id="wie-verteilt-sich-die-basisprognose-über-das-jahr" class="level2">
+<h2 class="anchored" data-anchor-id="wie-verteilt-sich-die-basisprognose-über-das-jahr">Wie verteilt sich die Basisprognose über das Jahr?</h2>
+<p>Der Jahrestrend allein sagt noch nichts über die einzelnen Monate. Dafür verwende ich die mittleren historischen Monatsanteile. Die Nachfrage ist im Frühjahr und Sommer höher; eine gleichmäßige Verteilung von einem Zwölftel würde diesen Verlauf nicht abbilden. Der Schalter vergleicht beide Verteilungen bei identischer Jahressumme.</p>
+<section class="plot-panel" aria-label="Monatsverteilung">
+<label for="season-mode">Verteilung der 5.122,5 Räder</label>
+<select id="season-mode"><option value="seasonal">Historische Saisonanteile</option><option value="flat">Gleichmäßig auf zwölf Monate</option></select>
+<div class="plot-scroll" tabindex="0" aria-label="Monatsdiagramm, horizontal scrollbar"><svg id="season-plot" viewbox="0 0 760 360" role="img" aria-label="Monatliche Basisprognose Oktober 2026 bis September 2027"></svg></div>
+<p id="season-caption" role="status" aria-live="polite"></p>
+<details><summary>Monatswerte als Tabelle</summary><div id="season-table"></div></details>
+</section>
+<script src="charts.js"></script>
 
 
 </section>
