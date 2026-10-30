@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Pigou-Steuern: den externen Effekt internalisieren – WiSe 2026/27 Study Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0c7f97109e616cbba0e364631cea135d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1c200c6cb5dc67f4915747dbf747a44a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-0c7f97109e616cbba0e364631cea135d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../number-controls-20261028-slim.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Study Lab
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Seitenleiste umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Suchen" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Study Lab</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Suchen"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cockpit · Kurse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materialien</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Aktuelle Kurse</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Abschnitt umschalten">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/controlling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Controlling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/digital-business.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Digital Business</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/it-driven-innovation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IT-driven Innovation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/operations-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Operations Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/vwl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VWL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Üben</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../feedback.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feedback</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#mechanismus" id="toc-mechanismus" class="nav-link active" data-scroll-target="#mechanismus">Ein Preis für bislang externe Kosten</a></li>
+  <li><a href="#beispiel" id="toc-beispiel" class="nav-link" data-scroll-target="#beispiel">Eigener Rechenfall: Steuerkeil und verbleibender Schaden</a></li>
+  <li><a href="#verstehen" id="toc-verstehen" class="nav-link" data-scroll-target="#verstehen">Verständnislernstrecke</a>
+  <ul class="collapse">
+  <li><a href="#abruf-zwei-entscheidungsränder" id="toc-abruf-zwei-entscheidungsränder" class="nav-link" data-scroll-target="#abruf-zwei-entscheidungsränder">1. Abruf: zwei Entscheidungsränder</a></li>
+  <li><a href="#rechnung-ein-unvollständiger-steuerkeil" id="toc-rechnung-ein-unvollständiger-steuerkeil" class="nav-link" data-scroll-target="#rechnung-ein-unvollständiger-steuerkeil">2. Rechnung: ein unvollständiger Steuerkeil</a></li>
+  <li><a href="#fehlerdiagnose-einnahmen-und-preise" id="toc-fehlerdiagnose-einnahmen-und-preise" class="nav-link" data-scroll-target="#fehlerdiagnose-einnahmen-und-preise">3. Fehlerdiagnose: Einnahmen und Preise</a></li>
+  <li><a href="#transfer-heterogene-vermeidungskosten" id="toc-transfer-heterogene-vermeidungskosten" class="nav-link" data-scroll-target="#transfer-heterogene-vermeidungskosten">4. Transfer: heterogene Vermeidungskosten</a></li>
+  <li><a href="#fehlerreflexion-und-verzögerte-wiederholung" id="toc-fehlerreflexion-und-verzögerte-wiederholung" class="nav-link" data-scroll-target="#fehlerreflexion-und-verzögerte-wiederholung">Fehlerreflexion und verzögerte Wiederholung</a></li>
+  </ul></li>
+  <li><a href="#selbstcheck" id="toc-selbstcheck" class="nav-link" data-scroll-target="#selbstcheck">Ergänzender Auswahlcheck</a></li>
+  <li><a href="#verwandte-themen" id="toc-verwandte-themen" class="nav-link" data-scroll-target="#verwandte-themen">Verwandte Themen</a></li>
+  <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Quellen und Grenzen</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Pigou-Steuern: den externen Effekt internalisieren</h1>
+<p class="subtitle lead">VWL · Kurs 94931 · WiSe 2026/27</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#mechanismus">Mechanismus</a><a href="#beispiel">Rechenbeispiel</a><a href="#verstehen">Verstehen und anwenden</a><a href="#selbstcheck">Selbstcheck</a><a href="#sources">Quellen</a></nav>
+<p><a href="../courses/vwl.html#externalitaeten">Zur Vorlesung</a></p>
+<section id="mechanismus" class="level2">
+<h2 class="anchored" data-anchor-id="mechanismus">Ein Preis für bislang externe Kosten</h2>
+<p><strong>Internalisierung</strong> verändert Anreize so, dass Handelnde externe Effekte bei ihren Entscheidungen berücksichtigen. Eine ideale Pigou-Steuer pro Mengen- oder Emissionseinheit entspricht den <strong>externen Grenzkosten im sozialen Optimum</strong>. Es geht nicht um den durchschnittlichen Schaden und auch nicht automatisch um einen beliebigen politischen Steuersatz. Welche Bemessungsgrundlage verwendet wird, muss feststehen: Eine Steuer je Produkteinheit ist bei veränderlichen Emissionen pro Produkt nicht dasselbe wie eine Steuer je Emissionseinheit.</p>
+<p>Im einfachen Wettbewerbsmodell erhöht eine Steuer je Produkteinheit die privat entscheidungsrelevanten Grenzkosten. Stimmt der Steuerkeil am Optimum mit den dortigen externen Grenzkosten überein, treffen private Entscheidung und soziale Zielmenge zusammen. Bei zunehmenden externen Grenzkosten muss der Staat dafür das Optimum kennen beziehungsweise die Schäden geeignet abschätzen; ein willkürlich festgesetzter Preis garantiert es nicht.</p>
+<p>Eine Emissionssteuer wirkt außerdem auf <strong>Vermeidung</strong>: Eine Firma vermeidet eine weitere Tonne, solange deren Vermeidung weniger kostet als die dadurch ersparte Steuer. Bei stetigen, steigenden Grenzvermeidungskosten liegt eine innere Lösung dort, wo Grenzvermeidungskosten und Steuersatz übereinstimmen. Unterschiedliche Firmen vermeiden daher unterschiedliche Mengen. Ein einheitlicher Preis kann Grenzvermeidungskosten angleichen; eine identische Mengenauflage für jede Firma tut das bei unterschiedlichen Technologien nicht automatisch.</p>
+<p>Steuereinnahmen sind nicht selbst verbrauchte Ressourcen. In einer vereinfachten Wohlfahrtsbilanz werden sie als Transfer einbezogen; reale Erhebungskosten und Verteilungsfragen sind damit nicht beantwortet. Ebenso wenig garantiert die Steuer eine exakt vorgegebene Emissionsmenge: Diese folgt aus den Reaktionen. Bei lokalen Schadenshotspots oder stark ansteigenden Schäden können reine Einheitsanreize unzureichend sein. Die Aussage zur kostengünstigen Vermeidung ist deshalb von der Aussage zum richtigen Umweltziel zu trennen.</p>
+</section>
+<section id="beispiel" class="level2">
+<h2 class="anchored" data-anchor-id="beispiel">Eigener Rechenfall: Steuerkeil und verbleibender Schaden</h2>
+<p>Verwende GN = 100 − q, GKp = 20 + q, GKe = 20 €/Einheit. q bezeichnet Einheiten pro Tag. Ohne Eingriff: qM = 40 und pM = 60 €/Einheit. Das soziale Optimum liegt bei q* = 30. Eine ideale Steuer t = <strong>20 €/Einheit</strong> liefert die neue Gleichung 100 − q = 20 + q + 20.</p>
+<p>Bei q = 30 zahlen Käufer <strong>70 €/Einheit</strong>; Anbieter erhalten nach Abführung der Steuer <strong>50 €/Einheit</strong>. Der Abstand ist 20 €/Einheit, nicht zweimal 20. Einnahmen: 20 × 30 = <strong>600 €/Tag</strong>. Der verbleibende externe Schaden beträgt ebenfalls 600 €/Tag, aber aus einem anderen Grund: In diesem speziellen Fall ist der Schaden je Einheit konstant und gleich dem Steuersatz. Gleichheit der Beträge bedeutet weder, dass Geschädigte automatisch entschädigt werden, noch dass die Einnahmen zusätzlich von der gesellschaftlichen Wohlfahrt abzuziehen wären.</p>
+<p>Zur Kontrolle der Nettowirkung: Die Marktmenge sinkt um 10 Einheiten/Tag. Bei q = 40 beträgt der soziale Grenzkostenüberschuss 20 €/Einheit; beim Optimum ist er null. Das beseitigte Verlustdreieck beträgt ½ × 10 × 20 = <strong>100 €/Tag</strong>, nicht 600 €/Tag. Verteilungswirkungen und der modellierte Effizienzgewinn sind verschiedene Fragen.</p>
+</section>
+<section id="verstehen" class="level2">
+<h2 class="anchored" data-anchor-id="verstehen">Verständnislernstrecke</h2>
+<p>Alle folgenden Aufgaben sind <strong>eigene Lernaufgaben</strong>, keine offiziellen Prüfungsfragen. Schreibe deinen Erstversuch auf, bevor du den optionalen Hinweis öffnest. Vergleiche anschließend Rechenweg, Einheiten, Interpretation und Annahmen mit der getrennten Lösung. Offene Antworten werden transparent selbst bewertet, nicht per Schlüsselwortsuche.</p>
+<section id="abruf-zwei-entscheidungsränder" class="level3">
+<h3 class="anchored" data-anchor-id="abruf-zwei-entscheidungsränder">1. Abruf: zwei Entscheidungsränder</h3>
+<p><strong>Dein Versuch:</strong> Erkläre ohne Vorlage den richtigen Pigou-Satz und die Vermeidungsentscheidung einer Firma. Warum sind beide Aussagen keine Garantie eines politisch gewünschten Emissionswerts?</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Einmal geht es um Schaden, einmal um Kosten einer Vermeidungsmaßnahme.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Ideal ist der Satz gleich den externen Grenzkosten im sozialen Optimum. Eine Firma vergleicht Kosten einer weiteren vermiedenen Einheit mit der ersparten Steuer; bei innerer stetiger Lösung gilt GVK = t. Der Staat muss Schäden und Reaktionen kennen, und die Menge ergibt sich aus den tatsächlichen Entscheidungen. Ein falscher Satz oder andere Reaktionen können das Mengenziel verfehlen.</p>
+<p><strong>Bewertung:</strong> Satz am Optimum 1; richtiger Kostenvergleich 1; innere Lösung eingegrenzt 1; Mengen-/Informationsgrenze 1 (4 Punkte). Ein richtiges Ergebnis ohne geforderten Rechenweg erhält keine Begründungspunkte.</p>
+</details>
+</section>
+<section id="rechnung-ein-unvollständiger-steuerkeil" class="level3">
+<h3 class="anchored" data-anchor-id="rechnung-ein-unvollständiger-steuerkeil">2. Rechnung: ein unvollständiger Steuerkeil</h3>
+<p><strong>Dein Versuch:</strong> Im eigenen Ausgangsmodell wird nur t = 10 €/Einheit erhoben. Berechne q, Käuferpreis, Anbietererlös, Einnahmen und den verbleibenden Nettoverlust gegenüber q* = 30.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Die private Angebotsbedingung enthält t; die soziale Kostenkurve verändert sich dadurch nicht.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>100 − q = 20 + q + 10 ergibt q = 35 Einheiten/Tag. Käuferpreis 65, Nettoerlös 55 €/Einheit. Einnahmen 10 × 35 = 350 €/Tag. Bei q = 35: GKs = 75 und GN = 65 €/Einheit; Überschuss 10. Das verbleibende Dreieck zwischen 30 und 35 beträgt ½ × 5 × 10 = 25 €/Tag. Teilweise Internalisierung ist hier besser als keine, aber nicht vollständig.</p>
+<p><strong>Bewertung:</strong> Gleichung/Menge 1; beide Preise/Keil 1; Einnahmen mit Einheit 1; Restdreieck 1; Interpretation 1 (5 Punkte). Ein richtiges Ergebnis ohne geforderten Rechenweg erhält keine Begründungspunkte.</p>
+</details>
+</section>
+<section id="fehlerdiagnose-einnahmen-und-preise" class="level3">
+<h3 class="anchored" data-anchor-id="fehlerdiagnose-einnahmen-und-preise">3. Fehlerdiagnose: Einnahmen und Preise</h3>
+<p><strong>Dein Versuch:</strong> Ein Bericht behauptet: „Bei t = 20 zahlen Käufer 80 €, Verkäufer erhalten 40 €, und 600 € Einnahmen sind der gesellschaftliche Verlust.“ Korrigiere die Preis- und Wohlfahrtsaussagen.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Die neue Menge bestimmt beide Preise; es wird nicht zweimal der volle Satz vom alten Preis verschoben.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Bei q = 30 sind Käuferpreis 70 und Nettoerlös 50 €/Einheit; die Differenz ist genau 20. Der alte Preis 60 ist keine feste Basis für zwei volle Steueraufschläge. 600 €/Tag sind Einnahmen beziehungsweise Transfer, nicht das Ressourcenverlustdreieck. Das Ausgangsverlustdreieck von 100 €/Tag wird im idealisierten Modell beseitigt. Reale Verwaltung und Verteilung bleiben gesondert zu prüfen.</p>
+<p><strong>Bewertung:</strong> Preise 1; Keil/Fehlerursache 1; Transferabgrenzung 1; Effizienzgewinn samt Grenze 1 (4 Punkte). Ein richtiges Ergebnis ohne geforderten Rechenweg erhält keine Begründungspunkte.</p>
+</details>
+</section>
+<section id="transfer-heterogene-vermeidungskosten" class="level3">
+<h3 class="anchored" data-anchor-id="transfer-heterogene-vermeidungskosten">4. Transfer: heterogene Vermeidungskosten</h3>
+<p><strong>Dein Versuch:</strong> Zwei Firmen können jeweils bis zu 10 t/Tag vermeiden. Ihre GVK sind 10aA und 20aB €/t, wobei a in t/Tag gemessen wird. Bei t = 40 €/t: Wie viel vermeidet jede, was kostet die gesamte Vermeidung bei linear von null steigenden GVK? Vergleiche mit einer Vorgabe von je 3 t/Tag bei gleicher Gesamtvermeidung.</p>
+<details>
+<summary>
+Optionaler Hinweis
+</summary>
+<p>Die Fläche unter jeder GVK ist ein Dreieck; gleiche Mengen sind nicht gleiche Grenzkosten.</p>
+</details>
+<details>
+<summary>
+Vollständige Musterlösung und Bewertung
+</summary>
+<p>Firma A vermeidet 4, B 2 t/Tag: beide GVK sind 40 €/t. Kosten A: ½ × 4 × 40 = 80 €/Tag, B: ½ × 2 × 40 = 40 €/Tag, zusammen 120. Je 3 t/Tag führen zu GVK 30 und 60 €/t, Kosten 45 + 90 = 135 €/Tag. Gleiche Gesamtvermeidung 6 t/Tag kostet dort 15 €/Tag mehr. Unter diesen Kosten-, Innenlösungs- und Messannahmen ist die preisgesteuerte Aufteilung günstiger; ohne Schadensinformation folgt daraus nicht, dass 6 t/Tag sozial optimal sind.</p>
+<p><strong>Bewertung:</strong> 4/2 mit Bedingung 1; Kosten 80/40/120 1; Alternative 45/90/135 1; gleiche Menge/15 Ersparnis 1; kein unbegründetes Umweltoptimum 1 (5 Punkte). Ein richtiges Ergebnis ohne geforderten Rechenweg erhält keine Begründungspunkte.</p>
+</details>
+</section>
+<section id="fehlerreflexion-und-verzögerte-wiederholung" class="level3">
+<h3 class="anchored" data-anchor-id="fehlerreflexion-und-verzögerte-wiederholung">Fehlerreflexion und verzögerte Wiederholung</h3>
+<p>Maximal <strong>18 selbst bewertete Punkte</strong> (4 + 5 + 4 + 5). Notiere konkret, welche Kostenart, Bezugsgröße oder Modellbedingung du zunächst verwechselt hast. Formuliere eine Korrekturregel und rechne den betroffenen Schritt ohne Vorlage erneut. <strong>Morgen</strong> erkläre den Mechanismus aus dem Gedächtnis und löse Aufgabe 2 noch einmal. <strong>In einer Woche</strong> wiederhole Aufgabe 4 mit einem selbst veränderten Parameter; prüfe vor jeder Rechnung, welche Gleichung und Annahme sich dadurch ändert. Unterscheide bloßes Wiedererkennen von einer selbst begründeten Lösung.</p>
+</section>
+</section>
+<section id="selbstcheck" class="level2">
+<h2 class="anchored" data-anchor-id="selbstcheck">Ergänzender Auswahlcheck</h2>
+<fieldset class="study-check" data-type="multiple" data-answer="a,c"><legend>Welche Aussagen sind unter den erläuterten Bedingungen richtig?</legend><label><input type="checkbox" value="a"> Der ideale Satz richtet sich nach externen Grenzkosten im Optimum.</label><label><input type="checkbox" value="b"> Identische Mengenauflagen gleichen bei heterogenen Firmen stets Grenzvermeidungskosten an.</label><label><input type="checkbox" value="c"> Ein einheitlicher Emissionspreis kann Vermeidung zu Firmen mit niedrigen Kosten verlagern.</label><button type="button" class="check-answer">Prüfen</button><p class="feedback" aria-live="polite"></p></fieldset>
+<details>
+<summary>
+Begründung anzeigen
+</summary>
+<p><strong>a und c sind richtig:</strong> Der Zielpreis internalisiert den marginalen Schaden, und gemeinsame Preise gleichen bei inneren Lösungen die Vermeidungskosten am Rand an. <strong>b ist falsch:</strong> Gleiche Vermeidungsmengen können bei unterschiedlichen Technologien unterschiedliche Grenzkosten haben.</p>
+</details>
+</section>
+<section id="verwandte-themen" class="level2">
+<h2 class="anchored" data-anchor-id="verwandte-themen">Verwandte Themen</h2>
+<nav class="quick-grid" aria-label="Verwandte Lernseiten"><a class="quick-card" href="vwl-externe-kosten.html"><strong>Externalitäten: private und soziale Grenzkosten</strong><span>Mechanismus, Rechnung und Grenzen weiterlernen.</span></a><a class="quick-card" href="vwl-emissionszertifikate.html"><strong>Emissionszertifikate: feste Gesamtmenge, handelbare Rechte</strong><span>Mechanismus, Rechnung und Grenzen weiterlernen.</span></a></nav>
+<p><a href="../courses/vwl-steuerinzidenz.html">Steuerkeil und Inzidenz</a> · <a href="../courses/vwl-wohlfahrt-effizienz.html">Wohlfahrt und Effizienz</a></p>
+</section>
+<section id="sources" class="level2">
+<h2 class="anchored" data-anchor-id="sources">Quellen und Grenzen</h2>
+<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/mod/resource/view.php?id=4229183">VWLWiInfWS26.pdf – Learnweb, Hochschulzugang</a>, aktueller Kurs 94931. Physische PDF-Seiten, gelesen am 30.10.2026. Original und private Extrakte werden nicht veröffentlicht.</p>
+<ul>
+<li><strong>Mechanismus und Mengen-/Preissteuerung:</strong> physische S. 161–164, insbesondere Definition des idealen Satzes S. 163.</li>
+<li><strong>Heterogene Firmen, technische Anreize und Grenzen:</strong> S. 165–166; Internalisierung ergänzend S. 171. Hotspots und steile Schäden nicht ausgeblendet.</li>
+<li><strong>Zahlen und Bilanz:</strong> eigene Funktionen, Dreiecksrechnungen und Transferfälle zur Anwendung dieser Mechanismen, keine offizielle Musterlösung.</li>
+<li><strong>Sämtliche Übungen, Hinweise, Lösungen und Bewertungen:</strong> eigene Lernhilfen. Keine empirische Prognose und kein aktueller Rechts- oder Politikbericht. Vollständige Internalisierung und störungsfreier Wettbewerb sind Modellbedingungen, keine pauschalen Aussagen über reale Märkte.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+// Shared number controls: theme-aware, including dynamically added exercises.
+(() => {
+  function enhanceNumbers(root = document) {
+    root.querySelectorAll('input[type="number"]').forEach((input) => {
+      if (input.closest('.study-number-control') || input.step === 'any') return;
+      const english = (input.closest('[lang]')?.lang || document.documentElement.lang).toLowerCase().startsWith('en');
+      const wrapper = document.createElement('span');
+      wrapper.className = 'study-number-control';
+      input.before(wrapper);
+      wrapper.append(input);
+      const controls = document.createElement('span');
+      controls.className = 'study-number-buttons';
+      for (const [direction, label, points] of [
+        [1, english ? 'Increase value' : 'Wert erhöhen', '5 14 12 7 19 14'],
+        [-1, english ? 'Decrease value' : 'Wert verringern', '5 10 12 17 19 10']
+      ]) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'study-number-step';
+        button.setAttribute('aria-label', label);
+        button.title = label;
+        button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="${points}" /></svg>`;
+        button.disabled = input.disabled || input.readOnly;
+        new MutationObserver(() => { button.disabled = input.disabled || input.readOnly; })
+          .observe(input, { attributes: true, attributeFilter: ['disabled', 'readonly'] });
+        button.addEventListener('click', () => {
+          if (input.disabled || input.readOnly) return;
+          direction > 0 ? input.stepUp() : input.stepDown();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+        controls.append(button);
+      }
+      wrapper.append(controls);
+    });
+  }
+  function init() {
+    enhanceNumbers();
+    new MutationObserver((records) => {
+      if (records.some((record) => record.addedNodes.length)) enhanceNumbers();
+    }).observe(document.body, { childList: true, subtree: true });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".check-answer");
+  if (!button) return;
+
+  const check = button.closest(".study-check");
+  const feedback = check?.querySelector(".feedback");
+  const expected = (check?.dataset.answer || "")
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .sort();
+
+  if (!check || !feedback || (expected.length === 0 && check.dataset.type !== "keywords")) return;
+
+  const english = (check.closest("[lang]")?.lang || document.documentElement.lang).toLowerCase().startsWith("en");
+
+  const selected = Array.from(check.querySelectorAll("input:checked"))
+    .map((input) => input.value)
+    .sort();
+
+  if (check.dataset.type === "keywords") {
+    const answer = (check.querySelector("textarea")?.value || "").toLowerCase();
+    const keywords = (check.dataset.keywords || "")
+      .split(",")
+      .map((item) => item.trim().toLowerCase())
+      .filter(Boolean);
+    const missing = keywords.filter((keyword) => !answer.includes(keyword));
+
+    if (!answer.trim()) {
+      feedback.textContent = (english ? "Write a short answer first." : "Schreib erst eine kurze Antwort.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    feedback.textContent = missing.length === 0
+      ? (english ? "All key terms are present. Now check: Is the answer applied to the case?" : "Alle Kernbegriffe sind drin. Jetzt prüfen: Ist die Antwort auch auf den Fall angewendet?")
+      : (english ? `Key terms still missing: ${missing.join(", ")}.` : `Noch fehlen Kernbegriffe: ${missing.join(", ")}.`);
+    feedback.dataset.state = missing.length === 0 ? "correct" : "wrong";
+    return;
+  }
+
+  if (check.dataset.type === "sequence") {
+    const expectedSequence = (check.dataset.answer || "")
+      .split(",")
+      .map((item) => item.trim().toLowerCase())
+      .filter(Boolean);
+    const answer = (check.querySelector("textarea")?.value || "")
+      .toLowerCase()
+      .split(/,|→|->|\n/)
+      .map((item) => item.trim())
+      .filter(Boolean);
+
+    if (answer.length === 0) {
+      feedback.textContent = (english ? "Write the sequence first." : "Schreib die Reihenfolge erst auf.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    const correct =
+      answer.length === expectedSequence.length &&
+      answer.every((value, index) => value === expectedSequence[index]);
+
+    feedback.textContent = correct
+      ? (english ? "Correct sequence. Now briefly justify each step." : "Reihenfolge stimmt. Jetzt jeden Schritt kurz begründen.")
+      : (english ? `Not yet. Expected: ${expectedSequence.join(" → ")}.` : `Noch nicht. Erwartet wird: ${expectedSequence.join(" → ")}.`);
+    feedback.dataset.state = correct ? "correct" : "wrong";
+    return;
+  }
+
+  if (check.dataset.type === "numeric") {
+    const input = check.querySelector("input[type='number']");
+    const value = Number(input?.value);
+    const target = Number(check.dataset.answer);
+    const tolerance = Number(check.dataset.tolerance || "0");
+
+    if (!input || input.value.trim() === "") {
+      feedback.textContent = (english ? "Enter a number first." : "Trag erst eine Zahl ein.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    const correct = Number.isFinite(value) && Math.abs(value - target) <= tolerance;
+    feedback.textContent = correct
+      ? (english ? "Correct. Now explain the formula and interpretation." : "Richtig. Jetzt die Formel und Interpretation dazusagen.")
+      : (english ? `Not yet. Target value: ${target}.` : `Noch nicht. Zielwert: ${target}.`);
+    feedback.dataset.state = correct ? "correct" : "wrong";
+    return;
+  }
+
+  if (selected.length === 0) {
+    feedback.textContent = english ? "Select an answer first." : "Wähle erst eine Antwort aus.";
+    feedback.dataset.state = "neutral";
+    return;
+  }
+
+  const correct =
+    selected.length === expected.length &&
+    selected.every((value, index) => value === expected[index]);
+
+  feedback.textContent = correct
+    ? (english ? "Correct. Explain why the other options are weaker." : "Richtig. Jetzt kurz begründen, warum die anderen Optionen schwächer sind.")
+    : (english ? "Not quite. Revisit the explanation and check the mechanism." : "Noch nicht ganz. Geh zur Erklärung zurück und prüfe den Mechanismus.");
+  feedback.dataset.state = correct ? "correct" : "wrong";
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.id !== "build-feedback") return;
+
+  const page = document.querySelector("#feedback-page")?.value.trim() || "unknown";
+  const type = document.querySelector("#feedback-type")?.value.trim() || "unspecified";
+  const change = document.querySelector("#feedback-change")?.value.trim() || "not specified";
+  const source = document.querySelector("#feedback-source")?.value.trim() || "not specified";
+  const output = document.querySelector("#feedback-output");
+
+  if (!output) return;
+
+  output.value = [
+    `Course/page: ${page}`,
+    `Type: ${type}`,
+    `Problem: ${change}`,
+    "Suggested change: Please revise the page so the explanation is clearer, source-backed, and easier to practice.",
+    `Source/context: ${source}`,
+    "Urgency: normal"
+  ].join("\n");
+
+  output.focus();
+  output.select();
+});
+</script>
+
+<script>
+/* Numeric worksheet: compare each entry independently; never evaluate formulas. */
+(() => {
+  function parseWorksheetNumber(raw) {
+    const text = raw.trim();
+    if (!text) return null;
+    // German grouping and decimal comma; also unambiguous decimal dots.
+    const german = /^[+-]?(?:\d{1,3}(?:[. \u00a0\u202f]\d{3})+|\d+)(?:,\d+)?$/;
+    if (german.test(text)) return Number(text.replace(/[. \u00a0\u202f]/g, "").replace(",", "."));
+    if (/^[+-]?\d+\.\d{1,2}$/.test(text)) return Number(text);
+    return NaN;
+  }
+
+  function clearCell(cell) {
+    const input = cell.querySelector("input");
+    input.removeAttribute("aria-invalid");
+    delete cell.dataset.state;
+    cell.querySelector(".calc-cell-state").textContent = "";
+    const work = cell.querySelector(".calc-work");
+    work.hidden = true;
+    work.open = false;
+  }
+
+  document.addEventListener("input", (event) => {
+    const cell = event.target.closest(".calc-cell");
+    if (!cell) return;
+    clearCell(cell);
+    const sheet = cell.closest(".calc-sheet");
+    sheet.querySelector(".calc-summary").textContent = "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
+  });
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".calc-check, .calc-reset");
+    if (!button) return;
+    const sheet = button.closest(".calc-sheet");
+    const cells = [...sheet.querySelectorAll(".calc-cell")];
+    if (button.classList.contains("calc-reset")) {
+      cells.forEach((cell) => {
+        cell.querySelector("input").value = "";
+        clearCell(cell);
+      });
+      sheet.querySelector(".calc-summary").textContent = `Neu begonnen · ${cells.length} leere Felder.`;
+      cells[0].querySelector("input").focus();
+      return;
+    }
+    let correct = 0, wrong = 0, empty = 0, invalid = 0;
+    cells.forEach((cell) => {
+      const input = cell.querySelector("input");
+      const value = parseWorksheetNumber(input.value);
+      let label, state;
+      if (value === null) {
+        empty++; label = "Offen"; state = "empty";
+      } else if (!Number.isFinite(value)) {
+        invalid++; label = "Zahlenformat prüfen"; state = "invalid";
+      } else if (Math.abs(value - Number(input.dataset.target)) <= Number(input.dataset.tolerance) + 1e-9) {
+        correct++; label = "Richtig ✓"; state = "correct";
+      } else {
+        wrong++; label = "Noch nicht richtig"; state = "wrong";
+      }
+      cell.dataset.state = state;
+      input.setAttribute("aria-invalid", String(state === "wrong" || state === "invalid"));
+      cell.querySelector(".calc-cell-state").textContent = label;
+      cell.querySelector(".calc-work").hidden = false;
+    });
+    sheet.querySelector(".calc-summary").textContent = `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/wise-2026-27\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../patterns.html">
+<p>Übungsvorlagen</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../templates/example-lecture.html">
+<p>Seitenvorlage</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
