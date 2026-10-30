@@ -43,4 +43,3 @@ Die Parameter wurden fest gewählt, nicht nachträglich auf den zwei Testjahren 
 ## Wichtige Grenze
 
 Ein gutes Abschneiden auf zwei Jahren ist schwache Evidenz. Es erlaubt weder die Behauptung eines garantierten Fehlers unter 61 Rädern noch ein verlässliches 95-%-Intervall. Ein völlig unangetastetes zusätzliches Testjahr fehlt.
-

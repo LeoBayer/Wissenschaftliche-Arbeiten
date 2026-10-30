@@ -31,4 +31,3 @@ Der Vertrieb nennt 5.500, die Produktion 4.900. Keine Zahl wird allein wegen der
 4. [Quellen und Transparenz](quellen.qmd): Nachweisstand, Grenzen und Erstellung.
 
 **Prognose ist nicht Kapazität:** Beschaffungspuffer, Lieferzeiten und Kosten von Fehlplanung gehören zu einer gesonderten operativen Entscheidung, nicht unbemerkt in die Nachfragemenge.
-

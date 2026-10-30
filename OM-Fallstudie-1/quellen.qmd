@@ -24,4 +24,3 @@ Diese Website wurde **KI-unterstützt erstellt**. KI-Unterstützung wurde auch f
 Berechnung mit Python-Standardbibliothek; unveränderte Originaldaten und getrenntes Korrekturszenario. Zeitliche Rücktests ohne Testdaten im jeweiligen Fit. Die private Arbeitsfassung enthält reproduzierbares Skript und Rechenergebnisse. Der Szenariorechner verwendet nur die erläuterten Zahlen und überträgt keine Eingaben. Kein KI-Aufruf beim Benutzen der Website.
 
 [Eigenständig verständliche PDF-Falllösung](downloads/MuensterRad-Fallstudie-1-Abgabe.pdf)
-

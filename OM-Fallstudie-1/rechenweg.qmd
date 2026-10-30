@@ -39,4 +39,3 @@ Monatliche Verteilung: Für jeden Kalendermonat wird der Anteil an seinem jeweil
 ## So kannst du die Rechnung selbst prüfen
 
 Die vier bereinigten Jahressummen ergeben 17.037 Räder, also einen Mittelwert von 4.259,25. Die Zeitwerte 0 bis 3 haben den Mittelwert 1,5 und eine zentrierte Quadratsumme von 5. Der OLS-Zähler beträgt 1.726,5, daher ergibt sich die Steigung 345,3. Für das Folgejahr wird t=4 eingesetzt. Erst danach kommt der angenommene Sonderauftrag hinzu.
-
