@@ -27,7 +27,7 @@ website:
         text: Szenarien
       - href: quellen.qmd
         text: Quellen & Transparenz
-  page-footer: "Eigene Fallanalyse · MünsterRad ist ein fiktives Lehrunternehmen · Stand 30.10.2026"
+  page-footer: "MünsterRad · Nachfrageprognose · Stand 30.10.2026"
 format:
   html:
     lang: de

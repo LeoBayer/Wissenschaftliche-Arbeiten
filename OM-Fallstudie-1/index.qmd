@@ -3,7 +3,7 @@ title: "5.300 Räder – eine begründete Planzahl"
 ---
 
 ::: {.callout-note}
-**Fallstudie 1 · Nachfrageprognose für MünsterRad.** Eine eigene Analyse fiktiver Lehrbuchdaten, keine offizielle Musterlösung. Die Empfehlung gilt unter den nachfolgend offengelegten Annahmen.
+**Fallstudie 1 · Nachfrageprognose für MünsterRad.** Die Empfehlung gilt unter den nachfolgend offengelegten Annahmen.
 :::
 
 ::: {.decision}
