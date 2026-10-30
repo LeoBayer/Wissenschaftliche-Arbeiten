@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - rechenweg.qmd
+    - modelle.qmd
+    - szenarien.qmd
+    - quellen.qmd
+  resources:
+    - scenario.js
+    - downloads/
+website:
+  title: "MünsterRad · Nachfrage verstehen"
+  site-url: https://leobayer.github.io/Wissenschaftliche-Arbeiten/OM-Fallstudie-1/
+  navbar:
+    left:
+      - href: index.qmd
+        text: Entscheidung
+      - href: rechenweg.qmd
+        text: Rechenweg
+      - href: modelle.qmd
+        text: Modelle & Rücktests
+      - href: szenarien.qmd
+        text: Szenarien
+      - href: quellen.qmd
+        text: Quellen & Transparenz
+  page-footer: "Eigene Fallanalyse · MünsterRad ist ein fiktives Lehrunternehmen · Stand 30.10.2026"
+format:
+  html:
+    lang: de
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    html-math-method: mathml
+lang: de

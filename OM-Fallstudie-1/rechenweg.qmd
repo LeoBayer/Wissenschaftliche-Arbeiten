@@ -1,0 +1,42 @@
+---
+title: "Von den Monatswerten zur Jahresplanung"
+---
+
+Die Geschäftsführung verlangt eine eigene Nachfrageprognose, eine ehrliche Unsicherheitsangabe und eine eindeutige Planzahl zwischen den nicht ungeprüft zu übernehmenden Abteilungsvorschlägen (Vertrieb 5.500, Produktion 4.900). Eine Begründung von rund 100 Wörtern muss mindestens eine Gesprächsaussage enthalten; Rechenweg und Begründung sollen möglichst gemeinsam in PDF oder Word stehen (maximal 10 MB).
+
+
+
+Der unveränderte ERP-Export enthält 48 eindeutige, lückenlose Monatswerte von Oktober 2022 bis September 2026. Einheit: Räder, beide Modelle Lasto und Cargo Pro zusammen laut Wessels. Geschäftsjahre Oktober–September sind die zum Export passende Arbeitsannahme. Die genaue Abgrenzung zwischen Nachfrage, Bestellungen und realisiertem Absatz sowie etwaige Lieferbeschränkungen bleiben nicht vollständig geklärt.
+
+| Geschäftsjahr | Originalexport | Bereinigtes Szenario |
+|---|---:|---:|
+| 2023 | 3.732 | 3.732 |
+| 2024 | 4.087 | 4.087 |
+| 2025 | 4.459 | 4.459 |
+| 2026 | 4.653 | 4.759 |
+
+### Zwei fallbezogene Zusatzinformationen
+
+1. **Controlling:** „Im Oktober 2025 wurde das ERP umgestellt. In diesem Monat fehlen im Export die Cargo-Pro-Aufträge; korrekt sind 321 Räder statt 215.“ Damit erhöht sich das letzte Jahr um 106 auf 4.759. Originaldatei nicht überschrieben; Korrektur separat gerechnet. Kein korrigierter Export als zusätzlicher Beleg vorhanden.
+2. **Vertrieb:** Terhörst berichtet über einen im September 2026 abgeschlossenen Rahmenvertrag mit den Stadtwerken Bielefeld über 180 Cargo Pro für das Geschäftsjahr 2027 und bezeichnet ihn als „reines Neugeschäft“. Vertragsdokument nicht vorgelegt. Die volle Addition unterstellt, dass diese Menge zum normalen Verlauf zusätzlich anfällt und nicht bereits in der historischen Nachfrage bzw. Trendfortschreibung enthalten ist. Rahmenvertrag nicht ungeprüft mit garantiertem Abruf gleichsetzen.
+
+Persona-Aussagen sind im fiktiven Lehrfall relevante Evidenz, aber keine unabhängig geprüften Dokumente. Es werden keine tatsächlichen Unternehmensverträge behauptet. Die reine Behauptung „Die Händler sind heiß“ erhält keinen numerischen Prognoseaufschlag. Die in früheren Robustheitstests absichtlich genannte falsche Menge 600 ist kein Falldatum und wird nicht verwendet.
+
+## Jahresmodell und Entscheidung
+
+Für die vier bereinigten Jahreswerte und Zeitindex t = 0, 1, 2, 3:
+
+- Mittelwert t = 1,5; Mittelwert q = 4.259,25.
+- Kleinste-Quadrate-Steigung b = Σ[(t − 1,5)(q − 4.259,25)] / Σ(t − 1,5)² = **345,30 Räder pro Jahr**.
+- Achsenabschnitt a = 4.259,25 − 345,30 × 1,5 = **3.741,30**.
+- Basisprognose Planjahr: q̂(4) = 3.741,30 + 345,30 × 4 = **5.122,50 Räder**.
+- Bedingter Zusatz: 180; Summe **5.302,50**; auf volle Hunderter als Budget-Planzahl **5.300**.
+
+Die Rundung ist eine transparente Planungsentscheidung (−2,5 Räder), keine zusätzliche statistische Genauigkeit. Ohne Kosten für Über-/Unterplanung oder Serviceziel lässt sich kein formal kostenoptimaler Sicherheitsaufschlag bestimmen.
+
+Monatliche Verteilung: Für jeden Kalendermonat wird der Anteil an seinem jeweiligen Geschäftsjahr gebildet; die vier historischen Anteile werden gemittelt. Jahresprognose × mittlerer Anteil ergibt die Monatsbasis. Die Anteile summieren sich zu eins und verändern die Jahresprognose nicht. Der Großauftrag wird mangels bestätigtem Lieferplan **nicht** künstlich auf Monate verteilt. Die beiliegende CSV enthält daher nur die Basis ohne 180er-Auftrag.
+
+## So kannst du die Rechnung selbst prüfen
+
+Die vier bereinigten Jahressummen ergeben 17.037 Räder, also einen Mittelwert von 4.259,25. Die Zeitwerte 0 bis 3 haben den Mittelwert 1,5 und eine zentrierte Quadratsumme von 5. Der OLS-Zähler beträgt 1.726,5, daher ergibt sich die Steigung 345,3. Für das Folgejahr wird t=4 eingesetzt. Erst danach kommt der angenommene Sonderauftrag hinzu.
+

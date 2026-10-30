@@ -1,0 +1,38 @@
+---
+title: "Welche Annahmen verändern die Empfehlung?"
+---
+
+Die folgenden Eingaben sind **Szenarien, keine Wahrscheinlichkeiten**. Standard ist die bereinigte historische Basis mit 180 zusätzlich angenommenen Rädern. Der Nachfragefaktor ist ein von dir gewählter Stressfall, keine aus Daten geschätzte Größe.
+
+```{=html}
+<section class="scenario" aria-label="Szenariorechner">
+<label><input id="correction" type="checkbox" checked> ERP-Korrektur berücksichtigen (+106 im letzten Ist-Jahr)</label>
+<label for="contract">Zusätzliche Räder aus dem Rahmenvertrag (0 bis 180)</label>
+<input id="contract" type="number" min="0" max="180" step="1" value="180">
+<label for="factor">Faktor auf die historische Basis (0,5 bis 1,5)</label>
+<input id="factor" type="number" min="0.5" max="1.5" step="0.01" value="1">
+<button id="reset" type="button">Zurücksetzen</button>
+<p id="error" role="alert"></p>
+<div id="result" role="status" aria-live="polite"></div>
+<div class="chart-scroll" tabindex="0" aria-label="Diagramm horizontal verschieben"><svg id="chart" viewBox="0 0 640 190" role="img" aria-label="Vergleich von historischer Basis, Szenario und Abteilungsvorschlägen"></svg></div>
+<p>Reihenfolge: historische Basis × Faktor, dann Zusatzauftrag addieren. Die automatische Hunderterrundung dient nur der Illustration; sie ist keine optimierte Entscheidung.</p>
+</section>
+<script src="scenario.js"></script>
+```
+
+## Einfache Kontrollfälle
+
+| Korrektur | Zusatz | Faktor | Ergebnis vor Rundung |
+|---|---:|---:|---:|
+| Nein | 0 | 1 | 5.016,50 |
+| Ja | 0 | 1 | 5.122,50 |
+| Nein | 180 | 1 | 5.196,50 |
+| Ja | 180 | 1 | 5.302,50 |
+
+Die Eingaben laufen ausschließlich im Browser. Keine Speicherung und keine Übertragung der Parameter an Uni- oder KI-Dienste.
+
+Diese vier Werte sind **bedingte Szenarien**, kein 95-%-Prognoseintervall und keine sichere Ober-/Untergrenze. Auch die Modellspannweite ist kein Wahrscheinlichkeitsintervall. Historisch beobachtete Fehler von +17 und −60,67 können bei nur zwei Jahren kein belastbares 95-%-Sicherheitsniveau begründen. Schocks, Lieferengpässe oder ein unzuverlässiger Vertragsabruf können deutlich größere Abweichungen erzeugen.
+
+**Abteilungsvorschläge:** Gegenüber 5.302,5 liegen 5.500 um 197,5 Räder höher (rund 3,7 %) und 4.900 um 402,5 niedriger (rund 7,6 %). Die Mitte beider Vorschläge (5.200) ist keine datenbasierte Begründung. Keine dieser Differenzen ist automatisch eine Eintrittswahrscheinlichkeit oder ein bewiesener Verlust.
+
+**Operative Konsequenz:** 5.300 als bedingte Jahres-Planzahl verwenden, monatlich Ist und Auftragseingang nachhalten und bei neuen Informationen neu prognostizieren. Ein Kapazitäts- oder Beschaffungspuffer wäre getrennt nach Lieferzeiten und Kosten zu entscheiden; er wird nicht als Nachfrage ausgegeben. Ohne bestätigten Zusatzauftrag läge die bereinigte Trendbasis bei rund 5.100 statt 5.300.
