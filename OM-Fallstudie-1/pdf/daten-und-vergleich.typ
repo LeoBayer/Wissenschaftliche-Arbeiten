@@ -67,4 +67,4 @@ möglicher Kapazitätspuffer ist davon getrennt zu entscheiden.
 <quellen-und-transparenz>
 Eigene Fallansicht und Gespräche mit Claudia Wessels und Frank Terhörst
 vom 28.10.2026; ERP\_Export\_Nachfrage\_Okt2022-Sep2026.csv (48
-Monatswerte). Fiktive Lehrbuchdaten, keine offizielle Musterlösung.
+Monatswerte).
