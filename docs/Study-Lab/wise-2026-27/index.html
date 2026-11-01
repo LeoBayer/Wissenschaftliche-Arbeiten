@@ -594,6 +594,7 @@ document.addEventListener("click", (event) => {
 <script>
 /* Numeric worksheet: compare each entry independently; never evaluate formulas. */
 (() => {
+  const isEnglish = (sheet) => (sheet.closest("[lang]")?.lang || document.documentElement.lang).toLowerCase().startsWith("en");
   function parseWorksheetNumber(raw) {
     const text = raw.trim();
     if (!text) return null;
@@ -619,20 +620,21 @@ document.addEventListener("click", (event) => {
     if (!cell) return;
     clearCell(cell);
     const sheet = cell.closest(".calc-sheet");
-    sheet.querySelector(".calc-summary").textContent = "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
+    sheet.querySelector(".calc-summary").textContent = isEnglish(sheet) ? "Entry changed · check again. Other field marks refer to their last check." : "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
   });
 
   document.addEventListener("click", (event) => {
     const button = event.target.closest(".calc-check, .calc-reset");
     if (!button) return;
     const sheet = button.closest(".calc-sheet");
+    const english = isEnglish(sheet);
     const cells = [...sheet.querySelectorAll(".calc-cell")];
     if (button.classList.contains("calc-reset")) {
       cells.forEach((cell) => {
         cell.querySelector("input").value = "";
         clearCell(cell);
       });
-      sheet.querySelector(".calc-summary").textContent = `Neu begonnen · ${cells.length} leere Felder.`;
+      sheet.querySelector(".calc-summary").textContent = english ? `Started again · ${cells.length} empty fields.` : `Neu begonnen · ${cells.length} leere Felder.`;
       cells[0].querySelector("input").focus();
       return;
     }
@@ -642,20 +644,20 @@ document.addEventListener("click", (event) => {
       const value = parseWorksheetNumber(input.value);
       let label, state;
       if (value === null) {
-        empty++; label = "Offen"; state = "empty";
+        empty++; label = english ? "Empty" : "Offen"; state = "empty";
       } else if (!Number.isFinite(value)) {
-        invalid++; label = "Zahlenformat prüfen"; state = "invalid";
+        invalid++; label = english ? "Check number format" : "Zahlenformat prüfen"; state = "invalid";
       } else if (Math.abs(value - Number(input.dataset.target)) <= Number(input.dataset.tolerance) + 1e-9) {
-        correct++; label = "Richtig ✓"; state = "correct";
+        correct++; label = english ? "Correct ✓" : "Richtig ✓"; state = "correct";
       } else {
-        wrong++; label = "Noch nicht richtig"; state = "wrong";
+        wrong++; label = english ? "Not correct yet" : "Noch nicht richtig"; state = "wrong";
       }
       cell.dataset.state = state;
       input.setAttribute("aria-invalid", String(state === "wrong" || state === "invalid"));
       cell.querySelector(".calc-cell-state").textContent = label;
       cell.querySelector(".calc-work").hidden = false;
     });
-    sheet.querySelector(".calc-summary").textContent = `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
+    sheet.querySelector(".calc-summary").textContent = english ? `${correct} of ${cells.length} correct · ${wrong} not correct yet · ${empty} empty · ${invalid} invalid number format. Calculations are now available under (i) in each field.` : `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
   });
 })();
 </script>

@@ -361,6 +361,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#affordances" id="toc-affordances" class="nav-link" data-scroll-target="#affordances">Affordances</a></li>
   <li><a href="#societal" id="toc-societal" class="nav-link" data-scroll-target="#societal">Societal impacts: bright and dark sides</a></li>
   <li><a href="#ambivalence" id="toc-ambivalence" class="nav-link" data-scroll-target="#ambivalence">Ambivalence, group dynamics and responsibility</a></li>
+  <li><a href="#foundations" id="toc-foundations" class="nav-link" data-scroll-target="#foundations">Digital foundations: representation, switches and networks</a></li>
   </ul>
 </nav>
     </div>
@@ -422,6 +423,15 @@ ul.task-list li input[type="checkbox"] {
 <a class="quick-card" href="itdi-visibility-ambivalence.html"><strong>Visibility: awareness and public shaming</strong><span>Separate attention, verification and consequences.</span></a>
 <a class="quick-card" href="itdi-epistemic-closure.html"><strong>Coordination: empowerment and epistemic closure</strong><span>Trace reinforcement and test openness to correction.</span></a>
 <a class="quick-card" href="itdi-moral-disengagement.html"><strong>Identity: commitment and moral disengagement</strong><span>Distinguish purpose, identity and responsibility.</span></a>
+</nav>
+</section>
+<section id="foundations" class="level2">
+<h2 class="anchored" data-anchor-id="foundations">Digital foundations: representation, switches and networks</h2>
+<p>Trace how technical building blocks enable action without guaranteeing accuracy, performance or identity.</p>
+<nav class="quick-grid" aria-label="Digital foundations learning pages">
+<a class="quick-card" href="itdi-digital-representation.html"><strong>Digital representation: data must be usable</strong><span>Separate stored evidence, searchable fields and valid meaning.</span></a>
+<a class="quick-card" href="itdi-transistor-affordances.html"><strong>Transistors: density is not device performance</strong><span>Calculate chip density and explain whole-device limits.</span></a>
+<a class="quick-card" href="itdi-internet-layers.html"><strong>Internet layers: connectivity without universal identity</strong><span>Rebuild the stack and distinguish addresses, accounts and people.</span></a>
 </nav>
 <p>Die Lernseiten enthalten eigene Lernhilfen und Quellenbelege; sie ersetzen nicht die vollständige Vorlesung.</p>
 <p><a href="../materials.html">Originalmaterialien</a> · <a href="../index.html#kurse">Alle Kurse</a></p>
@@ -610,6 +620,7 @@ document.addEventListener("click", (event) => {
 <script>
 /* Numeric worksheet: compare each entry independently; never evaluate formulas. */
 (() => {
+  const isEnglish = (sheet) => (sheet.closest("[lang]")?.lang || document.documentElement.lang).toLowerCase().startsWith("en");
   function parseWorksheetNumber(raw) {
     const text = raw.trim();
     if (!text) return null;
@@ -635,20 +646,21 @@ document.addEventListener("click", (event) => {
     if (!cell) return;
     clearCell(cell);
     const sheet = cell.closest(".calc-sheet");
-    sheet.querySelector(".calc-summary").textContent = "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
+    sheet.querySelector(".calc-summary").textContent = isEnglish(sheet) ? "Entry changed · check again. Other field marks refer to their last check." : "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
   });
 
   document.addEventListener("click", (event) => {
     const button = event.target.closest(".calc-check, .calc-reset");
     if (!button) return;
     const sheet = button.closest(".calc-sheet");
+    const english = isEnglish(sheet);
     const cells = [...sheet.querySelectorAll(".calc-cell")];
     if (button.classList.contains("calc-reset")) {
       cells.forEach((cell) => {
         cell.querySelector("input").value = "";
         clearCell(cell);
       });
-      sheet.querySelector(".calc-summary").textContent = `Neu begonnen · ${cells.length} leere Felder.`;
+      sheet.querySelector(".calc-summary").textContent = english ? `Started again · ${cells.length} empty fields.` : `Neu begonnen · ${cells.length} leere Felder.`;
       cells[0].querySelector("input").focus();
       return;
     }
@@ -658,20 +670,20 @@ document.addEventListener("click", (event) => {
       const value = parseWorksheetNumber(input.value);
       let label, state;
       if (value === null) {
-        empty++; label = "Offen"; state = "empty";
+        empty++; label = english ? "Empty" : "Offen"; state = "empty";
       } else if (!Number.isFinite(value)) {
-        invalid++; label = "Zahlenformat prüfen"; state = "invalid";
+        invalid++; label = english ? "Check number format" : "Zahlenformat prüfen"; state = "invalid";
       } else if (Math.abs(value - Number(input.dataset.target)) <= Number(input.dataset.tolerance) + 1e-9) {
-        correct++; label = "Richtig ✓"; state = "correct";
+        correct++; label = english ? "Correct ✓" : "Richtig ✓"; state = "correct";
       } else {
-        wrong++; label = "Noch nicht richtig"; state = "wrong";
+        wrong++; label = english ? "Not correct yet" : "Noch nicht richtig"; state = "wrong";
       }
       cell.dataset.state = state;
       input.setAttribute("aria-invalid", String(state === "wrong" || state === "invalid"));
       cell.querySelector(".calc-cell-state").textContent = label;
       cell.querySelector(".calc-work").hidden = false;
     });
-    sheet.querySelector(".calc-summary").textContent = `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
+    sheet.querySelector(".calc-summary").textContent = english ? `${correct} of ${cells.length} correct · ${wrong} not correct yet · ${empty} empty · ${invalid} invalid number format. Calculations are now available under (i) in each field.` : `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
   });
 })();
 </script>
