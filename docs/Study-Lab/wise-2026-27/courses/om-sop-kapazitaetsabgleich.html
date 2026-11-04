@@ -369,6 +369,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#transfer-absatzaktion-übersteigt-die-kapazität" id="toc-transfer-absatzaktion-übersteigt-die-kapazität" class="nav-link" data-scroll-target="#transfer-absatzaktion-übersteigt-die-kapazität">4. Transfer: Absatzaktion übersteigt die Kapazität</a></li>
   <li><a href="#fehlerreflexion-und-verzögerte-wiederholung" id="toc-fehlerreflexion-und-verzögerte-wiederholung" class="nav-link" data-scroll-target="#fehlerreflexion-und-verzögerte-wiederholung">Fehlerreflexion und verzögerte Wiederholung</a></li>
   </ul></li>
+  <li><a href="#rechentabelle" id="toc-rechentabelle" class="nav-link" data-scroll-target="#rechentabelle">Kapazitätsabgleich selbst rechnen</a></li>
   <li><a href="#self-check" id="toc-self-check" class="nav-link" data-scroll-target="#self-check">Selbstcheck</a></li>
   <li><a href="#verwandte-lernseiten" id="toc-verwandte-lernseiten" class="nav-link" data-scroll-target="#verwandte-lernseiten">Verwandte Lernseiten</a></li>
   <li><a href="#sources" id="toc-sources" class="nav-link" data-scroll-target="#sources">Quelle und Abgrenzung</a></li>
@@ -399,7 +400,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#mechanismus">Gemeinsamer Plan</a><a href="#verstehen">Verstehen und anwenden</a><a href="#beispiel">Rechenbeispiel</a><a href="#self-check">Selbstcheck</a><a href="#sources">Quellen</a></nav>
+<nav class="section-jumps" aria-label="Abschnittslinks"><a href="#mechanismus">Gemeinsamer Plan</a><a href="#verstehen">Verstehen und anwenden</a><a href="#beispiel">Rechenbeispiel</a><a href="#rechentabelle">Selbst rechnen</a><a href="#self-check">Selbstcheck</a><a href="#sources">Quellen</a></nav>
 <p><a href="../courses/operations-management.html">Zur OM-Übersicht</a></p>
 <section id="mechanismus" class="level2">
 <h2 class="anchored" data-anchor-id="mechanismus">Warum ein gemeinsamer Plan nötig ist</h2>
@@ -489,6 +490,26 @@ Vollständige Musterlösung und Kriterien
 <p>Maximal <strong>18 selbst bewertete Punkte</strong> (4 + 5 + 4 + 5). Notiere Fehler, Ursache und korrigierte Erklärung des Erstversuchs. Ein richtiges Endergebnis ohne tragenden Rechenweg erhält die Begründungspunkte nicht. <strong>Morgen:</strong> Aufgaben 1 und 2 ohne Vorlage rekonstruieren. <strong>In einer Woche:</strong> Löse den Transfer erneut, wobei der Anfangsbestand nur 15 Räder beträgt; trenne erneut Bestandsziel und ungedeckte Nachfrage.</p>
 </section>
 </section>
+<section id="rechentabelle" class="level2">
+<h2 class="anchored" data-anchor-id="rechentabelle">Kapazitätsabgleich selbst rechnen</h2>
+<p>Nutze die Fälle aus Aufgaben 2 und 4: Anfangsbestand <strong>20 Räder</strong>, reguläre Produktion <strong>100</strong>, höchstens <strong>30 zusätzlich</strong>, Zielendbestand <strong>10</strong>. Rechne zuerst für <strong>140</strong>, dann für <strong>155 Räder Nachfrage</strong>. Alle Eingaben sind Mengen in Rädern, keine Eurobeträge. Die Felder werden unabhängig geprüft; eine falsche Zwischenzahl wird nicht automatisch weiterverwendet. Die Fälle sind eigene Lernbeispiele, keine offizielle Vorlesungstabelle.</p>
+<section class="calc-sheet" aria-labelledby="sop-rechnen">
+<h3 id="sop-rechnen" class="anchored">Zielplan und Nachfragefehlmenge auseinanderhalten</h3>
+<p>Erst selbst ausfüllen, dann „Alle Felder prüfen“. Unter (i) erscheint danach jeweils der Rechenweg. Ganze Räder eintragen; 130,0 und 130.0 werden ebenfalls akzeptiert. Eingaben bleiben nur bis zum Neuladen dieser Seite erhalten.</p>
+<div class="calc-bases">
+<div><label for="sop-produktion"><strong>Benötigte Produktion (Räder)</strong></label><div class="calc-cell"><input id="sop-produktion" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="130" data-tolerance="0.001" aria-describedby="sop-produktion-state"><span id="sop-produktion-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: Benötigte Produktion"><span class="calc-info" aria-hidden="true">i</span><span class="visually-hidden">Rechenweg</span></summary><p>Nachfrage + Zielendbestand − Anfangsbestand = 140 + 10 − 20 = 130 Räder.</p></details></div></div>
+<div><label for="sop-zusatz"><strong>Benötigte Zusatzproduktion (Räder)</strong></label><div class="calc-cell"><input id="sop-zusatz" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="30" data-tolerance="0.001" aria-describedby="sop-zusatz-state"><span id="sop-zusatz-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: Benötigte Zusatzproduktion"><span class="calc-info" aria-hidden="true">i</span><span class="visually-hidden">Rechenweg</span></summary><p>Benötigte Produktion − reguläre Kapazität = 130 − 100 = 30 Räder. Die zulässigen 30 werden genau ausgeschöpft.</p></details></div></div>
+<div><label for="sop-rest"><strong>Endbestand bei erfüllter Nachfrage (Räder)</strong></label><div class="calc-cell"><input id="sop-rest" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="10" data-tolerance="0.001" aria-describedby="sop-rest-state"><span id="sop-rest-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: Endbestand bei erfüllter Nachfrage"><span class="calc-info" aria-hidden="true">i</span><span class="visually-hidden">Rechenweg</span></summary><p>Anfangsbestand + Produktion − Nachfrage = 20 + 130 − 140 = 10 Räder.</p></details></div></div>
+<div><label for="sop-ziel"><strong>Ziellücke bei 155 Rädern Nachfrage (Räder)</strong></label><div class="calc-cell"><input id="sop-ziel" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="15" data-tolerance="0.001" aria-describedby="sop-ziel-state"><span id="sop-ziel-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: Ziellücke bei 155 Rädern Nachfrage"><span class="calc-info" aria-hidden="true">i</span><span class="visually-hidden">Rechenweg</span></summary><p>Zielproduktion = 155 + 10 − 20 = 145; maximal 130 Produktion. Ziellücke = 145 − 130 = 15 Räder.</p></details></div></div>
+<div><label for="sop-nachfrage"><strong>Ungedeckte Nachfrage bei Endbestand null (Räder)</strong></label><div class="calc-cell"><input id="sop-nachfrage" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="5" data-tolerance="0.001" aria-describedby="sop-nachfrage-state"><span id="sop-nachfrage-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: Ungedeckte Nachfrage bei Endbestand null"><span class="calc-info" aria-hidden="true">i</span><span class="visually-hidden">Rechenweg</span></summary><p>Verfügbar sind 20 + 130 = 150 Räder. Von 155 Rädern Nachfrage bleiben 155 − 150 = 5 ungedeckt.</p></details></div></div>
+<div><label for="sop-bestand"><strong>Zusätzlich verfehltes Bestandsziel (Räder)</strong></label><div class="calc-cell"><input id="sop-bestand" type="text" inputmode="decimal" autocomplete="off" spellcheck="false" data-target="10" data-tolerance="0.001" aria-describedby="sop-bestand-state"><span id="sop-bestand-state" class="calc-cell-state"></span><details class="calc-work" hidden=""><summary aria-label="Rechenweg: Zusätzlich verfehltes Bestandsziel"><span class="calc-info" aria-hidden="true">i</span><span class="visually-hidden">Rechenweg</span></summary><p>Bei Endbestand null fehlen gegenüber dem Ziel von 10 noch 10 Räder. Zusammen mit 5 ungedeckter Nachfrage ergibt das die Ziellücke von 15; nicht noch einmal 15 + 10 rechnen.</p></details></div></div>
+</div>
+<div class="calc-actions"><button type="button" class="calc-check">Alle Felder prüfen</button><button type="button" class="calc-reset">Neu beginnen</button></div>
+<p class="calc-summary" role="status" aria-live="polite" aria-atomic="true">Noch nicht geprüft · 6 Felder zum Selbstrechnen.</p>
+<noscript>Die automatische Prüfung benötigt JavaScript. Die Aufgaben und die vollständigen Musterlösungen darüber bleiben ohne JavaScript lesbar.</noscript>
+</section>
+<p><strong>Interpretation:</strong> Eine richtige Mengenbilanz ist noch keine Lieferterminzusage. Prüfe weiterhin Material, qualifiziertes Personal, Finanzierung und den Zeitpunkt der Nachfrage.</p>
+</section>
 <section id="self-check" class="level2">
 <h2 class="anchored" data-anchor-id="self-check">Selbstcheck</h2>
 <fieldset class="study-check" data-type="multiple" data-answer="a,c">
@@ -515,7 +536,7 @@ Begründung anzeigen
 <ul>
 <li><strong>Gemeinsamer Plan und Schnittstellen:</strong> PDF-S. 22–23, insbesondere S&amp;OP als monatlicher Abgleich von Nachfrage, Kapazität und Finanzen auf S. 23.</li>
 <li><strong>Planungsebenen:</strong> PDF-S. 16 (typische Horizonte und hierarchischer Rahmen).</li>
-<li><strong>Mengenbilanz, Werkstattbeispiel, Selbstcheck und Verständnisaufgaben:</strong> eigene didaktische Modellfälle zur Schnittstellenabstimmung, keine offizielle S&amp;OP-Rechenmethode, keine Vorlesungsdaten und keine zusätzlichen Prüfungsregeln. Annahmen und zeitliche Grenzen stehen in den Erklärungen. Quelle erneut gelesen am 26.10.2026.</li>
+<li><strong>Mengenbilanz, Werkstattbeispiel, Selbstcheck und Verständnisaufgaben:</strong> eigene didaktische Modellfälle zur Schnittstellenabstimmung, keine offizielle S&amp;OP-Rechenmethode, keine Vorlesungsdaten und keine zusätzlichen Prüfungsregeln. Annahmen und zeitliche Grenzen stehen in den Erklärungen. Quelle für den Rechenbatch erneut gelesen am 03.11.2026 (PDF-S. 16 und 22–23; aufgedruckte Folien 18 und 24–25). Die interaktiven Mengenfelder prüfen ausschließlich die eigenen Modellfälle oben, nicht die finanzielle oder terminliche Machbarkeit.</li>
 </ul>
 
 

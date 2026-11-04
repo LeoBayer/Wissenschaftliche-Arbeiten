@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Controlling · Tutorium 2 – WiSe 2026/27 Study Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0c7f97109e616cbba0e364631cea135d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-1c200c6cb5dc67f4915747dbf747a44a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-0c7f97109e616cbba0e364631cea135d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../number-controls-20261028-slim.css">
+<link rel="stylesheet" href="../controlling-tutorium-2.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Study Lab
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">Study Lab</a> 
+        <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Cockpit · Kurse</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../materials.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Materialien</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Aktuelle Kurse</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/controlling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Controlling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/digital-business.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Digital Business</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/it-driven-innovation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">IT-driven Innovation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/operations-management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Operations Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../courses/vwl.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VWL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../practice-lab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Üben</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../feedback.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Feedback</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#aufgabe-1-zahlungsabwicklung" id="toc-aufgabe-1-zahlungsabwicklung" class="nav-link active" data-scroll-target="#aufgabe-1-zahlungsabwicklung">Aufgabe 1 · Zahlungsabwicklung</a>
+  <ul class="collapse">
+  <li><a href="#a-teilprozesskostensätze" id="toc-a-teilprozesskostensätze" class="nav-link" data-scroll-target="#a-teilprozesskostensätze">a) Teilprozesskostensätze</a></li>
+  <li><a href="#b-prozesskosten-je-zahlung" id="toc-b-prozesskosten-je-zahlung" class="nav-link" data-scroll-target="#b-prozesskosten-je-zahlung">b) Prozesskosten je Zahlung</a></li>
+  <li><a href="#c-gesamtkosten-je-zahlung" id="toc-c-gesamtkosten-je-zahlung" class="nav-link" data-scroll-target="#c-gesamtkosten-je-zahlung">c) Gesamtkosten je Zahlung</a></li>
+  </ul></li>
+  <li><a href="#aufgabe-2-abc-und-tdabc" id="toc-aufgabe-2-abc-und-tdabc" class="nav-link" data-scroll-target="#aufgabe-2-abc-und-tdabc">Aufgabe 2 · ABC und TDABC</a>
+  <ul class="collapse">
+  <li><a href="#a-klassisches-abc" id="toc-a-klassisches-abc" class="nav-link" data-scroll-target="#a-klassisches-abc">a) Klassisches ABC</a></li>
+  <li><a href="#b-zeitbasierte-kostensätze" id="toc-b-zeitbasierte-kostensätze" class="nav-link" data-scroll-target="#b-zeitbasierte-kostensätze">b) Zeitbasierte Kostensätze</a></li>
+  <li><a href="#c-aktuelles-jahr-und-d-folgejahr" id="toc-c-aktuelles-jahr-und-d-folgejahr" class="nav-link" data-scroll-target="#c-aktuelles-jahr-und-d-folgejahr">c) Aktuelles Jahr und d) Folgejahr</a></li>
+  </ul></li>
+  <li><a href="#quelle-und-prüfstand" id="toc-quelle-und-prüfstand" class="nav-link" data-scroll-target="#quelle-und-prüfstand">Quelle und Prüfstand</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Controlling · Tutorium 2</h1>
+<p class="subtitle lead">PKR und (Time-driven) ABC · Arbeitsblatt zum Eintragen</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="../courses/controlling.html">Zur Kursübersicht</a> · <a href="../courses/controlling-prozesskostensatz.html">Prozesskostenrechnung</a> · <a href="../courses/controlling-tdabc-kapazitaet.html">TDABC</a></p>
+<p>Eigene interaktive Aufbereitung des Tutoriums, keine offizielle Musterlösung. Zahlenprüfung auf zwei Dezimalstellen (Toleranz 0,011); Prozentsätze als Prozentzahl eintragen, z. B. 1,5 statt 0,015. Begründungen werden nicht automatisch benotet.</p>
+<div id="ct-workbook"></div>
+<p id="ct-save" role="status">Eingaben bleiben lokal in diesem Browser. Keine Gerätesynchronisation. Wichtige Arbeit zusätzlich exportieren.</p>
+<button id="ct-export" type="button">Eigene Antworten exportieren (JSON)</button>
+<button id="ct-reset" type="button">Eigene Antworten zurücksetzen</button>
+<section id="aufgabe-1-zahlungsabwicklung" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-1-zahlungsabwicklung">Aufgabe 1 · Zahlungsabwicklung</h2>
+<p>Ein Onlinehändler bearbeitet monatlich 22.000 Bestellungen mit durchschnittlich 20 € Nettowert: PayPrompt 5.280, Kreditkarte 8.140, Lastschrift 6.160, Vorkasse 2.420. Die Debitorenbuchhaltung kostet 3.600 € bei 180 Stunden, die Kassenbuchführung 4.860 € bei 270 Stunden.</p>
+<section id="a-teilprozesskostensätze" class="level3">
+<h3 class="anchored" data-anchor-id="a-teilprozesskostensätze">a) Teilprozesskostensätze</h3>
+<p>Keine Umlage nicht leistungsmengeninduzierter Kosten. „Nicht erfasst“ bedeutet nicht null; solche Mengen können nicht ergänzt werden. Die Tabellen zeigen die messbaren Tätigkeiten; für die Zahlungsarten werden nur die ausdrücklich relevanten Prozesse verwendet.</p>
+<p><a href="../courses/controlling-lmi-lmn.html">Lernhilfe: lmi und lmn</a> · <a href="../courses/controlling-prozesskostensatz.html">Prozesskostensatz</a></p>
+<section class="om-sheet"><h3 class="anchored">Kosten je Arbeitsstunde</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Kostenstelle</th>
+<th data-quarto-table-cell-role="th" scope="col">€/h</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Debitorenbuchhaltung</th>
+<td><div>
+<label class="visually-hidden" for="ct2-1">Debitorenbuchhaltung Euro je Stunde</label><input id="ct2-1" data-key="ct2-1" data-answer="20.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-1-result"><span id="ct2-1-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Kassenbuchführung</th>
+<td><div>
+<label class="visually-hidden" for="ct2-2">Kassenbuchführung Euro je Stunde</label><input id="ct2-2" data-key="ct2-2" data-answer="18.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-2-result"><span id="ct2-2-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Kosten / bereitgestellte Stunden. Keine zusätzliche lmn-Umlage.</p></details></section><section class="om-sheet"><h3 class="anchored">Debitorenbuchhaltung</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Tätigkeit</th>
+<th data-quarto-table-cell-role="th" scope="col">Menge</th>
+<th data-quarto-table-cell-role="th" scope="col">Minuten je Vorgang</th>
+<th data-quarto-table-cell-role="th" scope="col">Stunden gesamt</th>
+<th data-quarto-table-cell-role="th" scope="col">€ je Vorgang</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">D1 · Inkasso</th>
+<td>40</td>
+<td>15</td>
+<td><div>
+<label class="visually-hidden" for="ct2-3">D1 Gesamtstunden</label><input id="ct2-3" data-key="ct2-3" data-answer="10.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-3-result"><span id="ct2-3-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-4">D1 Euro je Kostentreiber</label><input id="ct2-4" data-key="ct2-4" data-answer="5.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-4-result"><span id="ct2-4-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">D2 · Kreditkartenreklamation</th>
+<td>50</td>
+<td>30</td>
+<td><div>
+<label class="visually-hidden" for="ct2-5">D2 Gesamtstunden</label><input id="ct2-5" data-key="ct2-5" data-answer="25.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-5-result"><span id="ct2-5-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-6">D2 Euro je Kostentreiber</label><input id="ct2-6" data-key="ct2-6" data-answer="10.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-6-result"><span id="ct2-6-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">D5 · Mahnungen</th>
+<td>1200</td>
+<td>0.5</td>
+<td><div>
+<label class="visually-hidden" for="ct2-7">D5 Gesamtstunden</label><input id="ct2-7" data-key="ct2-7" data-answer="10.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-7-result"><span id="ct2-7-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-8">D5 Euro je Kostentreiber</label><input id="ct2-8" data-key="ct2-8" data-answer="0.1666666667" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-8-result"><span id="ct2-8-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">D6 · Mahnungsläufe</th>
+<td>8</td>
+<td>30</td>
+<td><div>
+<label class="visually-hidden" for="ct2-9">D6 Gesamtstunden</label><input id="ct2-9" data-key="ct2-9" data-answer="4.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-9-result"><span id="ct2-9-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-10">D6 Euro je Kostentreiber</label><input id="ct2-10" data-key="ct2-10" data-answer="10.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-10-result"><span id="ct2-10-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Stunden gesamt = Menge × Minuten / 60. Kostensatz je Vorgang = Minuten / 60 × Kostenstellen-Stundensatz. D3/D4/D9 und K8/K9 sind nicht mengeninduziert; D7/D8 haben keine erfassten Mengen. K1/K3/K6/K7 gehören nicht zu den hier relevanten Zahlungsprozessen.</p></details></section><section class="om-sheet"><h3 class="anchored">Kassenbuchführung</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Tätigkeit</th>
+<th data-quarto-table-cell-role="th" scope="col">Menge</th>
+<th data-quarto-table-cell-role="th" scope="col">Minuten je Vorgang</th>
+<th data-quarto-table-cell-role="th" scope="col">Stunden gesamt</th>
+<th data-quarto-table-cell-role="th" scope="col">€ je Vorgang</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">K1 · Automatische Zahlungserfassung</th>
+<td>22</td>
+<td>45</td>
+<td><div>
+<label class="visually-hidden" for="ct2-11">K1 Gesamtstunden</label><input id="ct2-11" data-key="ct2-11" data-answer="16.5000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-11-result"><span id="ct2-11-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-12">K1 Euro je Kostentreiber</label><input id="ct2-12" data-key="ct2-12" data-answer="13.5000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-12-result"><span id="ct2-12-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">K2 · Manuelle Zahlungszuordnung</th>
+<td>180</td>
+<td>5</td>
+<td><div>
+<label class="visually-hidden" for="ct2-13">K2 Gesamtstunden</label><input id="ct2-13" data-key="ct2-13" data-answer="15.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-13-result"><span id="ct2-13-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-14">K2 Euro je Kostentreiber</label><input id="ct2-14" data-key="ct2-14" data-answer="1.5000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-14-result"><span id="ct2-14-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">K3 · Lastschrifteinzug</th>
+<td>22</td>
+<td>30</td>
+<td><div>
+<label class="visually-hidden" for="ct2-15">K3 Gesamtstunden</label><input id="ct2-15" data-key="ct2-15" data-answer="11.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-15-result"><span id="ct2-15-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-16">K3 Euro je Kostentreiber</label><input id="ct2-16" data-key="ct2-16" data-answer="9.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-16-result"><span id="ct2-16-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">K4 · Fehlgeschlagene Lastschrift</th>
+<td>60</td>
+<td>10</td>
+<td><div>
+<label class="visually-hidden" for="ct2-17">K4 Gesamtstunden</label><input id="ct2-17" data-key="ct2-17" data-answer="10.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-17-result"><span id="ct2-17-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-18">K4 Euro je Kostentreiber</label><input id="ct2-18" data-key="ct2-18" data-answer="3.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-18-result"><span id="ct2-18-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">K5 · Stornierte Lastschrift</th>
+<td>60</td>
+<td>15</td>
+<td><div>
+<label class="visually-hidden" for="ct2-19">K5 Gesamtstunden</label><input id="ct2-19" data-key="ct2-19" data-answer="15.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-19-result"><span id="ct2-19-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-20">K5 Euro je Kostentreiber</label><input id="ct2-20" data-key="ct2-20" data-answer="4.5000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-20-result"><span id="ct2-20-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">K6 · Zahlungslauf</th>
+<td>10</td>
+<td>45</td>
+<td><div>
+<label class="visually-hidden" for="ct2-21">K6 Gesamtstunden</label><input id="ct2-21" data-key="ct2-21" data-answer="7.5000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-21-result"><span id="ct2-21-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-22">K6 Euro je Kostentreiber</label><input id="ct2-22" data-key="ct2-22" data-answer="13.5000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-22-result"><span id="ct2-22-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">K7 · Fehlgeschlagene Überweisung</th>
+<td>30</td>
+<td>10</td>
+<td><div>
+<label class="visually-hidden" for="ct2-23">K7 Gesamtstunden</label><input id="ct2-23" data-key="ct2-23" data-answer="5.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-23-result"><span id="ct2-23-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-24">K7 Euro je Kostentreiber</label><input id="ct2-24" data-key="ct2-24" data-answer="3.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-24-result"><span id="ct2-24-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Stunden gesamt = Menge × Minuten / 60. Kostensatz je Vorgang = Minuten / 60 × Kostenstellen-Stundensatz. D3/D4/D9 und K8/K9 sind nicht mengeninduziert; D7/D8 haben keine erfassten Mengen. K1/K3/K6/K7 gehören nicht zu den hier relevanten Zahlungsprozessen.</p></details></section>
+</section>
+<section id="b-prozesskosten-je-zahlung" class="level3">
+<h3 class="anchored" data-anchor-id="b-prozesskosten-je-zahlung">b) Prozesskosten je Zahlung</h3>
+<p>PayPrompt benötigt intern keine manuellen Tätigkeiten. Kreditkarte: D2 und D1; Lastschrift: K4, K5, D6, D5 und D1; Vorkasse: K2. Von 40 Inkassofällen entfallen 10 auf Kreditkarte und 30 auf Lastschrift. Relative Häufigkeit = Prozessmenge / Zahlungen der betreffenden Zahlungsart, nicht / Gesamtbestellungen.</p>
+<p><a href="../courses/controlling-prozess-stueckkosten.html">Lernhilfe: Von Vorgängen zu Stückkosten</a></p>
+<section class="om-sheet"><h3 class="anchored">Kreditkarte</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Prozess</th>
+<th data-quarto-table-cell-role="th" scope="col">Häufigkeit (%)</th>
+<th data-quarto-table-cell-role="th" scope="col">Kosten je Zahlung (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">D2</th>
+<td><div>
+<label class="visually-hidden" for="ct2-25">Kreditkarte D2 Häufigkeit Prozent</label><input id="ct2-25" data-key="ct2-25" data-answer="0.6142506143" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-25-result"><span id="ct2-25-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-26">Kreditkarte D2 Euro je Zahlung</label><input id="ct2-26" data-key="ct2-26" data-answer="0.0614250614" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-26-result"><span id="ct2-26-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">D1</th>
+<td><div>
+<label class="visually-hidden" for="ct2-27">Kreditkarte D1 Häufigkeit Prozent</label><input id="ct2-27" data-key="ct2-27" data-answer="0.1228501229" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-27-result"><span id="ct2-27-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-28">Kreditkarte D1 Euro je Zahlung</label><input id="ct2-28" data-key="ct2-28" data-answer="0.0061425061" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-28-result"><span id="ct2-28-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Häufigkeit = Vorgänge / Zahlungen dieser Zahlungsart × 100. Kostenbeitrag je Zahlung = Kostensatz × Häufigkeit / 100. Mit ungerundeten Zwischenwerten weiterrechnen.</p></details></section><section class="om-sheet"><h3 class="anchored">Lastschrift</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Prozess</th>
+<th data-quarto-table-cell-role="th" scope="col">Häufigkeit (%)</th>
+<th data-quarto-table-cell-role="th" scope="col">Kosten je Zahlung (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">K4</th>
+<td><div>
+<label class="visually-hidden" for="ct2-29">Lastschrift K4 Häufigkeit Prozent</label><input id="ct2-29" data-key="ct2-29" data-answer="0.9740259740" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-29-result"><span id="ct2-29-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-30">Lastschrift K4 Euro je Zahlung</label><input id="ct2-30" data-key="ct2-30" data-answer="0.0292207792" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-30-result"><span id="ct2-30-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">K5</th>
+<td><div>
+<label class="visually-hidden" for="ct2-31">Lastschrift K5 Häufigkeit Prozent</label><input id="ct2-31" data-key="ct2-31" data-answer="0.9740259740" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-31-result"><span id="ct2-31-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-32">Lastschrift K5 Euro je Zahlung</label><input id="ct2-32" data-key="ct2-32" data-answer="0.0438311688" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-32-result"><span id="ct2-32-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">D6</th>
+<td><div>
+<label class="visually-hidden" for="ct2-33">Lastschrift D6 Häufigkeit Prozent</label><input id="ct2-33" data-key="ct2-33" data-answer="0.1298701299" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-33-result"><span id="ct2-33-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-34">Lastschrift D6 Euro je Zahlung</label><input id="ct2-34" data-key="ct2-34" data-answer="0.0129870130" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-34-result"><span id="ct2-34-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">D5</th>
+<td><div>
+<label class="visually-hidden" for="ct2-35">Lastschrift D5 Häufigkeit Prozent</label><input id="ct2-35" data-key="ct2-35" data-answer="19.4805194805" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-35-result"><span id="ct2-35-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-36">Lastschrift D5 Euro je Zahlung</label><input id="ct2-36" data-key="ct2-36" data-answer="0.0324675325" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-36-result"><span id="ct2-36-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">D1</th>
+<td><div>
+<label class="visually-hidden" for="ct2-37">Lastschrift D1 Häufigkeit Prozent</label><input id="ct2-37" data-key="ct2-37" data-answer="0.4870129870" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-37-result"><span id="ct2-37-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-38">Lastschrift D1 Euro je Zahlung</label><input id="ct2-38" data-key="ct2-38" data-answer="0.0243506494" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-38-result"><span id="ct2-38-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Häufigkeit = Vorgänge / Zahlungen dieser Zahlungsart × 100. Kostenbeitrag je Zahlung = Kostensatz × Häufigkeit / 100. Mit ungerundeten Zwischenwerten weiterrechnen.</p></details></section><section class="om-sheet"><h3 class="anchored">Vorkasse</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Prozess</th>
+<th data-quarto-table-cell-role="th" scope="col">Häufigkeit (%)</th>
+<th data-quarto-table-cell-role="th" scope="col">Kosten je Zahlung (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">K2</th>
+<td><div>
+<label class="visually-hidden" for="ct2-39">Vorkasse K2 Häufigkeit Prozent</label><input id="ct2-39" data-key="ct2-39" data-answer="7.4380165289" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-39-result"><span id="ct2-39-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-40">Vorkasse K2 Euro je Zahlung</label><input id="ct2-40" data-key="ct2-40" data-answer="0.1115702479" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-40-result"><span id="ct2-40-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Häufigkeit = Vorgänge / Zahlungen dieser Zahlungsart × 100. Kostenbeitrag je Zahlung = Kostensatz × Häufigkeit / 100. Mit ungerundeten Zwischenwerten weiterrechnen.</p></details></section><section class="om-sheet"><h3 class="anchored">Prozesskostenvergleich</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Zahlungsart</th>
+<th data-quarto-table-cell-role="th" scope="col">Prozesskosten je Zahlung (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">PayPrompt</th>
+<td><div>
+<label class="visually-hidden" for="ct2-41">PayPrompt Prozesskosten je Zahlung</label><input id="ct2-41" data-key="ct2-41" data-answer="0.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-41-result"><span id="ct2-41-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Kreditkarte</th>
+<td><div>
+<label class="visually-hidden" for="ct2-42">Kreditkarte Prozesskosten je Zahlung</label><input id="ct2-42" data-key="ct2-42" data-answer="0.0675675676" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-42-result"><span id="ct2-42-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Lastschrift</th>
+<td><div>
+<label class="visually-hidden" for="ct2-43">Lastschrift Prozesskosten je Zahlung</label><input id="ct2-43" data-key="ct2-43" data-answer="0.1428571429" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-43-result"><span id="ct2-43-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Vorkasse</th>
+<td><div>
+<label class="visually-hidden" for="ct2-44">Vorkasse Prozesskosten je Zahlung</label><input id="ct2-44" data-key="ct2-44" data-answer="0.1115702479" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-44-result"><span id="ct2-44-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Beiträge der Teilprozesse je Zahlungsart addieren; PayPrompt hat hier keine internen manuellen Prozesskosten.</p></details></section><label for="b-entscheidung">Welche Zahlungsart fällt beim reinen Prozesskostenvergleich auf? Begründe.</label><textarea id="b-entscheidung" data-key="b-entscheidung" rows="4" class="form-control"></textarea>
+</section>
+<section id="c-gesamtkosten-je-zahlung" class="level3">
+<h3 class="anchored" data-anchor-id="c-gesamtkosten-je-zahlung">c) Gesamtkosten je Zahlung</h3>
+<p>PayPrompt und Kreditkarte verlangen jeweils 1,5 % des Nettobestellwerts. PayPrompt übernimmt das Ausfallrisiko. Bei Kreditkarte und Lastschrift fallen 50 % der Inkassofälle endgültig aus. Vorkasse hat hier kein angegebenes Ausfallrisiko. Für zusätzliche Gebühren liegen keine Angaben vor.</p>
+<section class="om-sheet"><h3 class="anchored">Vollständiger Kostenvergleich</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Zahlungsart</th>
+<th data-quarto-table-cell-role="th" scope="col">Entgelt (€)</th>
+<th data-quarto-table-cell-role="th" scope="col">Ausfallrisiko (%)</th>
+<th data-quarto-table-cell-role="th" scope="col">Erwarteter Verlust (€)</th>
+<th data-quarto-table-cell-role="th" scope="col">Gesamt je Zahlung (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">PayPrompt</th>
+<td><div>
+<label class="visually-hidden" for="ct2-45">PayPrompt Entgelt Euro</label><input id="ct2-45" data-key="ct2-45" data-answer="0.3000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-45-result"><span id="ct2-45-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-46">PayPrompt Ausfallrisiko Prozent</label><input id="ct2-46" data-key="ct2-46" data-answer="0.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-46-result"><span id="ct2-46-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-47">PayPrompt erwarteter Verlust Euro</label><input id="ct2-47" data-key="ct2-47" data-answer="0.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-47-result"><span id="ct2-47-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-48">PayPrompt Gesamtkosten je Zahlung</label><input id="ct2-48" data-key="ct2-48" data-answer="0.3000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-48-result"><span id="ct2-48-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Kreditkarte</th>
+<td><div>
+<label class="visually-hidden" for="ct2-49">Kreditkarte Entgelt Euro</label><input id="ct2-49" data-key="ct2-49" data-answer="0.3000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-49-result"><span id="ct2-49-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-50">Kreditkarte Ausfallrisiko Prozent</label><input id="ct2-50" data-key="ct2-50" data-answer="0.0614250614" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-50-result"><span id="ct2-50-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-51">Kreditkarte erwarteter Verlust Euro</label><input id="ct2-51" data-key="ct2-51" data-answer="0.0122850123" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-51-result"><span id="ct2-51-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-52">Kreditkarte Gesamtkosten je Zahlung</label><input id="ct2-52" data-key="ct2-52" data-answer="0.3798525799" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-52-result"><span id="ct2-52-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Lastschrift</th>
+<td><div>
+<label class="visually-hidden" for="ct2-53">Lastschrift Entgelt Euro</label><input id="ct2-53" data-key="ct2-53" data-answer="0.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-53-result"><span id="ct2-53-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-54">Lastschrift Ausfallrisiko Prozent</label><input id="ct2-54" data-key="ct2-54" data-answer="0.2435064935" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-54-result"><span id="ct2-54-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-55">Lastschrift erwarteter Verlust Euro</label><input id="ct2-55" data-key="ct2-55" data-answer="0.0487012987" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-55-result"><span id="ct2-55-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-56">Lastschrift Gesamtkosten je Zahlung</label><input id="ct2-56" data-key="ct2-56" data-answer="0.1915584416" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-56-result"><span id="ct2-56-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Vorkasse</th>
+<td><div>
+<label class="visually-hidden" for="ct2-57">Vorkasse Entgelt Euro</label><input id="ct2-57" data-key="ct2-57" data-answer="0.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-57-result"><span id="ct2-57-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-58">Vorkasse Ausfallrisiko Prozent</label><input id="ct2-58" data-key="ct2-58" data-answer="0.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-58-result"><span id="ct2-58-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-59">Vorkasse erwarteter Verlust Euro</label><input id="ct2-59" data-key="ct2-59" data-answer="0.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-59-result"><span id="ct2-59-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-60">Vorkasse Gesamtkosten je Zahlung</label><input id="ct2-60" data-key="ct2-60" data-answer="0.1115702479" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-60-result"><span id="ct2-60-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Entgelt = 20 € × 1,5 % (nur PayPrompt/Kreditkarte). Ausfallrisiko = Inkassofälle × 50 % / Zahlungen dieser Zahlungsart. Erwarteter Verlust = Risiko × 20 €. Gesamt = interne Prozesskosten + Entgelt + erwarteter Verlust. Keine separat bezifferte Inkassoprovision hinzuerfinden; die Aufgabe nennt dafür keinen Betrag.</p></details></section><label for="c-entscheidung">Welche Zahlungsarten würdest du nach diesem Vergleich beibehalten? Wie interpretierst du Entgelt und Risikokosten?</label><textarea id="c-entscheidung" data-key="c-entscheidung" rows="4" class="form-control"></textarea><label for="d-diskussion">d) Was fehlt in einer reinen Kostenentscheidung? Berücksichtige Kundenpräferenzen, Kaufabbrüche, Umsatz, Risiko und tatsächlich vermeidbare Kosten.</label><textarea id="d-diskussion" data-key="d-diskussion" rows="4" class="form-control"></textarea>
+<p><a href="../courses/controlling-prozessstrategie.html">Lernhilfe: Prozesskosten strategisch nutzen</a> · <a href="../courses/controlling-relevante-kosten.html">Relevante Kosten</a></p>
+</section>
+</section>
+<section id="aufgabe-2-abc-und-tdabc" class="level2">
+<h2 class="anchored" data-anchor-id="aufgabe-2-abc-und-tdabc">Aufgabe 2 · ABC und TDABC</h2>
+<p>Ein Kundenservice verursacht jährlich 800.000 €. Die Befragung ordnet 60 % den Kundenaufträgen (6.000), 25 % den Beschwerden (500) und 15 % den Bonitätsprüfungen (600) zu.</p>
+<section id="a-klassisches-abc" class="level3">
+<h3 class="anchored" data-anchor-id="a-klassisches-abc">a) Klassisches ABC</h3>
+<section class="om-sheet"><h3 class="anchored">Kostenverteilung aus Zeitanteilen</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Aktivität</th>
+<th data-quarto-table-cell-role="th" scope="col">Zugeordnete Kosten (€)</th>
+<th data-quarto-table-cell-role="th" scope="col">Prozesskostensatz (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Aufträge</th>
+<td><div>
+<label class="visually-hidden" for="ct2-61">Aufträge zugeordnete Kosten</label><input id="ct2-61" data-key="ct2-61" data-answer="480000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-61-result"><span id="ct2-61-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-62">Aufträge ABC Kostensatz</label><input id="ct2-62" data-key="ct2-62" data-answer="80.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-62-result"><span id="ct2-62-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Beschwerden</th>
+<td><div>
+<label class="visually-hidden" for="ct2-63">Beschwerden zugeordnete Kosten</label><input id="ct2-63" data-key="ct2-63" data-answer="200000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-63-result"><span id="ct2-63-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-64">Beschwerden ABC Kostensatz</label><input id="ct2-64" data-key="ct2-64" data-answer="400.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-64-result"><span id="ct2-64-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Bonitätsprüfungen</th>
+<td><div>
+<label class="visually-hidden" for="ct2-65">Bonitätsprüfungen zugeordnete Kosten</label><input id="ct2-65" data-key="ct2-65" data-answer="120000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-65-result"><span id="ct2-65-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-66">Bonitätsprüfungen ABC Kostensatz</label><input id="ct2-66" data-key="ct2-66" data-answer="200.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-66-result"><span id="ct2-66-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Kostenanteil = 800.000 € × Zeitanteil. Kostensatz = Kostenanteil / jeweilige Prozessmenge.</p></details></section>
+</section>
+<section id="b-zeitbasierte-kostensätze" class="level3">
+<h3 class="anchored" data-anchor-id="b-zeitbasierte-kostensätze">b) Zeitbasierte Kostensätze</h3>
+<p>Die bereitgestellte Arbeitskapazität beträgt 20.000 Stunden. Ein Auftrag dauert 1,5 Stunden, eine Beschwerde 8 Stunden, eine Bonitätsprüfung 5 Stunden. Die 20.000 Stunden werden wie in der Aufgabe verwendet; kein zusätzlicher pauschaler Kapazitätsabschlag.</p>
+<p><a href="../courses/controlling-tdabc-kapazitaet.html">Lernhilfe: TDABC und Kapazität</a></p>
+<section class="om-sheet"><h3 class="anchored">TDABC-Sätze</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Größe</th>
+<th data-quarto-table-cell-role="th" scope="col">Dein Ergebnis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Kapazitätskostensatz (€/h)</th>
+<td><div>
+<label class="visually-hidden" for="ct2-67">Kapazitätskostensatz (€/h)</label><input id="ct2-67" data-key="ct2-67" data-answer="40.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-67-result"><span id="ct2-67-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Auftrag (€/Vorgang)</th>
+<td><div>
+<label class="visually-hidden" for="ct2-68">Auftrag (€/Vorgang)</label><input id="ct2-68" data-key="ct2-68" data-answer="60.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-68-result"><span id="ct2-68-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Beschwerde (€/Vorgang)</th>
+<td><div>
+<label class="visually-hidden" for="ct2-69">Beschwerde (€/Vorgang)</label><input id="ct2-69" data-key="ct2-69" data-answer="320.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-69-result"><span id="ct2-69-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Bonitätsprüfung (€/Vorgang)</th>
+<td><div>
+<label class="visually-hidden" for="ct2-70">Bonitätsprüfung (€/Vorgang)</label><input id="ct2-70" data-key="ct2-70" data-answer="200.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-70-result"><span id="ct2-70-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>800.000 € / 20.000 h = Kapazitätskostensatz. Diesen mit der Zeit je Aktivität multiplizieren.</p></details></section>
+</section>
+<section id="c-aktuelles-jahr-und-d-folgejahr" class="level3">
+<h3 class="anchored" data-anchor-id="c-aktuelles-jahr-und-d-folgejahr">c) Aktuelles Jahr und d) Folgejahr</h3>
+<p>Im aktuellen Jahr: 6.000 Aufträge, 500 Beschwerden, 600 Prüfungen. Im Folgejahr: 8.000 Aufträge, 600 Beschwerden, 400 Prüfungen. Kapazität und Kostensätze bleiben für den Vergleich unverändert.</p>
+<section class="om-sheet"><h3 class="anchored">c) Aktuelles Jahr</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Aktivität</th>
+<th data-quarto-table-cell-role="th" scope="col">Stunden</th>
+<th data-quarto-table-cell-role="th" scope="col">Zugeordnete Kosten (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Aufträge</th>
+<td><div>
+<label class="visually-hidden" for="ct2-71">c) Aktuelles JahrAufträge Stunden</label><input id="ct2-71" data-key="ct2-71" data-answer="9000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-71-result"><span id="ct2-71-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-72">c) Aktuelles JahrAufträge Kosten Euro</label><input id="ct2-72" data-key="ct2-72" data-answer="360000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-72-result"><span id="ct2-72-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Beschwerden</th>
+<td><div>
+<label class="visually-hidden" for="ct2-73">c) Aktuelles JahrBeschwerden Stunden</label><input id="ct2-73" data-key="ct2-73" data-answer="4000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-73-result"><span id="ct2-73-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-74">c) Aktuelles JahrBeschwerden Kosten Euro</label><input id="ct2-74" data-key="ct2-74" data-answer="160000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-74-result"><span id="ct2-74-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Prüfungen</th>
+<td><div>
+<label class="visually-hidden" for="ct2-75">c) Aktuelles JahrPrüfungen Stunden</label><input id="ct2-75" data-key="ct2-75" data-answer="3000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-75-result"><span id="ct2-75-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-76">c) Aktuelles JahrPrüfungen Kosten Euro</label><input id="ct2-76" data-key="ct2-76" data-answer="120000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-76-result"><span id="ct2-76-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Genutzte Kapazität gesamt</th>
+<td><div>
+<label class="visually-hidden" for="ct2-77">c) Aktuelles Jahr genutzte Stunden</label><input id="ct2-77" data-key="ct2-77" data-answer="16000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-77-result"><span id="ct2-77-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-78">c) Aktuelles Jahr genutzte Kosten</label><input id="ct2-78" data-key="ct2-78" data-answer="640000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-78-result"><span id="ct2-78-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Ungenutzte Kapazität</th>
+<td><div>
+<label class="visually-hidden" for="ct2-79">c) Aktuelles Jahr freie Stunden</label><input id="ct2-79" data-key="ct2-79" data-answer="4000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-79-result"><span id="ct2-79-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-80">c) Aktuelles Jahr Leerkosten</label><input id="ct2-80" data-key="ct2-80" data-answer="160000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-80-result"><span id="ct2-80-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Verbrauchte Stunden = Menge × Zeit. Kosten = Stunden × 40 €/h. Ungenutzt = 20.000 h minus Verbrauch. Genutzte Kosten und Leerkosten müssen 800.000 € ergeben; Leerkosten sind nicht automatisch kurzfristig einsparbar.</p></details></section><section class="om-sheet"><h3 class="anchored">d) Folgejahr</h3><div class="table-responsive">
+<table class="table caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" scope="col">Aktivität</th>
+<th data-quarto-table-cell-role="th" scope="col">Stunden</th>
+<th data-quarto-table-cell-role="th" scope="col">Zugeordnete Kosten (€)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Aufträge</th>
+<td><div>
+<label class="visually-hidden" for="ct2-81">d) FolgejahrAufträge Stunden</label><input id="ct2-81" data-key="ct2-81" data-answer="12000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-81-result"><span id="ct2-81-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-82">d) FolgejahrAufträge Kosten Euro</label><input id="ct2-82" data-key="ct2-82" data-answer="480000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-82-result"><span id="ct2-82-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Beschwerden</th>
+<td><div>
+<label class="visually-hidden" for="ct2-83">d) FolgejahrBeschwerden Stunden</label><input id="ct2-83" data-key="ct2-83" data-answer="4800.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-83-result"><span id="ct2-83-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-84">d) FolgejahrBeschwerden Kosten Euro</label><input id="ct2-84" data-key="ct2-84" data-answer="192000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-84-result"><span id="ct2-84-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Prüfungen</th>
+<td><div>
+<label class="visually-hidden" for="ct2-85">d) FolgejahrPrüfungen Stunden</label><input id="ct2-85" data-key="ct2-85" data-answer="2000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-85-result"><span id="ct2-85-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-86">d) FolgejahrPrüfungen Kosten Euro</label><input id="ct2-86" data-key="ct2-86" data-answer="80000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-86-result"><span id="ct2-86-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="row">Genutzte Kapazität gesamt</th>
+<td><div>
+<label class="visually-hidden" for="ct2-87">d) Folgejahr genutzte Stunden</label><input id="ct2-87" data-key="ct2-87" data-answer="18800.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-87-result"><span id="ct2-87-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-88">d) Folgejahr genutzte Kosten</label><input id="ct2-88" data-key="ct2-88" data-answer="752000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-88-result"><span id="ct2-88-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+<tr class="odd">
+<th data-quarto-table-cell-role="th" scope="row">Ungenutzte Kapazität</th>
+<td><div>
+<label class="visually-hidden" for="ct2-89">d) Folgejahr freie Stunden</label><input id="ct2-89" data-key="ct2-89" data-answer="1200.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-89-result"><span id="ct2-89-result" class="om-result" aria-live="polite"></span>
+</div></td>
+<td><div>
+<label class="visually-hidden" for="ct2-90">d) Folgejahr Leerkosten</label><input id="ct2-90" data-key="ct2-90" data-answer="48000.0000000000" type="text" inputmode="decimal" autocomplete="off" aria-describedby="ct2-90-result"><span id="ct2-90-result" class="om-result" aria-live="polite"></span>
+</div></td>
+</tr>
+</tbody>
+</table>
+</div><button type="button" data-check="">Felder prüfen</button><p class="om-sheet-status" aria-live="polite"></p><details><summary>Rechenweg und Hinweise anzeigen</summary><p>Verbrauchte Stunden = Menge × Zeit. Kosten = Stunden × 40 €/h. Ungenutzt = 20.000 h minus Verbrauch. Genutzte Kosten und Leerkosten müssen 800.000 € ergeben; Leerkosten sind nicht automatisch kurzfristig einsparbar.</p></details></section><label for="2c-management">c) Welche Konsequenzen hat die freie Kapazität für das Management?</label><textarea id="2c-management" data-key="2c-management" rows="4" class="form-control"></textarea><label for="2e-vergleich">e) Warum unterscheiden sich ABC- und TDABC-Sätze? Erkläre die Behandlung freier Kapazität und die verwendeten Zeitannahmen.</label><textarea id="2e-vergleich" data-key="2e-vergleich" rows="4" class="form-control"></textarea>
+<p><a href="../courses/controlling-kapazitaet-kalkulation.html">Lernhilfe: Kapazität und Kalkulation</a> · <a href="../courses/controlling-tdabc-zeitschaetzung.html">Zeitschätzungen kritisch prüfen</a></p>
+</section>
+</section>
+<section id="quelle-und-prüfstand" class="level2">
+<h2 class="anchored" data-anchor-id="quelle-und-prüfstand">Quelle und Prüfstand</h2>
+<p>Aufgabenbasis: <em>Controlling – Tutorium 2: PKR und (Time-driven) ABC</em>, Institut für Controlling und Unternehmenssteuerung, Winter 2026/27, PDF-S. 2–26. Hier eigenständig zusammengefasst und um Eingabefelder sowie berechnete Selbstchecks ergänzt. Keine offizielle Lösung verfügbar oder als solche behauptet.</p>
+<p><a href="https://www.uni-muenster.de/LearnWeb/learnweb2/course/view.php?id=95896">Original und Kursmaterialien im geschützten LearnWeb</a>. Die Originaldatei wird hier nicht veröffentlicht.</p>
+<script src="../controlling-tutorium-2.js"></script>
+
+
+</section>
+
+</main> <!-- /main -->
+<script>
+// Shared number controls: theme-aware, including dynamically added exercises.
+(() => {
+  function enhanceNumbers(root = document) {
+    root.querySelectorAll('input[type="number"]').forEach((input) => {
+      if (input.closest('.study-number-control') || input.step === 'any') return;
+      const english = (input.closest('[lang]')?.lang || document.documentElement.lang).toLowerCase().startsWith('en');
+      const wrapper = document.createElement('span');
+      wrapper.className = 'study-number-control';
+      input.before(wrapper);
+      wrapper.append(input);
+      const controls = document.createElement('span');
+      controls.className = 'study-number-buttons';
+      for (const [direction, label, points] of [
+        [1, english ? 'Increase value' : 'Wert erhöhen', '5 14 12 7 19 14'],
+        [-1, english ? 'Decrease value' : 'Wert verringern', '5 10 12 17 19 10']
+      ]) {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'study-number-step';
+        button.setAttribute('aria-label', label);
+        button.title = label;
+        button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><polyline points="${points}" /></svg>`;
+        button.disabled = input.disabled || input.readOnly;
+        new MutationObserver(() => { button.disabled = input.disabled || input.readOnly; })
+          .observe(input, { attributes: true, attributeFilter: ['disabled', 'readonly'] });
+        button.addEventListener('click', () => {
+          if (input.disabled || input.readOnly) return;
+          direction > 0 ? input.stepUp() : input.stepDown();
+          input.dispatchEvent(new Event('input', { bubbles: true }));
+          input.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+        controls.append(button);
+      }
+      wrapper.append(controls);
+    });
+  }
+  function init() {
+    enhanceNumbers();
+    new MutationObserver((records) => {
+      if (records.some((record) => record.addedNodes.length)) enhanceNumbers();
+    }).observe(document.body, { childList: true, subtree: true });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".check-answer");
+  if (!button) return;
+
+  const check = button.closest(".study-check");
+  const feedback = check?.querySelector(".feedback");
+  const expected = (check?.dataset.answer || "")
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean)
+    .sort();
+
+  if (!check || !feedback || (expected.length === 0 && check.dataset.type !== "keywords")) return;
+
+  const english = (check.closest("[lang]")?.lang || document.documentElement.lang).toLowerCase().startsWith("en");
+
+  const selected = Array.from(check.querySelectorAll("input:checked"))
+    .map((input) => input.value)
+    .sort();
+
+  if (check.dataset.type === "keywords") {
+    const answer = (check.querySelector("textarea")?.value || "").toLowerCase();
+    const keywords = (check.dataset.keywords || "")
+      .split(",")
+      .map((item) => item.trim().toLowerCase())
+      .filter(Boolean);
+    const missing = keywords.filter((keyword) => !answer.includes(keyword));
+
+    if (!answer.trim()) {
+      feedback.textContent = (english ? "Write a short answer first." : "Schreib erst eine kurze Antwort.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    feedback.textContent = missing.length === 0
+      ? (english ? "All key terms are present. Now check: Is the answer applied to the case?" : "Alle Kernbegriffe sind drin. Jetzt prüfen: Ist die Antwort auch auf den Fall angewendet?")
+      : (english ? `Key terms still missing: ${missing.join(", ")}.` : `Noch fehlen Kernbegriffe: ${missing.join(", ")}.`);
+    feedback.dataset.state = missing.length === 0 ? "correct" : "wrong";
+    return;
+  }
+
+  if (check.dataset.type === "sequence") {
+    const expectedSequence = (check.dataset.answer || "")
+      .split(",")
+      .map((item) => item.trim().toLowerCase())
+      .filter(Boolean);
+    const answer = (check.querySelector("textarea")?.value || "")
+      .toLowerCase()
+      .split(/,|→|->|\n/)
+      .map((item) => item.trim())
+      .filter(Boolean);
+
+    if (answer.length === 0) {
+      feedback.textContent = (english ? "Write the sequence first." : "Schreib die Reihenfolge erst auf.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    const correct =
+      answer.length === expectedSequence.length &&
+      answer.every((value, index) => value === expectedSequence[index]);
+
+    feedback.textContent = correct
+      ? (english ? "Correct sequence. Now briefly justify each step." : "Reihenfolge stimmt. Jetzt jeden Schritt kurz begründen.")
+      : (english ? `Not yet. Expected: ${expectedSequence.join(" → ")}.` : `Noch nicht. Erwartet wird: ${expectedSequence.join(" → ")}.`);
+    feedback.dataset.state = correct ? "correct" : "wrong";
+    return;
+  }
+
+  if (check.dataset.type === "numeric") {
+    const input = check.querySelector("input[type='number']");
+    const value = Number(input?.value);
+    const target = Number(check.dataset.answer);
+    const tolerance = Number(check.dataset.tolerance || "0");
+
+    if (!input || input.value.trim() === "") {
+      feedback.textContent = (english ? "Enter a number first." : "Trag erst eine Zahl ein.");
+      feedback.dataset.state = "neutral";
+      return;
+    }
+
+    const correct = Number.isFinite(value) && Math.abs(value - target) <= tolerance;
+    feedback.textContent = correct
+      ? (english ? "Correct. Now explain the formula and interpretation." : "Richtig. Jetzt die Formel und Interpretation dazusagen.")
+      : (english ? `Not yet. Target value: ${target}.` : `Noch nicht. Zielwert: ${target}.`);
+    feedback.dataset.state = correct ? "correct" : "wrong";
+    return;
+  }
+
+  if (selected.length === 0) {
+    feedback.textContent = english ? "Select an answer first." : "Wähle erst eine Antwort aus.";
+    feedback.dataset.state = "neutral";
+    return;
+  }
+
+  const correct =
+    selected.length === expected.length &&
+    selected.every((value, index) => value === expected[index]);
+
+  feedback.textContent = correct
+    ? (english ? "Correct. Explain why the other options are weaker." : "Richtig. Jetzt kurz begründen, warum die anderen Optionen schwächer sind.")
+    : (english ? "Not quite. Revisit the explanation and check the mechanism." : "Noch nicht ganz. Geh zur Erklärung zurück und prüfe den Mechanismus.");
+  feedback.dataset.state = correct ? "correct" : "wrong";
+});
+
+document.addEventListener("click", (event) => {
+  if (event.target.id !== "build-feedback") return;
+
+  const page = document.querySelector("#feedback-page")?.value.trim() || "unknown";
+  const type = document.querySelector("#feedback-type")?.value.trim() || "unspecified";
+  const change = document.querySelector("#feedback-change")?.value.trim() || "not specified";
+  const source = document.querySelector("#feedback-source")?.value.trim() || "not specified";
+  const output = document.querySelector("#feedback-output");
+
+  if (!output) return;
+
+  output.value = [
+    `Course/page: ${page}`,
+    `Type: ${type}`,
+    `Problem: ${change}`,
+    "Suggested change: Please revise the page so the explanation is clearer, source-backed, and easier to practice.",
+    `Source/context: ${source}`,
+    "Urgency: normal"
+  ].join("\n");
+
+  output.focus();
+  output.select();
+});
+</script>
+
+<script>
+/* Numeric worksheet: compare each entry independently; never evaluate formulas. */
+(() => {
+  const isEnglish = (sheet) => (sheet.closest("[lang]")?.lang || document.documentElement.lang).toLowerCase().startsWith("en");
+  function parseWorksheetNumber(raw) {
+    const text = raw.trim();
+    if (!text) return null;
+    // German grouping and decimal comma; also unambiguous decimal dots.
+    const german = /^[+-]?(?:\d{1,3}(?:[. \u00a0\u202f]\d{3})+|\d+)(?:,\d+)?$/;
+    if (german.test(text)) return Number(text.replace(/[. \u00a0\u202f]/g, "").replace(",", "."));
+    if (/^[+-]?\d+\.\d{1,2}$/.test(text)) return Number(text);
+    return NaN;
+  }
+
+  function clearCell(cell) {
+    const input = cell.querySelector("input");
+    input.removeAttribute("aria-invalid");
+    delete cell.dataset.state;
+    cell.querySelector(".calc-cell-state").textContent = "";
+    const work = cell.querySelector(".calc-work");
+    work.hidden = true;
+    work.open = false;
+  }
+
+  document.addEventListener("input", (event) => {
+    const cell = event.target.closest(".calc-cell");
+    if (!cell) return;
+    clearCell(cell);
+    const sheet = cell.closest(".calc-sheet");
+    sheet.querySelector(".calc-summary").textContent = isEnglish(sheet) ? "Entry changed · check again. Other field marks refer to their last check." : "Eingabe geändert · bitte erneut prüfen. Andere Feldmarkierungen beziehen sich auf deren letzte Prüfung.";
+  });
+
+  document.addEventListener("click", (event) => {
+    const button = event.target.closest(".calc-check, .calc-reset");
+    if (!button) return;
+    const sheet = button.closest(".calc-sheet");
+    const english = isEnglish(sheet);
+    const cells = [...sheet.querySelectorAll(".calc-cell")];
+    if (button.classList.contains("calc-reset")) {
+      cells.forEach((cell) => {
+        cell.querySelector("input").value = "";
+        clearCell(cell);
+      });
+      sheet.querySelector(".calc-summary").textContent = english ? `Started again · ${cells.length} empty fields.` : `Neu begonnen · ${cells.length} leere Felder.`;
+      cells[0].querySelector("input").focus();
+      return;
+    }
+    let correct = 0, wrong = 0, empty = 0, invalid = 0;
+    cells.forEach((cell) => {
+      const input = cell.querySelector("input");
+      const value = parseWorksheetNumber(input.value);
+      let label, state;
+      if (value === null) {
+        empty++; label = english ? "Empty" : "Offen"; state = "empty";
+      } else if (!Number.isFinite(value)) {
+        invalid++; label = english ? "Check number format" : "Zahlenformat prüfen"; state = "invalid";
+      } else if (Math.abs(value - Number(input.dataset.target)) <= Number(input.dataset.tolerance) + 1e-9) {
+        correct++; label = english ? "Correct ✓" : "Richtig ✓"; state = "correct";
+      } else {
+        wrong++; label = english ? "Not correct yet" : "Noch nicht richtig"; state = "wrong";
+      }
+      cell.dataset.state = state;
+      input.setAttribute("aria-invalid", String(state === "wrong" || state === "invalid"));
+      cell.querySelector(".calc-cell-state").textContent = label;
+      cell.querySelector(".calc-work").hidden = false;
+    });
+    sheet.querySelector(".calc-summary").textContent = english ? `${correct} of ${cells.length} correct · ${wrong} not correct yet · ${empty} empty · ${invalid} invalid number format. Calculations are now available under (i) in each field.` : `${correct} von ${cells.length} richtig · ${wrong} noch nicht richtig · ${empty} offen · ${invalid} mit ungültigem Zahlenformat. Rechenwege stehen jetzt unter (i) in den Feldern bereit.`;
+  });
+})();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/wise-2026-27\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../patterns.html">
+<p>Übungsvorlagen</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../templates/example-lecture.html">
+<p>Seitenvorlage</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
