@@ -1,0 +1,107 @@
+[
+  {
+    "objectID": "quellen.html",
+    "href": "quellen.html",
+    "title": "Quellen, Grenzen & Transparenz",
+    "section": "",
+    "text": "Die Belege wurden lokal gegen die abgegebene Falllösung und die privat archivierten Originale geprüft. Die folgende Wiedergabe ist eine eigene Zusammenfassung, kein Gesprächsvolltext.\n\n\n\n\n\n\n\n\nBeleg\nVerwendete Information\nNachweisgrenze\n\n\n\n\nLinienblatt_Lasto.csv\nPlätze und Bearbeitungszeiten aller fünf Stationen\nZeitaufnahme März; keine Störungsmodellierung\n\n\nPruefzeiten_Maerz.csv\n120 einzelne Prüfzeiten, Mittel 37 min\nKeine Ankunftszeitstempel\n\n\nGespräch Böckenholt\n22 % wiederholte Fehler; vollständige Elektriknacharbeit; Adapter +1 min auch bei Nacharbeit; 8.500 €; erwartete 3 %\nPersona-Auskunft; 3 % nur fremde Kundenerfahrung\n\n\nGespräch Gerdes\n450 produktive min; Freigabe weiterhin 26; vierter Prüfstand 48.000 €; zusätzliche Stelle 56.000 €/Jahr\nKeine vollständige Investitionsrechnung\n\n\nAbgegebene Falllösung vom 09.11.2026\nRechenweg und Referenzsimulation\nUnverändert; keine erneute Einreichung"
+  },
+  {
+    "objectID": "quellen.html#fallbelege-vom-9.-november-2026",
+    "href": "quellen.html#fallbelege-vom-9.-november-2026",
+    "title": "Quellen, Grenzen & Transparenz",
+    "section": "",
+    "text": "Die Belege wurden lokal gegen die abgegebene Falllösung und die privat archivierten Originale geprüft. Die folgende Wiedergabe ist eine eigene Zusammenfassung, kein Gesprächsvolltext.\n\n\n\n\n\n\n\n\nBeleg\nVerwendete Information\nNachweisgrenze\n\n\n\n\nLinienblatt_Lasto.csv\nPlätze und Bearbeitungszeiten aller fünf Stationen\nZeitaufnahme März; keine Störungsmodellierung\n\n\nPruefzeiten_Maerz.csv\n120 einzelne Prüfzeiten, Mittel 37 min\nKeine Ankunftszeitstempel\n\n\nGespräch Böckenholt\n22 % wiederholte Fehler; vollständige Elektriknacharbeit; Adapter +1 min auch bei Nacharbeit; 8.500 €; erwartete 3 %\nPersona-Auskunft; 3 % nur fremde Kundenerfahrung\n\n\nGespräch Gerdes\n450 produktive min; Freigabe weiterhin 26; vierter Prüfstand 48.000 €; zusätzliche Stelle 56.000 €/Jahr\nKeine vollständige Investitionsrechnung\n\n\nAbgegebene Falllösung vom 09.11.2026\nRechenweg und Referenzsimulation\nUnverändert; keine erneute Einreichung"
+  },
+  {
+    "objectID": "quellen.html#unterlagen",
+    "href": "quellen.html#unterlagen",
+    "title": "Quellen, Grenzen & Transparenz",
+    "section": "Unterlagen",
+    "text": "Unterlagen\nDie Originalgespräche, CSV-Dateien, Abgabebestätigung und die abgegebene PDF bleiben privat. Diese Website zeigt die aufbereitete Analyse und die ausdrücklich genannten Modellannahmen."
+  },
+  {
+    "objectID": "quellen.html#transparenz",
+    "href": "quellen.html#transparenz",
+    "title": "Quellen, Grenzen & Transparenz",
+    "section": "Transparenz",
+    "text": "Transparenz\nKI wurde für Programmierung, Darstellung und Rechenkontrolle eingesetzt. Eigene Lernanalyse, keine offizielle Lehrstuhllösung. Keine Nutzerkonten, keine automatische Speicherung der Laborwerte, keine Übertragung an KI- oder Uni-Dienste. Die abgegebene Lösung wurde weder geändert noch erneut abgesendet."
+  },
+  {
+    "objectID": "quellen.html#publikationsstatus",
+    "href": "quellen.html#publikationsstatus",
+    "title": "Quellen, Grenzen & Transparenz",
+    "section": "Publikationsstatus",
+    "text": "Publikationsstatus\nAuf Wunsch von Leo am 10.11.2026 als ergänzende Erklärwebsite bereitgestellt. Keine offizielle Musterlösung und keine erneute Uni-Abgabe."
+  },
+  {
+    "objectID": "szenarien.html",
+    "href": "szenarien.html",
+    "title": "Kapazitätslabor",
+    "section": "",
+    "text": "Ändere Fehlerquote, Elektrikzeit, Prüfstände und Tagesfreigabe. Alle Rechnungen laufen lokal. Die Fehlerquote gilt unabhängig bei jedem erneuten Prüfbesuch. Eine Adapterauswahl setzt Annahmen, garantiert aber keine Fehlerreduktion.\n\nIstzustand Adapter Vierter Prüfstand\nFehlerquote je Prüfung (%)\nElektrikzeit je Besuch (min)\nParallele Prüfstände\nNeue Räder pro Tag\n\n\n\n\n\nDie Balken zeigen Kapazitäten, keine tatsächlich produzierten Mengen. Rot markiert den Engpass. Die Prüfstandsauslastung verwendet den rechnerisch erreichbaren Durchsatz; bei Überfreigabe wächst bereits vorgelagert ein Rückstand. Keine Simulation der ganzen Linie. Die Obergrenzen der Eingabefelder sind Bediengrenzen, keine betrieblich belegten Optionen."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Eine Schlange ist noch kein Engpass",
+    "section": "",
+    "text": "Empfehlung: Prüfadapter für 8.500 € einmalig. Die Linienkapazität steigt von 25,07 auf 29,03 fertige Räder/Tag. Eingeplant bleiben 26 Räder/Tag. Die erwarteten 3 % Fehler sind noch keine eigene Betriebsmessung.\nKapazitäten selbst verändern Wartezeit richtig einordnen"
+  },
+  {
+    "objectID": "index.html#der-weg-eines-lasto",
+    "href": "index.html#der-weg-eines-lasto",
+    "title": "Eine Schlange ist noch kein Engpass",
+    "section": "Der Weg eines Lasto",
+    "text": "Der Weg eines Lasto\n\n\n\n\n\nflowchart TD\n A[Antrieb: 2 Plätze · 31 min] --&gt; B[Box und Lenkung: 1 Platz · 15 min]\n B --&gt; C[Elektrik: 1 Platz · 14 / 15 min]\n C --&gt;|Erstmontage| D[Räder und Bremsen: 2 Plätze · 31 min]\n D --&gt; E[Gemeinsame FIFO-Warteschlange]\n E --&gt; F[Endkontrolle: 3 Prüfstände · Ø 37 min]\n F --&gt;|bestanden: 78 % / 97 %| G[Fertiges Rad]\n F --&gt;|Fehler: 22 % / 3 %| C\n C -. Nacharbeit direkt erneut prüfen .-&gt; E\n\n\n\n\n\n\nDer durchgezogene Weg ist die Erstmontage. Nacharbeit wiederholt nur Elektrik und Prüfung, nicht Räder/Bremsen. Die gestrichelte Verbindung zeigt diesen direkten Rückweg. Zeiten sind Minuten je Besuch; Angaben vor/nach Adapter. Kein endgültiger Ausschuss, unabhängige Fehler bei jedem Prüflauf."
+  },
+  {
+    "objectID": "index.html#kapazität-ist-nicht-durchsatz",
+    "href": "index.html#kapazität-ist-nicht-durchsatz",
+    "title": "Eine Schlange ist noch kein Engpass",
+    "section": "Kapazität ist nicht Durchsatz",
+    "text": "Kapazität ist nicht Durchsatz\n450 produktive Minuten pro Tag, ausreichende Zwischenpuffer; keine zusätzlichen Ausfälle, Blockierungen oder Materialengpässe.\n\n\n\nStation\nHeute\nMit Adapter\n\n\n\n\nAntrieb\n29,03\n29,03\n\n\nBox und Lenkung\n30,00\n30,00\n\n\nElektrik\n25,07\n29,10\n\n\nRäder und Bremsen\n29,03\n29,03\n\n\nEndkontrolle\n28,46\n35,39\n\n\n\nAlle Werte: fertige Räder/Tag. Heute begrenzt die Elektrik; danach Antrieb und Räder/Bremsen. Langfristiger Durchsatz = Minimum aus Freigabe und Linienkapazität: heute 25,07; danach 26,00. Keine Garantie für eine einzelne Schicht."
+  },
+  {
+    "objectID": "index.html#rechenweg",
+    "href": "index.html#rechenweg",
+    "title": "Eine Schlange ist noch kein Engpass",
+    "section": "Rechenweg",
+    "text": "Rechenweg\nBei Fehlerquote p ist die erwartete Besuchszahl v = 1 + p + p² + … = 1/(1−p). Heute 1,2821; danach 1,0309. Für einmal besuchte Stationen gilt C = 450 × Plätze / Zeit. Für Elektrik und Prüfung gilt C = 450 × Plätze × (1−p) / Zeit.\n\nHeute Elektrik: 450 × 0,78 / 14 = 25,07.\nAdapter Elektrik: 450 × 0,97 / 15 = 29,10.\nAdapter Prüfung: 450 × 3 × 0,97 / 37 = 35,39.\nZielgrenze Elektrik: 450 × (1−p) / 15 ≥ 26 ⇒ p ≤ 13,33 %. Das genügt hier auch für die übrigen Stationen."
+  },
+  {
+    "objectID": "index.html#warum-nicht-der-vierte-prüfstand",
+    "href": "index.html#warum-nicht-der-vierte-prüfstand",
+    "title": "Eine Schlange ist noch kein Engpass",
+    "section": "Warum nicht der vierte Prüfstand?",
+    "text": "Warum nicht der vierte Prüfstand?\n48.000 € einmalig für einen vierten Prüfstand ändern den Elektrikengpass nicht: weiterhin 25,07. Eine zusätzliche Elektrikstelle (56.000 €/Jahr) könnte das Ziel erreichen. Der Adapter ist unter diesen Alternativen die günstigste zielerreichende Einzelmaßnahme. Ohne Nutzungsdauer, laufende Kosten und Diskontsatz ist dies kein vollständiger Kapitalwertvergleich.\nFallstudie 1: Nachfrage verstehen"
+  },
+  {
+    "objectID": "wartezeit.html",
+    "href": "wartezeit.html",
+    "title": "19,5 Minuten – unter welchen Bedingungen?",
+    "section": "",
+    "text": "Wq ≈ 19,5 min je Prüfbesuch nach Adapter bei 26 neuen Rädern/Tag. Dies ist ein bedingter Simulationsmittelwert, keine gemessene oder garantierte Wartezeit. Bearbeitungszeit ist nicht enthalten."
+  },
+  {
+    "objectID": "wartezeit.html#vom-tagesplan-zur-warteschlange",
+    "href": "wartezeit.html#vom-tagesplan-zur-warteschlange",
+    "title": "19,5 Minuten – unter welchen Bedingungen?",
+    "section": "Vom Tagesplan zur Warteschlange",
+    "text": "Vom Tagesplan zur Warteschlange\n26 / 0,97 = 26,80 Prüfbesuche/Tag, entsprechend 3,57/Stunde. Mittlerer Ankunftsabstand 450 / (26/0,97) = 16,79 min. Drei Prüfstände, mittlere Prüfzeit 37 min: Auslastung 26 × 37 / (0,97 × 450 × 3) = 73,46 %.\nWarten19,5 minPrüfung37,0 min\nIm Mittel rund 56,5 min vor und in der Prüfung je Besuch. Über alle Prüfbesuche eines Rades ergibt sich modellintern näherungsweise 19,5 / 0,97 = 20,1 min reine Prüfwartezeit. Das ist nicht die gesamte Durchlaufzeit der Linie."
+  },
+  {
+    "objectID": "wartezeit.html#explizite-simulationsannahmen",
+    "href": "wartezeit.html#explizite-simulationsannahmen",
+    "title": "19,5 Minuten – unter welchen Bedingungen?",
+    "section": "Explizite Simulationsannahmen",
+    "text": "Explizite Simulationsannahmen\n\nM/G/3: eine gemeinsame FIFO-Schlange, drei identische parallele Prüfstände.\nPoisson-Ankünfte mit der Gesamtrate einschließlich Nacharbeit; keine gemessene Ankunftsverteilung. Die CSV enthält Prüfdauern, keine Ankunftszeitstempel.\nServicezeiten: unabhängiges Ziehen mit Zurücklegen aus den 120 März-Messwerten. Mittel 37,00 min, Stichprobenstandardabweichung 27,03 min, quadrierter Variationskoeffizient etwa 0,53. Keine exponentiellen Prüfzeiten.\nRückläufer werden nur in der Ankunftsrate berücksichtigt, nicht als zeitlich abhängige Rückkopplung des gesamten Prozesses simuliert.\n20 unabhängige Läufe, Seeds 20261109 bis 20261128; jeweils 20.000 Einschwingbesuche und 200.000 ausgewertete Besuche.\nStationäres Langfristmodell in produktiven Minuten: keine tägliche Leerung; Nachtstunden zählen nicht als Wartezeit."
+  },
+  {
+    "objectID": "wartezeit.html#unsicherheit-und-grenzen",
+    "href": "wartezeit.html#unsicherheit-und-grenzen",
+    "title": "19,5 Minuten – unter welchen Bedingungen?",
+    "section": "Unsicherheit und Grenzen",
+    "text": "Unsicherheit und Grenzen\n95-%-Monte-Carlo-Intervall des Modellmittelwerts: 19,3–19,6 min. Es beschreibt nur Zufallsrauschen der Simulation, nicht Daten- oder Modellunsicherheit. Die 3-%-Fehlerannahme stammt von einem anderen Kunden des Zulieferers, nicht von einer eigenen Adaptermessung.\nFür eine Kalender-Tagesprognose fehlen Startbestand, Schichtübergänge und Ankunftszeitstempel. Geänderte Fehlerquoten, Prüfstandzahlen oder Tagespläne erfordern eine neue Simulation und gegebenenfalls ein realistischeres Netzwerkmodell. Das Labor zeigt dafür ausdrücklich keine erfundenen Wartezeiten.\nQuellen und Reproduzierbarkeit"
+  }
+]

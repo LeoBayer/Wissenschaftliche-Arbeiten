@@ -1,0 +1,27 @@
+---
+title: "Quellen, Grenzen & Transparenz"
+---
+
+## Fallbelege vom 9. November 2026
+
+Die Belege wurden lokal gegen die abgegebene Falllösung und die privat archivierten Originale geprüft. Die folgende Wiedergabe ist eine eigene Zusammenfassung, kein Gesprächsvolltext.
+
+| Beleg | Verwendete Information | Nachweisgrenze |
+|:--|:--|:--|
+| Linienblatt_Lasto.csv | Plätze und Bearbeitungszeiten aller fünf Stationen | Zeitaufnahme März; keine Störungsmodellierung |
+| Pruefzeiten_Maerz.csv | 120 einzelne Prüfzeiten, Mittel 37 min | Keine Ankunftszeitstempel |
+| Gespräch Böckenholt | 22 % wiederholte Fehler; vollständige Elektriknacharbeit; Adapter +1 min auch bei Nacharbeit; 8.500 €; erwartete 3 % | Persona-Auskunft; 3 % nur fremde Kundenerfahrung |
+| Gespräch Gerdes | 450 produktive min; Freigabe weiterhin 26; vierter Prüfstand 48.000 €; zusätzliche Stelle 56.000 €/Jahr | Keine vollständige Investitionsrechnung |
+| Abgegebene Falllösung vom 09.11.2026 | Rechenweg und Referenzsimulation | Unverändert; keine erneute Einreichung |
+
+## Unterlagen
+
+Die Originalgespräche, CSV-Dateien, Abgabebestätigung und die abgegebene PDF bleiben privat. Diese Website zeigt die aufbereitete Analyse und die ausdrücklich genannten Modellannahmen.
+
+## Transparenz
+
+KI wurde für Programmierung, Darstellung und Rechenkontrolle eingesetzt. Eigene Lernanalyse, keine offizielle Lehrstuhllösung. Keine Nutzerkonten, keine automatische Speicherung der Laborwerte, keine Übertragung an KI- oder Uni-Dienste. Die abgegebene Lösung wurde weder geändert noch erneut abgesendet.
+
+## Publikationsstatus
+
+Auf Wunsch von Leo am 10.11.2026 als ergänzende Erklärwebsite bereitgestellt. Keine offizielle Musterlösung und keine erneute Uni-Abgabe.

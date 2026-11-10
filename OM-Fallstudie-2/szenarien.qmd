@@ -1,0 +1,21 @@
+---
+title: "Kapazitätslabor"
+---
+
+Ändere Fehlerquote, Elektrikzeit, Prüfstände und Tagesfreigabe. Alle Rechnungen laufen lokal. Die Fehlerquote gilt unabhängig bei **jedem** erneuten Prüfbesuch. Eine Adapterauswahl setzt Annahmen, garantiert aber keine Fehlerreduktion.
+
+```{=html}
+<div class="scenario">
+<div><button id="today">Istzustand</button> <button id="adapter">Adapter</button> <button id="four">Vierter Prüfstand</button></div>
+<label for="p">Fehlerquote je Prüfung (%)</label><input id="p" type="number" min="0" max="99" step="0.1" value="3">
+<label for="t">Elektrikzeit je Besuch (min)</label><input id="t" type="number" min="1" max="120" step="0.1" value="15">
+<label for="c">Parallele Prüfstände</label><input id="c" type="number" min="1" max="10" step="1" value="3">
+<label for="release">Neue Räder pro Tag</label><input id="release" type="number" min="1" max="100" step="0.1" value="26">
+<div id="result" role="status" aria-live="polite"></div>
+<div id="bars" aria-label="Stationskapazitäten"></div>
+<p id="queue"></p>
+</div>
+<script src="scenario.js"></script>
+```
+
+Die Balken zeigen Kapazitäten, keine tatsächlich produzierten Mengen. Rot markiert den Engpass. Die Prüfstandsauslastung verwendet den rechnerisch erreichbaren Durchsatz; bei Überfreigabe wächst bereits vorgelagert ein Rückstand. Keine Simulation der ganzen Linie. Die Obergrenzen der Eingabefelder sind Bediengrenzen, keine betrieblich belegten Optionen.

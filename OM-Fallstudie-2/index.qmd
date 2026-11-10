@@ -1,0 +1,55 @@
+---
+title: "Eine Schlange ist noch kein Engpass"
+---
+
+::: {.decision}
+**Empfehlung: Prüfadapter für 8.500 € einmalig.** Die Linienkapazität steigt von **25,07 auf 29,03 fertige Räder/Tag**. Eingeplant bleiben **26 Räder/Tag**. Die erwarteten 3 % Fehler sind noch keine eigene Betriebsmessung.
+:::
+
+[Kapazitäten selbst verändern](szenarien.qmd){.btn .btn-primary}
+[Wartezeit richtig einordnen](wartezeit.qmd){.btn .btn-case-outline}
+
+## Der Weg eines Lasto
+
+```{mermaid}
+flowchart TD
+ A[Antrieb: 2 Plätze · 31 min] --> B[Box und Lenkung: 1 Platz · 15 min]
+ B --> C[Elektrik: 1 Platz · 14 / 15 min]
+ C -->|Erstmontage| D[Räder und Bremsen: 2 Plätze · 31 min]
+ D --> E[Gemeinsame FIFO-Warteschlange]
+ E --> F[Endkontrolle: 3 Prüfstände · Ø 37 min]
+ F -->|bestanden: 78 % / 97 %| G[Fertiges Rad]
+ F -->|Fehler: 22 % / 3 %| C
+ C -. Nacharbeit direkt erneut prüfen .-> E
+```
+
+Der durchgezogene Weg ist die Erstmontage. Nacharbeit wiederholt **nur Elektrik und Prüfung**, nicht Räder/Bremsen. Die gestrichelte Verbindung zeigt diesen direkten Rückweg. Zeiten sind Minuten je Besuch; Angaben vor/nach Adapter. Kein endgültiger Ausschuss, unabhängige Fehler bei jedem Prüflauf.
+
+## Kapazität ist nicht Durchsatz
+
+450 produktive Minuten pro Tag, ausreichende Zwischenpuffer; keine zusätzlichen Ausfälle, Blockierungen oder Materialengpässe.
+
+| Station | Heute | Mit Adapter |
+|:--|--:|--:|
+| Antrieb | 29,03 | **29,03** |
+| Box und Lenkung | 30,00 | 30,00 |
+| Elektrik | **25,07** | 29,10 |
+| Räder und Bremsen | 29,03 | **29,03** |
+| Endkontrolle | 28,46 | 35,39 |
+
+Alle Werte: fertige Räder/Tag. Heute begrenzt die **Elektrik**; danach **Antrieb und Räder/Bremsen**. Langfristiger Durchsatz = Minimum aus Freigabe und Linienkapazität: heute 25,07; danach 26,00. Keine Garantie für eine einzelne Schicht.
+
+## Rechenweg
+
+Bei Fehlerquote p ist die erwartete Besuchszahl v = 1 + p + p² + … = 1/(1−p). Heute 1,2821; danach 1,0309. Für einmal besuchte Stationen gilt C = 450 × Plätze / Zeit. Für Elektrik und Prüfung gilt C = 450 × Plätze × (1−p) / Zeit.
+
+- Heute Elektrik: 450 × 0,78 / 14 = **25,07**.
+- Adapter Elektrik: 450 × 0,97 / 15 = **29,10**.
+- Adapter Prüfung: 450 × 3 × 0,97 / 37 = **35,39**.
+- Zielgrenze Elektrik: 450 × (1−p) / 15 ≥ 26 ⇒ **p ≤ 13,33 %**. Das genügt hier auch für die übrigen Stationen.
+
+## Warum nicht der vierte Prüfstand?
+
+48.000 € einmalig für einen vierten Prüfstand ändern den Elektrikengpass nicht: weiterhin 25,07. Eine zusätzliche Elektrikstelle (56.000 €/Jahr) könnte das Ziel erreichen. Der Adapter ist unter diesen Alternativen die günstigste zielerreichende Einzelmaßnahme. Ohne Nutzungsdauer, laufende Kosten und Diskontsatz ist dies **kein vollständiger Kapitalwertvergleich**.
+
+[Fallstudie 1: Nachfrage verstehen](../OM-Fallstudie-1/index.html)

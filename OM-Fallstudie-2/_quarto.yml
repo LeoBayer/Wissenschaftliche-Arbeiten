@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: _site
+  render: [index.qmd, szenarien.qmd, wartezeit.qmd, quellen.qmd]
+  resources: [scenario.js]
+website:
+  title: "MünsterRad · Prozessdesign"
+  navbar:
+    left:
+      - {href: index.qmd, text: Entscheidung & Prozess}
+      - {href: szenarien.qmd, text: Kapazitätslabor}
+      - {href: wartezeit.qmd, text: Wartezeit}
+      - {href: quellen.qmd, text: Quellen & Transparenz}
+  page-footer: "Fallstudie 2 · Erklärwebsite · 10.11.2026"
+format:
+  html:
+    lang: de
+    theme: {light: cosmo, dark: darkly}
+    css: styles.css
+    toc: true
+lang: de
