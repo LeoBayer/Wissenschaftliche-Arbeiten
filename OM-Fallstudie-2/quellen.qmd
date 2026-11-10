@@ -14,6 +14,13 @@ Die Belege wurden lokal gegen die abgegebene Falllösung und die privat archivie
 | Gespräch Gerdes | 450 produktive min; Freigabe weiterhin 26; vierter Prüfstand 48.000 €; zusätzliche Stelle 56.000 €/Jahr | Keine vollständige Investitionsrechnung |
 | Abgegebene Falllösung vom 09.11.2026 | Rechenweg und Referenzsimulation | Unverändert; keine erneute Einreichung |
 
+## Mathematisches Begleitblatt
+
+[Rechenblatt als PDF](downloads/Prozessdesign-Rechenblatt.pdf){.btn .btn-primary}
+[Typst-Quelle](downloads/Prozessdesign-Rechenblatt.typ)
+
+Das neu gesetzte Begleitblatt erläutert die Formeln; es ist nicht die eingereichte Abgabe.
+
 ## Unterlagen
 
 Die Originalgespräche, CSV-Dateien, Abgabebestätigung und die abgegebene PDF bleiben privat. Diese Website zeigt die aufbereitete Analyse und die ausdrücklich genannten Modellannahmen.

@@ -14,6 +14,13 @@
     "text": "Die Belege wurden lokal gegen die abgegebene Falllösung und die privat archivierten Originale geprüft. Die folgende Wiedergabe ist eine eigene Zusammenfassung, kein Gesprächsvolltext.\n\n\n\n\n\n\n\n\nBeleg\nVerwendete Information\nNachweisgrenze\n\n\n\n\nLinienblatt_Lasto.csv\nPlätze und Bearbeitungszeiten aller fünf Stationen\nZeitaufnahme März; keine Störungsmodellierung\n\n\nPruefzeiten_Maerz.csv\n120 einzelne Prüfzeiten, Mittel 37 min\nKeine Ankunftszeitstempel\n\n\nGespräch Böckenholt\n22 % wiederholte Fehler; vollständige Elektriknacharbeit; Adapter +1 min auch bei Nacharbeit; 8.500 €; erwartete 3 %\nPersona-Auskunft; 3 % nur fremde Kundenerfahrung\n\n\nGespräch Gerdes\n450 produktive min; Freigabe weiterhin 26; vierter Prüfstand 48.000 €; zusätzliche Stelle 56.000 €/Jahr\nKeine vollständige Investitionsrechnung\n\n\nAbgegebene Falllösung vom 09.11.2026\nRechenweg und Referenzsimulation\nUnverändert; keine erneute Einreichung"
   },
   {
+    "objectID": "quellen.html#mathematisches-begleitblatt",
+    "href": "quellen.html#mathematisches-begleitblatt",
+    "title": "Quellen, Grenzen & Transparenz",
+    "section": "Mathematisches Begleitblatt",
+    "text": "Mathematisches Begleitblatt\nRechenblatt als PDF Typst-Quelle\nDas neu gesetzte Begleitblatt erläutert die Formeln; es ist nicht die eingereichte Abgabe."
+  },
+  {
     "objectID": "quellen.html#unterlagen",
     "href": "quellen.html#unterlagen",
     "title": "Quellen, Grenzen & Transparenz",
@@ -67,7 +74,7 @@
     "href": "index.html#rechenweg",
     "title": "Eine Schlange ist noch kein Engpass",
     "section": "Rechenweg",
-    "text": "Rechenweg\nBei Fehlerquote p ist die erwartete Besuchszahl v = 1 + p + p² + … = 1/(1−p). Heute 1,2821; danach 1,0309. Für einmal besuchte Stationen gilt C = 450 × Plätze / Zeit. Für Elektrik und Prüfung gilt C = 450 × Plätze × (1−p) / Zeit.\n\nHeute Elektrik: 450 × 0,78 / 14 = 25,07.\nAdapter Elektrik: 450 × 0,97 / 15 = 29,10.\nAdapter Prüfung: 450 × 3 × 0,97 / 37 = 35,39.\nZielgrenze Elektrik: 450 × (1−p) / 15 ≥ 26 ⇒ p ≤ 13,33 %. Das genügt hier auch für die übrigen Stationen."
+    "text": "Rechenweg\nBei Fehlerquote \\(p\\) ist die erwartete Besuchszahl \\(v\\) die geometrische Reihe\n\\[\nv = 1 + p + p^2 + \\dots = \\frac{1}{1-p}.\n\\]\nHeute gilt \\(v \\approx 1{,}2821\\), danach \\(v \\approx 1{,}0309\\). Mit \\(T=450\\,\\mathrm{min/Tag}\\), \\(m\\) parallelen Plätzen und der Bearbeitungszeit \\(t\\) je Besuch gilt für einmal besuchte Stationen \\(C=Tm/t\\). Für Elektrik und Prüfung gilt dagegen\n\\[\nC = \\frac{T\\,m\\,(1-p)}{t}.\n\\]\n\nHeute Elektrik: \\(C_{E,0}=\\frac{450\\cdot0{,}78}{14}\\approx25{,}07\\,\\mathrm{Räder/Tag}\\).\nAdapter Elektrik: \\(C_{E,1}=\\frac{450\\cdot0{,}97}{15}=29{,}10\\,\\mathrm{Räder/Tag}\\).\nAdapter Prüfung: \\(C_{P,1}=\\frac{450\\cdot3\\cdot0{,}97}{37}\\approx35{,}39\\,\\mathrm{Räder/Tag}\\).\n\nDie Zielgrenze der Elektrik folgt aus\n\\[\n\\frac{450(1-p)}{15}\\ge26\n\\quad\\Longleftrightarrow\\quad\np\\le1-\\frac{26\\cdot15}{450}\\approx13{,}33\\,\\%.\n\\]\nDas genügt hier auch für die übrigen Stationen. Der langfristige Durchsatz bei Tagesfreigabe \\(r\\) ist \\(D=\\min(r,C_{\\mathrm{Linie}})\\)."
   },
   {
     "objectID": "index.html#warum-nicht-der-vierte-prüfstand",
@@ -81,14 +88,14 @@
     "href": "wartezeit.html",
     "title": "19,5 Minuten – unter welchen Bedingungen?",
     "section": "",
-    "text": "Wq ≈ 19,5 min je Prüfbesuch nach Adapter bei 26 neuen Rädern/Tag. Dies ist ein bedingter Simulationsmittelwert, keine gemessene oder garantierte Wartezeit. Bearbeitungszeit ist nicht enthalten."
+    "text": "\\(W_q\\approx19{,}5\\,\\mathrm{min}\\) je Prüfbesuch nach Adapter bei 26 neuen Rädern/Tag. Dies ist ein bedingter Simulationsmittelwert, keine gemessene oder garantierte Wartezeit. Bearbeitungszeit ist nicht enthalten."
   },
   {
     "objectID": "wartezeit.html#vom-tagesplan-zur-warteschlange",
     "href": "wartezeit.html#vom-tagesplan-zur-warteschlange",
     "title": "19,5 Minuten – unter welchen Bedingungen?",
     "section": "Vom Tagesplan zur Warteschlange",
-    "text": "Vom Tagesplan zur Warteschlange\n26 / 0,97 = 26,80 Prüfbesuche/Tag, entsprechend 3,57/Stunde. Mittlerer Ankunftsabstand 450 / (26/0,97) = 16,79 min. Drei Prüfstände, mittlere Prüfzeit 37 min: Auslastung 26 × 37 / (0,97 × 450 × 3) = 73,46 %.\nWarten19,5 minPrüfung37,0 min\nIm Mittel rund 56,5 min vor und in der Prüfung je Besuch. Über alle Prüfbesuche eines Rades ergibt sich modellintern näherungsweise 19,5 / 0,97 = 20,1 min reine Prüfwartezeit. Das ist nicht die gesamte Durchlaufzeit der Linie."
+    "text": "Vom Tagesplan zur Warteschlange\nBei Tagesfreigabe \\(r=26\\) und Fehlerquote \\(p=0{,}03\\) beträgt die Besuchsrate\n\\[\n\\lambda=\\frac{r}{(1-p)T}=\\frac{26}{0{,}97\\cdot450}\n\\approx0{,}05956\\,\\mathrm{min}^{-1}.\n\\]\nDas entspricht \\(26{,}80\\) Prüfbesuchen pro Tag beziehungsweise \\(3{,}57\\) pro Stunde. Der mittlere Ankunftsabstand ist \\(1/\\lambda\\approx16{,}79\\,\\mathrm{min}\\). Bei \\(c=3\\) Prüfständen und mittlerer Prüfzeit \\(E[S]=37\\,\\mathrm{min}\\) folgt die Auslastung\n\\[\n\\rho=\\frac{\\lambda E[S]}{c}\n=\\frac{26\\cdot37}{0{,}97\\cdot450\\cdot3}\n\\approx73{,}46\\,\\%.\n\\]\nWarten19,5 minPrüfung37,0 min\nIm Mittel rund 56,5 min vor und in der Prüfung je Besuch. Über alle Prüfbesuche eines Rades ergibt sich modellintern näherungsweise \\(W_q/(1-p)\\approx19{,}5/0{,}97\\approx20{,}1\\,\\mathrm{min}\\) reine Prüfwartezeit. Das ist nicht die gesamte Durchlaufzeit der Linie."
   },
   {
     "objectID": "wartezeit.html#explizite-simulationsannahmen",

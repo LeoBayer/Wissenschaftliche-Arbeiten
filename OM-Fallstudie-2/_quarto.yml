@@ -2,7 +2,7 @@ project:
   type: website
   output-dir: _site
   render: [index.qmd, szenarien.qmd, wartezeit.qmd, quellen.qmd]
-  resources: [scenario.js]
+  resources: [scenario.js, downloads/]
 website:
   title: "MünsterRad · Prozessdesign"
   navbar:
@@ -18,4 +18,5 @@ format:
     theme: {light: cosmo, dark: darkly}
     css: styles.css
     toc: true
+    html-math-method: mathjax
 lang: de

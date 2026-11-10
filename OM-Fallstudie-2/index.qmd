@@ -41,12 +41,31 @@ Alle Werte: fertige Räder/Tag. Heute begrenzt die **Elektrik**; danach **Antrie
 
 ## Rechenweg
 
-Bei Fehlerquote p ist die erwartete Besuchszahl v = 1 + p + p² + … = 1/(1−p). Heute 1,2821; danach 1,0309. Für einmal besuchte Stationen gilt C = 450 × Plätze / Zeit. Für Elektrik und Prüfung gilt C = 450 × Plätze × (1−p) / Zeit.
+Bei Fehlerquote $p$ ist die erwartete Besuchszahl $v$ die geometrische Reihe
 
-- Heute Elektrik: 450 × 0,78 / 14 = **25,07**.
-- Adapter Elektrik: 450 × 0,97 / 15 = **29,10**.
-- Adapter Prüfung: 450 × 3 × 0,97 / 37 = **35,39**.
-- Zielgrenze Elektrik: 450 × (1−p) / 15 ≥ 26 ⇒ **p ≤ 13,33 %**. Das genügt hier auch für die übrigen Stationen.
+$$
+v = 1 + p + p^2 + \dots = \frac{1}{1-p}.
+$$
+
+Heute gilt $v \approx 1{,}2821$, danach $v \approx 1{,}0309$. Mit $T=450\,\mathrm{min/Tag}$, $m$ parallelen Plätzen und der Bearbeitungszeit $t$ je Besuch gilt für einmal besuchte Stationen $C=Tm/t$. Für Elektrik und Prüfung gilt dagegen
+
+$$
+C = \frac{T\,m\,(1-p)}{t}.
+$$
+
+- Heute Elektrik: $C_{E,0}=\frac{450\cdot0{,}78}{14}\approx25{,}07\,\mathrm{Räder/Tag}$.
+- Adapter Elektrik: $C_{E,1}=\frac{450\cdot0{,}97}{15}=29{,}10\,\mathrm{Räder/Tag}$.
+- Adapter Prüfung: $C_{P,1}=\frac{450\cdot3\cdot0{,}97}{37}\approx35{,}39\,\mathrm{Räder/Tag}$.
+
+Die Zielgrenze der Elektrik folgt aus
+
+$$
+\frac{450(1-p)}{15}\ge26
+\quad\Longleftrightarrow\quad
+p\le1-\frac{26\cdot15}{450}\approx13{,}33\,\%.
+$$
+
+Das genügt hier auch für die übrigen Stationen. Der langfristige Durchsatz bei Tagesfreigabe $r$ ist $D=\min(r,C_{\mathrm{Linie}})$.
 
 ## Warum nicht der vierte Prüfstand?
 

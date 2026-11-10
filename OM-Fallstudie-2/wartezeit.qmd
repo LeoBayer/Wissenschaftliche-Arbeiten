@@ -3,18 +3,31 @@ title: "19,5 Minuten – unter welchen Bedingungen?"
 ---
 
 ::: {.decision}
-**Wq ≈ 19,5 min je Prüfbesuch** nach Adapter bei 26 neuen Rädern/Tag. Dies ist ein bedingter Simulationsmittelwert, **keine gemessene oder garantierte Wartezeit**. Bearbeitungszeit ist nicht enthalten.
+**$W_q\approx19{,}5\,\mathrm{min}$ je Prüfbesuch** nach Adapter bei 26 neuen Rädern/Tag. Dies ist ein bedingter Simulationsmittelwert, **keine gemessene oder garantierte Wartezeit**. Bearbeitungszeit ist nicht enthalten.
 :::
 
 ## Vom Tagesplan zur Warteschlange
 
-26 / 0,97 = **26,80 Prüfbesuche/Tag**, entsprechend **3,57/Stunde**. Mittlerer Ankunftsabstand 450 / (26/0,97) = **16,79 min**. Drei Prüfstände, mittlere Prüfzeit 37 min: Auslastung 26 × 37 / (0,97 × 450 × 3) = **73,46 %**.
+Bei Tagesfreigabe $r=26$ und Fehlerquote $p=0{,}03$ beträgt die Besuchsrate
+
+$$
+\lambda=\frac{r}{(1-p)T}=\frac{26}{0{,}97\cdot450}
+\approx0{,}05956\,\mathrm{min}^{-1}.
+$$
+
+Das entspricht $26{,}80$ Prüfbesuchen pro Tag beziehungsweise $3{,}57$ pro Stunde. Der mittlere Ankunftsabstand ist $1/\lambda\approx16{,}79\,\mathrm{min}$. Bei $c=3$ Prüfständen und mittlerer Prüfzeit $E[S]=37\,\mathrm{min}$ folgt die Auslastung
+
+$$
+\rho=\frac{\lambda E[S]}{c}
+=\frac{26\cdot37}{0{,}97\cdot450\cdot3}
+\approx73{,}46\,\%.
+$$
 
 ```{=html}
 <div class="wait-visual" role="img" aria-label="Je Besuch im Modell: durchschnittlich 19,5 Minuten Warten und 37 Minuten Prüfung"><div>Warten<br><strong>19,5 min</strong></div><div>Prüfung<br><strong>37,0 min</strong></div></div>
 ```
 
-Im Mittel rund **56,5 min** vor und in der Prüfung je Besuch. Über alle Prüfbesuche eines Rades ergibt sich modellintern näherungsweise 19,5 / 0,97 = **20,1 min reine Prüfwartezeit**. Das ist nicht die gesamte Durchlaufzeit der Linie.
+Im Mittel rund **56,5 min** vor und in der Prüfung je Besuch. Über alle Prüfbesuche eines Rades ergibt sich modellintern näherungsweise $W_q/(1-p)\approx19{,}5/0{,}97\approx20{,}1\,\mathrm{min}$ reine Prüfwartezeit. Das ist nicht die gesamte Durchlaufzeit der Linie.
 
 ## Explizite Simulationsannahmen
 
