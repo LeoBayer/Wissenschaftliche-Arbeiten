@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Digital Work I: Kommunikation und Media Richness – DWPM Exam Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7a3429dccb032350338bc13218471072.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script>
+  try {
+    if (!window.localStorage.getItem("quarto-color-scheme")) {
+      window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+  } catch (_error) {
+  }
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DWPM Exam Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resit-roadmap.html"> 
+<span class="menu-text">Nachschreibeklausur</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pm-verstehen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">PM verstehen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pm-verstehen">    
+        <li>
+    <a class="dropdown-item" href="./pm-foundations.html">
+ <span class="dropdown-text">Projekt, Integration, Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-scheduling.html">
+ <span class="dropdown-text">Scheduling und Netzplan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-earned-value.html">
+ <span class="dropdown-text">Kosten und Earned Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-quality-risk.html">
+ <span class="dropdown-text">Qualität, Risiko und EMV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-i--pm" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work I &amp; PM+</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-i--pm">    
+        <li>
+    <a class="dropdown-item" href="./dw-decisions.html">
+ <span class="dropdown-text">Entscheidungen, Daten und KI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-communication.html">
+ <span class="dropdown-text">Kommunikation und Media Richness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-collaboration.html">
+ <span class="dropdown-text">Kollaboration und Groupware</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-teams.html">
+ <span class="dropdown-text">Teams, Führung und Vertrauen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-knowledge-closing.html">
+ <span class="dropdown-text">Wissen, Closing und Portfolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-self-management.html">
+ <span class="dropdown-text">Ressourcen und Selbstmanagement</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./core.html"> 
+<span class="menu-text">Core Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./concepts.html"> 
+<span class="menu-text">Concept Wiki</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./task-training.html"> 
+<span class="menu-text">Source Task Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice-test.html"> 
+<span class="menu-text">Practice Test</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materials.html"> 
+<span class="menu-text">Material Map</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#vom-übertragen-zum-verstehen" id="toc-vom-übertragen-zum-verstehen" class="nav-link active" data-scroll-target="#vom-übertragen-zum-verstehen">Vom Übertragen zum Verstehen</a></li>
+  <li><a href="#models" id="toc-models" class="nav-link" data-scroll-target="#models">Communication und drei Blickwinkel</a></li>
+  <li><a href="#cmc" id="toc-cmc" class="nav-link" data-scroll-target="#cmc">CMC, Unified Communications und Charakterisierung</a></li>
+  <li><a href="#richness" id="toc-richness" class="nav-link" data-scroll-target="#richness">Uncertainty, equivocality und Media Richness</a></li>
+  <li><a href="#presence" id="toc-presence" class="nav-link" data-scroll-target="#presence">Social presence und die fünf DW1-Situationen</a></li>
+  <li><a href="#critique" id="toc-critique" class="nav-link" data-scroll-target="#critique">MRT kritisch beurteilen, nicht pauschal verwerfen</a></li>
+  <li><a href="#casa" id="toc-casa" class="nav-link" data-scroll-target="#casa">Human-to-machine communication, CA und CASA</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Digital Work I: Kommunikation und Media Richness</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="./dw-decisions.html">Entscheidungen</a> · <a href="./dw-collaboration.html">Kollaboration</a> · <a href="./dw-teams.html">Virtuelle Teams</a> · <a href="./glossary.html">Glossar</a></p>
+<section id="vom-übertragen-zum-verstehen" class="level2">
+<h2 class="anchored" data-anchor-id="vom-übertragen-zum-verstehen">Vom Übertragen zum Verstehen</h2>
+<p>Eine Nachricht kann technisch korrekt ankommen und dennoch falsch verstanden werden. Deshalb unterscheidet der Kurs Übertragung, Interaktion und gemeinsamen Kontext. Medienwahl muss die <strong>Mehrdeutigkeit der Aufgabe</strong>, nicht bloß Vorlieben oder Datenmenge berücksichtigen.</p>
+<p><strong>L06</strong> = <code>06 DW Digital (Project) Communication.pdf</code>, <a href="training/s05.pdf">Original</a>. Alle Seiten sind 1-basiert. Eigene Lernformulierungen und Beispiele sind keine offiziellen Lösungen. DW1 Q2: <a href="training/s19.pdf#page=2">Aufgaben</a> PDF-S. 2; <a href="training/s20.pdf#page=6">Lösungskriterien</a> PDF-S. 6–10.</p>
+</section>
+<section id="models" class="level2">
+<h2 class="anchored" data-anchor-id="models">Communication und drei Blickwinkel</h2>
+<p><strong>Communication is a process in which participants encode, transmit, receive, and interpret messages through channels.</strong> Im linearen Modell überträgt ein Sender codierte Zeichen über ein Medium, ein Empfänger decodiert sie. Es hilft, Kanal- und Übertragungsprobleme zu lokalisieren, reicht aber für Beziehung und geteiltes Verständnis nicht aus.</p>
+<p><strong>Interactional view (Watzlawick)</strong> ergänzt fünf Axiome: Man kann nicht nicht kommunizieren; jede Kommunikation hat Inhalts- und Beziehungsaspekt; Beteiligte setzen Anfang/Ursache einer Interaktionsfolge unterschiedlich (<em>punctuation</em>); Kommunikation nutzt digitale und analoge Modalitäten; Beziehungen können symmetrisch oder komplementär sein. <strong>Digital</strong> meint hier diskrete symbolische Zeichen, <strong>nicht einfach „über Computer“</strong>; analog etwa Ausdruck/Gestik. Symmetrisch bedeutet auf Gleichheit beruhend, komplementär auf unterschiedlichen Positionen – nicht automatisch gut/schlecht.</p>
+<p>Das <strong>transactional model</strong> betrachtet wechselseitiges Codieren/Decodieren unter sozialem, relationalem und kulturellem Kontext sowie <em>noise</em>. Ein gemeinsames Verständnis entsteht im Austausch, nicht automatisch durch Senden. <strong>Beispiel:</strong> „Das ist ja großartig“ kann Zustimmung oder ironische Kritik sein; Wortlaut allein erklärt die Interpretation nicht. Schweigen im Konflikt wird ebenfalls als Signal interpretiert.</p>
+<p><strong>Operator / Herleitung:</strong> <em>Define / compare</em>: Prozessbestandteile nennen → linearer Übertragungsfokus → Beziehung/Feedback/Kontext ergänzen → am selben Beispiel den Erklärungsunterschied zeigen.</p>
+<blockquote class="blockquote">
+<p>“The linear model explains message transmission from sender to receiver. A transactional perspective also considers reciprocal interpretation and social, relational, and cultural context. Successful transmission therefore does not guarantee shared understanding.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Encoding mit Verschlüsselung gleichsetzen; digital/analog mit online/offline verwechseln; jede Interpretation als vom Sender beabsichtigt behandeln.</p>
+<details>
+<summary>
+Selbstcheck: Eine Mail wurde zugestellt, aber als Vorwurf verstanden. Ist die Kommunikation damit erfolgreich?
+</summary>
+Die Übertragung war erfolgreich; inhaltliche und relationale Interpretation können trotzdem scheitern. Feedback, Kontextklärung und gegebenenfalls ein geeigneteres Medium sind nötig.
+</details>
+<p><strong>Quelle:</strong> L06 PDF-S. 5–8.</p>
+</section>
+<section id="cmc" class="level2">
+<h2 class="anchored" data-anchor-id="cmc">CMC, Unified Communications und Charakterisierung</h2>
+<p><strong>Computer-mediated communication (CMC)</strong> ist menschlicher Informationsaustausch über digitale Technologien. <strong>Telecommunication</strong> betont das Überbrücken räumlicher Distanz über Kommunikationstechnik; sie ist nicht notwendig digital. <strong>Unified Communications</strong> integriert Modalitäten, Geräte und Kollaborationsfunktionen in einer Anwendung. <strong>Convergence</strong> beschreibt das Zusammenwachsen von Kommunikations- und Informationstechnologie zu integrierten internetbasierten Diensten.</p>
+<p>Eine Plattform ist kein einzelner Kommunikationsmodus: Ein Teams-Chat, ein Teams-Call und ein Teams-Dokument unterscheiden sich. Bei <em>characterize</em> deshalb die <strong>konkrete Nutzung</strong> klassifizieren:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Gegensätze / Ausprägungen</th>
+<th>Beispiel: Projektstatus per Mail an das Team</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Addressee / interactivity</td>
+<td>Directed/undirected; one-way/two-way</td>
+<td>Gerichtete Nachricht, Antwort möglich, daher im Verlauf two-way.</td>
+</tr>
+<tr class="even">
+<td>Number of parties</td>
+<td>One-to-one / one-to-many / many-to-many</td>
+<td>Ausgangsnachricht one-to-many; Diskussion kann many-to-many werden.</td>
+</tr>
+<tr class="odd">
+<td>Communication mode</td>
+<td>Push / pull</td>
+<td>Mail wird zugestellt (push); ein Wiki muss typischerweise abgerufen werden (pull).</td>
+</tr>
+<tr class="even">
+<td>Timeframe</td>
+<td>Synchronous / asynchronous</td>
+<td>Asynchron, keine gleichzeitige Anwesenheit vorausgesetzt.</td>
+</tr>
+<tr class="odd">
+<td>Media / modality</td>
+<td>Direct/mediated; text/image/audio/video</td>
+<td>Vermittelt, textbasiert, eventuell mit Grafik.</td>
+</tr>
+<tr class="even">
+<td>Context / structure</td>
+<td>Internal/external; vertical/horizontal</td>
+<td>Intern; vertikal bei Leitung an Team, horizontal zwischen Peers.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Operator:</strong> <em>Characterize</em>: Dimension → Ausprägung → kurze Fallbegründung. Eine Chat-App kann synchron benutzt werden, obwohl Antworten auch später möglich sind; beschreibe das Szenario, nicht nur das Produkt.</p>
+<blockquote class="blockquote">
+<p>“The announcement is internal, mediated, text-based, asynchronous, and primarily one-to-many. As a pushed message, it reaches recipients without requiring them to search a repository.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Asynchron = langsam; push = zwangsläufig synchron; sämtliche Plattformfunktionen gleich klassifizieren.</p>
+<details>
+<summary>
+Selbstcheck: Ein gemeinsames Wiki wird von allen gelesen und später ergänzt. Synchron oder asynchron, push oder pull?
+</summary>
+Typischerweise asynchron und pull für das Lesen. Änderungsbenachrichtigungen können zusätzlich push sein. Nutzung und Benachrichtigungsfunktion getrennt benennen.
+</details>
+<p><strong>Quelle:</strong> L06 PDF-S. 9–13.</p>
+</section>
+<section id="richness" class="level2">
+<h2 class="anchored" data-anchor-id="richness">Uncertainty, equivocality und Media Richness</h2>
+<p><strong>Uncertainty</strong> meint hier Mangel an Information: „Wann ist der Termin?“ Mehr passende Information kann die Lücke schließen. <strong>Equivocality</strong> bedeutet Mehrdeutigkeit: „Was meint der Kunde mit professioneller?“ Mehr gleichartiger Daten muss diese unterschiedlichen Interpretationen nicht auflösen. Benötigt wird <strong>common understanding</strong>.</p>
+<p><strong>Information richness</strong> ist die Fähigkeit von Information, gemeinsames Verständnis zu fördern. <strong>Media richness</strong> ist die Kapazität eines Mediums, solche reichhaltige Information zu verarbeiten/zu vermitteln. Die vier Determinanten sind:</p>
+<ol type="1">
+<li><strong>Immediate feedback</strong>: Rückfragen und Klärung ohne lange Verzögerung.</li>
+<li><strong>Multiple cues / channels</strong>: etwa Stimme, Mimik und Gestik gleichzeitig.</li>
+<li><strong>Personalization</strong>: an Person und Situation angepasste Ansprache.</li>
+<li><strong>Language variety</strong>: vielfältige Ausdrucksmöglichkeiten, natürliche Sprache und nonverbale Zeichen statt nur standardisierter Codes.</li>
+</ol>
+<p><strong>Media Richness Theory (MRT)</strong> fordert <strong>fit between information equivocality and media richness</strong>. Hohe Mehrdeutigkeit → reichhaltiger Austausch; geringe Mehrdeutigkeit → schlankes Medium oft effizienter. Zu wenig Richness riskiert <strong>oversimplification</strong> (keine Rückfragen, Nuancen fehlen); unnötig viel Richness kann <strong>overcomplication</strong> (Nebeninformationen, zusätzliche Mehrdeutigkeit und Aufwand) bewirken. Die Kursreihenfolge steigt grob von Brief/Fax/Mail über Voicemail/Telefon zu Videokonferenz und Face-to-Face. Das ist eine theoretische Orientierung, kein universelles Leistungsranking.</p>
+<p><strong>Beispiel und Herleitung:</strong> „Meeting Dienstag 10 Uhr, Raum 3“ hat bei geklärtem Datum wenig Interpretationsspielraum → Mail genügt. „Dein Beitrag ist nicht ausreichend“ ist potenziell konflikthaft: Ursache, Maßstab und Ton sind offen → vertrauliches Gespräch oder Video mit unmittelbaren Rückfragen.</p>
+<p><strong>Operator:</strong> <em>Determine and justify</em>: (1) konkrete Interpretationsmöglichkeiten nennen; (2) benötigte Determinanten ableiten; (3) Medium wählen; (4) Fit und mögliche Ergänzung erklären. „Video ist besser“ ohne Mechanismus ist keine Begründung.</p>
+<blockquote class="blockquote">
+<p>“The performance conversation is highly equivocal because expectations, causes, and emotional reactions require clarification. A private video call provides immediate feedback, vocal cues, and personalization. A short written record can preserve the resulting agreement.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Richness = Bandbreite/Dateigröße; equivocality = komplizierte Zahlen; reichstes Medium immer optimal; mehr Information als sichere Lösung jeder Mehrdeutigkeit.</p>
+<details>
+<summary>
+Selbstcheck: Ein Team versteht „fertig“ unterschiedlich. Helfen 30 weitere Statusmails sicher?
+</summary>
+Nein. Das Problem ist equivocality: unterschiedliche Definitionen von „fertig“. Gemeinsame Klärung von Abnahmekriterien ist erforderlich; ein reichhaltiger Austausch kann diese ermöglichen, danach hilft eine schriftliche Definition.
+</details>
+<p><strong>Quelle:</strong> L06 PDF-S. 16–19; DW1-Kriterien PDF-S. 6–8.</p>
+</section>
+<section id="presence" class="level2">
+<h2 class="anchored" data-anchor-id="presence">Social presence und die fünf DW1-Situationen</h2>
+<p><strong>Social presence</strong> bezeichnet hier das erlebte soziale Gegenüber in vermittelter Kommunikation. Mimik, Stimme, Körperausdruck und unmittelbares Feedback tragen dazu bei. Es ist <strong>nicht identisch mit physischer Anwesenheit</strong>, und auch nicht exakt dasselbe wie media richness: Richness beschreibt eine Verarbeitungskapazität; presence die soziale Qualität/Erfahrung der Interaktion. Text kann über Beziehung, Erfahrung und Interaktionsweise sozial bedeutsam werden; „CMC hat immer keine soziale Präsenz“ wäre zu stark.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>DW1-Situation</th>
+<th>Bedingte Medienempfehlung</th>
+<th>Richness / presence begründen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Giving feedback</strong></td>
+<td>Vertrauliches F2F-/Videogespräch, wenn Feedback interpretationsbedürftig ist.</td>
+<td>Ton und Reaktion vermitteln konstruktive Absicht; sofortige Rückfragen.</td>
+</tr>
+<tr class="even">
+<td><strong>Informing a client about a delay</strong></td>
+<td>Mail für eindeutig neue Frist; Telefon/Video bei sensiblen Konsequenzen, danach schriftlich bestätigen.</td>
+<td>Terminzahl kann eindeutig sein, Beziehungs-/Erwartungsmanagement trotzdem hohe presence erfordern.</td>
+</tr>
+<tr class="odd">
+<td><strong>Announcing an information event</strong></td>
+<td>Mail/interner Kanal mit Ort, Datum, Zweck.</td>
+<td>Geringe equivocality; breite Verteilung ohne unnötiges Meeting.</td>
+</tr>
+<tr class="even">
+<td><strong>Addressing lack of contribution</strong></td>
+<td>Privates Gespräch oder Video.</td>
+<td>Ursachen offen, Empathie und Rückfragen wichtig; öffentlicher Chat kann Konflikt verschärfen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Discussing project strategy</strong></td>
+<td>Workshop/Video mit gemeinsamem Dokument.</td>
+<td>Alternativen und Ziele aushandeln, gemeinsame Bedeutung erzeugen; Ergebnis dokumentieren.</td>
+</tr>
+</tbody>
+</table>
+<p>Das sind aus DW1 abgeleitete Begründungen, <strong>keine für jeden denkbaren Fall einzig zulässigen Medien</strong>. Gerade die Verzögerungsnachricht zeigt: sachliche Eindeutigkeit und soziale Sensibilität können verschiedene Anforderungen stellen.</p>
+<p><strong>Operator:</strong> <em>Characterize required social presence</em>: konkrete Cues → immediate/delayed feedback → warum diese im Fall notwendig oder entbehrlich sind. Bei zwei geforderten Fällen beide systematisch bearbeiten.</p>
+<blockquote class="blockquote">
+<p>“A routine event announcement needs little social presence because recipients mainly require unambiguous logistical information. Addressing non-contribution requires higher social presence: tone and immediate feedback help clarify causes and communicate concern without escalating blame.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Presence nur mit Webcam an/aus erklären; soziale Sensibilität ignorieren; Video verlangen, obwohl Empfänger lediglich eine verlässliche Information nachlesen müssen.</p>
+<details>
+<summary>
+Selbstcheck: Warum kann eine Terminverschiebung trotz geringer sachlicher Mehrdeutigkeit einen Anruf rechtfertigen?
+</summary>
+Wenn die Verschiebung Vertrauen, Vertragsbeziehungen oder Erwartungen berührt, sind persönliche Erklärung und unmittelbare Rückfragen wertvoll. Die neue Frist selbst bleibt eindeutig; die Beziehungssituation ist sensibel. Schriftliche Bestätigung sichert anschließend Verbindlichkeit.
+</details>
+<p><strong>Quelle:</strong> L06 PDF-S. 11–12; DW1-Kriterien PDF-S. 7–9.</p>
+</section>
+<section id="critique" class="level2">
+<h2 class="anchored" data-anchor-id="critique">MRT kritisch beurteilen, nicht pauschal verwerfen</h2>
+<p><strong>Stärke:</strong> Der Fit-Gedanke erklärt, warum unklare Konflikte im knappen Chat scheitern und warum Routineinformationen kein Meeting brauchen. <strong>Grenzen:</strong> frühe Studien fanden keinen einfachen direkten Zusammenhang mit Prozessleistung; die Theorie stammt aus einem überwiegend analogen Medienumfeld. Sie fokussiert Informationsmerkmale stärker als den Kommunikationsprozess, bilateral stärker als Gruppen, und bildet Toolkombinationen, Kontext, Lernprozesse und Wechsel über die Zeit nur begrenzt ab.</p>
+<p><strong>Eigenes Beispiel:</strong> Ein Team liest einen Entwurf asynchron, klärt Streitpunkte im Videocall und dokumentiert Entscheidungen im Wiki. Die Medien leisten nacheinander Unterschiedliches. Ein einziges festes Ranking erklärt den gesamten Verlauf nicht. Hier hilft der <a href="./dw-collaboration.html#rhythm">Rhythmus der Kollaboration</a>.</p>
+<p><strong>Operator:</strong> <em>Critically evaluate</em>: Nutzen + begründete Grenze + konkreter hybrider Fall + abgewogenes Urteil. „Veraltet, weil wir Teams haben“ ist keine Analyse.</p>
+<blockquote class="blockquote">
+<p>“MRT remains useful as a first diagnostic of message–medium fit. However, hybrid work combines media and develops shared meaning over time. The theory should therefore guide rather than mechanically determine media choice, alongside group processes, context, and collaboration needs.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Kritik als vollständige Widerlegung ausgeben; die ursprünglichen Kriterien mit beliebigen Produktpräferenzen ersetzen.</p>
+<details>
+<summary>
+Selbstcheck: Widerlegt eine erfolgreiche Textverhandlung MRT vollständig?
+</summary>
+Nein. Sie zeigt, dass Kontext, Erfahrung, Zeit und Nutzungspraxis zusätzlich relevant sind und pauschale Medienrangfolgen begrenzt sind. Ein Einzelfall begründet keine allgemeine Umkehrung; der Fit-Gedanke kann weiterhin nützlich sein.
+</details>
+<p><strong>Quelle:</strong> L06 PDF-S. 20; DW1-Kriterien PDF-S. 9–10.</p>
+</section>
+<section id="casa" class="level2">
+<h2 class="anchored" data-anchor-id="casa">Human-to-machine communication, CA und CASA</h2>
+<p><strong>Conversational agents (CAs)</strong> interagieren sprachlich mit Menschen; sie sind extern etwa im Kundenservice oder intern als Mitarbeiterassistenz eingesetzt. Klassifikationen: <strong>voice/text/both</strong>, <strong>disembodied/virtually embodied/physically embodied</strong>, <strong>general-purpose/domain-specific</strong>. Diese Dimensionen sind unabhängig: Ein textbasierter Agent kann eng auf IT-Support spezialisiert sein.</p>
+<p><strong>Computers Are Social Actors (CASA)</strong> beschreibt, dass Menschen soziale Skripte auf Computer anwenden, auch wenn sie wissen, dass Computer keine menschlichen Gefühle besitzen. Sprachliche Ausgabe, Interaktivität und traditionell menschliche Rollen begünstigen diese Kategorisierung. Beispiele sind Höflichkeit, Gegenseitigkeit, Selbstoffenbarung und Reaktionen auf zugeschriebene Expertise. Die Forschung diskutiert Anthropomorphismus, Orientierung am Programmierer und Versuchserwartungen; Nass &amp; Moon betonen <strong>mindlessness</strong>: soziale Routinen werden angewandt, während widersprechende Hinweise übergangen werden.</p>
+<p><strong>Abgrenzung:</strong> <em>Anthropomorphism</em> ist Zuschreibung menschlicher Eigenschaften; CASA setzt nicht notwendig den bewussten Glauben voraus, ein System sei menschlich. Menschliches Aussehen kann Erwartungen und Stereotype aktivieren, ohne Kompetenz zu garantieren. <strong>Eigenes Beispiel:</strong> Ein freundlich benannter Supportbot wird als empathischer Spezialist behandelt; Nutzer teilen mehr Informationen und überschätzen seine Hilfe.</p>
+<p><strong>Operator:</strong> <em>Explain / apply</em>: sichtbarer Cue → ausgelöstes soziales Skript → Verhalten → mögliche Fehlkalibrierung. Bei <em>evaluate</em> Nutzen der Zugänglichkeit gegen überhöhte Erwartungen abwägen.</p>
+<blockquote class="blockquote">
+<p>“CASA predicts that users may apply social scripts to an interactive support agent even while knowing it is a machine. Humanlike cues may encourage engagement, but may also produce misplaced trust and expectations beyond the system’s capabilities.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> CASA als Beweis maschinellen Bewusstseins; Anthropomorphismus als notwendige bewusste Täuschung; historische Stereotypenbefunde als sachlich richtige Eigenschaften von Gruppen wiedergeben.</p>
+<details>
+<summary>
+Selbstcheck: Jemand bedankt sich beim Bot und weiß trotzdem, dass er kein Mensch ist. Widerspruch?
+</summary>
+Nein. Gerade dies passt zu CASA: erlernte soziale Reaktionen können ohne bewussten Glauben an menschliche Gefühle ausgelöst werden.
+</details>
+<p><strong>Quelle:</strong> L06 PDF-S. 22–26.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="quiz.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/dwpm\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

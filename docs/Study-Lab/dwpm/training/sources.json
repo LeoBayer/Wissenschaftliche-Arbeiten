@@ -341,7 +341,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s04.pdf"
   },
   {
     "file": "06 DW Digital (Project) Communication.pdf",
@@ -388,7 +389,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s05.pdf"
   },
   {
     "file": "07 DW Groupware Digital Collaboration (Engineering).pdf",
@@ -446,7 +448,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s06.pdf"
   },
   {
     "file": "08 DWPM Co-located and Virtual (Project) Teams.pdf",
@@ -503,7 +506,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s07.pdf"
   },
   {
     "file": "09 PM Knowledge, Closing, Multi-Project.pdf",
@@ -546,7 +550,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s08.pdf"
   },
   {
     "file": "10 PM Digital Competencies, Self_Management.pdf",
@@ -603,7 +608,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s09.pdf"
   },
   {
     "file": "11 DWPM Agility.pdf",

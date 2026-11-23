@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Digital Work I: Entscheidungen, Daten und KI – DWPM Exam Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7a3429dccb032350338bc13218471072.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script>
+  try {
+    if (!window.localStorage.getItem("quarto-color-scheme")) {
+      window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+  } catch (_error) {
+  }
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DWPM Exam Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resit-roadmap.html"> 
+<span class="menu-text">Nachschreibeklausur</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pm-verstehen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">PM verstehen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pm-verstehen">    
+        <li>
+    <a class="dropdown-item" href="./pm-foundations.html">
+ <span class="dropdown-text">Projekt, Integration, Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-scheduling.html">
+ <span class="dropdown-text">Scheduling und Netzplan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-earned-value.html">
+ <span class="dropdown-text">Kosten und Earned Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-quality-risk.html">
+ <span class="dropdown-text">Qualität, Risiko und EMV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-i--pm" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work I &amp; PM+</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-i--pm">    
+        <li>
+    <a class="dropdown-item" href="./dw-decisions.html">
+ <span class="dropdown-text">Entscheidungen, Daten und KI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-communication.html">
+ <span class="dropdown-text">Kommunikation und Media Richness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-collaboration.html">
+ <span class="dropdown-text">Kollaboration und Groupware</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-teams.html">
+ <span class="dropdown-text">Teams, Führung und Vertrauen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-knowledge-closing.html">
+ <span class="dropdown-text">Wissen, Closing und Portfolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-self-management.html">
+ <span class="dropdown-text">Ressourcen und Selbstmanagement</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./core.html"> 
+<span class="menu-text">Core Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./concepts.html"> 
+<span class="menu-text">Concept Wiki</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./task-training.html"> 
+<span class="menu-text">Source Task Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice-test.html"> 
+<span class="menu-text">Practice Test</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materials.html"> 
+<span class="menu-text">Material Map</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#der-rote-faden" id="toc-der-rote-faden" class="nav-link active" data-scroll-target="#der-rote-faden">Der rote Faden</a></li>
+  <li><a href="#decision" id="toc-decision" class="nav-link" data-scroll-target="#decision">Decision making, judgement und reasoning</a></li>
+  <li><a href="#structure" id="toc-structure" class="nav-link" data-scroll-target="#structure">Struktur, uncertainty und ambiguity</a></li>
+  <li><a href="#simon" id="toc-simon" class="nav-link" data-scroll-target="#simon">Simon: vier Aufgaben, nicht nur „Choice“</a></li>
+  <li><a href="#bounded" id="toc-bounded" class="nav-link" data-scroll-target="#bounded">Bounded rationality, satisficing und Bias</a></li>
+  <li><a href="#dss" id="toc-dss" class="nav-link" data-scroll-target="#dss">DSS, ML und die fünf Vergleichskriterien</a></li>
+  <li><a href="#configurations" id="toc-configurations" class="nav-link" data-scroll-target="#configurations">Vier Human–AI-Konfigurationen</a></li>
+  <li><a href="#analytics" id="toc-analytics" class="nav-link" data-scroll-target="#analytics">Decision-driven analytics und kritische Datenkompetenz</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Digital Work I: Entscheidungen, Daten und KI</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="./index.html">Übersicht</a> · <a href="./dw-communication.html">Kommunikation</a> · <a href="./dw-collaboration.html">Kollaboration</a> · <a href="./glossary.html">Glossar</a></p>
+<section id="der-rote-faden" class="level2">
+<h2 class="anchored" data-anchor-id="der-rote-faden">Der rote Faden</h2>
+<p>Daten entscheiden nicht selbst, <strong>welches Problem gelöst werden soll</strong>. Eine gute Entscheidung verbindet Ziele, Alternativen, Evidenz, Unsicherheit und Umsetzung. IT kann Rechenarbeit übernehmen; Menschen müssen insbesondere unklare Ziele und Kontext bearbeiten. „Mehr Daten → objektive Entscheidung“ ist deshalb keine hinreichende Begründung.</p>
+<p>Die Erklärungen, Beispiele und englischen Antwortbausteine sind eigene Lernformulierungen, keine offiziellen Musterlösungen. <strong>L05</strong> bezeichnet <code>05 DW Data-Driven Decision Making.pdf</code>; Seiten sind immer <strong>1-basierte PDF-Seiten</strong>. <a href="training/s04.pdf">Original L05</a>. <a href="training/s19.pdf">DW1-Aufgaben</a>, <a href="training/s20.pdf">DW1-Lösungskriterien</a>. Die folgenden Abschnitte erschließen insbesondere DW1 Q1 (Aufgaben PDF-S. 1; Kriterien PDF-S. 1–5).</p>
+</section>
+<section id="decision" class="level2">
+<h2 class="anchored" data-anchor-id="decision">Decision making, judgement und reasoning</h2>
+<p><strong>Definitionen.</strong> <em>Decision making is selecting an option from a set of alternatives, using judgements and reasoning.</em> Eine Entscheidung ist die Auswahl, nicht bloß die Analyse. <em>Judgement</em> beurteilt etwa, wie wahrscheinlich Ereignisse unter Unsicherheit sind. <em>Reasoning</em> ist das Schlussfolgern auf Basis von Information, Wissen und Erfahrung. Beide gehen in die Bewertung der Alternativen ein; neue Evidenz kann ein Urteil verändern.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Reasoning type</th>
+<th>Was passiert?</th>
+<th>Eigenes Beispiel und Grenze</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Informal reasoning</strong></td>
+<td>Argumente mit persönlichem Wissen, Erfahrung, Intuition oder Heuristiken beurteilen.</td>
+<td>„Diese Route war bisher zuverlässig.“ Schnell, aber Erfahrung kann unpassend sein.</td>
+</tr>
+<tr class="even">
+<td><strong>Inductive reasoning</strong></td>
+<td>Aus konkreten Beobachtungen ein allgemeines Muster ableiten.</td>
+<td>Zehn verspätete Montagslieferungen → Montagsverkehr könnte problematisch sein. Kein logischer Beweis für jeden Montag.</td>
+</tr>
+<tr class="odd">
+<td><strong>Deductive reasoning</strong></td>
+<td>Aus allgemeinen Prämissen einen speziellen Schluss ziehen.</td>
+<td>Alle Fahrzeuge über 3,5 t dürfen hier nicht fahren; Lkw X wiegt 7 t → X darf hier nicht fahren. Gültiger Schluss nur bei passenden Prämissen.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel:</strong> Eine Logistikleitung wählt zwischen zwei Depots (<em>decision</em>), schätzt die Wahrscheinlichkeit von Engpässen (<em>judgement</em>) und leitet aus bisherigen Nachfragewerten einen erwarteten Bedarf ab (<em>induction</em>).</p>
+<p><strong>Operator / Herleitung:</strong> <em>Explain how … relate</em>: alle drei definieren → Funktion im Ablauf erklären → Auswahl mit einer konkreten Bewertung verknüpfen. Bei <em>distinguish</em> nicht nur drei Übersetzungen nennen.</p>
+<blockquote class="blockquote">
+<p>“Decision making selects an alternative. Judgements assess uncertain events, while reasoning draws inferences from information and experience. Both support the evaluation of alternatives, but evaluating options is not yet the final choice.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Induktion als sichere Wahrheit behandeln; judgement mit willkürlicher Meinung gleichsetzen; Entscheidung mit Datensammlung verwechseln.</p>
+<details>
+<summary>
+Selbstcheck: Aus 20 erfolgreichen Lieferungen folgt „alle zukünftigen Lieferungen sind pünktlich“. Welche Denkart, welches Problem?
+</summary>
+Induktiver Schluss: Beobachtete Einzelfälle werden verallgemeinert. Die Stichprobe rechtfertigt keine Gewissheit über alle zukünftigen Fälle; etwa Wetter, Saison und Auswahl der Beobachtungen können sich ändern.
+</details>
+<p><strong>Quelle:</strong> L05 PDF-S. 4–5; DW1-Kriterien PDF-S. 1.</p>
+</section>
+<section id="structure" class="level2">
+<h2 class="anchored" data-anchor-id="structure">Struktur, uncertainty und ambiguity</h2>
+<p><strong>Structured decisions</strong> besitzen klar beschriebene Alternativen und Ergebnisse/Antwortregeln. Beispiel: Nachbestellung, wenn der Bestand unter einen definierten Meldebestand fällt. <strong>Unstructured decisions</strong> betreffen neuartige Situationen ohne vorgegebenes, sauber strukturiertes Alternativenset, oft mit hoher Unsicherheit oder Mehrdeutigkeit. Beispiel: ein neues Geschäftsmodell auswählen. Ein unstrukturiertes Problem kann strukturierte Teilprobleme enthalten: Die Strategie bleibt offen, aber Kosten lassen sich für formulierte Optionen berechnen.</p>
+<p>In L05 bedeutet <strong>uncertainty</strong>, dass Eintrittswahrscheinlichkeiten von Alternativen/Ereignissen nicht bekannt sind; <strong>ambiguity</strong>, dass Alternativen selbst nicht gegeben oder leicht bestimmbar sind. In <a href="./dw-communication.html#richness">Media Richness</a> meint <em>uncertainty</em> allgemeiner Informationsmangel, <em>equivocality</em> mehrere Interpretationen. Die Konzepte hängen zusammen, die jeweilige Definition muss aber zum Framework passen.</p>
+<p><strong>Operator:</strong> <em>Classify / justify</em>: Was ist klar spezifiziert? Was bleibt offen? Welche Teilaufgaben lassen sich strukturieren? Nicht nach „großes Budget = unstrukturiert“ klassifizieren.</p>
+<blockquote class="blockquote">
+<p>“The overall strategy decision is unstructured because relevant alternatives and evaluation criteria are not fully specified. Once candidate strategies are defined, cost calculations can be treated as structured sub-decisions.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> „Unstrukturiert“ mit unorganisiert gleichsetzen; jede Entscheidung unter Unsicherheit für vollständig automatisierbar halten.</p>
+<details>
+<summary>
+Selbstcheck: Eine feste Kreditregel wird auf einen neuen Antrag angewandt. Ist die Entscheidung allein wegen unbekannter Rückzahlung unstrukturiert?
+</summary>
+Nein. Alternativen und Regel können klar strukturiert sein, obwohl das zukünftige Ergebnis unsicher ist. Struktur des Entscheidungsprozesses und Sicherheit des Ergebnisses sind unterschiedliche Fragen.
+</details>
+<p><strong>Quelle:</strong> L05 PDF-S. 6.</p>
+</section>
+<section id="simon" class="level2">
+<h2 class="anchored" data-anchor-id="simon">Simon: vier Aufgaben, nicht nur „Choice“</h2>
+<p><em>Simon’s decision-making process</em> gliedert die Arbeit in <strong>Intelligence → Design → Choice → Implementation</strong>. Die folgende Zuordnung ist zentral: <em>Design</em> entwirft Alternativen und Bewertungskriterien, nicht die fertige technische Benutzeroberfläche.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase</th>
+<th>Bedeutung</th>
+<th>Logistikbeispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Intelligence</strong></td>
+<td>Realität beobachten, Problem verstehen, benötigte Informationen beschaffen.</td>
+<td>Verspätungen erkennen; herausfinden, ob Verkehr, Planung oder Lagerbestand ursächlich ist.</td>
+</tr>
+<tr class="even">
+<td><strong>Design</strong></td>
+<td>Kriterien und Alternativen entwickeln, unkontrollierbare Ereignisse und Beziehungen modellieren.</td>
+<td>Alternative Routen und Depots, Kosten-/Pünktlichkeitsziele und Verkehrsszenarien formulieren.</td>
+</tr>
+<tr class="odd">
+<td><strong>Choice</strong></td>
+<td>Alternativen logisch bewerten und eine geeignete Handlung empfehlen.</td>
+<td>Routen anhand der definierten Kriterien vergleichen und eine auswählen.</td>
+</tr>
+<tr class="even">
+<td><strong>Implementation</strong></td>
+<td>Konsequenzen prüfen, Ressourcen und Umsetzung planen und handeln.</td>
+<td>Disposition schulen, Fahrzeuge zuweisen, Route tatsächlich einführen.</td>
+</tr>
+</tbody>
+</table>
+<p>Die Unterteilung hilft, einen Fall zu diagnostizieren: Ein präzises Optimierungsmodell (<em>Choice</em>) nützt wenig, wenn das falsche Problem definiert wurde (<em>Intelligence</em>) oder notwendige Alternativen fehlen (<em>Design</em>). Die Phasen sind eine analytische Orientierung, kein Beweis, dass reale Arbeit immer ohne Rücksprünge abläuft.</p>
+<p><strong>Operator / Antwortstruktur:</strong> <em>Apply Simon’s model</em>: Phase nennen → konkrete Tätigkeit → zugehöriges Ergebnis. Eine generische Viererliste ohne Fallbezug beantwortet <em>apply</em> nicht.</p>
+<blockquote class="blockquote">
+<p>“During intelligence, LogisTech identifies the sources of late deliveries. During design, it defines feasible routes and evaluation criteria. Choice compares these routes. Implementation assigns resources and introduces the selected route into daily operations.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Intelligence als KI definieren; Datenerhebung mit Auswahl gleichsetzen; Implementation nach einer Empfehlung vergessen.</p>
+<details>
+<summary>
+Selbstcheck: „Wir legen maximale Lieferzeit und Mindestservice fest und entwickeln drei Routen.“ Welche Phase?
+</summary>
+Design: Kriterien und Alternativen werden entwickelt. Die Bewertung und Auswahl folgt in Choice; das Fahren der Route in Implementation.
+</details>
+<p><strong>Quelle:</strong> L05 PDF-S. 7.</p>
+</section>
+<section id="bounded" class="level2">
+<h2 class="anchored" data-anchor-id="bounded">Bounded rationality, satisficing und Bias</h2>
+<p><strong>Bounded rationality</strong> bedeutet begrenzte Rationalität durch <strong>limited time, limited knowledge und limited cognitive capacity</strong>. Menschen können nicht jede Alternative vollständig kennen, berechnen und vergleichen. Daher suchen sie häufig eine <strong>hinreichend gute</strong> statt global optimale Lösung. Der passende Fachbegriff ist <strong>satisficing</strong>: Eine Option erfüllt ein akzeptables Anspruchsniveau; die Suche endet. Das ist unter Ressourcenknappheit nachvollziehbar und nicht einfach „Menschen sind dumm“.</p>
+<p>Ein Disponent kann vor einer Abfahrt nicht Millionen Routen bewerten. Er nutzt eine Heuristik und akzeptiert die erste Route, die Kosten- und Zeitgrenzen erfüllt. <strong>Heuristics</strong> verkürzen die Suche; sie können nützlich sein, aber systematische Fehler begünstigen. <strong>Overconfidence bias</strong> ist übermäßiges Vertrauen in die eigene Urteilssicherheit. Bounded rationality beschreibt die Grenzen; ein Bias beschreibt eine bestimmte systematische Verzerrung. Beides ist nicht identisch.</p>
+<p><strong>Operator:</strong> <em>Explain limitations</em>: die drei Grenzen nennen → Mechanismus zur eingeschränkten Suche → Folge „good enough“ → Fall. Bei <em>evaluate</em> zusätzlich erklären, was IT verbessern kann und welche Grenze bleibt.</p>
+<blockquote class="blockquote">
+<p>“Bounded rationality arises from limited time, knowledge, and cognitive capacity. A dispatcher may therefore satisfice by selecting the first route meeting minimum requirements. AI can expand the search, but cannot resolve an incorrectly specified objective merely by computing faster.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Satisficing mit Zufallsauswahl gleichsetzen; behaupten, jede menschliche Entscheidung sei irrational; Biasfreiheit aus hoher Rechengeschwindigkeit ableiten.</p>
+<details>
+<summary>
+Selbstcheck: Ist „Ich kenne sicher alle Risiken“ eine Definition von bounded rationality?
+</summary>
+Nein. Es kann Overconfidence anzeigen. Bounded rationality erklärt grundsätzlich beschränkte Information, Zeit und Verarbeitungskapazität; auch vorsichtige Personen unterliegen diesen Grenzen.
+</details>
+<p><strong>Quelle:</strong> L05 PDF-S. 8–9; DW1-Kriterien PDF-S. 1. „Satisficing“ ist hier das erklärende Fachwort für die auf S. 8 beschriebene Good-enough-Suche.</p>
+</section>
+<section id="dss" class="level2">
+<h2 class="anchored" data-anchor-id="dss">DSS, ML und die fünf Vergleichskriterien</h2>
+<p>Ein <strong>Decision Support System (DSS)</strong> unterstützt die interaktive Zusammenarbeit von Mensch und IT insbesondere bei <strong>semi-structured decisions</strong>: Die IT automatisiert strukturierte Teile, Menschen bearbeiten komplexe unstrukturierte Teile. DSS ist Unterstützung, keine Garantie für die richtige Problemdefinition. Ein intelligentes DSS verbindet <strong>data base</strong> (relevante Daten), <strong>knowledge base</strong> (Problemwissen) und <strong>model base</strong> (Entscheidungs-/Lösungsmodelle); es liefert etwa Prognosen, Empfehlungen und Erklärungen mit Rückkopplung durch Nutzer.</p>
+<p><strong>ML</strong> lernt ein Vorhersagemodell aus Trainingsbeispielen, statt ausschließlich explizite Expertenregeln zu codieren. Die in L05 genannten Versprechen – weniger subjektive Expertenverzerrung, neue Muster, höhere Geschwindigkeit – sind <strong>Versprechen, keine zugesicherten Eigenschaften</strong>. Ein Muster aus historischen Entscheidungen kann gerade deren Verzerrungen reproduzieren.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Vergleichskriterium</th>
+<th>KI-basierte Entscheidung</th>
+<th>Menschliche Entscheidung</th>
+<th>Fallbezug LogisTech</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Specificity of decision search space</strong></td>
+<td>Benötigt spezifizierte Ziele und Suchräume.</td>
+<td>Kann vage Probleme und Kontext erschließen.</td>
+<td>Mensch klärt Servicepriorität; System optimiert spezifizierte Routen.</td>
+</tr>
+<tr class="even">
+<td><strong>Interpretability</strong></td>
+<td>Komplexe Modelle können schwer nachvollziehbar sein.</td>
+<td>Gründe kommunizierbar, aber nachträgliche Rationalisierung möglich.</td>
+<td>Kunden brauchen eine nachvollziehbare Begründung für Änderungen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Size of alternative set</strong></td>
+<td>Kann große Mengen systematisch bewerten.</td>
+<td>Begrenzte gleichmäßige Bewertung vieler Optionen.</td>
+<td>Viele Routen-/Fahrzeugkombinationen sprechen für IT-Unterstützung.</td>
+</tr>
+<tr class="even">
+<td><strong>Decision-making speed</strong></td>
+<td>Schnelle Verarbeitung nach Bereitstellung geeigneter Modelle/Daten.</td>
+<td>Langsamer bei vielen Optionen; Kontexturteile bleiben wichtig.</td>
+<td>Verkehrsdaten zeitnah einbeziehen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Replicability</strong></td>
+<td>Bei gleichen Inputs, Modell und Verfahren konsistent; nicht automatisch bei stochastischer Ausführung.</td>
+<td>Variiert mit Aufmerksamkeit, Erfahrung und Situation.</td>
+<td>Standardisierte Berechnung erlaubt Vergleich; gleich falsch bleibt falsch.</td>
+</tr>
+</tbody>
+</table>
+<p>Die Vorlesung behandelt auch die Entwicklung von einzelaufgabenbezogenen DSS über <strong>enterprise data warehousing</strong>, <strong>real-time data warehousing</strong>, <strong>big data analytics</strong> bis zu <strong>cognitive capabilities</strong>: gemeinsamer Datenzugriff → schnellere Aktualisierung → Verarbeitung von <strong>volume, variety, velocity (3V)</strong> → KI-/Sprachinteraktion. Das erweitert Fähigkeiten, beseitigt aber nicht Ziele-, Qualitäts- und Kontextprobleme.</p>
+<p><strong>Operator / Herleitung:</strong> DW1 <em>assess using the following criteria</em>: <strong>jedes der fünf Kriterien</strong> bearbeiten, jeweils Mensch und KI vergleichen, Fallbeleg und Konsequenz ergänzen. Zehn allgemeine KI-Vorteile ersetzen den geforderten Kriterienvergleich nicht.</p>
+<blockquote class="blockquote">
+<p>“AI can evaluate many route combinations quickly and consistently, provided that objectives and constraints are specified. Humans contribute contextual interpretation and exception handling. Interpretability matters when clients need explanations, so processing capacity alone does not justify full delegation.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> DSS = autonome KI; jedes KI-System = Black Box; Reproduzierbarkeit = Korrektheit; 3V = Datenqualität.</p>
+<details>
+<summary>
+Selbstcheck: Ein Modell liefert immer dieselbe diskriminierende Empfehlung. Welches Kriterium erfüllt es, welches Problem löst das nicht?
+</summary>
+Es kann hohe Replicability besitzen. Diese sagt nichts über Fairness oder Validität aus. Daten, Zieldefinition und Fehlerfolgen müssen unabhängig geprüft werden.
+</details>
+<p><strong>Quelle:</strong> L05 PDF-S. 11–16; DW1-Kriterien PDF-S. 2–3.</p>
+</section>
+<section id="configurations" class="level2">
+<h2 class="anchored" data-anchor-id="configurations">Vier Human–AI-Konfigurationen</h2>
+<p>Die Konfiguration beschreibt <strong>wer wann welchen Entscheidungsbeitrag leistet</strong>, nicht bloß, dass beide beteiligt sind.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Configuration</th>
+<th>Ablauf und Abgrenzung</th>
+<th>Eigenes Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Full human-to-AI delegation</strong></td>
+<td>Operative Entscheidung vollständig an das System übertragen; Menschen können Rahmen und Kontrolle gestalten, aber entscheiden nicht jeden Einzelfall.</td>
+<td>Klar abgegrenzte automatische Disposition innerhalb festgelegter Grenzen.</td>
+</tr>
+<tr class="even">
+<td><strong>Aggregated human–AI decision making</strong></td>
+<td>Mensch und KI erzeugen eigenständige Bewertungen; eine Aggregationsregel kombiniert sie. Keine reine Übergabekette.</td>
+<td>Menschliche und modellbasierte Nachfrageprognose werden gewichtet zusammengeführt.</td>
+</tr>
+<tr class="odd">
+<td><strong>AI-to-human sequential decision making</strong></td>
+<td>KI analysiert/filtert zuerst, Mensch beurteilt anschließend die vorgeschlagenen Optionen im Kontext.</td>
+<td>KI erstellt Routen-Shortlist; Disponent berücksichtigt lokale Sperrung und entscheidet.</td>
+</tr>
+<tr class="even">
+<td><strong>Human-to-AI sequential decision making</strong></td>
+<td>Mensch strukturiert/selektiert zuerst; KI trifft danach im eingegrenzten Raum eine Entscheidung.</td>
+<td>Mensch legt zulässige Liefergebiete und Ziele fest; KI bestimmt daraus die Route.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Herleitung einer Empfehlung:</strong> (1) Suchraum und Risiken analysieren; (2) Aufgaben aufteilen; (3) Reihenfolge bzw. Aggregation benennen; (4) mit mindestens zwei Kriterien begründen; (5) Ausnahme-/Kontrollmechanismus nennen. In realen Abläufen können mehrere Konfigurationen kombiniert werden. Entscheidend ist, die beschriebene Kette korrekt zu benennen.</p>
+<p><strong>Operator:</strong> <em>Suggest and justify</em>. Für den DW1-Logistikfall ist etwa AI-to-human sequential gut begründbar, weil große Optionsmengen schnell verarbeitet werden und Menschen bei Ausnahmen/Kundenbegründungen entscheiden. Das ist <strong>eine vertretbare Anwendung</strong>, keine einzig mögliche offizielle Lösung. Die Kriterien verlangen einen passenden, erläuterten und begründeten Vorschlag.</p>
+<blockquote class="blockquote">
+<p>“I recommend AI-to-human sequential decision making for exceptional route changes. AI generates a shortlist using traffic, capacity, and delivery constraints. A dispatcher then checks local disruptions and client priorities before approval. This combines computational speed with contextual judgement, at the cost of slower final decisions.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Human-to-AI und AI-to-human nach dem Besitzer des Systems benennen; „human in the loop“ ohne tatsächliche Rolle; Delegation mit Verantwortungslosigkeit verwechseln.</p>
+<details>
+<summary>
+Selbstcheck: Mensch und KI schätzen die Nachfrage unabhängig; das Ergebnis ist ein gewichteter Mittelwert. Sequential?
+</summary>
+Nein: aggregated human–AI decision making. Die Beiträge werden kombiniert, nicht nacheinander als Vorauswahl und finale Entscheidung verarbeitet.
+</details>
+<p><strong>Quelle:</strong> L05 PDF-S. 17–18; DW1-Kriterien PDF-S. 3–4.</p>
+</section>
+<section id="analytics" class="level2">
+<h2 class="anchored" data-anchor-id="analytics">Decision-driven analytics und kritische Datenkompetenz</h2>
+<p><strong>Data-driven decision making</strong> nutzt Daten für Entscheidungen. <strong>Decision-driven analytics</strong> schärft die Reihenfolge: <strong>Decision → Question → Data → Answer</strong>. Zuerst Handlungsalternativen bestimmen, dann die entscheidungsrelevante Frage und Bewertungsanforderungen, dann passende Daten kritisch analysieren, schließlich eine Antwort <strong>unter Berücksichtigung von Unsicherheit</strong> ableiten. Es geht nicht um „Daten sind unwichtig“, sondern um ihre Einbindung in eine konkrete Entscheidung.</p>
+<p><strong>Vorlesungsbeispiel Kraftstoff:</strong> Jährlich 10.000 Meilen pro Fahrzeug. SUV von 10 auf 20 MPG: vorher 1.000, danach 500 Gallonen → <strong>500 gespart</strong>. Limousine von 20 auf 50 MPG: vorher 500, danach 200 Gallonen → <strong>300 gespart</strong>. Die größere MPG-Steigerung von 30 ist nicht die größere Kraftstoffeinsparung. Die relevante Größe ist <code>distance / MPG</code>, nicht die MPG-Differenz. Für eine vollständige Investitionsentscheidung bräuchte man zusätzlich Anschaffungskosten, Nutzung usw.; diese Rechnung zeigt zunächst nur die Kraftstoffeinsparung je Fahrzeug.</p>
+<p><strong>Divers vs.&nbsp;runners:</strong> Zahlenbegeisterte Analysten (<em>divers</em>) können zu schnell in vorhandene Daten eintauchen; wirkungsorientierte Manager (<em>runners</em>) handeln unter Zeit-/Ressourcendruck. Zusammenarbeit muss Entscheidungsziel und Analyse verbinden, statt eine Gruppe zum alleinigen Maßstab zu machen.</p>
+<p><strong>Datenannahmen kritisch prüfen:</strong> Daten sind nicht automatisch vollständig referenziell, natürlich gegeben, neutral grundlegend, objektiv oder gleichwertig. Messung, Kategorien, Erhebung und Auswahl prägen sie. Bei Big Data heißt <strong>N ≠ all</strong>: Selbst riesige Datensätze bilden nur ausgewählte Aspekte und Populationen ab. Nicht alles wird datenförmig erfasst; Volumen ersetzt keine Relevanz. Korrelation allein beweist keine Ursache. Die letztgenannte Unterscheidung wird auch in DW1-Kriterien betont.</p>
+<p><strong>Operator / Antwortstruktur:</strong> <em>Critically discuss ML objectivity</em>: bedingten Nutzen anerkennen → zwei konkrete Versprechen erläutern → zwei Grenzen mit Mechanismus und Konsequenz → begründetes Gesamturteil. „KI hat Bias“ ist ohne Erklärung zu kurz: historische Benachteiligung in Trainingslabels → gelerntes Muster → Benachteiligung neuer Bewerber ist eine vollständige Kette.</p>
+<blockquote class="blockquote">
+<p>“ML may reduce inconsistency and identify patterns beyond an expert’s capacity. However, training data are constructed and selective rather than inherently objective. Historical discrimination may be reproduced at scale, and correlation does not establish causation. ML can improve decision support, but objectivity requires critical validation rather than merely larger datasets.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Prozent-/Effizienzwerte ohne Rückrechnung vergleichen; „Big Data umfasst alles“; menschliche Intuition als immer schlecht und ML als immer objektiv bewerten; eine präzise Prognose als automatische Handlungsempfehlung behandeln.</p>
+<details>
+<summary>
+Selbstcheck: Warum ist „Wir haben eine Million Klicks, also kennen wir alle Kundenwünsche“ kein guter Schluss?
+</summary>
+Klicks bilden nur erfasste Interaktionen bestimmter Nutzer ab. Nichtnutzer und nichtgeklickte Bedürfnisse fehlen; Kategorien und Messung sind gestaltet. Zunächst muss die Entscheidung geklärt werden, dann welche Evidenz dafür repräsentativ und geeignet ist.
+</details>
+<p><strong>Quelle:</strong> L05 PDF-S. 21–26; Kraftstoffrechnung PDF-S. 23; DW1-Kriterien PDF-S. 4–5.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="quiz.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/dwpm\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
