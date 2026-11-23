@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Digital Work II: Agility, Scrum und Kanban – DWPM Exam Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7a3429dccb032350338bc13218471072.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script>
+  try {
+    if (!window.localStorage.getItem("quarto-color-scheme")) {
+      window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+  } catch (_error) {
+  }
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DWPM Exam Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resit-roadmap.html"> 
+<span class="menu-text">Nachschreibeklausur</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pm-verstehen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">PM verstehen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pm-verstehen">    
+        <li>
+    <a class="dropdown-item" href="./pm-foundations.html">
+ <span class="dropdown-text">Projekt, Integration, Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-scheduling.html">
+ <span class="dropdown-text">Scheduling und Netzplan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-earned-value.html">
+ <span class="dropdown-text">Kosten und Earned Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-quality-risk.html">
+ <span class="dropdown-text">Qualität, Risiko und EMV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-i--pm" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work I &amp; PM+</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-i--pm">    
+        <li>
+    <a class="dropdown-item" href="./dw-decisions.html">
+ <span class="dropdown-text">Entscheidungen, Daten und KI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-communication.html">
+ <span class="dropdown-text">Kommunikation und Media Richness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-collaboration.html">
+ <span class="dropdown-text">Kollaboration und Groupware</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-teams.html">
+ <span class="dropdown-text">Teams, Führung und Vertrauen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-knowledge-closing.html">
+ <span class="dropdown-text">Wissen, Closing und Portfolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-self-management.html">
+ <span class="dropdown-text">Ressourcen und Selbstmanagement</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-ii" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work II</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-ii">    
+        <li>
+    <a class="dropdown-item" href="./dw-agility.html">
+ <span class="dropdown-text">Agility, Scrum und Kanban</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-ai-work.html">
+ <span class="dropdown-text">Automation und Human–AI Work</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-people-analytics.html">
+ <span class="dropdown-text">People Analytics und Kontrolle</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-human-factors.html">
+ <span class="dropdown-text">Human Factors und Konflikte</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./core.html"> 
+<span class="menu-text">Core Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./concepts.html"> 
+<span class="menu-text">Concept Wiki</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./task-training.html"> 
+<span class="menu-text">Source Task Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice-test.html"> 
+<span class="menu-text">Practice Test</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materials.html"> 
+<span class="menu-text">Material Map</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#warum-diese-begriffe-zusammengehören" id="toc-warum-diese-begriffe-zusammengehören" class="nav-link active" data-scroll-target="#warum-diese-begriffe-zusammengehören">Warum diese Begriffe zusammengehören</a></li>
+  <li><a href="#life-cycles" id="toc-life-cycles" class="nav-link" data-scroll-target="#life-cycles">Predictive, iterative, incremental und agile</a></li>
+  <li><a href="#comparison" id="toc-comparison" class="nav-link" data-scroll-target="#comparison">Plan-based versus agile: erklären statt Etiketten aufzählen</a></li>
+  <li><a href="#mindset" id="toc-mindset" class="nav-link" data-scroll-target="#mindset">Agility, Manifesto und doing versus being agile</a></li>
+  <li><a href="#roles" id="toc-roles" class="nav-link" data-scroll-target="#roles">Scrum: Rollen und Entscheidungskompetenzen</a></li>
+  <li><a href="#flow" id="toc-flow" class="nav-link" data-scroll-target="#flow">Scrum: Artefakte, Events und Kursphasen</a></li>
+  <li><a href="#kanban" id="toc-kanban" class="nav-link" data-scroll-target="#kanban">Kanban: pull, WIP und flow statt nur bunter Zettel</a></li>
+  <li><a href="#hybrid" id="toc-hybrid" class="nav-link" data-scroll-target="#hybrid">Hybrid: die Schnittstellen entscheiden</a></li>
+  <li><a href="#antwortarchitektur-aus-dem-dw2-tool-sheet" id="toc-antwortarchitektur-aus-dem-dw2-tool-sheet" class="nav-link" data-scroll-target="#antwortarchitektur-aus-dem-dw2-tool-sheet">Antwortarchitektur aus dem DW2 Tool Sheet</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Digital Work II: Agility, Scrum und Kanban</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="./index.html">Übersicht</a> · <a href="./glossary.html">Glossar</a> · <a href="./task-training.html">Trainer</a></p>
+<section id="warum-diese-begriffe-zusammengehören" class="level2">
+<h2 class="anchored" data-anchor-id="warum-diese-begriffe-zusammengehören">Warum diese Begriffe zusammengehören</h2>
+<p>Agilität beantwortet eine Organisationsfrage: Wie lernen wir rechtzeitig, was wertvoll ist, und passen unser Vorgehen an? Scrum strukturiert die gemeinsame Produktentwicklung in kurzen Zyklen; Kanban verbessert den Arbeitsfluss. Ein Board allein macht weder Scrum noch eine agile Organisation aus.</p>
+<p>Eigene deutsche Erklärungen und englische Antwortbausteine, <strong>keine neuen offiziellen Lösungen</strong>. L11 = <a href="training/s10.pdf">11 DWPM Agility</a>. <a href="training/s21.pdf">DW2-Aufgaben</a> Q1, PDF-S. 1–2; <a href="training/s45.pdf">Kriterien</a> PDF-S. 1–4. Die Kursfolien verwenden teilweise ältere Scrum-Begriffe. Diese werden unten von terminologischen Ergänzungen getrennt. <a href="training/s54.pdf">GoSMART-Original</a>; <a href="training/s25.pdf">Case-Auftrag</a>, PDF-S. 1.</p>
+</section>
+<section id="life-cycles" class="level2">
+<h2 class="anchored" data-anchor-id="life-cycles">Predictive, iterative, incremental und agile</h2>
+<p><em>A predictive life cycle plans most work upfront and executes a largely predefined sequence.</em> Planbasiert (<em>plan-based</em>, <em>traditional</em>, <em>predictive</em>) meint eine starke Vorabfestlegung von Anforderungen, Planung und Prozessschritten. Das ist nicht gleich <strong>ad hoc / code and fix</strong>: Gerade unkontrolliertes Losprogrammieren sollte durch Software Engineering überwunden werden. Waterfall ist ein typischer sequenzieller Vertreter; nicht jedes planbasierte Verfahren ist in jedem Detail ein reiner Wasserfall.</p>
+<p><strong>Iterative</strong> bedeutet: Eine noch unfertige Lösung wiederholt überarbeiten, um aus Feedback zu lernen. <strong>Incremental</strong> bedeutet: Fertige, nutzbare Teilresultate hinzufügen. <strong>Agile</strong> kombiniert im Kurs beide: wiederholt lernen <strong>und</strong> häufig nutzbare Ergebnisse liefern. Zehn Entwurfsrevisionen ohne nutzbares Resultat sind iterativ, aber noch nicht inkrementell. Drei nacheinander fertiggestellte, vorab vollständig spezifizierte Module sind inkrementell, aber nicht schon adaptiv-agil.</p>
+<p><strong>Beispiel:</strong> Bei einer Buchungsplattform wird erst ein klickbarer Entwurf dreimal verbessert (Iteration), dann eine funktionsfähige Buchung ausgeliefert (Increment), anschließend anhand echten Nutzerfeedbacks die nächste Funktion priorisiert (agile Verbindung).</p>
+<p><strong>Operator und Antwortstruktur:</strong> <em>Distinguish / explain</em>: die Dimension „Überarbeitung“ von „nutzbarer Zuwachs“ trennen → je ein Beispiel → zeigen, warum agile beides verbindet.</p>
+<blockquote class="blockquote">
+<p>“Iteration improves work through repeated feedback; an increment adds a usable part of the product. An agile life cycle combines both, allowing the team to refine its understanding while delivering value frequently.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Iterativ mit inkrementell gleichsetzen; agile als planlos bezeichnen; jede schrittweise Entwicklung automatisch Scrum nennen.</p>
+<details>
+<summary>
+Selbstcheck: Ein Team verbessert sechs Wochen denselben Prototyp, liefert aber nichts Nutzbares aus. Was ist belegt?
+</summary>
+Iteration ist belegt. Ein nutzbares Increment und damit die Kombination beider Eigenschaften sind noch nicht gezeigt. „Prototyp“ und „Iteration“ allein beweisen keinen agilen Lebenszyklus.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L11 PDF-S. 4–6, 9–14.</p>
+</section>
+<section id="comparison" class="level2">
+<h2 class="anchored" data-anchor-id="comparison">Plan-based versus agile: erklären statt Etiketten aufzählen</h2>
+<p>Die prüfungsrelevante Leistung ist ein Vergleich <strong>an denselben Kriterien</strong>, jeweils mit Wirkung auf das Projekt.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kriterium</th>
+<th>Planbasiert</th>
+<th>Agil und Wirkungsmechanismus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Development approach</td>
+<td>Anforderungen früh bestimmen und den Zielzustand vorhersagen.</td>
+<td>Adaptive Planung: Kundenfeedback verändert Prioritäten und Lösung; verringert das Risiko, lange am falschen Bedarf zu arbeiten.</td>
+</tr>
+<tr class="even">
+<td>Development process / planning scale</td>
+<td>Längere Planungshorizonte, definierte Phasen und Übergaben.</td>
+<td>Kurze iterative/inkrementelle Zyklen; nächste Schritte nutzen Ergebnisse des vorigen Zyklus. Frühes Lernen ersetzt nicht das langfristige Ziel.</td>
+</tr>
+<tr class="odd">
+<td>Testing</td>
+<td>Im vereinfachten Kursvergleich umfangreiche Prüfung später im Ablauf.</td>
+<td>Kontinuierliches Testen entdeckt Fehler früher und reduziert aufgestaute Nacharbeit. Kein Naturgesetz, dass planbasierte Projekte nie früh testen.</td>
+</tr>
+<tr class="even">
+<td>Management style</td>
+<td>Stärkere Vorgabe und Kontrolle entlang des Plans.</td>
+<td>Leadership and collaboration: selbstorganisierte Bearbeitung braucht klare Ziele, Kompetenz und Entscheidungsrechte.</td>
+</tr>
+<tr class="odd">
+<td>Documentation</td>
+<td>Ausführliche Spezifikation und Nachweise, höherer Vorlauf.</td>
+<td>Bedarfsgerechte Dokumentation; weniger ungenutzter Overhead, aber notwendige Sicherheits-/Betriebsnachweise bleiben.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Abwägung:</strong> Stabile Anforderungen, teure Änderungen und feste Schnittstellen stärken den Nutzen vorausschauender Planung. Hohe Änderungsdynamik, unsichere Kundenbedürfnisse und verfügbare schnelle Rückmeldung stärken den Nutzen agiler Zyklen. L11 zeigt Größe/Komplexität als Kontextkriterien, nicht als allgemeines Verbot agiler Arbeit in Großprojekten.</p>
+<p><strong>Beispiel:</strong> Ein bewährter Sensor benötigt eine fest spezifizierte Schnittstelle; seine neue Cloud-Oberfläche hat unklare Nutzeranforderungen. Diese Teilbereiche müssen nicht dieselbe Methode erhalten.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q1a <em>explain based on three criteria</em>: genau drei Kriterien wählen → je beide Seiten erläutern → Ursache/Wirkung nennen. Bei <em>recommend</em> zusätzlich Fallmerkmale und eine Einschränkung abwägen.</p>
+<blockquote class="blockquote">
+<p>“Regarding adaptability, plan-based development specifies requirements early to stabilise execution. Agile development repeatedly incorporates customer feedback, making it easier to respond when requirements change. This is particularly valuable for the sensor application because cloud integration demands are evolving.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Nur „predictive/adaptive“ auflisten; agile pauschal für besser halten; Fallbezug durch allgemeine Vorteile ersetzen.</p>
+<details>
+<summary>
+Selbstcheck: Warum genügt „traditional = much documentation, agile = little documentation“ nicht für Explain?
+</summary>
+Es benennt eine Differenz, erklärt sie aber nicht. Ergänze: Vorabspezifikationen stabilisieren Übergaben, können bei Änderungen aber Nacharbeit verursachen; bedarfsgerechte Dokumentation spart ungenutzten Aufwand, muss aber notwendiges Wissen sichern.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L11 PDF-S. 5–11, 24–25; DW2-Kriterien PDF-S. 1; DW2-Aufgaben PDF-S. 1–2.</p>
+</section>
+<section id="mindset" class="level2">
+<h2 class="anchored" data-anchor-id="mindset">Agility, Manifesto und doing versus being agile</h2>
+<p><em>Agility is the readiness to create, embrace and learn from change while contributing to customer value.</em> <strong>Flexibility</strong> ist Änderungsfähigkeit; <strong>leanness</strong> richtet Aufmerksamkeit auf Wert und vermiedene Verschwendung. Agilität verbindet Veränderung und Lernen mit Wert für Kunden, nicht bloß Geschwindigkeit.</p>
+<p>Die vier Manifesto-Werte priorisieren <strong>individuals and interactions</strong>, <strong>working software</strong>, <strong>customer collaboration</strong>, <strong>responding to change</strong> gegenüber Prozessen/Tools, umfassender Dokumentation, Vertragsverhandlung und Planbefolgung. „Over“ bedeutet Priorität, nicht die Abschaffung der rechten Seite.</p>
+<p>Die zwölf Prinzipien lassen sich als Lernzusammenhang lesen: (1) früh und kontinuierlich Wert liefern; (2) Änderungen willkommen heißen; (3) häufig funktionierende Software liefern; (4) Fachseite und Entwicklung eng zusammenbringen; (5) motivierte Menschen unterstützen und ihnen vertrauen; (6) direkte Kommunikation nutzen; (7) funktionierende Software als Fortschrittsnachweis; (8) nachhaltiges Tempo; (9) technische Exzellenz; (10) Einfachheit und unnötige Arbeit vermeiden; (11) Selbstorganisation; (12) regelmäßige Reflexion und Anpassung. Das ist eine eigene Zusammenfassung, keine zusätzliche offizielle Liste.</p>
+<p><strong>Doing agile</strong> nutzt Praktiken; <strong>being agile</strong> trägt deren Lern-, Führungs- und Selbstorganisationslogik mit. Einzelne Praktiken können auch in traditioneller Umgebung helfen: Ein Board schafft Überblick, ein Daily macht Abhängigkeiten sichtbar, ein kleiner Pilot senkt Umstellungshürden. Risiken: agile Fassade, fehlende Befugnis zur Anpassung, Schuldzuweisung statt Lernen, „agil“ als Ausrede für fehlende Planung.</p>
+<p><strong>Beispiel:</strong> Ein Daily ohne Möglichkeit, Blockaden zu lösen, wird zum Statusritual. Ein Board mit tatsächlich vereinbarten Prioritäten kann hingegen auch ohne vollständige Transformation nützlich sein.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q1c <em>discuss … conclude</em>: mindestens drei ausgearbeitete Argumente mit Mechanismus und Kontext → Pro/Contra gegeneinander gewichten → bedingtes, daraus folgendes Urteil. Nicht bloß zwei Listen ohne Schluss.</p>
+<blockquote class="blockquote">
+<p>“Isolated agile practices can improve transparency and introduce feedback gradually. However, they may become an agile façade if teams cannot adapt decisions or openly discuss failures. A full transformation is not always necessary, but the organisation must support the purpose and decision rights of each selected practice.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> „Being agile ist zwingend vor jedem Board“ oder „Rituale reichen immer“; permanente Eile mit nachhaltiger Agilität verwechseln.</p>
+<details>
+<summary>
+Selbstcheck: Ist ein täglicher Statusbericht an eine Führungskraft schon being agile?
+</summary>
+Nein. Eine Praxis allein zeigt weder Selbstorganisation noch Lernbereitschaft. Entscheidend ist, ob sie Synchronisation und wirksame Anpassung ermöglicht und ob offenes Feedback Konsequenzen haben darf.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L11 PDF-S. 16–25; DW2-Kriterien PDF-S. 4; Gastvortrag Human Factors PDF-S. 14, 23, 27.</p>
+</section>
+<section id="roles" class="level2">
+<h2 class="anchored" data-anchor-id="roles">Scrum: Rollen und Entscheidungskompetenzen</h2>
+<p><em>Scrum is an iterative, incremental framework for collaborative product development.</em> In der Kursdarstellung sind Verantwortlichkeiten auf drei Rollen verteilt:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kursrolle</th>
+<th>Kernauftrag und Entscheidungsgrenze</th>
+<th>Sensorfall</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Product Owner (PO)</strong></td>
+<td>Stakeholderinteressen, Kundenbedarf, Produktwert, Anforderungen und Priorisierung des Product Backlog; Releaseentscheidungen in der Kursdarstellung.</td>
+<td>Alice ist im Beispiel der Kriterien plausibel, weil sie Kundenqualität und Ergebniswirkung ernst nimmt. Testing-Kompetenz allein macht noch keinen PO: Stakeholderzugang und Priorisierungsbefugnis müssen vorhanden sein.</td>
+</tr>
+<tr class="even">
+<td><strong>Scrum Master (SM)</strong></td>
+<td>Scrum erklären, wirksame Anwendung fördern, Prozessprobleme bearbeiten, Team unterstützen. Kein klassischer Aufgabenverteiler.</td>
+<td>Bernardo ist im Kriterienbeispiel wegen seiner positiven, akzeptierten Art plausibel; er braucht zusätzlich Prozess-/Coachingkompetenz. Schwaches Coding allein qualifiziert nicht.</td>
+</tr>
+<tr class="odd">
+<td><strong>Development / Agile Team</strong></td>
+<td>Anforderungen in ein fertiges Increment überführen; cross-functional, self-managing, self-organizing; realistische Arbeitsmenge wählen und Umsetzung gestalten.</td>
+<td>Donatella, Leandro, Giorgia und Emilio verbinden Produkt-, Infrastruktur-, Security- und Lernkompetenz. Abwesenheiten und verfügbare Testkompetenz berücksichtigen.</td>
+</tr>
+</tbody>
+</table>
+<p>Die Personenzuordnung ist ein <strong>Beispiel der bereitgestellten Kriterien</strong>, nicht die einzig zulässige Besetzung. Eine andere Zuordnung muss die Rollenfunktion genauso nachvollziehbar erfüllen. Bisherige Hierarchie legt Scrum-Rollen nicht automatisch fest. <strong>Cross-functional</strong> heißt, dass das Team insgesamt notwendige Fähigkeiten besitzt, nicht dass jede Person alles beherrscht.</p>
+<p><strong>Begriffsvariante:</strong> L11 und DW2 nennen <em>Development Team / Agile Team</em>. Die neuere Scrum-Terminologie spricht von <em>Developers</em> im gemeinsamen <em>Scrum Team</em> mit PO und SM; diese Übersetzung ändert nicht den geforderten Fallbezug.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q1b(i) <em>suggest / justify</em>: Rollenfunktion → Personmerkmal aus Fall → Begründung → fehlende Voraussetzung benennen. Nicht nur Namen in Tabelle setzen.</p>
+<blockquote class="blockquote">
+<p>“Alice could act as Product Owner because her focus on customer-facing quality supports prioritising valuable product outcomes. Bernardo could facilitate Scrum because he is well accepted by the team, provided that he develops the necessary coaching skills. The remaining members form a cross-functional development team.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Scrum Master als Chef; PO als alleiniger technischer Planer; schlechte Programmierer automatisch zu SM ernennen; eine beispielhafte Kriterienzuordnung als exklusive Musterlösung ausgeben.</p>
+<details>
+<summary>
+Selbstcheck: Darf der PO alle Sprintaufgaben einzelnen Entwicklern zuweisen, weil er Anforderungen priorisiert?
+</summary>
+Priorisierung des Produktbedarfs und Gestaltung der Umsetzung sind unterschiedliche Rechte. Das selbstorganisierte Team plant seine Arbeit und schätzt seine Kapazität; der PO klärt Bedarf und Wert.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L11 PDF-S. 28–30; DW2-Kriterien PDF-S. 2–3.</p>
+</section>
+<section id="flow" class="level2">
+<h2 class="anchored" data-anchor-id="flow">Scrum: Artefakte, Events und Kursphasen</h2>
+<p><strong>Product Backlog</strong> ist die geordnete, fortlaufend verfeinerte Sammlung von Produktanforderungen. <strong>Sprint Backlog</strong> konkretisiert die ausgewählte Arbeit für den Sprint. <strong>Product Increment</strong> ist das fertige Ergebnis, nicht nur ein Tätigkeitsbericht. Eine <strong>User Story</strong> verbindet Rolle, Bedarf und Nutzen: „As a maintenance engineer, I want a cloud alert so that I can react before a tank overheats.“ Sie ist nicht automatisch vollständig spezifiziert oder getestet.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phase / Event</th>
+<th>Wer tut was und wozu?</th>
+<th>Abgrenzung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pre-game / pre-sprint</td>
+<td>PO klärt Vision, sammelt funktionale/nichtfunktionale Anforderungen, priorisiert mit Stakeholdern; Team klärt Machbarkeit.</td>
+<td>Kein einmalig eingefrorener Anforderungskatalog.</td>
+</tr>
+<tr class="even">
+<td>Sprint / Sprint Planning</td>
+<td>PO erläutert wichtigste Anforderungen; Team wählt realistisch Arbeit und plant Umsetzung im Sprint Backlog.</td>
+<td>Nicht einfach alles übernehmen, was gewünscht wird.</td>
+</tr>
+<tr class="odd">
+<td>Daily Scrum</td>
+<td>Team synchronisiert Fortschritt und nächste Schritte, erkennt Hindernisse; L11 nutzt drei klassische Leitfragen.</td>
+<td>15 Minuten Koordination, keine lange Problemlösung oder Leistungsbeurteilung.</td>
+</tr>
+<tr class="even">
+<td>Sprint Review / post-sprint</td>
+<td>Team und PO prüfen Increment mit Stakeholdern und klären sinnvolle nächste Produktanpassungen.</td>
+<td>Fokus <strong>Produkt und Bedarf</strong>; nicht nur Show ohne Feedback.</td>
+</tr>
+<tr class="odd">
+<td>Sprint Retrospective / post-sprint</td>
+<td>Team reflektiert mit Unterstützung des SM Zusammenarbeit und Prozess; vereinbart Verbesserung.</td>
+<td>Fokus <strong>Arbeitsweise</strong>, nicht Produktabnahme.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Terminologische Ergänzung:</strong> <em>Sprint Goal</em> erklärt den Zweck des Sprints; <em>Definition of Done (DoD)</em> legt gemeinsame Fertig-/Qualitätskriterien fest. Ein begonnenes Feature ist nicht „done“, nur weil die Zeit abgelaufen ist. <em>Acceptance criteria</em> beschreiben konkrete Anforderungen eines Items; DoD ist die gemeinsame Qualitätslatte. Ein <em>Burndown chart</em> zeigt verbleibende Arbeit über Zeit, beweist aber allein keinen Kundenwert. Diese Erläuterungen präzisieren L11s Forderung nach definiertem „done“ und Wert.</p>
+<p><strong>Variantenhinweis:</strong> L11 PDF-S. 29/34 zeigt 2–4 Wochen, nennt aber auch 30 Tage und ältere Meetingdarstellungen. Diese Mischdarstellung nicht zu zwei gleichzeitig exakten Regeln machen. Für Kursaufgaben Phasen und Zuständigkeiten erklären; wenn Zeiten gefragt sind, Quelle/Variante angeben. Die drei Daily-Fragen sind die Darstellung der Folie, nicht die Definition von Selbstorganisation.</p>
+<p><strong>Beispiel:</strong> Vor dem Sprint priorisiert Alice Cloud-Alarm und Security-Anforderungen. Im Sprint baut das Team ein getestetes Alarm-Increment. Im Review prüfen Kunden den Nutzen; in der Retrospektive wird ein Testengpass verbessert. Release und Review sind begrifflich nicht identisch.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q1b(ii) <em>describe flow</em>: pro Phase <strong>wer → Tätigkeit → Artefakt/Ergebnis</strong> nennen. Die Aufgabe fordert ausdrücklich nicht die vollständige Meetingdetail-Liste. Bei <em>distinguish review/retrospective</em>: Gegenstand, Beteiligung und Anpassungsziel vergleichen.</p>
+<blockquote class="blockquote">
+<p>“Before the sprint, the Product Owner collects and prioritises stakeholder requirements. During the sprint, the team selects feasible work, implements and tests it, and synchronises daily. Afterwards, stakeholders inspect the increment and adapt product priorities, while the team reflects on how to improve its working process.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Review und Retrospective vertauschen; Sprint Backlog als gesamten Produktbedarf verstehen; unfertige Arbeit als Increment zählen; pre-/post-game als zusätzliche verpflichtende offizielle Events bezeichnen.</p>
+<details>
+<summary>
+Selbstcheck: „Tests kamen zu spät“ und „Kunden brauchen andere Alarme“: Was gehört wohin?
+</summary>
+Testprozess in die Retrospektive; Kundenbedarf und Produktanpassung ins Review bzw. anschließende Backlog-Anpassung. Beide Feedbackarten sind wertvoll, lösen aber unterschiedliche Fragen.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L11 PDF-S. 24, 29–36; DW2-Kriterien PDF-S. 3; Zeiten/Begriffsvarianten anhand L11, keine nachträglich erfundene einheitliche Kursregel.</p>
+</section>
+<section id="kanban" class="level2">
+<h2 class="anchored" data-anchor-id="kanban">Kanban: pull, WIP und flow statt nur bunter Zettel</h2>
+<p><em>Kanban visualises work, limits work in progress and improves flow through evolutionary change.</em> Es beginnt mit dem bestehenden Prozess und respektiert zunächst Rollen/Verantwortlichkeiten. Anders als Scrum schreibt es in der Kursdarstellung keine neue Rollenstruktur oder feste Sprintfolge vor.</p>
+<p><strong>Visualise:</strong> Spalten müssen reale Prozesszustände zeigen, etwa Ready → Development → Review → Done. <strong>Work in progress (WIP)</strong> ist begonnene, noch nicht fertige Arbeit. Ein WIP-Limit begrenzt diese Menge; neue Arbeit wird bei freier Kapazität <strong>gezogen (pull)</strong> statt unabhängig von Auslastung zugewiesen. <strong>Manage flow</strong> heißt, Blockaden und Warteschlangen sichtbar zu machen und gemeinsam zu verbessern. Feedbackschleifen prüfen, ob die Änderung tatsächlich hilft.</p>
+<p><strong>Beispiel:</strong> Review hat Limit 2 und ist voll. Ein weiterer Entwickler beginnt nicht das fünfte Feature, sondern hilft, Reviews abzuschließen oder die Blockade zu beseitigen. So soll Arbeit fertig werden, statt nur hohe lokale Auslastung zu erzeugen. Ein Board ohne Limits kann Überlastung zwar zeigen, verhindert sie aber nicht.</p>
+<p><strong>Ergänzende Flow-Vokabeln:</strong> <em>Lead time</em> misst hier Anfrage bis Lieferung; <em>cycle time</em> Arbeitsbeginn bis Abschluss; <em>throughput</em> fertige Items je Zeit. Messgrenzen müssen genannt werden, weil Teams Begriffe unterschiedlich operationalisieren. Diese Metriken sind eine Lernvertiefung, keine zusätzliche behauptete L11-Klausurvorgabe.</p>
+<p><strong>Scrum versus Kanban:</strong> Scrum eignet sich für gebündelte Produktziele und rhythmische Inspektion; Kanban für kontinuierlich eintreffende Arbeit mit variablem Bedarf, etwa Support. Scrum kann ein Board nutzen; ein Board macht Kanban nicht automatisch Scrum. WIP-Begrenzung kann auch innerhalb eines Sprints helfen.</p>
+<p><strong>Operator und Antwortstruktur:</strong> <em>Explain / compare / recommend</em>: Ankunftsmuster der Arbeit → passender Steuerungsmechanismus → konkreter Effekt → Grenze. Nicht nur Boardspalten zeichnen.</p>
+<blockquote class="blockquote">
+<p>“Kanban uses a pull system: new work is started only when capacity is available under the WIP limit. In a support team with unpredictable arrivals, this makes bottlenecks visible and encourages finishing existing work rather than continually starting new tickets.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> WIP mit fertigen Tickets verwechseln; möglichst viele Starts als Produktivität zählen; Kanban als vollständige Projektgovernance verkaufen.</p>
+<details>
+<summary>
+Selbstcheck: Review ist voll, Development frei. Muss man neue Arbeit starten, um effizient zu sein?
+</summary>
+Nicht zwingend. Das würde den Engpass weiter füttern. Gemeinsam Reviews abschließen und Ursachen des Rückstaus bearbeiten verbessert den Gesamtfluss oft eher als lokale Vollauslastung.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L11 PDF-S. 38–40; ergänzende Flow-Metriken ausdrücklich als Vertiefung.</p>
+</section>
+<section id="hybrid" class="level2">
+<h2 class="anchored" data-anchor-id="hybrid">Hybrid: die Schnittstellen entscheiden</h2>
+<p><em>Hybrid development deliberately combines predictive and adaptive elements for different needs.</em> Ein Gesamtprogramm kann Budget, Abhängigkeiten, Integration und Freigaben planbasiert koordinieren, während ein unsicheres Teilprodukt in Scrum-Zyklen lernt. „Hybrid“ heißt nicht, widersprüchliche Regeln ungeklärt nebeneinanderzustellen.</p>
+<p><strong>GoSMART:</strong> Nach dem gescheiterten langfristigen Eigenentwicklungsprogramm sollte eine Standardsoftware für Versicherungsprodukte eingeführt werden. Das Produkt-Teilprojekt modelliert unter anderem Tarife und Underwriting-Regeln in einer <em>product machine</em>. Es führt Scrum ein, während die Umgebung überwiegend Waterfall bleibt: eine <em>agile island</em>. Kürzere Zyklen können Fachfeedback und Transparenz verbessern, aber feste externe Liefertermine und Abhängigkeiten begrenzen lokale Anpassung. Dies ist ein Teaching Case mit Diskussionsfragen, kein Beweis, dass Scrum jede Schwierigkeit löst.</p>
+<p><strong>Auswahlherleitung:</strong> (1) Unsicherheit und Änderungsrate des Teilbereichs prüfen; (2) Feedbackzugang und Fähigkeiten sichern; (3) feste Schnittstellen/Abnahmekriterien festlegen; (4) Produktpriorisierung und Eskalationsrechte klären; (5) Sprints mit Integrationspunkten und Governance abstimmen. Beispiel: Eine zweiwöchige Produktiteration ist nützlich, wenn die Programmleitung nicht jede Backlog-Änderung monatelang blockiert. Umgekehrt darf lokale Optimierung keine inkompatiblen Schnittstellen erzeugen.</p>
+<p><strong>Human-Factors-Verbindung:</strong> Ein Ambassador-/Koordinationsteam kann Abhängigkeiten zwischen Teams bearbeiten. Es ersetzt weder deren Eigenverantwortung noch klare Integrationstermine. Stakeholder und Kultur sind Teil der Methodenauswahl, nicht ein nachgelagerter „Soft“-Zusatz.</p>
+<p><strong>Operator und Antwortstruktur:</strong> <em>Assess suitability / discuss</em>: Kontext → Nutzenmechanismus → Integrationsproblem → gestaltbare Voraussetzung → bedingte Empfehlung. Keine Erfolgsgeschichte erfinden.</p>
+<blockquote class="blockquote">
+<p>“A hybrid approach can retain programme-level governance while using Scrum for an uncertain subproject. Its success depends on aligned interfaces, decision rights and integration points; otherwise, the agile team may learn quickly but remain blocked by the surrounding waterfall organisation.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Hybrid als Kompromiss ohne Regeln; lokale Sprintgeschwindigkeit mit Programmnutzung gleichsetzen; Einkaufsstandardsoftware mit entfallender Integrationsarbeit verwechseln.</p>
+<details>
+<summary>
+Selbstcheck: Warum kann ein gut funktionierendes Scrum-Team trotzdem keinen Programmnutzen liefern?
+</summary>
+Wenn andere Teilprojekte nicht integrieren können, Freigaben fehlen oder Prioritäten unvereinbar sind. Lokales Lernen muss mit gemeinsamen Schnittstellen, Abhängigkeiten und Entscheidungen verbunden sein.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> GoSMART PDF-S. 1, 5–10; Case-Auftrag Session 2 PDF-S. 1; Gastvortrag Human Factors PDF-S. 14–19.</p>
+</section>
+<section id="antwortarchitektur-aus-dem-dw2-tool-sheet" class="level2">
+<h2 class="anchored" data-anchor-id="antwortarchitektur-aus-dem-dw2-tool-sheet">Antwortarchitektur aus dem DW2 Tool Sheet</h2>
+<p>Das Workbook ordnet Q1 als Kriterienvergleich → Rollenbegründung → Who-does-what je Phase → Pro/Contra und Schluss. Q2 trennt Definition/Formen/Verhältnis, fünf Konfigurationen mit Features, Featureentscheidung und Accountability-Maßnahme. Q3 verlangt Begriffsabgrenzung, Concept–Effect-Zuordnung, drei Maßnahmen mit Wirkungsweg und eine Abwägung zur Managerrolle. Diese Struktur hilft, Operatoren vollständig zu beantworten; sie ersetzt keine Erklärung.</p>
+<p><strong>Quelle:</strong> <code>DW2_Tool_Sheet.docx</code>, im Quellenregister s22. <strong>Kein PDF:</strong> Die zwölf dort gespeicherten Textsegmente sind keine stabilen Originalseiten; deshalb werden hierfür bewusst keine vermeintlichen PDF-Seiten zitiert. Q1 in Segmenten 2–5, Q2 in 5–8, Q3 in 9–11. Keine persönlichen Workbook-Einträge werden veröffentlicht.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="quiz.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/dwpm\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

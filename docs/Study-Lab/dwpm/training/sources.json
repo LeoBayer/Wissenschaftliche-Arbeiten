@@ -673,7 +673,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s10.pdf"
   },
   {
     "file": "12 DW AI at the Workplace.pdf",
@@ -748,7 +749,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s11.pdf"
   },
   {
     "file": "13 DW People Analytics and Algorithmic Management.pdf",
@@ -800,7 +802,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s12.pdf"
   },
   {
     "file": "14 DWPM Exam Preparation and QA.pdf",
@@ -1085,7 +1088,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Other / contextual material; exam relevance unconfirmed"
+    "group": "Other / contextual material; exam relevance unconfirmed",
+    "download": "training/s15.pdf"
   },
   {
     "file": "Addressing the Key Challenges of Developing Machine Learning AI S.pdf",
@@ -1131,7 +1135,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Other / contextual material; exam relevance unconfirmed"
+    "group": "Other / contextual material; exam relevance unconfirmed",
+    "download": "training/s16.pdf"
   },
   {
     "file": "Analyzing and managing IT-induced work system changes.pdf",
@@ -1370,7 +1375,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Practice / exam / case tasks"
+    "group": "Practice / exam / case tasks",
+    "download": "training/s25.pdf"
   },
   {
     "file": "Enactus.pptx",
@@ -1498,7 +1504,8 @@
       52,
       54
     ],
-    "group": "Other / contextual material; exam relevance unconfirmed"
+    "group": "Other / contextual material; exam relevance unconfirmed",
+    "download": "training/s28.pdf"
   },
   {
     "file": "Guest Lecture - Tomasz Mistrzyk - Human Factors in Project Management.pdf",
@@ -1546,7 +1553,8 @@
       26,
       30
     ],
-    "group": "Other / contextual material; exam relevance unconfirmed"
+    "group": "Other / contextual material; exam relevance unconfirmed",
+    "download": "training/s29.pdf"
   },
   {
     "file": "Headventures.pdf",
@@ -2517,7 +2525,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Other / contextual material; exam relevance unconfirmed"
+    "group": "Other / contextual material; exam relevance unconfirmed",
+    "download": "training/s54.pdf"
   },
   {
     "file": "move.pdf",

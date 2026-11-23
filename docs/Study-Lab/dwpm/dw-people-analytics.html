@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Digital Work II: People Analytics und Algorithmic Management – DWPM Exam Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7a3429dccb032350338bc13218471072.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script>
+  try {
+    if (!window.localStorage.getItem("quarto-color-scheme")) {
+      window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+  } catch (_error) {
+  }
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DWPM Exam Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resit-roadmap.html"> 
+<span class="menu-text">Nachschreibeklausur</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pm-verstehen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">PM verstehen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pm-verstehen">    
+        <li>
+    <a class="dropdown-item" href="./pm-foundations.html">
+ <span class="dropdown-text">Projekt, Integration, Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-scheduling.html">
+ <span class="dropdown-text">Scheduling und Netzplan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-earned-value.html">
+ <span class="dropdown-text">Kosten und Earned Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-quality-risk.html">
+ <span class="dropdown-text">Qualität, Risiko und EMV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-i--pm" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work I &amp; PM+</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-i--pm">    
+        <li>
+    <a class="dropdown-item" href="./dw-decisions.html">
+ <span class="dropdown-text">Entscheidungen, Daten und KI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-communication.html">
+ <span class="dropdown-text">Kommunikation und Media Richness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-collaboration.html">
+ <span class="dropdown-text">Kollaboration und Groupware</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-teams.html">
+ <span class="dropdown-text">Teams, Führung und Vertrauen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-knowledge-closing.html">
+ <span class="dropdown-text">Wissen, Closing und Portfolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-self-management.html">
+ <span class="dropdown-text">Ressourcen und Selbstmanagement</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-ii" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work II</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-ii">    
+        <li>
+    <a class="dropdown-item" href="./dw-agility.html">
+ <span class="dropdown-text">Agility, Scrum und Kanban</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-ai-work.html">
+ <span class="dropdown-text">Automation und Human–AI Work</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-people-analytics.html">
+ <span class="dropdown-text">People Analytics und Kontrolle</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-human-factors.html">
+ <span class="dropdown-text">Human Factors und Konflikte</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./core.html"> 
+<span class="menu-text">Core Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./concepts.html"> 
+<span class="menu-text">Concept Wiki</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./task-training.html"> 
+<span class="menu-text">Source Task Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice-test.html"> 
+<span class="menu-text">Practice Test</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materials.html"> 
+<span class="menu-text">Material Map</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#von-daten-über-entscheidungen-zu-kontrolle" id="toc-von-daten-über-entscheidungen-zu-kontrolle" class="nav-link active" data-scroll-target="#von-daten-über-entscheidungen-zu-kontrolle">Von Daten über Entscheidungen zu Kontrolle</a></li>
+  <li><a href="#pa-am" id="toc-pa-am" class="nav-link" data-scroll-target="#pa-am">People analytics versus algorithmic management</a></li>
+  <li><a href="#maturity" id="toc-maturity" class="nav-link" data-scroll-target="#maturity">Vier maturity levels und der Wandel der Managerrolle</a></li>
+  <li><a href="#control" id="toc-control" class="nav-link" data-scroll-target="#control">Algorithmic control: matching, guiding, gatekeeping und sechs R</a></li>
+  <li><a href="#ethical-cycle" id="toc-ethical-cycle" class="nav-link" data-scroll-target="#ethical-cycle">Datafication, opacity und nudging: die Wirkungsmechanismen</a></li>
+  <li><a href="#privacy" id="toc-privacy" class="nav-link" data-scroll-target="#privacy">Privacy, direct und inverse transparency</a></li>
+  <li><a href="#measures" id="toc-measures" class="nav-link" data-scroll-target="#measures">Drei konkrete Maßnahmen und eine begründete PA-Gestaltung</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Digital Work II: People Analytics und Algorithmic Management</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="./index.html">Übersicht</a> · <a href="./glossary.html">Glossar</a> · <a href="./task-training.html">Trainer</a></p>
+<section id="von-daten-über-entscheidungen-zu-kontrolle" class="level2">
+<h2 class="anchored" data-anchor-id="von-daten-über-entscheidungen-zu-kontrolle">Von Daten über Entscheidungen zu Kontrolle</h2>
+<p><strong>People Analytics (PA)</strong> liefert Einsichten über Menschen und Arbeit; <strong>Algorithmic Management (AM, auf einer Kursfolie auch ARM)</strong> greift in Koordination und Kontrolle der Arbeit ein. Je autonomer ein System wird, desto wichtiger werden reale Interventionsrechte, nachvollziehbare Gründe und die Frage, ob gemessene Größen überhaupt das gemeinte Arbeitsziel abbilden.</p>
+<p>Quellen: <a href="training/s12.pdf">L13</a>, <a href="training/s21.pdf">DW2-Aufgaben</a> Q3 PDF-S. 5, <a href="training/s45.pdf">Kriterien</a> PDF-S. 10–14; <a href="training/s13.pdf">L14 Q&amp;A</a> PDF-S. 18. Eigene Lernformulierungen und Beispiele; Seiten immer 1-basiert. Kein philosophisches Paper, sondern fallbezogene Begriffs- und Antwortarbeit.</p>
+</section>
+<section id="pa-am" class="level2">
+<h2 class="anchored" data-anchor-id="pa-am">People analytics versus algorithmic management</h2>
+<p><em>People analytics uses digital data and computational analysis to reveal patterns in organisational resources, processes, people and performance.</em> Es ist nicht nur traditionelles HR-Reporting: Daten können aus vielen Bereichen der Organisation kommen und operative wie strategische Entscheidungen unterstützen.</p>
+<p><em>Algorithmic management uses data and algorithmic systems to coordinate, monitor and control work traditionally managed by people.</em> Die enge Definition in L13 kommt aus Plattform-/Gig Work; die kontextunabhängigere Definition umfasst auch Entscheidungsunterstützung und Augmentation über Arbeitsbedingungen außerhalb von Plattformen. <strong>AM muss nicht immer vollständig autonom sein.</strong></p>
+<p><strong>Hauptunterschied für DW2:</strong> PA fokussiert <strong>insights for decisions</strong>, AM <strong>coordination and control of work</strong>. Das ist eine funktionale Unterscheidung, keine disjunkte Produktliste: Eine PA-Prognose kann Input eines AM-Systems sein. <strong>Leadership-related information systems</strong> unterstützen operative/strategische Ziele und zwischenmenschliche Koordination; Daten unterstützen Informationsverarbeitung und Entscheidungen, erfassen Beziehungsarbeit aber nicht vollständig.</p>
+<p><strong>Beispiel:</strong> Ein Dashboard prognostiziert Überlastung: PA. Ein System verteilt daraufhin verbindlich Schichten oder sperrt Personen von Aufträgen aus: algorithmische Koordination/Kontrolle. Die gleiche Datenpipeline kann beide Funktionen verbinden.</p>
+<p><strong>Anwendungen:</strong> hiring/firing, performance evaluation, work planning/utilisation/optimisation. Die fünf Tool-Archetypen in L13 sind Social Network Analysis, Human Resources Analytics, Employee Surveillance, Technical Monitoring und Technical Platform. Ein Netzwerkgraph misst Beziehungen/Interaktionen, nicht automatisch Qualität oder Loyalität. Technisches Monitoring eines Serverausfalls ist nicht allein schon gerechte Personalbewertung.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q3a <em>define / explain difference</em>: je Definition mit Datennutzung und Zweck → expliziter Unterschied → ein gekoppeltes Beispiel. Nicht „PA mit Menschen, AM ohne Menschen“ schreiben.</p>
+<blockquote class="blockquote">
+<p>“People analytics mainly analyses digital data to provide insights for decisions about people and work. Algorithmic management uses data and algorithms to coordinate and control work, for example by assigning shifts or determining access to tasks. They overlap when analytical insights feed management interventions.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> PA als automatisch objektiv; AM nur als KI-Chef ohne Menschen; jedes Dashboard als autonome Entscheidung einstufen.</p>
+<details>
+<summary>
+Selbstcheck: Ein Manager liest eine Fluktuationsprognose und entscheidet selbst über Gespräche. Ist das bereits volle autonome PA?
+</summary>
+Nein. Es ist predictive decision support. Vorhersagefähigkeit und delegiertes Entscheidungs-/Ausführungsrecht sind verschiedene Eigenschaften.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L13 PDF-S. 4–10, 15–16, 19; DW2-Kriterien PDF-S. 10.</p>
+</section>
+<section id="maturity" class="level2">
+<h2 class="anchored" data-anchor-id="maturity">Vier maturity levels und der Wandel der Managerrolle</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stufe</th>
+<th>Kernfrage und Funktion</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Descriptive PA</strong></td>
+<td>Was ist geschehen, wie wirkt es heute?</td>
+<td>Bericht über Überstunden im letzten Quartal.</td>
+</tr>
+<tr class="even">
+<td><strong>Predictive PA</strong></td>
+<td>Was könnte wahrscheinlich eintreten?</td>
+<td>Wahrscheinlichkeit eines Personalengpasses nächste Woche.</td>
+</tr>
+<tr class="odd">
+<td><strong>Prescriptive PA</strong></td>
+<td>Was sollte unter Zielen/Annahmen getan werden?</td>
+<td>Empfohlene Schichtverteilung auf Basis der Prognose.</td>
+</tr>
+<tr class="even">
+<td><strong>Autonomous PA</strong></td>
+<td>System entscheidet, führt aus und kommuniziert.</td>
+<td>Selbstständige Zuteilung und Bekanntgabe der Schichten.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Vorhersage ≠ Vorschrift ≠ Ausführung.</strong> Ein gutes Modell löst keinen Zielkonflikt automatisch: Kostenminimierung kann gegen Gesundheit oder Fairness stehen. Die als „maturity“ dargestellte Entwicklung bedeutet deshalb nicht, dass höhere Autonomie immer besser oder moralisch reifer ist. Die Folie nennt zunehmendes Vertrauen und weniger Hinterfragen selbst als Risiko.</p>
+<p><strong>Managerrolle:</strong> Routine sammeln, planen und zuteilen kann abnehmen; Aufsicht, Zieldefinition, Interpretation, Ausnahmebehandlung und Beziehungsarbeit gewinnen an Bedeutung. Vorteile: Geschwindigkeit, Skalierung, konsistente Regeln und mehr Zeit für Führung. Risiken: deskilling, unreflektierte Übernahme, geschwächte Beziehungen und unklare Verantwortlichkeit. Konsistenz kann menschliche Willkür senken, aber verzerrte Regeln auch flächendeckend reproduzieren.</p>
+<p><strong>Beispiel:</strong> Ein autonomer Plan verteilt Spätschichten mathematisch gleichmäßig, ignoriert aber dokumentierte Betreuungsverpflichtungen. Die Führung muss Kriterien und Ausnahmen klären, nicht bloß „der Algorithmus ist fair“ behaupten. Der Mensch braucht Zeit, Datenzugang und Änderungsbefugnis, sonst ist Aufsicht nur nominell.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q3c <em>discuss / weigh / conclude</em>: Autonomie definieren → Aufgabenverschiebung → mindestens eine positive und negative Konsequenz kausal erklären → abgewogenes Urteil über Managerarbeit.</p>
+<blockquote class="blockquote">
+<p>“As PA becomes autonomous, managers move from routine scheduling toward oversight, interpretation and exception handling. Efficiency may improve, but deskilling and weaker relational leadership can undermine meaningful control. The overall benefit depends on retaining expertise, clear accountability and effective intervention rights.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Predictive mit autonomous gleichsetzen; beschreibende Maturity als Pflicht zur Vollautomation lesen; Fairness aus bloßer Regelkonsistenz ableiten.</p>
+<details>
+<summary>
+Selbstcheck: Das System empfiehlt einen Plan, eine Führungskraft genehmigt ihn nach wirklicher Prüfung. Welche Stufe ist sicherer als autonome PA zu nennen?
+</summary>
+Prescriptive PA: Es empfiehlt eine Maßnahme. Erst selbstständige Entscheidung und Ausführung/Kommunikation begründen die autonome Stufe im Kursmodell.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L13 PDF-S. 11–12, 21; DW2-Kriterien PDF-S. 13–14.</p>
+</section>
+<section id="control" class="level2">
+<h2 class="anchored" data-anchor-id="control">Algorithmic control: matching, guiding, gatekeeping und sechs R</h2>
+<p><strong>Algorithmic matching</strong> ordnet Arbeitsangebot und Arbeitskraft zu. <strong>Algorithmic control (AC)</strong> beeinflusst Beschäftigte so, dass Verhalten organisatorischen Erwartungen entspricht. <strong>Guiding</strong> steuert die tägliche Arbeitsweise durch Feedback; <strong>gatekeeping</strong> bestimmt Zugang zur Arbeit bzw. dessen Fortbestand. Ein <strong>AC system</strong> verbindet Hardware, Software, Daten, digitale Fähigkeiten und organisatorische Verfahren: Es ist mehr als ein einzelnes Modell.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mechanismus</th>
+<th>Erklärung</th>
+<th>Konkretes Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Recommending</strong></td>
+<td>Empfehlungen lenken Auswahl in bevorzugte Richtung.</td>
+<td>App schlägt eine bestimmte Route vor.</td>
+</tr>
+<tr class="even">
+<td><strong>Restricting</strong></td>
+<td>Informationen/Optionen oder zulässiges Verhalten werden begrenzt.</td>
+<td>Andere Routen lassen sich nicht auswählen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Recording</strong></td>
+<td>Verhalten/Daten erfassen, aggregieren und berichten.</td>
+<td>App protokolliert Standort und Bearbeitungszeit.</td>
+</tr>
+<tr class="even">
+<td><strong>Rating</strong></td>
+<td>Leistung berechnen oder künftige Leistung prognostizieren.</td>
+<td>Score aus Lieferzeit und Kundenbewertung.</td>
+</tr>
+<tr class="odd">
+<td><strong>Replacing</strong></td>
+<td>Leistungsschwache aus Arbeit entfernen und ersetzen.</td>
+<td>Zugang wird nach niedrigen Scores entzogen.</td>
+</tr>
+<tr class="even">
+<td><strong>Rewarding</strong></td>
+<td>Chancen, Bezahlung oder Aufstieg dynamisch belohnen.</td>
+<td>Höherer Score verschafft bevorzugte Aufträge.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Zusammenhang:</strong> Datenaufzeichnung ist nicht selbst Bewertung. Bewertung kann Grundlage einer Belohnung oder Zugangssperre sein. In einem Fall können mehrere Mechanismen gleichzeitig vorkommen; für jeden ein beobachtbares Verhalten nennen. Recommending/restricting betreffen Richtung, recording/rating die Bewertung, rewarding/replacing die Disziplinierung.</p>
+<p><strong>Beispiel:</strong> Die App misst Verspätungen (recording), errechnet einen Score (rating), reduziert Aufträge (rewarding als Verteilungslogik bzw. gatekeeping bei tatsächlichem Zugangsentzug) und sperrt schließlich den Zugang (replacing/gatekeeping). Nicht jede ungünstige Zuteilung ist schon vollständiges Ersetzen.</p>
+<p><strong>Operator und Antwortstruktur:</strong> <em>Identify / classify / explain mechanisms</em>: konkrete Systemhandlung → treffender Mechanismus → Wirkung auf Verhalten/Zugang. Bei Mehrfachzuordnung die Schritte trennen.</p>
+<blockquote class="blockquote">
+<p>“Recording captures behavioural data, while rating turns data into a performance assessment. If the assessment determines whether a worker can continue receiving tasks, it becomes algorithmic gatekeeping. Thus, observation, evaluation and access control are related but distinct mechanisms.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Recording und rating gleichsetzen; jedes Feedback als gatekeeping; mehrere R nur aufzählen, ohne Systemhandlungen zuzuordnen.</p>
+<details>
+<summary>
+Selbstcheck: „Du könntest Route A nehmen“ versus „Nur Route A ist auswählbar“: gleicher Mechanismus?
+</summary>
+Nein. Die erste Form empfiehlt (recommending), die zweite beschränkt reale Optionen (restricting). Damit verändert sich auch die Autonomie der arbeitenden Person.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L13 PDF-S. 15–19; L14 PDF-S. 18.</p>
+</section>
+<section id="ethical-cycle" class="level2">
+<h2 class="anchored" data-anchor-id="ethical-cycle">Datafication, opacity und nudging: die Wirkungsmechanismen</h2>
+<p><strong>Datafication</strong> rekonstruiert Menschen als digitale Datenspuren/Messwerte ihrer Arbeit. Problematisch wird die Reduktion, wenn ein unvollständiger Proxy als ganze Person gilt. <strong>Opacity</strong> bedeutet, dass verwendete Daten oder Verarbeitungsschritte und Entscheidungsgründe undurchsichtig/nicht nachvollziehbar sind. <strong>Nudging</strong> verändert Verhalten über die Gestaltung von Auswahl/Information, ohne Optionen zu verbieten oder wesentliche ökonomische Anreize zu verändern. L13 betont die manipulativen, ethisch fragwürdigen Einsatzformen; nicht jede Erinnerung ist damit automatisch Manipulation.</p>
+<p><strong>Fallbeispiel:</strong> Ein Dashboard beurteilt Leistung anhand beantworteter Nachrichten. Das übersieht unsichtbare Mentoringarbeit (datafication). Beschäftigte kennen Gewichtung und Fehlerquellen nicht (opacity). Personalisierte Hinweise suggerieren, man müsse stets „noch eine Aufgabe“ erledigen, obwohl Ablehnen formal möglich bleibt (nudging). Stress ist nicht nur eine individuelle Empfindlichkeit: Das System kann soziale Anerkennung und Arbeitszugang an schlecht verständliche Messgrößen koppeln.</p>
+<p><strong>Vicious cycle:</strong> Datafication schafft granular messbare Profile und ermöglicht damit gezielte Nudges. Die Menge und technische Verarbeitung der Spuren kann Opazität verstärken. Verdeckte personalisierte Verhaltenslenkung schafft eine zusätzliche Schicht der Opazität. Daraus entsteht eine wechselseitige Verstärkung, kein Beweis, dass jede Nutzung unweigerlich eskaliert.</p>
+<p><strong>Autonomieabgrenzung:</strong> Hier meint <strong>worker autonomy</strong> den Handlungsspielraum der Person, nicht die technische Autonomie des Systems. Mehr Systemautonomie kann menschliche Routinearbeit entlasten, aber auch Wahl-/Widerspruchsmöglichkeiten verengen. Ein Verbot ist restricting, keine reine Nudge; ein großer Bonus ist ein materieller Anreiz und nicht allein der enge Nudge-Begriff.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q3b <em>briefly explain / contribute to reactions</em>: Definition → konkretes Dashboardmerkmal → psychologische/organisatorische Wirkung. Für den Zyklus drei gerichtete Verbindungen erläutern.</p>
+<blockquote class="blockquote">
+<p>“Datafication reduces workers to measurable traces that may omit important contributions. Opacity prevents them from understanding or challenging evaluations. Nudging can steer behaviour without formally removing options, making workers feel manipulated despite apparent freedom of choice.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Opacity nur als fehlenden Quellcode verstehen; Datenmenge mit Vollständigkeit verwechseln; jede Belohnung oder Sperre Nudge nennen; formale Wahlfreiheit mit wirksamer Autonomie gleichsetzen.</p>
+<details>
+<summary>
+Selbstcheck: Die App sperrt die Option „Pause“. Ist das im engen Sinn bloß nudging?
+</summary>
+Nein. Eine Option wird verboten bzw. technisch entfernt: restricting. Ein Nudge könnte eine Pause weniger sichtbar darstellen, während sie weiterhin tatsächlich wählbar bleibt.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L13 PDF-S. 26–28; DW2-Aufgaben PDF-S. 5, Kriterien PDF-S. 11–12.</p>
+</section>
+<section id="privacy" class="level2">
+<h2 class="anchored" data-anchor-id="privacy">Privacy, direct und inverse transparency</h2>
+<p><strong>Physical privacy</strong> betrifft Zugang zur Person; <strong>information privacy</strong> Kontrolle über personenbezogene Information und ihre Weitergabe. Wahrnehmung hängt von Person und Kontext ab: Zustimmung zur Fitnessmessung privat legitimiert nicht automatisch dieselbe Messung im Beschäftigungsverhältnis.</p>
+<p><strong>Direct transparency</strong> macht Beschäftigtendaten für Organisation/andere Akteure sichtbar und kann Überwachung bedeuten. <strong>Inverse transparency</strong> macht <strong>Informationsflüsse für Beschäftigte</strong> sichtbar: Welche Daten werden erfasst, wer sieht sie, wozu werden sie verwendet? Sie soll Datensouveränität und Kontrolle stärken. „Mehr Transparenz“ ist daher ohne Richtung unpräzise: mehr Einblick für Vorgesetzte kann Beschäftigtenprivatsphäre gerade verringern.</p>
+<p><strong>Drei Sphären im Kursmodell:</strong> persönliche Merkmale und Vertrauen beeinflussen Privacybewertung; zwischenmenschlich entstehen Datenflüsse zwischen Beschäftigten und Stakeholdern; die Umweltsphäre umfasst organisatorische/regulatorische Bedingungen. Ein Privacy-Dashboard wirkt auf Informationszugang, ersetzt aber keine sinnvolle Begrenzung der Datenverwendung.</p>
+<p><strong>Beispiel:</strong> Ein Dashboard zeigt jeder Person, ob ihr Standort erfasst wird und welche Rolle ihn abrufen darf (inverse transparency). Eine Rangliste aller Standorte für alle Führungskräfte steigert dagegen direkte Sichtbarkeit/Überwachung. Beide „transparent“ zu nennen verdeckt den Unterschied.</p>
+<p><strong>Operator und Antwortstruktur:</strong> <em>Distinguish / propose</em>: Richtung der Sichtbarkeit bestimmen → betroffene Daten/Rechte → erwartete Wirkung → Grenze der Maßnahme.</p>
+<blockquote class="blockquote">
+<p>“Direct transparency exposes employee information to the organisation. Inverse transparency instead makes data flows visible to employees, helping them understand and influence how their information is used. More managerial visibility does not automatically imply greater employee control.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Inverse transparency als zusätzliche Überwachung lesen; Offenlegung automatisch für ausreichenden Datenschutz halten; Privat- und Arbeitskontext gleichsetzen.</p>
+<details>
+<summary>
+Selbstcheck: Ist ein offenes Leistungsranking inverse transparency?
+</summary>
+Nicht schon deshalb. Es legt Beschäftigtendaten offen. Inverse transparency verlangt Einblick der Beschäftigten in Erfassung, Empfänger und Verwendung ihrer Daten; ein Ranking kann zugleich zusätzlichen Überwachungsdruck erzeugen.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L13 PDF-S. 23–25.</p>
+</section>
+<section id="measures" class="level2">
+<h2 class="anchored" data-anchor-id="measures">Drei konkrete Maßnahmen und eine begründete PA-Gestaltung</h2>
+<p>Für DW2 Q3b müssen Maßnahmen <strong>konkret, machbar und kausal erklärt</strong> sein. „Mehr Transparenz, Training, Fairness“ ohne Umsetzung bleibt zu abstrakt.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Maßnahme</th>
+<th>Umsetzung</th>
+<th>Genau welcher Wirkungsmechanismus?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nachvollziehbare Entscheidungen plus Widerspruch</td>
+<td>Beschäftigte erhalten verwendete Daten, wichtige Kriterien und verständliche Gründe; benannte Fachperson bearbeitet Einspruch und kann Entscheidungen ändern.</td>
+<td>Verringert opacity, korrigiert Datenfehler und gibt reale Gegenwehr statt bloßer Information.</td>
+</tr>
+<tr class="even">
+<td>Qualitative Kontextprüfung und begrenzte Datenerhebung</td>
+<td>Metriken gemeinsam mit Beschäftigten prüfen, Mentoring/Arbeitskontext einbeziehen, irrelevante Daten weglassen; Scores nicht allein für weitreichende Sanktionen verwenden.</td>
+<td>Begrenzt datafication: Ein Proxy ersetzt nicht die Person; weniger Datensammlung senkt Überwachungsdruck.</td>
+</tr>
+<tr class="odd">
+<td>Offene, mitbestimmte und ablehnbare Nudges</td>
+<td>Zweck/Personalisierung erklären, belastende Hinweise abschaltbar machen, keine verdeckten Nachteile bei Ablehnung; Belastung und Wirkung regelmäßig prüfen.</td>
+<td>Erhält Handlungsspielraum und reduziert verdeckte Lenkung und Stress.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>L13s Gestaltungsrichtung:</strong> PA als fehlbares <em>companion technology</em> statt überlegener Wissensinstanz rahmen; ergänzende qualitative Daten und neue prüfende Rollen (<em>algorithmists</em>) nutzen; Verantwortlichkeit im Design verankern. <strong>Algoactivism</strong> bezeichnet Reaktionen/Gegenwehr von Arbeitenden gegenüber algorithmischer Steuerung; sie kann auf schlechte Passung und fehlende Mitsprache hinweisen, nicht nur auf „Widerstand gegen Fortschritt“.</p>
+<p><strong>Zentrale Annahmen prüfen:</strong> Rational entscheidende Manager, mehr Daten als bessere Erkenntnis, effizientere/konsistentere Algorithmen als erstrebenswerte Entscheidungsinstanz – jede Annahme braucht Kontext. Mehr Daten können verzerrte Proxies vervielfachen. Eine technisch präzise Optimierung kann auf ein falsches Ziel ausgerichtet sein. Daher Nutzen, Arbeitsbedingungen und Verantwortlichkeit gemeinsam beurteilen.</p>
+<p><strong>Operator und Antwortstruktur:</strong> Q3b <em>propose three measures and explain how</em>: je Maßnahme <strong>Akteur → konkrete Praxis → adressierter Begriff → Wirkungsweg → verbleibende Grenze</strong>. Q3c mit Nutzen/Risiken verbinden.</p>
+<blockquote class="blockquote">
+<p>“I would introduce understandable reasons and a staffed appeal process, supplement metrics with qualitative context, and make behavioural prompts transparent and genuinely optional. These measures address opacity, datafication and nudging respectively, while preserving useful analytical support.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Erklärbarkeit mit korrekter/fairer Entscheidung verwechseln; einen Ethics-Workshop ohne Eingriffsrechte als vollständige Lösung; Datenschutz und Lernkontrolle nur als pauschale Worte.</p>
+<details>
+<summary>
+Selbstcheck: Warum reicht ein erklärter, aber nicht anfechtbarer fehlerhafter Score nicht?
+</summary>
+Verständlichkeit hilft beim Erkennen des Fehlers, korrigiert ihn aber nicht. Wirksame Kontrolle benötigt Zuständigkeit, Korrekturverfahren und Befugnis, die Entscheidung bzw. Datengrundlage zu ändern.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L13 PDF-S. 12, 21, 26–29; DW2-Kriterien PDF-S. 11–14.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="quiz.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/dwpm\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

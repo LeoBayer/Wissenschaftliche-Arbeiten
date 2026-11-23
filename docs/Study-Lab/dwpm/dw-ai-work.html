@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Digital Work II: Automation, Delegation und Human–AI Work – DWPM Exam Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7a3429dccb032350338bc13218471072.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script>
+  try {
+    if (!window.localStorage.getItem("quarto-color-scheme")) {
+      window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+  } catch (_error) {
+  }
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DWPM Exam Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resit-roadmap.html"> 
+<span class="menu-text">Nachschreibeklausur</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pm-verstehen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">PM verstehen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pm-verstehen">    
+        <li>
+    <a class="dropdown-item" href="./pm-foundations.html">
+ <span class="dropdown-text">Projekt, Integration, Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-scheduling.html">
+ <span class="dropdown-text">Scheduling und Netzplan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-earned-value.html">
+ <span class="dropdown-text">Kosten und Earned Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-quality-risk.html">
+ <span class="dropdown-text">Qualität, Risiko und EMV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-i--pm" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work I &amp; PM+</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-i--pm">    
+        <li>
+    <a class="dropdown-item" href="./dw-decisions.html">
+ <span class="dropdown-text">Entscheidungen, Daten und KI</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-communication.html">
+ <span class="dropdown-text">Kommunikation und Media Richness</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-collaboration.html">
+ <span class="dropdown-text">Kollaboration und Groupware</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-teams.html">
+ <span class="dropdown-text">Teams, Führung und Vertrauen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-knowledge-closing.html">
+ <span class="dropdown-text">Wissen, Closing und Portfolio</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-self-management.html">
+ <span class="dropdown-text">Ressourcen und Selbstmanagement</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-digital-work-ii" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Digital Work II</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-digital-work-ii">    
+        <li>
+    <a class="dropdown-item" href="./dw-agility.html">
+ <span class="dropdown-text">Agility, Scrum und Kanban</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-ai-work.html">
+ <span class="dropdown-text">Automation und Human–AI Work</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-people-analytics.html">
+ <span class="dropdown-text">People Analytics und Kontrolle</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./dw-human-factors.html">
+ <span class="dropdown-text">Human Factors und Konflikte</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./core.html"> 
+<span class="menu-text">Core Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./concepts.html"> 
+<span class="menu-text">Concept Wiki</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./task-training.html"> 
+<span class="menu-text">Source Task Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice-test.html"> 
+<span class="menu-text">Practice Test</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materials.html"> 
+<span class="menu-text">Material Map</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#erst-die-arbeitsteilung-dann-das-tool" id="toc-erst-die-arbeitsteilung-dann-das-tool" class="nav-link active" data-scroll-target="#erst-die-arbeitsteilung-dann-das-tool">Erst die Arbeitsteilung, dann das Tool</a></li>
+  <li><a href="#foundations" id="toc-foundations" class="nav-link" data-scroll-target="#foundations">AI, machine learning, generative AI und Agenten</a></li>
+  <li><a href="#augmentation" id="toc-augmentation" class="nav-link" data-scroll-target="#augmentation">Automation und die drei Formen von augmentation</a></li>
+  <li><a href="#delegation" id="toc-delegation" class="nav-link" data-scroll-target="#delegation">Delegation, agency und wirksame menschliche Kontrolle</a></li>
+  <li><a href="#configurations" id="toc-configurations" class="nav-link" data-scroll-target="#configurations">Fünf Human–AI-Konfigurationen: wer führt, wer prüft?</a></li>
+  <li><a href="#copilot" id="toc-copilot" class="nav-link" data-scroll-target="#copilot">Copilot-Fall: Features, overreliance und accountability</a></li>
+  <li><a href="#knowledge-work" id="toc-knowledge-work" class="nav-link" data-scroll-target="#knowledge-work">Knowledge-intensive work: Problem, Training und Evaluation</a></li>
+  <li><a href="#resistance" id="toc-resistance" class="nav-link" data-scroll-target="#resistance">User resistance und erfolgreiche Augmentation</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Digital Work II: Automation, Delegation und Human–AI Work</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="./index.html">Übersicht</a> · <a href="./glossary.html">Glossar</a> · <a href="./task-training.html">Trainer</a></p>
+<section id="erst-die-arbeitsteilung-dann-das-tool" class="level2">
+<h2 class="anchored" data-anchor-id="erst-die-arbeitsteilung-dann-das-tool">Erst die Arbeitsteilung, dann das Tool</h2>
+<p>Dass ein System „KI“ heißt, sagt noch nicht, wer entscheidet. Trenne <strong>task conduct</strong> (wer führt die Arbeit aus?), <strong>control/agency</strong> (wer darf entscheiden und eingreifen?) und die Qualität der Zusammenarbeit. So werden Automation, Augmentation und Delegation verständlich.</p>
+<p>Quellen: <a href="training/s11.pdf">L12</a>, <a href="training/s21.pdf">DW2-Aufgaben</a> Q2 PDF-S. 3–4 und <a href="training/s45.pdf">Kriterien</a> PDF-S. 5–9. Ergänzend <a href="training/s28.pdf">Consulting Meets AI</a>. Seiten sind 1-basierte PDF-Seiten. Eigene Erklärungen und Antwortbausteine, keine offizielle Musterlösung und keine Aussage über aktuelle Produktfunktionen. „Copilot“ bezeichnet den <strong>im Aufgabenblatt beschriebenen Fall</strong>, nicht einen geprüften heutigen Produktumfang.</p>
+</section>
+<section id="foundations" class="level2">
+<h2 class="anchored" data-anchor-id="foundations">AI, machine learning, generative AI und Agenten</h2>
+<p><em>Artificial intelligence</em> ist der Oberbegriff für Systeme mit Fähigkeiten wie Inferenz, Vorhersage, Empfehlung oder Generierung. <strong>Machine learning (ML)</strong> ist eine Teilmenge: Funktionalität entsteht durch Musterlernen aus Erfahrung/Daten statt ausschließlich explizit programmierter Einzelfallregeln. <strong>Deep learning</strong> nutzt mehrschichtige neuronale Modelle. <strong>Generative AI</strong> erzeugt neue Inhalte; nicht jede KI generiert Text, nicht jedes ML-System ist ein LLM.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Lernansatz</th>
+<th>Was liefert das Trainingssignal?</th>
+<th>Beispiel / Abgrenzung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Supervised learning</td>
+<td>Eingaben plus bekannte Zielwerte (<em>labels</em>).</td>
+<td>Spamklassifikation; numerische Nachfragevorhersage als Regression.</td>
+</tr>
+<tr class="even">
+<td>Unsupervised learning</td>
+<td>Keine vorgegebenen Ziel-Labels; Struktur entdecken.</td>
+<td>Ähnliche Nutzungsprofile clustern; nicht automatisch „wahre“ Gruppen finden.</td>
+</tr>
+<tr class="odd">
+<td>Reinforcement learning</td>
+<td>Rückmeldung/Reward zu Aktionen; Verhalten optimieren.</td>
+<td>Eine Handlungsstrategie anhand von Ergebnissen verbessern; Reward ist nicht gleich moralisch richtig.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Discriminative versus generative:</strong> Im vereinfachten L12-Vergleich steht Analyse/Zuweisung vorhandener Daten der Erzeugung neuer Daten gegenüber. Daraus darf man nicht ableiten, jede Vorhersage sei sicher oder jede generative Ausgabe prinzipiell unreproduzierbar: Das konkrete Modell und die Nutzungseinstellungen bestimmen Unsicherheit und Reproduzierbarkeit. Für die Klausur Funktion und Output erklären, nicht falsche Universalregeln ableiten.</p>
+<p><em>An intelligent agent acts on behalf of a user or program with some autonomy toward represented goals.</em> Vier Merkmale in L12: <strong>reactivity</strong> (Umweltänderungen beantworten), <strong>proactivity</strong> (Zielverfolgung initiieren), <strong>social ability</strong> (kommunizieren/kooperieren), <strong>autonomy</strong> (in Grenzen selbst handeln). Ein Textvorschlag allein belegt noch keinen autonomen mehrstufigen Agenten. Beispiel: Ein System, das Supportfälle liest, Informationen nachschlägt und innerhalb freigegebener Regeln bearbeitet, hat mehr Handlungsautonomie als ein isolierter Klassifikator.</p>
+<p><strong>Operator und Antwortstruktur:</strong> <em>Define / distinguish / classify</em>: Ober-/Unterbegriff → Trainingssignal bzw. Output → konkrete Fallfunktion. Bei Agenten Ziel, Umweltbezug und selbstständige Handlungen belegen.</p>
+<blockquote class="blockquote">
+<p>“Machine learning is one approach within AI: a model acquires useful patterns from data or experience. Generative AI creates content, whereas an AI agent is characterised by goal-directed action with some autonomy. A generative model may be part of an agent, but the terms are not interchangeable.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> AI = ML = LLM = Agent; hohe Sprachflüssigkeit als Beweis für Wahrheit oder autonome Handlungskompetenz.</p>
+<details>
+<summary>
+Selbstcheck: Ein Modell ordnet gelabelte Bewerbungen Klassen zu. Ist das allein generative AI oder ein Agent?
+</summary>
+Belegt ist supervised classification. Es werden Klassen vorhergesagt, keine neuen Inhalte als Hauptfunktion erzeugt. Ohne zielgerichtete selbstständige Handlungen ist die Agentenklassifikation nicht belegt.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L12 PDF-S. 5–12. Die Folien werden als Kursbegriffe erklärt; keine aktuelle Rechtsberatung zur dort zitierten EU-Definition.</p>
+</section>
+<section id="augmentation" class="level2">
+<h2 class="anchored" data-anchor-id="augmentation">Automation und die drei Formen von augmentation</h2>
+<p><em>Automation is the full or partial replacement of a function previously performed by humans.</em> Sie ist ein <strong>Kontinuum</strong>, nicht nur vollständiger Ersatz eines Berufs. Ein Job kann manuelle, teilautomatisierte und vollautomatisierte Schritte enthalten.</p>
+<p><em>Augmentation combines complementary human and AI capabilities to improve outcomes.</em> In L12/DW2 ist Augmentation eine Form <strong>partieller Automation</strong>: Maschinen übernehmen Teilfunktionen, während die Kombination Fähigkeiten erweitert. Menschen leisten etwa Kontextinterpretation und normative Bewertung, KI verarbeitet große Datenmengen oder erkennt Muster. Das ist keine Garantie, dass die Kombination besser ist; komplementäre Beiträge müssen tatsächlich nutzbar werden.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Form / begriffliche Variante</th>
+<th>Wer erweitert wen?</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Human augmentation / machine-to-human augmentation</strong></td>
+<td>KI liefert Analysen/Prognosen für menschlich geführte Arbeit.</td>
+<td>Eine Entwicklerin bewertet Codevorschläge und entscheidet selbst.</td>
+</tr>
+<tr class="even">
+<td><strong>Machine augmentation / human-to-machine augmentation</strong></td>
+<td>Menschen trainieren, prüfen oder verbessern KI-Fähigkeiten.</td>
+<td>Expertinnen labeln schwierige Fälle und korrigieren fehlerhafte Zuordnungen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Hybrid augmentation / human–machine collaboration</strong></td>
+<td>Beide erweitern sich gleichzeitig in wechselseitiger Zusammenarbeit.</td>
+<td>Mensch und KI überarbeiten eine Lösung dynamisch; Feedback verbessert Beiträge beider Seiten.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Arbeitsform separat prüfen:</strong> <em>Specialisation</em> zerlegt Aufgaben und verbindet sie sequenziell, human-to-AI oder AI-to-human. <em>Ensembling / aggregation</em> lässt Mensch und KI parallel dieselbe Aufgabe beurteilen und aggregiert Ergebnisse. <em>Assemblage</em> meint dynamische, gegenseitig abhängige gemeinsame Arbeit. Nicht jede Kombination ist schon Assemblage.</p>
+<p><strong>Beispiel:</strong> Eine KI filtert 1.000 Tickets, ein Mensch bearbeitet Ausnahmen: Spezialisierung und AI-to-human sequence. Mensch und KI geben unabhängig Risikourteile ab, die zusammengeführt werden: Ensemble. Beide verändern gemeinsam schrittweise einen Entwurf: Assemblage.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q2a <em>define, explain, relate</em>: Automation mit full/partial replacement → komplementäre Fähigkeiten → alle drei Formen mit Wirkungsrichtung → Verhältnis als partielle Automation erklären.</p>
+<blockquote class="blockquote">
+<p>“Automation replaces human functions fully or partially. Augmentation uses complementary human and AI capabilities to improve outcomes and is therefore a form of partial automation. Human augmentation supports human-led work, machine augmentation improves AI through human input, and hybrid augmentation combines both directions.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Augmentation als Gegenteil jeder Automation; human augmentation als Menschenersatz; eine Sequenz mit einer wechselseitigen Partnerschaft gleichsetzen.</p>
+<details>
+<summary>
+Selbstcheck: Eine Expertin korrigiert Trainingslabels. Ist das human augmentation, weil ein Mensch beteiligt ist?
+</summary>
+Primär machine augmentation: Der menschliche Beitrag verbessert das System. Entscheidend ist die Richtung der Erweiterung, nicht allein die Anwesenheit eines Menschen.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L12 PDF-S. 14–19; DW2-Kriterien PDF-S. 5.</p>
+</section>
+<section id="delegation" class="level2">
+<h2 class="anchored" data-anchor-id="delegation">Delegation, agency und wirksame menschliche Kontrolle</h2>
+<p><em>Delegation transfers some agency over a task or decision to a proxy.</em> Anders als Automation fragt sie nicht nur, wer Arbeit ausführt, sondern wer <strong>Entscheidungs-/Handlungsspielraum</strong> erhält. <strong>Agency</strong> bezeichnet im Kurs Rechte und Verantwortlichkeiten bezogen auf Aufgabe oder Entscheidung. Das ist keine Behauptung, Maschinen hätten menschliches Bewusstsein.</p>
+<p>L12 unterscheidet keine Delegation (vollständige menschliche Kontrolle), partielle Delegation (Empfehlung, Ausführung nach Freigabe, Vetorecht oder nachträgliche Information) und volle Delegation (Systemautonomie im gegebenen Aufgabenraum). Ein <strong>approval right</strong> vor Ausführung ist etwas anderes als ein <strong>veto</strong> gegen eine anstehende autonome Handlung oder bloße Information nach deren Durchführung.</p>
+<p><strong>Zwei Achsen:</strong> Ein System kann viele Rechenschritte automatisieren, während der Mensch jede endgültige Entscheidung freigibt. Umgekehrt kann ein kleiner automatisierter Schritt wichtige Entscheidungsmacht erhalten, etwa die verbindliche Sperrung eines Zugangs. Der Umfang der Automation allein misst daher nicht die Bedeutung der übertragenen agency.</p>
+<p><strong>Menschliche agency</strong> wird in L12 über self-awareness, social awareness, interpretation, intentionality und attribution erklärt. Menschen können Handlungsfolgen einordnen und moralische/kausale Verantwortung tragen. Maschinen erscheinen als <strong>tools</strong> unter menschlicher Kontrolle, <strong>proxies</strong> im Auftrag oder <strong>automata</strong> mit eigenständiger Entscheidung/Ausführung. L12 spricht ihnen kausale, nicht moralische Verantwortung zu. <strong>Symbiotic agency</strong> meint die dynamische Verflechtung menschlicher und maschineller Beiträge.</p>
+<p><strong>Beispiel:</strong> Automatisch erzeugter Code mit echter Review vor Merge: hohe Unterstützung, begrenzte Delegation. Automatischer Merge in Security-Code ohne menschliche Prüfung: deutlich mehr agency für das System. Eine formale Freigabeschaltfläche ohne Zeit, Wissen und Eingriffsmöglichkeit ist noch keine sinnvolle Kontrolle.</p>
+<p><strong>Operator und Antwortstruktur:</strong> <em>Analyse distribution / evaluate responsibility</em>: Zieldefinition → Aufgabenausführung → Entscheidungsrecht → Prüf-/Interventionsrecht → verantwortliche Person/Organisation. Grenzen des Aufgabenraums nennen.</p>
+<blockquote class="blockquote">
+<p>“Automation concerns task execution, whereas delegation concerns the transfer of control and agency. A system may automate substantial analysis while a human retains approval authority. Meaningful oversight requires sufficient expertise, information, time and the ability to intervene; a nominal approval step alone is insufficient.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Automation und Delegation synonym verwenden; einen kausalen KI-Beitrag zur moralischen Verantwortungsübernahme machen; „human in loop“ als ausreichenden Qualitätsnachweis ansehen.</p>
+<details>
+<summary>
+Selbstcheck: Eine KI berechnet täglich 10.000 Optionen; der Mensch trifft nach Prüfung die Auswahl. Ist volle Delegation bewiesen?
+</summary>
+Nein. Viele automatisierte Schritte zeigen nicht volle Entscheidungsmacht. Die endgültige Auswahl bleibt menschlich; prüfe, ob diese Kontrolle praktisch wirksam ist und welche Vorauswahl die KI bereits verbindlich getroffen hat.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L12 PDF-S. 16, 21–24, 28, 37.</p>
+</section>
+<section id="configurations" class="level2">
+<h2 class="anchored" data-anchor-id="configurations">Fünf Human–AI-Konfigurationen: wer führt, wer prüft?</h2>
+<p><em>A human–AI configuration is a specific set of relations distributing tasks and responsibilities between humans and AI.</em> <strong>DW2 verlangt fünf Konfigurationen, die L12 PDF-S. 29–37 einzeln erklärt.</strong> Die Übersichtsgrafik L12 PDF-S. 38 fügt als weiteren Bereich <strong>Algorithmic Management</strong> hinzu, das <a href="./dw-people-analytics.html">L13</a> vertieft. „Fünf“ bezieht sich daher ausdrücklich auf die DW2-Auswahl, nicht auf jede Grafik des Kurses. Die vier Entscheidungsanordnungen aus <a href="./dw-decisions.html#configurations">L05</a> sind ein anderes Framework; nicht beide Zählungen vermischen.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Konfiguration</th>
+<th>Führender Prozess / Gegenrolle</th>
+<th>Eigenes Beispiel im DW2-Codefall</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Decision support / decision augmentation</strong></td>
+<td>Mensch entscheidet; KI bewertet vorselektierte Alternativen oder filtert Alternativen vor.</td>
+<td>Entwicklerin prüft vorgeschlagene Funktionen und wählt begründet.</td>
+</tr>
+<tr class="even">
+<td><strong>AI-in-the-loop</strong></td>
+<td>Mensch führt Arbeit; KI überwacht/prüft und warnt oder übernimmt definierte Ausnahmehandlungen.</td>
+<td>Eine KI erkennt während menschlicher Codearbeit verdächtige Änderungen und gibt Hinweise. Warnen und automatische Intervention sind zwei verschiedene Manifestationen.</td>
+</tr>
+<tr class="odd">
+<td><strong>Human–AI partnership / collaboration / teams</strong></td>
+<td>Dynamische wechselseitige Arbeit; hybrid augmentation / assemblage.</td>
+<td>Entwickler und KI entwerfen, prüfen und revidieren gemeinsam eine Funktion. Ein KI-„Teammitglied“ ist in L12 eine eher theoretische stärkere Variante, nicht bloß jede Nutzung eines Chats.</td>
+</tr>
+<tr class="even">
+<td><strong>Human-in-the-loop</strong></td>
+<td>KI führt den Prozess; Mensch auditiert, verändert Inputs/Darstellung oder löst delegierte Grenzfälle.</td>
+<td>Ein System erstellt Tests/Refactoring-Vorschläge im Arbeitsablauf; Fachleute prüfen und korrigieren die systemgeführte Verarbeitung.</td>
+</tr>
+<tr class="odd">
+<td><strong>Full delegation</strong></td>
+<td>KI wählt innerhalb vorgegebener Ziele eigenständig Vorgehen und Aktionen; keine laufende menschliche Mitwirkung.</td>
+<td>Ein hypothetischer Agent erstellt und integriert ein Modul ohne laufende Review. Das ist eine Konfigurationsillustration, keine Behauptung, die beschriebene Codevervollständigung könne das schon.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verwechslungsregel:</strong> AI-in-the-loop = KI prüft menschlich geführte Tätigkeit. Human-in-the-loop = Mensch prüft systemgeführte Tätigkeit. Bei Decision Support liefert KI Entscheidungsevidenz; bei AI-in-the-loop überwacht sie laufendes menschliches Handeln. Das gleiche Tool kann je nach Einbettung verschiedene Konfigurationen ermöglichen.</p>
+<p><strong>Quellenvariante offenlegen:</strong> DW2-Kriterien PDF-S. 7 beschreiben human-in-the-loop weiter als menschliche Review aller KI-Vorschläge; L12 PDF-S. 34 betont die Überwachung eines sonst autonomen Systems. Deshalb in einer Antwort <strong>Arbeitsablauf und Führung explizit beschreiben</strong>, nicht allein das Label angeben. Die Kriterien wählen AI-in-the-loop beispielhaft, nicht als einzig denkbare Lösung. Auch ihre Voll-Delegationsbeschreibung („minimal human intervention“) ist lockerer als L12s strenge Definition. Für präzise Begriffsfragen beide Varianten benennen.</p>
+<p><strong>Operator und Antwortstruktur:</strong> DW2 Q2b <em>for each … lay out / illustrate</em>: fünf Zeilen mit Menschrolle, KI-Rolle und passendem Feature → danach fallbezogene Empfehlung. Für zwei ähnlich benannte Loops zuerst klären, wessen Hauptprozess überwacht wird.</p>
+<blockquote class="blockquote">
+<p>“In AI-in-the-loop, developers lead coding while the AI monitors their work and flags possible errors. In human-in-the-loop, the AI leads a task process while developers audit and correct its output. The distinction concerns workflow leadership, not merely whether a human appears somewhere in the process.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> Nur vier Kategorien liefern; die beiden Loops vertauschen; jedes gemeinsame Arbeiten ohne Feedback als Team deklarieren; Produktfähigkeiten aus hypothetischen Konfigurationen ableiten.</p>
+<details>
+<summary>
+Selbstcheck: Ein Mensch bearbeitet Fälle; KI warnt vor Regelverstößen. Danach bearbeitet KI Standardfälle und fragt Menschen nur bei Ausnahmen. Gleiche Konfiguration?
+</summary>
+Nein: zuerst AI-in-the-loop, danach Human-in-the-loop. Die dominante Prozessführung wechselt. Der Übergang verändert Anforderungen an Aufsicht, Wissen und Eingriffsmöglichkeiten.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> L12 PDF-S. 28–38; DW2-Aufgaben PDF-S. 3–4, Kriterien PDF-S. 6–8. L05-Framework separat im Entscheidungs-Kapitel.</p>
+</section>
+<section id="copilot" class="level2">
+<h2 class="anchored" data-anchor-id="copilot">Copilot-Fall: Features, overreliance und accountability</h2>
+<p>Die Fallaufgabe verlangt eine <strong>begründete Nutzungsregel</strong>, nicht die Behauptung „risk-free“ sei technisch garantiert. Für Security-Systeme muss die Arbeitsteilung Fehler erkennbar und Verantwortlichkeit praktisch wahrnehmbar machen.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature des Aufgabenblatts</th>
+<th>Plausible eigene Entscheidung</th>
+<th>Warum / benötigter Mechanismus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Code suggestions / completion</td>
+<td>Als überprüfbare Vorschläge zulassen, kein ungeprüfter Merge.</td>
+<td>Routinearbeit sparen; Entwickler müssen Logik, Schnittstellen und Sicherheitsfolgen verstehen.</td>
+</tr>
+<tr class="even">
+<td>Function recommendations</td>
+<td>Für kritische Funktionen besonders strenge fachliche Review.</td>
+<td>Eine komplette Funktion kann versteckte Annahmen und größere Fehlerflächen enthalten.</td>
+</tr>
+<tr class="odd">
+<td>Documentation / comments</td>
+<td>Entwürfe zulassen, gegen echten Code prüfen.</td>
+<td>Falsche Beschreibung kann Sicherheit vortäuschen.</td>
+</tr>
+<tr class="even">
+<td>Refactoring</td>
+<td>Review plus Regression-/Security-Checks.</td>
+<td>Lesbarkeit ist nicht gleich unverändertes Verhalten.</td>
+</tr>
+<tr class="odd">
+<td>Test generation</td>
+<td>Als Ergänzung, nicht als unabhängiger Vollständigkeitsbeweis.</td>
+<td>Generierte Tests können dieselben falschen Annahmen wie der Code übernehmen.</td>
+</tr>
+<tr class="even">
+<td>Multi-language support</td>
+<td>Auf verwendete und prüfbare Sprachen begrenzen, wenn Kompetenz fehlt.</td>
+<td>Organisationsfit statt pauschale Behauptung, Mehrsprachigkeit sei gefährlich.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Overreliance / automation bias:</strong> Vorschläge werden wegen Systemvertrauen ungeprüft übernommen. Dann bleibt die Person formal verantwortlich, kann die Verantwortung mangels Verständnis aber nicht ausüben: eine <strong>accountability gap</strong> im Arbeitsablauf. <strong>Deskilling</strong> verschärft das Problem, wenn eigenes Können und Kontrollfähigkeit langfristig abnehmen.</p>
+<p><strong>Konkrete Gegenmaßnahme:</strong> benannte Code-Owner → verpflichtende Peer-Review für sensible Änderungen → Erklärung der Logik und unabhängige Testfälle → Training an absichtlich fehlerhaften Vorschlägen → protokollierte Freigabe. Ursache und Maßnahme verbinden: Review erzwingt begründete Prüfung, Training stärkt Fehlererkennung, eindeutige Eigentümerschaft verhindert „die KI war schuld“. Vertrauliche Daten nur im freigegebenen Datenraum verwenden.</p>
+<p><strong>Gastvortrag:</strong> <em>Expert-in-the-loop</em> betont die <strong>Qualifikation</strong> der Aufsicht statt bloßer menschlicher Bestätigung. Die vier Risiken auf PDF-S. 13 sind Hallucination, Confidentiality, Bias und Skill atrophy; sie ergänzen die DW2-Diskussion über Overreliance. Die Vortragsmaxime „AI does the paperwork; you do the people“ lässt sich als Delegation von Routine bei fortbestehender Beziehungs-/Urteilsarbeit lesen, nicht als vollständige Ablösung von Projektmanagement.</p>
+<p><strong>Operator und Antwortstruktur:</strong> Q2b <em>recommend / justify</em>: Konfiguration aus Risiko und kontrollierbarer Prozessführung ableiten; <strong>jedes Feature entscheiden</strong>. Q2c <em>evaluate / propose</em>: negative Folge → warum Verantwortungsproblem → konkrete Maßnahme → Wirkungsweise.</p>
+<blockquote class="blockquote">
+<p>“Uncritical acceptance weakens accountability because developers approve code they cannot explain or evaluate. I would retain named code ownership and require peer review and independent security tests for sensitive changes. Expert oversight must remain effective, rather than becoming a routine confirmation of AI output.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> „Human oversight“ ohne Person, Zeitpunkt oder Eingriffsrecht; generierte Tests als Sicherheitsgarantie; den beispielhaften Featureentscheid der Kriterien als universelles Produktverbot ausgeben.</p>
+<details>
+<summary>
+Selbstcheck: Reicht es, dass die KI ihre eigene Lösung mit selbst erzeugten Tests bestätigt?
+</summary>
+Nein. Code und Tests können dieselbe Fehlannahme teilen. Fachliche Review, unabhängige Anforderungen und adversariale/abweichende Fälle sind nötig, damit Prüfung mehr ist als Wiederholung.
+</details>
+<p><strong>Quellen (1-basierte PDF-Seiten):</strong> DW2-Aufgaben PDF-S. 3–4; Kriterien PDF-S. 7–9; Consulting Meets AI PDF-S. 13–14, 40–43, 48.</p>
+</section>
+<section id="knowledge-work" class="level2">
+<h2 class="anchored" data-anchor-id="knowledge-work">Knowledge-intensive work: Problem, Training und Evaluation</h2>
+<p><strong>Knowledge-intensive work</strong> benötigt spezialisiertes Fachwissen, Interpretation und Urteilsfähigkeit; häufig sind Ziele oder „richtige“ Antworten nicht vollständig durch einfache Regeln gegeben. Ein <strong>rule-based system</strong> führt explizit codiertes Wissen aus; ein <strong>ML system</strong> lernt Muster aus Beispielen. Beide brauchen fachliche Problemklärung, aber bei ML werden Datenqualität und Evaluation zu zentralen Entwicklungsaufgaben.</p>
+<p>Im LegalTechCo-Fall soll juristische Dokumentanalyse unterstützt werden. Drei Herausforderungen sind ausdrücklich benannt: <strong>defining the machine learning problems</strong>, <strong>managing the training of the model</strong>, <strong>evaluating performance</strong>. Ein fachlicher Wunsch lässt sich nicht unverändert in eine ML-Zielvariable übersetzen. Seltene, wichtige Fälle können in Trainingsdaten unterrepräsentiert sein; Fachleute können sich sogar bei den vermeintlichen <em>ground truth</em>-Labels uneinig sein.</p>
+<p><strong>Beispiel:</strong> Ein System findet fast alle häufigen Negativfälle korrekt und erreicht hohe <em>accuracy</em>, übersieht aber die seltenen rechtlich entscheidenden Positivfälle. <strong>False positive</strong> bedeutet fälschlich positiv, <strong>false negative</strong> fälschlich negativ. Die Folgen unterscheiden sich je nach Domäne. Eine einzelne Genauigkeitszahl kann diese Zielkonflikte verdecken. <em>Precision</em> fragt, wie viele positive Vorhersagen tatsächlich positiv sind; <em>recall</em> fragt, wie viele echte Positivfälle gefunden werden. Diese Kennzahlenerklärung ist eine didaktische Präzisierung des Evaluationsproblems.</p>
+<p>Drei Aktionsrichtungen im Artikel: <strong>co-formulate appropriate ML problems</strong> (Fachseite und Entwicklung formulieren gemeinsam lösbare Teilprobleme), <strong>iterative refinement</strong> (Daten/Modell mit wiederholter Evaluation verbessern), <strong>go beyond numeric measurements and ask for clues</strong> (mehrere Metriken und Hinweise zur Interpretation nutzen). Eine Heatmap kann Hinweise auf relevante Textstellen geben, ist aber kein Beweis, dass juristische Schlussfolgerungen richtig sind. Die zwölf Einzel-Empfehlungen werden hier nicht als neue Pflichtliste ausgegeben.</p>
+<p><strong>Operator / Antwortweg:</strong> <em>Explain challenges / evaluate recommendations</em>: Fachproblem → konkrete ML-Schwierigkeit → passende Maßnahme → Wirkungsmechanismus → verbleibende Grenze. Ein iteratives Vorgehen verbessert hier nicht nur den Funktionsumfang, sondern auch die Güte eines bereits funktionsfähigen Modells.</p>
+<blockquote class="blockquote">
+<p>“Knowledge-intensive work makes both problem formulation and evaluation difficult because expert judgement cannot always be reduced to unambiguous labels. Domain experts and developers should co-formulate tractable tasks, refine training data iteratively and assess multiple performance measures rather than relying on accuracy alone.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Fachwissen als vollständig codierbar unterstellen; ground truth als unfehlbar; hohe Gesamtgenauigkeit als Beweis für geringe relevante Fehler; Interpretierbarkeit mit Korrektheit gleichsetzen.</p>
+<details>
+<summary>
+Selbstcheck: 990 von 1.000 Fällen sind negativ. Ein System sagt immer negativ. Wie gut ist es?
+</summary>
+Es erreicht 99 % Accuracy, findet aber keinen der zehn Positivfälle (Recall 0 %). Ob das brauchbar ist, hängt von den Folgen verpasster Positivfälle ab; die Genauigkeit allein verschleiert das Versagen.
+</details>
+<p><strong>Quellen:</strong> <a href="training/s16.pdf">LegalTechCo-Artikel</a>, echte PDF-S. 8–17; <a href="training/s25.pdf">Case-Auftrag Session 2</a>, PDF-S. 2. Eigene Erläuterung/Beispiel, keine offizielle Case-Lösung.</p>
+</section>
+<section id="resistance" class="level2">
+<h2 class="anchored" data-anchor-id="resistance">User resistance und erfolgreiche Augmentation</h2>
+<p><strong>User resistance</strong> ist nicht einfach Unwissen oder Technikfeindlichkeit. Der Healthcare-Fall unterscheidet kognitive Wahrnehmungen, affektive Reaktionen und ablehnendes Verhalten. Fachleute können eine technisch funktionierende Lösung ablehnen, wenn sie Arbeitsqualität, berufliche Kontrolle, Verantwortbarkeit oder Beziehungen bedroht sehen.</p>
+<p>Im Fall sollte ein cognitive agent Anamnese, Diagnose, Behandlung und Dokumentation unterstützen. Die Projektziele umfassten weniger Dokumentationsaufwand und bessere Prozessleistung. Der Artikel beschreibt jedoch ein gescheitertes, auf unbestimmte Zeit verschobenes Projekt. Wichtige Bedenken der Ärzte betrafen vereinfachte Patientendarstellung, fehlendes Verständnis von Entscheidungen, Kontrollverlust bei fortbestehender Verantwortung, Beziehung zu Patienten und Abhängigkeit künftiger Fachkräfte. Diese Befürchtungen sind nicht automatisch empirischer Nachweis jeder befürchteten Fehlwirkung, erklären aber, warum bloße Funktionsdemonstrationen nicht reichten.</p>
+<p><strong>Begriffsvariante:</strong> Der Artikel unterscheidet AI for automation, decision support und engagement. Das ist eine andere Einteilung als die fünf DW2-Konfigurationen. Für die Kursanalyse fragen wir zusätzlich: Welche Schritte führt das System aus? Welche Daten/Interpretationen sieht die Fachperson? Kann sie korrigieren? Wer entscheidet? So werden agency und accountability konkret.</p>
+<p><strong>Eigene Gestaltungsableitung:</strong> Fachanwender früh an Arbeitsabläufen beteiligen; reale statt nur nominelle Eingriffsmöglichkeiten schaffen; Rohinformation und Unsicherheit angemessen zugänglich machen; weniger invasive Teilaufgaben zunächst erproben; Akzeptanz, Qualität und zusätzliche Kontrollarbeit zusammen bewerten. Das ist keine Garantie und keine behauptete offizielle Rettungslösung. Eine Schulung löst weder fehlende Autorität noch schlecht passende Arbeitsabläufe von selbst.</p>
+<p><strong>Operator / Antwortweg:</strong> <em>Analyse failure / recommend</em>: Projektziel und Ergebnis trennen → Stakeholder und veränderte Arbeit benennen → Wahrnehmung/Konfiguration erklären → konkrete Maßnahme samt Wirkungsweg → Restunsicherheit.</p>
+<blockquote class="blockquote">
+<p>“The failure cannot be explained solely by technical performance. Users perceived threats to professional control, patient relationships and responsibility. Effective augmentation therefore requires a workflow in which qualified users can understand, challenge and alter system contributions, rather than simply being told to trust the technology.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Widerstand ausschließlich mit mangelnder Bildung erklären; technische Fertigstellung mit erfolgreicher Implementierung gleichsetzen; alle drei Artikeltypen direkt mit DW2-Labels gleichsetzen.</p>
+<details>
+<summary>
+Selbstcheck: Die Fachperson bleibt verantwortlich, erhält aber nur die KI-Endinterpretation ohne Änderungsrecht. Ist sinnvolle Augmentation gesichert?
+</summary>
+Nein. Formale Verantwortung ist nicht mit wirksamer Kontrolle verbunden. Die Konfiguration muss fachliche Prüfung und Intervention ermöglichen; sonst entsteht ein Verantwortungs-/Kontrollproblem trotz menschlicher Beteiligung.
+</details>
+<p><strong>Quellen:</strong> <a href="training/s15.pdf">Healthcare-Artikel</a>, echte PDF-S. 1–6, 10–14; Case-Auftrag Session 2 PDF-S. 3. Eigene Analyse, keine klinische Handlungsanleitung oder offizielle Case-Lösung.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="quiz.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/dwpm\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
