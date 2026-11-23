@@ -1,0 +1,1067 @@
+[
+  {
+    "id": "mock-1a",
+    "title": "Magic Triangle",
+    "topic": "Scope",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "prompt": "Name and briefly describe all three elements of the Magic Triangle; explain their interdependence with meaningful examples.",
+    "solution": "Scope specifies the required outcome and included/excluded work. Schedule is the time available. Cost is the available money/resources. Adding a reporting module increases scope: retaining the deadline may require more developers and a larger budget. Cutting the budget with unchanged scope may require a later delivery. Trade-offs must be explicitly approved; extra people do not always shorten work because dependencies and onboarding constrain compression.",
+    "criteria": "All three dimensions defined; causal trade-offs explained with concrete examples. Quality is affected, but is not a substitute for one of these three course dimensions.",
+    "method": "Define → change one constraint → trace effects on the other two → state management response.",
+    "pitfall": "Listing three labels without explaining interdependence.",
+    "transfer": "What if the deadline and budget are both fixed but a new feature is mandatory?",
+    "points": 6,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        24,
+        25,
+        26
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-1b",
+    "title": "Two SMART criteria",
+    "topic": "Scope",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "prompt": "Name any two SMART criteria and give a reasonable personal, study or work example for each.",
+    "solution": "Measurable: reduce the median support response time from 12 to 6 hours, measured in the ticket system. Time-bound: finish the first draft of the project report by 30 November. Other valid choices are specific, achievable with available resources, and relevant to the objective.",
+    "criteria": "Two distinct named criteria, correct explanations and a matching concrete example for each. These are examples, not exclusive official answers.",
+    "method": "Criterion → what makes a goal satisfy it → observable example.",
+    "pitfall": "Giving a vague intention such as “study more”, or treating achievable as merely ambitious.",
+    "transfer": "Rewrite “improve team communication” into a complete SMART goal.",
+    "points": 6,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        28
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-2a",
+    "title": "Schedule process",
+    "topic": "Schedule",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "prompt": "Name one of the six Project Schedule Management processes and describe its activities.",
+    "solution": "Sequence Activities identifies and documents relationships among project activities. Starting from the activity list and attributes, determine dependencies, arrange activities in a logical order, and represent them in a schedule network, considering leads and lags. The other course processes are Plan Schedule Management, Define Activities, Estimate Activity Durations, Develop Schedule, and Control Schedule.",
+    "criteria": "One correct course process; substantive activities explaining what it accomplishes, not just its name.",
+    "method": "Input → activity → output. Use course terminology, not a newer framework substituted from memory.",
+    "pitfall": "Confusing a process group such as Planning with a schedule-management process.",
+    "transfer": "How does estimating durations differ from developing the schedule?",
+    "points": 4,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        30
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme. Q&A gives Plan Schedule Management or Develop Schedule as examples; this trainer uses Sequence Activities, another valid course process."
+    }
+  },
+  {
+    "id": "mock-2b",
+    "title": "Critical path: a–r",
+    "topic": "Schedule",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "prompt": "Use the ORIGINAL diagram on PDF page 1. Start on day 0; calculate a–r and identify the critical path. The source says A1–A5, but its diagram includes A6.",
+    "solution": "Node layout is ES | duration | EF above and LS | total float | LF below. Edges: A1→A2,A3,A4; A2→A5; A3,A4,A5→A6. Forward pass: A1 (0,5,5); A2 (5,2,7); A3 (5,12,17); A4 (5,10,15); A5 (7,3,10); A6 (17,4,21). Backward pass LS/float/LF: A6 (17,0,21), A5 (14,7,17), A4 (7,2,17), A3 (5,0,17), A2 (12,7,14), A1 (0,0,5). Therefore a=5,b=5,c=5,d=12,e=15,f=17,g=21,h=21,i=0,j=17,k=17,L=7,m=14,n=0,o=7,p=14,q=7,r=5. Critical path A1→A3→A6; project duration 21 days.",
+    "criteria": "All missing values; correct forward and backward passes; path AND duration. Do not omit A6 because of the task-text typo. Model solution derived from visually inspected original diagram.",
+    "method": "EF=ES+d; ES=max(predecessor EF). LF=min(successor LS); LS=LF−d; float=LS−ES. Finish at earliest project end.",
+    "pitfall": "Using min in the forward pass or max in the backward pass; confusing total float with duration.",
+    "transfer": "If A4 takes 13 instead of 10 days, recompute: A1→A4→A6 becomes critical, duration 22.",
+    "points": 12,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        32,
+        33
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-3a",
+    "title": "Positive CV and SV",
+    "topic": "Cost",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "prompt": "If cost variance and schedule variance are both positive, which project status is correct?",
+    "solution": "Answer iii: under budget and ahead of schedule. CV=EV−AC>0 means earned work exceeds actual cost. SV=EV−PV>0 means earned work exceeds planned work at the reporting date.",
+    "criteria": "Correct option plus sign interpretation for self-check.",
+    "method": "Write the formula before interpreting its sign.",
+    "pitfall": "SV is expressed in value units, not days.",
+    "transfer": "What does CV<0 and SV>0 mean?",
+    "points": 2,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        42
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-3b",
+    "title": "CPI greater than one",
+    "topic": "Cost",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "prompt": "What does CPI>1 mean?",
+    "solution": "Answer iv: actual costs are less than earned value. CPI=EV/AC; with positive AC, CPI>1 implies EV>AC. This is cost efficiency, not schedule performance.",
+    "criteria": "Option iv; distinguish CPI from SPI.",
+    "method": "Ratio → inequality → interpretation.",
+    "pitfall": "Claiming CPI>1 proves ahead of schedule.",
+    "transfer": "With EV=120 and AC=100, calculate CPI and CV.",
+    "points": 2,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        44
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-3c",
+    "title": "EAC: non-recurring variances",
+    "topic": "Cost",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "prompt": "PV=1000, AC=900, EV=1100, BAC=1350. Cost and schedule variances will NOT continue; remaining work runs as initially planned. Find EAC.",
+    "solution": "Answer ii: EAC=AC+(BAC−EV)=900+(1350−1100)=1150. Remaining planned work costs 250. PV is not needed for this assumption. If cost efficiency instead persisted, BAC/CPI would be a different forecast; that is NOT the stated assumption.",
+    "criteria": "Correct assumption and formula, substitution, result 1150. Do not report 250: that is remaining cost, not total EAC.",
+    "method": "Read the forecast assumption → choose model → remaining work → add sunk actual cost.",
+    "pitfall": "Automatically applying BAC/CPI to every EAC question.",
+    "transfer": "If CPI persisted, EAC=1350/(1100/900)≈1104.55. Explain why it differs.",
+    "points": 4,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        46
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-3d",
+    "title": "Interpret EV, PV and AC",
+    "topic": "Cost",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "prompt": "EV=€29,000, PV=€32,000, AC=€28,000. Describe project status.",
+    "solution": "Answer iii: behind schedule and within budget. SV=−€3,000 and SPI=0.90625<1. CV=€1,000 and CPI≈1.0357>1. Actual spending below PV alone would not establish cost efficiency; compare AC with earned value.",
+    "criteria": "Correct option; separate cost and schedule comparisons.",
+    "method": "Compute both variances, then both ratios as a consistency check.",
+    "pitfall": "Calling the project ahead because EV exceeds AC.",
+    "transfer": "What changes if AC rises to €31,000 while EV and PV stay fixed?",
+    "points": 2,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        48
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-3e",
+    "title": "SPI .75 / CPI 1.1",
+    "topic": "Cost",
+    "source": "s23",
+    "pages": [
+      3
+    ],
+    "prompt": "SPI=0.75 and CPI=1.1. Which response is best among reducing cost, recovering schedule, motivating employees, or doing nothing?",
+    "solution": "Answer ii: try to make up the lost schedule. The work earned is below the scheduled baseline while costs are efficient relative to earned work. Diagnose critical-path delays and feasible recovery options; assess cost/quality trade-offs before crashing or fast-tracking.",
+    "criteria": "Correct option and explanation grounded in both indices.",
+    "method": "Identify deficient dimension → targeted action → trade-off.",
+    "pitfall": "Reducing cost merely because the question provides CPI.",
+    "transfer": "Which recovery action actually shortens the critical path?",
+    "points": 2,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        50
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-4",
+    "title": "Buy versus rent: EMV",
+    "topic": "Risk",
+    "source": "s23",
+    "pages": [
+      3
+    ],
+    "prompt": "Buy: €40,000 once plus €12,000 maintenance/year. Rent: €1,800/developer/year. Need 40 person-years: probability .4 of 20 developers for 2 years, .6 of 10 for 4 years. Draw the decision tree, calculate path values and EMVs, choose.",
+    "solution": "Decision node: buy or rent. Each has chance branches (20 developers,2 years,p=.4) and (10 developers,4 years,p=.6). Buy path costs: 40000+12000×2=64000; 40000+12000×4=88000. Expected buy cost=.4×64000+.6×88000=78400. Rent path costs:1800×20×2=72000;1800×10×4=72000. Expected rent cost=72000. Choose rent: expected saving €6400. If drawing net monetary values as negative costs, paths are −64000/−88000 and −72000/−72000; EMVs −78400 and −72000, so choose the larger (less negative). In the 2-year scenario buying is €8000 cheaper; expectation does not mean rent wins every scenario.",
+    "criteria": "Decision/chance branches and probabilities; four terminal costs; two weighted costs; explicit sign convention; justified choice. No discount rate or resale value was supplied.",
+    "method": "One-time cost + annual cost×years, or price×people×years → scenario totals → probability weights → compare like-for-like.",
+    "pitfall": "Charging the purchase price every year, counting maintenance once, or multiplying rent by 40 people every year.",
+    "transfer": "At what probability p of the 2-year case are expected costs equal? 64000p+88000(1−p)=72000 → p=2/3.",
+    "points": 12,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        58
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-5a",
+    "title": "Knowledge activities and challenges",
+    "topic": "Knowledge",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "prompt": "Briefly describe the two key knowledge-management activities and any two challenges.",
+    "solution": "Knowledge integration combines relevant existing knowledge so the project can use it. Knowledge sharing enables employees to exchange and further develop knowledge. Two challenges are tacit/contextual expertise that is difficult to codify, and competition for scarce time and resources: experts may have little time to document or teach. Pairing and handovers can transfer some tacit expertise; a repository alone cannot capture everything.",
+    "criteria": "Both course activities explained and two distinct challenges articulated. Recap PDF p64 supports these concepts.",
+    "method": "Activity → purpose; challenge → why it blocks learning.",
+    "pitfall": "Only naming a software repository as knowledge management.",
+    "transfer": "How would you reduce knowledge loss when a contractor leaves?",
+    "points": 5,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        62
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-5b",
+    "title": "Define program",
+    "topic": "Knowledge",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "prompt": "Define Program in multi-project management.",
+    "solution": "A program is a group of related projects, subsidiary programs and program activities managed in a coordinated manner to obtain benefits unavailable from managing them individually. For example, coordinated identity, migration and training projects can deliver a usable campus system together. A portfolio is selected and managed for strategic objectives and need not consist of related projects.",
+    "criteria": "Related components; coordinated management; additional collective benefits (not simply several projects). Recap PDF p67 supports definition.",
+    "method": "What is grouped → how managed → why grouped.",
+    "pitfall": "Confusing a program with a portfolio or an individual project.",
+    "transfer": "Why might three unrelated investments belong to one portfolio but not one program?",
+    "points": 3,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        64
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-dw1a",
+    "title": "People analytics uses",
+    "topic": "People analytics",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "prompt": "Define people analytics and describe two managerial areas of use.",
+    "solution": "People analytics uses data and analytical methods concerning people and work to inform organizational decisions. Recruitment: assess evidence about selection processes and identify unequal outcomes. Workforce planning: estimate staffing needs and skill gaps to guide development and capacity decisions. Explain the actual management decision and the data’s limits, rather than treating a prediction as a definitive judgment about a person.",
+    "criteria": "Definition plus two described uses, not just tool names.",
+    "method": "Data → analysis → managerial decision → boundary.",
+    "pitfall": "Equating all people analytics with fully autonomous management.",
+    "transfer": "What makes a descriptive turnover dashboard different from automated shift assignment?",
+    "points": 4,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        67
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-dw1b",
+    "title": "Inverse transparency",
+    "topic": "People analytics",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "prompt": "Explain inverse transparency and how it may lower employees’ privacy concerns.",
+    "solution": "Inverse transparency makes the use of employee data visible to the people being analyzed: they can see which data were accessed, by whom, for what purpose and how they were used. Visibility and auditability constrain hidden monitoring and allow employees to question misuse. This can reduce informational asymmetry and privacy concerns, but does not by itself make excessive collection legitimate; purpose limits and access controls remain necessary.",
+    "criteria": "Explain the reversed visibility (employees can inspect data use), its mechanism and privacy link.",
+    "method": "Who sees whose actions? → change in power/information → privacy effect.",
+    "pitfall": "Describing only greater employee transparency to management.",
+    "transfer": "Design a useful employee-facing data-access log.",
+    "points": 5,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        69
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-dw1c",
+    "title": "Break the ethical vicious cycle",
+    "topic": "People analytics",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "prompt": "Employees’ routines are analyzed for efficiency. A union objects to inscrutability, objectification and unconscious influence. Sketch three concrete measures and explain how they address the concerns.",
+    "solution": "1. Explanations and inverse-transparency logs: show data sources, access, purposes and the reasons/limits of recommendations, reducing opacity. 2. Employee/union participation, human review and an independent appeal channel: employees can contextualize or contest metrics rather than being treated solely as data points, protecting agency and dignity. 3. Explicit limits on behavioral nudging, disclosed dashboard objectives and joint audits: expose steering mechanisms, test disparate effects and prohibit manipulative uses. Each measure needs accountable owners and enforcement; publication of a generic privacy policy is insufficient.",
+    "criteria": "Three specific, feasible measures; each causally connected to a named accusation. Suggested self-check only; no official allocation asserted.",
+    "method": "Concern → organizational mechanism → effect → remaining limit.",
+    "pitfall": "Three generic promises of “transparency” without distinct mechanisms.",
+    "transfer": "How would you evaluate whether employees actually gained agency?",
+    "points": 15,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        71,
+        72,
+        73
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-dw1d",
+    "title": "Challenge PA assumptions",
+    "topic": "People analytics",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "prompt": "Critically challenge the three assumptions: rational managerial decisions/human mind as computation; more big data improves decisions; algorithms are desirable because efficient and consistent.",
+    "solution": "1. Rational optimization is an idealization: bounded cognition, conflicting stakeholder values and contextual meaning shape choices. Not every organizational objective is measurable. 2. More observations do not fix selection bias, invalid proxies, poor measurement or correlation without causation; a large biased sample can be confidently wrong. 3. Algorithms can scale consistently, but consistently reproduce unjust rules or hide accountability. Efficiency must be weighed against explainability, fairness, employee autonomy and contestability. Use analytics as context-sensitive support with validation and responsible human judgment, not automatic proof of truth.",
+    "criteria": "Challenge each assumption with a reason; acknowledge potential benefits rather than rejecting analytics wholesale.",
+    "method": "Assumption → condition under which useful → counterexample/limitation → implication.",
+    "pitfall": "Claiming algorithms are unbiased because they lack emotions.",
+    "transfer": "Give a large-data example where measurement validity matters more than sample size.",
+    "points": 6,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        75,
+        76,
+        77
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-dw2a",
+    "title": "Time-space matrix",
+    "topic": "Collaboration",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "prompt": "Describe the time-space matrix and give a groupware example for each interaction type.",
+    "solution": "The matrix distinguishes same/different place and same/different time. Same place/same time: a shared electronic whiteboard during an in-room workshop. Different place/same time: a video conference. Same place/different time: an electronic shift-handover board used by successive staff in one control room. Different place/different time: a shared wiki or asynchronous discussion forum. The classification concerns the actual interaction mode; one product can support several modes.",
+    "criteria": "Two axes and all four cells; examples genuinely fit each interaction type.",
+    "method": "Draw 2×2 → classify actual interaction → give supporting tool.",
+    "pitfall": "Assuming each brand belongs permanently in exactly one quadrant.",
+    "transfer": "Where do recorded meetings with later comments belong?",
+    "points": 8,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        79,
+        80
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "mock-dw2b",
+    "title": "Messenger features and groupware issues",
+    "topic": "Collaboration",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "prompt": "For each feature, name/explain the groupware issue and how the feature addresses it: standardized UI across devices; quoted replies; shared images/videos; typing/online; emojis/stickers; @tagging.",
+    "solution": "Standardized UI: consistency across devices reduces incompatible expectations about actions and representations. Quoted replies: conversational context and deixis; an explicit reference links a reply to its target message. Images/videos: shared context and richer representations make remote objects/events inspectable. Typing/online indicators: availability/group awareness and turn-taking; they signal potential participation, but online is not proof of availability. Emojis/stickers: nonverbal/emotional cues help signal tone, although meanings vary. @tagging: directs attention and clarifies an intended addressee in a group; it can improve awareness but excessive mentions create overload. These are defensible mappings, not an exclusive official answer list. Course Q&A uses these labels in order: Consistency; Context; Deixis; Social awareness; Social awareness; Deixis. In particular, visual media supply deictic references and emojis convey emotional social awareness. Use these exact course terms in your answer.",
+    "criteria": "For all six: issue named and explained + causal feature-to-issue mapping. Avoid just restating the UI function.",
+    "method": "Feature → missing social/work cue → restored information → limitation.",
+    "pitfall": "“Emojis improve communication” without explaining how; treating online status as willingness to respond.",
+    "transfer": "Which issues remain unsolved by adding more notification features?",
+    "points": 12,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme. Wording caveat: p87 describes @tagging as referring to a message. Common messenger implementations tag a participant instead. Preserve the source statement but distinguish person references from quoted-message replies; do not conflate the two."
+    }
+  },
+  {
+    "id": "mock-dw2c",
+    "title": "Cooperative work framework",
+    "topic": "Collaboration",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "prompt": "Apply the cooperative work framework to explain how communication occurs in instant messengers.",
+    "solution": "Using the course framework: Direct communication lets participants exchange messages and feedback. Shared understanding develops through discussion, threads and explicit references that establish context. Participants jointly use artifacts of work such as a shared document, acting on it and receiving control/feedback about its state. For an instant messenger, chat and reactions support the first two; file sharing provides artifacts, but joint editing may require an integrated editor. Q&A pp89–91 uses the broader Teams/Slack/Zoom unified-communication variant, which supports integrated joint editing. Do not assume every messenger has all those capabilities.",
+    "criteria": "Map direct communication, common understanding, artifacts of work and control/feedback to concrete features. Distinguish the original messenger prompt from the broader unified-communication Q&A variant.",
+    "method": "Framework component → messenger mechanism → concrete interaction → feedback.",
+    "pitfall": "Only listing messenger features or substituting the 3C names without explaining the framework mechanisms.",
+    "transfer": "What breaks when a message says “change this” but the recipient cannot see the referenced artifact?",
+    "points": 5,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        89,
+        90,
+        91
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme. RELATED VARIANT, not identical prompt: Q&A asks how unified communication realizes groupware purposes; original mock asks how communication occurs in instant messengers."
+    }
+  },
+  {
+    "id": "mock-dw2d",
+    "title": "Hybrid team awareness",
+    "topic": "Collaboration",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "prompt": "Propose two strategies to improve group awareness between co-located and distributed team members; evaluate effectiveness.",
+    "solution": "1. Maintain one shared task board with owners, status, dependencies and blockers, updated at an agreed cadence. It exposes who is doing what to remote and in-room members alike and supports asynchronous coordination. Its value depends on accurate updates; it must not become surveillance. 2. Use remote-inclusive brief check-ins with a shared agenda and written decisions: all participants join the same channel, explicitly invite remote input and document office-side decisions. This restores activity/context awareness and reduces information asymmetry, but meetings impose time-zone and interruption costs. Evaluate fewer duplicated tasks, faster blocker resolution and remote members’ reported inclusion.",
+    "criteria": "Two concrete strategies; identify awareness mechanism and evaluate benefits AND limits.",
+    "method": "Awareness deficit → practice/tool → information made visible → outcome → cost/measure.",
+    "pitfall": "“Use Teams” without participation norms or awareness mechanism.",
+    "transfer": "How would you support a teammate who cannot attend the synchronous check-in?",
+    "points": 5,
+    "answerStatus": "Derived explanation, cross-checked against course Q&A example solution linked below. Self-check criteria are NOT an official marking scheme.",
+    "official": {
+      "source": "s13",
+      "pages": [
+        93,
+        94
+      ],
+      "note": "Official course example solution in Exam Preparation/Q&A. The training explanation and self-check remain derived; examples are not an exclusive marking scheme."
+    }
+  },
+  {
+    "id": "dw1-1a",
+    "title": "Decision making, judgment, reasoning",
+    "topic": "Decision making",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "prompt": "Explain how decision making, judgments and reasoning relate and how human decision making is limited.",
+    "solution": "Decision making selects one option from several alternatives. Reasoning analyzes information and knowledge to infer conclusions and evaluate options. Judgments estimate uncertain outcomes; they feed into the evaluation of alternatives. Bounded rationality means that limited knowledge, time and cognitive capacity prevent exhaustive optimization, so humans often satisfice: choose an option that is good enough.",
+    "criteria": "Official p1: definitions/relationships 4 points (decision making 2, judgments 1, reasoning 1); bounded rationality 2.",
+    "method": "Define each term → connect their functions → explain constraints and satisficing.",
+    "pitfall": "Treating judgment as certainty, or bounded rationality as mere laziness.",
+    "transfer": "How could a structured decision aid reduce, but not eliminate, bounded rationality?",
+    "points": 6,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        1
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-1bi",
+    "title": "LogisTech: five comparison criteria",
+    "topic": "Decision making",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "prompt": "Read the LogisTech case on original page 1. Assess humans AND AI for specificity of search space, interpretability, alternative-set size, speed and replicability.",
+    "solution": "Search space: AI needs specified objectives and relevant variables for demand, inventory and routes; humans set goals and contextual constraints. Interpretability: complex AI recommendations can be opaque, while humans can articulate business context (human explanations also need scrutiny). Alternative set: AI evaluates many route/inventory combinations; humans may narrow alternatives using experience but cannot inspect all combinations. Speed: AI processes dynamic logistics data quickly; humans are slower but judge exceptional events. Replicability: a fixed model under fixed conditions can provide consistent outputs; humans vary with context and fatigue but can adapt when conditions change. These strengths support complementary, not universally superior, roles.",
+    "criteria": "Official pp2–3: 10 points, one correct explanation for the human role and one for the AI role for EACH of five criteria.",
+    "method": "Make five rows × two columns; explain each cell using logistics facts.",
+    "pitfall": "Only discussing AI; claiming every AI output is deterministic without fixed-model conditions.",
+    "transfer": "Which criterion matters most when explaining a route change to a client?",
+    "points": 10,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        2,
+        3
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-1bii",
+    "title": "LogisTech: select a configuration",
+    "topic": "Decision making",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "prompt": "Based on the five-criterion comparison, suggest and justify a human–AI decision configuration for LogisTech.",
+    "solution": "Use sequential human–AI decision making: the AI predicts demand and proposes routes/inventory actions; human planners inspect the recommendations, incorporate client constraints and unusual market or transport events, and decide what to implement. This combines speed, consistency and a large alternative set with human contextual judgment and accountability. Establish escalation for low-confidence or unusual cases rather than blindly accepting the top-ranked option.",
+    "criteria": "Official pp3–4: 5 points for a suitable configuration, description and justification. The official example proposes sequential human–AI decision making.",
+    "method": "Name configuration → allocate work/decision authority → justify using the five criteria.",
+    "pitfall": "Using a configuration label without describing who decides.",
+    "transfer": "When could bounded, reversible routing decisions be delegated further?",
+    "points": 5,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        3,
+        4
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-1c",
+    "title": "Does ML replace bias with facts?",
+    "topic": "Decision making",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "prompt": "Critically discuss the quoted claim that ML overcomes experts’ irrationalities and replaces gut instincts with objective measurable facts.",
+    "solution": "The claim is too strong. ML can consistently apply rules and reveal patterns in large datasets, reducing some emotional or cognitive biases. However, biased or unrepresentative training data reproduce unequal outcomes, and poorly measured targets make precise predictions of the wrong construct. Statistical correlation is not causation. Opaque models can make errors difficult to contest, and ethical/contextual judgments are not reducible to prediction. Therefore combine validated ML with domain expertise and scrutiny rather than equating data with objective truth.",
+    "criteria": "Official pp4–5: assessment 1; promises 4 (typically two explained promises ×2); limitations 4 (explained limitations).",
+    "method": "Qualified thesis → two promises → two limitations with mechanisms → justified conclusion.",
+    "pitfall": "Only praising or only criticizing; listing bias without explaining its origin.",
+    "transfer": "Can removing a sensitive attribute still leave proxy discrimination?",
+    "points": 9,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        4,
+        5
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-2a",
+    "title": "Communication and Media Richness Theory",
+    "topic": "Communication",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "prompt": "Define communication and explain effective communication in MRT, including equivocality and media richness.",
+    "solution": "Communication exchanges messages whose signs are encoded by a sender, transmitted through a channel and decoded/interpreted by a receiver. Media richness is a medium’s capacity to convey rich information; equivocality means multiple plausible interpretations. Effective communication matches richness to equivocality: rich media support clarification and cues for ambiguous messages; lean media efficiently convey unambiguous information. Too lean risks oversimplification, while unnecessarily rich communication adds complexity.",
+    "criteria": "Official p6: communication definition 2; MRT fit, richness, equivocality and consequences of mismatch 6.",
+    "method": "Define communication → define both MRT terms → state fit rule and both mismatch risks.",
+    "pitfall": "Equivocality is ambiguity, not simply a large quantity of data.",
+    "transfer": "Why might a long standardized report still be low in equivocality?",
+    "points": 8,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        6
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-2bi",
+    "title": "Choose media for five project situations",
+    "topic": "Communication",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "prompt": "For feedback, client delay, event announcement, poor contribution and next-phase strategy, choose a medium and justify the richness/equivocality fit. Use the original overload case.",
+    "solution": "Feedback: face-to-face/video supports clarification and emotional cues. Client delay: email is adequate for an unambiguous date change; use a call/video when consequences or expectations need negotiation. Event announcement: email/channel post communicates clear standardized details efficiently. Poor contribution: a private face-to-face/video discussion supports empathy, immediate feedback and resolving ambiguous causes. Strategy: a rich workshop/video discussion with a shared document supports sensemaking and alignment. Reserve rich channels for ambiguity rather than scheduling meetings for every notification.",
+    "criteria": "Official pp7–8: each scenario 0.5 for medium +1.5 for justification, total 10. Contextually justified alternatives can be reasonable.",
+    "method": "Scenario → ambiguity/sensitivity → required cues/feedback → medium.",
+    "pitfall": "Naming five tools without case-specific justification.",
+    "transfer": "What changes if the client delay threatens a major launch?",
+    "points": 10,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        7,
+        8
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-2bii",
+    "title": "Social presence and feedback",
+    "topic": "Communication",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "prompt": "Choose two of the five situations and characterize required social presence, cues and immediate/delayed feedback.",
+    "solution": "Poor contribution needs high social presence: tone and facial expression help communicate concern without accusation, while immediate two-way feedback reveals obstacles and repairs misunderstandings. An event announcement needs little social presence: clear written time/location information suffices; nonverbal cues and immediate feedback are unnecessary, and delayed questions are acceptable. The contrast shows why social demands, not just tool availability, should shape communication.",
+    "criteria": "Official pp8–9: 6 points total; explain presence, cues and feedback for two selected scenarios. Original examples cover all five.",
+    "method": "Select two → social-presence level → cue requirement → feedback timing → justification.",
+    "pitfall": "Calling every interaction high-social-presence without distinguishing tasks.",
+    "transfer": "When does a supposedly simple announcement become emotionally sensitive?",
+    "points": 6,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        8,
+        9
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-2c",
+    "title": "Is MRT outdated?",
+    "topic": "Communication",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "prompt": "Critically evaluate whether MRT is outdated when digital workers combine tools and switch communication modes.",
+    "solution": "MRT remains useful as a diagnostic: ambiguous feedback and negotiation usually benefit from richer interaction, while routine notices do not require meetings. But integrated tools combine lean/rich modes, and meaning changes over time through conversations. MRT alone underrepresents social/organizational context, synchronous/asynchronous dynamics and group communication. Use it as a starting heuristic, supplemented by context, tool combinations and team practices, rather than a universal fixed ranking.",
+    "criteria": "Official pp9–10: strengths 2–3, limitations 2–3, reflective conclusion 1–2. These ranges should not be mechanically added as independent maxima; question total is 6.",
+    "method": "Explain one or two strengths, one or two limitations, then a conclusion tied to both.",
+    "pitfall": "Declaring a theory obsolete just because a new product offers video and chat.",
+    "transfer": "How would a mixed chat–call–document workflow supplement MRT?",
+    "points": 6,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        9,
+        10
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw1-3a",
+    "title": "3C and individual work: version conflict",
+    "topic": "Collaboration",
+    "source": "s19",
+    "pages": [
+      3
+    ],
+    "prompt": "Describe the 3Cs, their relationships, and the role of individual work. Original task sheet: 6 points. Solution variant expands the individual-work prompt and says 8.",
+    "solution": "Communication exchanges information and builds understanding. Coordination aligns activities, timing and dependencies. Cooperation/collaboration jointly processes shared work objects toward common goals and responsibility for results. Communication enables coordination; both enable joint work. Individual reading, writing and thinking contribute separately produced inputs to group work. Productive collaboration alternates between interdependent group episodes and individual concentration. The expanded solution also distinguishes deep work (concentration-intensive) and shallow work (less cognitively demanding).",
+    "criteria": "Original task: 6 points, no matching 6-point split supplied. Official solution p11 uses an expanded 8-point variant: 3Cs/relationship 4, individual work 4. Do not use it as a six-point marking key.",
+    "method": "Define each C → show dependency → explain alternating individual/group episodes.",
+    "pitfall": "Treating individual work as the opposite of productive collaboration.",
+    "transfer": "Why can always-on chat harm collaborative output?",
+    "points": 6,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. VERSION CONFLICT: original task 6 points; expanded official solution 8.",
+    "official": {
+      "source": "s20",
+      "pages": [
+        11
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. VERSION CONFLICT: original task 6 points; expanded official solution 8."
+    }
+  },
+  {
+    "id": "dw1-3b",
+    "title": "Consulting presentation: diagnose all 3Cs",
+    "topic": "Collaboration",
+    "source": "s19",
+    "pages": [
+      3
+    ],
+    "prompt": "Read the complete consulting-team case on original p3. For each C identify key problems, underlying groupware issues and effects on the other dimensions.",
+    "solution": "Communication: “latest numbers”, “this chart” and “they do not like it” lack shared context/deictic anchors; this produces unclear assignments and incorrect contributions. Coordination: asynchronous work without clear ownership, synchronization or activity awareness leads to overlapping edits and overwrites, creating extra clarification and obstructing joint production. Cooperation: offline copies and shared-file edits fragment the artifact; insufficient workspace awareness/version visibility makes the current state unclear, so the team cannot build reliably on others’ work and must spend time reconciling inconsistent slides. Explain reciprocal effects rather than treating each issue as isolated.",
+    "criteria": "Official pp12–13: solution variant 15 points, 5 per C (problem, issue explanation/application, effects on other dimensions). Task sheet omits a printed score for b; 17 would follow only by subtraction from its 30 total, not from an explicit official split.",
+    "method": "For EACH C: case fact → issue → explanation → effects on both other Cs.",
+    "pitfall": "Only defining the 3Cs; silently assigning 17 official points from subtraction.",
+    "transfer": "What would a single source of truth fix, and what ambiguity would remain?",
+    "points": null,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. Task sheet Q3b has no printed subtask score; solution variant assigns 15.",
+    "official": {
+      "source": "s20",
+      "pages": [
+        12,
+        13
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. Task sheet Q3b has no printed subtask score; solution variant assigns 15."
+    }
+  },
+  {
+    "id": "dw1-3c",
+    "title": "Awareness strategy for shared slides",
+    "topic": "Collaboration",
+    "source": "s19",
+    "pages": [
+      3
+    ],
+    "prompt": "Explain awareness and propose one concrete strategy addressing relevant types in the consulting case; show effects on all three Cs.",
+    "solution": "Awareness is understanding others’ activities and the state of shared work; it supports all three Cs rather than being a fourth C. Require use of one shared presentation with co-editing, change tracking and version history rather than local reuploads. Workspace awareness improves because the latest state, authors and changed locations become visible. Communication gets explicit references, coordination avoids conflicting edits, and cooperation integrates contributions into one coherent artifact. Agree update practices so visibility remains reliable.",
+    "criteria": "Official p14: awareness role 2; strategy/type 2; effects on the three Cs 3; total 7.",
+    "method": "Awareness type → concrete practice → information exposed → separate effects on all Cs.",
+    "pitfall": "“Use Teams” without describing a workflow or the information it makes visible.",
+    "transfer": "How would you support people working asynchronously without constant meetings?",
+    "points": 7,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s20",
+      "pages": [
+        14
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-1a",
+    "title": "Plan-based versus agile: explain three criteria",
+    "topic": "Agility",
+    "source": "s21",
+    "pages": [
+      1
+    ],
+    "prompt": "Explain, do not just name, differences between plan-based and agile methods using three criteria.",
+    "solution": "Requirements: plan-based approaches specify substantial requirements upfront to predict the desired product; agile approaches repeatedly integrate customer feedback to adapt. Process: plan-based approaches define much of the sequence upfront; agile approaches proceed iteratively and incrementally, using results to choose next steps. Testing: in the course contrast, plan-based development emphasizes extensive testing toward the end, while agile work integrates testing continuously to find defects early. These are course-level contrasts, not a claim that every plan-based method forbids early testing.",
+    "criteria": "Official p1: criteria 1.5 (3×0.5); explained contrasts 4.5 (3×1.5). Brief labels alone earn less.",
+    "method": "Criterion → both approaches → why the difference changes work.",
+    "pitfall": "“Agile flexible, waterfall rigid” without mechanism.",
+    "transfer": "Which approach fits stable versus rapidly changing requirements?",
+    "points": 6,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        1
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-1bi",
+    "title": "Sensor company: assign Scrum roles",
+    "topic": "Agility",
+    "source": "s21",
+    "pages": [
+      1,
+      2
+    ],
+    "prompt": "Read the six-person sensor-software case before answering. Assign product owner, Scrum master and development/agile team, justifying each.",
+    "solution": "One official example assigns Alice as product owner because she prioritizes a reliable customer-facing product and can assess released increments; she must also engage stakeholders and order value, not merely test. Bernardo can become Scrum master because his sociability and standing support coaching and facilitation; weak coding alone is not sufficient qualification. Donatella, Leandro, Giorgia and Emilio form a cross-functional agile team using product history, infrastructure, security/coding and emerging technical skills. Account for Emilio’s school absences in capacity planning. Alternative assignments need case-based role justifications.",
+    "criteria": "Official p3: roles and justification 5; assigning a role without justification earns only 0.5. Alice/Bernardo/development team are examples, not mandatory unique choices.",
+    "method": "Role responsibility → person’s case evidence → fit and support needs.",
+    "pitfall": "Promoting a weak coder to Scrum master solely to remove coding work.",
+    "transfer": "What competence would Alice still need to develop as product owner?",
+    "points": 5,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        2,
+        3
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-1bii",
+    "title": "Sensor company: Scrum flow",
+    "topic": "Agility",
+    "source": "s21",
+    "pages": [
+      1,
+      2
+    ],
+    "prompt": "Using the role assignment, explain who does what in pre-sprint, sprint and post-sprint. Do not merely list meeting details.",
+    "solution": "Pre-sprint: Alice collects customer cloud-integration and government security requirements into the product backlog, clarifies stakeholder value and prioritizes items. Sprint: Alice and the agile team agree a goal and selected backlog; the team creates a usable tested increment, synchronizes work and adapts its plan; Bernardo coaches the process and helps remove impediments. Post-sprint: team and product owner inspect/release the increment as appropriate, communicate capabilities and use feedback to plan next steps. Team and Scrum master reflect on the process and improve it. A sprint is not a miniature two-year waterfall.",
+    "criteria": "Official p3: 3 points per phase =9, grounded in who does what. Role consistency with part i matters.",
+    "method": "Three phases × actor × action × artifact/outcome, linked to case requirements.",
+    "pitfall": "Listing ceremonies without participants’ responsibilities.",
+    "transfer": "How would a new security requirement affect backlog priorities?",
+    "points": 9,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        3
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-1c",
+    "title": "Agile practices without an agile mindset",
+    "topic": "Agility",
+    "source": "s21",
+    "pages": [
+      2
+    ],
+    "prompt": "Discuss pros/cons of isolated agile practices in non-agile environments, and conclude whether being agile is always necessary.",
+    "solution": "Benefits: a shared Kanban board or brief check-in exposes dependencies even in plan-based work; gradual adoption lowers transition barriers; selected practices can improve feedback in a hybrid project. Risks: a ceremonial agile facade may prevent genuine change; reviews without psychological safety or willingness to learn produce little value; “agile” can excuse poor planning and improvisation. Therefore full transformation is not always necessary for local benefits, but practice selection must fit objectives and be supported by minimum learning, trust and management commitment.",
+    "criteria": "Official p4: at least three developed arguments, 1–3 points each up to9; conclusion following from arguments 1.",
+    "method": "Benefit/risk → causal mechanism → context → qualified conclusion.",
+    "pitfall": "Equating using a board with being agile; declaring one universal method best.",
+    "transfer": "What evidence would show a stand-up is useful rather than ceremony?",
+    "points": 10,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        4
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-2a",
+    "title": "Automation and three forms of augmentation",
+    "topic": "AI at work",
+    "source": "s21",
+    "pages": [
+      3
+    ],
+    "prompt": "Define automation and augmentation; explain human, machine and hybrid augmentation and their relationship to automation.",
+    "solution": "Automation fully or partly replaces functions previously performed by humans. Augmentation combines complementary human/AI capabilities through cooperation or collaboration to improve outcomes. Human (machine-to-human) augmentation: AI provides input to support human-guided work. Machine (human-to-machine) augmentation: humans train or guide AI so it can perform tasks it cannot yet solve independently. Hybrid augmentation: humans and machines simultaneously support one another through complementary collaboration. Augmentation entails partial automation of task components, not necessarily complete replacement of the person.",
+    "criteria": "Official p5: automation2; augmentation2; forms4.5 (name0.5 + explanation1 each); relationship1.5.",
+    "method": "Definitions → direction of support for all three forms → place on automation continuum.",
+    "pitfall": "Assuming augmentation means no task component can be automated.",
+    "transfer": "Classify a developer correcting model outputs while using its suggestions.",
+    "points": 10,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        5
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-2b",
+    "title": "Security-system Copilot configurations",
+    "topic": "AI at work",
+    "source": "s21",
+    "pages": [
+      3,
+      4
+    ],
+    "prompt": "Read the original Copilot feature list/security-company case. Explain all five configurations with feature examples; choose one and justify feature permissions.",
+    "solution": "Decision support: developers decide how to code, consulting snippets/function suggestions/tests. AI in the loop: AI supplies ongoing suggestions and feedback within human-led coding, with developers judging results. Human–AI collaboration: humans provide architecture and context while AI assists with code and documentation in complementary work. Human in the loop: AI performs a bounded generation/refactoring task but a developer reviews/approves before use. Full delegation: AI produces entire modules with minimal intervention, unsuitable for unreviewed security-critical work. A defensible course choice is AI in the loop plus mandatory human review. Enable bounded snippets, documentation, refactoring and proposed tests with independent checks; gate whole-function/completion suggestions behind careful inspection and security testing; restrict languages to relevant supported project needs. Protect sensitive input data and retain named human ownership. These are hypothetical case configurations, not claims that a current product automatically performs security monitoring.",
+    "criteria": "Official pp7–8: five configurations with description1 + feature example1 each =10; choice1 + rationale1 + feature decisions1 + justification2 =5. Official example chooses AI in the loop; alternatives require coherent justification.",
+    "method": "Five configurations → who acts/decides → example feature → risk-based choice and feature policy.",
+    "pitfall": "Treating AI-generated tests as independent proof of correctness; assuming any configuration guarantees risk-free code.",
+    "transfer": "What additional gates are needed for generated authentication code?",
+    "points": 15,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. Course scenario, not a current Copilot product-capability assessment.",
+    "official": {
+      "source": "s45",
+      "pages": [
+        6,
+        7,
+        8
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. Course scenario, not a current Copilot product-capability assessment."
+    }
+  },
+  {
+    "id": "dw2-2c",
+    "title": "Overreliance and accountability",
+    "topic": "AI at work",
+    "source": "s21",
+    "pages": [
+      4
+    ],
+    "prompt": "Evaluate uncritical reliance on Copilot in security-related code and propose a mitigation strategy explaining its effect.",
+    "solution": "Uncritical acceptance can introduce vulnerabilities while diffusing accountability: developers may blame the tool instead of owning the decision to ship. AI is not a morally accountable teammate. Require a named developer and an independent reviewer to inspect and approve generated code before merging, with security-relevant tests and a documented rationale. Training on limitations equips reviewers to challenge plausible but unsafe suggestions. This keeps responsibility explicit and improves evaluation rather than banning assistance outright.",
+    "criteria": "Official p9: negative implication and explanation2; strategy1.5 + causal explanation1.5 =3.",
+    "method": "Behavior → harm/accountability mechanism → enforceable control → why it changes behavior.",
+    "pitfall": "Simply saying “humans remain responsible” without a review practice.",
+    "transfer": "How would you check that mandatory reviews are substantive rather than rubber stamps?",
+    "points": 5,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        9
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-3a",
+    "title": "People analytics versus algorithmic management",
+    "topic": "People analytics",
+    "source": "s21",
+    "pages": [
+      5
+    ],
+    "prompt": "Define both concepts and distinguish how each uses data to influence organizational decisions.",
+    "solution": "People analytics collects and analyzes digital employee/organizational data with algorithmic methods to provide insights into behavior, resources and performance for managerial judgment. Algorithmic management uses data-driven systems to coordinate, monitor, evaluate and control work, partly or fully executing managerial functions such as task assignment. The main distinction is insight/support versus execution/control. The boundary can converge when analytics becomes autonomous; distinguish actual decision authority rather than relying only on a product label.",
+    "criteria": "Official pp10–11: PA definition3; AM definition3; distinction2. Explicitly accepts convergence through autonomous PA.",
+    "method": "Data/method/purpose for each → who actually decides/executes → boundary case.",
+    "pitfall": "Claiming all dashboards are automatically algorithmic management.",
+    "transfer": "When does a scheduling recommendation become automated managerial control?",
+    "points": 8,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        10,
+        11
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-3b",
+    "title": "Dashboard: three concepts, three measures",
+    "topic": "People analytics",
+    "source": "s21",
+    "pages": [
+      5
+    ],
+    "prompt": "For the predictive scheduling/performance dashboard, explain datafication, opacity and nudging and their effects; propose three concrete measures with causal explanations.",
+    "solution": "Datafication reduces complex work to scores/proxies, making people feel objectified. Opacity hides data use and decision logic, producing uncertainty and perceived unfairness. Nudging steers choices through recommendations/defaults, potentially causing pressure and autonomy loss. Measures: (1) an employee-facing data/decision dashboard shows sources, uses and reasons and allows corrections, reducing opacity; (2) qualitative context annotations and human review let employees explain constraints or unusual performance, countering reduction to metrics; (3) managers explain recommendations before adopting them and provide a genuine contest/override route, making authority accountable and reducing covert steering. Measures must have owners and workable response processes.",
+    "criteria": "Official pp11–13: three concepts each definition0.5 + effect0.5 =3; three concrete feasible measures with explanation4 each =12; total15.",
+    "method": "Three concepts × case effect; then three measures × exact mechanism/outcome.",
+    "pitfall": "A vague promise of fairness with no feasible process or employee agency.",
+    "transfer": "How would you evaluate whether the dashboard reduced stress?",
+    "points": 15,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        11,
+        12,
+        13
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "dw2-3c",
+    "title": "Autonomous analytics and managerial roles",
+    "topic": "People analytics",
+    "source": "s21",
+    "pages": [
+      5
+    ],
+    "prompt": "Discuss how more autonomous PA/AM changes managerial work; weigh benefits/disadvantages and conclude.",
+    "solution": "As systems move from reporting/advice toward autonomous decision execution, managers shift from routine allocation to oversight, exception handling and challenging model assumptions. Benefits include faster scheduling, consistent application of rules and time for strategic or relational work. Risks include deskilling from overreliance, weaker employee relationships, opaque decisions and responsibility gaps; consistent rules can consistently encode bias, so fairness is not automatic. The overall impact depends on governance: retain interpretive, relational and oversight skills, meaningful intervention rights and clear accountability while delegating bounded routine decisions.",
+    "criteria": "Official pp13–14: maturity/autonomy1; positive consequences2; negative consequences2; balanced conclusion2.",
+    "method": "Change in decision authority → changed manager tasks → benefits/risks → conditional conclusion.",
+    "pitfall": "Equating increased consistency with guaranteed fairness.",
+    "transfer": "Which managerial skills become more important when systems handle routine decisions?",
+    "points": 7,
+    "answerStatus": "Derived English model answer; official criteria and examples are separately linked below. ",
+    "official": {
+      "source": "s45",
+      "pages": [
+        13,
+        14
+      ],
+      "note": "Official solution document; criteria below are summarized from these pages. "
+    }
+  },
+  {
+    "id": "pm-recap-generator",
+    "title": "Generator: expected blackout costs",
+    "topic": "Risk",
+    "source": "s43",
+    "pages": [
+      53
+    ],
+    "prompt": "For one summer season, decide whether to buy an extra diesel generator. Purchase costs €12,500. Weekly blackouts have probability 25%; blackouts twice a month 75%. With the generator, respective additional costs are €250 and €75; without it, €18,500 and €2,500. Calculate both EMVs and recommend a risk-neutral choice. Original decision tree: PDF p.53; identical Part 1 pp.53–54.",
+    "solution": "Buy: scenario payoffs −12,750 and −12,575 euros. EMV = 0.25×(−12,750)+0.75×(−12,575) = −12,618.75 euros. Do not buy: EMV = 0.25×(−18,500)+0.75×(−2,500) = −6,500 euros. Do not buy: expected costs are €6,118.75 lower. This is a risk-neutral expected-value decision, not protection against the worst outcome; buying caps the scenario loss more tightly.",
+    "criteria": "Correct scenario totals, probability weights, cost-minimising decision and interpretation; no invented official points.",
+    "method": "Add fixed cost to each scenario once → weight mutually exclusive scenarios → compare expected costs (or maximise negative payoff).",
+    "pitfall": "Treating weekly versus twice-monthly labels as a further multiplier: the tree already supplies season-scenario costs. Omitting the purchase cost.",
+    "transfer": "At what purchase price would the two alternatives have equal expected cost? (€6,381.25, keeping operating costs unchanged.)",
+    "points": null,
+    "answerStatus": "Derived worked solution; original course example and duplicate Part 1 pages linked. No official marking scheme.",
+    "official": {
+      "source": "s43",
+      "pages": [
+        54
+      ],
+      "note": "Official worked arithmetic on p.54, same in s42 p.54. Training wording and risk interpretation are derived."
+    }
+  },
+  {
+    "id": "pm-recap-campus",
+    "title": "Campus hosting: three-year EMV",
+    "topic": "Risk",
+    "source": "s43",
+    "pages": [
+      55
+    ],
+    "prompt": "Campus Management Tool: on-premises hardware/software costs €150,000 initially plus €20,000 maintenance per year. Cloud costs €4 per user per year. Over three years the optimistic rollout (60%) has 10,000 / 25,000 / 40,000 users; pessimistic rollout (40%) 5,000 / 10,000 / 15,000 users. Compare total costs over the first three years and decide. Identical task in Part 1 p.55.",
+    "solution": "On-premises in either scenario: €150,000+3×€20,000 = €210,000. Cloud optimistic: €4×(10,000+25,000+40,000) = €300,000. Cloud pessimistic: €4×(5,000+10,000+15,000) = €120,000. Expected cloud cost = 0.60×€300,000+0.40×€120,000 = €228,000. Choose on-premises under risk neutrality: expected saving €18,000. Cloud is cheaper in the pessimistic scenario; do not confuse fewer users with higher hosting cost. No discounting or residual value is specified.",
+    "criteria": "Correct scenario totals, probability weights, cost-minimising decision and interpretation; no invented official points.",
+    "method": "Sum user-years within each scenario → multiply unit cost → compute fixed alternative → probability-weight totals.",
+    "pitfall": "Using only year-three users; charging €150,000 every year; swapping optimistic probability with pessimistic probability.",
+    "transfer": "What optimistic-scenario probability makes the choices equal? 120,000+180,000p=210,000, so p=50%.",
+    "points": null,
+    "answerStatus": "Derived worked solution; original course example and duplicate Part 1 pages linked. No official marking scheme.",
+    "official": {
+      "source": "s43",
+      "pages": [
+        55
+      ],
+      "note": "Official question only, NOT an official solution. All arithmetic and recommendation here are derived independently. Duplicate: s42 p.55."
+    }
+  }
+]
