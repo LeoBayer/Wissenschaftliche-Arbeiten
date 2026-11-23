@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Scheduling: Netzplan und Critical Path Schritt für Schritt – DWPM Exam Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7a3429dccb032350338bc13218471072.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script>
+  try {
+    if (!window.localStorage.getItem("quarto-color-scheme")) {
+      window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+  } catch (_error) {
+  }
+</script>
+<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DWPM Exam Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resit-roadmap.html"> 
+<span class="menu-text">Nachschreibeklausur</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pm-verstehen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">PM verstehen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pm-verstehen">    
+        <li>
+    <a class="dropdown-item" href="./pm-foundations.html">
+ <span class="dropdown-text">Projekt, Integration, Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-scheduling.html">
+ <span class="dropdown-text">Scheduling und Netzplan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-earned-value.html">
+ <span class="dropdown-text">Kosten und Earned Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-quality-risk.html">
+ <span class="dropdown-text">Qualität, Risiko und EMV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./core.html"> 
+<span class="menu-text">Core Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./concepts.html"> 
+<span class="menu-text">Concept Wiki</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./task-training.html"> 
+<span class="menu-text">Source Task Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice-test.html"> 
+<span class="menu-text">Practice Test</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materials.html"> 
+<span class="menu-text">Material Map</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#schedule-processes" id="toc-schedule-processes" class="nav-link active" data-scroll-target="#schedule-processes">Vom Umfang zum Terminplan</a></li>
+  <li><a href="#dependencies" id="toc-dependencies" class="nav-link" data-scroll-target="#dependencies">Beziehungen: FS, SS, FF und SF</a></li>
+  <li><a href="#cpm" id="toc-cpm" class="nav-link" data-scroll-target="#cpm">CPM: Warum vorwärts Maximum, rückwärts Minimum?</a>
+  <ul class="collapse">
+  <li><a href="#vorwärtsrechnung-forward-pass" id="toc-vorwärtsrechnung-forward-pass" class="nav-link" data-scroll-target="#vorwärtsrechnung-forward-pass">Vorwärtsrechnung / forward pass</a></li>
+  <li><a href="#rückwärtsrechnung-backward-pass" id="toc-rückwärtsrechnung-backward-pass" class="nav-link" data-scroll-target="#rückwärtsrechnung-backward-pass">Rückwärtsrechnung / backward pass</a></li>
+  <li><a href="#puffer-und-interpretation" id="toc-puffer-und-interpretation" class="nav-link" data-scroll-target="#puffer-und-interpretation">Puffer und Interpretation</a></li>
+  </ul></li>
+  <li><a href="#worked-network" id="toc-worked-network" class="nav-link" data-scroll-target="#worked-network">Vollständig gerechnetes Zahlenbeispiel: Mock-Netz</a>
+  <ul class="collapse">
+  <li><a href="#vorwärts-frühestmögliche-termine" id="toc-vorwärts-frühestmögliche-termine" class="nav-link" data-scroll-target="#vorwärts-frühestmögliche-termine">1. Vorwärts: frühestmögliche Termine</a></li>
+  <li><a href="#rückwärts-spätestmögliche-termine" id="toc-rückwärts-spätestmögliche-termine" class="nav-link" data-scroll-target="#rückwärts-spätestmögliche-termine">2. Rückwärts: spätestmögliche Termine</a></li>
+  <li><a href="#vollständige-ergebnistabelle" id="toc-vollständige-ergebnistabelle" class="nav-link" data-scroll-target="#vollständige-ergebnistabelle">3. Vollständige Ergebnistabelle</a></li>
+  </ul></li>
+  <li><a href="#gantt" id="toc-gantt" class="nav-link" data-scroll-target="#gantt">Gantt, Steuerung und Grenzen</a></li>
+  <li><a href="#originalquellen-und-seitenkonvention" id="toc-originalquellen-und-seitenkonvention" class="nav-link" data-scroll-target="#originalquellen-und-seitenkonvention">Originalquellen und Seitenkonvention</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Scheduling: Netzplan und Critical Path Schritt für Schritt</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="./pm-foundations.html">Grundlagen</a> · <a href="./pm-earned-value.html">EVM</a> · <a href="./pm-quality-risk.html">Qualität/Risiko</a> · <a href="./glossary.html">Glossar</a></p>
+<section id="schedule-processes" class="level2">
+<h2 class="anchored" data-anchor-id="schedule-processes">Vom Umfang zum Terminplan</h2>
+<p>Die WBS zerlegt den Umfang. Für die Terminplanung werden daraus <strong>Aktivitäten</strong>, also konkrete Handlungen zur Erstellung der Ergebnisse. Die Dauer einer Aktivität ist nicht automatisch ihr Arbeitsaufwand: Zwei Personentage Arbeit können je nach Verfügbarkeit über mehrere Kalendertage verteilt sein. Auch halbiert eine Verdopplung der Personen nicht immer die Dauer, etwa wegen Abhängigkeiten und Koordinationsaufwand.</p>
+<p>Die sechs <em>Project Schedule Management Processes</em> bauen ein steuerbares Terminmodell auf:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Prozess</th>
+<th>Bedeutung und eigenes Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plan Schedule Management</td>
+<td>Regeln und Verfahren für die Planung und Steuerung festlegen, z. B. Zeiteinheit und Aktualisierungsrhythmus.</td>
+</tr>
+<tr class="even">
+<td>Define Activities</td>
+<td>Konkrete Handlungen identifizieren: Testfälle entwerfen, Testumgebung einrichten, Tests ausführen.</td>
+</tr>
+<tr class="odd">
+<td>Sequence Activities</td>
+<td>Logische Beziehungen festlegen: Tests benötigen einen lauffähigen Build.</td>
+</tr>
+<tr class="even">
+<td>Estimate Activity Durations</td>
+<td>Benötigte Arbeitsperioden bei den angenommenen Ressourcen schätzen.</td>
+</tr>
+<tr class="odd">
+<td>Develop Schedule</td>
+<td>Abhängigkeiten, Dauern, Ressourcen und Beschränkungen zum Terminmodell zusammenführen.</td>
+</tr>
+<tr class="even">
+<td>Control Schedule</td>
+<td>Ist-Stand verfolgen, Plan aktualisieren und Änderungen an der Schedule Baseline steuern.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Operator / Antwortstruktur:</strong> Mock Task 2a verlangt einen Prozess und dessen Aktivitäten. Nicht nur den Namen schreiben, sondern <em>was getan wird und wozu</em>. Für <em>Develop Schedule</em> etwa: Daten zu Abhängigkeiten und Dauern zusammenführen, Netzplan rechnen und Termine entwickeln.</p>
+<blockquote class="blockquote">
+<p>“Sequence Activities identifies and documents logical relationships between project activities. For example, system testing can only start after the required software build is completed. These dependencies form the basis of the schedule network.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> WBS und Netzplan gleichsetzen; Define Activities mit Estimate Activity Durations verwechseln; Terminplanung ohne Ressourcenannahmen als garantiert realisierbar darstellen.</p>
+<details>
+<summary>
+Selbstcheck: „Die Tests dauern drei Tage“ – welcher Prozess? Und „Tests nach Build“?
+</summary>
+Drei Tage ist eine Dauerannahme aus Estimate Activity Durations. „Nach Build“ ist eine Abhängigkeit aus Sequence Activities. Erst deren Zusammenführung im Modell ergibt konkrete Start-/Endtermine.
+</details>
+<p><strong>Quellen:</strong> L03, <code>03 PM Schedule, Cost_36p.pdf</code>, PDF-S. 8–11; <a href="training/s23.pdf#page=1">Mock Exam, PDF-S. 1, Task 2a</a>; PM-Recap Part 1, PDF-S. 15.</p>
+</section>
+<section id="dependencies" class="level2">
+<h2 class="anchored" data-anchor-id="dependencies">Beziehungen: FS, SS, FF und SF</h2>
+<p>Ein <em>predecessor</em> ist der logische Vorgänger, ein <em>successor</em> der Nachfolger. Eine Beziehung setzt eine zeitliche Untergrenze. Sie zwingt nicht automatisch dazu, dass der Nachfolger sofort beginnt.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Beziehung</th>
+<th>Regel</th>
+<th>Eigenes Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Finish-to-Start (FS)</td>
+<td>Nachfolger darf erst starten, wenn Vorgänger beendet ist.</td>
+<td>Abnahme beginnt nach Abschluss der benötigten Tests.</td>
+</tr>
+<tr class="even">
+<td>Start-to-Start (SS)</td>
+<td>Nachfolger darf erst starten, wenn Vorgänger gestartet ist.</td>
+<td>Begleitende Protokollierung startet nicht vor dem Pilotstart.</td>
+</tr>
+<tr class="odd">
+<td>Finish-to-Finish (FF)</td>
+<td>Nachfolger darf erst enden, wenn Vorgänger beendet ist.</td>
+<td>Abschluss der Dokumentation nicht vor Abschluss der Implementierung.</td>
+</tr>
+<tr class="even">
+<td>Start-to-Finish (SF)</td>
+<td>Nachfolger darf erst enden, wenn Vorgänger gestartet ist.</td>
+<td>Alte Bereitschaft endet erst, wenn die neue Bereitschaft begonnen hat.</td>
+</tr>
+</tbody>
+</table>
+<p>Ein <em>lag</em> ist ein zeitlicher Abstand, beispielsweise FS + 2: Nachfolger frühestens zwei Zeiteinheiten nach Vorgängerende. Ein <em>lead</em> erlaubt eine Überlappung. Die einfachen CPM-Formeln unten gelten für <strong>FS ohne Lag/Lead</strong>. Andere Beziehungen müssen als entsprechende Zeitbedingungen berücksichtigt werden; man darf nicht blind überall EF des Vorgängers übernehmen.</p>
+<p><strong>Operator / Herleitung:</strong> <em>Describe / identify relationship</em>: erst klären, welches Ereignis des Vorgängers (Start/Finish) welches Ereignis des Nachfolgers beschränkt → Beziehung benennen → am Fall erklären.</p>
+<blockquote class="blockquote">
+<p>“A finish-to-start dependency means that the successor cannot start until the predecessor has finished. It does not imply that the successor must start immediately.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> FF bedeutet nicht zwingend gleichzeitiges Ende; SS nicht gleiche Dauer; SF ist nicht die umgekehrte Beschriftung einer normalen FS-Beziehung.</p>
+<details>
+<summary>
+Selbstcheck: A endet bei 5, B hat FS + 2 zu A. Frühester Start von B?
+</summary>
+<ol start="7" type="1">
+<li>Erst Ende von A bei 5, dann zwei Zeiteinheiten Abstand. Die unten verwendete Regel ES(B) = EF(A) wäre ohne Berücksichtigung des Lags falsch.</li>
+</ol>
+</details>
+<p><strong>Quellen:</strong> L03, PDF-S. 12–14 (gedruckte Folien 13–15); PM-Recap Part 1, PDF-S. 16–18. Lead/Lag-Beispiel und Erläuterungen sind didaktische Ableitungen.</p>
+</section>
+<section id="cpm" class="level2">
+<h2 class="anchored" data-anchor-id="cpm">CPM: Warum vorwärts Maximum, rückwärts Minimum?</h2>
+<p>Die <em>Critical Path Method (CPM)</em> berechnet, wie lange das Projekt unter den angenommenen Abhängigkeiten und Dauern mindestens benötigt. Der <em>critical path</em> ist ein längster zeitbestimmender Pfad im Netz, nicht der Pfad mit den meisten Knoten oder den höchsten Kosten. Im hier verwendeten unbeschränkten Standardmodell haben kritische Aktivitäten null Gesamtpuffer.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kürzel</th>
+<th>Englisch</th>
+<th>Deutsch / Frage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ES</td>
+<td>Early Start</td>
+<td>Frühester Anfang: Wann kann die Aktivität frühestens beginnen?</td>
+</tr>
+<tr class="even">
+<td>EF</td>
+<td>Early Finish</td>
+<td>Frühestes Ende: Wann wäre sie dann fertig?</td>
+</tr>
+<tr class="odd">
+<td>LS</td>
+<td>Late Start</td>
+<td>Spätester Anfang ohne Verlängerung der berechneten Projektdauer.</td>
+</tr>
+<tr class="even">
+<td>LF</td>
+<td>Late Finish</td>
+<td>Spätestes Ende ohne Verlängerung der berechneten Projektdauer.</td>
+</tr>
+<tr class="odd">
+<td>TF</td>
+<td>Total Float / Slack</td>
+<td>Gesamtpuffer: Um wie viel kann eine Aktivität verschoben werden, ohne das Projektende zu verschieben?</td>
+</tr>
+</tbody>
+</table>
+<section id="vorwärtsrechnung-forward-pass" class="level3">
+<h3 class="anchored" data-anchor-id="vorwärtsrechnung-forward-pass">Vorwärtsrechnung / forward pass</h3>
+<p>Wir starten bei <strong>Tag 0</strong>, wie im Mock Exam, und rechnen mit Zeitpunkten, nicht inklusive gezählten Kalendertagen:</p>
+<ul>
+<li>ES(Startaktivität) = 0.</li>
+<li>ES = <strong>max(EF aller direkten Vorgänger)</strong>.</li>
+<li>EF = ES + Dauer.</li>
+</ul>
+<p>Das Maximum ist nötig, weil alle Voraussetzungen fertig sein müssen. Wenn eine Aktivität auf Vorgänger wartet, die bei 8 und 12 enden, kann sie erst bei 12 beginnen – nicht bei 8 und nicht bei deren Summe 20.</p>
+</section>
+<section id="rückwärtsrechnung-backward-pass" class="level3">
+<h3 class="anchored" data-anchor-id="rückwärtsrechnung-backward-pass">Rückwärtsrechnung / backward pass</h3>
+<p>Zuerst die Projektdauer T als größtes EF der Endaktivitäten bestimmen. Dann:</p>
+<ul>
+<li>LF(Endaktivitäten) = T. Bei mehreren Enden hilft ein gemeinsamer Endknoten mit Dauer 0.</li>
+<li>LF = <strong>min(LS aller direkten Nachfolger)</strong>.</li>
+<li>LS = LF − Dauer.</li>
+</ul>
+<p>Das Minimum ist nötig, weil keine der nachfolgenden Aktivitäten verspätet werden darf. Wenn Nachfolger spätestens bei 10 und 14 beginnen müssen, muss der Vorgänger spätestens bei 10 fertig sein.</p>
+</section>
+<section id="puffer-und-interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="puffer-und-interpretation">Puffer und Interpretation</h3>
+<p><strong>TF = LS − ES = LF − EF.</strong> Null bedeutet im Standardmodell: Jede Verlängerung ohne Ausgleich kann das Projektende verzögern. Ein positiver Puffer ist kein beliebig oft zusätzlich nutzbarer Vorrat für jede Aktivität derselben Kette. Aktivitäten können denselben Pfadpuffer gemeinsam beanspruchen.</p>
+<p><strong>Free Float / freier Puffer</strong> ist die Verzögerung ohne Verschiebung des frühesten Starts eines direkten Nachfolgers: bei FS ohne Lag <strong>FF = min(ES der Nachfolger) − EF</strong>. Für Endaktivitäten betrachtet man den gemeinsamen Endknoten. Gesamtpuffer schützt das Projektende, freier Puffer die frühesten Nachfolgertermine; das sind verschiedene Aussagen. Diese zusätzliche Unterscheidung vertieft die im Kurs als Slack behandelte Gesamtpufferrechnung.</p>
+<p><strong>Operator:</strong> <em>Calculate / identify / explain</em>: Formeln nennen und Werte einsetzen → Vorwärtslauf → Rückwärtslauf → Puffer → kritischen Pfad <strong>in Reihenfolge</strong> und Projektdauer nennen → Wirkung erklären.</p>
+<blockquote class="blockquote">
+<p>“The critical path determines the minimum project duration under the given assumptions. Its activities have zero total float. At a merge, the early start equals the maximum early finish of the predecessors because all required predecessors must be completed.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Bei Verzweigungen summieren statt max/min; LS mit ES verwechseln; Rückwärtslauf ohne vorher bestimmtes T; Tag 1 statt der geforderten 0; null Puffer als „keine Arbeit“ lesen.</p>
+<details>
+<summary>
+Selbstcheck: Vorgänger enden bei 7 und 11; Aktivität dauert 4. Nachfolger müssen spätestens bei 18 und 20 beginnen. Alle Zeitwerte und TF?
+</summary>
+ES = max(7,11) = 11; EF = 15. LF = min(18,20) = 18; LS = 14. TF = 14 − 11 = 3 = 18 − 15. Sie ist in diesem Modell nicht kritisch.
+</details>
+<p><strong>Quellen:</strong> L03, PDF-S. 15–19; PM-Recap Part 1, PDF-S. 19–25; Mock Exam, PDF-S. 1, Task 2b. Free Float und die ergänzenden Randfall-Erklärungen sind eigene methodische Vertiefungen.</p>
+</section>
+</section>
+<section id="worked-network" class="level2">
+<h2 class="anchored" data-anchor-id="worked-network">Vollständig gerechnetes Zahlenbeispiel: Mock-Netz</h2>
+<p>Die folgende Tabelle schreibt das grafische Netz aus <strong>Mock Exam, PDF-S. 1, Task 2b</strong> in lesbarer Form aus. Die Werte sind <strong>eigene nachvollziehbare Berechnungen</strong>, keine behauptete offizielle Musterlösung. Das Blatt fordert in der Formulierung „A1–A5“, zeigt jedoch auch <strong>A6</strong> als Endaktivität. Wir schließen den tatsächlich gezeichneten Endknoten ein. Es werden nicht unbesehen a–r-Werte aus einer OCR-Reihenfolge übernommen.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Aktivität</th>
+<th style="text-align: right;">Dauer</th>
+<th>Direkte Vorgänger</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A1</td>
+<td style="text-align: right;">5</td>
+<td>–</td>
+</tr>
+<tr class="even">
+<td>A2</td>
+<td style="text-align: right;">2</td>
+<td>A1</td>
+</tr>
+<tr class="odd">
+<td>A3</td>
+<td style="text-align: right;">12</td>
+<td>A1</td>
+</tr>
+<tr class="even">
+<td>A4</td>
+<td style="text-align: right;">10</td>
+<td>A1</td>
+</tr>
+<tr class="odd">
+<td>A5</td>
+<td style="text-align: right;">3</td>
+<td>A2</td>
+</tr>
+<tr class="even">
+<td>A6</td>
+<td style="text-align: right;">4</td>
+<td>A3, A4, A5</td>
+</tr>
+</tbody>
+</table>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart LR
+ A1["A1 · 5"] --&gt; A2["A2 · 2"]
+ A1 --&gt; A3["A3 · 12"]
+ A1 --&gt; A4["A4 · 10"]
+ A2 --&gt; A5["A5 · 3"]
+ A3 --&gt; A6["A6 · 4"]
+ A4 --&gt; A6
+ A5 --&gt; A6
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<section id="vorwärts-frühestmögliche-termine" class="level3">
+<h3 class="anchored" data-anchor-id="vorwärts-frühestmögliche-termine">1. Vorwärts: frühestmögliche Termine</h3>
+<ol type="1">
+<li><strong>A1:</strong> ES = 0; EF = 0 + 5 = <strong>5</strong>.</li>
+<li><strong>A2:</strong> ES = EF(A1) = 5; EF = 5 + 2 = <strong>7</strong>.</li>
+<li><strong>A3:</strong> ES = 5; EF = 5 + 12 = <strong>17</strong>.</li>
+<li><strong>A4:</strong> ES = 5; EF = 5 + 10 = <strong>15</strong>.</li>
+<li><strong>A5:</strong> ES = EF(A2) = 7; EF = 7 + 3 = <strong>10</strong>.</li>
+<li><strong>A6:</strong> ES = max(17,15,10) = 17; EF = 17 + 4 = <strong>21</strong>.</li>
+</ol>
+<p><strong>T = 21 Zeiteinheiten.</strong> A6 kann trotz fertiger A5 bei 10 erst starten, wenn auch A3 bei 17 fertig ist.</p>
+</section>
+<section id="rückwärts-spätestmögliche-termine" class="level3">
+<h3 class="anchored" data-anchor-id="rückwärts-spätestmögliche-termine">2. Rückwärts: spätestmögliche Termine</h3>
+<ol type="1">
+<li><strong>A6:</strong> LF = 21; LS = 21 − 4 = <strong>17</strong>.</li>
+<li><strong>A3:</strong> LF = LS(A6) = 17; LS = 17 − 12 = <strong>5</strong>.</li>
+<li><strong>A4:</strong> LF = 17; LS = 17 − 10 = <strong>7</strong>.</li>
+<li><strong>A5:</strong> LF = 17; LS = 17 − 3 = <strong>14</strong>.</li>
+<li><strong>A2:</strong> LF = LS(A5) = 14; LS = 14 − 2 = <strong>12</strong>.</li>
+<li><strong>A1:</strong> LF = min(LS(A2),LS(A3),LS(A4)) = min(12,5,7) = 5; LS = 5 − 5 = <strong>0</strong>.</li>
+</ol>
+</section>
+<section id="vollständige-ergebnistabelle" class="level3">
+<h3 class="anchored" data-anchor-id="vollständige-ergebnistabelle">3. Vollständige Ergebnistabelle</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Aktivität</th>
+<th style="text-align: right;">Dauer</th>
+<th style="text-align: right;">ES</th>
+<th style="text-align: right;">EF</th>
+<th style="text-align: right;">LS</th>
+<th style="text-align: right;">LF</th>
+<th style="text-align: right;">TF</th>
+<th style="text-align: right;">Freier Puffer</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>A2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>A3</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>A4</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td>A5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr class="even">
+<td>A6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p>Die Pfadlängen liefern einen unabhängigen Gegencheck:</p>
+<ul>
+<li>A1 → A2 → A5 → A6: 5 + 2 + 3 + 4 = <strong>14</strong>.</li>
+<li>A1 → A3 → A6: 5 + 12 + 4 = <strong>21</strong>, <strong>kritischer Pfad</strong>.</li>
+<li>A1 → A4 → A6: 5 + 10 + 4 = <strong>19</strong>.</li>
+</ul>
+<p><strong>Übertragung auf a–r im Originaldiagramm:</strong> Nach visueller Prüfung der Knotenfelder (oben ES / Dauer / EF; unten LS / Puffer / LF) ergibt sich:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feld</th>
+<th style="text-align: right;">a</th>
+<th style="text-align: right;">b</th>
+<th style="text-align: right;">c</th>
+<th style="text-align: right;">d</th>
+<th style="text-align: right;">e</th>
+<th style="text-align: right;">f</th>
+<th style="text-align: right;">g</th>
+<th style="text-align: right;">h</th>
+<th style="text-align: right;">i</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wert</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feld</th>
+<th style="text-align: right;">j</th>
+<th style="text-align: right;">k</th>
+<th style="text-align: right;">L</th>
+<th style="text-align: right;">m</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">o</th>
+<th style="text-align: right;">p</th>
+<th style="text-align: right;">q</th>
+<th style="text-align: right;">r</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wert</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table>
+<p>Die Großschreibung <strong>L</strong> folgt dem Blatt; jede Zahl ist aus der obigen Rechnung herleitbar. <a href="training/mock-page-1.png">Originalgrafik öffnen</a>.</p>
+<p>A2 hat sieben Einheiten Gesamtpuffer, aber keinen freien Puffer: Eine Verschiebung verschiebt sofort A5s frühesten Start, zunächst aber noch nicht das Projektende. A2 und A5 haben zusammen nur sieben Einheiten Pfadpuffer, <strong>nicht vierzehn</strong>.</p>
+<blockquote class="blockquote">
+<p>“The project duration is 21 time units. The critical path is A1–A3–A6. A4 has two time units of total float; a three-unit delay to A4 would delay project completion by one time unit, assuming all other activities remain unchanged.”</p>
+</blockquote>
+<details>
+<summary>
+Selbstcheck 1: A3 dauert statt 12 nun 10. Was ändert sich?
+</summary>
+A3 und A4 enden beide bei 15. A6 startet bei 15, endet bei 19. Es gibt jetzt zwei kritische Pfade: A1–A3–A6 und A1–A4–A6. A3 weiter zu verkürzen reduziert das Projektende allein nicht mehr, solange A4 unverändert bleibt.
+</details>
+<details>
+<summary>
+Selbstcheck 2: A2 verspätet sich um 4 und A5 zusätzlich um 4. Reichen die jeweiligen sieben Puffer?
+</summary>
+Nein. Die Verzögerungen derselben Kette addieren sich auf acht. Der Pfad wird 22 statt 14 lang und überschreitet den bisher zeitbestimmenden Pfad von 21 um eine Einheit. Der gemeinsame Puffer darf nicht doppelt verbraucht werden.
+</details>
+</section>
+</section>
+<section id="gantt" class="level2">
+<h2 class="anchored" data-anchor-id="gantt">Gantt, Steuerung und Grenzen</h2>
+<p>Ein <em>Gantt chart</em> zeigt Aktivitäten als Balken auf einer Zeitachse und kann Meilensteine, Abhängigkeiten und Fortschritt darstellen. Ein <em>milestone</em> markiert ein wichtiges Ereignis; er hat typischerweise keine eigene Dauer. Netzplan und Gantt sind ergänzende Darstellungen: Der Netzplan macht die logische Struktur deutlich, der Gantt erleichtert die zeitliche Kommunikation.</p>
+<p><strong>Beispiel / Operator:</strong> Bei <em>recommend schedule action</em> zunächst den gefährdeten kritischen Pfad prüfen. Mehr Ressourcen auf eine Aktivität mit großem Puffer zu setzen, verkürzt nicht automatisch den Endtermin. <em>Crashing</em> versucht durch zusätzliche Ressourcen kritische Dauern zu reduzieren (oft höhere Kosten); <em>fast tracking</em> überlappt zuvor sequenzielle Arbeit (oft höhere Nacharbeits-/Koordinationsrisiken). Diese Begriffe sind ergänzende Lernvertiefung, keine aus dem Mock abgelesene Antwort.</p>
+<blockquote class="blockquote">
+<p>“To recover the completion date, I would first examine the critical and near-critical paths. Shortening an activity with substantial float may not shorten the project. Any schedule acceleration must be evaluated against additional cost and risk.”</p>
+</blockquote>
+<p><strong>Grenzen / Fehler:</strong> Das Standardbeispiel berücksichtigt keine knappen gemeinsam genutzten Ressourcen, Kalender oder externe Fixtermine. Wenn A3 und A4 dieselbe einzige Fachkraft benötigen, ist die rechnerische Parallelität nicht ohne Weiteres ausführbar. Nach Änderungen neu rechnen: Der kritische Pfad kann wechseln; mehrere Pfade können kritisch sein. EVM-SPI allein ersetzt keine Netzplananalyse.</p>
+<details>
+<summary>
+Selbstcheck: A5 um zwei Einheiten verkürzen – wird das Projekt zwei Einheiten kürzer?
+</summary>
+Nein. A3 bleibt zeitbestimmend. Die Verkürzung des nichtkritischen A5 erhöht zunächst nur den Puffer seines Pfads.
+</details>
+<p><strong>Quellen:</strong> L03, PDF-S. 15–20, insbesondere PDF-S. 20 = gedruckte Folie 21 zum Gantt Chart. Maßnahmen und Ressourcengrenzen sind methodische Einordnung; das Beispielnetz ist am <a href="training/s23.pdf#page=1">Original-Mock</a> überprüfbar. <a href="./task-training.html">Im Trainer</a> bleibt <code>mock-2b</code> zum eigenständigen Bearbeiten erhalten.</p>
+</section>
+<section id="originalquellen-und-seitenkonvention" class="level2">
+<h2 class="anchored" data-anchor-id="originalquellen-und-seitenkonvention">Originalquellen und Seitenkonvention</h2>
+<p>Die Angaben oben zählen PDF-Seiten ab <strong>1</strong>. Insbesondere L03 hat ab PDF-S. 4 eine abweichende gedruckte Foliennummer (PDF-S. 15 = Folie 16). Die Dateien sind im <a href="./task-training.html">Quellenregister des Trainers</a> seitenweise durchsuchbar.</p>
+<ul>
+<li><a href="training/s00.pdf">L01: Introduction to the Course</a></li>
+<li><a href="training/s01.pdf">L02: PM Intro, Life Cycle, Integration, Scope</a></li>
+<li><a href="training/s02.pdf">L03: PM Schedule, Cost</a></li>
+<li><a href="training/s03.pdf">L04: PM Quality, Risk</a></li>
+<li><a href="training/s23.pdf">Mock Exam 2024</a></li>
+<li><a href="training/s42.pdf">PM-Recap Part 1 (56 PDF-Seiten)</a></li>
+<li><a href="training/s43.pdf">PM-Recap Part 1 and Part 2 (80 PDF-Seiten)</a></li>
+</ul>
+<p>Die ersten 56 Seiten des kombinierten Recaps entsprechen dem hier herangezogenen Part-1-Themenblock. Beispiele, Erklärungen und Antwortbausteine sind eigene Lernhilfen, außer wo explizit eine offizielle Kursdarstellung genannt ist.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="quiz.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/dwpm\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

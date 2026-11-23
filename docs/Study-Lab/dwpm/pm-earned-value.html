@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Kosten und Earned Value: rechnen, deuten, prognostizieren – DWPM Exam Lab</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-7a3429dccb032350338bc13218471072.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-5694d1e8fc2f35fa742d5d6554b5673a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<script>
+  try {
+    if (!window.localStorage.getItem("quarto-color-scheme")) {
+      window.localStorage.setItem("quarto-color-scheme", "alternate");
+    }
+  } catch (_error) {
+  }
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">DWPM Exam Lab</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Overview</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./resit-roadmap.html"> 
+<span class="menu-text">Nachschreibeklausur</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-pm-verstehen" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">PM verstehen</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-pm-verstehen">    
+        <li>
+    <a class="dropdown-item" href="./pm-foundations.html">
+ <span class="dropdown-text">Projekt, Integration, Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-scheduling.html">
+ <span class="dropdown-text">Scheduling und Netzplan</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-earned-value.html">
+ <span class="dropdown-text">Kosten und Earned Value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./pm-quality-risk.html">
+ <span class="dropdown-text">Qualität, Risiko und EMV</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./glossary.html"> 
+<span class="menu-text">Glossar</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./core.html"> 
+<span class="menu-text">Core Sheet</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./concepts.html"> 
+<span class="menu-text">Concept Wiki</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./task-training.html"> 
+<span class="menu-text">Source Task Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./practice-test.html"> 
+<span class="menu-text">Practice Test</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./materials.html"> 
+<span class="menu-text">Material Map</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Dunkelmodus umschalten"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#budget" id="toc-budget" class="nav-link active" data-scroll-target="#budget">Schätzen, budgetieren, kontrollieren</a></li>
+  <li><a href="#reserves" id="toc-reserves" class="nav-link" data-scroll-target="#reserves">Cost Baseline, BAC und Reserven</a></li>
+  <li><a href="#pv-ev-ac" id="toc-pv-ev-ac" class="nav-link" data-scroll-target="#pv-ev-ac">PV, EV und AC: drei unterschiedliche Fragen</a></li>
+  <li><a href="#performance" id="toc-performance" class="nav-link" data-scroll-target="#performance">CV, SV, CPI und SPI: jede Rechnung interpretieren</a>
+  <ul class="collapse">
+  <li><a href="#vier-kombinationen" id="toc-vier-kombinationen" class="nav-link" data-scroll-target="#vier-kombinationen">Vier Kombinationen</a></li>
+  </ul></li>
+  <li><a href="#eac" id="toc-eac" class="nav-link" data-scroll-target="#eac">EAC und ETC: zuerst die Annahme, dann die Formel</a>
+  <ul class="collapse">
+  <li><a href="#variante-1-bisherige-abweichung-ist-einmalig" id="toc-variante-1-bisherige-abweichung-ist-einmalig" class="nav-link" data-scroll-target="#variante-1-bisherige-abweichung-ist-einmalig">Variante 1: bisherige Abweichung ist einmalig</a></li>
+  <li><a href="#variante-2-bisherige-kosteneffizienz-setzt-sich-fort" id="toc-variante-2-bisherige-kosteneffizienz-setzt-sich-fort" class="nav-link" data-scroll-target="#variante-2-bisherige-kosteneffizienz-setzt-sich-fort">Variante 2: bisherige Kosteneffizienz setzt sich fort</a></li>
+  <li><a href="#ergänzende-varianten-und-ihre-grenzen" id="toc-ergänzende-varianten-und-ihre-grenzen" class="nav-link" data-scroll-target="#ergänzende-varianten-und-ihre-grenzen">Ergänzende Varianten und ihre Grenzen</a></li>
+  </ul></li>
+  <li><a href="#warum-evm-integration-braucht" id="toc-warum-evm-integration-braucht" class="nav-link" data-scroll-target="#warum-evm-integration-braucht">Warum EVM Integration braucht</a></li>
+  <li><a href="#originalquellen-und-seitenkonvention" id="toc-originalquellen-und-seitenkonvention" class="nav-link" data-scroll-target="#originalquellen-und-seitenkonvention">Originalquellen und Seitenkonvention</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Kosten und Earned Value: rechnen, deuten, prognostizieren</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><a href="./pm-foundations.html">Grundlagen</a> · <a href="./pm-scheduling.html">Netzplan</a> · <a href="./pm-quality-risk.html">Qualität/Risiko</a> · <a href="./glossary.html">Glossar</a></p>
+<section id="budget" class="level2">
+<h2 class="anchored" data-anchor-id="budget">Schätzen, budgetieren, kontrollieren</h2>
+<p><em>Project Cost Management</em> umfasst Plan Cost Management, Estimate Costs, Determine Budget und Control Costs. Eine <strong>Schätzung</strong> ist eine begründete Annäherung an benötigte finanzielle Ressourcen. Ein <strong>Budget</strong> ist eine genehmigte finanzielle Vorgabe. Eine <strong>Prognose</strong> beschreibt die aktuell erwarteten Endkosten. Diese Zahlen können voneinander abweichen, ohne dass eine davon automatisch „falsch“ ist.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Schätzmethode</th>
+<th>Mechanismus und Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Analogous / top-down estimating</td>
+<td>Ähnliche frühere Projekte als Vergleich nutzen; schnell, aber Vergleichbarkeit kritisch prüfen.</td>
+</tr>
+<tr class="even">
+<td>Expert judgement</td>
+<td>Sachkundige Einschätzungen nutzen; Annahmen und Erfahrung sichtbar machen.</td>
+</tr>
+<tr class="odd">
+<td>Parametric estimating</td>
+<td>Kosten über einen statistischen Zusammenhang schätzen, etwa Anzahl standardisierter Einheiten × empirische Kosten je Einheit.</td>
+</tr>
+<tr class="even">
+<td>Three-point estimating</td>
+<td>Optimistische, wahrscheinlichste und pessimistische Werte berücksichtigen; nicht nur einen scheinbar sicheren Einzelwert angeben.</td>
+</tr>
+<tr class="odd">
+<td>Bottom-up estimating</td>
+<td>Kleine Komponenten/Arbeitspakete schätzen und nach oben aggregieren; detaillierter, aber aufwendiger und von vollständigem Scope abhängig.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Beispiel:</strong> Zehn standardisierte Installationen zu je 500 € ergeben parametrisch 5.000 €. Das passt nur, wenn der Einheitenpreis im vorliegenden Kontext anwendbar ist; individuelle Anpassungen dürfen nicht unterschlagen werden.</p>
+<p><strong>Operator / Antwortstruktur:</strong> <em>Describe / compare</em>: Datenbasis → Vorgehen → angemessener Einsatz → Grenze nennen. <em>Determine Budget</em> aggregiert Schätzungen zur genehmigten zeitbezogenen Cost Baseline.</p>
+<blockquote class="blockquote">
+<p>“Bottom-up estimating estimates costs at a detailed level and aggregates them. It can improve traceability, but it requires a sufficiently complete breakdown of the work. An approved budget is not the same as a forecast of final cost.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Sponsorwunsch als belastbare Schätzung ausgeben; detaillierte Zahlen mit automatisch hoher Genauigkeit verwechseln.</p>
+<details>
+<summary>
+Selbstcheck: Ist „das letzte Projekt kostete 80.000 €“ parametrisch?
+</summary>
+Als bloßer Vergleich ist es analogous estimating. Parametric estimating benötigt eine verwendbare Beziehung zwischen Variablen, etwa Aufwand pro standardisierter Einheit.
+</details>
+<p><strong>Quellen:</strong> L03, <code>03 PM Schedule, Cost_36p.pdf</code>, PDF-S. 22–24; PM-Recap Part 1, PDF-S. 26.</p>
+</section>
+<section id="reserves" class="level2">
+<h2 class="anchored" data-anchor-id="reserves">Cost Baseline, BAC und Reserven</h2>
+<p>Die <strong>cost baseline</strong> ist das genehmigte zeitbezogene Projektbudget als Vergleichsbasis. <strong>Budget at Completion (BAC)</strong> bezeichnet im EVM den gesamten budgetierten Wert der geplanten Arbeit, also die Cost Baseline am Projektende. Das ist <strong>nicht</strong> die Summe der heute angefallenen Kosten.</p>
+<ul>
+<li><strong>Contingency reserve:</strong> Reserve für identifizierte Unsicherheit (<em>known unknowns</em>), z. B. erwartbare Nacharbeit, deren genauer Umfang offen ist. Sie ist in der Cost Baseline enthalten.</li>
+<li><strong>Management reserve:</strong> Reserve für unvorhergesehene Arbeit innerhalb des Projektumfangs (<em>unknown unknowns</em>). Sie liegt außerhalb der Cost Baseline, gehört aber zum Gesamtprojektbudget. Ihre Nutzung erfordert entsprechende Genehmigung/Anpassung der Baseline.</li>
+<li><strong>Project budget = cost baseline + management reserve.</strong></li>
+</ul>
+<p><strong>Eigenes Beispiel:</strong> Geschätzte Arbeit 90.000 €, Contingency 10.000 €, Management Reserve 5.000 €. Dann Baseline/BAC = <strong>100.000 €</strong>, Gesamtbudget = <strong>105.000 €</strong>. Man darf für EVM nicht ungeprüft 105.000 € als BAC einsetzen.</p>
+<p><strong>Operator / Herleitung:</strong> <em>Distinguish / calculate</em>: Reserve dem richtigen Unsicherheitstyp zuordnen → feststellen, ob in Baseline enthalten → Baseline und Gesamtbudget getrennt berechnen.</p>
+<blockquote class="blockquote">
+<p>“The cost baseline includes contingency reserves but excludes management reserves. The overall project budget equals the cost baseline plus the management reserve.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Contingency und Management Reserve synonym verwenden; Reserve als genehmigte Finanzierung beliebiger Zusatzfunktionen verstehen; BAC, AC und EAC verwechseln.</p>
+<details>
+<summary>
+Selbstcheck: Baseline 200, Management Reserve 20, AC 75. Wie hoch sind BAC und Gesamtbudget?
+</summary>
+BAC = 200; Gesamtbudget = 220. AC = 75 beschreibt bisherige tatsächliche Kosten und wird nicht zusätzlich zur Baseline addiert.
+</details>
+<p><strong>Quellen:</strong> L03, PDF-S. 25–27, 33; PM-Recap Part 1, PDF-S. 27–29, 47.</p>
+</section>
+<section id="pv-ev-ac" class="level2">
+<h2 class="anchored" data-anchor-id="pv-ev-ac">PV, EV und AC: drei unterschiedliche Fragen</h2>
+<p><em>Earned Value Management (EVM)</em> verbindet Umfang, Terminplan und Kosten. Es vergleicht nicht nur ausgegebenes Geld mit einem Ausgabenplan, sondern berücksichtigt, <strong>welche Arbeit tatsächlich fertig ist</strong>. Alle drei Größen müssen sich auf denselben Stichtag und denselben betrachteten Umfang beziehen.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Größe</th>
+<th>Präzise englische Definition</th>
+<th>Deutsche Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PV – Planned Value</strong></td>
+<td>The authorised budget assigned to scheduled work.</td>
+<td>Budgetierter Wert der Arbeit, die bis zum Stichtag fertig sein sollte. Legacy: BCWS.</td>
+</tr>
+<tr class="even">
+<td><strong>EV – Earned Value</strong></td>
+<td>The budgeted value of the work actually performed.</td>
+<td>Tatsächlich erbrachte Arbeit, bewertet zu ihren <strong>geplanten</strong> Kosten. Legacy: BCWP.</td>
+</tr>
+<tr class="odd">
+<td><strong>AC – Actual Cost</strong></td>
+<td>The cost actually incurred for the work performed.</td>
+<td>Tatsächliche Kosten der erbrachten Arbeit. Legacy: ACWP.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Eigenes Beispiel:</strong> Ein Projekt hat BAC = 10.000 €. Bis heute sollten 50 % des budgetierten Arbeitswerts erledigt sein, tatsächlich sind 40 % erbracht, ausgegeben wurden 4.500 €. Dann <strong>PV = 5.000 €, EV = 4.000 €, AC = 4.500 €</strong>. Die Prozentrechnung setzt voraus, dass die Fortschrittsmessung sachgerecht den budgetierten Wert abbildet. „Vier von zehn Features“ ist bei unterschiedlich großen Features nicht zwingend 40 % EV.</p>
+<p>Nur AC &lt; PV zu sehen (4.500 &lt; 5.000) würde voreilig „gut unter Budget“ suggerieren. Tatsächlich wurden für Arbeit mit geplantem Wert 4.000 € bereits 4.500 € ausgegeben: Kosteneffizienz ist schlecht <strong>und</strong> es fehlt Arbeitsfortschritt.</p>
+<p><strong>Operator / Antwortstruktur:</strong> <em>Define / calculate / interpret</em>: geplant sein soll → tatsächlich geleistet → tatsächlich ausgegeben; anschließend erst Formeln anwenden.</p>
+<blockquote class="blockquote">
+<p>“Earned value is not the money spent. It is the budgeted value of the work actually completed. Comparing EV with AC measures cost performance; comparing EV with PV measures schedule performance in value terms.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> EV als Umsatz oder Gewinn lesen; EV = AC setzen; PV mit BAC verwechseln; ungeprüft Prozentzahlen mitteln.</p>
+<details>
+<summary>
+Selbstcheck: Arbeit mit Budgetwert 8.000 € ist fertig und kostet 9.000 €. Wie hoch sind EV und AC?
+</summary>
+EV = 8.000 €, AC = 9.000 €. Der Budgetwert der Leistung ändert sich nicht dadurch, dass ihre Herstellung teurer wurde. PV braucht zusätzlich den geplanten Stand zum Stichtag.
+</details>
+<p><strong>Quellen:</strong> L03, PDF-S. 29–30, 36; PM-Recap Part 1, PDF-S. 30–33.</p>
+</section>
+<section id="performance" class="level2">
+<h2 class="anchored" data-anchor-id="performance">CV, SV, CPI und SPI: jede Rechnung interpretieren</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kennzahl</th>
+<th>Formel</th>
+<th>Richtige Lesart</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cost Variance <strong>CV</strong></td>
+<td>EV − AC</td>
+<td>Positiv: für die erbrachte Leistung unter den budgetierten Kosten; negativ: darüber. Einheit Geld.</td>
+</tr>
+<tr class="even">
+<td>Schedule Variance <strong>SV</strong></td>
+<td>EV − PV</td>
+<td>Positiv: mehr budgetierter Arbeitswert erbracht als geplant; negativ: weniger. Einheit <strong>Geld/Wert, nicht Tage</strong>.</td>
+</tr>
+<tr class="odd">
+<td>Cost Performance Index <strong>CPI</strong></td>
+<td>EV / AC</td>
+<td>&gt; 1 günstig; &lt; 1 ungünstig. Erbrachter budgetierter Wert pro tatsächlich ausgegebener Geldeinheit.</td>
+</tr>
+<tr class="even">
+<td>Schedule Performance Index <strong>SPI</strong></td>
+<td>EV / PV</td>
+<td>&gt; 1 voraus; &lt; 1 zurück. Erbrachter Wert im Verhältnis zum geplanten Wert.</td>
+</tr>
+</tbody>
+</table>
+<p>Merksatz: <strong>EV steht immer zuerst bzw. oben.</strong> Null ist bei den Varianzen der neutrale Wert, eins bei den Indizes. Division durch null ergibt keinen definierten Index. Bei Nullwerten deshalb den Datenstand erklären, statt scheinbar korrekte Zahlen zu erfinden.</p>
+<p>Im Beispiel mit PV = 5.000, EV = 4.000, AC = 4.500:</p>
+<ol type="1">
+<li>CV = 4.000 − 4.500 = <strong>−500 €</strong>.</li>
+<li>SV = 4.000 − 5.000 = <strong>−1.000 €</strong>.</li>
+<li>CPI = 4.000 / 4.500 ≈ <strong>0,889</strong>: pro ausgegebenem Euro entstehen nur rund 0,889 € budgetierter Arbeitswert.</li>
+<li>SPI = 4.000 / 5.000 = <strong>0,8</strong>: 80 % des bis heute geplanten Arbeitswerts sind erbracht.</li>
+</ol>
+<blockquote class="blockquote">
+<p>“The project is over budget for the work performed and behind schedule in earned-value terms. CPI is approximately 0.889 and SPI is 0.8. The schedule variance of −1,000 euros does not directly state the delay in days.”</p>
+</blockquote>
+<p><strong>Abgrenzung zur Terminprognose:</strong> SPI = 0,8 bedeutet nicht ohne weitere Annahmen „20 % später fertig“. Verzögerung einer kritischen Aktivität wirkt anders als fehlender Fortschritt bei nichtkritischer Arbeit. Am vollständigen Projektende ist EV = PV = BAC und SPI = 1, selbst wenn das Projekt spät fertig wurde. Für verbleibende Termine braucht man den <a href="./pm-scheduling.html">Netzplan</a>.</p>
+<section id="vier-kombinationen" class="level3">
+<h3 class="anchored" data-anchor-id="vier-kombinationen">Vier Kombinationen</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Kosten / Zeitwert</th>
+<th>Interpretation</th>
+<th>Ansatz für eine begründete Maßnahme</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CPI &gt; 1, SPI &gt; 1</td>
+<td>Kosteneffizient und voraus.</td>
+<td>Ursachen/Qualität prüfen, nicht blind Ressourcen abziehen.</td>
+</tr>
+<tr class="even">
+<td>CPI &gt; 1, SPI &lt; 1</td>
+<td>Kosteneffizient, aber zurück.</td>
+<td>Kritische Termine und Möglichkeiten zur Aufholung prüfen.</td>
+</tr>
+<tr class="odd">
+<td>CPI &lt; 1, SPI &gt; 1</td>
+<td>Voraus, aber teuer.</td>
+<td>Kostentreiber untersuchen, Terminvorsprung gegen Aufwand abwägen.</td>
+</tr>
+<tr class="even">
+<td>CPI &lt; 1, SPI &lt; 1</td>
+<td>Beide Dimensionen ungünstig.</td>
+<td>Ursachenanalyse und integrierte Gegenmaßnahmen.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mock-Bezug:</strong> Task 3d, EV = 29.000, PV = 32.000, AC = 28.000: CV = +1.000, SV = −3.000, CPI ≈ 1,036, SPI = 0,90625. Also hinter dem geplanten Fortschritt, jedoch kosteneffizient für die erbrachte Arbeit. Task 3e mit SPI = 0,75 und CPI = 1,1 legt den Schwerpunkt auf Terminaufholung, nicht auf weitere pauschale Kostensenkung. Die konkrete Maßnahme muss auf Ursachen und kritischen Pfad passen.</p>
+<p><strong>Operator / Antwortstruktur:</strong> <em>Calculate and describe status</em>: Formel → Einsetzen → Ergebnis mit Einheit bzw. dimensionslosem Index → günstige/ungünstige Bedeutung → begründete Maßnahme, falls gefragt.</p>
+<p><strong>Fehler:</strong> „Negativer SV = so viele Tage verspätet“; „CPI 1,1 = zehn Prozent Gewinn“; allein aus Kosteneffizienz auf Erfolg schließen.</p>
+<details>
+<summary>
+Selbstcheck: PV = 120, EV = 100, AC = 80. Alle vier Kennzahlen?
+</summary>
+CV = +20; SV = −20; CPI = 1,25; SPI ≈ 0,833. Die erbrachte Arbeit kostet weniger als budgetiert, aber der Arbeitsfortschritt liegt hinter dem Plan. Das ist kein Widerspruch, sondern zwei unterschiedliche Vergleiche.
+</details>
+<p><strong>Quellen:</strong> L03, PDF-S. 31–32, 34–36; PM-Recap Part 1, PDF-S. 30–33; <a href="training/s23.pdf#page=2">Mock Exam, PDF-S. 2–3, Task 3</a>.</p>
+</section>
+</section>
+<section id="eac" class="level2">
+<h2 class="anchored" data-anchor-id="eac">EAC und ETC: zuerst die Annahme, dann die Formel</h2>
+<p><strong>Estimate to Complete (ETC)</strong> sind die erwarteten Kosten der verbleibenden Arbeit. <strong>Estimate at Completion (EAC)</strong> sind die erwarteten Gesamtkosten. Es gilt immer als Zusammenführung von Vergangenheit und Prognose: <strong>EAC = AC + ETC</strong>. Ob ETC dem verbleibenden Planbudget entspricht, ist dagegen eine <strong>Annahme</strong>.</p>
+<section id="variante-1-bisherige-abweichung-ist-einmalig" class="level3">
+<h3 class="anchored" data-anchor-id="variante-1-bisherige-abweichung-ist-einmalig">Variante 1: bisherige Abweichung ist einmalig</h3>
+<p>Wenn der Rest so effizient wie ursprünglich budgetiert erledigt wird:</p>
+<p><strong>ETC = BAC − EV</strong> und <strong>EAC = AC + (BAC − EV)</strong>.</p>
+<p>Bereits bezahlte Mehr-/Minderkosten bleiben in AC enthalten; sie werden nicht rückwirkend gelöscht. Für den Rest wird lediglich kein fortgesetzter Effizienzverlust angenommen.</p>
+<p><strong>Mock Task 3c:</strong> PV = 1.000, EV = 1.100, AC = 900, BAC = 1.350. Die Aufgabenstellung sagt ausdrücklich, bisherige Abweichungen setzen sich nicht fort.</p>
+<ul>
+<li>Verbleibender budgetierter Arbeitswert = 1.350 − 1.100 = <strong>250</strong>.</li>
+<li>EAC = 900 + 250 = <strong>1.150</strong>.</li>
+<li>250 ist <strong>ETC</strong>, nicht EAC; 1.350 ist <strong>BAC</strong>, nicht automatisch der neue Forecast. PV ist für genau diese EAC-Rechnung nicht erforderlich.</li>
+</ul>
+<blockquote class="blockquote">
+<p>“Because the previous variances are assumed not to recur, the remaining work is expected to be completed at its budgeted cost. Therefore, EAC = AC + BAC − EV = 900 + 1,350 − 1,100 = 1,150.”</p>
+</blockquote>
+</section>
+<section id="variante-2-bisherige-kosteneffizienz-setzt-sich-fort" class="level3">
+<h3 class="anchored" data-anchor-id="variante-2-bisherige-kosteneffizienz-setzt-sich-fort">Variante 2: bisherige Kosteneffizienz setzt sich fort</h3>
+<p>Wenn CPI die verbleibende Kosteneffizienz angemessen beschreibt:</p>
+<p><strong>ETC = (BAC − EV) / CPI</strong>, somit <strong>EAC = AC + (BAC − EV) / CPI = BAC / CPI</strong>.</p>
+<p>Die letzte Gleichheit gilt bei CPI = EV/AC und konsistenten kumulierten Größen. Bei CPI &lt; 1 wird der verbleibende Arbeitswert entsprechend teurer. Diese Variante darf nicht gewählt werden, wenn ausdrücklich eine einmalige Abweichung vorgegeben ist.</p>
+<p><strong>Eigenes Vergleichsbeispiel:</strong> BAC = 400, EV = 150, AC = 180, PV = 200. CPI = 150/180 = 5/6, SPI = 0,75.</p>
+<ul>
+<li>Einmalige Abweichung: EAC = 180 + 250 = <strong>430</strong>.</li>
+<li>Kosteneffizienz bleibt: EAC = 400 / (5/6) = <strong>480</strong>; ETC = 300.</li>
+</ul>
+</section>
+<section id="ergänzende-varianten-und-ihre-grenzen" class="level3">
+<h3 class="anchored" data-anchor-id="ergänzende-varianten-und-ihre-grenzen">Ergänzende Varianten und ihre Grenzen</h3>
+<p>Die Kursfolien stellen vor allem die obigen zwei ETC-Ansätze und EAC = AC + ETC dar. Folgende Varianten sind <strong>ergänzende methodische Vertiefung, nicht behaupteter zusätzlicher Mock-Prüfungsstoff</strong>:</p>
+<ul>
+<li><strong>Neue Bottom-up-Schätzung:</strong> Wenn die ursprüngliche Restplanung nicht mehr tragfähig ist, ETC neu schätzen; EAC = AC + neu geschätztes ETC. Beispiel: neue Restschätzung 310 → EAC = 180 + 310 = <strong>490</strong>.</li>
+<li><strong>Kombinierter CPI/SPI-Ansatz:</strong> Wenn begründet sowohl Termin- als auch Kosteneffizienz die Restkosten beeinflussen sollen: EAC = AC + (BAC − EV)/(CPI × SPI). Im Beispiel: 180 + 250/(5/6 × 0,75) = <strong>580</strong>. Die Multiplikation ist eine Modellannahme, keine universelle Wahrheit; Terminrückstand wirkt nicht automatisch proportional auf Kosten.</li>
+<li><strong>Variance at Completion (VAC):</strong> BAC − EAC. Beim EAC 480 ist VAC = −80, also erwartete Überschreitung der Baseline um 80. VAC ist nicht die bisherige CV.</li>
+</ul>
+<p><strong>Operator / Herleitung:</strong> <em>Estimate / calculate under the assumption</em>: Annahme wörtlich identifizieren → Restarbeitswert BAC − EV → passende Restkostenannahme → bereits angefallene AC addieren → Prognose deuten. Die Begründung der Formel gehört zur Antwort.</p>
+<p><strong>Fehler:</strong> EAC = BAC als Standard setzen; AC erneut durch CPI teilen; einmalige Abweichung mit dauerhaftem CPI fortschreiben; Zwischenwerte zu früh runden; die größte Prognose automatisch als „richtige/sicherste“ Lösung wählen.</p>
+<details>
+<summary>
+Selbstcheck: BAC = 1.000, EV = 400, AC = 500. Einmalige Störung oder dauerhaft CPI?
+</summary>
+CPI = 0,8. Bei einmaliger Störung: EAC = 500 + 600 = <strong>1.100</strong>, ETC = 600. Bei fortgesetzter Kosteneffizienz: EAC = 1.000/0,8 = <strong>1.250</strong>, ETC = 750. Ohne Zukunftsannahme gibt es keine eindeutig richtige Auswahl zwischen diesen Modellen.
+</details>
+<p><strong>Quellen:</strong> L03, PDF-S. 33 und 36 (<strong>nicht</strong> gedruckte Foliennummern 33/36; die gedruckten Folien heißen hier 34/37); <a href="training/s23.pdf#page=2">Mock Exam, PDF-S. 2, Task 3c</a>; PM-Recap Part 1, PDF-S. 33. Die ergänzenden Forecastvarianten sind eigene fachliche Vertiefungen.</p>
+</section>
+</section>
+<section id="warum-evm-integration-braucht" class="level2">
+<h2 class="anchored" data-anchor-id="warum-evm-integration-braucht">Warum EVM Integration braucht</h2>
+<p>Eine Scope-Änderung verändert die geplante Arbeit und kann die Baseline verändern. Schlechte Qualität kann zu Nacharbeit führen; Risiken beeinflussen Reserven und Forecast. EV ist nur belastbar, wenn „fertig“ sachgerecht definiert und Leistung geprüft wird. Ein Team, das unfertige Arbeit als fertig meldet, verbessert nur scheinbar CPI/SPI. Verbinde deshalb EVM mit <a href="./pm-foundations.html#validation">Scope und Abnahme</a>, <a href="./pm-scheduling.html">Netzplan</a> und <a href="./pm-quality-risk.html">Qualitäts-/Risikomanagement</a>.</p>
+</section>
+<section id="originalquellen-und-seitenkonvention" class="level2">
+<h2 class="anchored" data-anchor-id="originalquellen-und-seitenkonvention">Originalquellen und Seitenkonvention</h2>
+<p>Die Angaben oben zählen PDF-Seiten ab <strong>1</strong>. Insbesondere L03 hat ab PDF-S. 4 eine abweichende gedruckte Foliennummer (PDF-S. 15 = Folie 16). Die Dateien sind im <a href="./task-training.html">Quellenregister des Trainers</a> seitenweise durchsuchbar.</p>
+<ul>
+<li><a href="training/s00.pdf">L01: Introduction to the Course</a></li>
+<li><a href="training/s01.pdf">L02: PM Intro, Life Cycle, Integration, Scope</a></li>
+<li><a href="training/s02.pdf">L03: PM Schedule, Cost</a></li>
+<li><a href="training/s03.pdf">L04: PM Quality, Risk</a></li>
+<li><a href="training/s23.pdf">Mock Exam 2024</a></li>
+<li><a href="training/s42.pdf">PM-Recap Part 1 (56 PDF-Seiten)</a></li>
+<li><a href="training/s43.pdf">PM-Recap Part 1 and Part 2 (80 PDF-Seiten)</a></li>
+</ul>
+<p>Die ersten 56 Seiten des kombinierten Recaps entsprechen dem hier herangezogenen Part-1-Themenblock. Beispiele, Erklärungen und Antwortbausteine sind eigene Lernhilfen, außer wo explizit eine offizielle Kursdarstellung genannt ist.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script src="quiz.js"></script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/leobayer\.github\.io\/Wissenschaftliche-Arbeiten\/Study-Lab\/dwpm\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

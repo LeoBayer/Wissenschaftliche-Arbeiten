@@ -252,3 +252,8 @@ body.quarto-dark .btn:hover {
 #task-trainer label,#source-register label{max-width:100%;min-width:0}
 #task-trainer select,#source-register select{display:block;width:100%;min-width:0}
 #task-trainer input[type=file]{max-width:100%}
+
+/* Wide calculation/glossary tables stay scrollable within the mobile page. */
+main table { display: block; max-width: 100%; overflow-x: auto; }
+main pre { max-width: 100%; overflow-x: auto; }
+main details > summary { cursor: pointer; }

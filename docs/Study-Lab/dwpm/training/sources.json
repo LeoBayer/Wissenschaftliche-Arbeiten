@@ -80,7 +80,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s00.pdf"
   },
   {
     "file": "02 PM Intro, Life Cycle, Integration, Scope_67p.pdf",
@@ -168,7 +169,8 @@
     "lowTextPages": [
       41
     ],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s01.pdf"
   },
   {
     "file": "03 PM Schedule, Cost_36p.pdf",
@@ -224,7 +226,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s02.pdf"
   },
   {
     "file": "04 PM Quality, Risk.pdf",
@@ -290,7 +293,8 @@
     ],
     "review": "Text extracted; task detection is heuristic, NOT a completed page audit.",
     "lowTextPages": [],
-    "group": "Lecture"
+    "group": "Lecture",
+    "download": "training/s03.pdf"
   },
   {
     "file": "05 DW Data-Driven Decision Making.pdf",
