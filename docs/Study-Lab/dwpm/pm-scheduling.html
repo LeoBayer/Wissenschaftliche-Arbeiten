@@ -358,6 +358,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="./coverage.html"> 
+<span class="menu-text">Aufgaben–Konzept-Matrix</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./glossary.html"> 
 <span class="menu-text">Glossar</span></a>
   </li>  
@@ -414,6 +418,7 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#gantt" id="toc-gantt" class="nav-link" data-scroll-target="#gantt">Gantt, Steuerung und Grenzen</a></li>
   <li><a href="#originalquellen-und-seitenkonvention" id="toc-originalquellen-und-seitenkonvention" class="nav-link" data-scroll-target="#originalquellen-und-seitenkonvention">Originalquellen und Seitenkonvention</a></li>
+  <li><a href="#party" id="toc-party" class="nav-link" data-scroll-target="#party">Zweiter Originalfall: Party Project unabhängig rechnen</a></li>
   </ul>
 </nav>
     </div>
@@ -912,6 +917,101 @@ Nein. A3 bleibt zeitbestimmend. Die Verkürzung des nichtkritischen A5 erhöht z
 <li><a href="training/s43.pdf">PM-Recap Part 1 and Part 2 (80 PDF-Seiten)</a></li>
 </ul>
 <p>Die ersten 56 Seiten des kombinierten Recaps entsprechen dem hier herangezogenen Part-1-Themenblock. Beispiele, Erklärungen und Antwortbausteine sind eigene Lernhilfen, außer wo explizit eine offizielle Kursdarstellung genannt ist.</p>
+</section>
+<section id="party" class="level2">
+<h2 class="anchored" data-anchor-id="party">Zweiter Originalfall: Party Project unabhängig rechnen</h2>
+<p>Der Recap zeigt ein anderes Netz als die Mock-Klausur. Methode und Knotenfelder sind gleich, Zahlen und Verzweigungen nicht. <strong>Quelle:</strong> <a href="training/s43.pdf#page=19">PM-Recap kombiniert, PDF-S. 19–25</a>, auch <a href="training/s13.pdf#page=34">Q&amp;A PDF-S. 34–40</a>. Die Pfeile auf PDF-S. 19 wurden visuell geprüft. Alle Beziehungen im Beispiel werden als Finish-to-Start ohne Lag gerechnet.</p>
+<p>Nach <strong>Plan party (2)</strong> laufen drei Zweige: <strong>Invite friends (4)</strong>; <strong>Buy drinks and food (3) → Prepare food (5)</strong>; <strong>Clean up before (3)</strong>. Alle müssen vor <strong>Conduct party (6)</strong> fertig sein; danach folgt <strong>Clean up after (3)</strong>.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Activity</th>
+<th style="text-align: right;">ES</th>
+<th style="text-align: right;">Duration</th>
+<th style="text-align: right;">EF</th>
+<th style="text-align: right;">LS</th>
+<th style="text-align: right;">Total float</th>
+<th style="text-align: right;">LF</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Plan party</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>Invite friends</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td>Buy drinks and food</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>Prepare food</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td>Clean up before</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="even">
+<td>Conduct party</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="odd">
+<td>Clean up after</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">19</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Herleitung:</strong> Partybeginn = max(6, 10, 5) = 10. Projektende = 10 + 6 + 3 = <strong>19</strong>. Rückwärts muss beispielsweise Invite friends spätestens bei 10 fertig sein; LS = 10 − 4 = 6; Gesamtpuffer = 6 − 2 = 4. Kritischer Pfad: <strong>Plan → Buy → Prepare → Conduct → Clean after</strong>, Dauer 2 + 3 + 5 + 6 + 3 = 19. „Die Party beginnt bei 10“ ist nicht die Projektdauer: Durchführung und Nachbereitung gehören dazu.</p>
+<p><strong>Operator:</strong> <em>Calculate and identify</em>: Pfeile übernehmen → Vorwärtsrechnung mit Maximum → Rückwärtsrechnung mit Minimum → Puffer → Pfad und gesamte Dauer. Nicht die 21 Tage des Mock-Netzes auswendig übertragen.</p>
+<blockquote class="blockquote">
+<p>“The party starts at time 10 because all three predecessor branches must be complete. The project finishes at time 19. The critical path runs through planning, buying supplies, preparing food, conducting the party and cleaning up afterwards.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Knotendauern aller parallelen Zweige addieren; Partybeginn mit Projektende verwechseln; 4 und 5 Einheiten Puffer als zusätzliche Projektzeit zählen.</p>
+<details>
+<summary>
+Selbstcheck: Einladungen brauchen zwei Einheiten länger. Neues Projektende? Und bei fünf Einheiten mehr?
+</summary>
+Bei zwei zusätzlichen Einheiten beträgt ihr EF 8; die Vorbereitung endet weiterhin erst bei 10. Projektende bleibt 19. Bei fünf zusätzlichen Einheiten endet der Einladungszweig bei 11 und verzögert den Partybeginn um eine Einheit; neues Projektende 20. Das gilt bei unveränderten sonstigen Annahmen.
+</details>
 
 
 </section>

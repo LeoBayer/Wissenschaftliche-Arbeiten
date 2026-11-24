@@ -355,6 +355,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="./coverage.html"> 
+<span class="menu-text">Aufgaben–Konzept-Matrix</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./glossary.html"> 
 <span class="menu-text">Glossar</span></a>
   </li>  
@@ -404,6 +408,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#kanban" id="toc-kanban" class="nav-link" data-scroll-target="#kanban">Kanban: pull, WIP und flow statt nur bunter Zettel</a></li>
   <li><a href="#hybrid" id="toc-hybrid" class="nav-link" data-scroll-target="#hybrid">Hybrid: die Schnittstellen entscheiden</a></li>
   <li><a href="#antwortarchitektur-aus-dem-dw2-tool-sheet" id="toc-antwortarchitektur-aus-dem-dw2-tool-sheet" class="nav-link" data-scroll-target="#antwortarchitektur-aus-dem-dw2-tool-sheet">Antwortarchitektur aus dem DW2 Tool Sheet</a></li>
+  <li><a href="#xp" id="toc-xp" class="nav-link" data-scroll-target="#xp">Extreme Programming (XP): technische Qualität im Vergleich</a></li>
   </ul>
 </nav>
     </div>
@@ -685,6 +690,60 @@ Wenn andere Teilprojekte nicht integrieren können, Freigaben fehlen oder Priori
 <h2 class="anchored" data-anchor-id="antwortarchitektur-aus-dem-dw2-tool-sheet">Antwortarchitektur aus dem DW2 Tool Sheet</h2>
 <p>Das Workbook ordnet Q1 als Kriterienvergleich → Rollenbegründung → Who-does-what je Phase → Pro/Contra und Schluss. Q2 trennt Definition/Formen/Verhältnis, fünf Konfigurationen mit Features, Featureentscheidung und Accountability-Maßnahme. Q3 verlangt Begriffsabgrenzung, Concept–Effect-Zuordnung, drei Maßnahmen mit Wirkungsweg und eine Abwägung zur Managerrolle. Diese Struktur hilft, Operatoren vollständig zu beantworten; sie ersetzt keine Erklärung.</p>
 <p><strong>Quelle:</strong> <code>DW2_Tool_Sheet.docx</code>, im Quellenregister s22. <strong>Kein PDF:</strong> Die zwölf dort gespeicherten Textsegmente sind keine stabilen Originalseiten; deshalb werden hierfür bewusst keine vermeintlichen PDF-Seiten zitiert. Q1 in Segmenten 2–5, Q2 in 5–8, Q3 in 9–11. Keine persönlichen Workbook-Einträge werden veröffentlicht.</p>
+</section>
+<section id="xp" class="level2">
+<h2 class="anchored" data-anchor-id="xp">Extreme Programming (XP): technische Qualität im Vergleich</h2>
+<p><strong>Extreme Programming (XP)</strong> is an agile development approach emphasising frequent feedback and disciplined engineering practices. Während Scrum insbesondere Zusammenarbeit, Verantwortung und den Inspektions-/Anpassungsrhythmus strukturiert, rückt XP die technische Entwicklung und deren Änderbarkeit in den Vordergrund. <strong>Refactoring</strong> bedeutet, die interne Codestruktur zu verbessern, ohne das beobachtbare Verhalten absichtlich zu verändern. Es ist nicht dasselbe wie eine neue Funktion.</p>
+<p>Die Kursvergleichstabelle nennt für XP <strong>simplification of code</strong>, Anpassung durch <strong>refactoring</strong>, <strong>on-site customer interaction</strong>, einen <strong>XP coach</strong>, <strong>story cards</strong> und gemeinsame Produktverantwortung. Ihre Zeile „no prescribed roles“ darf nicht gleichzeitig als „es gibt keinerlei Aufgaben oder Coaching“ gelesen werden: Die Tabelle nennt selbst den Coach. Sie ist eine vereinfachte Gegenüberstellung, keine vollständige normative XP-Spezifikation. Ebenso bedeutet „customer not compulsorily on-site“ bei Scrum/Kanban nicht „kein Kundenfeedback“.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Schwerpunkt</th>
+<th>Scrum</th>
+<th>XP</th>
+<th>Kanban</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Steuerung</td>
+<td>Sprintziel, Rollen, Events und Artefakte</td>
+<td>Technische Qualität und schnelle Rückkopplung</td>
+<td>Sichtbarer Fluss und Begrenzung paralleler Arbeit</td>
+</tr>
+<tr class="even">
+<td>Kursbegriff für Anforderungen</td>
+<td>Product/Sprint Backlog</td>
+<td>Story Cards</td>
+<td>Kanban Board</td>
+</tr>
+<tr class="odd">
+<td>Beispiel</td>
+<td>Sprint liefert getestete Sensorwarnung</td>
+<td>Komplizierte Auswertungslogik wird vereinfacht, Verhalten bleibt erhalten</td>
+<td>Maximal zwei Warnungsänderungen gleichzeitig in Entwicklung</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Abgrenzung:</strong> Diese Ansätze können kombiniert werden. Ein Scrum-Team kann Refactoring praktizieren und zusätzlich WIP begrenzen. Eine Story Card ist eine knappe Anforderungsrepräsentation, kein Ersatz für Klärung und Abnahmekriterien. „Scrum = komplexer Code“ wäre eine falsche Überinterpretation der vereinfachten Tabellenzeile „complex design“.</p>
+<p><strong>Operator / Antwortstruktur:</strong> <em>Compare / explain</em>: gleiches Kriterium → Ausprägung je Methode → Wirkung am Fall → Grenze der Gegenüberstellung. Nicht drei voneinander unabhängige Werbesätze schreiben.</p>
+<blockquote class="blockquote">
+<p>“Scrum structures iterative teamwork, XP emphasises engineering discipline and feedback, and Kanban manages flow by limiting work in progress. These approaches are not mutually exclusive: a Scrum team can use refactoring and WIP limits.”</p>
+</blockquote>
+<p><strong>Häufige Fehler:</strong> XP als bloßen anderen Namen für Scrum behandeln; Refactoring mit Featureentwicklung verwechseln; aus einer Vergleichstabelle ein Kombinationsverbot ableiten.</p>
+<details>
+<summary>
+Selbstcheck: Ein Scrum-Team vereinfacht bestehenden Code und begrenzt parallele Arbeit. Widerspruch?
+</summary>
+Nein. Die Scrum-Struktur kann mit XP-inspirierten Engineering-Praktiken und Kanban-orientierter Flusssteuerung verbunden werden. Refactoring verändert die innere Struktur, nicht absichtlich das äußere Verhalten. Die jeweiligen Mechanismen müssen tatsächlich umgesetzt werden; neue Etiketten allein verbessern nichts.
+</details>
+<p><strong>Quelle:</strong> <a href="training/s43.pdf#page=80">PM-Recap kombiniert, PDF-S. 80</a>. Definition, Beispiel und die begrenzende Interpretation sind eigene didaktische Erläuterungen der Kursvergleichstabelle, keine zusätzliche offizielle Musterlösung.</p>
 
 
 </section>

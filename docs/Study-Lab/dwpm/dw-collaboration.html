@@ -355,6 +355,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="./coverage.html"> 
+<span class="menu-text">Aufgaben–Konzept-Matrix</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./glossary.html"> 
 <span class="menu-text">Glossar</span></a>
   </li>  
@@ -403,6 +407,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#issues" id="toc-issues" class="nav-link" data-scroll-target="#issues">Groupware issues: Kontext bis Synchronisation</a></li>
   <li><a href="#awareness" id="toc-awareness" class="nav-link" data-scroll-target="#awareness">Vier Arten von Awareness</a></li>
   <li><a href="#case" id="toc-case" class="nav-link" data-scroll-target="#case">DW1-Präsentationsfall vollständig herleiten</a></li>
+  <li><a href="#messenger" id="toc-messenger" class="nav-link" data-scroll-target="#messenger">Mock: sechs Messenger-Features präzise zuordnen</a></li>
   </ul>
 </nav>
     </div>
@@ -741,6 +746,69 @@ Selbstcheck: Reicht „Teams durch Slack ersetzen“ als Strategie?
 Nein. Die Ursache liegt in unklaren Referenzen, Versionspraktiken und fehlender Sichtbarkeit/Abstimmung. Ohne Regeln und passende Funktionen kann dieselbe Störung auf einer anderen Plattform wiederkehren.
 </details>
 <p><strong>Quelle:</strong> DW1-Aufgaben PDF-S. 3; Kriterien PDF-S. 11–14. Zum Training: <a href="./task-training.html">bestehende 43 Items</a>, keine neuen Items erforderlich.</p>
+</section>
+<section id="messenger" class="level2">
+<h2 class="anchored" data-anchor-id="messenger">Mock: sechs Messenger-Features präzise zuordnen</h2>
+<p><strong>Quelle:</strong> <a href="training/s23.pdf#page=5">Mock Exam, PDF-S. 5, Q2b–d</a>; <a href="training/s13.pdf#page=81">Q&amp;A-Kriterien PDF-S. 81–94</a>. Die Zuordnungen sind begründete Lernformulierungen; ein Feature kann mehrere Probleme adressieren. Für die Antwort zählt <strong>issue → definition → feature mechanism</strong>, nicht bloß der Produktname.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature aus Q2b</th>
+<th>Konzept und Mechanismus</th>
+<th>Grenze</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Einheitliche Oberfläche auf Geräten</td>
+<td><strong>Consistency</strong> erleichtert gleiche Bedienlogik; <strong>WYSIWIS</strong> betrifft, wie weit die Beteiligten denselben Inhalt/Zustand sehen.</td>
+<td>Gleiche Oberfläche garantiert keinen synchronen Datenstand.</td>
+</tr>
+<tr class="even">
+<td>Zitierte Antwort</td>
+<td><strong>Context / deixis:</strong> Ein stabiler Bezug zeigt, welche Nachricht gemeint ist.</td>
+<td>Der zitierte Text kann selbst mehrdeutig bleiben.</td>
+</tr>
+<tr class="odd">
+<td>Bilder und Videos</td>
+<td><strong>Deixis / shared context:</strong> Ein sichtbares Objekt macht den Bezug einer Beschreibung nachvollziehbar; zusätzliche Ausdrucksmöglichkeiten helfen.</td>
+<td>Mehr Medien allein sichern kein gemeinsames Verständnis.</td>
+</tr>
+<tr class="even">
+<td>„Typing“ / „online“</td>
+<td><strong>Social awareness</strong> (Q&amp;A-Bezeichnung), ergänzend <strong>informal awareness / feedthrough:</strong> Aktivitäten und Verfügbarkeit werden sichtbar; das hilft bei der zeitlichen Abstimmung.</td>
+<td>Online ist nicht gleich aufmerksam oder einverstanden.</td>
+</tr>
+<tr class="odd">
+<td>Emojis und Sticker</td>
+<td><strong>Social cues / social awareness:</strong> Affekt oder Intention können sichtbar werden; fehlende nonverbale Hinweise werden teilweise kompensiert.</td>
+<td>Interpretation ist kultur- und kontextabhängig.</td>
+</tr>
+<tr class="even">
+<td>@-Tagging</td>
+<td><strong>Addressing / awareness:</strong> In Gruppen werden Adressaten und Aufmerksamkeitsbedarf explizit; Weiterleitung/Benachrichtigung unterstützt die Zuordnung.</td>
+<td>Eine Markierung ist keine gelesene, verstandene oder akzeptierte Aufgabe.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Varianten sauber trennen:</strong> Q&amp;A PDF-S. 85 ordnet Status-/Aktivitätsanzeigen unter Social Awareness ein; die Vier-Typen-Tabelle differenziert Verfügbarkeit als Informal Awareness. Beide Perspektiven erklären, welche Information sichtbar wird; bloß „online“ beweist keine Emotion. Q&amp;A PDF-S. 87 erklärt Tagging unter Deixis als expliziten Nachrichtenbezug; bei einem konkreten <span class="citation" data-cites="Person-Feature">@Person-Feature</span> ist Personenadressierung der unmittelbare Mechanismus. Daher die tatsächliche Referenz benennen, nicht jedes @ als Antwort-Thread ausgeben. Q&amp;A PDF-S. 88–91 fragt nach Unified Communications (Teams/Slack/Zoom), während das ursprüngliche Mock Q2c nach Instant Messengers fragt. Das Framework bleibt gleich, gemeinsame Dateibearbeitung darf aber nicht jedem Messenger unterstellt werden.</p>
+<p><strong>Cooperative work framework (Q2c):</strong> Personen kommunizieren direkt über Nachrichten; sie bauen gemeinsamen Kontext auf und beziehen sich auf gemeinsame Artefakte wie Bilder oder Dateien. Ein Foto mit Kommentar verbindet Personenkommunikation und Artefaktbezug. Ein Messenger allein garantiert keine gemeinsame Bearbeitung oder Versionskontrolle aller angehängten Dateien.</p>
+<p><strong>Hybrid awareness (Q2d), zwei bewertete Strategien:</strong> Erstens ein gemeinsamer digitaler Arbeitsraum mit sichtbaren Zuständigkeiten, Änderungen und dokumentierten Entscheidungen; das verbessert structural/workspace awareness und verhindert, dass nur im Büro Anwesende Wissen besitzen. Wirkung durch weniger unbemerkte Doppelarbeit und ungeklärte Freigaben prüfen. Zweitens kurze inklusive Check-ins mit Beteiligungsmöglichkeit für Remote-Mitglieder, klaren Zeitzonen und dokumentiertem Ergebnis; sie stärken informal/social awareness. Wirkung durch Beteiligung und geklärte Missverständnisse prüfen. Grenze: zusätzlicher Meetingaufwand und Datenschutz; permanente Überwachung ist keine Voraussetzung.</p>
+<blockquote class="blockquote">
+<p>“Quoting a message restores a specific conversational reference and reduces deixis problems. An online indicator provides informal awareness but does not prove attention or agreement. A shared digital workspace reduces the information gap between co-located and remote members.”</p>
+</blockquote>
+<p><strong>Operator / Fehler:</strong> <em>Explain</em> verlangt Ursache und Wirkung; <em>evaluate</em> zusätzlich Nutzen und Grenze. Nicht jede Funktion pauschal „Synchronisation“ nennen und nicht Softwarewechsel mit Problembehebung gleichsetzen.</p>
+<details>
+<summary>
+Selbstcheck: Alle sehen dieselbe Oberfläche, aber eine Person arbeitet mit einer alten Datei. Welcher Unterschied ist entscheidend?
+</summary>
+Interface consistency ist nicht content consistency oder synchronization. Die gleiche Bedienoberfläche beseitigt keinen veralteten Dateistand. Versionsregeln und ein geteilter aktueller Datenbestand adressieren das eigentliche Problem.
+</details>
 
 
 </section>

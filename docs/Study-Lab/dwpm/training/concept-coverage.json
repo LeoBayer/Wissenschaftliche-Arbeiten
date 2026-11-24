@@ -1,0 +1,1880 @@
+[
+  {
+    "id": "mock-1a",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "concept": "Magic Triangle",
+    "chapter": "pm-foundations.qmd#scope",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      24,
+      25,
+      26
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-1b",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "concept": "Two SMART criteria",
+    "chapter": "pm-foundations.qmd#smart",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      28
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-2a",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "concept": "Schedule process",
+    "chapter": "pm-scheduling.qmd#schedule-processes",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      30
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-2b",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      1
+    ],
+    "concept": "Critical path: a–r",
+    "chapter": "pm-scheduling.qmd#cpm",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      32,
+      33
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-3a",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "concept": "Positive CV and SV",
+    "chapter": "pm-earned-value.qmd#performance",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      42
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-3b",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "concept": "CPI greater than one",
+    "chapter": "pm-earned-value.qmd#performance",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      44
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-3c",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "concept": "EAC: non-recurring variances",
+    "chapter": "pm-earned-value.qmd#eac",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      46
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-3d",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      2
+    ],
+    "concept": "Interpret EV, PV and AC",
+    "chapter": "pm-earned-value.qmd#performance",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      48
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-3e",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      3
+    ],
+    "concept": "SPI .75 / CPI 1.1",
+    "chapter": "pm-earned-value.qmd#performance",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      50
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-4",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      3
+    ],
+    "concept": "Buy versus rent: EMV",
+    "chapter": "pm-quality-risk.qmd#buy-rent",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      58
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-5a",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "concept": "Knowledge activities and challenges",
+    "chapter": "pm-knowledge-closing.qmd#seci",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      62
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-5b",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "concept": "Define program",
+    "chapter": "pm-knowledge-closing.qmd#portfolio",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      64
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw1a",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "concept": "People analytics uses",
+    "chapter": "dw-people-analytics.qmd#pa-am",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      67
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw1b",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "concept": "Inverse transparency",
+    "chapter": "dw-people-analytics.qmd#privacy",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      69
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw1c",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      4
+    ],
+    "concept": "Break the ethical vicious cycle",
+    "chapter": "dw-people-analytics.qmd#measures",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      71,
+      72,
+      73
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw1d",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "concept": "Challenge PA assumptions",
+    "chapter": "dw-people-analytics.qmd#assumptions",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      75,
+      76,
+      77
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw2a",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "concept": "Time-space matrix",
+    "chapter": "dw-collaboration.qmd#groupware",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      79,
+      80
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw2b",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "concept": "Messenger features and groupware issues",
+    "chapter": "dw-collaboration.qmd#messenger",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw2c",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "concept": "Cooperative work framework",
+    "chapter": "dw-collaboration.qmd#messenger",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      89,
+      90,
+      91
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "mock-dw2d",
+    "kind": "Aufgabe",
+    "source": "s23",
+    "pages": [
+      5
+    ],
+    "concept": "Hybrid team awareness",
+    "chapter": "dw-collaboration.qmd#messenger",
+    "evidence_source": "s13",
+    "evidence_pages": [
+      93,
+      94
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-1a",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "concept": "Decision making, judgment, reasoning",
+    "chapter": "dw-decisions.qmd#decision",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      1
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-1bi",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "concept": "LogisTech: five comparison criteria",
+    "chapter": "dw-decisions.qmd#dss",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      2,
+      3
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-1bii",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "concept": "LogisTech: select a configuration",
+    "chapter": "dw-decisions.qmd#configurations",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      3,
+      4
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-1c",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      1
+    ],
+    "concept": "Does ML replace bias with facts?",
+    "chapter": "dw-decisions.qmd#analytics",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      4,
+      5
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-2a",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "concept": "Communication and Media Richness Theory",
+    "chapter": "dw-communication.qmd#richness",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      6
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-2bi",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "concept": "Choose media for five project situations",
+    "chapter": "dw-communication.qmd#presence",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      7,
+      8
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-2bii",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "concept": "Social presence and feedback",
+    "chapter": "dw-communication.qmd#presence",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      8,
+      9
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-2c",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      2
+    ],
+    "concept": "Is MRT outdated?",
+    "chapter": "dw-communication.qmd#critique",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      9,
+      10
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-3a",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      3
+    ],
+    "concept": "3C and individual work: version conflict",
+    "chapter": "dw-collaboration.qmd#three-c",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      11
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-3b",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      3
+    ],
+    "concept": "Consulting presentation: diagnose all 3Cs",
+    "chapter": "dw-collaboration.qmd#case",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      12,
+      13
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw1-3c",
+    "kind": "Aufgabe",
+    "source": "s19",
+    "pages": [
+      3
+    ],
+    "concept": "Awareness strategy for shared slides",
+    "chapter": "dw-collaboration.qmd#awareness",
+    "evidence_source": "s20",
+    "evidence_pages": [
+      14
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-1a",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      1
+    ],
+    "concept": "Plan-based versus agile: explain three criteria",
+    "chapter": "dw-agility.qmd#comparison",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      1
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-1bi",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      1,
+      2
+    ],
+    "concept": "Sensor company: assign Scrum roles",
+    "chapter": "dw-agility.qmd#roles",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      2,
+      3
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-1bii",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      1,
+      2
+    ],
+    "concept": "Sensor company: Scrum flow",
+    "chapter": "dw-agility.qmd#flow",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      3
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-1c",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      2
+    ],
+    "concept": "Agile practices without an agile mindset",
+    "chapter": "dw-agility.qmd#mindset",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      4
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-2a",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      3
+    ],
+    "concept": "Automation and three forms of augmentation",
+    "chapter": "dw-ai-work.qmd#augmentation",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      5
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-2b",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      3,
+      4
+    ],
+    "concept": "Security-system Copilot configurations",
+    "chapter": "dw-ai-work.qmd#configurations",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      6,
+      7,
+      8
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-2c",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      4
+    ],
+    "concept": "Overreliance and accountability",
+    "chapter": "dw-ai-work.qmd#copilot",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      9
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-3a",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      5
+    ],
+    "concept": "People analytics versus algorithmic management",
+    "chapter": "dw-people-analytics.qmd#pa-am",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      10,
+      11
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-3b",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      5
+    ],
+    "concept": "Dashboard: three concepts, three measures",
+    "chapter": "dw-people-analytics.qmd#measures",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      11,
+      12,
+      13
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "dw2-3c",
+    "kind": "Aufgabe",
+    "source": "s21",
+    "pages": [
+      5
+    ],
+    "concept": "Autonomous analytics and managerial roles",
+    "chapter": "dw-people-analytics.qmd#maturity",
+    "evidence_source": "s45",
+    "evidence_pages": [
+      13,
+      14
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "pm-recap-generator",
+    "kind": "Aufgabe",
+    "source": "s43",
+    "pages": [
+      53
+    ],
+    "concept": "Generator: expected blackout costs",
+    "chapter": "pm-quality-risk.qmd#generator",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      54
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "pm-recap-campus",
+    "kind": "Aufgabe",
+    "source": "s43",
+    "pages": [
+      55
+    ],
+    "concept": "Campus hosting: three-year EMV",
+    "chapter": "pm-quality-risk.qmd#campus",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      55
+    ],
+    "status": "Konzept und Antwortweg abgeglichen"
+  },
+  {
+    "id": "recap-01",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      1
+    ],
+    "concept": "Titelseite / Scope des Recaps",
+    "chapter": "pm-foundations.qmd#project",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      1
+    ],
+    "status": "Titel, keine Aufgabe"
+  },
+  {
+    "id": "recap-02",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      2
+    ],
+    "concept": "Project definition",
+    "chapter": "pm-foundations.qmd#project",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      2
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-03",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      3
+    ],
+    "concept": "Stakeholders",
+    "chapter": "pm-foundations.qmd#project",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      3
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-04",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      4
+    ],
+    "concept": "Project failure: objectives, assumptions, coordination",
+    "chapter": "pm-foundations.qmd#scope",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      4
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-05",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      5
+    ],
+    "concept": "Process groups and knowledge areas",
+    "chapter": "pm-foundations.qmd#life-cycle",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      5
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-06",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      6
+    ],
+    "concept": "Process groups and knowledge areas",
+    "chapter": "pm-foundations.qmd#life-cycle",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      6
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-07",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      7
+    ],
+    "concept": "Process groups and knowledge areas",
+    "chapter": "pm-foundations.qmd#life-cycle",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      7
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-08",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      8
+    ],
+    "concept": "Integration processes",
+    "chapter": "pm-foundations.qmd#integration",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      8
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-09",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      9
+    ],
+    "concept": "Magic triangle",
+    "chapter": "pm-foundations.qmd#scope",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      9
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-10",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      10
+    ],
+    "concept": "SMART",
+    "chapter": "pm-foundations.qmd#smart",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      10
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-11",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      11
+    ],
+    "concept": "Scope processes",
+    "chapter": "pm-foundations.qmd#scope",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      11
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-12",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      12
+    ],
+    "concept": "Scope creep",
+    "chapter": "pm-foundations.qmd#scope",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      12
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-13",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      13
+    ],
+    "concept": "Scope statement",
+    "chapter": "pm-foundations.qmd#wbs",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      13
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-14",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      14
+    ],
+    "concept": "WBS and work package",
+    "chapter": "pm-foundations.qmd#wbs",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      14
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-15",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      15
+    ],
+    "concept": "Six schedule processes",
+    "chapter": "pm-scheduling.qmd#schedule-processes",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      15
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-16",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      16
+    ],
+    "concept": "Network, dependencies, lag / lead",
+    "chapter": "pm-scheduling.qmd#dependencies",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      16
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-17",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      17
+    ],
+    "concept": "Network, dependencies, lag / lead",
+    "chapter": "pm-scheduling.qmd#dependencies",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      17
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-18",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      18
+    ],
+    "concept": "Network, dependencies, lag / lead",
+    "chapter": "pm-scheduling.qmd#dependencies",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      18
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-19",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      19
+    ],
+    "concept": "Party CPM example",
+    "chapter": "pm-scheduling.qmd#party",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      19
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-20",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      20
+    ],
+    "concept": "Party CPM example",
+    "chapter": "pm-scheduling.qmd#party",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      20
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-21",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      21
+    ],
+    "concept": "Party CPM example",
+    "chapter": "pm-scheduling.qmd#party",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      21
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-22",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      22
+    ],
+    "concept": "Party CPM example",
+    "chapter": "pm-scheduling.qmd#party",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      22
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-23",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      23
+    ],
+    "concept": "Party CPM example",
+    "chapter": "pm-scheduling.qmd#party",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      23
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-24",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      24
+    ],
+    "concept": "Party CPM example",
+    "chapter": "pm-scheduling.qmd#party",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      24
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-25",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      25
+    ],
+    "concept": "Party CPM example",
+    "chapter": "pm-scheduling.qmd#party",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      25
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-26",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      26
+    ],
+    "concept": "Cost processes and estimation",
+    "chapter": "pm-earned-value.qmd#budget",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      26
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-27",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      27
+    ],
+    "concept": "Cost baseline and reserves",
+    "chapter": "pm-earned-value.qmd#reserves",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      27
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-28",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      28
+    ],
+    "concept": "Cost baseline and reserves",
+    "chapter": "pm-earned-value.qmd#reserves",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      28
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-29",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      29
+    ],
+    "concept": "Cost baseline and reserves",
+    "chapter": "pm-earned-value.qmd#reserves",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      29
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-30",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      30
+    ],
+    "concept": "PV / EV / AC / BAC",
+    "chapter": "pm-earned-value.qmd#pv-ev-ac",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      30
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-31",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      31
+    ],
+    "concept": "EVM interpretation and forecasts",
+    "chapter": "pm-earned-value.qmd#performance",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      31
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-32",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      32
+    ],
+    "concept": "EVM interpretation and forecasts",
+    "chapter": "pm-earned-value.qmd#performance",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      32
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-33",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      33
+    ],
+    "concept": "EVM interpretation and forecasts",
+    "chapter": "pm-earned-value.qmd#performance",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      33
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-34",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      34
+    ],
+    "concept": "Quality versus grade",
+    "chapter": "pm-quality-risk.qmd#quality-grade",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      34
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-35",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      35
+    ],
+    "concept": "Quality versus grade",
+    "chapter": "pm-quality-risk.qmd#quality-grade",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      35
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-36",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      36
+    ],
+    "concept": "TQM / PDCA / Six Sigma",
+    "chapter": "pm-quality-risk.qmd#improvement",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      36
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-37",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      37
+    ],
+    "concept": "TQM / PDCA / Six Sigma",
+    "chapter": "pm-quality-risk.qmd#improvement",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      37
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-38",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      38
+    ],
+    "concept": "TQM / PDCA / Six Sigma",
+    "chapter": "pm-quality-risk.qmd#improvement",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      38
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-39",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      39
+    ],
+    "concept": "TQM / PDCA / Six Sigma",
+    "chapter": "pm-quality-risk.qmd#improvement",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      39
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-40",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      40
+    ],
+    "concept": "TQM / PDCA / Six Sigma",
+    "chapter": "pm-quality-risk.qmd#improvement",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      40
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-41",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      41
+    ],
+    "concept": "TQM / PDCA / Six Sigma",
+    "chapter": "pm-quality-risk.qmd#improvement",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      41
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-42",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      42
+    ],
+    "concept": "TQM / PDCA / Six Sigma",
+    "chapter": "pm-quality-risk.qmd#improvement",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      42
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-43",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      43
+    ],
+    "concept": "Quality processes and cost of quality",
+    "chapter": "pm-quality-risk.qmd#quality-processes",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      43
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-44",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      44
+    ],
+    "concept": "Quality processes and cost of quality",
+    "chapter": "pm-quality-risk.qmd#quality-processes",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      44
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-45",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      45
+    ],
+    "concept": "Risk terminology, processes, reserves",
+    "chapter": "pm-quality-risk.qmd#risk",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      45
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-46",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      46
+    ],
+    "concept": "Risk terminology, processes, reserves",
+    "chapter": "pm-quality-risk.qmd#risk",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      46
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-47",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      47
+    ],
+    "concept": "Risk terminology, processes, reserves",
+    "chapter": "pm-quality-risk.qmd#risk",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      47
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-48",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      48
+    ],
+    "concept": "Qualitative risk analysis, probability/impact",
+    "chapter": "pm-quality-risk.qmd#risk-analysis",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      48
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-49",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      49
+    ],
+    "concept": "Qualitative risk analysis, probability/impact",
+    "chapter": "pm-quality-risk.qmd#risk-analysis",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      49
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-50",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      50
+    ],
+    "concept": "Qualitative risk analysis, probability/impact",
+    "chapter": "pm-quality-risk.qmd#risk-analysis",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      50
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-51",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      51
+    ],
+    "concept": "EMV method",
+    "chapter": "pm-quality-risk.qmd#emv",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      51
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-52",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      52
+    ],
+    "concept": "Build / upgrade decision tree",
+    "chapter": "pm-quality-risk.qmd#plant",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      52
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-53",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      53
+    ],
+    "concept": "Generator EMV",
+    "chapter": "pm-quality-risk.qmd#generator",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      53
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-54",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      54
+    ],
+    "concept": "Generator EMV",
+    "chapter": "pm-quality-risk.qmd#generator",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      54
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-55",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      55
+    ],
+    "concept": "Campus EMV",
+    "chapter": "pm-quality-risk.qmd#campus",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      55
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-56",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      56
+    ],
+    "concept": "Risk response planning",
+    "chapter": "pm-quality-risk.qmd#risk-analysis",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      56
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-57",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      57
+    ],
+    "concept": "Part 2 title",
+    "chapter": "dw-teams.qmd#roles",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      57
+    ],
+    "status": "Titel, keine Aufgabe"
+  },
+  {
+    "id": "recap-58",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      58
+    ],
+    "concept": "Competence / authority / responsibility / accountability",
+    "chapter": "dw-teams.qmd#roles",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      58
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-59",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      59
+    ],
+    "concept": "Belbin nine team roles",
+    "chapter": "dw-teams.qmd#belbin",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      59
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-60",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      60
+    ],
+    "concept": "Belbin nine team roles",
+    "chapter": "dw-teams.qmd#belbin",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      60
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-61",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      61
+    ],
+    "concept": "RAM / RACI / RASCI",
+    "chapter": "dw-teams.qmd#roles",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      61
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-62",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      62
+    ],
+    "concept": "Stakeholder power / interest",
+    "chapter": "pm-self-management.qmd#communications",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      62
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-63",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      63
+    ],
+    "concept": "DIKW",
+    "chapter": "pm-knowledge-closing.qmd#dikw",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      63
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-64",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      64
+    ],
+    "concept": "Knowledge integration / sharing / challenges",
+    "chapter": "pm-knowledge-closing.qmd#seci",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      64
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-65",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      65
+    ],
+    "concept": "Tacit / explicit and SECI",
+    "chapter": "pm-knowledge-closing.qmd#seci",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      65
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-66",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      66
+    ],
+    "concept": "Tacit / explicit and SECI",
+    "chapter": "pm-knowledge-closing.qmd#seci",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      66
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-67",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      67
+    ],
+    "concept": "Projects / programs / portfolios",
+    "chapter": "pm-knowledge-closing.qmd#portfolio",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      67
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-68",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      68
+    ],
+    "concept": "Projects / programs / portfolios",
+    "chapter": "pm-knowledge-closing.qmd#portfolio",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      68
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-69",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      69
+    ],
+    "concept": "Plan-based / agile development",
+    "chapter": "dw-agility.qmd#comparison",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      69
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-70",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      70
+    ],
+    "concept": "Plan-based / agile development",
+    "chapter": "dw-agility.qmd#comparison",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      70
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-71",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      71
+    ],
+    "concept": "Plan-based / agile development",
+    "chapter": "dw-agility.qmd#comparison",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      71
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-72",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      72
+    ],
+    "concept": "Manifesto / mindset / approaches",
+    "chapter": "dw-agility.qmd#mindset",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      72
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-73",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      73
+    ],
+    "concept": "Manifesto / mindset / approaches",
+    "chapter": "dw-agility.qmd#mindset",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      73
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-74",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      74
+    ],
+    "concept": "Manifesto / mindset / approaches",
+    "chapter": "dw-agility.qmd#mindset",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      74
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-75",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      75
+    ],
+    "concept": "Manifesto / mindset / approaches",
+    "chapter": "dw-agility.qmd#mindset",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      75
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-76",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      76
+    ],
+    "concept": "Manifesto / mindset / approaches",
+    "chapter": "dw-agility.qmd#mindset",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      76
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-77",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      77
+    ],
+    "concept": "Scrum skeleton / roles / user stories",
+    "chapter": "dw-agility.qmd#flow",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      77
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-78",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      78
+    ],
+    "concept": "Scrum skeleton / roles / user stories",
+    "chapter": "dw-agility.qmd#flow",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      78
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-79",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      79
+    ],
+    "concept": "Scrum skeleton / roles / user stories",
+    "chapter": "dw-agility.qmd#flow",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      79
+    ],
+    "status": "Konzept abgeglichen"
+  },
+  {
+    "id": "recap-80",
+    "kind": "Recap-Seite",
+    "source": "s43",
+    "pages": [
+      80
+    ],
+    "concept": "Scrum / XP / Kanban comparison",
+    "chapter": "dw-agility.qmd#xp",
+    "evidence_source": "s43",
+    "evidence_pages": [
+      80
+    ],
+    "status": "Konzept abgeglichen"
+  }
+]

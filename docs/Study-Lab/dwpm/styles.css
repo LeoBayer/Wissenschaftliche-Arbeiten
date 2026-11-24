@@ -257,3 +257,5 @@ body.quarto-dark .btn:hover {
 main table { display: block; max-width: 100%; overflow-x: auto; }
 main pre { max-width: 100%; overflow-x: auto; }
 main details > summary { cursor: pointer; }
+/* Long inline source filenames must wrap on narrow screens. */
+main :not(pre) > code { white-space: normal; overflow-wrap: anywhere; word-break: break-word; }

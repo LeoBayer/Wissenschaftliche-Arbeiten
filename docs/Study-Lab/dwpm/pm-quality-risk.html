@@ -355,6 +355,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item">
+    <a class="nav-link" href="./coverage.html"> 
+<span class="menu-text">Aufgaben–Konzept-Matrix</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./glossary.html"> 
 <span class="menu-text">Glossar</span></a>
   </li>  
@@ -406,6 +410,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#campus" id="toc-campus" class="nav-link" data-scroll-target="#campus">Recap-Fall 2: Campus-Plattform und Benutzerjahre</a></li>
   <li><a href="#abschluss-in-einer-integrierten-antwort-denken" id="toc-abschluss-in-einer-integrierten-antwort-denken" class="nav-link" data-scroll-target="#abschluss-in-einer-integrierten-antwort-denken">Abschluss: in einer integrierten Antwort denken</a></li>
   <li><a href="#originalquellen-und-seitenkonvention" id="toc-originalquellen-und-seitenkonvention" class="nav-link" data-scroll-target="#originalquellen-und-seitenkonvention">Originalquellen und Seitenkonvention</a></li>
+  <li><a href="#plant" id="toc-plant" class="nav-link" data-scroll-target="#plant">Grafischer Recap-Fall: Build or upgrade?</a></li>
   </ul>
 </nav>
     </div>
@@ -826,6 +831,57 @@ Optimistisch bezieht sich auf erfolgreiche Verbreitung, nicht auf Kostenminimier
 <li><a href="training/s43.pdf">PM-Recap Part 1 and Part 2 (80 PDF-Seiten)</a></li>
 </ul>
 <p>Die ersten 56 Seiten des kombinierten Recaps entsprechen dem hier herangezogenen Part-1-Themenblock. Beispiele, Erklärungen und Antwortbausteine sind eigene Lernhilfen, außer wo explizit eine offizielle Kursdarstellung genannt ist.</p>
+</section>
+<section id="plant" class="level2">
+<h2 class="anchored" data-anchor-id="plant">Grafischer Recap-Fall: Build or upgrade?</h2>
+<p><strong>Quelle:</strong> <a href="training/s43.pdf#page=52">PM-Recap kombiniert, PDF-S. 52</a>, identische Grafik in Part 1. Originalgrafik visuell geprüft; die folgende Rechnung ist eine eigene Nachrechnung. Ein <strong>net path value</strong> ist der Nettoertrag eines vollständigen Pfades nach Abzug seiner Kosten, noch nicht sein wahrscheinlichkeitsgewichteter Beitrag. Der <strong>decision node</strong> steht für eine wählbare Alternative; am <strong>chance node</strong> treten unsichere Szenarien ein. Man wählt nicht einfach den günstigsten Zufallszweig.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Alternative</th>
+<th style="text-align: right;">Investment</th>
+<th style="text-align: right;">Strong demand (60 %)</th>
+<th style="text-align: right;">Weak demand (40 %)</th>
+<th style="text-align: right;">EMV der Nettoerträge</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Build new plant</td>
+<td style="text-align: right;">USD 120 Mio.</td>
+<td style="text-align: right;">200 − 120 = USD 80 Mio.</td>
+<td style="text-align: right;">90 − 120 = −USD 30 Mio.</td>
+<td style="text-align: right;">0,6 × 80 + 0,4 × (−30) = <strong>USD 36 Mio.</strong></td>
+</tr>
+<tr class="even">
+<td>Upgrade plant</td>
+<td style="text-align: right;">USD 50 Mio.</td>
+<td style="text-align: right;">120 − 50 = USD 70 Mio.</td>
+<td style="text-align: right;">60 − 50 = USD 10 Mio.</td>
+<td style="text-align: right;">0,6 × 70 + 0,4 × 10 = <strong>USD 46 Mio.</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Entscheidung:</strong> Bei Risikoneutralität Upgrade, weil 46 &gt; 36. Der höhere mögliche Spitzengewinn von Build allein begründet keine höhere Erwartung. Alternativ erst erwartete Bruttoerträge bestimmen und die sichere Investition einmal abziehen: Build 0,6 × 200 + 0,4 × 90 − 120 = 36. <strong>Nicht</strong> danach nochmals 120 abziehen.</p>
+<p><strong>Quellenkritische Abgrenzung:</strong> Die Grafik schreibt unter den Werten „EMV (before costs)“. Die gezeigten Rechnungen verwenden aber bereits <strong>Nettoerträge nach Investitionskosten</strong>. Die Zahlen sind konsistent, diese Beschriftung ist missverständlich. Deshalb hier ausdrücklich EMV der Nettoerträge. Kein Beleg für eine andere offizielle Rechenregel.</p>
+<p><strong>Operator / Antwortstruktur:</strong> <em>Calculate net path values and decide</em>: Investition je Pfad einmal abziehen → Szenariowahrscheinlichkeiten prüfen → Nettoerträge gewichten → Erwartungswerte vergleichen → Risikoneutralität nennen.</p>
+<blockquote class="blockquote">
+<p>“Upgrading has an expected net payoff of USD 46 million, compared with USD 36 million for building a new plant. A risk-neutral decision maker therefore chooses the upgrade. Investment costs are included once in each net path payoff.”</p>
+</blockquote>
+<p><strong>Fehler:</strong> Erwartete Brutto- und Nettowerte vergleichen; Investition doppelt abziehen; Vorzeichen des schwachen Build-Szenarios verlieren.</p>
+<details>
+<summary>
+Selbstcheck: Ab welcher Wahrscheinlichkeit p für starke Nachfrage wäre Build vorzuziehen?
+</summary>
+Build = 80p − 30(1−p) = 110p − 30; Upgrade = 70p + 10(1−p) = 60p + 10. Gleichstand bei 50p = 40, also p = 0,8. Build ist erst bei p &gt; 80 % im Erwartungswert besser. Das ist eine eigene Sensitivitätsrechnung bei unveränderten Auszahlungen.
+</details>
 
 
 </section>
