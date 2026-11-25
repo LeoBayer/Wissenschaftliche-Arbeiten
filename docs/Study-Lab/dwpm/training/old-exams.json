@@ -1,0 +1,662 @@
+[
+  {
+    "id": "20-test",
+    "title": "DMS: Scope creep, SMART, WBS",
+    "ref": "2020 Probeklausur a–c",
+    "topic": "Scope",
+    "prompt": "Explain scope creep for a DMS; formulate all five SMART goal criteria with examples; explain two WBS deliverables.",
+    "answer": "Scope creep is uncontrolled expansion of the approved scope without corresponding approval and adjustments to resources, cost or time; adding a claims-processing module informally is an example.\nSpecific: introduce a DMS for the claims department. Measurable: migrate 95% of its legacy claim documents and achieve a median retrieval time below 30 seconds. Achievable: validate the target through a pilot and an agreed staffing/capacity assessment. Relevant: support faster, reliable claims handling. Time-bound: complete acceptance by 30 September 2020.\nDeliverable 1: an accepted, configured DMS with agreed permissions and document structures. Deliverable 2: a validated migrated document collection with complete metadata.",
+    "de": "Die fünf Kriterien sind in den aktuellen Folien ausdrücklich SMART: Specific, Measurable, Achievable, Relevant, Time-bound. Ergebnisse der WBS von Tätigkeiten unterscheiden. Ein genehmigter Change ist nicht automatisch Scope creep.",
+    "criteria": "Scope creep korrekt; fünf konkrete Kriterien; zwei prüfbare Ergebnisse.",
+    "source": "s01",
+    "pages": [
+      48,
+      53,
+      60
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-1a",
+    "title": "Requirements für eine Einkaufs-App",
+    "ref": "2020 1a · 4 P",
+    "topic": "Scope",
+    "prompt": "Choose and justify two requirements-collection techniques for an app guiding shoppers through a supermarket.",
+    "answer": "Interview customers and store staff to uncover needs such as accessibility, changing shelf locations and handling missing products; use follow-up questions to clarify priorities. Observe shoppers completing representative shopping trips, with consent, to reveal detours and search problems they may not mention. Compare observations with interview claims and convert findings into testable requirements.",
+    "de": "Zwei Methoden nicht bloß nennen: Durchführung im Supermarkt, erwartetes Ergebnis und Nutzen begründen.",
+    "criteria": "Zwei Methoden, Fallanwendung und jeweils erwartete Erkenntnis.",
+    "source": "s01",
+    "pages": [
+      54,
+      56,
+      57
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-1b",
+    "title": "Scope Statement",
+    "ref": "2020 1b · 3 P",
+    "topic": "Scope",
+    "prompt": "Write a short scope statement for the recommender app, addressing at least two central aspects.",
+    "answer": "The pilot delivers an app that imports a shopping list and guides users to product locations in two selected stores. Included are a store-map interface and a maintained product-location database. Online payment and personalized advertising are excluded. Acceptance requires successful completion of agreed shopping routes in the pilot stores, verified against predefined test cases. Assume the retailer supplies accurate location data; the pilot must fit the approved budget and launch date.",
+    "de": "Produkt-/Projektumfang, Deliverables, Abgrenzungen, Annahmen, Constraints und Akzeptanzkriterien sind mögliche Bausteine. Mindestens zwei davon konkret ausformulieren.",
+    "criteria": "Mindestens zwei Scope-Statement-Bestandteile konkret, widerspruchsfrei und prüfbar.",
+    "source": "s01",
+    "pages": [
+      59
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-2",
+    "title": "Contingency vs. Management Reserve",
+    "ref": "2020 2a–b · 4 P",
+    "topic": "Cost",
+    "prompt": "Distinguish contingency and management reserves and give one example of each.",
+    "answer": "Contingency reserves cover identified risks (known unknowns) and are part of the cost baseline; e.g., budget for anticipated migration rework with uncertain volume. Management reserves cover unforeseen work within the project scope (unknown unknowns) and are outside the cost baseline but inside the total project budget; e.g., an unexpected in-scope integration obstacle not identified in risk analysis. Using management reserves requires the appropriate approval and baseline update.",
+    "de": "Nicht mit beliebigem Zusatzumfang verwechseln: Management Reserve ist ebenfalls für Arbeit innerhalb des Scopes. Projektbudget = Kostenbaseline + Management Reserve.",
+    "criteria": "Risikoart, Baseline-Zugehörigkeit und zwei passende Beispiele.",
+    "source": "s02",
+    "pages": [
+      25,
+      26
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-3",
+    "title": "EVM-Grafik 2020",
+    "ref": "2020 3a–b · 6 P",
+    "topic": "EVM",
+    "prompt": "At the reporting date, the original figure shows PV > EV > AC. Interpret schedule and budget; predict EAC relative to BAC.",
+    "answer": "EV < PV means the project is behind schedule: less budgeted work has been completed than planned. EV > AC means it is under budget for the work performed: CV > 0 and CPI > 1. If the current cost efficiency continues, EAC = BAC/CPI < BAC. The forecast requires that assumption; the graph alone does not guarantee future efficiency.",
+    "de": "Originalgrafik PDF-S. 5 visuell geprüft. Reihenfolge am Stichtag: PV oben, EV mittig, AC unten. EAC-Prognose immer mit Fortsetzungsannahme.",
+    "criteria": "EV mit PV für Termin, EV mit AC für Kosten; EAC unter BAC unter genannter Annahme.",
+    "source": "s02",
+    "pages": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-4",
+    "title": "MS Project: Task Types und Tracking",
+    "ref": "2020 4a–c · 6 P",
+    "topic": "Alte Tools",
+    "prompt": "Explain fixed task types, give two examples and identify a suitable progress-tracking view.",
+    "answer": "A fixed task type holds one scheduling variable constant during specified recalculations: fixed units, fixed work or fixed duration. Work = duration × resource capacity. Fixed work example: 80 person-hours of test execution; adding testers can shorten duration. Fixed duration example: a two-day training event; changing attendance does not shorten the event. Tracking Gantt compares current task bars and milestones with baseline bars and completion information, exposing slippage.",
+    "de": "Historische Tool-Aufgabe. In den aktuellen Unterlagen finden sich MS-Project-Erwähnungen, aber kein gleichwertiger aktueller Tool-Lehrblock. Daher optional, nicht als sicher ausgeschlossen bezeichnet.",
+    "criteria": "Zwei Task Types mit Beispielen; Tracking Gantt mit Baseline-/Istvergleich.",
+    "source": "s02",
+    "pages": [
+      25
+    ],
+    "status": "Altstoff / nicht aktuell belegt",
+    "extra": ""
+  },
+  {
+    "id": "20-5",
+    "title": "CPM: Daueränderungen richtig begründen",
+    "ref": "2020 5a–b · 16 P",
+    "topic": "CPM",
+    "prompt": "For critical/noncritical activities whose duration increases/decreases, explain affected node values. Use ES, duration, EF / LS, total float, LF.",
+    "answer": "Assume a single duration change, finish-to-start links, unlimited resources, an ASAP schedule and a project finish recalculated from the network. ES of the changed activity stays fixed. EF = ES + d; LF is the minimum successor LS; LS = LF − d; TF = LS − ES.\nCritical activity lengthens: EF and LF increase together, while LS = ES and TF = 0 remain (2 values).\nCritical activity shortens: EF falls; LF may fall by less when another path becomes critical; LS and TF may then increase (up to 4 values).\nNoncritical activity lengthens: while within float, EF rises and LS/TF fall (3). If it exhausts float and extends the project, LF can change too (up to 4).\nNoncritical activity shortens: EF falls, LS and TF rise; LF remains constrained by the unaffected longer route (3).\nThese counts concern only the changed node, not the duration itself. Recompute the network when a path changes; do not treat these counts as universal under deadlines, other link types or multiple changes.",
+    "de": "Originalgrafik PDF-S. 7 visuell geprüft: oben ES/Dauer/EF, unten LS/Gesamtpuffer/LF. Die alte Frage nennt ihre vier Fälle nicht formal; diese Lösung nutzt kritisch/nichtkritisch × länger/kürzer und nennt ausdrücklich die Annahmen. Bei längerem nichtkritischem Vorgang innerhalb/außerhalb des Puffers unterscheiden.",
+    "criteria": "Vier Fälle; ES bleibt; EF/LS/LF/TF kausal erklärt; Pufferüberschreitung und Pfadwechsel berücksichtigt. Abgeleitete Lösung, kein offizieller Erwartungshorizont.",
+    "source": "s02",
+    "pages": [
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-6",
+    "title": "Virtuelle Teams und plötzlicher Lockdown",
+    "ref": "2020 6a–b · 9 P",
+    "topic": "Teams",
+    "prompt": "Define an IT project; explain three virtual-team effects and lockdown-specific problems with responses.",
+    "answer": "Example: a distributed team develops a hospital appointment portal. Wider geographic recruiting gives access to specialist developers; reduced travel saves money; reduced informal interaction makes trust and shared awareness harder, so use explicit handovers and regular rich-media discussions.\nA sudden lockdown additionally creates unprepared home workplaces, childcare conflicts, stress and missing secure remote access. Supply managed devices and secure access, agree flexible hours and realistic capacity, prioritize essential work and provide supportive check-ins. Do not equate emergency remote work with a deliberately designed virtual team.",
+    "de": "Vor- und Nachteile immer auf ein eigenes Projekt beziehen. Lockdown-spezifisch ist der abrupte, unfreiwillige Wechsel mit zusätzlichen Belastungen.",
+    "criteria": "Projektbeispiel, drei Wirkungen, spezifische Zusatzprobleme und passende Maßnahmen.",
+    "source": "s07",
+    "pages": [
+      22,
+      25,
+      28,
+      29,
+      30,
+      31
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-7",
+    "title": "Stakeholder und Kommunikationsplan",
+    "ref": "2020 7a–b · 5 P",
+    "topic": "Communication",
+    "prompt": "Classify four stakeholder groups for a university seat-booking system and propose communication under a July–November deadline.",
+    "answer": "Rectorate: high power/high interest, manage closely with weekly milestone/risk reports and decisions at gates. Data-protection/legal officers: high power/high interest because compliance can block release; involve them in design reviews and acceptance. Lecturers: high operational interest and lower formal power, keep informed and consult through pilot sessions, concise guides and pre-semester training. Students: high interest, lower individual formal power, keep informed through accessible web FAQs and email before launch, with feedback channels. Classifications are contextual; student representatives may have greater influence. Schedule approvals before summer absences and name deputies.",
+    "de": "Raster: hoch/hoch eng managen; hoch/niedrig zufriedenstellen; niedrig/hoch informieren; niedrig/niedrig beobachten. Die historische Corona-Regel ist Fallannahme von 2020, keine heutige Rechtsauskunft.",
+    "criteria": "Vier begründete Gruppen; passende Frequenz, Format, Kanal und Umgang mit Sommerpause.",
+    "source": "s09",
+    "pages": [
+      12
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-8",
+    "title": "HPC: EMV über fünf Jahre",
+    "ref": "2020 8a–b · 11 P",
+    "topic": "EMV",
+    "prompt": "On-prem: €3m investment + €0.2m/year fixed + €0.3m/year × utilization. Cloud: €0.2m/month × utilization. Five years; P(80%)=.7, P(20%)=.3. Choose using EMV.",
+    "answer": "Use a decision tree and expected monetary costs: evaluate each outcome, then weight by probability. On-prem at 80%: 3 + 5(0.2 + 0.3×0.8) = €5.2m; at 20%: 3 + 5(0.2 + 0.3×0.2) = €4.3m. Expected cost = .7×5.2 + .3×4.3 = €4.93m.\nCloud at 80%: 60×0.2×.8 = €9.6m; at 20%: €2.4m. Expected cost = .7×9.6 + .3×2.4 = €7.44m. Choose on-prem, saving €2.51m in expected cost. Cloud is cheaper in the low-use outcome, but not in expectation.",
+    "de": "Jahre und Monate nicht vermischen. Bei reinen Kosten den kleineren Erwartungswert wählen; ohne zusätzliche Angaben keine Abzinsung oder Restwerte erfinden.",
+    "criteria": "Vier Endkosten, zwei Erwartungswerte, Zeithorizont und begründete Entscheidung.",
+    "source": "s03",
+    "pages": [
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-9",
+    "title": "Scrum vs. XP und Methodenwahl",
+    "ref": "2020 9a–b · 8 P",
+    "topic": "Agile",
+    "prompt": "Introduce Scrum and XP; explain two differences; choose a method for a student canteen-app project.",
+    "answer": "Scrum structures iterative product work through accountabilities, events and artifacts, including a Product Owner, Scrum Master, Developers, Product Backlog and Sprint Backlog. XP emphasizes technical practices such as small releases, testing and refactoring. Scrum names Product Owner/Scrum Master/Developers; the course comparison lists no equivalent prescribed XP roles and emphasizes close on-site customer interaction for XP. Scrum organizes backlog artifacts; XP expresses requirements through story cards.\nFor the student app, choose Scrum to prioritize a small useful increment each Sprint, review with canteen users and adapt to feedback. Explain team availability and stakeholder access. Scrum can be combined with XP engineering practices; they are not mutually exclusive.",
+    "de": "XP ist NICHT pauschal Altstoff: Die aktuelle kombinierte Recap-Datei vergleicht Scrum, XP und Kanban auf S. 80. Deshalb bleibt diese Aufgabe im Kerntraining.",
+    "criteria": "Beide Ansätze, zwei konkrete Unterschiede, begründete Wahl am Fall statt „agil ist modern“.",
+    "source": "s43",
+    "pages": [
+      80
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "20-10",
+    "title": "Wissensarten, Transformation, Programm/Portfolio",
+    "ref": "2020 10a–b · 8 P",
+    "topic": "Knowledge",
+    "prompt": "Distinguish explicit/tacit knowledge, illustrate a knowledge transformation, and define program and portfolio relative to projects.",
+    "answer": "Explicit knowledge can be codified in words or documents and aggregated comparatively easily; tacit knowledge is experience-based, personal and contextual, making articulation and transfer harder. Externalization example: an experienced tester articulates diagnostic heuristics in an illustrated guide.\nA project is a temporary endeavor producing a unique result. A program coordinates related projects to realize benefits unavailable from separate management; e.g., the learning platform, identity integration and staff training. A portfolio groups projects, programs and operations to achieve strategic objectives; components need not be interdependent.",
+    "de": "Tacit heißt nicht „geheim“. Eine Transformation mit Richtung angeben. Programm = Nutzen aus Koordination zusammenhängender Projekte; Portfolio = strategische Auswahl/Steuerung.",
+    "criteria": "Zwei Unterscheidungsmerkmale, Transformation samt Beispiel und korrekte Abgrenzung.",
+    "source": "s08",
+    "pages": [
+      11,
+      12,
+      24
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-1ab",
+    "title": "Requirements Traceability Matrix",
+    "ref": "2021 1a–b · 8 P",
+    "topic": "Scope",
+    "prompt": "Evaluate a matrix with ID, Requirement, Responsible, Priority; identify two strengths, two missing aspects and add a requirement for an education platform.",
+    "answer": "Unique IDs enable stable references; priorities support trade-offs and sequencing. Assigned responsibility also clarifies accountability. Missing origin/business objective prevents checking why a requirement exists; missing deliverable/test-case/acceptance links prevents checking implementation and verification. Add status or change history where useful.\nExample row: ID 4; accessible captions for all teaching videos; development team; high priority. This supports learners with hearing impairments and can be verified through agreed caption-coverage and accessibility checks.",
+    "de": "Die bestehende Tabelle ist ein Anfang, aber echte Traceability braucht Verbindungen vom Ursprung über Deliverable bis zum Test. Nicht lediglich zusätzliche Spalten ohne Zweck nennen.",
+    "criteria": "Zwei Stärken mit Zweck, zwei fehlende Aspekte mit Zweck, vollständige neue Zeile und Begründung.",
+    "source": "s01",
+    "pages": [
+      54,
+      57
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-1c",
+    "title": "Belbin am Fall anwenden",
+    "ref": "2021 1c · 4 P",
+    "topic": "Teams",
+    "prompt": "Assign suitable Belbin roles to maintaining the requirements matrix and interviewing stakeholders; justify.",
+    "answer": "Completer Finisher is suitable for checking and keeping a requirements matrix accurate, complete and up to date because of conscientious attention to errors and omissions. An Implementer is also defensible for establishing and reliably operating the maintenance process. Resource Investigator fits stakeholder interviews because this role communicates externally and explores information and opportunities. Roles describe behavioral contributions, not mandatory job titles; justify the fit rather than assuming only one label can be correct.",
+    "de": "Belbin steht in aktuellen Folien S. 6–7. Für das Pflegen der Matrix sind verschiedene begründete Zuordnungen denkbar; keine offizielle Eindeutigkeit behaupten.",
+    "criteria": "Zwei Rollen passend zu den Tätigkeiten, jeweils Begründung anhand Rollenmerkmalen.",
+    "source": "s07",
+    "pages": [
+      6,
+      7
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-2",
+    "title": "CPM: Backend entfällt",
+    "ref": "2021 2a–c · 8 P",
+    "topic": "CPM",
+    "prompt": "Network durations: A1=25; after A1 run A2=10, A3=40, and A4=5→A5=15 in parallel; all branches join at A6=15. Remove A3. Find finish, critical path and two CPM shortcomings.",
+    "answer": "Originally: max(25+10+15, 25+40+15, 25+5+15+15) = max(50,80,60) = 80 days. Without A3: max(50,60)=60 days. New critical path: A1→A4→A5→A6. The saving is 20 elapsed days, not 40, and the duration is not halved. Forward pass: A1 0–25; A2 25–35; A4 25–30; A5 30–45; A6 45–60. Backward pass: A6 45–60; A5 30–45; A4 25–30; A2 35–45; A1 0–25. A2 has 10 days total float.\nCPM uses deterministic durations, although integration estimates are uncertain; basic CPM ignores resource constraints, although the same developers may be needed on parallel branches. Reusing the backend may also introduce integration, testing and licensing tasks that must be estimated.",
+    "de": "Originalgrafik PDF-S. 4 visuell geprüft. Arbeitsaufwand und verstrichene Projektdauer sind nicht dasselbe. Die Restpfade bestimmen die neue Dauer.",
+    "criteria": "80→60 Tage; kritischer Pfad 1–4–5–6; Vorwärts-/Rückwärtslogik und zwei Fallgrenzen.",
+    "source": "s02",
+    "pages": [
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-3",
+    "title": "PV, EV, CPI, SPI und Grafik 2021",
+    "ref": "2021 3a–d · 8 P",
+    "topic": "EVM",
+    "prompt": "Define PV/EV and CPI/SPI. Original graph at reporting date: PV > AC > EV. Interpret and predict EAC.",
+    "answer": "PV is the budgeted value of work scheduled by the reporting date; EV is the budgeted value of work actually completed. CPI=EV/AC measures cost efficiency; SPI=EV/PV measures schedule performance in budgeted-work units, not calendar days. Here EV<PV: behind schedule; EV<AC: over budget for the work achieved. If current cost efficiency continues, CPI<1 implies EAC=BAC/CPI>BAC. Forecast assumptions must be explicit.",
+    "de": "Originalgrafik PDF-S. 6 visuell geprüft. Anders als 2020 liegt AC über EV: diesmal Kostenüberschreitung. EV ist NICHT Umsatz oder tatsächlich ausgegebenes Geld.",
+    "criteria": "PV/EV richtig; beide Indizes; Termin/Kosten korrekt; bedingte EAC-Aussage.",
+    "source": "s02",
+    "pages": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-4",
+    "title": "TQM vs. Six Sigma",
+    "ref": "2021 4 · 5 P",
+    "topic": "Quality",
+    "prompt": "Discuss two quality-improvement approaches for an education platform, their application and main difference.",
+    "answer": "TQM is an organization-wide philosophy of long-term customer satisfaction and continuous improvement involving everyone. Collect learner feedback, empower staff and use PDCA to improve course publication and support processes. Six Sigma is a data-driven approach to reducing variation and defects: define failed video starts, measure rates, analyze causes, improve delivery and control results (DMAIC). Both support improvement; TQM emphasizes a pervasive quality culture, whereas Six Sigma provides a more structured statistical improvement approach.",
+    "de": "Beide Ansätze sind aktuell. Am selben Fall zeigen, wie aus einer abstrakten Methode eine konkrete Qualitätsverbesserung wird.",
+    "criteria": "Zwei korrekte Ansätze, Fallanwendung und klarer Unterschied.",
+    "source": "s03",
+    "pages": [
+      13,
+      14,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-5",
+    "title": "SAP-Migration: Gesamt- vs. Eigenkosten",
+    "ref": "2021 5a–c · 12 P",
+    "topic": "EMV",
+    "prompt": "Ten universities; Greenfield 2.5y, €10m funded common configuration, yearly per-university .3m (75%) or 1m (25%). Brownfield 4y, yearly .4m or .8m. Compare total and university costs.",
+    "answer": "Use decision-tree expected monetary cost analysis. Greenfield university-paid costs: moderate = 10×2.5×.3=€7.5m; high=10×2.5×1=€25m; expectation=.75×7.5+.25×25=€11.875m. The ministry funds €10m of common development separately; total Greenfield resource cost is therefore €21.875m expected. Brownfield: moderate=10×4×.4=€16m; high=10×4×.8=€32m; expectation=€20m.\nOverall, Brownfield is cheaper by €1.875m. For a university, Greenfield costs €1.1875m expected versus €2m Brownfield, so Greenfield is cheaper by €0.8125m. The subsidy shifts who pays; it is not negative resource consumption. This interpretation follows the text that common development is ministry-funded and annual university costs are already lower because of it.",
+    "de": "Zwei Perspektiven strikt trennen. Die 10 Mio. € nicht nochmals von den bereits reduzierten Eigenkosten abziehen. Modellannahme der gesonderten geförderten Grundentwicklung offenlegen; keine offizielle Musterlösung vorhanden.",
+    "criteria": "Vier Szenariokosten, Erwartungswerte; 10 Mio. € korrekt und genau einmal; Gesamt- und Einzelperspektive.",
+    "source": "s03",
+    "pages": [
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-6a",
+    "title": "Agile Manifesto mit Beispielen",
+    "ref": "2021 6a · 4,5 P",
+    "topic": "Agile",
+    "prompt": "Explain three Agile Manifesto values with examples for an education platform.",
+    "answer": "Individuals and interactions over processes and tools: developers and lecturers clarify a confusing enrollment flow directly instead of only exchanging tickets. Working software over comprehensive documentation: demonstrate a usable lesson player rather than relying on a long specification alone. Customer collaboration over contract negotiation: regularly review with learners and adapt priorities instead of defending an outdated requirements contract. The items on the right still have value; “over” does not mean abandoning them. A fourth value is responding to change over following a plan.",
+    "de": "Je Wert Bedeutung + passendes Beispiel. „Keine Dokumentation“ wäre falsch.",
+    "criteria": "Drei Werte, korrekte Interpretation und drei Fallbeispiele.",
+    "source": "s10",
+    "pages": [
+      10,
+      11,
+      12,
+      13
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-6b",
+    "title": "Drei User Stories",
+    "ref": "2021 6b · 4,5 P",
+    "topic": "Agile",
+    "prompt": "Create three user stories with ID, theme, role, goal, benefit, notes and priority for the education platform.",
+    "answer": "1 | Learning | As a learner | I want to resume a video at my last position | so that I can continue efficiently | synchronize after login; test persistence | High.\n2 | Accessibility | As a learner with hearing impairment | I want accurate captions | so that I can understand the lesson | agree supported languages and acceptance checks | High.\n3 | Teaching | As a lecturer | I want to view aggregated quiz errors | so that I can improve explanations | avoid unnecessary individual tracking | Medium.",
+    "de": "Rolle → Ziel → Nutzen. Notes helfen bei offenen Fragen oder Akzeptanz, Priority macht Reihenfolge explizit. Kein Feature ohne Nutzerwert.",
+    "criteria": "Drei unterschiedliche Stories und alle verlangten Spalten sinnvoll ausgefüllt.",
+    "source": "s43",
+    "pages": [
+      78,
+      79
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-6c",
+    "title": "Früh veröffentlichen – aber wie früh?",
+    "ref": "2021 6c · 3 P",
+    "topic": "Agile",
+    "prompt": "Discuss the quote that an unembarrassing first product version was launched too late.",
+    "answer": "An early, limited release can test assumptions and obtain feedback before the team overinvests in unwanted features. Release a small usable course player to a pilot group and learn from real use. However, embarrassment is not a quality criterion: accessibility, security, privacy and essential reliability need appropriate safeguards. Agree a minimum usable scope and acceptance criteria, release incrementally and inspect feedback. Early learning is valuable; reckless release is not.",
+    "de": "Alter Gastvortragsanlass, aber mit aktuellen Scope-, Qualitäts- und Agilitätskonzepten sinnvoll lösbar. Nicht den Gastvortrag von damals auswendig lernen.",
+    "criteria": "Abgewogene Position, Projektbezug, Nutzen frühen Feedbacks und Qualitätsgrenzen.",
+    "source": "s10",
+    "pages": [
+      5,
+      6,
+      10,
+      11
+    ],
+    "status": "Aktueller Transfer",
+    "extra": ""
+  },
+  {
+    "id": "21-7",
+    "title": "SECI, Continuous Improvement, Programm/Portfolio",
+    "ref": "2021 7a–c · 8 P",
+    "topic": "Knowledge",
+    "prompt": "Explain externalization and combination, improve a subsequent project using evaluation, and relate the platform to program/portfolio.",
+    "answer": "Externalization transforms tacit into explicit knowledge: a senior developer explains debugging heuristics and records them in a guide. Combination transforms explicit into explicit knowledge: merge documented user studies and test reports into an integrated release checklist. Evaluate planned versus actual outcomes and lessons learned, prioritize actions, assign owners and verify adoption in the next project using a PDCA cycle. The platform project can belong to a digital-teaching program together with identity integration and teacher training; the university IT portfolio selects such initiatives alongside other strategic investments.",
+    "de": "Externalization ≠ Combination. Lessons learned müssen zu umgesetzten Maßnahmen werden. Programmbeispiel braucht gemeinsame Nutzen, Portfolio strategischen Zusammenhang.",
+    "criteria": "Beide Transformationsrichtungen mit Beispiel; Verbesserungsschleife; Projekt/Programm/Portfolio am Fall.",
+    "source": "s08",
+    "pages": [
+      12,
+      20,
+      24,
+      25
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "21-8ms",
+    "title": "MS Project und Baseline",
+    "ref": "2021 8 Part A · 4 P",
+    "topic": "Alte Tools",
+    "prompt": "Explain project support/views in MS Project and the purpose of a baseline.",
+    "answer": "MS Project supports planning tasks, dependencies, resources and costs, with views such as Gantt charts, network diagrams and resource sheets. A baseline is an approved reference snapshot of the plan, used to compare current/actual dates, work and costs with the agreed plan. It is not simply the latest forecast and should not be overwritten merely to hide a variance.",
+    "de": "Toolbedienung optional; der Baseline-Begriff selbst ist aktueller Stoff und steht in den Kostenfolien.",
+    "criteria": "Planungsnutzen, zwei Darstellungsformen, genehmigter Referenzplan und Soll-Ist-Vergleich.",
+    "source": "s02",
+    "pages": [
+      25
+    ],
+    "status": "Altstoff / nicht aktuell belegt",
+    "extra": ""
+  },
+  {
+    "id": "21-8jira",
+    "title": "Jira: Hierarchie und Workflow",
+    "ref": "2021 8 Part B · 11 P; 2022 12 · 3 P",
+    "topic": "Alte Tools",
+    "prompt": "Historical diagram nests a around b/e and their c/d children, with f parallel to a. Workflow: Backlog→Prepare for Development→Development→Done; any status→Done. Explain and improve.",
+    "answer": "A plausible historical hierarchy is epic (a/f), story or task (b/e), subtask (c/d). Example a: course delivery; b: play a lesson; c: implement playback controls; d: test resume behavior; e: captions; f: enrollment. The exact configured issue types are not uniquely determined by unlabeled boxes.\nA workflow without explicit review/testing may let unverified work reach Done; add a review/test state or guarded transition with acceptance checks. A global transition from any status to Done can bypass intermediate stages; restrict it through permissions/conditions/validators if inappropriate. The lightning/global-transition symbol refers to availability from any status, not necessarily an automatic transition.",
+    "de": "Originalabbildungen 2021 S. 14–15 und 2022 S. 5 visuell geprüft. Keine aktuellen Jira-Tool-Lernziele nachgewiesen. Hierarchielabels nicht als einzig mögliche Konfiguration behaupten.",
+    "criteria": "Plausible drei Ebenen mit sechs Beispielen; konkrete Workflow-Schwäche und Verbesserung; globale Transition korrekt.",
+    "source": "s06",
+    "pages": [
+      22
+    ],
+    "status": "Altstoff / nicht aktuell belegt",
+    "extra": ""
+  },
+  {
+    "id": "22-1",
+    "title": "Magic Triangle und SMART",
+    "ref": "2022 1a–b · 8 P",
+    "topic": "Scope",
+    "prompt": "Describe the three constraints and their interdependence with examples; give two SMART criteria with examples.",
+    "answer": "Scope defines included outcomes/work; schedule defines available time; cost defines the budget/resources. Adding an offline mode increases scope; keeping the deadline may require extra resources and cost, while a fixed budget may require deferring other features or extending time. More staff does not always shorten sequential work. Measurable: reduce median login response time below two seconds under agreed test load. Time-bound: obtain acceptance of the pilot by 30 November.",
+    "de": "Für den Kurs Scope, Schedule, Cost nennen; Qualität nicht stillschweigend als Ersatz für Scope einsetzen. Zwei SMART-Kriterien reichen hier.",
+    "criteria": "Drei Constraints, kausale Wechselwirkung, zwei konkrete SMART-Beispiele.",
+    "source": "s01",
+    "pages": [
+      46,
+      47,
+      48
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-2a",
+    "title": "Sechs Schedule-Prozesse",
+    "ref": "2022 2a · 2 P",
+    "topic": "CPM",
+    "prompt": "Name one of the six schedule-management processes and explain its activities.",
+    "answer": "Sequence Activities identifies and documents logical relationships among activities. Start with the activity list, determine mandatory and discretionary dependencies and leads/lags, and construct a schedule network. The six course processes are Plan Schedule Management, Define Activities, Sequence Activities, Estimate Activity Durations, Develop Schedule and Control Schedule.",
+    "de": "Prozessname plus Inhalt, nicht „Planning“ als allgemeine Prozessgruppe.",
+    "criteria": "Ein korrekter Prozess mit konkreten Aktivitäten und Ergebnis.",
+    "source": "s02",
+    "pages": [
+      11,
+      12
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-2b",
+    "title": "Netzplan a–r vollständig",
+    "ref": "2022 2b · 10 P",
+    "topic": "CPM",
+    "prompt": "A1(5) precedes A2(2), A3(12), A4(10); A2→A5(3); A3,A4,A5→A6(4). Start day 0. Calculate ES/EF/LS/LF/TF and missing labels a–r.",
+    "answer": "Forward pass ES–EF: A1 0–5; A2 5–7; A3 5–17; A4 5–15; A5 7–10; A6 17–21. Backward pass LS–LF: A6 17–21; A5 14–17; A4 7–17; A3 5–17; A2 12–14; A1 0–5. Total float: 0,7,0,2,7,0 for A1…A6. Critical path A1→A3→A6; duration 21 days.\na=5, b=5, c=5, d=12, e=15, f=17, g=21, h=21, i=0, j=17, k=17, l=7, m=14, n=0, o=7, p=14, q=7, r=5.\nThe task text says A1–A5 but the diagram includes A6; include A6 in the complete critical path.",
+    "de": "Originalgrafik 2022 PDF-S. 1 visuell geprüft, Ergebnis unabhängig aus dem Netz berechnet. Im Knoten oben ES/Dauer/EF, unten LS/TF/LF. Alle Nachfolger-/Vorgängerwerte bei min/max berücksichtigen.",
+    "criteria": "Alle 18 Buchstaben; 21 Tage; kritischer Pfad 1–3–6; Rechenweg, nicht nur Zahlen.",
+    "source": "s02",
+    "pages": [
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-3",
+    "title": "Sechs EVM-Multiple-Choice-Fragen",
+    "ref": "2022 3a–f · 8 P",
+    "topic": "EVM",
+    "prompt": "a CV>0, SV>0? b CPI>1? c PV=1000 AC=900 EV=1100 BAC=1350, deviations do not recur: EAC? d EV=29000 PV=32000 AC=28000? e SPI=.75 CPI=1.1: priority? f Which index uses actual accounting cost?",
+    "answer": "a iii: under budget and ahead of schedule (CV=EV−AC>0, SV=EV−PV>0).\nb iv: actual costs are less than earned value.\nc ii: EAC=AC+(BAC−EV)=900+(1350−1100)=1150 because remaining work follows the original budgeted efficiency.\nd iii: behind schedule and within budget; SV=−3000, CV=+1000.\ne ii: address lost schedule; cost efficiency is favorable.\nf i: CPI, because AC comes from actual cost/accounting information; SPI=EV/PV does not contain AC.",
+    "de": "EAC-Formel anhand der Zukunftsannahme wählen! Bei c) ausdrücklich NICHT BAC/CPI. SPI misst wertbezogene Terminleistung, keine direkte Tagesabweichung.",
+    "criteria": "iii, iv, ii, iii, ii, i jeweils begründet; EAC 1150.",
+    "source": "s02",
+    "pages": [
+      30,
+      31,
+      32,
+      33
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-4",
+    "title": "TQM: Idee und fünf Schritte",
+    "ref": "2022 4a–b · 5 P",
+    "topic": "Quality",
+    "prompt": "Describe the TQM objective and list the five steps of a successful TQM program from the course.",
+    "answer": "TQM aims at long-term success through customer satisfaction and continuous organization-wide improvement involving all members. The course list is: (1) Management Commitment, (2) Employee Involvement and Empowerment, (3) Fact Based Decision Making, (4) Continuous Improvement, (5) Customer Focus. PDCA is a supporting improvement cycle, not a replacement for this five-item list.",
+    "de": "Diese Liste ist direkt auf aktueller Folie S. 16 belegt. Nicht mit den acht TQM-Elementen oder vier PDCA-Phasen vermischen.",
+    "criteria": "Kundenzufriedenheit, kontinuierlich/organisationsweit; fünf Kursbegriffe korrekt.",
+    "source": "s03",
+    "pages": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-5",
+    "title": "Virtuelle Teams: zwei Vorteile, zwei Hürden",
+    "ref": "2022 5 · 4 P",
+    "topic": "Teams",
+    "prompt": "Name two advantages of virtual teams and two obstacles to success.",
+    "answer": "Advantages: access to geographically dispersed expertise; reduced travel and location costs. Obstacles: fewer informal cues can impede trust and shared understanding; time-zone and communication-tool differences complicate coordination. Explain the mechanism rather than suggesting that virtual teams are automatically better or worse.",
+    "de": "Zwei plus zwei sauber trennen; kurze Erläuterungen helfen bei offenen Formulierungen.",
+    "criteria": "Zwei echte Vorteile und zwei plausible, unterschiedliche Hürden.",
+    "source": "s07",
+    "pages": [
+      22,
+      25,
+      28,
+      29,
+      30,
+      31
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-6",
+    "title": "Meetings und Power/Interest Grid",
+    "ref": "2022 6a–b · 4 P",
+    "topic": "Communication",
+    "prompt": "Name four ingredients of effective meetings; sketch and explain the four power/interest quadrants.",
+    "answer": "Meeting: clear objective and agenda; the necessary prepared participants; facilitation with timeboxes; documented decisions/actions with owners and due dates. Grid: high power/high interest—manage closely; high power/low interest—keep satisfied; low power/high interest—keep informed; low power/low interest—monitor with proportionate effort. Reassess classifications as influence and interests change.",
+    "de": "Die vier Meeting-Zutaten sind eine begründete Transferantwort, keine behauptete wortgleiche Liste der aktuellen Folien. Raster mit zwei benannten Achsen zeichnen.",
+    "criteria": "Vier konkrete Zutaten; beide Achsen und alle vier Kommunikationsstrategien.",
+    "source": "s09",
+    "pages": [
+      12
+    ],
+    "status": "Aktueller Transfer",
+    "extra": ""
+  },
+  {
+    "id": "22-7",
+    "title": "Lizenzmodell: EMV und Endpfade",
+    "ref": "2022 7 · 8 P",
+    "topic": "EMV",
+    "prompt": "Buy €40,000 plus €12,000/year; rent €1,800/developer/year. 40%:20 devs×2y; 60%:10 devs×4y. Draw the tree, find outcome costs and EMVs.",
+    "answer": "Decision: buy or rent. Each decision leads to the two chance outcomes .4 and .6. Buy/2y: 40000+2×12000=64000; buy/4y:88000. Expected buy cost=.4×64000+.6×88000=78400. Rent/2y=1800×20×2=72000; rent/4y=1800×10×4=72000. Expected rent cost=72000. Choose rent, saving €6400 in expectation. Terminal costs (net path costs) are 64000,88000,72000,72000; if plotting payoffs instead, consistently use their negatives.",
+    "de": "Beide Mietpfade umfassen 40 Personenjahre. Lizenzkosten nicht nur für ein Jahr rechnen. Erwartungswerte erst nach den Endkosten bilden.",
+    "criteria": "Entscheidungs- und Zufallsknoten, Wahrscheinlichkeiten, vier Pfadkosten, zwei EMVs, Entscheidung.",
+    "source": "s03",
+    "pages": [
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-8",
+    "title": "Agile Iteration skizzieren",
+    "ref": "2022 8 · 6 P",
+    "topic": "Agile",
+    "prompt": "Sketch an agile iteration and label its key elements.",
+    "answer": "Product vision and ordered Product Backlog → Sprint Planning: Sprint Goal + selected work/Sprint Backlog → timeboxed Sprint: design, build, test and integrate; Daily Scrum inspects progress/adapts the plan → usable Increment meeting Definition of Done → Sprint Review: stakeholder feedback and Product Backlog adaptation → Sprint Retrospective: improve collaboration/process → next Sprint. Review and Retrospective have different purposes; the Daily Scrum is not a manager status meeting.",
+    "de": "Als Kreislauf statt als einmaligen Wasserfall darstellen. Kontinuierliche Qualität und Rückkopplung gehören dazu.",
+    "criteria": "Backlog, Planung/Ziel, Timebox, Arbeit/Daily, Increment, Review, Retro und Feedbackschleife.",
+    "source": "s10",
+    "pages": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-9",
+    "title": "KM, vorzeitiges Ende und Programm",
+    "ref": "2022 9a–c · 8 P",
+    "topic": "Knowledge",
+    "prompt": "Explain two KM activities and two challenges; list four premature-termination reasons; define program.",
+    "answer": "Knowledge integration combines relevant available organizational knowledge; knowledge sharing enables people to exchange and develop it. Challenges include articulating tacit experience and securing time/resources for KM. Four termination reasons: loss of business need, unacceptable cost growth, unresolved technical infeasibility, and resource/funding withdrawal in favor of higher-priority initiatives. A program coordinates related projects and activities to realize benefits not achievable through separate management.",
+    "de": "Die aktuelle Kursliste nennt Knowledge Integration und Knowledge Sharing. Nicht durch frei erfundene „zwei Hauptphasen“ ersetzen.",
+    "criteria": "Zwei Aktivitäten, zwei Herausforderungen, vier Gründe und präzise Programmdefinition.",
+    "source": "s08",
+    "pages": [
+      10,
+      19,
+      24
+    ],
+    "status": "Aktueller Stoff",
+    "extra": ""
+  },
+  {
+    "id": "22-10",
+    "title": "Alter OKR-Gastvortrag",
+    "ref": "2022 10a–b · 8 P",
+    "topic": "Alte Tools",
+    "prompt": "Explain two benefits and two phases of OKR from the historical guest lecture.",
+    "answer": "Historical guest-lecture content is not established as a current learning objective. For orientation only: OKRs link qualitative objectives to measurable key results; common benefits include focus and alignment/transparency. A cycle typically includes planning/aligning objectives and results, regular check-ins, and review/reflection. These generic examples are not asserted to reproduce the old lecturer’s specific four benefits or phase labels.",
+    "de": "Im aktuellen 57-Dateien-Korpus kein OKR-Beleg gefunden. Aus dem Fehlen eines Suchtreffers folgt keine sichere Prüfungsbefreiung; derzeit optionale Altaufgabe, nicht Kernlernzeit.",
+    "criteria": "Keine offizielle/aktuelle Kursantwort behaupten. Nur bei zusätzlichem aktuellen Lehrbeleg priorisieren.",
+    "source": "s00",
+    "pages": [
+      1
+    ],
+    "status": "Altstoff / nicht aktuell belegt",
+    "extra": ""
+  },
+  {
+    "id": "22-11",
+    "title": "Fixed Work: 320 Stunden",
+    "ref": "2022 11a–b · 6 P",
+    "topic": "Alte Tools",
+    "prompt": "Fixed-work testing task: 5 full-time workers, 8h/day, 8 days. Calculate work; then independently change (i) 4 workers, (ii) duration 5 days, (iii) work +60h.",
+    "answer": "Initial work=5×8×8=320 person-hours. Each scenario resets to the initial situation.\ni: with 4 workers, duration=320/(4×8)=10 days, an increase of 2 days.\nii: with 5 days, units=320/(5×8)=8 full-time workers, an increase of 3 (300 percentage points of full-time resource capacity).\niii: with work explicitly changed to 380h and original 5-worker capacity, duration=380/(5×8)=9.5 days, an increase of 1.5 days. Fixed work does not prohibit explicitly editing the work estimate; it determines recalculation behavior.",
+    "de": "Historische Toolaufgabe, nicht aktuell als Tool-Lernziel belegt. Jede Teilfrage beginnt bei 320h/5 Personen/8 Tagen, nicht beim vorherigen Ergebnis.",
+    "criteria": "320h; 10 Tage; 8 Vollzeitkräfte; 9,5 Tage, jeweils Änderungsrichtung.",
+    "source": "s02",
+    "pages": [
+      25
+    ],
+    "status": "Altstoff / nicht aktuell belegt",
+    "extra": ""
+  }
+]
